@@ -7,7 +7,7 @@ The aim of this GitHub project avoid the duplication of work. This project commu
 
 
 **Basics**
-In short, mapping means to connecting the condes from a non-standard vocabulary to the corresponding condes in the standard vocabulary.
+In short, mapping means to connecting the codes from a non-standard vocabulary to the corresponding codes in the standard vocabulary.
 Details of the process can be found [here](https://www.ohdsi.org/web/wiki/doku.php?id=documentation:vocabulary:introduction)
 
 Vocabularies are organized into in medical domains. One vocabulary may cover more than one domain  ([see here](https://www.ohdsi.org/web/wiki/doku.php?id=documentation:vocabulary:domains_and_vocabularies)).
