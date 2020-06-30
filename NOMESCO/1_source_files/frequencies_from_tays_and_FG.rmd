@@ -52,10 +52,11 @@ no_finngen_standard <- finngen_join %>% filter(is.na(ShortName)) %>% select(Code
   mutate( freq_finngen_per=percent(freq_finngen/n_events_finngen))
 ```
 
-There are `r no_finngen_standard %>%  nrow()` codes not found in the standard : 
+There are `r no_finngen_standard %>%  nrow()` codes not found in the standard.
 
+Top 100:
 ```{r paged.print=TRUE}
-no_finngen_standard
+no_finngen_standard %>% head(100)
 ```
 
 Save these as: `finngen_codes_not_in_nomesco.csv`
@@ -82,10 +83,11 @@ no_tays_standard <- tays_join %>% filter(is.na(ShortName)) %>% select(CodeId, Sh
   mutate( freq_tays_per=percent(freq_tays/n_events_tays))
 ```
 
-There are `r no_tays_standard %>%  nrow()` codes not found in the standard : 
+There are `r no_tays_standard %>%  nrow()` codes not found in the standard.
 
+Top 100:
 ```{r paged.print=TRUE}
-no_tays_standard
+no_tays_standard %>% head(100)
 ```
 
 Save these as: `tays_codes_not_in_nomesco.csv`
@@ -106,11 +108,13 @@ tmp <- left_join(nomesco_standard, finngen_standard, by = "CodeId")
 nomesco_standard_with_freqs <- left_join(tmp ,  tays_standard, by = "CodeId")
 ```
 
+Top 100:
 ```{r}
 nomesco_standard_with_freqs <- nomesco_standard_with_freqs %>%   mutate(freq_total = (freq_finngen+freq_tays))
 
 nomesco_standard_with_freqs %>%  arrange(-freq_total) %>%  select(CodeId,  freq_finngen, freq_tays, freq_total) %>% 
-  mutate(freq_total_per = scales::percent(freq_total/(n_events_finngen+n_events_tays)))
+  mutate(freq_total_per = scales::percent(freq_total/(n_events_finngen+n_events_tays))) %>% 
+  head(100)
 ```
 
 Save as: `standard_nomesco_with_freq.csv`

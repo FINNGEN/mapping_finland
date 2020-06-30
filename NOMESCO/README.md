@@ -19,10 +19,10 @@ The count of codes in FinnGen-DF5 `freq_nomesco_finngen.csv` and TAYS `freq_proc
  This process is detailed in `frequencies_from_tays_and_FG.rmd/html`.
 
 
-## In 2_mapping_process
+## In `2_mapping_process`
 Resulting `1_source_files/standard_nomesco_with_freq.csv` was imported in to USAGY with vocabularies `VocabularyIds.txt` version `vocabularyVersion.txt`.
 
 Mapping was carried by a medical student K and reviewed by H.
 
-## In 3_mapping_tables
+## In `3_mapping_tables`
 TODO: tables sent to Athena
