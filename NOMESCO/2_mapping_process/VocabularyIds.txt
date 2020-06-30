@@ -1,0 +1,34 @@
+ATC
+CDM
+Condition Type
+Cost
+Cost Type
+Currency
+Death Type
+Device Type
+Drug Type
+Episode
+Ethnicity
+Gender
+Meas Type
+Metadata
+Note Type
+OSM
+Obs Period Type
+Observation Type
+PHDSC
+Plan
+Plan Stop Reason
+Procedure Type
+Race
+Relationship
+RxNorm
+RxNorm Extension
+SNOMED
+Sponsor
+UB04 Pri Typ of Adm
+UB04 Typ bill
+UCUM
+US Census
+Visit
+Visit Type
