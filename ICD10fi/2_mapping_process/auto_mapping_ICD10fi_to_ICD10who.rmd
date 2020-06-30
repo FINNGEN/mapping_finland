@@ -1,0 +1,254 @@
+---
+title: "Auto mapping ICD10fi to ICD10who"
+output: 
+    github_document:
+        df_print: tibble
+        toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(stringdist)
+```
+
+
+# Load ICD10fi and ICD10who from `1_source_files`
+
+```{r load, message=FALSE}
+
+ICD10fi_standard <- read_delim("../1_source_files/58_1471433699473.txt", ";", 
+                               locale = locale(encoding = 'ISO-8859-1'),
+                               col_types = cols( .default = col_character() )
+                               )
+
+
+ICD10fi_standard <- ICD10fi_standard %>% select(CodeId, ShortName,	LongName, ParentId,	HierarchyLevel,
+                        BeginningDate,	ExpiringDate, 'A:Koodi1', 'A:Koodi2', 
+                        'A:Long_name'
+                        ) %>% 
+                rename(Code1 = 'A:Koodi1', Code2 = 'A:Koodi2', English_name = 'A:Long_name' ) %>% 
+                mutate(BeginningDate = dmy(BeginningDate), ExpiringDate = dmy(ExpiringDate))
+
+
+
+ICD10who_OMOP <- read_csv("../1_source_files/OMOP_ICD10who.csv")
+
+
+```
+
+# Study codes
+
+Total number of codes
+```{r}
+ICD10fi_standard  %>% nrow
+```
+
+In the Finnish version of the ICD10 there are two types of additional codes.
+
+- Classification codes: describe ranges of codes other than the conventional ICD10 hierarchy
+    - `CodeA-CodeB` : from CodeA to CodeB
+- Reason codes: combine codes to add more info on what caused the diagnose, there are 4 marks
+   - `CodeA*CodeB` : ”Oirekoodi”, --CodeA indicates the symptom and CodeB the etiology/cause--
+   - `CodeA+CodeB` : ”Syykoodi”, --CodeA indicates the reason for Code1--
+   - `CodeA#CodeB` : ATC-koodi, CodeB is and ATC code indicating the medicine that caused CodeA
+   - `CodeA&CodeB` : ”Kasvainkoodi”, CodeB is and endocrinological disorder code that caused CodeA
+
+
+
+### How many are  clasification codes??
+
+```{r}
+ICD10fi_standard_classif <- ICD10fi_standard  %>% filter( grepl("-", CodeId))
+```
+
+
+```{r}
+ICD10fi_standard_classif  %>% nrow
+```
+
+
+### How many are a direct match ??
+
+```{r}
+# match ICD10fi codes to the ICD10who codes 
+ICD10fi_standard_match_icd10who <- inner_join(ICD10fi_standard,
+                ICD10who_OMOP %>% rename(CodeId = concept_code),
+                by = "CodeId")
+
+```
+
+
+```{r}
+ICD10fi_standard_match_icd10who %>% nrow
+```
+
+
+#### How well these agree in the definition ??
+
+Count the differences in characters (string distance) between the English names of icd10fi and icd10who full matches
+
+```{r}
+ICD10fi_standard_match_icd10who  %>%  select(CodeId, English_name, concept_name, ShortName) %>% 
+        mutate(same_name = stringdist(English_name,concept_name) )  %>% 
+        count(same_name, sort = T) %>% head(20)
+```
+
+
+Most (8463) match the name exactly!!, 226 NA for these with no English name
+
+#### Why the large differences ??
+
+```{r}
+ICD10fi_standard_match_icd10who  %>%  select(CodeId, English_name, concept_name, ShortName) %>% 
+        mutate(same_name = stringdist(English_name,concept_name) )  %>% 
+        rename(ICD10fi_name = English_name, ICD10who_name = concept_name) %>% 
+        filter(same_name>21)  %>% head(20)
+```
+
+Seems the concept are the same, described in different way. 
+
+### How many more match if only the diagnose code is taken? 
+
+
+```{r}
+# match ICD10fi's diagnose codes to the ICD10who codes 
+matched_ids <- c(ICD10fi_standard_classif$CodeId, ICD10fi_standard_match_icd10who$CodeId)
+
+ICD10fi_standard_code1_match_icd10who <- inner_join( ICD10fi_standard  %>% filter(!(CodeId %in% matched_ids)) , 
+                ICD10who_OMOP %>% rename(Code1 = concept_code),
+                by = "Code1")
+
+```
+
+
+```{r}
+ICD10fi_standard_code1_match_icd10who  %>% nrow
+```
+
+
+### How many ICD10fi codes have no match with ICD10who? 
+
+
+```{r}
+matched_ids <- c(ICD10fi_standard_classif$CodeId, ICD10fi_standard_match_icd10who$CodeId, ICD10fi_standard_code1_match_icd10who$CodeId)
+
+ICD10fi_standard_new <- ICD10fi_standard  %>% filter(!(CodeId %in% matched_ids)) 
+
+ICD10fi_standard_new %>%  nrow()
+```
+
+
+How many at a precision > than 5 digits Xxx.x  
+```{r}
+#which are new in the level higher than 6
+ICD10fi_standard_new  %>% 
+select(CodeId, English_name, ShortName) %>% 
+mutate(group = nchar(CodeId) #str_sub(concept_code, 0, 1)
+      ) %>% filter(group<6)
+```
+
+Are unmached codes more frequent in a category ??
+
+```{r}
+# what groups have more new ones 
+ICD10fi_standard_new  %>% 
+select(CodeId, English_name, ShortName) %>% 
+mutate(group = str_sub(CodeId, 0, 1)) %>% count(group, sort = T)
+```
+
+Most of the extension of icd10who is on group C "Neoplasm". 
+
+# Proposed automatic matching  
+
+1. Ignore the new ICD10fi classification codes, these are not suppose to be used as diagnose
+2. Match ICD10fi to ICD10who only based on the diagnose code `CodeA`
+3. These new ICD10fi that don't exist in ICD10who, match to the parent code
+
+
+```{r}
+# ICD10fi code matches the ICD10who
+ICD10fi_standard_clas <- ICD10fi_standard  %>% 
+    filter( CodeId %in% ICD10who_OMOP$concept_code)  %>% 
+    mutate( ICD10who = CodeId , ICD10who_match_level = 0 )
+```
+
+
+```{r}
+# match diagnose codes to the upper level code
+ICD10fi_standard_new_1 <- inner_join( ICD10fi_standard_new  %>% 
+                                # remove the last digit of the code 
+                                mutate(ICD10who = str_sub(Code1, 0, -2))%>% 
+                                # remove the last digit of the code if it is a point
+                                mutate(ICD10who = sub("\\.$", "", ICD10who)) , 
+                ICD10who_OMOP %>% rename(ICD10who = concept_code),
+                by = "ICD10who")
+
+```
+
+
+```{r}
+ICD10fi_standard_new_1  %>%  nrow
+```
+
+```{r}
+# match diagnose codes to the upper level code
+ICD10fi_standard_new_2 <- left_join( ICD10fi_standard_new  %>% filter( !(CodeId %in% ICD10fi_standard_new_1$CodeId)) %>%  
+                                # remove the last digit of the code 
+                                mutate(ICD10who = str_sub(Code1, 0, -3))%>% 
+                                # remove the last digit of the code if it is a point
+                                mutate(ICD10who = sub("\\.$", "", ICD10who)) , 
+                ICD10who_OMOP %>% rename(ICD10who = concept_code),
+                by = "ICD10who")
+```
+
+
+```{r}
+ICD10fi_standard_new_2 %>%  nrow
+```
+
+
+
+```{r}
+# Join all 
+ICD10fi_standard_matched <- bind_rows(
+    # classifiction codes
+    ICD10fi_standard  %>% filter( CodeId %in%ICD10fi_standard_classif$CodeId)  %>% 
+    mutate(ICD10who = as.character(NA), ICD10who_match_level = "classification" ), 
+    # perfect matches
+    ICD10fi_standard  %>% filter( CodeId %in%ICD10fi_standard_match_icd10who$CodeId)  %>% 
+    mutate(ICD10who = CodeId, ICD10who_match_level = "full_match" ), 
+    # matched with the diagnose 
+    ICD10fi_standard  %>% filter( CodeId %in%ICD10fi_standard_code1_match_icd10who$CodeId)  %>% 
+    mutate(ICD10who = Code1, ICD10who_match_level = "diagnose_match" ),
+    #
+    ICD10fi_standard_new_1 %>% select(CodeId:ICD10who)%>% 
+    mutate(ICD10who_match_level = "diagnose_match_parent" ),
+    #
+    ICD10fi_standard_new_2 %>% select(CodeId:ICD10who)%>% 
+    mutate(ICD10who_match_level =  "diagnose_match_grandparent" )
+)%>% arrange(CodeId)  %>% 
+mutate(ICD10who_match_level = factor(ICD10who_match_level, 
+                                     levels = c("classification", 
+                                                "full_match", 
+                                                "diagnose_match",
+                                                "diagnose_match_parent", 
+                                                "diagnose_match_grandparent")
+                                    )
+      )
+```
+
+
+```{r}
+ICD10fi_standard_matched  %>% count(ICD10who_match_level)
+```
+
+
+```{r}
+# load ICD10fi
+write_csv(ICD10fi_standard_matched, "ICD10fi_matched_to_ICD10who.csv") 
+```
+
