@@ -1,18 +1,25 @@
-ATC
+APC
 CDM
 Condition Type
 Cost
 Cost Type
-Currency
+DRG
 Death Type
 Device Type
 Drug Type
 Episode
-Ethnicity
-Gender
+HCPCS
+ICD10PCS
+ICD9Proc
+ICDO3
+Korean Revenue Code
+LOINC
 Meas Type
 Metadata
+NAACCR
+Nebraska Lexicon
 Note Type
+OPCS4
 OSM
 Obs Period Type
 Observation Type
@@ -20,10 +27,7 @@ PHDSC
 Plan
 Plan Stop Reason
 Procedure Type
-Race
 Relationship
-RxNorm
-RxNorm Extension
 SNOMED
 Sponsor
 UB04 Pri Typ of Adm
