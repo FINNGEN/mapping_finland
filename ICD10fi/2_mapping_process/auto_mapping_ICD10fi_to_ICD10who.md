@@ -243,16 +243,16 @@ Most of the extension of icd10who is on group C “Neoplasm”.
 
 # Proposed automatic matching
 
-1.  Ignore the new ICD10fi clasification codes, these are not supose to
-    be used as diagnose
-2.  Match ICD10fi to ICD10who only based on the diagnose code `code1`
-3.  These new ICD10fi that dont exist in ICD10who, match to the parent
+1.  Ignore the new ICD10fi classification codes, these are not suppose
+    to be used as diagnose
+2.  Match ICD10fi to ICD10who only based on the diagnose code `CodeA`
+3.  These new ICD10fi that don’t exist in ICD10who, match to the parent
     code
 
 <!-- end list -->
 
 ``` r
-# ICD10fi code mathches the ICD10who
+# ICD10fi code matches the ICD10who
 ICD10fi_standard_clas <- ICD10fi_standard  %>% 
     filter( CodeId %in% ICD10who_OMOP$concept_code)  %>% 
     mutate( ICD10who = CodeId , ICD10who_match_level = 0 )
@@ -336,5 +336,5 @@ ICD10fi_standard_matched  %>% count(ICD10who_match_level)
 
 ``` r
 # load ICD10fi
-write_csv(ICD10fi_standard_matched, "ICD10fi_standard_matched_ICD10who.csv") 
+write_csv(ICD10fi_standard_matched, "ICD10fi_matched_to_ICD10who.csv") 
 ```

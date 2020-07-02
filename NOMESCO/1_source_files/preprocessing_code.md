@@ -37,10 +37,10 @@ Number of events in each data base :
 n_events_finngen <- freq_nomesco_finngen$freq %>% sum()
 n_events_tays <- freq_procedures_tays$yhteensa %>% sum()
 
-n_events_finngen
+n_events_tays
 ```
 
-    ## [1] 5816831
+    ## [1] 4583326
 
 ``` r
 n_events_tays

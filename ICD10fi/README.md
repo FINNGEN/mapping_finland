@@ -19,15 +19,15 @@ In the Finnish version of the ICD10 there are two types of additional codes.
 
 
 
-#Mapping process
+# Mapping process
 In short, ICD10fi codes are matched to the  ICD10who. If not match is found the second code or last digit are removed util they match. 
 
-##In `1_source_files`
+## In `1_source_files`
 ICD10fi standard `58_1471433699473.txt` downloaded from [kodistopalvelu](https://91.202.112.142/codeserver/pages/classification-view-page.xhtml?classificationKey=23). 
 
 ICD10who extracted from the table `CONCEPTS` in the OMOP vocabularies using `extract_ICD10who_from_OMOP.R`. 
 
-##In 2_mapping_process
+# #In 2_mapping_process
 Detailed in `auto_mapping_ICD10fi_to_ICD10who.rmd/md`
 
 1. Ignore the new ICD10fi classification codes, these are not suppose to be used as diagnose
@@ -35,5 +35,5 @@ Detailed in `auto_mapping_ICD10fi_to_ICD10who.rmd/md`
 3. These new ICD10fi that don't exist in ICD10who, match to the parent code
 
 
-##In 3_mapping_tables
+## In 3_mapping_tables
 TODO: tables sent to Athena
