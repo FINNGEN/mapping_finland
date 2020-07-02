@@ -1,0 +1,98 @@
+---
+title:  "Auto mapping ICPC to ICD10who"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(DT)
+```
+
+## Load
+
+```{r load, message=FALSE}
+icpc2_standard <- read_tsv("../1_source_files/ICPC2_merged_and__ICPC1_from_DF6_UTF8.txt")
+icpc2_standard <- icpc2_standard %>%  select(Id_FIN, `Ensisijainen ICD-10_FIN`, `Short name_FIN`, shortTitle_ENG, ICPC_version) %>% 
+  rename(main_icd10fi = `Ensisijainen ICD-10_FIN`, name_fin=`Short name_FIN`, name_eng=shortTitle_ENG)
+
+freq_icpc2_finngen <- read_csv("../1_source_files/freq_ICPC2_finngen.csv", ) %>% select(-X1)
+
+
+#TODO in the future we should take from 3_mapping_table
+ICD10fi_OMOP <- read_csv("../../ICD10fi/2_mapping_process/ICD10fi_matched_to_ICD10who.csv")
+
+```
+
+
+## Study ICPC codes
+
+```{r}
+icpc2_standard <- icpc2_standard %>% 
+  mutate(
+    ICPC_version = if_else(str_detect(Id_FIN, "^-"), "ICPC2_proc", str_c("ICPC", ICPC_version)),
+    is_mapped_to_ICD10fi = !is.na(main_icd10fi)
+    )
+```
+
+
+Number of codes in each source already mapped to ICD10fi: 
+```{r}
+icpc2_standard %>% count(ICPC_version, is_mapped_to_ICD10fi)
+```
+
+
+## Study ICPC codes in FinnGen
+Number of unique ICPC2 codes in FinnGen data base (patients >5) :
+```{r}
+freq_icpc2_finngen %>% nrow()
+```
+Number of events: 
+```{r}
+n_events_tays <- freq_icpc2_finngen$n_codes %>% sum()
+freq_icpc2_finngen <- freq_icpc2_finngen %>% mutate(freq_per = (n_codes/n_events_tays)*100)
+```
+
+
+
+**Is it any code in FinnGen marked as ICPC2 that is not on the standard ?**
+```{r}
+finngen_join <- left_join(freq_icpc2_finngen %>% mutate(Id_FIN=CODE1), icpc2_standard, by = "Id_FIN")
+
+finngen_join %>% filter(is.na(ICPC_version))
+```
+
+Only 3 wich make less than 0.5% of the total!! (atleas with npat<5)
+
+Number of codes in each source already mapped to ICD10fi, removing these that  dont appear in FinnGen DF5: 
+```{r}
+finngen_join %>% filter(!is.na(ICPC_version)) %>% count(ICPC_version, is_mapped_to_ICD10fi)
+```
+Great, most of ICPC with no map to ICD10fi are not used. 
+
+**What percentage of data already mapped ?**
+
+```{r}
+finngen_join %>% filter(is_mapped_to_ICD10fi) %>% .$freq_per %>%  sum()
+```
+
+**What codes are not mapped and what percentage they take ?**
+```{r}
+finngen_join %>% filter(!is_mapped_to_ICD10fi) %>% arrange(-freq_per) %>% 
+  mutate(freq_per_text = percent(freq_per/100)) %>% 
+  select(CODE1, n_codes, n_patients, freq_per, freq_per_text, name_eng)
+```
+
+# Summary
+
+From `r icpc2_standard %>%  nrow()` ICPC codes, only `r icpc2_standard %>% filter(is_mapped_to_ICD10fi) %>%  nrow()` are mapped to ICD10fi. 
+
+However, the mapped ones account for the `r finngen_join %>% filter(is_mapped_to_ICD10fi) %>% .$freq_per %>%  sum()`% of the codes in FinnGen DF5. 
+
+These unmapped but used in FinnGen (~4.4%) have quiet empty definitions, such as "General and Unspecified, Other reason for encounter NEC", "Result test/procedure", may not be worth mapping them. 
+
+At the moment we wont use USAGI. 
