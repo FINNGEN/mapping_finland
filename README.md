@@ -1,5 +1,5 @@
 # Mapping Finnish codes to the OMOP common data model
-# Intro
+## Intro
 The [ observational medical outcomes partnership (OMOP) common data model (CDM)](https://www.ohdsi.org/) is gaining interest in Finland.
 The most laborious task will be mapping and curating the medical vocabularies specific from Finland to the standard codes in the OMOP CDM but once done these mapping can be used in the hole country and some Nordic neighbors.
 
@@ -25,25 +25,83 @@ The resulting mapping tables will be included in the OMOP CDM, as suggested in t
 **Tools**
 USAGI is a java tool provide by OHDSI that helps in mapping process of new vocabularies [here](https://github.com/OHDSI/Usagi)
 
-# Mapping by domain
-The programing codes and documented process for mapping the different  `not an OMOP vocabulary` to a `OMOP non-standard vocabulary` are divided in folders. Here is a summary for each of the grouped by domain.  
 
-## Condition Domain
-The main `OMOP standard vocabulary` is SNOMED-CT, but also part of ICDO3 is used to cover cancer-related concepts not reflected in the SNOMED-CT.
+## Summary of progress
+
+|     | Vocabulary       | N_codes     | Method         | %_mapped <br> (suboptimal) | FG-DF5 <br> %_events_mapped | TAYS  <br> %_events_mapped |
+| --- | ---------------- | ----------- | -------------- |:--------------------------:|:---------------------------:|:--------------------------:|
+|     | **Condition**    |             |                |                            |                             |                            |
+| [1] | ICD10fi          | 14383       | ICD10who+USAGI |         66%(100%)          |           ?(98%)            |             ?              |
+| [2] | ICD9fi           | 9113        | ICD9CM+USAGI?  |           ?~20%?           |              0              |             -              |
+| [3] | ICD8fi           | 6907 [2778] | USAGI          |             0%             |              0              |             -              |
+| [x] | ICP2             | 1443 [1011] | ICD10who       |           47.5%            |           95.56%            |             -              |
+| [?] | NIHV             | ?           | ?              |             0%             |              0              |             -              |
+| [x] | ICDO3            |             | Exist          |            100%            |             98%             |             ?              |
+| [ ] | REIMB            | 116         |                |             0              |              0              |             -              |
+|     | **Procedure**    |             |                |                            |                             |                            |
+| [x] | NOMESCO          | 11281       | USAGI          |            15%             |             95%             |            95%             |
+| [6] | FHL              | 2240        | USAGI          |             0              |              0              |             -              |
+| [1] | TAYS_proce       | xx          | USAGI          |             ?              |              -              |             ?              |
+|     | **Observation**  |             |                |                            |                             |                            |
+| [?] | SPAT             | 415 [332]   | USAGI          |             0%             |              0              |             -              |
+|     | **Drug**         |             |                |                            |                             |                            |
+| [x] | ATC              | xx          | Exist          |         80%(100%)          |          80%(99%)           |             ?              |
+| [0] | VNRO             | xx          | code+USAGI ??  |             0              |              0              |             ?              |
+|     | **Measurements** |             |                |                            |                             |                            |
+| [x] | LAB              | xx          | USAGI          |             ?              |              -              |             ?              |
+
+
+
+
+## Mapping process by source vocabulary
+
+4 different ways
+
+### A: already mapped
+#### ATC
+ 100% Mapped to OMOP. **!!! But only 80% mapped to standard !!!**
+#### ICDO3
+Is a OMOP standard vocabulary
+
+
+### B: USAGI
+#### ICD8fi
+```mermaid
+graph LR
+    A("ICD8fi<br>6907")-. "2778 in DF5" .-> E("USAGI<br>??")-. "format " .->C("ICD10fi<->OMOP<br>??")
+```
+
+### C: Other_vocab + USAGI
 
 ### ICD10fi
+**ATM:**
+```mermaid
+graph LR
+    A("ICD10fi<br>14383")-- "exist in ICD10who" -->
+      B("Perfect match with ICD10who<br>9587") -- " " -->
+      C("ICD10fi<->OMOP<br>14383")
+    A-- not in ICD10who --> D("Mapped to ICD10who's<br> first code 2587 <br> father 2105<br> grandfather 104")-- " " -->C
+```
+**TODO:**
+```mermaid
+graph LR
+    A("ICD10fi<br>14383")-- "exist in ICD10who" -->
+      B("Perfect match with ICD10who<br>9587") -- " " -->
+      C("ICD10fi<->OMOP<br>14383")
+    A-. not in ICD10who .-> E("USAGI<br>??")-. " " .-> C
+```
 
+### ICD9fi
+```mermaid
+graph LR
+    A("ICD9fi<br>9113")-. "append freq" .-> E("USAGI<br>??")-. "format " .->C("ICD10fi<->OMOP<br>??")
+```
+
+
+
+## ICD10fi
 ICD10fi is an extension of the [ICD10who](https://icd.who.int/browse10/2016/en#/F20.0). ICD10fi codes with Finnish and English names available [at THL](https://91.202.112.142/codeserver/pages/publication-view-page.xhtml?distributionKey=9394&versionKey=58&returnLink=fromVersionPublicationList)
 
-**DONE:**
-1. Programmatically match the ICD10who to the ICD10fi by code. When no match, match to the father code.
-
-**TODO:**
-
-1. Manually double check that the names of the programmatically matched codes also fit.
-1. Manually match these that were programmatically matched to the parent.
-
-Use USAGI for these that don't match code nor name.  
 
 
 ### ICD9fi
@@ -135,23 +193,3 @@ There is a table linking the codes to names, dosage, via, and more. Also the ATC
 2. Match the string to the RxNorm names, double check using the ATC code.
 3. Manually curate these that match the code but not the name.
 hola
-
-# Summary of progress
-
-| Vocabulary | Map to    | Completed | FG-DF4 | FG-DF5 | TAYS |
-| ---------- | --------- |:---------:|:------:|:------:|:----:|
-| ICD10fi    | SNOMED-CT |   ~80%?   |   x    |   x    |  x   |
-| ICD9fi     | SNOMED-CT |   ~20%?   |   x    |   x    |  x   |
-| ICD8fi     | SNOMED-CT |     0     |   x    |   x    |      |
-| ICP2       | SNOMED-CT |     0     |   x    |   x    |      |
-| SPAT       | SNOMED-CT |     0     |   x    |   x    |      |
-| NIHV       | SNOMED-CT |     0     |   x    |   x    |      |
-| ICDO3      |           |   100%    |   x    |   x    |      |
-|            |           |           |        |        |      |
-| NOMESCO    | SNOMED-CT |    1%?    |   x    |   x    |  x   |
-| FHL        | SNOMED-CT |     0     |   x    |   x    |  x   |
-|            |           |           |        |        |      |
-| REIMB      | ???       |           |   x    |   x    |      |
-|            |           |           |        |        |      |
-| ATC        | RxNorm    |    80%    |   x    |        |  x   |
-| VNRO       | RxNorm    |     0     |        |   x    |      |
