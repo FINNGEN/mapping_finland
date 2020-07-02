@@ -1,0 +1,71 @@
+---
+title: "Prepare REIMB codes for USAGI"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+reimb_standard <- read_excel("./KELA_reimburesement_ENG_translations_Tuomo(1).xlsx") %>% filter(!is.na(Code))
+freq_reimb_finngen <- read_csv("./freq_reimb_finngen.csv") %>% select(-X1)
+```
+
+
+Number of codes in each source: 
+```{r}
+reimb_standard %>%  nrow()
+freq_reimb_finngen %>%  nrow()
+<!-- ``` -->
+<!-- Number of reimb events in finngen : -->
+<!-- ```{r} -->
+<!-- n_events_finngen <- freq_reimb_finngen$n_codes %>% sum() -->
+
+<!-- number(n_events_finngen) -->
+<!-- ``` -->
+
+
+<!-- ## Study codes in FinnGen -->
+
+<!-- ```{r} -->
+<!-- finngen_join <- left_join(freq_reimb_finngen %>% rename(Code=CODE1), reimb_standard, by = "Code") %>% -->
+<!--   mutate( freq_finngen_per=percent(n_codes/n_events_finngen)) -->
+<!-- ``` -->
+
+<!-- **How many codes labeled as reimb in FinnGen are not in the reimb standard ?** -->
+<!-- ```{r paged.print=TRUE} -->
+<!-- no_finngen_standard <- finngen_join %>% filter(is.na(DF6_Freq)) %>% select(Code, n_codes, freq_finngen_per, Finnish, English)  -->
+<!-- ``` -->
+
+<!-- There are `r no_finngen_standard %>%  nrow()` codes not found in the standard: -->
+
+<!-- ```{r paged.print=TRUE} -->
+<!-- no_finngen_standard  -->
+<!-- ``` -->
+
+<!-- Lot of codes missing, not so much in absolute terms `r sum(no_finngen_standard$n_codes)/n_events_finngen*100 ` -->
+
+
+<!-- ```{r} -->
+<!-- finngen_standard <- finngen_join %>% filter(!is.na(DF6_Freq)) %>% select(Code, n_codes, freq_finngen_per, Finnish, English) -->
+<!-- finngen_standard -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- finngen_standard <- finngen_standard %>% mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .))  -->
+
+<!-- write_csv(finngen_standard, "./standard_reimb_with_freq.csv") -->
+<!-- ``` -->
+
+
+
