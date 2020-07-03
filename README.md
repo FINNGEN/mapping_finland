@@ -32,23 +32,23 @@ USAGI is a java tool provide by OHDSI that helps in mapping process of new vocab
 | --- | ---------------- | ----------- | -------------- |:--------------------------:|:---------------------------:|:--------------------------:|
 |     | **Condition**    |             |                |                            |                             |                            |
 | [1] | ICD10fi          | 14383       | ICD10who+USAGI |         66%(100%)          |           ?(98%)            |             ?              |
-| [2] | ICD9fi           | 9113        | ICD9CM+USAGI?  |           ?~20%?           |              0              |             -              |
-| [3] | ICD8fi           | 6907 [2778] | USAGI          |             0%             |              0              |             -              |
+| [2] | ICD9fi           | 9113        | ICD9CM+USAGI?  |          ?(100%)           |           ?(98%)            |             -              |
+| [3] | ICD8fi           | 6907 [2778] | USAGI          |             0%             |             0%              |             -              |
 | [x] | ICP2             | 1443 [1011] | ICD10who       |           47.5%            |           95.56%            |             -              |
-| [?] | NIHV             | ?           | ?              |             0%             |              0              |             -              |
+| [?] | NIHV             | ?           | ?              |             0%             |             0%              |             -              |
 | [x] | ICDO3            |             | Exist          |            100%            |             98%             |             ?              |
-| [ ] | REIMB            | 116         |                |             0              |              0              |             -              |
+| [ ] | REIMB            | 116         | USAGI          |             0              |             0%              |             -              |
 |     | **Procedure**    |             |                |                            |                             |                            |
 | [x] | NOMESCO          | 11281       | USAGI          |            15%             |             95%             |            95%             |
-| [6] | FHL              | 2240        | USAGI          |             0              |              0              |             -              |
-| [1] | TAYS_proce       | xx          | USAGI          |             ?              |              -              |             ?              |
+| [6] | FHL              | 2240        | USAGI          |             0              |             0%              |             -              |
+| [1] | TAYS_proce       | ?           | USAGI          |             ?              |              -              |             ?              |
 |     | **Observation**  |             |                |                            |                             |                            |
-| [?] | SPAT             | 415 [332]   | USAGI          |             0%             |              0              |             -              |
+| [?] | SPAT             | 415 [332]   | USAGI          |             0%             |             0%              |             -              |
 |     | **Drug**         |             |                |                            |                             |                            |
-| [x] | ATC              | xx          | Exist          |         80%(100%)          |          80%(99%)           |             ?              |
-| [0] | VNRO             | xx          | code+USAGI ??  |             0              |              0              |             ?              |
+| [x] | ATC              | ?           | Exist          |         80%(100%)          |          80%(99%)           |             ?              |
+| [0] | VNRO             | ?           | code+USAGI ??  |             0              |             0%              |             ?              |
 |     | **Measurements** |             |                |                            |                             |                            |
-| [x] | LAB              | xx          | USAGI          |             ?              |              -              |             ?              |
+| [x] | LAB              | ?           | USAGI          |             ?              |              -              |             ?              |
 
 
 
@@ -57,46 +57,98 @@ USAGI is a java tool provide by OHDSI that helps in mapping process of new vocab
 
 4 different ways
 
+---
+
 ### A: already mapped
-#### ATC
+#### [x] ATC
  100% Mapped to OMOP. **!!! But only 80% mapped to standard !!!**
-#### ICDO3
+#### [x] ICDO3
 Is a OMOP standard vocabulary
 
+---
 
-### B: USAGI
-#### ICD8fi
+### B: Other_vocab
+#### [x] ICPC
 ```mermaid
 graph LR
-    A("ICD8fi<br>6907")-. "2778 in DF5" .-> E("USAGI<br>??")-. "format " .->C("ICD10fi<->OMOP<br>??")
+    S1("ICPC2 = 1 383 <br> ICPCProc = 40 <br> ICPC1 = 20")--> J
+    F("FG-DF5 count<br>1 011<br>98%")--> J{"JOIN"}     
+    J--> E("ICPC<=>ICD10fi<br>686<br>95.5%")-->D("ICPC<=>OMOP<br>686<br>95.5%")
+    J--> NF("FG's Not Found<br>3<br>0.5%")
 ```
 
-### C: Other_vocab + USAGI
+---
+
+
+### C: USAGI
+
+#### [x] NOMESCO
+```mermaid
+graph LR
+    S("NOMESCO<br>11286")--> J
+    F("FG-DF5 count<br>5 363<br>98%")--> J{"JOIN"}  
+    T("TAYS count<br>6 641<br>100%")--> J   
+    J--> E("NOMESCO<br>4 233")-->U{"USAGI"} -->D("NOMESCO<->OMOP<br>1730<br>95%")
+    J--> NF("FG's Not Found<br>260<br>0.2%")
+    J--> NT("TAYS's Not Found<br>1115<br>go to TAYS_proce")
+```
+
+#### [ ] ICD8fi
+```mermaid
+graph LR
+    S("ICD8fi<br>6 907")--> J
+    F("FG-DF5 count<br>2 778<br>98%")--> J{"JOIN"}     
+    J--> E("ICD8fi<br>2 549")-.->U{"USAGI"} -.->D("ICD8fi<->OMOP<br>??")
+    J--> NF("FG's Not Found<br>229")
+```
+
+#### [ ] SPAT
+```mermaid
+graph LR
+    S("SPAT<br>415")--> J
+    F("FG-DF5 count<br>332<br>98%")--> J{"JOIN"}     
+    J--> E("SPAT<br>323<br>96%")-.->U{"USAGI"} -.->D("SPAT<->OMOP<br>??")
+    J--> NF("FG's Not Found<br>9")
+```
+#### [x] LAB
+
+#### [x] TAYS_proce
+
+#### [] REIMB
+Missing table
+
+---
+
+### D: Other_vocab + USAGI
 
 ### ICD10fi
 **ATM:**
 ```mermaid
 graph LR
     A("ICD10fi<br>14383")-- "exist in ICD10who" -->
-      B("Perfect match with ICD10who<br>9587") -- " " -->
+      B("ICD10fi<=>ICD10who<br>9587") -- " " -->
       C("ICD10fi<->OMOP<br>14383")
     A-- not in ICD10who --> D("Mapped to ICD10who's<br> first code 2587 <br> father 2105<br> grandfather 104")-- " " -->C
 ```
 **TODO:**
 ```mermaid
 graph LR
-    A("ICD10fi<br>14383")-- "exist in ICD10who" -->
-      B("Perfect match with ICD10who<br>9587") -- " " -->
-      C("ICD10fi<->OMOP<br>14383")
-    A-. not in ICD10who .-> E("USAGI<br>??")-. " " .-> C
+    A("ICD10fi<br>14383")--"exist in ICD1who"-->
+      B("ICD10fi<=>ICD10who<br>9587")  --> C("ICD10fi<=>OMOP<br>?")
+    A--"not in ICD1who"--> J-.-> V("ICD10fi<br>?")-.-> E{"USAGI"}-.->  C
+    F("FG-DF5 count<br>?<br>?")-.-> J{"JOIN"}
+    T("TAYS count<br>?<br>?")-.-> J{"JOIN"}
 ```
 
 ### ICD9fi
+**MAYBE:**
 ```mermaid
 graph LR
-    A("ICD9fi<br>9113")-. "append freq" .-> E("USAGI<br>??")-. "format " .->C("ICD10fi<->OMOP<br>??")
+    A("ICD9fi<br>9113")-."exist in ICD9CM".->
+      B("ICD9fi<=>ICD9CM<br>?")  -.-> C("ICD9fi<=>OMOP<br>?")
+    A-."not in ICD9CM".-> J-.-> V("ICD10fi<br>?")-.-> E{"USAGI"}-.->  C
+    F("FG-DF5 count<br>2896<br>98%")-.-> J{"JOIN"}
 ```
-
 
 
 ## ICD10fi
