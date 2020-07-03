@@ -28,27 +28,27 @@ USAGI is a java tool provide by OHDSI that helps in mapping process of new vocab
 
 ## Summary of progress
 
-|     | Vocabulary       | N_codes     | Method         | %_mapped <br> (suboptimal) | FG-DF5 <br> %_events_mapped | TAYS  <br> %_events_mapped |
-| --- | ---------------- | ----------- | -------------- |:--------------------------:|:---------------------------:|:--------------------------:|
-|     | **Condition**    |             |                |                            |                             |                            |
-| [1] | ICD10fi          | 14383       | ICD10who+USAGI |         66%(100%)          |           ?(98%)            |             ?              |
-| [2] | ICD9fi           | 9113        | ICD9CM+USAGI?  |          ?(100%)           |           ?(98%)            |             -              |
-| [3] | ICD8fi           | 6907 [2778] | USAGI          |             0%             |             0%              |             -              |
-| [x] | ICP2             | 1443 [1011] | ICD10who       |           47.5%            |           95.56%            |             -              |
-| [?] | NIHV             | ?           | ?              |             0%             |             0%              |             -              |
-| [x] | ICDO3            |             | Exist          |            100%            |             98%             |             ?              |
-| [ ] | REIMB            | 116         | USAGI          |             0              |             0%              |             -              |
-|     | **Procedure**    |             |                |                            |                             |                            |
-| [x] | NOMESCO          | 11281       | USAGI          |            15%             |             95%             |            95%             |
-| [6] | FHL              | 2240        | USAGI          |             0              |             0%              |             -              |
-| [1] | TAYS_proce       | ?           | USAGI          |             ?              |              -              |             ?              |
-|     | **Observation**  |             |                |                            |                             |                            |
-| [?] | SPAT             | 415 [332]   | USAGI          |             0%             |             0%              |             -              |
-|     | **Drug**         |             |                |                            |                             |                            |
-| [x] | ATC              | ?           | Exist          |         80%(100%)          |          80%(99%)           |             ?              |
-| [0] | VNRO             | ?           | code+USAGI ??  |             0              |             0%              |             ?              |
-|     | **Measurements** |             |                |                            |                             |                            |
-| [x] | LAB              | ?           | USAGI          |             ?              |              -              |             ?              |
+|     | Vocabulary       | N_codes     | Method         |  %_codes  | FG-DF5 %_events | TAYS %_events |
+| --- | ---------------- | ----------- | -------------- |:---------:|:---------------:|:-------------:|
+|     | **Condition**    |             |                |           |                 |               |
+| [1] | ICD10fi          | 14383       | ICD10who+USAGI | 66%(100%) |     ?(98%)      |       ?       |
+| [2] | ICD9fi           | 9113        | ICD9CM+USAGI?  |  ?(100%)  |     ?(98%)      |       -       |
+| [3] | ICD8fi           | 6907 [2778] | USAGI          |    0%     |       0%        |       -       |
+| [x] | ICP2             | 1443 [1011] | ICD10who       |   47.5%   |     95.56%      |       -       |
+| [?] | NIHV             | ?           | ?              |    0%     |       0%        |       -       |
+| [x] | ICDO3            |             | Exist          |   100%    |       98%       |       ?       |
+| [ ] | REIMB            | 116         | USAGI          |     0     |       0%        |       -       |
+|     | **Procedure**    |             |                |           |                 |               |
+| [x] | NOMESCO          | 11281       | USAGI          |    15%    |       95%       |      95%      |
+| [6] | FHL              | 2240        | USAGI          |     0     |       0%        |       -       |
+| [1] | TAYS_proce       | ?           | USAGI          |     ?     |        -        |       ?       |
+|     | **Observation**  |             |                |           |                 |               |
+| [?] | SPAT             | 415 [332]   | USAGI          |    0%     |       0%        |       -       |
+|     | **Drug**         |             |                |           |                 |               |
+| [x] | ATC              | ?           | Exist          | 80%(100%) |    80%(99%)     |       ?       |
+| [0] | VNRO             | ?           | code+USAGI ??  |     0     |       0%        |       ?       |
+|     | **Measurements** |             |                |           |                 |               |
+| [x] | LAB              | ?           | USAGI          |     ?     |        -        |       ?       |
 
 
 
