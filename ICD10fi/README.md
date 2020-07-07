@@ -20,12 +20,30 @@ In the Finnish version of the ICD10 there are two types of additional codes.
 
 
 # Mapping process
-In short, ICD10fi codes are matched to the  ICD10who. If not match is found the second code or last digit are removed util they match. 
+In short, ICD10fi codes are matched to the  ICD10who. If not match is found the second code or last digit are removed util they match.
+
+**ATM:**
+```mermaid
+graph LR
+    A("ICD10fi<br>14383")-- "exist in ICD10who" -->
+      B("ICD10fi<=>ICD10who<br>9587") -- " " -->
+      C("ICD10fi<->OMOP<br>14383")
+    A-- not in ICD10who --> D("Mapped to ICD10who's<br> first code 2587 <br> father 2105<br> grandfather 104")-- " " -->C
+```
+**TODO:**
+```mermaid
+graph LR
+    A("ICD10fi<br>14383")--"exist in ICD1who"-->
+      B("ICD10fi<=>ICD10who<br>9587")  --> C("ICD10fi<=>OMOP<br>?")
+    A--"not in ICD1who"--> J-.-> V("ICD10fi<br>?")-.-> E{"USAGI"}-.->  C
+    F("FG-DF5 count<br>?<br>?")-.-> J{"JOIN"}
+    T("TAYS count<br>?<br>?")-.-> J{"JOIN"}
+```
 
 ## In `1_source_files`
-ICD10fi standard `58_1471433699473.txt` downloaded from [kodistopalvelu](https://91.202.112.142/codeserver/pages/classification-view-page.xhtml?classificationKey=23). 
+ICD10fi standard `58_1471433699473.txt` downloaded from [kodistopalvelu](https://91.202.112.142/codeserver/pages/classification-view-page.xhtml?classificationKey=23).
 
-ICD10who extracted from the table `CONCEPTS` in the OMOP vocabularies using `extract_ICD10who_from_OMOP.R`. 
+ICD10who extracted from the table `CONCEPTS` in the OMOP vocabularies using `extract_ICD10who_from_OMOP.R`.
 
 # #In 2_mapping_process
 Detailed in `auto_mapping_ICD10fi_to_ICD10who.rmd/md`
