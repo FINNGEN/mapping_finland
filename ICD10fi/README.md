@@ -55,3 +55,13 @@ Detailed in `auto_mapping_ICD10fi_to_ICD10who.rmd/md`
 
 ## In 3_mapping_tables
 TODO: tables sent to Athena
+
+
+
+# NOTES:
+Not all the union codes are in the icd10fi table column CodeId. 
+
+But rules on how to make them are in the `ALONG:Huom.` column. In text format !!
+
+FIX: These union codes in CodeId we map them. These that are not there, at the end of the process we extend the table and duplicate names and map to 2 codes. In the ELT process we create two codes with same source code but different mapping. 
+
