@@ -1,5 +1,5 @@
 ---
-title: "Prepare ICD8fi codes for USAGI"
+title: "Prepare ICD9fi codes for USAGI"
 output: 
     github_document:
         df_print: tibble
@@ -39,15 +39,28 @@ number(n_events_finngen)
 icd9fi %>%  count(match_type)
 ```
 
+
+## Improve the name in icd9 
+
+```{r}
+icd9fi %>% 
+  #lower case
+  mutate( icd9_renamed = str_to_lower(ICD9TXT)) %>% 
+  mutate( icd9_renamed = str_replace(icd9_renamed, "[:space:]nud[:space:]", ", unspecified")) %>% 
+  mutate( icd9_renamed = str_replace(icd9_renamed, "[:space:]alia[:space:]", ", unspecified")) 
+```
+
+
+
 ### Does full match agree on name ? 
 
 
 
 ```{r}
-icd9fi %>% filter(match_type == "full_match")  %>% 
+icd9fi %>% filter(match_type %in% c("full_match", "unique_parent_match"))  %>% 
   mutate(ICD9TXT = str_to_lower(ICD9TXT), Wolfbane_name = str_to_lower(Wolfbane_name)) %>% 
         mutate(English_name_match_level = stringdist(ICD9TXT,Wolfbane_name) ) %>% 
-        count(English_name_match_level) %>% head(20)
+        count(English_name_match_level) 
 ```
 
 
@@ -74,13 +87,13 @@ icd9fi %>% filter(match_type == "full_match")  %>%
 ## Study codes in FinnGen
 
 ```{r}
-finngen_join <- left_join(freq_icd8fi_finngen %>% rename(Code=CODE1), icd8fi_standard, by = "Code") %>%
+finngen_join <- left_join(freq_icd9fi_finngen %>% rename(ICD9=CODE1), icd9fi, by = "ICD9") %>%
   mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
 ```
 
-**How many codes labeled as icd8fi in FinnGen are not in the icd8fi standard ?**
+**How many codes labeled as icd9fi in FinnGen are not in the icd9fi standard ?**
 ```{r paged.print=TRUE}
-no_finngen_standard <- finngen_join %>% filter(is.na(DF6_Freq)) %>% select(Code, n_codes, freq_finngen_per, Finnish, English) 
+no_finngen_standard <- finngen_join %>% filter(is.na(concept_name)) %>% select(ICD9, n_codes, freq_finngen_per, ICD9TXT , concept_name) 
 ```
 
 There are `r no_finngen_standard %>%  nrow()` codes not found in the standard:
@@ -93,7 +106,9 @@ Lot of codes missing, not so much in absolute terms `r sum(no_finngen_standard$n
 
 
 ```{r}
-finngen_standard <- finngen_join %>% filter(!is.na(DF6_Freq)) %>% select(Code, n_codes, freq_finngen_per, Finnish, English)
+finngen_standard <- finngen_join %>% filter(!is.na(concept_name)) %>% 
+  select(ICD9, n_codes, freq_finngen_per, ICD9TXT , concept_name) %>% 
+  rename(Finnish_name=ICD9TXT, possible_english_name=concept_name)
 finngen_standard
 ```
 
@@ -101,7 +116,7 @@ finngen_standard
 ```{r}
 finngen_standard <- finngen_standard %>% mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .)) 
 
-write_csv(finngen_standard, "./standard_icd8fi_with_freq.csv")
+write_csv(finngen_standard, "./standard_icd9fi_with_freq.csv")
 ```
 
 
