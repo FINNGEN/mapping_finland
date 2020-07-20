@@ -123,7 +123,7 @@ However, `r no_finngen_standard %>% filter(CODE1 == CODE2) %>%  nrow()` are not 
 If we remove these, here are `r no_finngen_standard %>% filter((CODE1 != CODE2) | (is.na(CODE1)) | (is.na(CODE2)) ) %>%  nrow()` codes not found in the standard:
 
 ```{r paged.print=TRUE}
-no_finngen_standard %>% filter((CODE1 != CODE2) | (is.na(CODE1)) | (is.na(CODE2)) )
+no_finngen_standard %>% filter((CODE1 != CODE2) | (is.na(CODE1)) | (is.na(CODE2)) ) %>% arrange(-freq_finngen)
 ```
 
 Save these as: `finngefreq_finngen_not_in_icd10fi.csv`
@@ -220,7 +220,7 @@ icd10_standard_with_freqs_tmp %>% mutate(has_english_name = !is.na(English_name)
 
 
 ```{r}
-write_csv(icd10_standard_with_freqs , "./standard_icd10fi_with_freq.csv")
+write_csv(icd10_standard_with_freqs_tmp , "./standard_icd10fi_with_freq.csv")
 ```
 
 
