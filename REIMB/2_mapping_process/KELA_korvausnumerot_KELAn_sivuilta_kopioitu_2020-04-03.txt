@@ -1,0 +1,268 @@
+Sairaus	Korvausnumero
+Aivolisäkkeen etulohkon vajaatoiminta	101 *
+Aplastinen anemia	122
+Diabetes, insuliinihoito	103 *
+Dialyysihoitoa edellyttävä uremia	137
+D-vitamiinin krooniset aineenvaihduntahäiriöt	123 *
+Elinsiirron tai kudossiirron jälkitila	127 *
+Epilepsia ja siihen verrattavat kouristustilat	111 *
+Eturauhassyöpä	116 *
+Gammaglobuliinin puutostila	120
+Glaukooma	114
+Gynekologiset syövät	128 *
+Itsenäinen verihiutaleiden tai granulosyyttien niukkuus	129
+Kilpirauhasen vajaatoiminta	104
+Krooniset hyytymishäiriöt	126 *
+Leukemiat, muut pahanlaatuiset veri- ja luuydintaudit sekä pahanlaatuiset imukudostaudit	117 *
+Lisäkilpirauhasten vajaatoiminta	106
+Lisämunuaisten kuorikerroksen vajaatoiminta	105
+MS-tauti	109 *
+Munuaisten vajaatoimintaan liittyvä vaikea anemia	138
+Myasthenia gravis	108
+Pahanlaatuiset kasvaimet, joita ei ole edellä erikseen mainittu	130 *
+Parkinsonin tauti ja siihen verrattavat liikehäiriöt	110 *
+Pernisiöösi anemia ja muut B12-vitamiinin imeytymishäiriöt	107
+Rakkoihottuma	135
+Rintasyöpä	115 *
+Sarkoidoosi	132
+Sukurauhasten vaikea vajaatoiminta	121
+Synnynnäiset aineenvaihduntahäiriöt	124 *
+Trigeminus- tai glossofaryngikusneuralgia	119
+Vaikea haiman krooninen vajaatoiminta	133
+Vaikeat psykoosit ja muut vaikeat mielenterveyden häiriöt	112
+Vesitystauti	102
+Yleinen erytrodermia	134
+Älyllisesti kehitysvammaisilla esiintyvät käyttäytymisen häiriöt	113
+
+Alempi erityiskorvaus (65 %)
+Sairaus	Korvausnumero
+Diabetes, muu kuin insuliinihoito	215 *
+Haavainen paksusuolentulehdus ja Crohnin tauti	208
+Hajapesäkkeiset sidekudostaudit, reumaattiset niveltulehdukset ja niihin verrattavat tilat	202 *
+Kihti	212
+Krooninen keuhkoastma ja sitä läheisesti muistuttavat krooniset obstruktiiviset keuhkosairaudet	203
+Krooninen sepelvaltimotauti ja krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö	206 *
+Krooninen sydämen vajaatoiminta	201
+Krooninen verenpainetauti	205
+Krooniset sydämen rytmihäiriöt	207
+Periytyvät rasva-aineenvaihdunnan vaikea-asteiset häiriöt (familiaalinen hyperkolesterolemia ja tyypin III dyslipoproteinemia)	211 *
+Vaikea ja pitkäaikainen narkolepsia	214 *
+
+Rajoitettu ylempi erityiskorvaus (100 %)
+Lääkeaine	Korvausnumero
+Abirateroni ja entsalutamidi	163
+Afatinibi ja gefitinibi	155
+Agalsidaasi alfa, agalsidaasi beeta ja migalastaatti	195
+Aksitinibi	168
+Alektinibi	1504
+Bosutinibi	170
+Brivarasetaami, eslikarbatsepiini, gabapentiini, lakosamidi, levetirasetaami, perampaneeli, pregabaliini, tiagabiini ja tsonisamidi	182
+Dabrafenibi (liitännäishoito)	1509
+Dabrafenibi, trametinibi ja vemurafenibi	167
+Daltepariini, enoksapariini ja tintsapariini	Reseptimerkintä + 115, 116, 117, 128 tai 130
+Daltepariini ja tintsapariini (yli 6 kuukauden hoidossa)	166
+Dasatinibi	150
+Deferasiroksi	175
+Dimetyylifumaraatti, glatirameeriasetaatti, interferoni beeta ja teriflunomidi (MS-tauti)	157
+Eliglustaatti, imigluseraasi ja velagluseraasi alfa	151
+Emisitsumabi	1503
+Erlotinibi	191
+Everolimuusi	158
+Fingolimodi	164
+Fulvestrantti	192
+Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon	194
+Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon	172
+Ibrutinibi	1512
+Iksatsomibi	1505
+Imatinibi	189
+Interferoni alfa	180
+Kabotsantinibi	1502
+Kasvuhormoni (aivolisäkkeen etulohkon vajaatoiminta)	101 Kasvuhormoni
+Kasvuhormoni (munuaisten vajaatoimintaan liittyvä kasvuhäiriö)	186
+Kritsotinibi	169
+Lamotrigiini ja topiramaatti	183
+Lantaanikarbonaatti, sevalameeri ja sukroferrinen oksihydroksidi	190
+Lapatinibi	156
+Lenalidomidi	153
+Lenvatinibi	1508
+Mekasermiini	154
+Nilotinibi	152
+Niraparibi	1510
+Olaparibi	1511
+Palbosiklibi	1501
+Parikalsitoli ja sinakalseetti	196
+Patsopanibi	159
+Pomalidomidi	1507
+Rasagiliini	193
+Regorafenibi	176
+Retigabiini ja vigabatriini	181
+Rufinamidi	199
+Ruksolitinibi	174
+Sorafenibi	198
+Sunitinibi	197
+Takrolimuusirakeet	Reseptimerkintä + 127
+Takrolimuusivoide	Reseptimerkintä + 127
+Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste	178
+Trastutsumabi-injektio	173
+Trifluridiinin ja tipirasiilin yhdistelmävalmiste	1506
+Vismodegibi	179
+Von Willebrand -tekijävalmiste	161
+
+Rajoitettu alempi erityiskorvaus (65 %)
+Lääkeaine	Korvausnumero
+Abatasepti, adalimumabi, anakinra, etanersepti, golimumabi, iksekitsumabi, infliksimabi, sarilumabi, sekukinumabi, sertolitsumabipegoli ja tosilitsumabi	281
+Alirokumabi  ja evolokumabi familiaalisen hyperkolesterolemian hoidossa	292
+Alirokumabi ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa	294
+Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani eteisvärinän hoitoon	290
+Barisitinibi	293
+Dulaglutidi, eksenatidi, liksisenatidi, liraglutidi ja semaglutidi (aikuiset)	285
+ 	294
+Febuksostaatti	288
+Ivabradiini	283
+Liraglutidi  (lapset ja nuoret)	295
+Natriumoksibaatti ja modafiniili	282
+Nintedanibi ja pirfenidoni	284
+Prasugreeli	Reseptimerkintä + 206
+Sakubitriilin ja valsartaanin yhdistelmävalmiste	289
+Siklosporiini-silmätippa	286
+Tikagrelori 60 mg	287
+Tikagrelori 90 mg	Reseptimerkintä + 206
+Tofasitinibi	291
+
+Lääkeaine	Korvausnumero
+Abatasepti*, adalimumabi*, anakinra*, etanersepti*, golimumabi*, iksekitsumabi, infliksimabi*, sarilumabi, sekukinumabi, sertolitsumabipegoli*, tosilitsumabi* ja ustekinumabi (reumasairaudet)	313
+Abirateroni* ja entsalutamidi*	352
+Adalimumabi (hidradenitis suppurativa)	380
+Adalimumabi, brodalumabi, etanersepti, guselkumabi, iksekitsumabi, infliksimabi, risankitsumabi, sekukinumabi, sertolitsumabipegoli ja ustekinumabi (psoriaasi)
+
+319
+Adalimumabi, golimumabi, infliksimabi ja ustekinumabi (suolistosairaudet)	326
+Afatinibi* ja gefitinibi*	341
+Agalsidaasi alfa*, agalsidaasi beeta* ja migalastaatti*	336
+Aksitinibi*	361
+Alektinibi	3001
+Alirokumabi* ja evolokumabi* familiaalisen hyperkolesterolemian hoidossa	388
+Alirokumabi* ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa	3015
+Alprostadiili, aviptadiilin ja fentolamiinin yhdistelmävalmiste ja sildenafiili	308
+Apiksabaani*, dabigatraani, edoksabaani ja rivaroksabaani* eteisvärinän hoitoon	351
+Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani lyhytaikaisessa hoidossa	Reseptimerkintä
+Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani syvän laskimotukoksen ja keuhkoembolian uusiutumisen pitkäaikaiseen ehkäisyyn	379
+Apremilasti ja dimetyylifumaraatti (psoriaasi)	377
+Asfotaasi alfa	387
+Atomoksetiini, deksamfetamiini, guanfasiini ja lisdeksamfetamiini	331
+Barisitinibi	3006
+Binimetinibi ja enkorafenibi	3016
+Bosutinibi*	360
+Brigatinib	3017
+Buprenorfiinia ja naloksonia sisältävä valmiste	339
+C1-esteraasin estäjä, ikatibantti ja konestaatti alfa	338
+Dabrafenibi ja trametinibi (liitännäishoito)*	3024
+Dabrafenibi*, trametinibi ja vemurafenibi*	362
+Dasatinibi*	324
+Dienogesti	355
+Dimetyylifumaraatti*, glatirameeriasetaatti*, interferoni beeta* ja teriflunomidi* (MS-tauti)	303
+Dornaasi alfa	304
+Dronedaroni	342
+Dulaglutidi*, eksenatidi*, liksisenatidi*, liraglutidi* ja semaglutidi (aikuiset)	346
+Dupilumabi	395
+Eliglustaatti*, imigluseraasi* ja velagluseraasi alfa*	333
+Emisitsumabi	397
+Erenumabi ja fremanetsumabi	3007
+Erlotinibi*	325
+Erytropoietiini* ja darbepoetiini*	306
+Everolimuusi*	340
+Febuksostaatti	349
+Ferrimaltoli	392
+Fidaksomisiini	Reseptimerkintä
+Fingolimodi* ja kladribiini	353
+Granisetroni-depotlaastari	Reseptimerkintä
+Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon*	332
+Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon*	375
+Ibrutinibi*	390
+Idebenoni	396
+Idelalisibi	372
+Iksatsomibi	398
+Imatinibi*	316
+Interferoni alfa*	302
+Ivabradiini*	354
+Kabotsantinibi*	3012
+Kalsiumkarbonaatti	3025
+Kapsaisiini	350
+Kasvuhormoni*	301
+Ketokonatsoli	3021
+Koivun allergeeniuute (aikuiset)	3023
+Koivun allergeeniuute ja heinien allergeeniuute	364
+Kolesevelaami	345
+Kritsotinibi*	363
+Lantaanikarbonaatti*, sevelameeri*ja sukroferrinen oksihydroksidi*	320
+Lapatinibi*	335
+Lenalidomidi*	329
+Lenvatinibi	3019
+Levofloksasiini-sumutinliuos	385
+Liraglutidi (lapset ja nuoret)*	3022
+Lorlatinibi	3026
+Mekasermiini*	330
+Metyraponi	365
+Midodriini 	3010
+Midostauriini	3014
+Nalmefeeni ja naltreksoni	309
+Naprokseenin ja esomepratsolin yhdistelmävalmiste	366
+Natriumdokusaatin ja sorbitolin yhdistelmävalmiste	368
+Nilotinibi*	328
+Nintedanibi* ja pirfenidoni*	356
+Niraparibi*	3009
+Obetikoolihappo	391
+Olaparibi*	389
+Omalitsumabi	344
+Oseltamiviiri ja tsanamiviiri	Reseptimerkintä
+Osimertinibi	3004
+Palbosiklibi*	394
+Parikalsitoli* ja sinakalseetti*	321
+Patiromeeri	3020
+Patsopanibi*	343
+Pimekrolimuusi- ja takrolimuusivoide*	317
+Pomalidomidi	393
+Ponatinibi	373
+Prasugreeli*	Reseptimerkintä
+Regorafenibi*	369
+Ribosiklibi	3002
+Rivaroksabaani sepelvaltimotaudin hoitoon	3013
+Roflumilasti	348
+Ruksolitinibi*	374
+Sakubitriilin ja valsartaanin yhdistelmävalmiste*	381
+Seleksipagi	383
+Sorafenibi*	323
+Sunitinibi*	322
+Syanokobalamiini*	376
+Tafamidiisi	3011
+Takrolimuusirakeet*	Reseptimerkintä
+Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste*	384
+Teriparatidi	318
+Tikagrelori 60 mg*	386
+Tikagrelori 90 mg*	Reseptimerkintä
+Tivotsanibi	3003
+Tofasitinibi*	3005
+Tolvaptaani	3008
+Trabektediini	337
+Trastutsumabi-injektio*	370
+Treprostiniili	334
+Trifluridiinin ja tipirasiilin yhdistelmävalmiste*	3018
+Tsolmitriptaaninenäsumute	Reseptimerkintä
+Varenikliini	Reseptimerkintä
+Venetoklaksi	399
+Vismodegibi*	378
+Von Willebrand -tekijävalmiste*	357
+
+Korvaus on 65 % valmisteen hinnasta seuraavissa sairauksissa
+Sairaus	Korvausnumero
+Pienten lasten lehmänmaitoallergia	505
+Pienten lasten lehmänmaitoallergia ja yliherkkyys tavanomaisille erityisvalmisteille	506
+Päivittäistä letkuruokintaa vaativat tilat	504
+Synnynnäiset aineenvaihdunnan häiriöt	503
+Korvaus on 40 % valmisteen hinnasta seuraavissa sairauksissa
+Sairaus	Korvausnumero
+Lasten vaikeat aliravitsemustilat	602
+Ravintoaineiden, lähinnä rasvojen, vaikeat imeytymishäiriöt	601
+
+
+

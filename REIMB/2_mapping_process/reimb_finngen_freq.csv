@@ -1,0 +1,253 @@
+code,freq_finngen,freq_finngen_per,n_patients,asterisk,name_finnish,name_english,valid_start_date,valid_end_date
+213,7231,2.33184%,7212,NA,NA,NA,NA,NA
+204,3398,1.09578%,3307,NA,NA,NA,NA,NA
+307,3319,1.07031%,3250,NA,NA,NA,NA,NA
+177,1761,0.56788%,1760,NA,NA,NA,NA,NA
+188,1449,0.46727%,1388,NA,NA,NA,NA,NA
+160,1439,0.46405%,1436,NA,NA,NA,NA,NA
+280,1393,0.44921%,1218,NA,NA,NA,NA,NA
+315,870,0.28056%,739,NA,NA,NA,NA,NA
+310,865,0.27894%,806,NA,NA,NA,NA,NA
+162,718,0.23154%,718,NA,NA,NA,NA,NA
+319,683,0.22025%,249,NA,NA,NA,NA,NA
+501,583,0.18801%,555,NA,NA,NA,NA,NA
+171,424,0.13673%,253,NA,NA,NA,NA,NA
+359,356,0.11480%,356,NA,NA,NA,NA,NA
+358,310,0.09997%,310,NA,NA,NA,NA,NA
+371,105,0.03386%,94,NA,NA,NA,NA,NA
+327,63,0.02032%,63,NA,NA,NA,NA,NA
+347,45,0.01451%,45,NA,NA,NA,NA,NA
+187,32,0.01032%,32,NA,NA,NA,NA,NA
+382,26,0.00838%,26,NA,NA,NA,NA,NA
+165,10,0.00322%,10,NA,NA,NA,NA,NA
+305,10,0.00322%,10,NA,NA,NA,NA,NA
+205,36208,11.67631%,34444,FALSE,Krooninen verenpainetauti,Chronic hypertension,NA,NA
+103,29902,9.64276%,29733,TRUE,"Diabetes, insuliinihoito","Diabetes, insuline treatment",NA,NA
+215,26432,8.52376%,26431,TRUE,"Diabetes, muu kuin insuliinihoito","Diabetes, other than insuline treatment",NA,NA
+203,24437,7.88041%,21954,FALSE,Krooninen keuhkoastma ja sitä läheisesti muistuttavat krooniset obstruktiiviset keuhkosairaudet,Chronic asthma and closely related chronic obstructive pulmonary diseases,NA,NA
+206,18921,6.10162%,18813,TRUE,Krooninen sepelvaltimotauti ja krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö,Chronic ischaemic heart disease and lipid metabolism disorder associated with chronic ischaemic heart disease,NA,NA
+112,16494,5.31896%,12343,FALSE,Vaikeat psykoosit ja muut vaikeat mielenterveyden häiriöt,Severe psychosis and other severe mental health disorders,NA,NA
+202,12150,3.91812%,11159,TRUE,"Hajapesäkkeiset sidekudostaudit, reumaattiset niveltulehdukset ja niihin verrattavat tilat","Diffuse connective tissue disorders, rheumatic arthritis and related conditions",NA,NA
+207,10328,3.33056%,10147,FALSE,Krooniset sydämen rytmihäiriöt,Chronic cardiac arrhytmias,NA,NA
+290,7733,2.49373%,7733,FALSE,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani eteisvärinän hoitoon",NA,NA,NA
+104,7436,2.39795%,7339,FALSE,Kilpirauhasen vajaatoiminta,Hypothyreosis,NA,NA
+114,7337,2.36603%,7302,FALSE,Glaukooma,Glaucoma,NA,NA
+115,6912,2.22897%,6355,TRUE,Rintasyöpä,Breast cancer,NA,NA
+130,6410,2.06709%,6248,TRUE,"Pahanlaatuiset kasvaimet, joita ei ole edellä erikseen mainittu","Malignant tumors, not mentioned elsewhere",NA,NA
+351,6150,1.98324%,6148,FALSE,"Apiksabaani*, dabigatraani, edoksabaani ja rivaroksabaani* eteisvärinän hoitoon",NA,NA,NA
+111,5518,1.77944%,5015,TRUE,Epilepsia ja siihen verrattavat kouristustilat,Epilepsy and related seizures,NA,NA
+313,4767,1.53726%,1770,FALSE,"Abatasepti*, adalimumabi*, anakinra*, etanersepti*, golimumabi*, iksekitsumabi, infliksimabi*, sarilumabi, sekukinumabi, sertolitsumabipegoli*, tosilitsumabi* ja ustekinumabi (reumasairaudet)",NA,NA,NA
+208,4209,1.35731%,4038,FALSE,Haavainen paksusuolentulehdus ja Crohnin tauti,Ulcerative colitis and Crohn disease,NA,NA
+281,4123,1.32958%,1641,FALSE,"Abatasepti, adalimumabi, anakinra, etanersepti, golimumabi, iksekitsumabi, infliksimabi, sarilumabi, sekukinumabi, sertolitsumabipegoli ja tosilitsumabi",NA,NA,NA
+116,3900,1.25767%,3614,TRUE,Eturauhassyöpä,Prostate cancer,NA,NA
+201,3789,1.22187%,3752,FALSE,Krooninen sydämen vajaatoiminta,Chronic heart failure,NA,NA
+117,3259,1.05096%,3031,TRUE,"Leukemiat, muut pahanlaatuiset veri- ja luuydintaudit sekä pahanlaatuiset imukudostaudit","Leukaemias, other malignant blood and bonemarrow diseases & malignant diseases of lymphatic system",NA,NA
+285,2009,0.64786%,2006,FALSE,"Dulaglutidi, eksenatidi, liksisenatidi, liraglutidi ja semaglutidi (aikuiset)",NA,NA,NA
+110,1969,0.63496%,1945,TRUE,Parkinsonin tauti ja siihen verrattavat liikehäiriöt,Parkinson diseases and related movement disorders,NA,NA
+123,1755,0.56595%,1715,TRUE,D-vitamiinin krooniset aineenvaihduntahäiriöt,Chronic disorders of D-vitamine metabolism,NA,NA
+346,1544,0.49791%,1517,FALSE,"Dulaglutidi*, eksenatidi*, liksisenatidi*, liraglutidi* ja semaglutidi (aikuiset)",NA,NA,NA
+317,1543,0.49758%,991,FALSE,Pimekrolimuusi- ja takrolimuusivoide*,NA,NA,NA
+138,1539,0.49629%,1491,FALSE,Munuaisten vajaatoimintaan liittyvä vaikea anemia,Severe anemia associated with renal failure,NA,NA
+107,1419,0.45760%,1415,FALSE,Pernisiöösi anemia ja muut B12-vitamiinin imeytymishäiriöt,Pernicious anemia and other disorders of B12 absorbtion,NA,NA
+182,1391,0.44857%,1362,FALSE,"Brivarasetaami, eslikarbatsepiini, gabapentiini, lakosamidi, levetirasetaami, perampaneeli, pregabaliini, tiagabiini ja tsonisamidi",NA,NA,NA
+121,1358,0.43793%,1340,FALSE,Sukurauhasten vaikea vajaatoiminta,Severe hypogonadism,NA,NA
+212,1318,0.42503%,1261,FALSE,Kihti,Gout,NA,NA
+127,1167,0.37633%,1161,TRUE,Elinsiirron tai kudossiirron jälkitila,Sequlae of organ or tissue transplantation,NA,NA
+157,1117,0.36021%,547,FALSE,"Dimetyylifumaraatti, glatirameeriasetaatti, interferoni beeta ja teriflunomidi (MS-tauti)",NA,NA,NA
+303,1075,0.34666%,558,FALSE,"Dimetyylifumaraatti*, glatirameeriasetaatti*, interferoni beeta* ja teriflunomidi* (MS-tauti)",NA,NA,NA
+308,1037,0.33441%,1015,FALSE,"Alprostadiili, aviptadiilin ja fentolamiinin yhdistelmävalmiste ja sildenafiili",NA,NA,NA
+504,936,0.30184%,769,FALSE,Päivittäistä letkuruokintaa vaativat tilat,NA,NA,NA
+128,911,0.29378%,881,TRUE,Gynekologiset syövät,Gynecological cancers,NA,NA
+190,799,0.25766%,486,FALSE,"Lantaanikarbonaatti, sevalameeri ja sukroferrinen oksihydroksidi",NA,NA,NA
+183,737,0.23767%,712,FALSE,Lamotrigiini ja topiramaatti,NA,NA,NA
+109,732,0.23605%,729,TRUE,MS-tauti,Multiple sclerosis,NA,NA
+133,713,0.22993%,708,FALSE,Vaikea haiman krooninen vajaatoiminta,Severe chronic hypofunction of pancreas,NA,NA
+379,669,0.21574%,668,FALSE,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani syvän laskimotukoksen ja keuhkoembolian uusiutumisen pitkäaikaiseen ehkäisyyn",NA,NA,NA
+601,628,0.20252%,580,FALSE,"Ravintoaineiden, lähinnä rasvojen, vaikeat imeytymishäiriöt",NA,NA,NA
+137,625,0.20155%,617,FALSE,Dialyysihoitoa edellyttävä uremia,Uremia requiring dialysis,NA,NA
+326,565,0.18220%,289,FALSE,"Adalimumabi, golimumabi, infliksimabi ja ustekinumabi (suolistosairaudet)",NA,NA,NA
+101,507,0.16350%,477,TRUE,Aivolisäkkeen etulohkon vajaatoiminta,Hypopituitarism,NA,NA
+132,469,0.15124%,444,FALSE,Sarkoidoosi,Sarcoidosis,NA,NA
+342,431,0.13899%,431,FALSE,Dronedaroni,NA,NA,NA
+163,378,0.12190%,356,FALSE,Abirateroni ja entsalutamidi,NA,NA,NA
+309,377,0.12157%,265,FALSE,Nalmefeeni ja naltreksoni,NA,NA,NA
+211,376,0.12125%,368,TRUE,Periytyvät rasva-aineenvaihdunnan vaikea-asteiset häiriöt (familiaalinen hyperkolesterolemia ja tyypin III dyslipoproteinemia),Severe familial disorders of lipid metabolism,NA,NA
+193,307,0.09900%,306,FALSE,Rasagiliini,NA,NA,NA
+166,298,0.09610%,272,FALSE,Daltepariini ja tintsapariini (yli 6 kuukauden hoidossa),NA,NA,NA
+318,291,0.09384%,256,FALSE,Teriparatidi,NA,NA,NA
+196,284,0.09158%,251,FALSE,Parikalsitoli ja sinakalseetti,NA,NA,NA
+153,268,0.08642%,220,FALSE,Lenalidomidi,NA,NA,NA
+189,261,0.08417%,148,FALSE,Imatinibi,NA,NA,NA
+284,261,0.08417%,222,FALSE,Nintedanibi ja pirfenidoni,NA,NA,NA
+119,251,0.08094%,248,FALSE,Trigeminus- tai glossofaryngikusneuralgia,Trigeminal or glossopharyngeal neuralgia,NA,NA
+602,244,0.07868%,177,FALSE,Lasten vaikeat aliravitsemustilat,NA,NA,NA
+289,227,0.07320%,227,FALSE,Sakubitriilin ja valsartaanin yhdistelmävalmiste,NA,NA,NA
+192,213,0.06869%,206,FALSE,Fulvestrantti,NA,NA,NA
+134,211,0.06804%,189,FALSE,Yleinen erytrodermia,Generalized erythroderma,NA,NA
+106,209,0.06740%,207,FALSE,Lisäkilpirauhasten vajaatoiminta,Hypoparathyroidism,NA,NA
+321,200,0.06450%,177,FALSE,Parikalsitoli* ja sinakalseetti*,NA,NA,NA
+180,195,0.06288%,194,FALSE,Interferoni alfa,NA,NA,NA
+197,193,0.06224%,184,FALSE,Sunitinibi,NA,NA,NA
+164,190,0.06127%,127,FALSE,Fingolimodi,NA,NA,NA
+108,188,0.06063%,182,FALSE,Myasthenia gravis,Myasthenia gravis,NA,NA
+113,178,0.05740%,177,FALSE,Älyllisesti kehitysvammaisilla esiintyvät käyttäytymisen häiriöt,Behavioural disorders in mental retardation,NA,NA
+105,162,0.05224%,159,FALSE,Lisämunuaisten kuorikerroksen vajaatoiminta,Adrenocortical insufficiency,NA,NA
+320,162,0.05224%,142,FALSE,"Lantaanikarbonaatti*, sevelameeri*ja sukroferrinen oksihydroksidi*",NA,NA,NA
+331,162,0.05224%,148,FALSE,"Atomoksetiini, deksamfetamiini, guanfasiini ja lisdeksamfetamiini",NA,NA,NA
+348,151,0.04869%,151,FALSE,Roflumilasti,NA,NA,NA
+381,151,0.04869%,151,FALSE,Sakubitriilin ja valsartaanin yhdistelmävalmiste*,NA,NA,NA
+102,150,0.04837%,149,FALSE,Vesitystauti,Diabetes insipidus,NA,NA
+301,149,0.04805%,86,FALSE,Kasvuhormoni*,NA,NA,NA
+356,146,0.04708%,126,FALSE,Nintedanibi* ja pirfenidoni*,NA,NA,NA
+120,145,0.04676%,115,FALSE,Gammaglobuliinin puutostila,Agammaglobulinemia,NA,NA
+288,132,0.04257%,132,FALSE,Febuksostaatti,NA,NA,NA
+159,113,0.03644%,107,FALSE,Patsopanibi,NA,NA,NA
+198,112,0.03612%,106,FALSE,Sorafenibi,NA,NA,NA
+191,111,0.03580%,105,FALSE,Erlotinibi,NA,NA,NA
+306,110,0.03547%,106,FALSE,Erytropoietiini* ja darbepoetiini*,NA,NA,NA
+349,107,0.03451%,107,FALSE,Febuksostaatti,NA,NA,NA
+353,106,0.03418%,88,FALSE,Fingolimodi* ja kladribiini,NA,NA,NA
+129,92,0.02967%,90,FALSE,Itsenäinen verihiutaleiden tai granulosyyttien niukkuus,Idiopathic throbocytopenia or agranulocytosis,NA,NA
+355,92,0.02967%,91,FALSE,Dienogesti,NA,NA,NA
+352,85,0.02741%,77,FALSE,Abirateroni* ja entsalutamidi*,NA,NA,NA
+181,83,0.02677%,78,FALSE,Retigabiini ja vigabatriini,NA,NA,NA
+377,77,0.02483%,71,FALSE,Apremilasti ja dimetyylifumaraatti (psoriaasi),NA,NA,NA
+505,69,0.02225%,68,FALSE,Pienten lasten lehmänmaitoallergia,NA,NA,NA
+176,68,0.02193%,68,FALSE,Regorafenibi,NA,NA,NA
+126,67,0.02161%,67,TRUE,Krooniset hyytymishäiriöt,Chronic coagulation syndromes,NA,NA
+158,62,0.01999%,59,FALSE,Everolimuusi,NA,NA,NA
+394,60,0.01935%,60,FALSE,Palbosiklibi*,NA,NA,NA
+178,58,0.01870%,58,FALSE,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste",NA,NA,NA
+167,51,0.01645%,49,FALSE,"Dabrafenibi, trametinibi ja vemurafenibi",NA,NA,NA
+155,47,0.01516%,47,FALSE,Afatinibi ja gefitinibi,NA,NA,NA
+304,47,0.01516%,15,FALSE,Dornaasi alfa,NA,NA,NA
+369,46,0.01483%,45,FALSE,Regorafenibi*,NA,NA,NA
+364,44,0.01419%,43,FALSE,Koivun allergeeniuute ja heinien allergeeniuute,NA,NA,NA
+362,40,0.01290%,37,FALSE,"Dabrafenibi*, trametinibi ja vemurafenibi*",NA,NA,NA
+150,39,0.01258%,27,FALSE,Dasatinibi,NA,NA,NA
+152,38,0.01225%,24,FALSE,Nilotinibi,NA,NA,NA
+122,37,0.01193%,33,FALSE,Aplastinen anemia,Aplastic anaemia,NA,NA
+339,35,0.01129%,20,FALSE,Buprenorfiinia ja naloksonia sisältävä valmiste,NA,NA,NA
+156,33,0.01064%,29,FALSE,Lapatinibi,NA,NA,NA
+302,32,0.01032%,28,FALSE,Interferoni alfa*,NA,NA,NA
+390,30,0.00967%,30,FALSE,Ibrutinibi*,NA,NA,NA
+168,29,0.00935%,27,FALSE,Aksitinibi,NA,NA,NA
+287,29,0.00935%,28,FALSE,Tikagrelori 60 mg,NA,NA,NA
+388,28,0.00903%,28,FALSE,Alirokumabi* ja evolokumabi* familiaalisen hyperkolesterolemian hoidossa,NA,NA,NA
+329,25,0.00806%,25,FALSE,Lenalidomidi*,NA,NA,NA
+135,24,0.00774%,23,FALSE,Rakkoihottuma,Pemphigus,NA,NA
+174,23,0.00742%,22,FALSE,Ruksolitinibi,NA,NA,NA
+186,22,0.00709%,19,FALSE,Kasvuhormoni (munuaisten vajaatoimintaan liittyvä kasvuhäiriö),NA,NA,NA
+380,21,0.00677%,18,FALSE,Adalimumabi (hidradenitis suppurativa),NA,NA,NA
+286,19,0.00613%,19,FALSE,Siklosporiini-silmätippa,NA,NA,NA
+340,19,0.00613%,19,FALSE,Everolimuusi*,NA,NA,NA
+506,19,0.00613%,16,FALSE,Pienten lasten lehmänmaitoallergia ja yliherkkyys tavanomaisille erityisvalmisteille,NA,NA,NA
+282,17,0.00548%,17,FALSE,Natriumoksibaatti ja modafiniili,NA,NA,NA
+322,17,0.00548%,17,FALSE,Sunitinibi*,NA,NA,NA
+344,17,0.00548%,14,FALSE,Omalitsumabi,NA,NA,NA
+372,17,0.00548%,17,FALSE,Idelalisibi,NA,NA,NA
+338,16,0.00516%,10,FALSE,"C1-esteraasin estäjä, ikatibantti ja konestaatti alfa",NA,NA,NA
+323,15,0.00484%,14,FALSE,Sorafenibi*,NA,NA,NA
+366,15,0.00484%,15,FALSE,Naprokseenin ja esomepratsolin yhdistelmävalmiste,NA,NA,NA
+503,14,0.00451%,13,FALSE,Synnynnäiset aineenvaihdunnan häiriöt,NA,NA,NA
+169,13,0.00419%,13,FALSE,Kritsotinibi,NA,NA,NA
+283,13,0.00419%,13,FALSE,Ivabradiini,NA,NA,NA
+124,12,0.00387%,12,TRUE,Synnynnäiset aineenvaihduntahäiriöt,Congenital metabolic disorders,NA,NA
+214,12,0.00387%,12,TRUE,Vaikea ja pitkäaikainen narkolepsia,Severe and chronic narcolepsy,NA,NA
+393,12,0.00387%,12,FALSE,Pomalidomidi,NA,NA,NA
+334,11,0.00355%,8,FALSE,Treprostiniili,NA,NA,NA
+376,10,0.00322%,10,FALSE,Syanokobalamiini*,NA,NA,NA
+199,9,0.00290%,9,FALSE,Rufinamidi,NA,NA,NA
+361,9,0.00290%,9,FALSE,Aksitinibi*,NA,NA,NA
+374,9,0.00290%,9,FALSE,Ruksolitinibi*,NA,NA,NA
+350,8,0.00258%,7,FALSE,Kapsaisiini,NA,NA,NA
+368,7,0.00226%,7,FALSE,Natriumdokusaatin ja sorbitolin yhdistelmävalmiste,NA,NA,NA
+175,6,0.00193%,6,FALSE,Deferasiroksi,NA,NA,NA
+316,6,0.00193%,6,FALSE,Imatinibi*,NA,NA,NA
+398,6,0.00193%,6,FALSE,Iksatsomibi,NA,NA,NA
+195,NA,NA,NA,FALSE,"Agalsidaasi alfa, agalsidaasi beeta ja migalastaatti",NA,NA,NA
+1504,NA,NA,NA,FALSE,Alektinibi,NA,NA,NA
+170,NA,NA,NA,FALSE,Bosutinibi,NA,NA,NA
+1509,NA,NA,NA,FALSE,Dabrafenibi (liitännäishoito),NA,NA,NA
+151,NA,NA,NA,FALSE,"Eliglustaatti, imigluseraasi ja velagluseraasi alfa",NA,NA,NA
+1503,NA,NA,NA,FALSE,Emisitsumabi,NA,NA,NA
+194,NA,NA,NA,FALSE,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon,NA,NA,NA
+172,NA,NA,NA,FALSE,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon,NA,NA,NA
+1512,NA,NA,NA,FALSE,Ibrutinibi,NA,NA,NA
+1505,NA,NA,NA,FALSE,Iksatsomibi,NA,NA,NA
+1502,NA,NA,NA,FALSE,Kabotsantinibi,NA,NA,NA
+1508,NA,NA,NA,FALSE,Lenvatinibi,NA,NA,NA
+154,NA,NA,NA,FALSE,Mekasermiini,NA,NA,NA
+1510,NA,NA,NA,FALSE,Niraparibi,NA,NA,NA
+1511,NA,NA,NA,FALSE,Olaparibi,NA,NA,NA
+1501,NA,NA,NA,FALSE,Palbosiklibi,NA,NA,NA
+1507,NA,NA,NA,FALSE,Pomalidomidi,NA,NA,NA
+173,NA,NA,NA,FALSE,Trastutsumabi-injektio,NA,NA,NA
+1506,NA,NA,NA,FALSE,Trifluridiinin ja tipirasiilin yhdistelmävalmiste,NA,NA,NA
+179,NA,NA,NA,FALSE,Vismodegibi,NA,NA,NA
+161,NA,NA,NA,FALSE,Von Willebrand -tekijävalmiste,NA,NA,NA
+292,NA,NA,NA,FALSE,Alirokumabi  ja evolokumabi familiaalisen hyperkolesterolemian hoidossa,NA,NA,NA
+294,NA,NA,NA,FALSE,Alirokumabi ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,NA,NA,NA
+293,NA,NA,NA,FALSE,Barisitinibi,NA,NA,NA
+294,NA,NA,NA,FALSE,NA,NA,NA,NA
+295,NA,NA,NA,FALSE,Liraglutidi  (lapset ja nuoret),NA,NA,NA
+291,NA,NA,NA,FALSE,Tofasitinibi,NA,NA,NA
+341,NA,NA,NA,FALSE,Afatinibi* ja gefitinibi*,NA,NA,NA
+336,NA,NA,NA,FALSE,"Agalsidaasi alfa*, agalsidaasi beeta* ja migalastaatti*",NA,NA,NA
+3001,NA,NA,NA,FALSE,Alektinibi,NA,NA,NA
+3015,NA,NA,NA,FALSE,Alirokumabi* ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,NA,NA,NA
+387,NA,NA,NA,FALSE,Asfotaasi alfa,NA,NA,NA
+3006,NA,NA,NA,FALSE,Barisitinibi,NA,NA,NA
+3016,NA,NA,NA,FALSE,Binimetinibi ja enkorafenibi,NA,NA,NA
+360,NA,NA,NA,FALSE,Bosutinibi*,NA,NA,NA
+3017,NA,NA,NA,FALSE,Brigatinib,NA,NA,NA
+3024,NA,NA,NA,FALSE,Dabrafenibi ja trametinibi (liitännäishoito)*,NA,NA,NA
+324,NA,NA,NA,FALSE,Dasatinibi*,NA,NA,NA
+395,NA,NA,NA,FALSE,Dupilumabi,NA,NA,NA
+333,NA,NA,NA,FALSE,"Eliglustaatti*, imigluseraasi* ja velagluseraasi alfa*",NA,NA,NA
+397,NA,NA,NA,FALSE,Emisitsumabi,NA,NA,NA
+3007,NA,NA,NA,FALSE,Erenumabi ja fremanetsumabi,NA,NA,NA
+325,NA,NA,NA,FALSE,Erlotinibi*,NA,NA,NA
+392,NA,NA,NA,FALSE,Ferrimaltoli,NA,NA,NA
+332,NA,NA,NA,FALSE,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon*,NA,NA,NA
+375,NA,NA,NA,FALSE,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon*,NA,NA,NA
+396,NA,NA,NA,FALSE,Idebenoni,NA,NA,NA
+354,NA,NA,NA,FALSE,Ivabradiini*,NA,NA,NA
+3012,NA,NA,NA,FALSE,Kabotsantinibi*,NA,NA,NA
+3025,NA,NA,NA,FALSE,Kalsiumkarbonaatti,NA,NA,NA
+3021,NA,NA,NA,FALSE,Ketokonatsoli,NA,NA,NA
+3023,NA,NA,NA,FALSE,Koivun allergeeniuute (aikuiset),NA,NA,NA
+345,NA,NA,NA,FALSE,Kolesevelaami,NA,NA,NA
+363,NA,NA,NA,FALSE,Kritsotinibi*,NA,NA,NA
+335,NA,NA,NA,FALSE,Lapatinibi*,NA,NA,NA
+3019,NA,NA,NA,FALSE,Lenvatinibi,NA,NA,NA
+385,NA,NA,NA,FALSE,Levofloksasiini-sumutinliuos,NA,NA,NA
+3022,NA,NA,NA,FALSE,Liraglutidi (lapset ja nuoret)*,NA,NA,NA
+3026,NA,NA,NA,FALSE,Lorlatinibi,NA,NA,NA
+330,NA,NA,NA,FALSE,Mekasermiini*,NA,NA,NA
+365,NA,NA,NA,FALSE,Metyraponi,NA,NA,NA
+3010,NA,NA,NA,FALSE,Midodriini,NA,NA,NA
+3014,NA,NA,NA,FALSE,Midostauriini,NA,NA,NA
+328,NA,NA,NA,FALSE,Nilotinibi*,NA,NA,NA
+3009,NA,NA,NA,FALSE,Niraparibi*,NA,NA,NA
+391,NA,NA,NA,FALSE,Obetikoolihappo,NA,NA,NA
+389,NA,NA,NA,FALSE,Olaparibi*,NA,NA,NA
+3004,NA,NA,NA,FALSE,Osimertinibi,NA,NA,NA
+3020,NA,NA,NA,FALSE,Patiromeeri,NA,NA,NA
+343,NA,NA,NA,FALSE,Patsopanibi*,NA,NA,NA
+373,NA,NA,NA,FALSE,Ponatinibi,NA,NA,NA
+3002,NA,NA,NA,FALSE,Ribosiklibi,NA,NA,NA
+3013,NA,NA,NA,FALSE,Rivaroksabaani sepelvaltimotaudin hoitoon,NA,NA,NA
+383,NA,NA,NA,FALSE,Seleksipagi,NA,NA,NA
+3011,NA,NA,NA,FALSE,Tafamidiisi,NA,NA,NA
+384,NA,NA,NA,FALSE,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste*",NA,NA,NA
+386,NA,NA,NA,FALSE,Tikagrelori 60 mg*,NA,NA,NA
+3003,NA,NA,NA,FALSE,Tivotsanibi,NA,NA,NA
+3005,NA,NA,NA,FALSE,Tofasitinibi*,NA,NA,NA
+3008,NA,NA,NA,FALSE,Tolvaptaani,NA,NA,NA
+337,NA,NA,NA,FALSE,Trabektediini,NA,NA,NA
+370,NA,NA,NA,FALSE,Trastutsumabi-injektio*,NA,NA,NA
+3018,NA,NA,NA,FALSE,Trifluridiinin ja tipirasiilin yhdistelmävalmiste*,NA,NA,NA
+399,NA,NA,NA,FALSE,Venetoklaksi,NA,NA,NA
+378,NA,NA,NA,FALSE,Vismodegibi*,NA,NA,NA
+357,NA,NA,NA,FALSE,Von Willebrand -tekijävalmiste*,NA,NA,NA
