@@ -20,7 +20,7 @@ library(UpSetR)
 
 ```{r load, message=FALSE, warning=FALSE}
 vnro_standard <- read_delim("./vnr_from_fimea_6_4_2020.csv", delim = ";")
-freq_vnro_finngen <- read_csv("./freq_nomesco_finngen.csv") %>% select(-X1) 
+freq_vnro_finngen <- read_csv("../1_source_codes_freq/freq_purch_finngen.csv") %>% select(-X1) 
 
 
 path <- "C:\\Users\\javier\\WorkSpace\\VNRO\\fimea"
@@ -35,6 +35,8 @@ aki <- read_feather(file.path(data_folder_path,
                                       "VNRO.feather") )
 
 atc_omop <- read_csv("OMOP_ATC.csv")
+
+ari <- read_excel("./vnr_vahvuus_pkoko_Arille_210220-1.xlsx")
 ```
 
 
@@ -53,6 +55,9 @@ fimea_web <- fimea_web %>% mutate(VNRNRO = as.integer(VNRNRO))%>%
 aki <- aki%>% mutate(vnr = as.integer(vnr))%>% 
   rename(atc = ATC, vnr = vnr)
 
+ari <-  ari %>% mutate(vnr = as.integer(vnr))%>% 
+  rename(atc = ATC, vnr = vnr)
+
 ```
 
 
@@ -62,7 +67,8 @@ joined <- bind_rows(
   vnro_standard %>% select(atc,vnr) %>% mutate(ss="slack"),
   freq_vnro_finngen %>% select(atc,vnr) %>% mutate(ss="fg_count"),
   fimea_web %>% select(atc,vnr) %>% mutate(ss="fimea_web"),
-  aki %>% select(atc,vnr) %>% mutate(ss="aki")
+  aki %>% select(atc,vnr) %>% mutate(ss="aki"),
+  ari %>% select(atc,vnr) %>% mutate(ss="ari")
 ) %>% 
   filter( (vnr>=1 & vnr<=199999)  | (vnr>=370000 & vnr<=599999))
 ```
