@@ -1,0 +1,188 @@
+---
+title: "Study VNRO"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+library(feather)
+library(ggupset)
+library(UpSetR)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+vnro_standard <- read_delim("./vnr_from_fimea_6_4_2020.csv", delim = ";")
+freq_vnro_finngen <- read_csv("./freq_nomesco_finngen.csv") %>% select(-X1) 
+
+
+path <- "C:\\Users\\javier\\WorkSpace\\VNRO\\fimea"
+data_folder_path <- "C:\\Users\\javier\\WorkSpace"
+
+p_0 <- read_delim(file.path(path, "pakkaus_nolla.txt"), delim = ";")
+p_1 <- read_delim(file.path(path, "pakkaus1.txt"), delim = ";")
+fimea_web<- bind_rows( p_0 %>% filter(!is.na(VNRNRO)), p_1 %>% filter(!is.na(VNRNRO)))
+
+aki <- read_feather(file.path(data_folder_path,
+                                      "VNRO",
+                                      "VNRO.feather") )
+
+atc_omop <- read_csv("OMOP_ATC.csv")
+```
+
+
+
+```{r format}
+# format similarly 
+vnro_standard <- vnro_standard %>% mutate(VNRNRO = as.integer(VNRNRO)) %>% 
+  rename(atc = ATCKOODI, vnr = VNRNRO) 
+
+freq_vnro_finngen <- freq_vnro_finngen %>% mutate(CODE3 = as.integer(CODE3))%>% 
+  rename(atc = CODE1, vnr = CODE3)
+
+fimea_web <- fimea_web %>% mutate(VNRNRO = as.integer(VNRNRO))%>% 
+  rename(atc = ATCKOODI, vnr = VNRNRO)
+
+aki <- aki%>% mutate(vnr = as.integer(vnr))%>% 
+  rename(atc = ATC, vnr = vnr)
+
+```
+
+
+
+```{r}
+joined <- bind_rows(
+  vnro_standard %>% select(atc,vnr) %>% mutate(ss="slack"),
+  freq_vnro_finngen %>% select(atc,vnr) %>% mutate(ss="fg_count"),
+  fimea_web %>% select(atc,vnr) %>% mutate(ss="fimea_web"),
+  aki %>% select(atc,vnr) %>% mutate(ss="aki")
+) %>% 
+  filter( (vnr>=1 & vnr<=199999)  | (vnr>=370000 & vnr<=599999))
+```
+
+
+```{r}
+aa <- joined %>% mutate(val=as.integer(1)) %>% select(-atc) %>%  distinct() %>% spread(ss, val )%>%
+  mutate_at(vars(aki, fg_count, fimea_web, slack), ~if_else(is.na(.),0,1))
+
+
+aa %>% 
+  as.data.frame() %>% 
+  upset(order.by = "freq")
+```
+
+
+
+
+
+
+```{r}
+
+aa %>%  filter(!fimea_web & !slack & !aki & fg_count) %>%
+  mutate(between_000001_199999 = (vnr>=1 & vnr<=199999), between_370000_599999 = (vnr>=370000 & vnr<=599999)) %>%  
+  count(between_000001_199999, between_370000_599999)
+```
+
+
+
+```{r}
+join_fg <- left_join(freq_vnro_finngen, atc_omop %>% rename(atc = concept_code), by="atc")
+
+no_finngen_standard <- join_fg %>% filter(is.na(concept_id  )) %>% select(atc, vnr, n_codes) %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+
+no_finngen_standard
+```
+
+```{r}
+join_fg <- left_join(freq_vnro_finngen, aki, by="vnr")
+
+no_finngen_standard <- join_fg %>% filter(is.na(atc.y )) %>% select(atc.y, vnr, n_codes) %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+
+no_finngen_standard
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Number of codes in each source: 
+```{r}
+vnro_standard %>%  nrow()
+freq_vnro_finngen %>%  nrow()
+```
+How many with no ATC, how many with no VNRO in finngen :
+```{r}
+freq_vnro_finngen %>%  filter(is.na(atc)) %>% nrow()
+freq_vnro_finngen %>%  filter(is.na(vnr)) %>% nrow()
+
+total_events <- sum(freq_vnro_finngen$n_codes)
+```
+We should take vnr then 
+
+How many with same vnr have different atc
+```{r}
+freq_vnro_finngen %>%  count(vnr, sort = T ) %>% filter(n>1) %>%  count(n)
+#freq_vnro_finngen %>%  filter(!is.na(atc)) %>% count(vnr, sort = T ) %>% filter(n>1) %>%  count(n)
+```
+```{r}
+vnro_standard %>% distinct(atc, vnr) %>%  count(vnr, sort = T ) #%>% filter(n>1) %>%  count(n)
+#freq_vnro_finngen %>%  filter(!is.na(atc)) %>% count(vnr, sort = T ) %>% filter(n>1) %>%  count(n)
+```
+
+
+## Study codes in FinnGen
+
+```{r}
+finngen_join <- left_join(freq_vnro_finngen, vnro_standard, by = c("atc", "vnr")) %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+```
+
+**How many codes labeled as vnro in FinnGen are not in the vnro standard ?**
+```{r paged.print=TRUE}
+no_finngen_standard <- finngen_join %>% filter(is.na(PAATOSPVM)) %>% select(atc, vnr, n_codes) 
+```
+
+There are `r no_finngen_standard %>%  nrow()` codes not found in the standard:
+
+```{r paged.print=TRUE}
+no_finngen_standard %>% mutate(per_freq = n_codes/total_events*100)
+```
+
+
+
+```{r}
+no_finngen_standard %>% mutate(per_freq = n_codes/total_events*100) %>% .$per_freq %>% sum()
+```
+
+
+
+```{r}
+finngen_standard <- finngen_join %>% filter(!is.na(ShortName)) %>% select(CodeId, n_codes, freq_finngen_per, LongName, ENGLongName, Description, HierarchyLevel, BeginningDate, ExpiringDate, LastModifiedDate)
+finngen_standard
+```
+
+
+```{r}
+finngen_standard <- finngen_standard %>% mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .)) 
+
+write_csv(finngen_standard, "./standard_vnro_with_freq.csv")
+```
+
+
+

@@ -1,0 +1,88 @@
+---
+title: "Prepare ICD9fi codes for USAGI"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+library(stringdist)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+icd9fi <- read_csv("./THL_ICD9fi_matched_ICD9CM_and_Wolfbane_ICD9.csv") 
+freq_icd9fi_finngen <- read_csv("../1_source_codes_freq/freq_icd9fi_finngen.csv") %>% select(-X1)
+```
+
+
+Number of codes in each source: 
+```{r}
+icd9fi %>%  nrow()
+freq_icd9fi_finngen %>%  nrow()
+```
+Number of icd9fi events in finngen :
+```{r}
+n_events_finngen <- freq_icd9fi_finngen$n_codes %>% sum()
+
+number(n_events_finngen)
+```
+# study ICD9
+
+```{r}
+icd9fi %>%  count(match_type)
+```
+
+
+## Improve the name in icd9 
+
+```{r}
+icd9fi %>% 
+  #lower case
+  mutate( icd9_renamed = str_to_lower(ICD9TXT)) %>% 
+  mutate( icd9_renamed = str_replace(icd9_renamed, "[:space:]nud[:space:]", ", unspecified")) %>% 
+  mutate( icd9_renamed = str_replace(icd9_renamed, "[:space:]alia[:space:]", ", unspecified")) 
+```
+
+
+
+### Does full match agree on name ? 
+
+
+
+```{r}
+icd9fi %>% filter(match_type %in% c("full_match", "unique_parent_match"))  %>% 
+  mutate(ICD9TXT = str_to_lower(ICD9TXT), Wolfbane_name = str_to_lower(Wolfbane_name)) %>% 
+        mutate(English_name_match_level = stringdist(ICD9TXT,Wolfbane_name) ) %>% 
+        count(English_name_match_level) 
+```
+
+
+
+
+## Study codes in FinnGen
+
+```{r}
+finngen_join <- left_join(freq_icd9fi_finngen %>% rename(ICD9=CODE1), icd9fi, by = "ICD9") %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+```
+
+**How many codes labeled as icd9fi in FinnGen are not in the icd9fi standard ?**
+```{r paged.print=TRUE}
+no_finngen_standard <- finngen_join %>% filter(is.na(concept_name)) %>% select(ICD9, n_codes, freq_finngen_per, ICD9TXT , concept_name) 
+```
+
+There are `r no_finngen_standard %>%  nrow()` codes not found in the standard:
+
+```{r paged.print=TRUE}
+no_finngen_standard 
+```
+
+Lot of codes missing, not so much in absolute terms `r sum(no_finngen_standard$n_codes)/n_events_finngen*100 `
+

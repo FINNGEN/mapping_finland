@@ -1,0 +1,43 @@
+---
+title: "Study ICD8fi codes"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+icd8fi <- read_tsv("../2_source_codes/ICD8Merged_Version5_UTF8.txt") %>% filter(!is.na(Code))
+freq_icd8fi_finngen <- read_csv("../1_source_codes_freq/freq_icd8fi_finngen.csv") %>% select(-X1)
+```
+
+## Append freq to the ICD8fi codes
+
+```{r}
+n_events_finngen <- freq_icd8fi_finngen$n_codes %>% sum()
+
+finngen_join <- left_join(freq_icd8fi_finngen %>% rename(Code=CODE1), icd8fi, by = "Code") %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+
+finngen_standard <- finngen_join %>% filter(!is.na(DF6_Freq)) %>% select(Code, n_codes, freq_finngen_per, Finnish, English)
+finngen_standard
+```
+
+
+```{r}
+finngen_standard <- finngen_standard %>% mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .)) 
+
+write_csv(finngen_standard, "./standard_icd8fi_with_freq.csv")
+```
+
+
+

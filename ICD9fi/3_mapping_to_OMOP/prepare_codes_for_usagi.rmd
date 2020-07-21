@@ -1,0 +1,46 @@
+---
+title: "Prepare ICD9fi codes for USAGI"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+library(stringdist)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+icd9fi <- read_csv("../2_source_codes/THL_ICD9fi_matched_ICD9CM_and_Wolfbane_ICD9.csv") 
+freq_icd9fi_finngen <- read_csv("../1_source_codes_freq/freq_icd9fi_finngen.csv") %>% select(-X1)
+```
+
+## Join freqs
+
+```{r}
+n_events_finngen <- freq_icd9fi_finngen$n_codes %>% sum()
+
+finngen_join <- left_join(freq_icd9fi_finngen %>% rename(ICD9=CODE1), icd9fi, by = "ICD9") %>%
+  mutate( freq_finngen_per=percent(n_codes/n_events_finngen))
+
+finngen_standard <- finngen_join %>% filter(!is.na(concept_name)) %>% 
+  select(ICD9, n_codes, freq_finngen_per, ICD9TXT , concept_name) %>% 
+  rename(Finnish_name=ICD9TXT, possible_english_name=concept_name)
+finngen_standard
+```
+
+
+```{r}
+finngen_standard <- finngen_standard %>% mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .)) 
+
+write_csv(finngen_standard, "./standard_icd9fi_with_freq.csv")
+```
+
+
+

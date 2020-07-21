@@ -1,0 +1,190 @@
+---
+title: "add derived codes"
+output: 
+    github_document:
+        df_print: tibble
+        toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(stringdist)
+```
+
+
+# Load ICD10fi and ICD10who from `1_source_files`
+
+```{r load, message=FALSE}
+
+ICD10fi <- read_delim("../1_source_files/58_1471433699473.txt", ";", 
+                               locale = locale(encoding = 'ISO-8859-1'),
+                               col_types = cols( .default = col_character() )
+                               )
+
+```
+
+Get codes with a descrived epasion in `ALONG:Huom.`
+
+```{r}
+icd10fi_expanded <- ICD10fi %>% 
+  filter(!is.na(`A:Yhdistelymerkki`)) %>% 
+  filter(!str_detect(CodeId,"[:digit:]$")) %>% #dont end with mark
+  filter(str_detect(`ALONG:Huom.`, "[:upper:][:digit:][:digit:]")) %>% 
+  filter(str_detect(`ALONG:Huom.`, "tiologi")) %>% 
+  arrange(`ALONG:Huom.`) %>% 
+  select(CodeId,`ALONG:Huom.`) 
+```
+
+
+
+## Process code
+```{r}
+#code
+icd10fi_expanded_code <- 
+icd10fi_expanded %>% filter(!(CodeId %in% icd10fi_expanded_group$CodeId)) %>% 
+ mutate(codes_text = str_extract(`ALONG:Huom.`, "[:upper:][:digit:][:digit:].*")) %>% 
+  mutate(codes_text = str_replace(codes_text, "(.*)\\s-\\s.*", "\\1")) %>% 
+  # tai to , 
+  mutate_at(vars(codes_text), str_replace_all,"\\stai\\s", "|")
+```
+
+```{r}
+new_codes <- icd10fi_expanded_code %>% 
+  mutate(code2 = map(codes_text, ~{str_split(.,"\\|") %>% unlist() %>% as_tibble()})) %>% unnest(code2) %>% 
+  mutate(new_CodeId = str_c(CodeId, value))
+  
+#new_codes %>%   print(n=300)
+
+```
+
+How many already exists
+```{r}
+left_join(new_codes, 
+          ICD10fi %>% select(CodeId) %>% rename(new_CodeId = CodeId) %>% mutate(is=TRUE), 
+          by="new_CodeId"
+) %>%
+  filter(!is.na(is))
+```
+31 of the already exists 
+
+
+
+
+
+## Process class/chapter/group
+```{r}
+range_to_regex <- function(match){
+  range <- str_extract_all(match, "[:digit:][:digit:]") %>% unlist() %>% as.integer()
+  match <- range[1]:range[2] %>% as.character() %>% if_else(nchar(.)==1, str_c("0",.),.) %>% str_c(collapse = "|")
+  return(str_c("(",match,")"))
+}
+
+#group
+icd10fi_expanded_group <- 
+icd10fi_expanded %>% filter(str_detect(`ALONG:Huom.`, "luokasta|luvusta|ryhmistä|ryhmästä|rymistä")) %>% 
+  #extract codes
+  mutate(group_text = str_extract(`ALONG:Huom.`, "[:upper:][:digit:][:digit:].*")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\s-\\s.*", "\\1")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\.\\s.*", "\\1")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\.\\s.*", "\\1")) %>% 
+  #extract negations
+  mutate(group_text_ei = str_extract(group_text, "\\(ei.*\\)")) %>% 
+  mutate(group_text = str_remove(group_text, "\\s\\(ei.*\\)")) %>% 
+  mutate(group_text_ei = str_replace(group_text_ei, "\\(ei\\s(.*)\\)", "\\1")) %>% 
+  # tai to , 
+  mutate_at(vars(group_text, group_text_ei), str_replace_all, "\\stai\\sryhmistä\\s|\\stai\\sryhmästä\\s|,\\s|\\stai\\s", "|") %>%
+  # format as regex
+  mutate(group_reg=group_text, group_reg_ei=group_text_ei) %>% 
+  mutate(group_reg = str_replace(group_reg, "C00-D", "C00-C99\\|D00-D")) %>% 
+  mutate(group_reg = str_replace(group_reg, "A([:digit:][:digit:])-B", "A\\1-A99\\|B00-B")) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "-[:upper:]", "-" ) %>% 
+  #mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "([:digit:][:digit:]-[:digit:][:digit:])", "\\[\\1\\]" ) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "\\|", "|^" ) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), ~{str_c("^",.)} ) %>% 
+  mutate(group_reg = str_replace_all(group_reg, "[:digit:][:digit:]-[:digit:][:digit:]", range_to_regex)) %>% 
+  mutate(group_reg_ei = str_replace_all(group_reg_ei, "50-53", "(50|51|52|53)"))%>% 
+  #extract merkki
+  mutate(group_reg_4merkki = str_extract(`ALONG:Huom.`, "(\\.[:digit:])($|\\.$)")) %>% 
+  mutate(group_reg_4merkki = str_replace(group_reg_4merkki, "\\.$", "")) %>% 
+  mutate(group_reg_4merkki = str_c(group_reg_4merkki, "$") ) 
+
+  
+  
+  icd10fi_expanded_group %>% select(group_text, group_reg, group_reg_ei, group_reg_4merkki) %>% print(n=300)
+
+```
+
+
+```{r}
+icd10fi_leaves <- ICD10fi %>% 
+    filter(`A:Lehtisolmu`=="T" & is.na(`A:Yhdistelymerkki`))
+```
+
+
+
+
+```{r}
+new_codes <- icd10fi_expanded_group %>% #slice(1)%>% 
+  mutate(code2 = map(group_reg, function(a){
+    icd10fi_leaves %>% select(CodeId) %>%  filter(str_detect(CodeId, a)) %>% rename(CodeId2 = CodeId)
+  })) %>% unnest(code2)  %>% 
+  mutate(new_CodeId = str_c(CodeId, CodeId2))
+  
+#new_codes #%>%   print(n=300)
+
+```
+
+How many already exists
+```{r}
+left_join(new_codes, 
+          ICD10fi %>% select(CodeId) %>% rename(new_CodeId = CodeId) %>% mutate(is=TRUE), 
+          by="new_CodeId"
+) %>%
+  filter(!is.na(is))
+```
+None of the already exists 
+
+
+
+
+
+```{r}
+range_to_regex <- function(match){
+  range <- str_extract_all(match, "[:digit:][:digit:]") %>% unlist() %>% as.integer()
+  match <- range[1]:range[2] %>% as.character() %>% if_else(nchar(.)==1, str_c("0",.),.) %>% str_c(collapse = "|")
+  return(str_c("(",match,")"))
+}
+
+b <- str_replace_all("^A[00-99]|^B[00-99]", "[:digit:][:digit:]-[:digit:][:digit:])", range_to_regex)
+```
+
+
+
+
+
+
+
+
+```{r}
+new_codes %>%  rename(eng_name1 = `A:Long_name`) %>% select(new_CodeId, eng_name1,CodeId2) %>% 
+  left_join( ICD10fi %>%  rename(eng_name2 = `A:Long_name`, CodeId2 = CodeId) %>% select(eng_name2, CodeId2), by="CodeId2") %>% view()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

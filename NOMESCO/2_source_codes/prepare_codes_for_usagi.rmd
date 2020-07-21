@@ -1,5 +1,5 @@
 ---
-title: "Prepare NOMESCO codes for USAGI"
+title: "Study NOMESCO codes"
 output: 
     github_document:
         df_print: tibble
