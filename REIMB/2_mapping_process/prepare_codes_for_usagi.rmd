@@ -26,14 +26,15 @@ reimb_standard <- read_tsv("./KELA_korvausnumerot_KELAn_sivuilta_kopioitu_2020-0
 reimb_standard_eng <- reimb_standard_eng %>% rename(code = Code, name_english = `Name in English`, name_finnish = `Name in Finnish`)
 
 reimb_standard <- reimb_standard %>% 
-  mutate(asterisk = str_detect(Korvausnumero, "\\*"), Korvausnumero = as.integer(str_replace(Korvausnumero,"\\*","" ))) %>% 
-  rename(code = Korvausnumero, name_finnish = Sairaus) %>% 
+  rename(code = Korvausnumero, name_finnish = Sairaus) %>%  
+  mutate(asterisk_after_code = str_detect(code, "\\*"), code = as.integer(str_replace(code,"\\*","" ))) %>% 
+  mutate(asterisk_after_name = str_detect(name_finnish, "\\*")) %>% 
   filter(!is.na(code))
 
 reimb <- left_join(reimb_standard, 
                    reimb_standard_eng %>% select(-name_finnish), 
                    by="code") %>% 
-  select(code, asterisk, name_finnish, name_english)
+  select(code, asterisk_after_code, name_finnish, asterisk_after_name, name_english)
 
 
 
@@ -63,7 +64,7 @@ n_events_finngen <- freq_reimb_finngen$freq_finngen %>% sum()
 
 **How many codes labeled as icd10fi in FinnGen are not in the icd10fi standard ?**
 ```{r paged.print=TRUE}
-no_finngen_standard <- finngen_join %>% filter(is.na(asterisk)) %>% select(code, freq_finngen ) %>%
+no_finngen_standard <- finngen_join %>% filter(is.na(asterisk_after_code)) %>% select(code, freq_finngen ) %>%
   mutate( freq_finngen_per=percent(freq_finngen/n_events_finngen))
 
 no_finngen_standard
@@ -80,10 +81,10 @@ finngen_join <- finngen_join %>%
   mutate(valid_start_date = as.Date(NA), valid_end_date = as.Date(NA), invalid_reason=as.character(NA)) %>% 
   select(code, freq_finngen, freq_finngen_per, 3:9)
 
-finngen_join %>% arrange(-is.na(asterisk)) 
+finngen_join %>% arrange(-is.na(asterisk_after_code)) 
 
 
-write_csv(finngen_join %>% arrange(-is.na(asterisk)), "./reimb_finngen_freq.csv")
+write_csv(finngen_join %>% arrange(-is.na(asterisk_after_code)), "./reimb_finngen_freq.csv")
 ```
 
 This table is based on `KELA_korvausnumerot_KELAn_sivuilta_kopioitu_2020-04-03.txt`.
