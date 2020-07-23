@@ -9,6 +9,8 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
+rm(list = ls())
+
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
@@ -120,7 +122,7 @@ icd10fi_expansion_description %>% filter(str_detect(`ALONG:Huom.`, "luokasta|luv
   #extract merkki
   mutate(group_reg_4merkki = str_extract(`ALONG:Huom.`, "(\\.[:digit:])($|\\.$)")) %>% 
   mutate(group_reg_4merkki = str_replace(group_reg_4merkki, "\\.$", "")) %>% 
-  mutate(group_reg_4merkki = str_c(group_reg_4merkki, "$") ) 
+  mutate(group_reg_4merkki = str_c("\\", group_reg_4merkki) ) 
 
   
   
@@ -143,8 +145,11 @@ icd10fi_extended_by_group <- bind_rows(icd10fi_extended_by_group, b) %>%  distin
 
 Extend leaves only 
 ```{r}
-icd10fi_leaves <- ICD10fi %>% 
-    filter(`A:Lehtisolmu`=="T" & is.na(`A:Yhdistelymerkki`))
+icd10fi_leaves <- ICD10fi %>%
+  filter(`A:Lehtisolmu`=="T" & is.na(`A:Koodi2`)) %>% 
+  select(CodeId) %>% 
+  mutate(CodeId = str_replace(CodeId,"\\+|\\*|\\#|\\&", ""))
+  
 ```
 
 
@@ -162,6 +167,8 @@ icd10fi_extended_by_group <- icd10fi_extended_by_group %>% #slice(1)%>%
   mutate(new_CodeId = str_c(CodeId, CodeId2))
   
 icd10fi_extended_by_group
+
+#icd10fi_extended_by_group %>%filter( str_detect(CodeId, "N08.3")) %>% view
 
 ```
 
@@ -191,10 +198,10 @@ all_codes_tmp <- bind_rows(
     mutate(orginal=TRUE) %>%  
     select(CodeId, CODE1, CODE2), 
   new_icd10fi_extended_by_one_code %>%  rename(CODE1 = CodeId, CodeId = new_CodeId, CODE2 = value) %>% 
-    mutate(CODE1 = str_extract(CODE1, "[:upper:][:digit:][:digit:]\\.?[:digit:]"), orginal=FALSE) %>% 
+    mutate(CODE1 = str_extract(CODE1, "[:upper:][:digit:][:digit:]\\.?[:digit:]*"), orginal=FALSE) %>% 
     select(CodeId, CODE1, CODE2, orginal),
   new_icd10fi_extended_by_group %>%  rename(CODE1 = CodeId, CodeId = new_CodeId, CODE2 = CodeId2) %>% 
-    mutate(CODE1 = str_extract(CODE1, "[:upper:][:digit:][:digit:]\\.?[:digit:]"), orginal=FALSE) %>% 
+    mutate(CODE1 = str_extract(CODE1, "[:upper:][:digit:][:digit:]\\.?[:digit:]*"), orginal=FALSE) %>% 
     select(CodeId, CODE1, CODE2, orginal),
 )
 
@@ -261,8 +268,22 @@ Save these as: `finngefreq_finngen_not_in_icd10fi.csv`
 
 Most of these are not found bcs they combination is not in `CodeId` but explained in `ALONG:Huom.`. This will be solved at the end of the process. 
 
+
+NOTES:
+- Z038, E660, E890 : many are missing the last digit, should it be 0 ??
+- K0401 : just don't exists 
+- F0019	G301 : not specify what can be include  ??
+- H062	E050: invalid ?? "Etiologinen koodi valitaan ryhmästä B74"
+- H3603	E109 : invalid ?? In group H36* "Etiologinen koodi valitaan tässä ryhmässä ryhmistäE10-E14. Neljäs merkki on .3"
+- M073L405 : should be fixed before or after in the ELT process
+
+- N0832	E102 : may be valid. In N08.3* "Etiologinen koodi valitaan ryhmistä E10-E14.Neljänneksi merkiksi tulee valita .2" do i have to include subcodes ?? 
+
+- T36	N05BA: code2 is atc code which is correct but supose to be in CODE3 !!
+
+
 ```{r}
-write_csv(no_finngen_standard, "./finngefreq_finngen_not_in_icd10fi.csv")
+#write_csv(no_finngen_standard, "./finngefreq_finngen_not_in_icd10fi.csv")
 ```
 
 
