@@ -1,0 +1,79 @@
+---
+title: "NOMESCO"
+author: "Javier Gracia-Tabuenca"
+date: "7/23/2020"
+output: 
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+```
+# Intro
+The procedure classification is based on the NCSP Nordic Classification of Surgical Procedures, first published in 1996. The NCSP classification is maintained by the Nordic Classification Center (NCC) and is copyrighted by NOMESKO [ref](
+https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)
+
+
+
+# Formating source vocabulary to OMOP
+```{r load}
+col_types <- cols(
+  code = col_character(),
+  name_fi = col_character(),
+  name_en = col_character(),
+  name_se = col_character(),
+  name_en_source = col_character(),
+  valid_start_date = col_date(format = ""),
+  valid_end_date = col_date(format = "")
+)
+
+nomesco_source_codes <- read_csv("./1_source_codes/nomesco_for_source_codes.csv", col_types = col_types)
+```
+
+The NOMESCO codes have been downloaded from [kodistopalvelu](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)(7.5.2020). 
+
+The concept names were translated to English as follow: 
+
+- `THL`: concept name in English already exists in the source table. 
+- `Traslator`: missing names were send to a translator by <mary.reeve@helsinki.fi>
+
+```{r}
+nomesco_source_codes %>% count(name_en_source)
+```
+
+
+
+# Mapping the source vocabulary to a standard vocabulary
+In short, USAGI in NOMESCO codes ranked by frequency calculated from  FinnGen-DF5 and TAYS.
+
+```{r}
+nomesco_source_codes %>% head(100)
+```
+
+
+## In `1_source_files`
+The count of codes in FinnGen-DF5 `freq_nomesco_finngen.csv` and TAYS `freq_procedures_tays.csv` are added to the  
+ standard NOMESCO codes downloaded from 
+
+ This results in the table `standard_nomesco_with_freq.csv`. Moreover, tables  `finngen_codes_not_in_nomesco.csv` and `tays_codes_not_in_nomesco.csv` store these codes that in FinnGen-DF5 and TAYS that did not find a match on the NOMESCO standard.
+
+ This process is detailed in `frequencies_from_tays_and_FG.rmd/html`.
+
+
+## In `2_mapping_process`
+Resulting `1_source_files/standard_nomesco_with_freq.csv` was imported in to USAGY with vocabularies `VocabularyIds.txt` version `vocabularyVersion.txt`.
+
+Mapping was carried by a medical student K and reviewed by H.
+
+# Assessing coverage of databases
+
+
+```{r}
+
+```
+
