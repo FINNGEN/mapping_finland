@@ -4,6 +4,7 @@ output:
   html_document:
     df_print: paged
     toc: true
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
