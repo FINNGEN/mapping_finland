@@ -1,11 +1,9 @@
 ---
 title: "NOMESCO"
-author: "Javier Gracia-Tabuenca"
-date: "7/23/2020"
 output: 
   html_document:
     df_print: paged
-    keep_md: yes
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -14,13 +12,28 @@ rm(list = ls())
 knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
+library(scales)
+library(pander)
+panderOptions('knitr.auto.asis', FALSE)
+
+
+my_print_line<- function(...){
+  cat(str_c(" \n",...," \n"))
+}
+
+my_print_table<- function(...){
+  cat(knitr::knit_print(rmarkdown::paged_table(...)))
+}
+
+
 ```
 
-```{r load, message=FALSE}
+```{r load, message=FALSE, warning=FALSE}
 nomesco_source_vocabulary <- read_csv("./1_source_vocabulary/nomesco_for_source_vocabulary.csv")
 
 nomesco_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
 
+nomesco_after_usagi <- read_csv("./2_mapping_to_standard/USAGI/nomesco_after_usagi.csv") # cant get the encoding rigth
 ```
 
 
@@ -42,34 +55,156 @@ The concept names were translated to English as follow:
 nomesco_source_vocabulary %>% count(name_en_source)
 ```
 
+Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/nomesco_for_source_vocabulary.csv](1_source_vocabulary/nomesco_for_source_vocabulary.csv). 
 
 
-# Mapping the source vocabulary to a standard vocabulary
-In short, USAGI in NOMESCO codes ranked by frequency calculated from  FinnGen-DF5 and TAYS.
+# Mapping the source vocabulary to the standard vocabularies
+In short, USAGI in NOMESCO codes ranked by frequency calculated from  FinnGen-DF5 and TAYS-oncology.
 
+The combined frequencies from TAYS-oncology and FinnGen-DF5 [3_freq_of_source_codes/freq_total.csv](3_freq_of_source_codes/freq_total.csv)
+were append to  [1_source_vocabulary/nomesco_for_source_vocabulary.csv](1_source_vocabulary/nomesco_for_source_vocabulary.csv). 
+Resulting table was imported in to USAGY with vocabularies [2_mapping_to_standard/USAGI/VocabularyIds.txt](2_mapping_to_standard/USAGI/VocabularyIds.txt) version [2_mapping_to_standard/USAGI/vocabularyVersion.txt](2_mapping_to_standard/USAGI/vocabularyVersion.txt).
+
+Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppala) and reviewed by [\@helmisuominen](github.com/helmisuominen). 
+
+
+### Progess in number of codes
 ```{r}
-nomesco_source_vocabulary %>% head(100)
+n_codes <- nomesco_after_usagi %>% distinct(sourceCode) %>% nrow()
+n_codes_accepted <- nomesco_after_usagi %>% filter(mappingStatus=="APPROVED") %>% distinct(sourceCode) %>% nrow()
 ```
 
 
-## In `1_source_files`
-The count of codes in FinnGen-DF5 `freq_nomesco_finngen.csv` and TAYS `freq_procedures_tays.csv` are added to the  
- standard NOMESCO codes downloaded from 
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
 
- This results in the table `standard_nomesco_with_freq.csv`. Moreover, tables  `finngen_codes_not_in_nomesco.csv` and `tays_codes_not_in_nomesco.csv` store these codes that in FinnGen-DF5 and TAYS that did not find a match on the NOMESCO standard.
-
- This process is detailed in `frequencies_from_tays_and_FG.rmd/html`.
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
 
 
-## In `2_mapping_process`
-Resulting `1_source_files/standard_nomesco_with_freq.csv` was imported in to USAGY with vocabularies `VocabularyIds.txt` version `vocabularyVersion.txt`.
+```{r}
+nomesco_after_usagi %>% distinct(sourceCode, mappingStatus) %>% count(mappingStatus)
+```
 
-Mapping was carried by a medical student K and reviewed by H.
+```{r}
+a <- nomesco_after_usagi %>% distinct(sourceCode, mappingStatus, sourceFrequency)
+
+n_total_envents <- sum(a$sourceFrequency)
+n_approved_events <- a %>% filter(mappingStatus=="APPROVED") %>% .$sourceFrequency %>% sum()
+
+max_n_events_unmapped <-  a %>% filter(mappingStatus=="UNCHECKED") %>% .$sourceFrequency %>%  max()
+```
+
+### Progess in number of events
+
+Accepted codes covers `r scales::percent(n_approved_events/n_total_envents)` of the total number of events in the combined databases. 
+
+Accepted codes covers all codes with more than `r scales::number(max_n_events_unmapped)` events in the combined databases.
+
+Top50 of the unchecked events sort by number of events : 
+
+```{r}
+nomesco_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, `ADD_INFO:LongName`) %>%  head(50)
+```
+
+
 
 # Assessing coverage of databases
 
 
-```{r}
+```{r  results='asis'}
+# get database names from freq tables 
+db_names <- nomesco_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
+
+db_statuses <- tibble()
+
+#for each data base
+for(db_name in db_names){
+#assess_db <- function(i){
+ # db_name <- db_names[i]
+
+  # get only preset dtabase info 
+  db_freq <- nomesco_freqs %>% 
+    select(code, str_c("freq_",db_name)) %>% 
+    rename(freq = str_c("freq_",db_name)) %>% 
+    filter(!is.na(freq))
+  
+  n_total_envents <- sum(db_freq$freq)
+  
+  # join with usagi output 
+  db_join <- left_join(
+    db_freq ,
+    nomesco_after_usagi %>% rename(code=sourceCode, name_en=sourceName, name_fi=`ADD_INFO:LongName`) %>% 
+      select(code, name_en, name_fi, mappingStatus ), 
+    by = "code") %>%
+  mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
+    arrange(-freq)
+  
+  #save not found codes
+  db_missing <- db_join %>% filter(is.na(mappingStatus)) %>% select(code, freq, freq_per)
+  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_nomesco.csv")
+  write_csv(db_missing, save_db_missing_path )
+  
+  # calculate status count
+  db_status <- db_join %>% 
+    mutate(status = case_when( 
+      is.na(mappingStatus) ~ "not_found",  
+      mappingStatus == "UNCHECKED" ~ "not_mapped", 
+      TRUE ~ "mapped"
+    )
+  ) %>% 
+  mutate(status = factor(status, levels = c("mapped", "not_mapped",  "not_found"))) %>% 
+  group_by(status) %>% 
+  summarise(n_codes=n(), 
+            per_codes= percent(n_codes/nrow(.), accuracy = 0.001),
+            n_events = sum(freq), 
+            per_events= percent(n_events/sum(.$freq), accuracy = 0.001), 
+            .groups = 'drop')
+  
+  db_statuses <- bind_rows(db_statuses, db_status %>% mutate(db_name = db_name))
+  
+   # plot markdown 
+  my_print_line()
+  my_print_line("### Database ", db_name)
+  
+  my_print_line("**How many codes labeled as nomesco in ", db_name," are not in the nomesco standard?**")
+  
+  my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
+  
+  my_print_line("Top50 sort by freq:")
+  
+  my_print_table(db_missing %>%  head(50))
+  
+  my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
+  
+ 
+  my_print_line("**Status of the nomesco codes in **", db_name)
+  
+  my_print_table(db_status)
+  
+  
+}
+
+
+write_csv(db_statuses, "status_table.csv" )
+  
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

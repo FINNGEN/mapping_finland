@@ -1,0 +1,7 @@
+status,n_codes,per_codes,n_events,per_events,db_name
+mapped,1899,32.428%,7098911,89.093%,finngen
+not_mapped,3697,63.132%,827042,10.380%,finngen
+not_found,260,4.440%,42010,0.527%,finngen
+mapped,1965,27.548%,4826176,81.043%,tays
+not_mapped,4049,56.764%,160602,2.697%,tays
+not_found,1119,15.688%,968337,16.261%,tays
