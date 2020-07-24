@@ -31,14 +31,15 @@ The concept names were translated to English as follow:
   - `Traslator`: missing names were send to a translator by
     <mary.reeve@helsinki.fi>
 
-<!-- end list -->
+<div class="kable-table">
 
-    ## # A tibble: 3 x 2
-    ##   name_en_source     n
-    ##   <chr>          <int>
-    ## 1 THL             9303
-    ## 2 Translator      1983
-    ## 3 <NA>              10
+| name\_en\_source |    n |
+| :--------------- | ---: |
+| THL              | 9303 |
+| Translator       | 1983 |
+| NA               |   10 |
+
+</div>
 
 Source table with added translation has been formatted to be similar to
 OMOP in
@@ -68,12 +69,15 @@ From 11 275 codes 1 804 have been approved.
 
 This makes 16% of codes approved.
 
-    ## # A tibble: 3 x 2
-    ##   mappingStatus      n
-    ##   <chr>          <int>
-    ## 1 APPROVED        1804
-    ## 2 INVALID_TARGET    20
-    ## 3 UNCHECKED       9451
+<div class="kable-table">
+
+| mappingStatus   |    n |
+| :-------------- | ---: |
+| APPROVED        | 1804 |
+| INVALID\_TARGET |   20 |
+| UNCHECKED       | 9451 |
+
+</div>
 
 ### Progess in number of events
 
@@ -83,22 +87,24 @@ databases.
 Accepted codes covers all codes with more than 742 events in the
 combined databases.
 
-Top50 of the unchecked events sort by number of events :
+Top10 of the unchecked events sort by number of events :
 
-    ## # A tibble: 50 x 5
-    ##    sourceCode sourceFrequency matchScore sourceName        `ADD_INFO:LongName`  
-    ##    <chr>                <dbl>      <dbl> <chr>             <chr>                
-    ##  1 ZXK00                  742      0.563 Conversion from ~ Toimenpiteen muuntam~
-    ##  2 WW300                  731      0.542 Transfer of auto~ Autologinen kantasol~
-    ##  3 NGJ62                  715      0.549 Internal fixatio~ S<U+FFFD><U+FFFD>rimurtumaleikkaus~
-    ##  4 SJC01                  708      0.410 <NA>              Yksitt<U+FFFD>isen kiinnikk~
-    ##  5 SPC20                  700      0.540 Attachment of cr~ Implanttikantoinen h~
-    ##  6 QB2S1                  697      0.410 <NA>              Rintakeh<U+FFFD>n ihon tai ~
-    ##  7 QCB05                  697      0.737 Revision of woun~ Yl<U+FFFD>raajan syv<U+FFFD>n ihoh~
-    ##  8 KCW98                  691      0.611 Other translumin~ Muu virtsarakon toim~
-    ##  9 JGB00                  690      0.606 Partial proctect~ Per<U+FFFD>suolen typistys,~
-    ## 10 SDA04                  686      0.507 Very demanding p~ Parodontologinen hoi~
-    ## # ... with 40 more rows
+<div class="kable-table">
+
+| sourceCode | sourceFrequency | matchScore | sourceName                                                                                      | ADD\_<INFO:LongName>                                                                                                        |
+| :--------- | --------------: | ---------: | :---------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+| ZXK00      |             742 |  0.5634167 | Conversion from percutaneous endoscopic to open procedure                                       | Toimenpiteen muuntaminen t\<U+FFFD\>hystystoimenpiteest\<U+FFFD\> avoimeksi leikkaukseksi                                   |
+| WW300      |             731 |  0.5420110 | Transfer of autologic stem cells                                                                | Autologinen kantasolusiirto                                                                                                 |
+| NGJ62      |             715 |  0.5485615 | Internal fixation of fracture of knee or lower leg using plate and screws, other or unspecified | S\<U+FFFD\>\<U+FFFD\>rimurtumaleikkaus levyll\<U+FFFD\>                                                                     |
+| SJC01      |             708 |  0.4095736 | NA                                                                                              | Yksitt\<U+FFFD\>isen kiinnikkeen paikan m\<U+FFFD\>\<U+FFFD\>ritys ja etsauskiinnitys (Etsattava tai muu vastaava kiinnike) |
+| SPC20      |             700 |  0.5401430 | Attachment of crone of tooth to implant                                                         | Implanttikantoinen hammaskruunu                                                                                             |
+| QB2S1      |             697 |  0.4095736 | NA                                                                                              | Rintakeh\<U+FFFD\>n ihon tai ihonalaiskudoksen valokuvaus                                                                   |
+| QCB05      |             697 |  0.7368926 | Revision of wound of skin of upper limb                                                         | Yl\<U+FFFD\>raajan syv\<U+FFFD\>n ihohaavan revisio ja mahdollinen sulku                                                    |
+| KCW98      |             691 |  0.6113638 | Other transluminal endoscopic operation on bladder                                              | Muu virtsarakon toimenpide virtsatiet\<U+FFFD\>hystyksess\<U+FFFD\>                                                         |
+| JGB00      |             690 |  0.6055401 | Partial proctectomy and colorectal or coloanal anastomosis                                      | Per\<U+FFFD\>suolen typistys, anteriorinen resektio                                                                         |
+| SDA04      |             686 |  0.5065472 | Very demanding parodonthologic therapy                                                          | Parodontologinen hoito, pitk\<U+FFFD\>kestoinen                                                                             |
+
+</div>
 
 # Assessing coverage of databases
 
@@ -109,7 +115,7 @@ standard?**
 
 There are 260 codes not found in the standard
 
-Top50 sort by freq:
+Top10 sort by freq:
 
 | code  | freq | freq\_per |
 | :---- | ---: | :-------- |
@@ -142,7 +148,7 @@ standard?**
 
 There are 1 119 codes not found in the standard
 
-Top50 sort by freq:
+Top10 sort by freq:
 
 | code  |   freq | freq\_per |
 | :---- | -----: | :-------- |

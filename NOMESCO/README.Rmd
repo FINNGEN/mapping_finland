@@ -3,19 +3,13 @@ title: "NOMESCO"
 output:
   github_document:
     toc: true
+    df_print: kable
 #   html_document:
 #     df_print: paged
 #     toc: true
-#     keep_md: true
 ---
 
 ```{r setup, include=FALSE}
-# ---
-# title: "NOMESCO"
-# output: 
-
-# ---
-
 rm(list = ls())
 
 knitr::opts_chunk$set(echo = FALSE)
@@ -125,10 +119,10 @@ Accepted codes covers `r scales::percent(n_approved_events/n_total_envents)` of 
 
 Accepted codes covers all codes with more than `r scales::number(max_n_events_unmapped)` events in the combined databases.
 
-Top50 of the unchecked events sort by number of events : 
+Top10 of the unchecked events sort by number of events : 
 
 ```{r}
-nomesco_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, `ADD_INFO:LongName`) %>%  head(50)
+nomesco_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, `ADD_INFO:LongName`) %>%  head(10)
 ```
 
 
@@ -195,7 +189,7 @@ for(db_name in db_names){
   
   my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
   
-  my_print_line("Top50 sort by freq:")
+  my_print_line("Top10 sort by freq:")
   
   my_print_table(db_missing %>%  head(50))
   
