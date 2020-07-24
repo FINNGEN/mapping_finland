@@ -1,13 +1,21 @@
 ---
 title: "NOMESCO"
-output: 
-  html_document:
-    df_print: paged
+output:
+  github_document:
     toc: true
-    keep_md: true
+#   html_document:
+#     df_print: paged
+#     toc: true
+#     keep_md: true
 ---
 
 ```{r setup, include=FALSE}
+# ---
+# title: "NOMESCO"
+# output: 
+
+# ---
+
 rm(list = ls())
 
 knitr::opts_chunk$set(echo = FALSE)
@@ -18,12 +26,29 @@ library(pander)
 panderOptions('knitr.auto.asis', FALSE)
 
 
+getOutputFormat <- function() {
+  output <- rmarkdown:::parse_yaml_front_matter(
+    readLines(knitr::current_input())
+    )$output
+  if (is.list(output)){
+    return(names(output)[1])
+  } else {
+    return(output[1])
+  }
+}
+
+
 my_print_line<- function(...){
   cat(str_c(" \n",...," \n"))
 }
 
 my_print_table<- function(...){
-  cat(knitr::knit_print(rmarkdown::paged_table(...)))
+  if(getOutputFormat() == 'html_document') {
+   cat(knitr::knit_print(rmarkdown::paged_table(...)))
+  }else{
+    cat(knitr::knit_print(knitr::kable(head(...,10))))
+  }
+  
 }
 
 
