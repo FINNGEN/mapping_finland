@@ -51,7 +51,9 @@ USAGI is a java tool provide by OHDSI that helps in mapping process of new vocab
 | [x] | LAB              | ?           | USAGI          |     ?     |        -        |       ?       |
 
 
+list vocabularies:
 
+- [NOMESCO](./NOMESCO/README.html)
 
 ## Mapping process by source vocabulary
 
