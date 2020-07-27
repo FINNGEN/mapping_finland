@@ -3,10 +3,12 @@ CDM
 Condition Type
 Cost
 Cost Type
+DRG
 Death Type
 Device Type
 Drug Type
 Episode
+HCPCS
 ICD10PCS
 ICD9Proc
 ICDO3

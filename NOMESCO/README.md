@@ -63,7 +63,7 @@ Mapping was carried by medical student
 [@kalleaseppala](github.com/kalleaseppala) and reviewed by
 [@helmisuominen](github.com/helmisuominen).
 
-### Progess in number of codes
+## Progess in number of codes
 
 From 11 275 codes 1 804 have been approved.
 
@@ -79,7 +79,7 @@ This makes 16% of codes approved.
 
 </div>
 
-### Progess in number of events
+## Progess in number of events
 
 Accepted codes covers 95% of the total number of events in the combined
 databases.
@@ -108,7 +108,7 @@ Top10 of the unchecked events sort by number of events :
 
 # Assessing coverage of databases
 
-### Database finngen
+## Database finngen
 
 **How many codes labeled as nomesco in finngen are not in the nomesco
 standard?**
@@ -133,7 +133,7 @@ Top10 sort by freq:
 The full list can be found in
 [./3\_freq\_of\_source\_codes/finngen\_not\_in\_nomesco.csv](./3_freq_of_source_codes/finngen_not_in_nomesco.csv)
 
-**Status of the nomesco codes in **finngen
+**Status of the nomesco codes infinngen**
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
@@ -141,7 +141,7 @@ The full list can be found in
 | not\_mapped |     3697 | 63.132%    |    827042 | 10.380%     |
 | not\_found  |      260 | 4.440%     |     42010 | 0.527%      |
 
-### Database tays
+## Database tays
 
 **How many codes labeled as nomesco in tays are not in the nomesco
 standard?**
@@ -166,7 +166,7 @@ Top10 sort by freq:
 The full list can be found in
 [./3\_freq\_of\_source\_codes/tays\_not\_in\_nomesco.csv](./3_freq_of_source_codes/tays_not_in_nomesco.csv)
 
-**Status of the nomesco codes in **tays
+**Status of the nomesco codes intays**
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |

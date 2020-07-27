@@ -1,5 +1,5 @@
 ---
-title: "NOMESCO"
+title: "ICD9fi"
 output:
   github_document:
     toc: true
@@ -53,10 +53,9 @@ db_statuses <- tibble()
 ```
 
 ```{r load, message=FALSE, warning=FALSE}
-nomesco_source_vocabulary <- read_csv("./1_source_vocabulary/nomesco_for_source_vocabulary.csv")
+icd9fi_source_vocabulary <- read_csv("./1_source_vocabulary/icd9fi_for_source_vocabulary.csv")
 
-nomesco_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
-
+icd9fi_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
 
 col_types = cols( .default = col_character(), 
                   sourceFrequency = col_integer(),
@@ -64,45 +63,49 @@ col_types = cols( .default = col_character(),
                   conceptId  = col_integer()
                   )
 
-nomesco_after_usagi <- read_csv("./2_mapping_to_standard/USAGI/nomesco_after_usagi.csv", col_types = col_types) # cant get the encoding rigth
+icd9fi_after_usagi <- read_csv("./2_mapping_to_standard/USAGI/icd9fi_after_usagi.csv", col_types = col_types) %>% 
+  mutate(name_en_icd9 = `ADD_INFO:possible_english_name`)# cant get the encoding rigth
 ```
 
 
 # Intro
-The procedure classification is based on the NCSP Nordic Classification of Surgical Procedures, first published in 1996. The NCSP classification is maintained by the Nordic Classification Center (NCC) and is copyrighted by NOMESKO [ref](
-https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)
+TODO
 
 
 
 # Formating source vocabulary to OMOP
-The NOMESCO codes have been downloaded from [kodistopalvelu](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)(7.5.2020). 
+The icd9fi codes have been ...
 
-The concept names were translated to English as follow: 
+TODO: i got it from aki now in the gitlab repo 
 
-- `THL`: concept name in English already exists in the source table. 
-- `Traslator`: missing names were send to a translator by <mary.reeve@helsinki.fi>
+The concept names are a mixed of Latin, Finnish, and English !!. These are not translated to English !!. The English name were append by matching the ICD9fi code to the ICD9 code dowloaded from [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020). 
+
+There are 5 tipes of maching : 
+
+TODO
 
 ```{r}
-nomesco_source_vocabulary %>% count(name_en_source)
+icd9fi_source_vocabulary %>% count(name_en_source, sort = T)
 ```
 
-Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/nomesco_for_source_vocabulary.csv](1_source_vocabulary/nomesco_for_source_vocabulary.csv). 
+Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/icd9fi_for_source_vocabulary.csv](1_source_vocabulary/icd9fi_for_source_vocabulary.csv). 
 
+TODO: missing validity dates 
 
 # Mapping the source vocabulary to the standard vocabularies
-In short, USAGI in NOMESCO codes ranked by frequency calculated from  FinnGen-DF5 and TAYS-oncology.
+In short, USAGI directly on icd9fi's source names (Latin, Finnish, or English) ranked by frequency calculated from FinnGen-DF5.
 
-The combined frequencies from TAYS-oncology and FinnGen-DF5 [3_freq_of_source_codes/freq_total.csv](3_freq_of_source_codes/freq_total.csv)
-were append to  [1_source_vocabulary/nomesco_for_source_vocabulary.csv](1_source_vocabulary/nomesco_for_source_vocabulary.csv). 
-Resulting table was imported in to USAGY with vocabularies [2_mapping_to_standard/USAGI/VocabularyIds.txt](2_mapping_to_standard/USAGI/VocabularyIds.txt) version [2_mapping_to_standard/USAGI/vocabularyVersion.txt](2_mapping_to_standard/USAGI/vocabularyVersion.txt).
+The frequencies from FinnGen-DF5 [3_freq_of_source_codes/freq_total.csv](3_freq_of_source_codes/freq_total.csv)
+were append to  [1_source_vocabulary/icd9fi_for_source_vocabulary.csv](1_source_vocabulary/icd9fi_for_source_vocabulary.csv). 
+Resulting table was imported in to USAGY with vocabularies [2_mapping_to_standard/USAGI/VocabularyIds.txt](2_mapping_to_standard/USAGI/VocabularyIds.txt) version [2_mapping_to_standard/USAGI/vocabularyVersion.txt](2_mapping_to_standard/USAGI/vocabularyVersion.txt). Mapping was performed on the icd9fi's source names (Latin, Finnish, or English) and the English name was solely use as a guide.  
 
-Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppala) and reviewed by [\@helmisuominen](github.com/helmisuominen). 
+Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppala). 
 
 
 ## Progess in number of codes
 ```{r}
-n_codes <- nomesco_after_usagi %>% distinct(sourceCode) %>% nrow()
-n_codes_accepted <- nomesco_after_usagi %>% filter(mappingStatus=="APPROVED") %>% distinct(sourceCode) %>% nrow()
+n_codes <- icd9fi_after_usagi %>% distinct(sourceCode) %>% nrow()
+n_codes_accepted <- icd9fi_after_usagi %>% filter(mappingStatus=="APPROVED") %>% distinct(sourceCode) %>% nrow()
 ```
 
 
@@ -112,16 +115,16 @@ This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved.
 
 
 ```{r}
-nomesco_after_usagi %>% distinct(sourceCode, mappingStatus) %>% count(mappingStatus)
+icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus) %>% count(mappingStatus) %>% filter(mappingStatus!="0.3793565332889557")
 ```
 
 ```{r}
-a <- nomesco_after_usagi %>% distinct(sourceCode, mappingStatus, sourceFrequency)
+a <- icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus, sourceFrequency)
 
-n_total_envents <- sum(a$sourceFrequency)
-n_approved_events <- a %>% filter(mappingStatus=="APPROVED") %>% .$sourceFrequency %>% sum()
+n_total_envents <- sum(a$sourceFrequency, na.rm = T)
+n_approved_events <- a %>% filter(mappingStatus=="APPROVED") %>% .$sourceFrequency %>% sum(na.rm = T)
 
-max_n_events_unmapped <-  a %>% filter(mappingStatus=="UNCHECKED") %>% .$sourceFrequency %>%  max()
+max_n_events_unmapped <-  a %>% filter(mappingStatus=="UNCHECKED") %>% .$sourceFrequency %>%  max(na.rm = T)
 ```
 
 ## Progess in number of events
@@ -133,7 +136,7 @@ Accepted codes covers all codes with more than `r scales::number(max_n_events_un
 Top`r N_TOPS` of the unchecked events sort by number of events : 
 
 ```{r}
-nomesco_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, `ADD_INFO:LongName`) %>%  head(N_TOPS)
+icd9fi_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, name_en_icd9) %>%  head(N_TOPS)
 ```
 
 ```{r}
@@ -164,7 +167,7 @@ db_statuses <- bind_rows(
 
 ```{r  results='asis'}
 # get database names from freq tables 
-db_names <- nomesco_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
+db_names <- icd9fi_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
 
 #for each data base
 for(db_name in db_names){
@@ -172,7 +175,7 @@ for(db_name in db_names){
  # db_name <- db_names[i]
 
   # get only preset dtabase info 
-  db_freq <- nomesco_freqs %>% 
+  db_freq <- icd9fi_freqs %>% 
     select(code, str_c("freq_",db_name)) %>% 
     rename(freq = str_c("freq_",db_name)) %>% 
     filter(!is.na(freq))
@@ -182,7 +185,7 @@ for(db_name in db_names){
   # join with usagi output 
   db_join <- left_join(
     db_freq ,
-    nomesco_after_usagi %>% rename(code=sourceCode, name_en=sourceName, name_fi=`ADD_INFO:LongName`) %>% 
+    icd9fi_after_usagi %>% rename(code=sourceCode, name_en=name_en_icd9, name_fi=sourceName) %>% 
       select(code, name_en, name_fi, mappingStatus ), 
     by = "code") %>%
   mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
@@ -190,7 +193,7 @@ for(db_name in db_names){
   
   #save not found codes
   db_missing <- db_join %>% filter(is.na(mappingStatus)) %>% select(code, freq, freq_per)
-  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_nomesco.csv")
+  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_icd9fi.csv")
   write_csv(db_missing, save_db_missing_path )
   
   # calculate status count
@@ -215,7 +218,7 @@ for(db_name in db_names){
   my_print_line()
   my_print_line("## Database ", db_name)
   
-  my_print_line("**How many codes labeled as nomesco in ", db_name," are not in the nomesco standard?**")
+  my_print_line("**How many codes labeled as icd9fi in ", db_name," are not in the icd9fi standard?**")
   
   my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
   
@@ -226,7 +229,7 @@ for(db_name in db_names){
   my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
   
  
-  my_print_line("**Status of the nomesco codes in", db_name, "**")
+  my_print_line("**Status of the icd9fi codes in", db_name, "**")
   
   my_print_table(db_status)
   
