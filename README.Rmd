@@ -135,7 +135,7 @@ db_join <- db_info %>%
 db_join %>% select(vocabulary, n_codes, mapped, mapping_method, finngen, tays ) %>% 
   mutate_all(~if_else(is.na(.),"",as.character(.))) %>% 
   #make links 
-  mutate(vocabulary = str_c("[", vocabulary,"](./", vocabulary,"/README.md)"))
+  mutate(vocabulary = str_c("[", vocabulary,"](./", vocabulary,"/)"))
 
 ```
 

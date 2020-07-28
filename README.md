@@ -62,12 +62,12 @@ process of new vocabularies [here](https://github.com/OHDSI/Usagi)
 
 <div class="kable-table">
 
-| vocabulary                     | n\_codes | mapped | mapping\_method       | finngen          | tays             |
-| :----------------------------- | :------- | :----- | :-------------------- | :--------------- | :--------------- |
-| [ATC](./ATC/README.md)         | 6211     | 69%    | Almost mapped by OMOP | 95.2% 3.0% 1.6%  | 94.3% 3.7% 1.9%  |
-| [ICD9fi](./ICD9fi/README.md)   | 2855     | 23%    | USAGI                 | 74.7% 23.4% 1.7% |                  |
-| [ICPC2](./ICPC2/README.md)     | 1443     | 77%    | Mapped to ICD10       | 87.2% 12.1% 0.5% |                  |
-| [NOMESCO](./NOMESCO/README.md) | 11275    | 16%    | USAGI                 | 89.0% 10.3% 0.5% | 81.0% 2.6% 16.2% |
+| vocabulary            | n\_codes | mapped | mapping\_method       | finngen          | tays             |
+| :-------------------- | :------- | :----- | :-------------------- | :--------------- | :--------------- |
+| [ATC](./ATC/)         | 6211     | 69%    | Almost mapped by OMOP | 95.2% 3.0% 1.6%  | 94.3% 3.7% 1.9%  |
+| [ICD9fi](./ICD9fi/)   | 2855     | 23%    | USAGI                 | 74.7% 23.4% 1.7% |                  |
+| [ICPC2](./ICPC2/)     | 1443     | 77%    | Mapped to ICD10       | 87.2% 12.1% 0.5% |                  |
+| [NOMESCO](./NOMESCO/) | 11275    | 16%    | USAGI                 | 89.0% 10.3% 0.5% | 81.0% 2.6% 16.2% |
 
 </div>
 
