@@ -104,9 +104,9 @@ n_codes_accepted <- icpc2_auto_mapped %>% filter(mappingStatus=="AUTO_MAPPED") %
 ```
 
 
-From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been mapped.
 
-This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes mapped. 
 
 
 ```{r}
@@ -124,15 +124,15 @@ db_statuses <- bind_rows(
   tibble(
     status = "mapped",
     n_codes = n_codes_accepted,
-    per_codes = percent(n_codes_accepted/n_codes),
+    per_codes = percent(n_codes_accepted/!!n_codes),
     n_events = as.double(NA),
     per_events = as.character(NA), 
     db_name = "source"
   ),
  tibble(
     status = "not_mapped",
-    n_codes = n_codes-n_codes_accepted,
-    per_codes = percent((n_codes-n_codes_accepted)/n_codes),
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
     n_events =  as.double(NA),
     per_events = as.character(NA), 
     db_name = "source"
@@ -180,7 +180,7 @@ for(db_name in db_names){
   db_status <- db_join %>% 
     mutate(status = case_when( 
       is.na(mappingStatus) ~ "not_found",  
-      mappingStatus == "UNCHECKED" ~ "not_mapped", 
+      mappingStatus == "NOT_MAPPED" ~ "not_mapped", 
       TRUE ~ "mapped"
     )
   ) %>% 

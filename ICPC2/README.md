@@ -107,7 +107,8 @@ The full list can be found in
 
 **Status of the icpc2 codes infinngen**
 
-| status     | n\_codes | per\_codes | n\_events | per\_events |
-| :--------- | -------: | :--------- | --------: | :---------- |
-| mapped     |     1008 | 99.703%    |   7524124 | 99.434%     |
-| not\_found |        3 | 0.297%     |     42843 | 0.566%      |
+| status      | n\_codes | per\_codes | n\_events | per\_events |
+| :---------- | -------: | :--------- | --------: | :---------- |
+| mapped      |      783 | 77.448%    |   6603359 | 87.266%     |
+| not\_mapped |      225 | 22.255%    |    920765 | 12.168%     |
+| not\_found  |        3 | 0.297%     |     42843 | 0.566%      |

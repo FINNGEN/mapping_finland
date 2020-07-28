@@ -144,15 +144,15 @@ db_statuses <- bind_rows(
   tibble(
     status = "mapped",
     n_codes = n_codes_accepted,
-    per_codes = percent(n_codes_accepted/n_codes),
+    per_codes = percent(n_codes_accepted/!!n_codes),
     n_events = n_approved_events,
     per_events = percent(n_approved_events/n_total_envents), 
     db_name = "source"
   ),
  tibble(
     status = "not_mapped",
-    n_codes = n_codes-n_codes_accepted,
-    per_codes = percent((n_codes-n_codes_accepted)/n_codes),
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
     n_events = n_total_envents-n_approved_events,
     per_events = percent((n_total_envents-n_approved_events)/n_total_envents), 
     db_name = "source"
