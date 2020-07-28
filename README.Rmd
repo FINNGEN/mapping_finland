@@ -1,0 +1,149 @@
+---
+title: "Mapping Finland"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+#   html_document:
+#     df_print: paged
+#     toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+
+getOutputFormat <- function() {
+  output <- rmarkdown:::parse_yaml_front_matter(
+    readLines(knitr::current_input())
+    )$output
+  if (is.list(output)){
+    return(names(output)[1])
+  } else {
+    return(output[1])
+  }
+}
+
+
+# Dynamic markdown functions
+my_print_line<- function(...){
+  cat(str_c(" \n",...," \n"))
+}
+
+my_print_table<- function(...){
+  if(getOutputFormat() == 'html_document') {
+   cat(knitr::knit_print(rmarkdown::paged_table(...)))
+  }else{
+    cat(knitr::knit_print(knitr::kable(...)))
+  }
+  
+}
+
+# Document variables 
+N_TOPS <- 10
+
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+# load  status from sub folders
+db_statuses <- tibble()
+
+sub_dirs <- list.dirs(path = ".", recursive = FALSE)
+
+for(dir in sub_dirs){
+  if(file.exists(file.path(dir,"status_table.csv"))){
+    db_statuses <- bind_rows(
+      db_statuses, 
+      read_csv(file.path(dir,"status_table.csv")) %>% mutate(vocabulary=str_sub(!!dir,3,100))
+      )
+  }
+  
+}
+
+```
+# Mapping Finnish codes to the OMOP common data model
+## Intro
+The [ observational medical outcomes partnership (OMOP) common data model (CDM)](https://www.ohdsi.org/) is gaining interest in Finland.
+The most laborious task will be mapping and curating the medical vocabularies specific from Finland to the standard codes in the OMOP CDM but once done these mapping can be used in the hole country and some Nordic neighbors.
+
+This folder contains the codes to create the mapping tables between the Finnish vocabulary used in the FinnGen project and the standard vocabularies used in the OMOP CDM.  
+This will benefit not only FinnGen but other projects in Finland. For this reason, a similar project was started in a public [GitHub repo](https://github.com/javier-gracia-tabuenca-tuni/mapping_finland), but now it is here as many vocabularies are private.
+
+
+**Background**
+Rather than create a completely new vocabulary the OMOP CDM proposes to use existing vocabularies, these are named standard vocabularies. The OMOP CDM also includes many other vocabularies which are mapped to the standard vocabularies. All the vocabularies used by the OMOP CDM and their connexons are available in [Athena](http://athena.ohdsi.org/).    
+In short, mapping means to connecting the codes from a non-standard vocabulary to the corresponding codes in the standard vocabulary. Details of the process can be found [here](https://www.ohdsi.org/web/wiki/doku.php?id=documentation:vocabulary:introduction)
+
+Vocabularies are organized into in medical domains. One vocabulary may cover more than one domain  ([see here](https://www.ohdsi.org/web/wiki/doku.php?id=documentation:vocabulary:domains_and_vocabularies)).
+
+Following picture shows the vocabularies and domains relevant to the FinnGen longitudinal data.
+
+![FinnGen vocabularies](finngen_vocabularies.svg)
+
+**Aim**
+The aim of this project is to convert the `not an OMOP vocabulary` to a `OMOP non-standard vocabulary` `mapped to` the corresponding `OMOP standard vocabulary`.
+
+The resulting mapping tables will be included in the OMOP CDM, as suggested in this [forum question](https://forums.ohdsi.org/t/creating-new-vocabularies/9929/2), and the process published as done for other vocabularies ([e.g. ICD10](https://www.ohdsi.org/web/wiki/doku.php?id=documentation:vocabulary:icd10)).
+
+**Tools**
+USAGI is a java tool provide by OHDSI that helps in mapping process of new vocabularies [here](https://github.com/OHDSI/Usagi)
+
+
+## Summary of progress
+
+
+```{r}
+#split
+source_status <- db_statuses %>% filter(db_name=="source")
+db_statuses_tmp<- db_statuses %>% filter(db_name!="source")
+
+
+db_statuses_shot <-  db_statuses_tmp %>% 
+  group_by(db_name, vocabulary) %>% 
+  summarise(per_events = str_c(per_events, collapse = " "),.groups = 'drop') %>% 
+  # round down per
+  mutate(per_events=str_replace_all(per_events, "[:digit:][:digit:]\\%", "%")) %>% 
+  #short
+  spread(db_name , per_events)
+
+source_status_short <- source_status %>% 
+  mutate(n_mapped = if_else(status=="mapped", n_codes, 0)) %>% 
+  group_by(vocabulary) %>%
+  summarise(n_codes=sum(n_codes), mapped = percent(sum(n_mapped)/n_codes), .groups = 'drop')
+
+  
+db_info <- tribble(
+  ~vocabulary, ~mapping_method, 
+  "ATC",       "Almost mapped by OMOP",
+  "ICD9fi",    "USAGI",
+  "ICPC2",     "Mapped to ICD10",
+  "NOMESCO",   "USAGI"
+)
+
+db_join <- db_info %>% 
+  left_join(source_status_short, by="vocabulary") %>% 
+  left_join(db_statuses_shot, by="vocabulary")
+
+db_join %>% select(vocabulary, n_codes, mapped, mapping_method, finngen, tays ) %>% 
+  mutate_all(~if_else(is.na(.),"",as.character(.))) %>% 
+  #make links 
+  mutate(vocabulary = str_c("[", vocabulary,"](./", vocabulary,"/README.md)"))
+
+```
+
+
+**Table:** Percentage in sources as: percent of events mapped to standard vocabulary; not mapped to standard vocabulary ; not found in vocabulary 
+
+
+
+[]()
+
+
