@@ -1,0 +1,48 @@
+---
+title: "Missing ATC"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+library(feather)
+library(ggupset)
+library(UpSetR)
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+atc_omop <- read_csv("OMOP_ATC.csv") %>% 
+  rename(code = concept_code)
+
+atc_change <- read_csv("atc_modifications.csv") %>% 
+  mutate_at(vars(previous_atc_code, new_atc_code), str_replace, "\\s[:digit:]+\\)", "")
+```
+
+
+**From Ari Ahola-Olli:** E can be found from there. But the reason why they are not in WHO database is that they are not actual drugs.
+
+```{r}
+missing_atc_in_omop <- full_join(atc_omop %>% select(code, concept_id), 
+          atc_change %>%  rename(code = previous_atc_code),
+          by="code") %>% 
+  filter(is.na(concept_id))
+```
+
+
+```{r}
+write_csv(missing_atc_in_omop, "missing_atc_in_omop.csv")
+```
+
+
+
+
