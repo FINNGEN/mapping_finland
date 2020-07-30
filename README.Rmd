@@ -107,6 +107,13 @@ db_statuses_tmp<- db_statuses %>% filter(db_name!="source")
 
 
 db_statuses_shot <-  db_statuses_tmp %>% 
+   # add colors
+  mutate(per_events = case_when(
+    status=="mapped"     ~ str_c('<span style="color:blue">',per_events,'</span>'),
+    status=="not_mapped" ~ str_c('<span style="color:green">',per_events,'</span>'),
+    status=="not_found"  ~ str_c('<span style="color:red">', per_events,'</span>')
+  )) %>% 
+  #
   group_by(db_name, vocabulary) %>% 
   summarise(per_events = str_c(per_events, collapse = " "),.groups = 'drop') %>% 
   # round down per
@@ -123,6 +130,7 @@ source_status_short <- source_status %>%
 db_info <- tribble(
   ~vocabulary, ~mapping_method, 
   "ATC",       "Almost mapped by OMOP",
+  "ICD10fi",   "ICD10who + USAGI",
   "ICD9fi",    "USAGI",
   "ICPC2",     "Mapped to ICD10",
   "NOMESCO",   "USAGI"
@@ -140,10 +148,7 @@ db_join %>% select(vocabulary, n_codes, mapped, mapping_method, finngen, tays ) 
 ```
 
 
-**Table:** Percentage in sources as: percent of events mapped to standard vocabulary; not mapped to standard vocabulary ; not found in vocabulary 
+**Table:** Percentage in sources as: <span style="color:blue">percent of events mapped to standard vocabulary</span>; <span style="color:green">not mapped to standard vocabulary</span> ; <span style="color:red">not found in vocabulary</span> 
 
-
-
-[]()
 
 

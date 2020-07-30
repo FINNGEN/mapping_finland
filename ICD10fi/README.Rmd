@@ -1,0 +1,332 @@
+---
+title: "ICD10fi"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+#   html_document:
+#     df_print: paged
+#     toc: true
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+
+getOutputFormat <- function() {
+  output <- rmarkdown:::parse_yaml_front_matter(
+    readLines(knitr::current_input())
+    )$output
+  if (is.list(output)){
+    return(names(output)[1])
+  } else {
+    return(output[1])
+  }
+}
+
+
+# Dynamic markdown functions
+my_print_line<- function(...){
+  cat(str_c(" \n",...," \n"))
+}
+
+my_print_table<- function(...){
+  if(getOutputFormat() == 'html_document') {
+   cat(knitr::knit_print(rmarkdown::paged_table(...)))
+  }else{
+    cat(knitr::knit_print(knitr::kable(...)))
+  }
+  
+}
+
+# Document variables 
+N_TOPS <- 10
+
+# output status
+db_statuses <- tibble()
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+icd10fi_source_vocabulary <- read_csv("./1_source_vocabulary/ICD10_for_source_vocabulary_extended.csv")
+
+icd10fi_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
+
+
+col_types = cols( .default = col_character(), 
+                  freq_total = col_integer(),
+                  matchScore  = col_integer(),
+                  conceptId  = col_integer()
+                  )
+
+icd10fi_mapped <- read_csv("./2_mapping_to_standard/icd10_extension_mapped.csv") # cant get the encoding rigth
+```
+
+
+# Intro
+ICD10fi is an extension of the ICD10who standard. 
+It largely follows the ICD10WHO classification. The most significant differences are related to the classification of external causes of injuries, illnesses and deaths (Chapter XX), where the Finnish version of the classification has been kept significantly narrower than the WHO version to ensure usability. In addition, new national, more accurate or better differentiated diagnoses reported at the five-character level have been included in the classification. 
+
+An other characteristic of  ICD10fi it combines codes to describe a more accurate condition. The meaning of these depend on the union-mark used:  
+
+- Classification codes: decrive ranges of codes other than the conventional ICD10 herarchy
+    - `Code1-Code2` : from Code1 to Code2
+- Reason codes: combine codes to add more info on what caused the diagnose, there are 4 marks
+   - `Code1*Code2` : "Oirekoodi", Code2 indicates an additional symtom
+   - `Code1+Code2` : "Syykoodi", Code2 indicates the reason for Code1
+   - `Code1#Code2` : ATC-koodi, Code2 is and ATC code indicating the medicine that caused Code1
+   - `Code1&Code2` :  "Kasvainkoodi", Code2 is and endocrinological disorder code that caused Code1
+
+
+[source](http://www.julkari.fi/bitstream/handle/10024/80324/15c30d65-2b96-41d7-aca8-1a05aa8a0a19.pdf?sequence=1&isAllowed=y)
+
+
+# Formating source vocabulary to OMOP
+The list of the icd10fi codes have been downloaded from the official source:  [kodistopalvelu](https://91.202.112.142/codeserver/pages/publication-view-page.xhtml?distributionKey=9395&versionKey=58&returnLink=fromVersionPublicationList)(7.5.2020). 
+
+
+This table contains all the single codes, some composed-codes, and classification. The last only used for hierarchy and not diagnose. 
+In addition, the table also contains the rules to generated other valid composed-codes (in column `A:Huom`).
+
+ 
+Table describes a total of  `r number(icd10fi_source_vocabulary %>% filter(code_class!="2 code generated") %>% nrow)` codes distributed as follow: 
+```{r}
+icd10fi_source_vocabulary %>% filter(code_class!="2 code generated") %>%  count(code_class, sort = T)
+```
+ 
+## English traslation
+All codes come with the name in Finnish, in Swedish, and many, but not all, also in English. 
+For these missing we used Google-translator. 
+
+- `THL`: concept name in English already exists in the source table. 
+- `Google`: translated using Google-translator API
+
+```{r}
+icd10fi_source_vocabulary %>% filter(code_class!="2 code generated") %>%  count(name_en_source, sort = T)
+```
+
+## Extending composed-codes
+We generate new composed-codes based on the "1 code" codes that contain generation rules in column `A:Huom`. 
+This process is detailed in [1_source_vocabulary/generate_missing_composed_codes.md](1_source_vocabulary/generate_missing_composed_codes.md).
+
+This results in  `r number(icd10fi_source_vocabulary %>% filter(code_class=="2 code generated") %>% nrow)` new codes: 
+
+```{r}
+icd10fi_source_vocabulary %>%  count(code_class, sort = T)
+```
+
+For the new codes, name is given as both source code's names joined by "LIITTYVÄ", "RELATERAD-TILL", and "RELATED-TO" respectively for name_fi, name_se, and name_en. 
+
+For the validity dates, the latest is chose for valid_start_date and the earliest for valid_end_date. 
+
+For the how the English name was translated: `THL` if both were translated by THL, `Google` if both were translated by google-translator, and `THL+Google` if both.  
+
+```{r}
+icd10fi_source_vocabulary %>%  count(name_en_source, sort = T)
+```
+
+
+# Mapping the source vocabulary to the standard vocabularies
+In short, ICD10fi codes were match to ICD10who by code and English name `ICD10who code and name_en` (English name with out a full match were reviewed by [\@helmisuominen](github.com/helmisuominen)). 
+Several codes in the ICD10fi table have the same name_fi. We made sure that if any of these was mapped to ICD10who, the rest mapped to the same code `ICD10who name_fi`.
+These  ICD10fi that didn't match ICD10who were mapped to a standard vocabulary using USAGI by [\@helmisuominen](github.com/helmisuominen) (`APPROVED` or `UNCHECKED`). 
+The "2 code generated" are mapped to the mappings of both composing codes (`mappable` if both codes have a mapping, `missing one` if not).   
+
+Following table summaries the codes by mapping type and code class. 
+
+```{r}
+icd10fi_mapped %>% count(code_class, Mapping_type) %>% arrange(code_class, -n)
+```
+
+
+This process is detailed in [2_mapping_to_standard/mapping_ICD10fi.md](2_mapping_to_standard/mapping_ICD10fi.md)
+
+## Progess in number of codes
+```{r}
+
+icd10fi_mapped <- icd10fi_mapped %>% 
+  filter(code_class!="classification") %>% 
+  mutate(mapped = !(Mapping_type %in% c("UNCHECKED", "missing one")))
+
+n_codes <- icd10fi_mapped %>% nrow()
+n_codes_accepted <- icd10fi_mapped %>% filter(mapped) %>% nrow()
+```
+
+
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes mapped.  
+
+
+```{r}
+icd10fi_mapped %>% count(mapped, sort = T)
+```
+
+```{r}
+icd10fi_mapped_freq <- left_join(
+  icd10fi_mapped %>% mutate(code1 = str_replace(code1,"\\.", ""), code2 = str_replace(code2,"\\.", "")), 
+  icd10fi_freqs, 
+  by=c("code1", "code2"))
+
+n_total_envents <- sum(icd10fi_mapped_freq$freq_total, na.rm = T)
+n_approved_events <- icd10fi_mapped_freq %>% filter(mapped) %>% .$freq_total %>% sum(na.rm = T)
+
+max_n_events_unmapped <-  icd10fi_mapped_freq %>% filter(!mapped) %>% .$freq_total %>%  max(na.rm = T)
+```
+
+## Progess in number of events
+
+Accepted codes covers `r scales::percent(n_approved_events/n_total_envents, accuracy=0.01)` of the total number of events in the combined databases. 
+
+Accepted codes covers all codes with more than `r scales::number(max_n_events_unmapped)` events in the combined databases.
+
+Top`r N_TOPS` of the unchecked events sort by number of events : 
+
+```{r}
+icd10fi_mapped_freq %>% filter(!mapped) %>% arrange(-freq_total) %>% select(code, code1, code2,  freq_total, code_class, name_en, name_fi) %>%  head(N_TOPS)
+```
+
+
+TOFIX: something happened. 16 codes with high freq went somehow out of USAGI. Because, Helmi mapped all these below 400 freq !!
+
+```{r}
+db_statuses <- bind_rows(
+  tibble(
+    status = "mapped",
+    n_codes = n_codes_accepted,
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = n_approved_events,
+    per_events = percent(n_approved_events/n_total_envents), 
+    db_name = "source"
+  ),
+ tibble(
+    status = "not_mapped",
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events = n_total_envents-n_approved_events,
+    per_events = percent((n_total_envents-n_approved_events)/n_total_envents), 
+    db_name = "source"
+  )
+)
+```
+
+
+
+# Assessing coverage of databases
+
+
+```{r  results='asis'}
+# get database names from freq tables 
+db_names <- icd10fi_freqs %>% names %>% setdiff(c("code1","code2", "freq_total")) %>% str_replace("freq_","")
+
+#for each data base
+for(db_name in db_names){
+#assess_db <- function(i){
+#  db_name <- db_names[1]
+
+  # get only preset dtabase info 
+  db_freq <- icd10fi_freqs %>% 
+    select(code1, code2, str_c("freq_",db_name)) %>% 
+    rename(freq = str_c("freq_",db_name)) %>% 
+    filter(!is.na(freq))
+  
+  n_total_envents <- sum(db_freq$freq)
+  
+  # join with usagi output 
+  db_join <- left_join(
+    db_freq ,
+    icd10fi_mapped %>% mutate(code1 = str_replace(code1,"\\.", ""), code2 = str_replace(code2,"\\.", "")), 
+      select(code, code1, code2, name_en, name_fi, mapped ), 
+    by = c("code1", "code2")) %>%
+  mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
+    arrange(-freq)
+  
+  #save not found codes
+  db_missing <- db_join %>% filter(is.na(mapped)) %>%
+    # filter also if same code in code1 == code2 
+    filter((code1 != code2) | (is.na(code1)) | (is.na(code2)) ) %>% 
+    filter(! (is.na(code1) & !is.na(code2)) ) %>%
+    #
+    select(code1, code2, freq, freq_per)
+  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_icd10fi.csv")
+  write_csv(db_missing, save_db_missing_path )
+  
+  # calculate status count
+  db_status <- db_join %>% 
+    # filter also if same code in code1 == code2 
+    filter((code1 != code2) | (is.na(code1)) | (is.na(code2)) ) %>% 
+    filter(! (is.na(code1) & !is.na(code2)) ) %>%
+    #
+    mutate(status = case_when( 
+      is.na(mapped) ~ "not_found",  
+      mapped == FALSE ~ "not_mapped", 
+      mapped == TRUE ~ "mapped"
+    )
+  ) %>% 
+  mutate(status = factor(status, levels = c("mapped", "not_mapped",  "not_found"))) %>% 
+  group_by(status) %>% 
+  summarise(n_codes=n(), 
+            per_codes= percent(n_codes/nrow(.), accuracy = 0.001),
+            n_events = sum(freq), 
+            per_events= percent(n_events/sum(.$freq), accuracy = 0.001), 
+            .groups = 'drop')
+  
+  db_statuses <- bind_rows(db_statuses, db_status %>% mutate(db_name = db_name))
+  
+   # plot markdown 
+  my_print_line()
+  my_print_line("## Database ", db_name)
+  
+  my_print_line("**How many codes labeled as icd10fi in ", db_name," are not in the icd10fi standard?**")
+  
+  my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
+  
+  my_print_line("Top", N_TOPS," sort by freq:")
+  
+  my_print_table(db_missing %>% head(N_TOPS))
+  
+  my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
+  
+ 
+  my_print_line("**Status of the icd10fi codes in ", db_name, "**")
+  
+  my_print_table(db_status)
+  
+  
+}
+
+
+write_csv(db_statuses, "status_table.csv" )
+  
+
+```
+
+
+
+
+
+
+# NOTES on missing codes 
+
+NOTES:
+- Z038, E660, E890 : many are missing the last digit, should it be 0 ??
+- K0401 : just don't exists 
+- F0019	G301 : not specify what can be include  ?? **TOFIX**
+- H062	E050: invalid ?? "Etiologinen koodi valitaan ryhmästä B74"
+- H3603	E109 : invalid ?? In group H36* "Etiologinen koodi valitaan tässä ryhmässä ryhmistäE10-E14. Neljäs merkki on .3"
+- M073L405 : should be fixed before or after in the ELT process
+
+- N0832	E102 : may be valid. In N08.3* "Etiologinen koodi valitaan ryhmistä E10-E14.Neljänneksi merkiksi tulee valita .2" do i have to include subcodes ?? 
+
+- T36	N05BA: code2 is atc code which is correct but supose to be in code3 !!
+
+
+
+
+
+

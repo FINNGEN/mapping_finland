@@ -62,17 +62,17 @@ process of new vocabularies [here](https://github.com/OHDSI/Usagi)
 
 <div class="kable-table">
 
-| vocabulary            | n\_codes | mapped | mapping\_method       | finngen          | tays             |
-| :-------------------- | :------- | :----- | :-------------------- | :--------------- | :--------------- |
-| [ATC](./ATC/)         | 6211     | 69%    | Almost mapped by OMOP | 95.2% 3.0% 1.6%  | 94.3% 3.7% 1.9%  |
-| [ICD9fi](./ICD9fi/)   | 2855     | 23%    | USAGI                 | 74.7% 23.4% 1.7% |                  |
-| [ICPC2](./ICPC2/)     | 1443     | 77%    | Mapped to ICD10       | 87.2% 12.1% 0.5% |                  |
-| [NOMESCO](./NOMESCO/) | 11275    | 16%    | USAGI                 | 89.0% 10.3% 0.5% | 81.0% 2.6% 16.2% |
+| vocabulary            | n\_codes | mapped | mapping\_method       | finngen                                                                                                          | tays                                                                                                             |
+| :-------------------- | :------- | :----- | :-------------------- | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| [ATC](./ATC/)         | 6211     | 69%    | Almost mapped by OMOP | <span style="color:blue">95.2%</span> <span style="color:green">3.0%</span> <span style="color:red">1.6%</span>  | <span style="color:blue">94.3%</span> <span style="color:green">3.7%</span> <span style="color:red">1.9%</span>  |
+| [ICD10fi](./ICD10fi/) | 68482    | 83%    | ICD10who + USAGI      | <span style="color:blue">98.8%</span> <span style="color:green">0.9%</span> <span style="color:red">0.2%</span>  | <span style="color:blue">96.3%</span> <span style="color:green">1.6%</span> <span style="color:red">2.0%</span>  |
+| [ICD9fi](./ICD9fi/)   | 2855     | 23%    | USAGI                 | <span style="color:blue">74.7%</span> <span style="color:green">23.4%</span> <span style="color:red">1.7%</span> |                                                                                                                  |
+| [ICPC2](./ICPC2/)     | 1443     | 77%    | Mapped to ICD10       | <span style="color:blue">87.2%</span> <span style="color:green">12.1%</span> <span style="color:red">0.5%</span> |                                                                                                                  |
+| [NOMESCO](./NOMESCO/) | 11275    | 16%    | USAGI                 | <span style="color:blue">89.0%</span> <span style="color:green">10.3%</span> <span style="color:red">0.5%</span> | <span style="color:blue">81.0%</span> <span style="color:green">2.6%</span> <span style="color:red">16.2%</span> |
 
 </div>
 
-**Table:** Percentage in sources as: percent of events mapped to
-standard vocabulary; not mapped to standard vocabulary ; not found in
-vocabulary
-
-[]()
+**Table:** Percentage in sources as: <span style="color:blue">percent of
+events mapped to standard vocabulary</span>;
+<span style="color:green">not mapped to standard vocabulary</span> ;
+<span style="color:red">not found in vocabulary</span>
