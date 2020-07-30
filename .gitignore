@@ -1,2 +1,4 @@
 # Notebook Checkpoints
 .ipynb_checkpoints/
+.Rhistory
+.Rdata
