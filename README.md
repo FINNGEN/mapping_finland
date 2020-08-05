@@ -69,7 +69,8 @@ process of new vocabularies [here](https://github.com/OHDSI/Usagi)
 | [ICD9fi](./ICD9fi/)   | 2855     | 23%    | USAGI                 | <span style="color:blue">74.7%</span> <span style="color:green">23.4%</span> <span style="color:red">1.7%</span> |                                                                                                                  |
 | [ICPC2](./ICPC2/)     | 1443     | 77%    | Mapped to ICD10       | <span style="color:blue">87.2%</span> <span style="color:green">12.1%</span> <span style="color:red">0.5%</span> |                                                                                                                  |
 | [NOMESCO](./NOMESCO/) | 11275    | 16%    | USAGI                 | <span style="color:blue">89.0%</span> <span style="color:green">10.3%</span> <span style="color:red">0.5%</span> | <span style="color:blue">81.0%</span> <span style="color:green">2.6%</span> <span style="color:red">16.2%</span> |
-| [REIMB](./REIMB/)     | 264      | 0%     | TODO                  | <span style="color:green">100.0%</span>                                                                          |                                                                                                                  |
+| [REIMB](./REIMB/)     | 264      | 0%     | TODO:USAGI            | <span style="color:green">100.0%</span>                                                                          |                                                                                                                  |
+| [ICD8fi](./ICD8fi/)   | 6907     | 0%     | TODO:USAGI            | <span style="color:green">98.0%</span> <span style="color:red">1.9%</span>                                       |                                                                                                                  |
 
 </div>
 
