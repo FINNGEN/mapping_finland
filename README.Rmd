@@ -135,7 +135,8 @@ db_info <- tribble(
   "ICPC2",     "Mapped to ICD10",
   "NOMESCO",   "USAGI", 
   "REIMB",   "TODO:USAGI", 
-  "ICD8fi",   "TODO:USAGI"
+  "ICD8fi",   "TODO:USAGI",
+  "SPAT",   "TODO:USAGI"
 )
 
 db_join <- db_info %>% 

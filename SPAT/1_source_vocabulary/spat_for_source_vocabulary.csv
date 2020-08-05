@@ -1,0 +1,416 @@
+code,name_fi,name_en,name_se,name_en_source,valid_start_date,valid_end_date
+SPAT1000,SILMÄN ALUE,EYE AREA,ÖGONOMRÅDET,Traslator,2009-01-01,2099-12-31
+SPAT1001,Silmäluomen paiseen puhkaisu,Puncture of abscess of eyelid,Incision av abscess i ögonlocket,Traslator,2009-01-01,2010-12-31
+SPAT1002,Luomirakkulan poisto tai tyhjennys,Excision or drainage of chalazion,Excision eller exkokleation av chalazion,Traslator,2009-01-01,2099-12-31
+SPAT1003,Silmäluomen haavan ompelu,Suture of wound of eyelid,Sutur av sår i ögonlocket,Traslator,2009-01-01,2010-12-31
+SPAT1004,Kyynelpisteen tai -tiehyeen aukaisu,Incision of lacrimal point or canaliculus,"Sondering av tårpunkt och tårrör, canaliculus lacrimalis",Traslator,2009-01-01,2017-12-31
+SPAT1005,Vierasesineen poisto sidekalvolta,Removal of foreign body from conjunctiva,Avlägsnande av främmande kropp i bindehinnan,Traslator,2009-01-01,2017-12-31
+SPAT1006,Sidekalvon vierasesineen poisto puudutuksessa,Removal of foreign body from conjunctiva under regional anaesthesia,Avlägsnande av främmande kropp i bindehinnan under ytlig bedövning,Traslator,2009-01-01,2010-12-31
+SPAT1007,Vierasesineen poisto sarveiskalvosta,Removal of foreign body from cornea,Avlägsnande av främmande kropp i hornhinnan,Traslator,2009-01-01,2017-12-31
+SPAT1008,Silmänpohjan valokuvaus tai kuvan tulkinta,Photography of fundus of the eye or interpretation of photograph,Fotografering av ögonbotten och tolkning,Traslator,2009-01-01,2099-12-31
+SPAT1009,Silmänpaineen mittaus,Measurement of intraocular pressure,Mätning av ögontrycket,Traslator,2009-01-01,2099-12-31
+SPAT1010,Silmänpohjatutkimus (oftalmoskopia),Ophthalmoscopy,Ögonbottenundersökning (oftalmoskopi),Traslator,2009-01-01,2099-12-31
+SPAT1011,Muu silmän alueen tutkimus,Other examination of eye area,Annan undersökning av ögonområdet,Traslator,2009-01-01,2010-12-31
+SPAT1012,Muu silmän alueen pientoimenpide,Other minor procedure on eye area,Annan mindre åtgärd i ögonområdet,Traslator,2009-01-01,2010-12-31
+SPAT1013,Karsastuskuntoutus ja -ohjaus,Strabismus rehabilitation and guidance,Rehabilitation och patientinstruktioner för skelning,Traslator,2009-01-01,2099-12-31
+SPAT1014,Silmien hoito,Treatment of eyes,Behandling av ögon,Traslator,2009-01-01,2017-12-31
+SPAT1015,Karsastuksen tutkiminen,Examination of strabismus,Skelningstestning,Traslator,2009-01-01,2099-12-31
+SPAT1016,Näön tutkiminen,Examination of vision,Synundersökning,Traslator,2009-01-01,2099-12-31
+SPAT1017,Värinäön tutkimus,Examination of colour vision,Undersökning av färgseendet,Traslator,2009-01-01,2099-12-31
+SPAT1348,Silmän mikroskooppitutkimus,Microscopic examination of eye,Ögonmikroskopi,Traslator,2011-01-01,2017-12-31
+SPAT1018,"KORVA, NENÄ JA KURKUNPÄÄ","EAR, NOSE AND LARYNX","ÖRON, NÄSA OCH STRUPHUVUD",Traslator,2009-01-01,2099-12-31
+SPAT1019,Tympanostomiaputken asennus,Insertion of tympanostomy tube,Tympanostomi,Traslator,2009-01-01,2017-12-31
+SPAT1020,Kitarisaleikkaus,Adenoid operation,"Tonsilloperation, adenoidoperation",Traslator,2009-01-01,2017-12-31
+SPAT1021,Korvakäytävän paiseen puhkaisu,Puncture of abscess of outer auditory canal,Incision av abscess i yttre hörselgången,Traslator,2009-01-01,2010-12-31
+SPAT1022,Tärykalvopisto,Tympanic paracentesis,Paracentes av trumhinnan,Traslator,2009-01-01,2017-12-31
+SPAT1023,Polyypin poisto,Excision of polyp,Polypevulsion,Traslator,2009-01-01,2017-12-31
+SPAT1024,Nenän murtuman korjaaminen suljetusti,Closed reduction of nasal fracture,Sluten reposition av näsfraktur,Traslator,2009-01-01,2017-12-31
+SPAT1025,Nenäverenvuodon hoito hyydyttämällä,Treatment of epistaxis with coagulation,Behandling av näsblödning med koagulering,Traslator,2009-01-01,2099-12-31
+SPAT1026,Nenän etutamponaatio,Anterior nasal pack,Främre nästamponad,Traslator,2009-01-01,2017-12-31
+SPAT1027,Nenän takatamponaatio,Posterior nasal pack,Bakre nästamponad,Traslator,2009-01-01,2017-12-31
+SPAT1028,Nenän sivuonteloiden ultraäänitutkimus,Ultrasound examination of paranasal sinuses,Ultraljudsundersökning av näsans bihålor,Traslator,2009-01-01,2017-12-31
+SPAT1029,Sylkirauhasten ultraäänitutkimus,Ultrasound examination of salivary glands,Ultraljudsundersökning av spottkörtlar,Traslator,2009-01-01,2017-12-31
+SPAT1030,Sylkirauhasen solunäytteen otto UÄ-ohjauksessa,Cell biopsy of salivary gland under ultrasound guidance,"Spottkörtel, UL-styrd finnålsbiopsi",Traslator,2009-01-01,2010-12-31
+SPAT1031,Nielupaiseen avaus tai tyhjennys,Incision or drainage of pharyngeal abscess,Incision av abscess i farynx eller närliggande mjukdelar,Traslator,2009-01-01,2017-12-31
+SPAT1032,Vierasesineen poisto nielusta,Removal of foreign body from pharynx,Avlägsnande av främmande föremål från farynx,Traslator,2009-01-01,2017-12-31
+SPAT1033,Korvakäytävän huuhtelu tai vahan poisto,Irrigation or wax removal of outer auditory canal,Öronspolning eller borttagning av vaxpropp,Traslator,2009-01-01,2099-12-31
+SPAT1034,Vierasesineen poisto korvakäytävästä,Removal of foreign body from ear canal,Avlägsnande av främmande kropp från hörselgången,Traslator,2009-01-01,2017-12-31
+SPAT1035,Vierasesineen poisto nenästä,Removal of foreign body from nose,Avlägsnande av främmande kropp från näsan,Traslator,2009-01-01,2099-12-31
+SPAT1036,Poskiontelopunktio,Maxillary puncture,Punktion av käkhåla,Traslator,2009-01-01,2099-12-31
+SPAT1037,"Muu korvan, nenän tai kurkunpään pientoimenpide","Other minor procedure on ear, nose or larynx","Annan mindre ingrepp på öron, näsa eller larynx",Traslator,2009-01-01,2010-12-31
+SPAT1038,Neulakudosnäytteen otto sylkirauhasesta,Needle biopsy of salivary gland,Punktionsbiopsi av spottkörtel,Traslator,2009-01-01,2010-12-31
+SPAT1039,Otomikroskopia,Otomicroscopy,Otomikroskopi,Traslator,2009-01-01,2017-12-31
+SPAT1040,Nenän ja kurkunpään tähystys,Nasolaryngoscopy,Rinoskopi med laryngoskopi,Traslator,2009-01-01,2017-12-31
+SPAT1041,Perusteellinen kuulontutkimus,Comprehensive hearing test,Grundlig klinisk hörselundersökning,Traslator,2009-01-01,2017-12-31
+SPAT1042,Tasapainon ylläpitoon liittyvä ohjaus,Guidance concerning balance maintenance,Patientinstruktioner för uppehåll av balans,Traslator,2009-01-01,2099-12-31
+SPAT1043,Audiometria,Audiometry,Audiometri,Traslator,2009-01-01,2099-12-31
+SPAT1044,Tympanometria,Tympanometry,Tympanometri,Traslator,2009-01-01,2099-12-31
+SPAT1045,Tasapainoelimen kallistusprovokaatiotesti/Epleyn manööveri,Tilt provocation test of vestibular organ / Epley maneuver,Lutningsprovokationstest av balansorganet/Epley manöver,Traslator,2009-01-01,2099-12-31
+SPAT1349,Nielurisaleikkaus,Tonsil operation,Tonsillektomi,Traslator,2011-01-01,2017-12-31
+SPAT1350,Korvakäytävän tamponaatio,Tamponade of outer auditory canal,"Tamponadinläggning, öra",Traslator,2011-01-01,2017-12-31
+SPAT1351,Laaja korvan tutkimus,Extensive ear examination,"Klinisk undersökning av öron, omfattande",Traslator,2011-01-01,2017-12-31
+SPAT1352,"Kuulolaitteen tarkastus, huolto ja käytön ohjaus","Inspection, maintenance and instruction for use of hearing aid","Justering, granskning och patientinstruktioner av hörselapparat",Traslator,2011-01-01,2099-12-31
+SPAT1046,"HERMOSTO, UMPIERITYS, UNI-VALVETILA","NERVOUS SYSTEM, ENDOCRINE SYSTEM, SLEEP-WAKE STATE","NERVSYSTEMET, ENDOKRINA ORGAN, SÖMN-VAKENHETSNIVÅ",Traslator,2009-01-01,2099-12-31
+SPAT1047,Kilpirauhasen ultraäänitutkimus,Ultrasound examination of thyroid,Ultraljudsundersökning av sköldkörteln,Traslator,2009-01-01,2017-12-31
+SPAT1048,Ohutneulanäytteen otto kilpirauhasesta,Fine needle aspiration biopsy from thyroid,Finnålsbiopsi av sköldkörteln,Traslator,2009-01-01,2010-12-31
+SPAT1049,Lannepisto (lumbaalipunktio),Lumbar puncture,Lumbalpunktion,Traslator,2009-01-01,2017-12-31
+SPAT1050,Perusteellinen neurologinen tutkimus,Extensive neurological examination,Grundlig neurologisk undersökning,Traslator,2009-01-01,2099-12-31
+SPAT1051,Unihäiriöihin liittyvä ohjaus,Guidance regarding sleep disorders,Patientinstruktioner om sömnstörningar,Traslator,2009-01-01,2099-12-31
+SPAT1052,Tajunnantason ja neurologisten oireiden seuranta,Monitoring of level of consciousness and neurological symptoms,Övervakning av medvetandenivå och neurologiska symtom,Traslator,2009-01-01,2017-12-31
+SPAT1053,Muistitutkimus,Memory test,Minnesundersökning,Traslator,2009-01-01,2099-12-31
+SPAT1054,Perifeerisen hermoston tutkiminen,Examination of peripheral nervous system,Undersökning av det perifera nervsystemet,Traslator,2009-01-01,2017-12-31
+SPAT1377,Unipolygrafiatutkimus,Polysomnography,Sömnpolygrafiundersökning,Traslator,2013-01-01,2017-12-31
+SPAT1055,HENGITYSELIMET,RESPIRATORY ORGANS,ANDNINGSORGANEN,Traslator,2009-01-01,2099-12-31
+SPAT1056,Pleurapunktio,Pleural puncture,Pleurapunktion,Traslator,2009-01-01,2099-12-31
+SPAT1057,Uloshengityksen huippuvirtausmittaus,Peak expiratory flow measurement,Mätning av maximalt utandningsflöde,Traslator,2009-01-01,2099-12-31
+SPAT1058,PEF-seurantaopetus,PEF monitoring instruction,Patientinstruktion för PEF-uppföljning,Traslator,2009-01-01,2099-12-31
+SPAT1059,Spirometrinen tutkimus vastaanotolla,Spirometry at the office,Spirometrisk undersökning på mottagning,Traslator,2009-01-01,2017-12-31
+SPAT1060,Hapen antaminen,Administration of oxygen,Syrgasbehandling,Traslator,2009-01-01,2017-12-31
+SPAT1061,Hengitysharjoitusten toteuttaminen,Implementation of breathing exercises,Andningsövningar,Traslator,2009-01-01,2017-12-31
+SPAT1062,Keuhkojen tyhjennyshoito,Lung clearance therapy,Slemmobilisering och slemevakuering ur lungor,Traslator,2009-01-01,2099-12-31
+SPAT1063,Liman imeminen hengitysteistä,Suctioning of mucus from airways,Slemsugning av luftvägarna,Traslator,2009-01-01,2099-12-31
+SPAT1064,Trakeostomia-avanteen hoito,Management of tracheostomy stoma,Skötsel av trakeostomi,Traslator,2009-01-01,2099-12-31
+SPAT1065,Hengityksen hoitoon liittyvä ohjaus,Guidance concerning management of breathing,Patientinstruktioner för andningsvård,Traslator,2009-01-01,2010-12-31
+SPAT1066,"SYDÄN, VERENKIERTOELIMISTÖ, IMUSUONISTO, LUUYDIN","HEART, CIRCULATORY SYSTEM, LYMPHATIC SYSTEM, BONE MARROW","HJÄRTA, CIRKULATIONSORGAN, LYMFSYSTEM, BENMÄRG",Traslator,2009-01-01,2099-12-31
+SPAT1067,Vatsa-aortan ultraäänitutkimus,Ultrasound examination of abdominal aorta,"Ultraljudsundersökning, bukaorta",Traslator,2009-01-01,2017-12-31
+SPAT1068,Yläraajalaskimoiden ultraäänitutkimus,Ultrasound examination of arteries of upper extremity,"Ultraljudsundersökning, övre extremiteternas vener",Traslator,2009-01-01,2017-12-31
+SPAT1069,Alaraajalaskimoiden ultraäänitutkimus,Ultrasound examination of arteries of lower extremity,"Ultraljudsundersökning, nedre extremiteternas vener",Traslator,2009-01-01,2017-12-31
+SPAT1070,Alaraajalaskimoiden verivirtauksen Doppler-ultraäänitutkimus,Doppler ultrasound examination of blood flow in arteries of lower extremity,"Ultraljudsundersökning med Doppler-teknik, nedre extremiteternas venflöde",Traslator,2009-01-01,2099-12-31
+SPAT1071,Imusolmukkeiden ultraäänitutkimus,Ultrasound examination of lymph nodes,"Ultraljudsundersökning, lymfkörtlar",Traslator,2009-01-01,2017-12-31
+SPAT1073,Sähköinen rytminsiirto,Electrical cardioversion,Elektronisk kardioversion,Traslator,2009-01-01,2017-12-31
+SPAT1074,Venesektio,Venesection,Venesektion,Traslator,2009-01-01,2099-12-31
+SPAT1075,Laskimon kanylointi,Cannulation of vein,Kanylering av ven,Traslator,2009-01-01,2010-12-31
+SPAT1076,Keskuslaskimokanylointi,Cannulation of central vein,Inläggning av central venkateter,Traslator,2009-01-01,2017-12-31
+SPAT1077,Valtimoverinäytteen otto,Arterial blood sampling,Artärpunktion,Traslator,2009-01-01,2017-12-31
+SPAT1078,Keskuslaskimo- tai valtimokanyylin poisto,Removal of central venous or arterial cannula,Avlägsnande av central venkateter eller artärkateter,Traslator,2009-01-01,2017-12-31
+SPAT1079,Sydämen ultraäänitutkimus,Echocardiography,Ultraljudsundersökning av hjärta,Traslator,2009-01-01,2017-12-31
+SPAT1080,Luuydinnäytteen otto,Bone marrow biopsy,Benmärgsprovtagning,Traslator,2009-01-01,2017-12-31
+SPAT1081,Kardiorespiratorinen kokonaisarvio,Cardiorespiratory global assessment,Helhetsbedömning av kardiorespiratorisk status,Traslator,2009-01-01,2099-12-31
+SPAT1082,Lääkkeellinen rytminsiirto,Pharmacological cardioversion,Farmakologisk konvertering,Traslator,2009-01-01,2099-12-31
+SPAT1083,IV-nestehoidon aloitus ja seuranta,Initiation and monitoring of IV fluid therapy,Intravenös vätskebehandling,Traslator,2009-01-01,2099-12-31
+SPAT1084,"ELVYTYS, ANESTESIA, VERENKIERRON SEURANTA,YM.","RESUSCITATION, ANAESTHESIA, MONITORING OF CIRCULATION ETC.","ÅTERUPPLIVNING, ANESTESI, CIRKULATORISK UPPFÖLJNING, MED MERA",Traslator,2009-01-01,2099-12-31
+SPAT1085,Inhalaatioanestesia,Inhalation anaesthesia,Generell anestesi baserad på inhalationsanestesi,Traslator,2009-01-01,2017-12-31
+SPAT1086,Leikkaussaliolosuhteissa tehtävät leikkaukset ja vastaavat toimenpiteet,Operations and comparable procedures performed in operating theatre setting,Operationssalsåtgärder,Traslator,2009-01-01,2010-12-31
+SPAT1087,Valtimon liuotushoito,Thrombolytic therapy of artery,Arteriell trombolysbehandling,Traslator,2009-01-01,2017-12-31
+SPAT1088,Verensiirto,Blood transfusion,Blodtransfusion,Traslator,2009-01-01,2099-12-31
+SPAT1089,Sedaatio ilman anestesiaa,Sedation without anaesthesia,Sedering eller analgesi utan anestesi,Traslator,2009-01-01,2017-12-31
+SPAT1090,"Suonensisäinen, intramuskulaarinen tai rektaalinen yleisanestesia","Intravenous, intramuscular or rectal general anaesthesia","Intravenös, intramuskulär eller rektal generell anestesi",Traslator,2009-01-01,2017-12-31
+SPAT1091,Nenänielu- tai nieluputken asennus,Insertion of nasopharyngeal or pharyngeal tube,Insättning av nasofaryngeal- eller svalgtub,Traslator,2009-01-01,2017-12-31
+SPAT1092,Intubaatio,Intubation,Intubering,Traslator,2009-01-01,2017-12-31
+SPAT1093,Trakeostomia,Tracheostomy,Trakeostomi,Traslator,2009-01-01,2017-12-31
+SPAT1094,Ylipainehengitys,Continuous Positive Airway Pressure,Övertrycksandning,Traslator,2009-01-01,2017-12-31
+SPAT1095,Verenkierron tai hengityksen elvytys,Cardiopulmonary resuscitation,Återupplivning vid hjärt- eller andningsstopp,Traslator,2009-01-01,2017-12-31
+SPAT1096,Sydämen ulkoisen tahdistimen asetus tai käyttö,Insertion or use of external pacemaker,Insättning och användning hjärt-pacemaker,Traslator,2009-01-01,2017-12-31
+SPAT1097,EKG:n ottaminen,Recording of ECG,Standard EKG,Traslator,2009-01-01,2099-12-31
+SPAT1098,Rasitus-EKG,Exercise ECG,Arbets-EKG,Traslator,2009-01-01,2017-12-31
+SPAT1099,Verenpaineen mittaus Doppler-ultraäänilaitteen avulla,Measurement of blood pressure with Doppler ultrasound device,Blodtrycksmätning med Doppler-metod,Traslator,2009-01-01,2099-12-31
+SPAT1100,Verenpaineen pitkäaikaisseuranta,Long-term monitoring of blood pressure,Långtidsregistrering av blodtrycket,Traslator,2009-01-01,2099-12-31
+SPAT1101,Ortostaattinen koe,Orthostatic test,Ortostatiskt prov,Traslator,2009-01-01,2099-12-31
+SPAT1102,Verenvuotopotilaan hoito ja seuranta,Treatment and monitoring of patient with bleeding,Vård och övervakning av patient med blödning,Traslator,2009-01-01,2010-12-31
+SPAT1103,Vaativa sairaankuljetus,Demanding ambulance transportation,Krävande patienttransport,Traslator,2009-01-01,2017-12-31
+SPAT1104,Ensiapupotilaan seuranta,Monitoring of emergency patient,Övervakning av patient i förstahjälp,Traslator,2009-01-01,2099-12-31
+SPAT1353,Tehovalvonta,Intensive monitoring,"Lättövervakning, intensivövervakning eller intensivvård",Traslator,2011-01-01,2017-12-31
+SPAT1105,"KIVUN HOITO, PUUDUTUKSET","ANALGESIA, REGIONAL ANAESTHESIA","SMÄRTBEHANDLING, BEDÖVNINGAR",Traslator,2009-01-01,2099-12-31
+SPAT1106,Akupunktio,Acupuncture,Akupunktur,Traslator,2009-01-01,2099-12-31
+SPAT1107,Laaja ihon pintapuudutus ulkoisesti voiteella tai geelillä,Extensive external surface anaesthesia of skin with cream or gel,Omfattande ytlig hudbedövning med salva eller gel,Traslator,2009-01-01,2017-12-31
+SPAT1108,Kylkiluuvälin puudutus,Regional anaesthesia of intercostal space,Interkostalblockad,Traslator,2009-01-01,2017-12-31
+SPAT1109,Kivun hoito kipupumpun avulla,Analgesia with portable analgesic pump,Patientkontrollerad analgesi (PCA),Traslator,2009-01-01,2099-12-31
+SPAT1110,Kivun voimakkuuden mittaaminen,Measurement of pain intensity,Mätning av smärtans intensitet,Traslator,2009-01-01,2099-12-31
+SPAT1111,Kivunhoidon suunnittelu,Planning of analgesia,Planering av smärtbehandling,Traslator,2009-01-01,2099-12-31
+SPAT1112,Paikallispuudutus,Local anaesthesia,Lokal bedövning,Traslator,2009-01-01,2017-12-31
+SPAT1113,Johtopuudutus,Nerve block anaesthesia,Blockad av perifer nerv,Traslator,2009-01-01,2017-12-31
+SPAT1114,"RUUANSULATUSKANAVA, KAULA, VATSA, RAVITSEMUS","DIGESTIVE TRACT, NECK, ABDOMEN, NUTRITION","GASTROINTESTINALKANAL, HALS, BUK, NUTRITION",Traslator,2009-01-01,2099-12-31
+SPAT1115,Muu ravitsemusterapianimikkeistön mukainen toimenpide,Other procedure in accordance with nutritional therapy nomenclature,Annan näringsterapi,Traslator,2009-01-01,2010-12-31
+SPAT1116,Kaulan ultraäänitutkimus,Ultrasound examination of neck,Ultraljudsundersökning av hals,Traslator,2009-01-01,2017-12-31
+SPAT1117,Nivusten ja/tai vatsapeitteiden ultraäänitutkimus,Ultrasound examination of groins and/or abdominal wall,Ultraljudundersökning av ljumske och/eller bukvägg,Traslator,2009-01-01,2017-12-31
+SPAT1118,Peräpukamatoimenpide,Haemorrhoid procedure,Hemorrojdsåtgärd,Traslator,2009-01-01,2099-12-31
+SPAT1119,Vatsan ultraäänitutkimus,Ultrasound examination of abdomen,Ultraljudsundersökning av buk,Traslator,2009-01-01,2017-12-31
+SPAT1120,Ylävatsan ultraäänitutkimus,Ultrasound examination of upper abdomen,Ultraljudsundersökning av övre delen av buk,Traslator,2009-01-01,2017-12-31
+SPAT1121,Alavatsan ultraäänitutkimus,Ultrasound examination of lower abdomen,Ultraljudsundersökning av nedre delen av buk,Traslator,2009-01-01,2017-12-31
+SPAT1122,Askitespunktio,Ascites puncture,Punktion av ascites,Traslator,2009-01-01,2099-12-31
+SPAT1123,Nenämahaletkun laitto,Insertion of nasogastric tube,Nasogastrisk sond,Traslator,2009-01-01,2017-12-31
+SPAT1124,Mahalaukkuavanneletkun vaihto,Replacement of gastrostomy tube,Byte av gastrotomikateter,Traslator,2009-01-01,2017-12-31
+SPAT1125,Avannehoito ja -ohjaus,Stoma care and guidance,Utprovning och underhåll av stomi,Traslator,2009-01-01,2099-12-31
+SPAT1126,Vierasesineen poisto peräsuolesta,Removal of foreign body from rectum,Borttagande av främmande kropp från rektum,Traslator,2009-01-01,2017-12-31
+SPAT1127,Peräruiske,Enema,Lavemang,Traslator,2009-01-01,2099-12-31
+SPAT1128,Lantionpohjan/sulkijalihasten harjoituksen ohjaus,Instruction of pelvic floor / sphincter exercises,Patientinstruktion för bäckenbottenträning,Traslator,2009-01-01,2099-12-31
+SPAT1129,Paikallisen muutoksen poisto mahasuolikanavan tähystyksessä,Removal of local lesion during endoscopy of gastrointestinal tract,Excision av lokal förändring genom gastrointestinal endoskopi,Traslator,2009-01-01,2010-12-31
+SPAT1130,"Esofago-, gastro- ja duodenoskopia","Esophagoscopy, gastroscopy and duodenoscopy","Esofago-, gastro- och duodenoskopi",Traslator,2009-01-01,2099-12-31
+SPAT1131,Paksusuolen tähystys,Colonoscopy,Kolonoskopi,Traslator,2009-01-01,2099-12-31
+SPAT1132,Sigmoideoskopia,Sigmoidoscopy,Sigmoidoskopi,Traslator,2009-01-01,2017-12-31
+SPAT1133,Peräsuolen tähystys (rektoskopia),Rectoscopy,Endoskopi av ändtarmen (rektoskopi),Traslator,2009-01-01,2010-12-31
+SPAT1134,Peräaukon tähystys,Anoscopy,Endoskopi av anus,Traslator,2009-01-01,2099-12-31
+SPAT1135,Erityisen vaativa peräaukon tähystys (proktoskopia/anoskopia),Particularly demanding anoscopy (proctoscopy/anoscopy),Speciellt krävande endoskopi av anus,Traslator,2009-01-01,2010-12-31
+SPAT1136,Ruoka-ainealtistus,Food exposure,Födoämnesprovokation,Traslator,2009-01-01,2017-12-31
+SPAT1137,Potilaan/asiakkaan hygieniasta huolehtiminen,Taking care of patient’s/customer’s hygiene,Skötsel av klientens personliga hygieni,Traslator,2009-01-01,2017-12-31
+SPAT1138,Suoliston toimintaan liittyvä ohjaus,Guidance concerning bowel function,Patientinstruktioner om tarmfunktion,Traslator,2009-01-01,2017-12-31
+SPAT1139,Ravitsemuskartoitus,Nutrition survey,Näringsutredning,Traslator,2009-01-01,2017-12-31
+SPAT1354,Mahahuuhtelu,Gastric lavage,Ventrikelsköljning,Traslator,2011-01-01,2017-12-31
+SPAT1355,Tyrän reponointi,Reposition of hernia,Reponering av bråck,Traslator,2011-01-01,2017-12-31
+SPAT1140,IHO JA LIMAKALVOT,SKIN AND MUCOUS MEMBRANES,HUD OCH SLEMHINNOR,Traslator,2009-01-01,2099-12-31
+SPAT1141,Iho- tai limakalvomuutoksen poisto,Excision of skin or mucous membrane lesion,Avlägsnande av hud- eller slemhinneförändringen,Traslator,2009-01-01,2099-12-31
+SPAT1142,"Hampaiden, ikenien, suun ja nielun pientoimenpide","Minor procedure on teeth, gums, mouth and pharynx","Mindre ingrepp i tänder, tandkött, mun och svalg",Traslator,2009-01-01,2017-12-31
+SPAT1143,Kynnen poisto osittain tai kokonaan,Partial or complete excision of nail,Total eller partiell evulsion av nagel,Traslator,2009-01-01,2099-12-31
+SPAT1144,Auenneen tai tulehtuneen leikkaushaavan hoito,Treatment of reopened or infected surgical wound,Behandling av rupturerat eller infekterat operationssår,Traslator,2009-01-01,2099-12-31
+SPAT1145,Pinnallisen resistenssin ultraäänitutkimus,Ultrasound examination of superficial resistance,Ultraljudsundersökning av ytlig resistens,Traslator,2009-01-01,2017-12-31
+SPAT1146,Paiseen puhkaisu tai ihon aukaisu,Puncture of abscess or incision of skin,Incision/dränage i huden,Traslator,2009-01-01,2099-12-31
+SPAT1147,Ihomuutoksen tuhoaminen ulkoisilla menetelmillä,Destruction of skin lesion with external methods,Hudförändringens lokal destruktion,Traslator,2009-01-01,2099-12-31
+SPAT1148,Kroonisen haavan tai palovamman hoito,Treatment of chronic ulcer or burn,Behandling av kronisk sår eller brännsår,Traslator,2009-01-01,2099-12-31
+SPAT1149,Traumaattisen haavan ompelu tai hoito,Suture or treatment of traumatic wound,Sutur eller behandling av traumatiskt sår,Traslator,2009-01-01,2099-12-31
+SPAT1150,Haavan ompelu,Suture of wound,Sutur av sår,Traslator,2009-01-01,2010-12-31
+SPAT1151,Suurten haavojen hoito,Treatment of major wounds,Omfattande behandling av sår i hud,Traslator,2009-01-01,2099-12-31
+SPAT1152,Ihon alle jääneen vierasesineen poisto,Removal of foreign body from under the skin,Avlägsnande av en främmande kropp som penetrerat huden,Traslator,2009-01-01,2099-12-31
+SPAT1153,Ompeleiden poisto,Removal of sutures,Borttagning av suturer,Traslator,2009-01-01,2099-12-31
+SPAT1154,Ihonalaisen lääkeainekapselin asettaminen tai poisto,Insertion or removal of subcutaneous medicine capsule,Inläggning eller uttagning av subkutan läkemedelskapsel,Traslator,2009-01-01,2099-12-31
+SPAT1155,Ihosuikalesiirto,Pinch skin grafting,Fritt autologt delhudstransplantat,Traslator,2009-01-01,2010-12-31
+SPAT1156,Ihottuman ja ihon hoitoon liittyvä ohjaus,Guidance concerning treatment of rash and skin,Patientinstruktioner för vård av hudsjukdomar,Traslator,2009-01-01,2099-12-31
+SPAT1157,Suun ja limakalvojen hoitoon liittyvä ohjaus,Guidance concerning treatment of mouth and mucous membranes,Patientinstruktioner för vård av mun och slemhinnor,Traslator,2009-01-01,2099-12-31
+SPAT1158,Kynnen puhkaisu,Puncture of nail,Perforering av nagel,Traslator,2009-01-01,2099-12-31
+SPAT1159,"VIRTSATIET, AINEENVAIHDUNTA","URINARY TRACT, METABOLISM","URINVÄGAR, ÄMNESOMSÄTTNING",Traslator,2009-01-01,2099-12-31
+SPAT1160,Munuaisten ultraäänitutkimus,Ultrasound examination of kidneys,Ultraljudsundersökning av njurarna,Traslator,2009-01-01,2017-12-31
+SPAT1161,Virtsarakon ultraäänitutkimus,Ultrasound examination of urinary bladder,Ultraljudsundersökning av urinblåsan,Traslator,2009-01-01,2017-12-31
+SPAT1162,Jäännösvirtsan määritys UÄ:llä,Determination of residual urine with ultrasound,Residualurinets mätning med UL,Traslator,2009-01-01,2010-12-31
+SPAT1163,Virtsaelinten ultraäänitutkimus,Ultrasound examination of urinary organs,Ultraljudsundersökning av njurar och urinvägar,Traslator,2009-01-01,2017-12-31
+SPAT1164,Hemodialyysi,Haemodialysis,Hemodialys,Traslator,2009-01-01,2017-12-31
+SPAT1165,Vatsakalvodialyysi,Peritoneal dialysis,Peritonealdialys,Traslator,2009-01-01,2017-12-31
+SPAT1166,Virtsarakkopunktio,Bladder puncture,Perkutan punktion/dränage av urinblåsan,Traslator,2009-01-01,2010-12-31
+SPAT1167,Virtsarakkokatetrin asettaminen,Insertion of urinary catheter,Kateterisering av urinblåsa,Traslator,2009-01-01,2099-12-31
+SPAT1168,Katetrointiopetus,Catheterisation training,Patientinstruktioner om kateterisering,Traslator,2009-01-01,2099-12-31
+SPAT1169,Virtsaputken laajentaminen,Dilatation of urethra,Dilatation av uretra,Traslator,2009-01-01,2017-12-31
+SPAT1170,"Virtsasuihkun virtausmittaus, flowmetria",Uroflowmetry,"Urinflödesmätning, flowmetri",Traslator,2009-01-01,2017-12-31
+SPAT1171,Virtsarakkopunktio,Bladder puncture,Urinblåspunktion,Traslator,2009-01-01,2099-12-31
+SPAT1172,Nesteytykseen liittyvä ohjaus,Guidance concerning hydration,Patientinstruktioner om rehydrering,Traslator,2009-01-01,2099-12-31
+SPAT1173,"NAISTENTAUDIT, SEKSUAALI- JA LISÄÄNTYMISTERVEYS","gynaecological diseases, SEXUAL AND REPRODUCTIVE HEALTH","KÖNSORGAN, GRAVIDITET, FÖRLOSSNING",Traslator,2009-01-01,2099-12-31
+SPAT1174,Rintarauhasten ultraäänitutkimus,Ultrasound examination of mammary glands,Ultraljudundersökning av bröstkörtlar,Traslator,2009-01-01,2017-12-31
+SPAT1175,Sikiön ulkokäännös,External version of foetus,Yttre vändning av foster,Traslator,2009-01-01,2017-12-31
+SPAT1176,Synnytyksen hoito,Management of childbirth,Medhjälp vid normal förlossning,Traslator,2009-01-01,2017-12-31
+SPAT1177,Prostatan ultraäänitutkimus iholta,Ultrasound examination of prostate through the skin,Perkutan ultraljudsundersökning av prostata,Traslator,2009-01-01,2017-12-31
+SPAT1178,Kivespussin ultraäänitutkimus,Ultrasound examination of scrotum,Ultraljudsundersökning av skrotum,Traslator,2009-01-01,2017-12-31
+SPAT1179,Skleroterapia,Sclerotherapy,Skleroterapi,Traslator,2009-01-01,2017-12-31
+SPAT1180,Parafimoosin repositio,Repositioning of paraphimosis,Parafimos reposition,Traslator,2009-01-01,2017-12-31
+SPAT1181,Kohdun ja sivuelinten ultraäänitutkimus,Ultrasound examination of uterus and uterine appendages,Gynekologiskt UL i samband med klinisk undersökning,Traslator,2009-01-01,2099-12-31
+SPAT1182,"Kohdun, sivuelinten ja alavatsan UÄ","Ultrasound examination of uterus, appendages and lower abdomen","Ultraljudundersökning av livmoder, parametrier och nedre delen av buken",Traslator,2009-01-01,2017-12-31
+SPAT1183,Ehkäisykierukan paikantaminen tai muu yksittäisen gynekologisen kohteen UÄ,Localisation of IUD or other ultrasound examination of separate gynaecological object,emotio,Traslator,2009-01-01,2010-12-31
+SPAT1184,Kohdun runko-osan kaavinta,Curettage of body of uterus,Abrasio av corpus uteri,Traslator,2009-01-01,2017-12-31
+SPAT1185,Raskauden keskeytys lääkkeellä,Medical abortion,Farmakologisk abort,Traslator,2009-01-01,2017-12-31
+SPAT1186,Kohdun kaulan laserhoito tai poltto,Laser therapy or thermotherapy of uterine cervix,Laserbehandling eller bränning av livmoderhalsen,Traslator,2009-01-01,2017-12-31
+SPAT1187,Varhaisraskauden yleinen ultraäänitutkimus,General ultrasound examination in early pregnancy,Ultraljudsundersökning i tidig graviditet,Traslator,2009-01-01,2099-12-31
+SPAT1188,Sikiön mittakontrolli,Monitoring of foetal growth,Enskild mått från foster,Traslator,2009-01-01,2012-12-31
+SPAT1189,Muu raskaudenaikainen ultraäänitutkimus,Other ultrasound examination during pregnancy,Ultraljudsundersökning i graviditet,Traslator,2009-01-01,2099-12-31
+SPAT1190,Kohdunsisäisen ehkäisimen asettaminen tai poisto,Insertion or removal of intrauterine contraceptive device,Insättande och avlägsnande av intrauterint preventivmedel,Traslator,2009-01-01,2099-12-31
+SPAT1191,Vierasesineen poisto emättimestä,Removal of foreign body from vagina,Avlägsnande av främmande kropp ur vagina,Traslator,2009-01-01,2099-12-31
+SPAT1192,Gynekologinen tutkimus,Gynaecological examination,Gynekologisk undersökning,Traslator,2009-01-01,2099-12-31
+SPAT1193,Gynekologinen irtosolunäytteen otto,Pap smear,Gynekologisk cellprovtagning,Traslator,2009-01-01,2099-12-31
+SPAT1196,Normaaliraskauden seuranta,Monitoring of normal pregnancy,Uppföljning av normal graviditet,Traslator,2009-01-01,2014-12-31
+SPAT1198,Kohdun kaulakanavan laajennus,Dilatation of cervical canal,Cervixdilatation,Traslator,2009-01-01,2010-12-31
+SPAT1199,Perinnöllisyysneuvonta,Genetic counselling,Genetisk rådgivning,Traslator,2009-01-01,2099-12-31
+SPAT1356,Kohdun runko-osan lihas- tai limakalvonäytteen otto,Collection of muscle or mucous membrane sample from body of uterus,Corpus uteri muskel- eller slemhinneprovtagning,Traslator,2011-01-01,2017-12-31
+SPAT1357,Raskaudenaikaisen ongelman seuranta,Monitoring of problem during pregnancy,Uppföljning av problem under graviditet,Traslator,2011-01-01,2014-12-31
+SPAT1371,Raskauden keskeytyksen tarpeen arviointi,Assessment of need for induced abortion,Bedömning av abortbehov,Traslator,2013-01-01,2099-12-31
+SPAT1372,Raskauden keskeytyksen jälkitarkastus,Follow-up examination after induced abortion,Kontrollundersökning efter abort,Traslator,2013-01-01,2099-12-31
+SPAT1201,TUKI- JA LIIKUNTAELIMET,MUSCULOSKELETAL SYSTEM,STÖD- OCH RÖRELSEORGANEN,Traslator,2009-01-01,2099-12-31
+SPAT1202,Nivelinjektio,Intra-articular injection,Ledinjektion,Traslator,2009-01-01,2099-12-31
+SPAT1203,Injektiohoito muualle kuin lihaksiin tai ihon alle,"Injection therapy, other than intramuscular or subcutaneous",Annan injektionsbehandling än i muskler eller under huden,Traslator,2009-01-01,2017-12-31
+SPAT1204,Nivelpunktio,Arthrocentesis,Ledpunktion,Traslator,2009-01-01,2099-12-31
+SPAT1205,Nivelen sijoiltaanmenon paikalleenasetus,Repositioning of dislocated joint,Reposition av luxerad led,Traslator,2009-01-01,2017-12-31
+SPAT1206,Murtuman paikalleenasetus ja sidos,Repositioning and bandage of fracture,Repositionering och bandagering av fraktur,Traslator,2009-01-01,2017-12-31
+SPAT1207,Sormen tai varpaan tyngän typistys,Resection of finger or toe stump,Resektion av finger- eller tåstump,Traslator,2009-01-01,2017-12-31
+SPAT1208,Lihaksen tai jänteen ultraäänitutkimus,Ultrasound examination of muscle or tendon,Ultraljudsundersökning av muskel eller sena,Traslator,2009-01-01,2017-12-31
+SPAT1209,Nivelen ultraäänitutkimus,Ultrasound examination of joint,Ultraljudsundersökning av led,Traslator,2009-01-01,2017-12-31
+SPAT1210,Kipsin tai yksilöllisen tuen asetus,Application of cast or individual aid,Anläggande bandage av formbart material,Traslator,2009-01-01,2099-12-31
+SPAT1211,Pehmeän sidoksen asetus,Application of soft bandage,Anläggande av mjukt bandage,Traslator,2009-01-01,2017-12-31
+SPAT1212,Tuki- ja liikuntaelimistön laaja tutkimus,Extensive examination of musculoskeletal system,Omfattande klinisk undersökning av stöd- och rörelseorgan,Traslator,2009-01-01,2017-12-31
+SPAT1213,Ryhtivirheen tutkimus,Examination of postural anomaly,Undersökning av hållningsfel,Traslator,2009-01-01,2099-12-31
+SPAT1214,"KUNTOUTUS, TOIMINNAN TUKEMINEN, APUVÄLINEPALVELUT","REHABILITATION, FUNCTION SUPPORT, AID SERVICES","REHABILITERING, AKTIVITETSSTÖD, HJÄLPMEDELSSERVICE",Traslator,2009-01-01,2099-12-31
+SPAT1215,Lääkinnällisen kuntoutustarpeen arviointi,Assessment of need for medical rehabilitation,Bedömning av annat rehabiliteringsbehov,Traslator,2009-01-01,2099-12-31
+SPAT1216,Toimintakyvyn arviointi,Assessment of functional ability,Bedömning av funktionsförmåga,Traslator,2009-01-01,2099-12-31
+SPAT1217,Palvelutarpeen arviointi (iäkkäät/hoitotuki),Assessment of need for services (elderly/care support),Bedömning av behov för service för äldre person eller person med vårdbidrag eller över 75 års ålder,Traslator,2009-01-01,2099-12-31
+SPAT1218,Kasvatuksellisen kuntoutuksen tarpeen arviointi,Assessment of need for educational rehabilitation,Bedömning av behovet av pedagogisk rehabilitering,Traslator,2009-01-01,2017-12-31
+SPAT1219,Ammatillisen kuntoutuksen tarpeen arviointi,Assessment of need for vocational rehabilitation,Bedömning av behovet av yrkesinriktad rehabilitering,Traslator,2009-01-01,2099-12-31
+SPAT1220,Kuntoutustarpeen arvio ja/tai kuntoutussuunnitelma,Assessment of need for rehabilitation and/or rehabilitation plan,Utarbetandet av rehabiliteringsplanen,Traslator,2009-01-01,2099-12-31
+SPAT1221,Kuntoutuspalveluita ja toimeentuloa koskeva ohjaus,Guidance concerning rehabilitation services and livelihood,Information och handledning angående rehabiliteringstjänster och social skydd,Traslator,2009-01-01,2099-12-31
+SPAT1222,Itsenäistä selviytymistä edistävä neuvonta/ohjaus,Counselling/guidance promoting independent living,Rådgivning och handledning om självständig levande,Traslator,2009-01-01,2099-12-31
+SPAT1223,Fysioterapeuttisen kuntoutussuunnitelman toteuttaminen,Implementation of physical therapy rehabilitation plan,Fysioterapi enligt rehabilitationsplan,Traslator,2009-01-01,2099-12-31
+SPAT1224,Puheterapeuttisen kuntoutussuunnitelman toteuttaminen,Implementation of speech therapy rehabilitation plan,Talterapi enligt rehabilitationsplan,Traslator,2009-01-01,2017-12-31
+SPAT1225,Jalkaterapeuttisen kuntoutussuunnitelman toteuttaminen,Implementation of podiatry rehabilitation plan,Fotterapi enligt rehabilitationsplan,Traslator,2009-01-01,2017-12-31
+SPAT1226,Toimintaterapeuttisen kuntoutussuunnitelman toteuttaminen,Implementation of occupational therapy rehabilitation plan,Ergoterapi enligt rehabilitationsplan,Traslator,2009-01-01,2017-12-31
+SPAT1227,Päihdekuntoutus,Substance abuse rehabilitation,Rehabilitering för missbrukare,Traslator,2009-01-01,2099-12-31
+SPAT1228,Kasvatuksellisen kuntoutuksen terapiamuodot,Forms of educational rehabilitation therapy,Terapiformer inom pedagogisk rehabilitering,Traslator,2009-01-01,2099-12-31
+SPAT1229,Apuvälinetarpeen arviointi,Assessment of need for aid,Bedömning av hjälpmedelsbehov,Traslator,2009-01-01,2099-12-31
+SPAT1230,"Apuvälinesovitus, -lainaus ja käytön seuranta",Aid fitting and borrowing and monitoring of use,"Överlåtelse, anpassning och uppföljning av hjälpmedel",Traslator,2009-01-01,2017-12-31
+SPAT1231,Arvio elinympäristössä tarvittavista muutostöistä,Assessment of adjustments needed in living environment,Bedömning av nödvändiga ändringsarbeten i livsmiljön,Traslator,2009-01-01,2017-12-31
+SPAT1232,Kommunikaatio tulkin tai avustajan avulla,Communication with help of interpreter or assistant,Kommunikation via tolk eller assistent,Traslator,2009-01-01,2099-12-31
+SPAT1233,Työkyvyn arviointi,Assessment of ability to work,Bedömning av arbetsförmåga,Traslator,2009-01-01,2010-12-31
+SPAT1234,Sosiaalisen toimintakyvyn tukeminen,Support of social functional capacity,Stödjande av den sociala funktionsförmågan,Traslator,2009-01-01,2099-12-31
+SPAT1235,"Mielenterveys, emotionaalinen tuki","Mental health, emotional support",Emotionellt stödjande av psykisk hälsa,Traslator,2009-01-01,2010-12-31
+SPAT1236,Ensitiedon antaminen,Informing family of child’s disability,Avgivande av förstahandsinformation,Traslator,2009-01-01,2017-12-31
+SPAT1237,Psykoterapia,Psychotherapy,Psykoterapi,Traslator,2009-01-01,2099-12-31
+SPAT1238,Lyhytterapia,Brief therapy,Korttidsterapi,Traslator,2009-01-01,2017-12-31
+SPAT1239,Perheterapia,Family therapy,Familjeterapi,Traslator,2009-01-01,2099-12-31
+SPAT1240,Terapeuttinen keskustelu,Therapeutic discussion,Stödjande samtal,Traslator,2009-01-01,2099-12-31
+SPAT1241,Psykososiaalisen tilanteen laaja kartoitus,Extensive assessment of psychosocial situation,Omfattande kartläggning av psykosociala situationen med utlåtande eller remiss,Traslator,2009-01-01,2099-12-31
+SPAT1242,Traumaterapia,Trauma therapy,Traumaterapi,Traslator,2009-01-01,2099-12-31
+SPAT1243,Psykiatrinen/psykologinen tutkimus,Psychiatric/psychological examination,Psykiatrisk/psykologisk undersökning,Traslator,2009-01-01,2099-12-31
+SPAT1244,Toiminnallinen terapia,Occupational therapy,Aktivitetsterapi,Traslator,2009-01-01,2099-12-31
+SPAT1245,Potilaan läheisten tukeminen ja informointi,Provision of support and information to patient’s family members,Stöd och information till patientens närstående,Traslator,2009-01-01,2099-12-31
+SPAT1246,Depression tai muun psyykkisen ongelman seulonta,Screening of depression or other psychiatric problem,Screening för psykiska problem,Traslator,2009-01-01,2099-12-31
+SPAT1247,Avokatkaisuhoito ja seuranta,Outpatient detoxication and monitoring,Öppen avgiftningsvård och uppföljning,Traslator,2009-01-01,2099-12-31
+SPAT1358,Psykiatrinen tarkkailulähete eli M1-lähete,Referral to psychiatric observation (M1 referral),Psykiatrisk remiss eller observationsremiss,Traslator,2011-01-01,2099-12-31
+SPAT1248,"MUU TUTKIMINEN, TOIMENPITEET, HOITO, YM.","OTHER EXAMINATIONS, PROCEDURES, TREATMENT ETC.","ANDRA UNDERSÖKNINGAR, ÅTGÄRDER, VÅRD OCH BEHANDLING, M.M.",Traslator,2009-01-01,2099-12-31
+SPAT1072,Ohutneulanäytteen otto,Fine needle aspiration biopsy,Lymfkörtel finnålsbiopsi eller biopsi,Traslator,2009-01-01,2017-12-31
+SPAT1249,Hoitoon liittyvä neuvonta vastaanoton ulkopuolella,Treatment-related counselling outside office,Separat fjärrkontakt med patient i hälsovården,Traslator,2009-01-01,2099-12-31
+SPAT1250,Kroonisen sairauden perusteellinen seuranta,Comprehensive monitoring of chronic illness,Uppföljning för kronisk sjukdom,Traslator,2009-01-01,2017-12-31
+SPAT1251,Lääkityksen järjestely,Organisation of medication,Organisering av läkemedelsbehandling,Traslator,2009-01-01,2012-12-31
+SPAT1252,Kokonaislääkehoitosuunnitelma tai sen tarkastus,Overall medication plan or its review,Helhetsplanering av läkemedelsbehandling,Traslator,2009-01-01,2017-12-31
+SPAT1253,"Lääkityksen aloitus, muutos, lopetus tai uusinta","Initiation, adjustment, discontinuation or repetition of medication","Läkemedelsbehandling start, förändring, avslutning eller förnyelse",Traslator,2009-01-01,2017-12-31
+SPAT1254,Lääkkeenanto,Administration of medicine,Administrering av läkemedel,Traslator,2009-01-01,2099-12-31
+SPAT1255,Suonensisäinen lääkkeenanto,Intravenous administration of medicine,Intravenös administrering av läkemedel,Traslator,2009-01-01,2099-12-31
+SPAT1256,Lihas- ja ihonalaisinjektio,Intramuscular and subcutaneous injection,Intramuskulär och subkutan injektion,Traslator,2009-01-01,2099-12-31
+SPAT1257,Lääkeinhalaatiotekniikan opetus,Teaching of medicine inhalation technique,Inlärning av läkemedelsinhalationsteknik,Traslator,2009-01-01,2099-12-31
+SPAT1258,Lausunto jatkuvan lääkityksen tarpeesta,Opinion on need for continuous medication,Utlåtande om behov av fortsatt medicinering,Traslator,2009-01-01,2010-12-31
+SPAT1259,Lausunto natiivikuvista,Opinion on plain films,Utlåtande om röntgenbilder utan kontrast,Traslator,2009-01-01,2017-12-31
+SPAT1260,Toisen työntekijän konsultoiminen,Consultation of another employee,Konsultering av medarbetare,Traslator,2009-01-01,2099-12-31
+SPAT1261,Reaaliaikainen kuvansiirtokonsultaatio,Real-time image transmission consultation,Telemedicinsk konsultation under patientkontakten,Traslator,2009-01-01,2017-12-31
+SPAT1262,Hoitotarvikkeiden luovutus,Handing over of treatment supplies,Utdelning av förbrukningsartiklar,Traslator,2009-01-01,2017-12-31
+SPAT1263,Näytteen otto,Sampling,Provtagning,Traslator,2009-01-01,2017-12-31
+SPAT1264,Pikatesti vastaanotolla tai kotona,Quick test at office or at home,Utförande av snabbtest på mottagning eller hemma,Traslator,2009-01-01,2010-12-31
+SPAT1265,Alkometri,Breathalyser,Alkometertest,Traslator,2009-01-01,2099-12-31
+SPAT1266,Toimenpiteeseen valmistava erillinen ohjaus,Separate instruction to prepare for procedure,Separat vägledningskontakt som förberedelse till en åtgärd,Traslator,2009-01-01,2017-12-31
+SPAT1267,Siedätyshoito,Desensitisation,Hyposensibilisering,Traslator,2009-01-01,2099-12-31
+SPAT1268,Allergiatestaus,Allergy testing,Allergitestning,Traslator,2009-01-01,2017-12-31
+SPAT1269,Muu punktio ja/tai nesteenpoisto,Other puncture and/or drainage,Annan punktion och/eller tömning,Traslator,2009-01-01,2017-12-31
+SPAT1270,Huume-/humalatilatutkimus,Narcotic/sobriety test,Undersökning av berusningstillstånd,Traslator,2009-01-01,2099-12-31
+SPAT1271,Huumeiden IV-käyttäjien neuvonta/välineiden vaihto,Counselling / supply exchange for users of IV drugs,Hälsorådgivning och redskapsutbyte för injektionsmissbrukare,Traslator,2009-01-01,2099-12-31
+SPAT1272,Huumeseulonta,Drug screening,Drogscreening,Traslator,2009-01-01,2099-12-31
+SPAT1273,Päihteiden/tupakan käytön strukturoitu kartoitus,Structured assessment of psychoactive substance / tobacco use,Strukturerad kartläggning av bruk av berusningsmedel och tobak,Traslator,2009-01-01,2099-12-31
+SPAT1274,Riippuvuusoireisen mini-interventio,Brief intervention in person with addiction symptoms,Mini-intervention för patient med missbruksproblem,Traslator,2009-01-01,2099-12-31
+SPAT1275,Opioidiriippuvaisen vieroitus- ja korvaushoito,Drug rehabilitation and replacement therapy of opioid-dependent person,Avgiftnings- och substitutionsbehandling för opioidberoende,Traslator,2009-01-01,2099-12-31
+SPAT1276,Hoitolinjaus potilaan tai hänen omaistensa kanssa,Outlining of treatment with patient or their family members,Samråd om behandlingsriktlinjer med patient eller anhörig,Traslator,2009-01-01,2017-12-31
+SPAT1277,Oikeusturvaa ja potilaan oikeuksia koskeva ohjaus,Instruction concerning legal protection and patient’s rights,Vägledning om rättsskydd och patientens rättigheter,Traslator,2009-01-01,2017-12-31
+SPAT1278,Saattohoidon kotikäynti,End-of-life care-related house call,Hembesök i terminalskedet,Traslator,2009-01-01,2010-12-31
+SPAT1279,Välittömän sairaalahoidon valmistelu,Preparation of immediate hospitalisation,Förberedande av omedelbar sjukhusvård,Traslator,2009-01-01,2017-12-31
+SPAT1280,Virka-avun antaminen,Provision of administrative assistance,Lämnande av handräckning,Traslator,2009-01-01,2017-12-31
+SPAT1281,Muu hallinnollinen toiminto,Other administrative function,Annan administrativ åtgärd i patientvård,Traslator,2009-01-01,2017-12-31
+SPAT1282,Ajokyvyn arviointi ja lausunto,Assessment of ability to drive and opinion,Bedömning och utlåtande av körförmåga,Traslator,2009-01-01,2099-12-31
+SPAT1283,Suppea todistus terveydentilasta,Restricted health certificate,Kortfattat intyg om hälsotillstånd,Traslator,2009-01-01,2099-12-31
+SPAT1284,Laaja todistus terveydentilasta terveydentilasta,Extensive health certificate,Omfattande intyg om hälsotillstånd,Traslator,2009-01-01,2099-12-31
+SPAT1285,Konsultaatiovastauksen antaminen,Provision of consultation response,Svar till konsultationsbegäran,Traslator,2009-01-01,2017-12-31
+SPAT1286,Leikkauskelpoisuuden arviointi lausuntoineen,"Assessment of operability, including opinions",Skriftlig dömning av operabilitet,Traslator,2009-01-01,2017-12-31
+SPAT1287,Elävän henkilön oikeuslääketieteellinen tutkimus,Forensic medical examination of living person,Rättsmedicinsk undersökning av en levande människa,Traslator,2009-01-01,2017-12-31
+SPAT1288,Kuolinsyyn selvittäminen,Determination of cause of death,Dödsorsaksutredning,Traslator,2009-01-01,2017-12-31
+SPAT1289,Vainajan ulkoinen tarkastus mahdollisine jatkotoimineen,"External examination of deceased person, including possible further measures",Yttre besiktning av en avliden person med eventuella fortsatta åtgärder,Traslator,2009-01-01,2017-12-31
+SPAT1290,Vainajan laitto,Preparation of deceased person,Omhändertagande av avliden,Traslator,2009-01-01,2017-12-31
+SPAT1291,Muu NCSP-luokituksen mukainen toiminto,Other function in accordance with NCSP classification,Annan åtgärd enligt NCSP-klassificering,Traslator,2009-01-01,2017-12-31
+SPAT1292,Muu SHToL:n mukainen toiminto,Other function in accordance with SHToL (Finnish classification of nursing interventions),Annan vårdåtgärd enligt SHToL-klassificering,Traslator,2009-01-01,2017-12-31
+SPAT1293,Muu kuntoutusohjausnimikkeistön mukainen toiminto,Other function in accordance with rehabilitation guidance nomenclature,Annan rehabiliteringshandledning,Traslator,2009-01-01,2017-12-31
+SPAT1294,Muu terveyssosiaalityönimikkeistön mukainen toiminto,Other function in accordance with health social work nomenclature,Annat hälsosocialt arbete,Traslator,2009-01-01,2017-12-31
+SPAT1295,Muu fysioterapianimikkeistön mukainen toiminto,Other function in accordance with physical therapy nomenclature,Annan fysioterapi,Traslator,2009-01-01,2017-12-31
+SPAT1296,Muu toimintaterapianimikkeistön mukainen toiminto,Other function in accordance with occupational therapy nomenclature,Annan ergoterapi,Traslator,2009-01-01,2017-12-31
+SPAT1297,Muu puheterapianimikkeistön mukainen toiminto,Other function in accordance with speech therapy nomenclature,Annan talterapi,Traslator,2009-01-01,2017-12-31
+SPAT1298,Muu ravitsemusterapianimikkeistön mukainen toiminto,Other function in accordance with nutritional therapy nomenclature,Annan näringsterapi,Traslator,2009-01-01,2017-12-31
+SPAT1299,Muu jalkaterapianimikkeistön mukainen toiminto,Other function in accordance with podiatry nomenclature,Annan fotterapi,Traslator,2009-01-01,2017-12-31
+SPAT1300,Muu FINLOINC -luokituksen mukainen toiminto,Other function in accordance with FinLOINC classification,Annan mätning enligt FINLOINC-klassificering,Traslator,2009-01-01,2017-12-31
+SPAT1301,Ei toimenpidettä,No procedures,Inga signifikanta åtgärder,Traslator,2009-01-01,2017-12-31
+SPAT1359,Oirepäiväkirjan käyttö,Use of symptom diary,Symptomsdagbok,Traslator,2011-01-01,2099-12-31
+SPAT1360,Laaja yleistutkimus,Extensive global examination,Utvidgad allmän undersökning,Traslator,2011-01-01,2017-12-31
+SPAT1361,Kudosnäytteen otto,Collection of tissue sample,Biopsi,Traslator,2011-01-01,2017-12-31
+SPAT1302,EHKÄISEVÄ TOIMINTA JA TERVEYDEN EDISTÄMINEN,PREVENTIVE ACTION AND PROMOTION OF HEALTH,FÖREBYGGANDE VERKSAMHET OCH FRÄMJANDE AV HÄLSA,Traslator,2009-01-01,2099-12-31
+SPAT1194,Hormonikorvaushoidon aloittaminen joko naiselle tai miehelle,Initiation of hormone replacement therapy for woman or man,Påbörjande av hormonersättningsbehandling,Traslator,2009-01-01,2017-12-31
+SPAT1195,Perhevalmennus,Antenatal classes,Familjeförberedelse,Traslator,2009-01-01,2099-12-31
+SPAT1197,Lasta odottavan perheen laaja terveystarkastus,Extensive health check-up of expecting family,Utvidgad mödravårdsundersökning,Traslator,2009-01-01,2099-12-31
+SPAT1200,Imetyksen ja rintojen hoidon ohjaus,Guidance for breast-feeding and breast care,Instruktioner om amning och skötsel av bröst,Traslator,2009-01-01,2099-12-31
+SPAT1303,Kasvuun ja kehitykseen liittyvä neuvonta ja ohjaus,Counselling and guidance related to growth and development,Rådgivning om tillväxt och utveckling,Traslator,2009-01-01,2099-12-31
+SPAT1304,Ikääntymiseen liittyvä neuvonta ja ohjeistus,Counselling and guidance related to ageing,Rådgivning om åldrande,Traslator,2009-01-01,2099-12-31
+SPAT1305,Liikuntaan liittyvä neuvonta ja ohjaus,Counselling and guidance related to physical exercise,Rådgivning om motionering,Traslator,2009-01-01,2099-12-31
+SPAT1306,Ravitsemukseen ja painonhallintaan liittyvä neuvonta ja ohjaus,Counselling and guidance related to nutrition and weight management,Rådgivning om näring och behärskning av vikt,Traslator,2009-01-01,2099-12-31
+SPAT1307,Psykososiaalinen neuvonta ja ohjaus,Psychosocial counselling and guidance,Relations- och mentalvårdsrådgivning,Traslator,2009-01-01,2099-12-31
+SPAT1308,Seksuaaliterveysneuvonta,Sexual health counselling,Rådgivning om sexualhälsa,Traslator,2009-01-01,2099-12-31
+SPAT1309,Päihteisiin/riskikäyttäytymiseen liittyvä ohjaus,Guidance related to psychoactive substances / risk behaviour,Rådgivning om drog- och tobaksbruk och annat riskbeteende,Traslator,2009-01-01,2099-12-31
+SPAT1310,Tunnettuun terveysongelmaan liittyvä neuvonta,Counselling related to known health issue,Rådgivning om specificerat hälsoproblem,Traslator,2009-01-01,2099-12-31
+SPAT1311,Työterveyteen liittyvä neuvonta ja ohjaus,Counselling and guidance related to occupational health,Rådgivning om arbetshälsa,Traslator,2009-01-01,2099-12-31
+SPAT1312,Yleinen terveysneuvonta,General health counselling,Allmän hälsorådgivning,Traslator,2009-01-01,2099-12-31
+SPAT1313,Tapaturmien ehkäisyyn liittyvä ohjaus ja neuvonta,Guidance and counselling related to accident prevention,Rådgivning om skyddsutrustning och annat förebyggande av olycksfall,Traslator,2009-01-01,2099-12-31
+SPAT1315,Lasten ja nuorten määräaikainen terveystarkastus,Periodic health check-up of children and adolescents,Tidsbunden hälsoundersökning av barn och ungdomar,Traslator,2009-01-01,2099-12-31
+SPAT1317,"Sovittu terveystarkastuksen seuranta, yksilöllisen tarpeen mukaan tehty terveystarkastus","Planned health check-up monitoring, health check-up performed based on individual need",Överenskommen uppföljning av hälsoundersökning,Traslator,2009-01-01,2099-12-31
+SPAT1318,Lapsille suoritettava viimeinen neuvolatarkastus ennen kouluunmenoa,Child’s final check at child health clinic before school start,Sista hälsoundersökningen i rådgivningen före skolstart,Traslator,2009-01-01,2010-12-31
+SPAT1319,"Koulu- ja opiskeluterveydenhuoltoon kuuluva tarkastus, jonka yhteydessä tehdään lausunto",Check-up and opinion included in school and student health care,Skol- och studerandehälsovårdens avslutningshälsoundersökning,Traslator,2009-01-01,2010-12-31
+SPAT1320,Lastensuojelulain mukainen lapsen terveydentilan tutkiminen,Examination of child’s state of health referred to in Child Welfare Act,Undersökning av barnets hälsotillstånd enligt barnskyddslagen,Traslator,2009-01-01,2099-12-31
+SPAT1321,Asevelvollisen terveystarkastus,Health examination of person liable for military service,Hälsoundersökning av värnpliktig,Traslator,2009-01-01,2099-12-31
+SPAT1322,Työhönsijoitustarkastus,Pre-employment physical examination,Anställningsundersökning,Traslator,2009-01-01,2099-12-31
+SPAT1323,Terveystarkastus terveysuhkaa aiheuttavassa työssä,Health check-up related to work causing occupational hazard,Hälsoundersökning i arbete som medför särskild fara för ohälsa,Traslator,2009-01-01,2099-12-31
+SPAT1324,Seulontatoimenpide,Screening procedure,Screeningsåtgärd,Traslator,2009-01-01,2099-12-31
+SPAT1327,"Työ-, koulu- tai opiskeluyhteisötyö","Work, school or study community work",Arbetsgemenskapsarbete,Traslator,2009-01-01,2099-12-31
+SPAT1328,Työpaikan perusselvitys,Basic workplace survey,Grundläggande arbetsplatsutredning,Traslator,2009-01-01,2099-12-31
+SPAT1329,"Työ-, koulu- tai opiskeluympäristöaltisteisiin liittyvä selvitys","Assessment related to exposure factors in work, school or study environment",Utredning av exponeringsfaktorer i arbetsmiljön,Traslator,2009-01-01,2099-12-31
+SPAT1330,"Työ-, koulu- tai opiskeluyhteisöön liittyvä selvitys (esim. työ- ja opiskeluilmapiiri)","Assessment related to work, school or study community (e.g. work and study atmosphere)",Arbetsgemenskapsutredning på arbetsplatsen,Traslator,2009-01-01,2099-12-31
+SPAT1331,Työpaikan ensiapuvalmiuden suunnittelu,Planning of first aid preparedness in workplace,Planering av arbetsplatsens förstahjälpsberedskap,Traslator,2009-01-01,2014-12-31
+SPAT1332,Kouluyhteisön ja opiskeluympäristön terveydellisten olojen tarkastus,Inspection of health-related conditions of school community and studying environment,Granskning av hälsoförhållandena i skol- och studiemiljön,Traslator,2009-01-01,2099-12-31
+SPAT1362,Terveydenhoitajan arvio suun terveydentilasta,Assessment of oral health performed by public health nurse,Hälsovårdarens bedömning av munhälsan,Traslator,2012-01-01,2099-12-31
+SPAT1363,"Ensimmäisenä opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle","Health check-up performed during first study year in students of upper secondary schools, vocational schools etc.","Hälsoundersökning under det första studieåret för studerande i gymnasiet, vid yrkesläroanstalter och andra studerande",Traslator,2012-01-01,2099-12-31
+SPAT1364,"Toisena opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle","Health check-up performed during second study year in students of upper secondary schools, vocational schools etc.","Hälsoundersökning under det andra studieåret för studerande i gymnasiet, vid yrkesläroanstalter och andra studerande",Traslator,2012-01-01,2099-12-31
+SPAT1365,Ensimmäisenä opiskeluvuonna erityistarpeen vuoksi  tehty terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,Health check-up performed during first study year due to special need in students of upper secondary schools or vocational schools,Hälsoundersökning under det första studieåret som på grund av ett särskilt behov genomförs för studerande i gymnasiet eller vid en yrkesläroanstalt,Traslator,2012-01-01,2099-12-31
+SPAT1366,"Yliopistossa, ammattikorkeakoulussa tms. opiskelevalle terveyskyselyn perusteella tehty terveystarkastus","Health check-up performed based on health survey in students of universities, universities of applied sciences etc.","Hälsoundersökning som utgående från en hälsoenkät görs för studerande vid universitet, yrkeshögskolor osv.",Traslator,2012-01-01,2099-12-31
+SPAT1367,Yksilöllisestä tarpeesta johtuva terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,Health check-up due to individual need in students of upper secondary schools or vocational schools,Hälsoundersökning på grund av individuellt behov för studerande i gymnasiet eller vid en yrkesläroanstalt,Traslator,2012-01-01,2099-12-31
+SPAT1368,Työterveyshuollon määräaikaistarkastus,Periodic check-up in occupational healthcare,Periodisk hälsoundersökning inom företagshälsovården,Traslator,2012-01-01,2099-12-31
+SPAT1369,Oppilaitoksen opiskeluhuoltoryhmän tapaaminen,Meeting with student welfare group of educational institution,Elevvårdsgruppens möte,Traslator,2012-01-01,2099-12-31
+SPAT1370,Muu terveystarkastus,Other health check-up,Övrig hälsoundersökning,Traslator,2013-01-01,2099-12-31
+SPAT1373,Varhaisraskauden yhdistelmäseulonta,Combined screening in early pregnancy,Kombinerad screening under tidig graviditet,Traslator,2013-01-01,2099-12-31
+SPAT1374,Toisen raskauskolmanneksen seerumiseulonta,Serum screening during second trimester,Serumscreening under andra trimestern,Traslator,2013-01-01,2099-12-31
+SPAT1375,"Rakenneuäseulonta, viikot 18+0-21+6","Structural ultrasound screening, weeks 18+0-21+6","Ultraljudsscreening av fostrets anatomi, veckorna 18-21+6",Traslator,2013-01-01,2099-12-31
+SPAT1376,"Rakenneuäseulonta, viikot 24+0","Structural ultrasound screening, weeks 24+0","Ultraljudsscreening av fostrets anatomi, veckorna 24+",Traslator,2013-01-01,2099-12-31
+SPAT1379,Raskaana olevan terveystarkastus,Health check-up of pregnant person,Hälsoundersökning av gravid,Traslator,2015-01-01,2099-12-31
+SPAT1380,Synnytyksen jälkitarkastus,Postpartum check-up,Eftergranskning efter förlossning,Traslator,2015-01-01,2099-12-31
+SPAT1381,Laaja terveystarkastus neljän kuukauden iässä,Extensive health check-up at 4 months of age,Omfattande hälsoundersökning i 4 mån. Ålder,Traslator,2015-01-01,2099-12-31
+SPAT1382,Laaja terveystarkastus kahdeksantoista kuukauden iässä,Extensive health check-up at 18 months of age,Omfattande hälsoundersökning i 18 mån. Ålder,Traslator,2015-01-01,2099-12-31
+SPAT1383,Laaja terveystarkastus neljän vuoden iässä,Extensive health check-up at 4 years of age,Omfattande hälsoundersökning i 4 års ålder,Traslator,2015-01-01,2099-12-31
+SPAT1384,Laaja terveystarkastus ensimmäisellä luokalla,Extensive health check-up on first grade,Omfattande hälsoundersökning i första klass,Traslator,2015-01-01,2099-12-31
+SPAT1385,Laaja terveystarkastus viidennellä luokalla,Extensive health check-up on fifth grade,Omfattande hälsoundersökning i femte klass,Traslator,2015-01-01,2099-12-31
+SPAT1386,Laaja terveystarkastus kahdeksannella luokalla,Extensive health check-up on eighth grade,Omfattande hälsoundersökning i åttonde klass,Traslator,2015-01-01,2099-12-31
+SPAT1387,"Ensimmäisen opiskeluvuoden terveyskysely, korkea aste","Health survey during first study year, university level","Hälsoundersökning under det första studieåret, högre stadiet",Traslator,2015-01-01,2099-12-31
+SPAT1388,Yksilöllisen tarpeen mukainen laaja terveystarkastus,Extensive health check-up based on individual need,Omfattande hälsoundersökning efter individuellt behov,Traslator,2015-01-01,2099-12-31
+SPAT1389,Erityisen tuen tarpeen mukainen käynti,Visit based on need for special support,Besök efter särskilt behov,Traslator,2015-01-01,2099-12-31
+SPAT1390,Opiskeluun soveltumattomuuden arviointi,Assessment of unsuitability for studying,Bedömning av olämplighet för studier,Traslator,2015-01-01,2099-12-31
+SPAT1391,Perhetilanteeseen liittyvä neuvonta ja ohjaus,Counselling and guidance related to family situation,Rådgivning och handledning relaterad till familjesituation,Traslator,2015-01-01,2099-12-31
+SPAT1392,Parisuhteeseen liittyvä neuvonta ja ohjaus,Counselling and guidance related to couple relationship,Rådgivning och handledning relaterad till parrelation,Traslator,2015-01-01,2099-12-31
+SPAT1393,Vanhemman ja lapsen vuorovaikutusta tukeva ohjaus,Guidance to support interaction between parent and child,Handledning som stöder växelverkan mellan föräldrar och barn,Traslator,2015-01-01,2099-12-31
+SPAT1394,Elinolosuhteisiin liittyvä neuvonta ja ohjaus,Counselling and guidance related to living conditions,Rådgivning och handledning relaterad till levnadsförhållanden,Traslator,2015-01-01,2099-12-31
+SPAT1395,Opiskelu- ja työelämän ulkopuolella olevien terveystarkastus,Health check-up of persons outside student and working life,Hälsoundersökning av personer utanför studie- och arbetslivet,Traslator,2015-01-01,2099-12-31
+SPAT1396,Monialaisen asiantuntijaryhmän tapaaminen,Meeting with multidisciplinary group of experts,Möte med sektorsövergripande expertgrupp,Traslator,2015-01-01,2099-12-31
+SPAT1399,Avioliiton ulkopuolella syntyvän lapsen isyyden tunnustamisen vastaanottaminen äitiysneuvolassa ennen lapsen syntymää. Isyyslaki 16 §,"Acceptance of acknowledgement of paternity of child born outside of marriage before the birth of the child at the maternity clinic. Paternity Act, Section 16.",Erkännande av faderskap vid mödrarådgivningen,Traslator,2016-01-01,2099-12-31
+SPAT1314,MUUT ENNALTAEHKÄISEVÄT TOIMINNOT,OTHER PREVENTIVE FUNCTIONS,ANDRA FÖREBYGGANDE ÅTGÄRDER,Traslator,2009-01-01,2014-12-31
+SPAT1316,Laaja lasten ja nuorten terveystarkastus,Extensive health check-up of children and adolescents,Omfattande hälsoundersökning av barn och ungdomar,Traslator,2009-01-01,2014-12-31
+SPAT1325,Rokotus,Vaccination,Vaccinering,Traslator,2009-01-01,2014-12-31
+SPAT1326,"TOIMINNOT, JOTKA EIVÄT LIITY YKSILÖÖN",FUNCTIONS NOT RELATED TO INDIVIDUALS,ÅTGÄRDER SOM INTE GÄLLER EN ENSKILD PERSON,Traslator,2009-01-01,2014-12-31
+SPAT1333,"HOIDON SUUNNITTELU, JATKOHOIDON JÄRJESTÄMINEN","PLANNING OF TREATMENT, ORGANISATION OF FURTHER CARE","PLANERING AV VÅRD OCH BEHANDLING, ORDNANDE AV VIDARE VÅRD",Traslator,2009-01-01,2099-12-31
+SPAT1334,Ei jatkotoimenpidettä,No further measures,Ingen plan för fortsatt vård,Traslator,2009-01-01,2099-12-31
+SPAT1335,"Jatkohoidon suunnitelma, jatkohoidon järjestäminen","Plan for further care, organisation of further care",Annan planering och ordnande av fortsatt vård eller behandling,Traslator,2009-01-01,2099-12-31
+SPAT1336,Tutkimuspyyntö,Request for examination,Undersökningsremiss,Traslator,2009-01-01,2099-12-31
+SPAT1337,Puhelinajan varaaminen,Booking of telephone appointment,Avtal om telefontid,Traslator,2009-01-01,2099-12-31
+SPAT1338,Sopimus kirjeestä/sähköisestä yhteydenotosta,Agreement on letter / electronic contact,Avtal om brev/elektronisk kontakt,Traslator,2009-01-01,2099-12-31
+SPAT1339,Uusi vastaanottoaika,New appointment,Ny mottagningstid,Traslator,2009-01-01,2099-12-31
+SPAT1340,Ohjaus muulle ammattiryhmälle kuin lääkärille,Referral to other occupational group than physician,Hänvisning till andra yrkesgrupper än läkare,Traslator,2009-01-01,2099-12-31
+SPAT1341,Ohjaus lääkärille  tai hammaslääkärille,Referral to physician or dentist,Hänvisning till läkare eller tandläkare,Traslator,2009-01-01,2099-12-31
+SPAT1342,Lähete erikoissairaanhoitoon,Referral to specialised care,Remiss till specialistsjukvård,Traslator,2009-01-01,2099-12-31
+SPAT1343,Ohjaus yksityiseen tutkimukseen tai hoitoon,Referral to private examination or care,Remiss till privat undersökning eller vård,Traslator,2009-01-01,2099-12-31
+SPAT1344,Ohjaus päihdepalveluihin,Referral to services for substance abusers,Hänvisning till missbrukarservice,Traslator,2009-01-01,2099-12-31
+SPAT1345,Ohjaus lääkinnälliseen kuntoutukseen,Referral tomedical rehabilitation,Hänvisning till medicinsk rehabilitering,Traslator,2009-01-01,2099-12-31
+SPAT1346,Ohjaus ammatilliseen kuntoutukseen,Referral to vocational rehabilitation,Hänvisning till yrkesinriktad rehabilitering,Traslator,2009-01-01,2099-12-31
+SPAT1347,Lähete perusterveydenhuollon vuodeosastolle,Referral to primary health care ward,Hänvisning till vårdavdelning inom primärvården,Traslator,2009-01-01,2099-12-31
+SPAT1397,Ohjaus opiskeluhuollon erikoistutkimuksiin,Referral to specialised examinations in student welfare,Hänvisning till specialundersökningar inom skolhälsovården,Traslator,2015-01-01,2099-12-31
+SPAT1398,Ohjaus opiskelijahuollon kuraattori- ja psykologipalveluihin,Referral to social worker and psychologist services of student welfare,Hänvisning till kurator- och psykologtjänster inom studerandehälsovården,Traslator,2015-01-01,2099-12-31
+SPAT1400,Käynnissä olevien työkyvyn tukitoimien jatkuminen,Continuation of ongoing measures to support ability to work,Fortsättning av pågående stödåtgärder för arbetsförmågan,Traslator,2019-01-01,2099-12-31
+SPAT1401,Hoidon tehostus työterveyshuollossa,Enhancement of treatment in occupational healthcare,Effektiverad vård inom företagshälsovården,Traslator,2019-01-01,2099-12-31
+SPAT1402,Tunnettuun terveysongelmaan liittyvä neuvonta työterveyshuollossa,Counselling related to known health issue in occupational healthcare,Rådgivning angående känt hälsoproblem inom företagshälsovården,Traslator,2019-01-01,2099-12-31
+SPAT1403,Työterveyteen liittyvä neuvonta ja ohjaus,Counselling and guidance related to occupational health,Rådgivning om arbetshälsa,Traslator,2019-01-01,2099-12-31
+SPAT1404,Yhteydenotto työpaikalle,Contact with workplace,Kontakt med arbetsplatsen,Traslator,2019-01-01,2099-12-31
+SPAT1405,Työympäristöaltisteiden selvitys,Assessment of exposure factors in work environment,Utredning av arbetsmiljöagenser,Traslator,2019-01-01,2099-12-31
+SPAT1406,Työn fyysisen kuormituksen tai ergonomian selvitys,Assessment of physical work load or ergonomics at work,Utredning av arbetets fysiska belastning eller ergonomin,Traslator,2019-01-01,2099-12-31
+SPAT1407,Työn psykososiaalisen kuormituksen selvitys,Assessment of psychosocial load at work,Utredning av arbetets psykosociala belastning,Traslator,2019-01-01,2099-12-31
+SPAT1408,Ohjaus verkostoneuvotteluun,Referral to network negotiation,Hänvisning till nätverksförhandling,Traslator,2019-01-01,2099-12-31
+SPAT1409,Ohjaus työterveysneuvotteluun,Referral to occupational health negotiation,Hänvisning till företagshälsoförhandling,Traslator,2019-01-01,2099-12-31
+SPAT1410,Työkyvyn arviointi,Assessment of ability to work,Bedömning av arbetsförmågan,Traslator,2019-01-01,2099-12-31
+SPAT1411,Lausunto työkyvystä,Opinion on ability to work,Utlåtande om arbetsförmågan,Traslator,2019-01-01,2099-12-31
+SPAT1412,Suositus osasairauspäivärahasta,Recommendation on partial sickness allowance,Rekommendation till partiell sjukdagpenning,Traslator,2019-01-01,2099-12-31
+SPAT1413,Ohjaus diagnostisiin jatkotutkimuksiin,Referral to further diagnostic examinations,Hänvisning till diagnostiska fortsatta undersökningar,Traslator,2019-01-01,2099-12-31
+SPAT1414,Ohjaus perusterveydenhuoltoon,Referral to primary health care,Hänvisning till primärhälsovården,Traslator,2019-01-01,2099-12-31
+SPAT1415,Tutkimukset ammattitautiepäilyn vuoksi,Examinations due to suspected occupational disease,Undersökningar på grund av misstanke om yrkesskada,Traslator,2019-01-01,2099-12-31

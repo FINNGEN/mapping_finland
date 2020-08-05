@@ -1,0 +1,5 @@
+status,n_codes,per_codes,n_events,per_events,db_name
+mapped,0,NA,0,NA,source
+not_mapped,415,100%,0,NA,source
+not_mapped,323,97.289%,6112598,99.984%,finngen
+not_found,9,2.711%,975,0.016%,finngen
