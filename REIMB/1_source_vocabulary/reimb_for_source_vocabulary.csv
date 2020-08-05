@@ -1,0 +1,268 @@
+code,name_fi,name_en,name_en_source,valid_start_date,valid_end_date
+213,Krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö,Fat metabolism disorder associated with chronic coronary artery disease,Google,NA,2012-03-31
+204,"NA","NA",Google,NA,NA
+307,"Takriini, donepetsiili, rivastigmiini, galantamiini ja muut merkittävät ja kalliit Alzheimerin taudin hoidossa käytettävät lääkkeet","Tacrine, donepezil, rivastigmine, galantamine and other major and expensive drugs used to treat Alzheimer's disease",Google,1999-01-01,2003-03-31
+307,"Donepetsiili, galantamiini, memantiini ja rivastigmiini","Donepezil, galantamine, memantine and rivastigmine",Google,2003-04-01,2016-10-31
+307,Rivastigmiini,Rivastigmine,Google,2016-11-01,2018-05-31
+177,Glargininsuliini 300 U/ml,Insulin glargine 300 U / ml,Google,2017-01-01,2020-02-29
+188,Vaikeahoitoinen psykoosi,Psychosis requiring demanding treatment,KELA,2000-04-01,2014-10-31
+160,Eksenatidi,exenatide,Google,2013-04-01,2016-02-29
+160,Eksenatidi ja liraglutidi,Exenatide and liraglutide,Google,2016-03-01,2016-12-31
+280,Clopidogrel,Clopidogrel,Google,2004-08-01,2016-10-31
+315,Clopidogrel,Clopidogrel,Google,2002-02-01,2016-10-31
+310,"Orlistaatti, sibutramiini ja muut merkittävät ja kalliit liikalihavuuden hoidossa käytettävät lääkkeet","Orlistat, sibutramine and other major and expensive medicines used to treat obesity",Google,1999-01-01,2016-10-31
+162,Liraglutidi,liraglutide,Google,2013-08-01,2016-02-29
+319,"Adalimumabi, brodalumabi, etanersepti, guselkumabi, iksekitsumabi, infliksimabi, risankitsumabi, sekukinumabi, sertolitsumabipegoli ja ustekinumabi (ihopsoriaasi)","Adalimumab, brodalumab, certolizumab pegol, etanercept, guselkumab, infliximab, ixekizumab, risankizumab, sekukinumab and ustekinumab (skin psoriasis)",KELA,2005-09-01,2099-12-31
+501,Pienten lasten lehmänmaito- ja/tai soijaproteiiniallergia,Cow's milk and / or soy protein allergy in young children,Google,NA,2005-11-30
+171,Degludekinsuliini,Degludekinsuliini,Google,2015-06-01,2020-02-29
+359,Mirabegroni,Mirabegroni,Google,2013-11-01,2015-02-28
+358,Liraglutidi,liraglutide,Google,2013-08-01,2016-02-29
+371,Degludekinsuliini,Degludekinsuliini,Google,2015-12-01,2020-02-29
+327,Strontiumranelaatti,strontium ranelate,Google,2008-08-01,2010-11-30
+347,Denosumabi,denosumab,Google,2011-03-01,2011-12-31
+187,Mykofenolihappo,MPA,Google,1999-11-01,2001-06-30
+382,Glargininsuliini 300 U/ml,Insulin glargine 300 U / ml,Google,2017-01-01,2020-02-29
+165,Bimatoprostin ja timololin säilytysaineeton yhdistelmävalmiste,Preservative-free combination of bimatoprost and timolol,Google,2014-12-01,2015-10-31
+305,Mykofenolihappo,MPA,Google,1999-04-01,2001-06-30
+205,Krooninen verenpainetauti,Chronic hypertension,KELA,NA,2099-12-31
+103,"Diabetes, insuliinihoito","Diabetes, insulin-treated",KELA,NA,2099-12-31
+215,"Diabetes, muu kuin insuliinihoito","Diabetes, non-insulin-treated",KELA,2017-01-01,2099-12-31
+203,Krooninen keuhkoastma ja sitä läheisesti muistuttavat krooniset obstruktiiviset keuhkosairaudet,Chronic asthma and similar chronic obstructive pulmonary diseases,KELA,NA,2099-12-31
+206,Krooninen sepelvaltimotauti ja krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö,Chronic coronary artery disease and dyslipidaemia associated with chronic coronary artery disease,KELA,NA,2099-12-31
+112,Vaikeat psykoosit ja muut vaikeat mielenterveyden häiriöt,Severe psychotic and other severe mental disorders,KELA,NA,2099-12-31
+202,"Hajapesäkkeiset sidekudostaudit, reumaattiset niveltulehdukset ja niihin verrattavat tilat","Connective tissue diseases, rheumatoid arthritis and comparable disease",KELA,NA,2099-12-31
+207,Krooniset sydämen rytmihäiriöt,Chronic arrhythmias,KELA,NA,2099-12-31
+290,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani eteisvärinän hoitoon","Apixaban, dabigatran, edoxaban and rivaroxaban for the treatment of atrial fibrillation",KELA,2018-03-01,2099-12-31
+104,Kilpirauhasen vajaatoiminta,Thyroid insufficiency,KELA,NA,2099-12-31
+114,Glaukooma,Glaucoma,KELA,NA,2099-12-31
+115,Rintasyöpä,Breast cancer,KELA,NA,2099-12-31
+130,"Pahanlaatuiset kasvaimet, joita ei ole edellä erikseen mainittu",Malignant tumour,KELA,NA,2099-12-31
+351,"Apiksabaani*, dabigatraani, edoksabaani ja rivaroksabaani* eteisvärinän hoitoon","Apixaban, dabigatran, edoxaban and rivaroxaban for the treatment of atrial fibrillation",KELA,2012-04-01,2099-12-31
+111,Epilepsia ja siihen verrattavat kouristustilat,Epilepsy and comparable convulsive disorders,KELA,NA,2099-12-31
+313,"Abatasepti*, adalimumabi*, anakinra*, etanersepti*, golimumabi*, iksekitsumabi, infliksimabi*, sarilumabi, sekukinumabi, sertolitsumabipegoli*, tosilitsumabi* ja ustekinumabi (reumasairaudet)","Abatacept, adalimumab, anakinra, certolizumab pegol, etanercept, golimumab, infliximab, ixekizumab, sarilumab, secukinumab, tocilizumab and ustekinumab (rheumatoid diseases)",KELA,2001-07-01,2099-12-31
+208,Haavainen paksusuolentulehdus ja Crohnin tauti,Ulcerative colitis and Crohn's disease,KELA,NA,2099-12-31
+281,"Abatasepti, adalimumabi, anakinra, etanersepti, golimumabi, iksekitsumabi, infliksimabi, sarilumabi, sekukinumabi, sertolitsumabipegoli ja tosilitsumabi","Abatacept, adalimumab, anakinra, certolizumab pegol, etanercept, golimumab, infliximab, ixekizumab, sarilumab, secukinumab and tocilizumab",KELA,2011-02-01,2099-12-31
+116,Eturauhassyöpä,Prostate cancer,KELA,NA,2099-12-31
+201,Krooninen sydämen vajaatoiminta,Chronic cardiac insufficiency,KELA,NA,2099-12-31
+117,"Leukemiat, muut pahanlaatuiset veri- ja luuydintaudit sekä pahanlaatuiset imukudostaudit","Leukaemia and other malignant diseases of the blood and bone marrow, and malignant diseases of the lymphatic tissue",KELA,NA,2099-12-31
+285,"Dulaglutidi, eksenatidi, liksisenatidi, liraglutidi ja semaglutidi (aikuiset)","Dulaglutide, exenatide, liraglutide, lixisenatide and semaglutide (adults)",KELA,2017-01-01,2099-12-31
+110,Parkinsonin tauti ja siihen verrattavat liikehäiriöt,Parkinson's disease and comparable movement disrorders,KELA,NA,2099-12-31
+123,D-vitamiinin krooniset aineenvaihduntahäiriöt,Chronic disorders of vitamin D metabolism,KELA,NA,2099-12-31
+346,"Dulaglutidi*, eksenatidi*, liksisenatidi*, liraglutidi* ja semaglutidi (aikuiset)","Dulaglutide, exenatide, liraglutide, lixisenatide and semaglutide (adults)",KELA,2011-02-01,2099-12-31
+317,Pimekrolimuusi- ja takrolimuusivoide*,Topical pimecrolimus and tacrolimus,KELA,2003-11-01,2099-12-31
+138,Munuaisten vajaatoimintaan liittyvä vaikea anemia,Severe anaemia associated with chronic renal failure,KELA,NA,2099-12-31
+107,Pernisiöösi anemia ja muut B12-vitamiinin imeytymishäiriöt,Pernicious anaemia,KELA,NA,2099-12-31
+182,"Brivarasetaami, eslikarbatsepiini, gabapentiini, lakosamidi, levetirasetaami, perampaneeli, pregabaliini, tiagabiini ja tsonisamidi","Brivaracetam, eslikarbazepin, gabapentin, lacosamide, levetiracetam, perampanel, pregabalin, tiagabin and zonisamide",KELA,1996-07-01,2099-12-31
+121,Sukurauhasten vaikea vajaatoiminta,Severe hypofunction of sexual glands,KELA,NA,2099-12-31
+212,Kihti,Gout,KELA,NA,2099-12-31
+127,Elinsiirron tai kudossiirron jälkitila,Transplant complication,KELA,NA,2099-12-31
+157,"Dimetyylifumaraatti, glatirameeriasetaatti, interferoni beeta ja teriflunomidi (MS-tauti)","Dimethyl fumarate, glatiramer acetate, interferon beta and teriflunomid (Multiple sclerosis)",KELA,2011-07-01,2099-12-31
+303,"Dimetyylifumaraatti*, glatirameeriasetaatti*, interferoni beeta* ja teriflunomidi* (MS-tauti)","Dimethyl fumarate, interferon beta, glatiramer acetate and teriflunomid (Multiple sclerosis)",KELA,1999-01-01,2099-12-31
+308,"Alprostadiili, aviptadiilin ja fentolamiinin yhdistelmävalmiste ja sildenafiili","Alprostadil, sildenafil and combination product containing aviptadil and phentolamine",KELA,1999-04-01,2099-12-31
+504,Päivittäistä letkuruokintaa vaativat tilat,Conditions requiring daily forced enteral nutrition,KELA,NA,2099-12-31
+128,Gynekologiset syövät,Cancers of female genital organs,KELA,NA,2099-12-31
+190,"Lantaanikarbonaatti, sevalameeri ja sukroferrinen oksihydroksidi","Lanthanum carbonate, sevelamer and sucroferric oxyhydroxide",KELA,2008-03-01,2099-12-31
+183,Lamotrigiini ja topiramaatti,Lamotrigin and topiramate,KELA,1996-07-01,2099-12-31
+109,MS-tauti,Multiple sclerosis,KELA,NA,2099-12-31
+133,Vaikea haiman krooninen vajaatoiminta,Severe chronic pancreatic insufficiency,KELA,NA,2099-12-31
+379,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani syvän laskimotukoksen ja keuhkoembolian uusiutumisen pitkäaikaiseen ehkäisyyn","Apixaban, dabigatran, edoxaban and rivaroxaban for the long-term prevention of recurrent deep veinthrombosis and pulmonary embolism",KELA,2016-05-01,2099-12-31
+601,"Ravintoaineiden, lähinnä rasvojen, vaikeat imeytymishäiriöt","Severe malabsorption of nutrients, mainly fats",KELA,NA,2099-12-31
+137,Dialyysihoitoa edellyttävä uremia,Uraemia requiring dialysis,KELA,NA,2099-12-31
+326,"Adalimumabi, golimumabi, infliksimabi ja ustekinumabi (suolistosairaudet)","Adalimumab, golimumab, infliximab and ustekinumab (intestinal diseases)",KELA,2007-12-01,2099-12-31
+101,Aivolisäkkeen etulohkon vajaatoiminta,Anterior pituitary hypofunction,KELA,1999-11-01,2099-12-31
+132,Sarkoidoosi,Sarcoidosis,KELA,NA,2099-12-31
+342,Dronedaroni,Dronedarone,KELA,2010-12-01,2099-12-31
+163,Abirateroni ja entsalutamidi,Abiraterone and enzalutamide,KELA,2014-10-01,2099-12-31
+309,Nalmefeeni ja naltreksoni,Nalmefene and naltrexone,KELA,1999-04-01,2099-12-31
+211,Periytyvät rasva-aineenvaihdunnan vaikea-asteiset häiriöt (familiaalinen hyperkolesterolemia ja tyypin III dyslipoproteinemia),Severe hereditary disorders of lipid metabolism (familial hypercholesterolaemia and type III dyslipoproteinemia),KELA,NA,2099-12-31
+193,Rasagiliini,Rasagiline,KELA,2008-07-01,2099-12-31
+166,Daltepariini ja tintsapariini (yli 6 kuukauden hoidossa),Dalteparin and tinzaparin (treatment for more than 6 months),KELA,2015-03-01,2099-12-31
+318,Teriparatidi,Teriparatide,KELA,2004-12-01,2099-12-31
+196,Parikalsitoli ja sinakalseetti,Paricalcitol and cinacalcet,KELA,2009-05-01,2099-12-31
+153,Lenalidomidi,Lenalidomid,KELA,2010-10-01,2099-12-31
+189,Imatinibi,Imatinib,KELA,2002-03-01,2099-12-31
+284,Nintedanibi ja pirfenidoni,Nintedanib and pirfenidone,KELA,2015-11-01,2099-12-31
+119,Trigeminus- tai glossofaryngikusneuralgia,Trigeminal neuralgia or glossofaryngeusneuralgia,KELA,NA,2099-12-31
+602,Lasten vaikeat aliravitsemustilat,Children's severe malnutrition,KELA,NA,2099-12-31
+289,Sakubitriilin ja valsartaanin yhdistelmävalmiste,Combination product containing sacubitril and valsartan,KELA,2018-01-01,2099-12-31
+192,Fulvestrantti,Fulvestrant,KELA,2008-06-01,2099-12-31
+134,Yleinen erytrodermia,General erythroderma,KELA,NA,2099-12-31
+106,Lisäkilpirauhasten vajaatoiminta,Hypoparathyroidism,KELA,NA,2099-12-31
+321,Parikalsitoli* ja sinakalseetti*,Paricalcitol and cinacalcet,KELA,2007-03-01,2099-12-31
+180,Interferoni alfa,Interferon alfa,KELA,1994-04-01,2099-12-31
+197,Sunitinibi,Sunitinib,KELA,2009-09-01,2099-12-31
+164,Fingolimodi,Fingolimod,KELA,2014-10-01,2099-12-31
+108,Myasthenia gravis,Myasthenia gravis,KELA,NA,2099-12-31
+113,Älyllisesti kehitysvammaisilla esiintyvät käyttäytymisen häiriöt,Anxiety disorders associated with mental retardation,KELA,NA,2099-12-31
+105,Lisämunuaisten kuorikerroksen vajaatoiminta,Adrenal cortical hypofunction,KELA,NA,2099-12-31
+320,"Lantaanikarbonaatti*, sevelameeri*ja sukroferrinen oksihydroksidi*","Lanthanum carbonate, sevelamer and sucroferric oxyhydroxide",KELA,2005-10-01,2099-12-31
+331,"Atomoksetiini, deksamfetamiini, guanfasiini ja lisdeksamfetamiini","Atomoxetine, dexamphetamine, guanfacine and lisdexamphetamine",KELA,2008-12-01,2099-12-31
+348,Roflumilasti,Roflumilast,KELA,2011-06-01,2099-12-31
+381,Sakubitriilin ja valsartaanin yhdistelmävalmiste*,Combination product containing sacubitril and valsartan,KELA,2016-07-01,2099-12-31
+102,Vesitystauti,Diabetes insipidus,KELA,NA,2099-12-31
+301,Kasvuhormoni*,Growth hormone,KELA,1999-04-01,2099-12-31
+356,Nintedanibi* ja pirfenidoni*,Nintedanib and pirfenidone,KELA,2013-06-01,2099-12-31
+120,Gammaglobuliinin puutostila,Hypogammaglobulinaemia,KELA,NA,2099-12-31
+288,Febuksostaatti,Febuxostat,KELA,2017-10-01,2099-12-31
+159,Patsopanibi,Pazopanib,KELA,2013-02-01,2099-12-31
+198,Sorafenibi,Sorafenib,KELA,2009-09-01,2099-12-31
+191,Erlotinibi,Erlotinib,KELA,2008-03-01,2099-12-31
+306,Erytropoietiini* ja darbepoetiini*,Erythropoietin and darbepoetin,KELA,1999-04-01,2099-12-31
+349,Febuksostaatti,Febuxostat,KELA,2011-07-01,2099-12-31
+353,Fingolimodi* ja kladribiini,Cladribine and fingolimod,KELA,2012-09-01,2099-12-31
+129,Itsenäinen verihiutaleiden tai granulosyyttien niukkuus,Idiopathic thrombocytopaenia or granulocytopenia,KELA,NA,2099-12-31
+355,Dienogesti,Dienogest,KELA,2013-06-01,2099-12-31
+352,Abirateroni* ja entsalutamidi*,Abiraterone and enzalutamide,KELA,2012-09-01,2099-12-31
+181,Retigabiini ja vigabatriini,Retigabine and vigabatrin,KELA,1995-05-01,2099-12-31
+377,Apremilasti ja dimetyylifumaraatti (psoriaasi),Apremilast and dimethyl fumarate (psoriasis),KELA,2016-04-01,2099-12-31
+505,Pienten lasten lehmänmaitoallergia,Allergy to cow's milk in infants,KELA,NA,2099-12-31
+176,Regorafenibi,Regorafenib,KELA,2016-10-01,2099-12-31
+126,Krooniset hyytymishäiriöt,Chronic coagulation defects,KELA,NA,2099-12-31
+158,Everolimuusi,Everolimus,KELA,2012-09-01,2099-12-31
+394,Palbosiklibi*,Palbociclib,KELA,2018-08-01,2099-12-31
+178,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste","Combination product containing tegafur, gimeracil and oteracil",KELA,2017-09-01,2099-12-31
+167,"Dabrafenibi, trametinibi ja vemurafenibi","Dabrafenib, trametinib and vemurafenib",KELA,2015-04-01,2099-12-31
+155,Afatinibi ja gefitinibi,Afatinib and gefitinib,KELA,2011-05-01,2099-12-31
+304,Dornaasi alfa,Dornase alfa,KELA,1999-01-01,2099-12-31
+369,Regorafenibi*,Regorafenib,KELA,2015-03-01,2099-12-31
+364,Koivun allergeeniuute ja heinien allergeeniuute,Allergen extract of birch pollen and allergen extract of grass pollen,KELA,2014-11-01,2099-12-31
+362,"Dabrafenibi*, trametinibi ja vemurafenibi*","Dabrafenib, trametinib and vemurafenib",KELA,2014-08-01,2099-12-31
+150,Dasatinibi,Dasatinib,KELA,NA,2099-12-31
+152,Nilotinibi,Nilotinib,KELA,2010-08-01,2099-12-31
+122,Aplastinen anemia,Aplastic anaemia,KELA,NA,2099-12-31
+339,Buprenorfiinia ja naloksonia sisältävä valmiste,Product containing buprenorfine and naloxone,KELA,2009-08-01,2099-12-31
+156,Lapatinibi,Lapatinib,KELA,2011-05-01,2099-12-31
+302,Interferoni alfa*,Interferon alfa,KELA,1999-04-01,2099-12-31
+390,Ibrutinibi*,Ibrutinib,KELA,2018-02-01,2099-12-31
+168,Aksitinibi,Axitinib,KELA,2015-08-01,2099-12-31
+287,Tikagrelori 60 mg,Ticagrelor 60 mg,KELA,2017-04-01,2099-12-31
+388,Alirokumabi* ja evolokumabi* familiaalisen hyperkolesterolemian hoidossa,Alirocumab and evolocumab for the treatment of familial hypercholesterolaemia,KELA,2017-11-01,2099-12-31
+329,Lenalidomidi*,Lenalidomide,KELA,2008-11-01,2099-12-31
+135,Rakkoihottuma,Pemphigus,KELA,NA,2099-12-31
+174,Ruksolitinibi,Ruxolitinib,KELA,2016-07-01,2099-12-31
+186,Kasvuhormoni (munuaisten vajaatoimintaan liittyvä kasvuhäiriö),Growth retardation associated with renal failure (growth hormone),KELA,1999-11-01,2099-12-31
+380,Adalimumabi (hidradenitis suppurativa),Adalimumab (hidradenitis suppurativa),KELA,2016-06-01,2099-12-31
+286,Siklosporiini-silmätippa,Ciclosporin eye drop,KELA,2017-04-01,2099-12-31
+340,Everolimuusi*,Everolimus,KELA,2010-06-01,2099-12-31
+506,Pienten lasten lehmänmaitoallergia ja yliherkkyys tavanomaisille erityisvalmisteille,Allergy to cow's milk and hypersensibility to conventional formula in infants,KELA,NA,2099-12-31
+282,Natriumoksibaatti ja modafiniili,Sodium oxybat,KELA,2012-08-01,2099-12-31
+322,Sunitinibi*,Sunitinib,KELA,2007-05-01,2099-12-31
+344,Omalitsumabi,Omalizumab,KELA,2011-01-01,2099-12-31
+372,Idelalisibi,Idelalisib,KELA,2015-10-01,2099-12-31
+338,"C1-esteraasin estäjä, ikatibantti ja konestaatti alfa","C1-esterase inhibitor, icatibant and conestat alfa",KELA,2009-08-01,2099-12-31
+323,Sorafenibi*,Sorafenib,KELA,2007-06-01,2099-12-31
+366,Naprokseenin ja esomepratsolin yhdistelmävalmiste,Combination product containing naproxen and esomeprazole,KELA,2014-11-01,2099-12-31
+503,Synnynnäiset aineenvaihdunnan häiriöt,Inborn metabolic disorders,KELA,NA,2099-12-31
+169,Kritsotinibi,Crizotinib,KELA,2015-08-01,2099-12-31
+283,Ivabradiini,Ivabradine,KELA,2015-07-01,2099-12-31
+124,Synnynnäiset aineenvaihduntahäiriöt,Inborn metabolic disorders,KELA,NA,2099-12-31
+214,Vaikea ja pitkäaikainen narkolepsia,Severe and chronic narcolepsy,KELA,2012-01-01,2099-12-31
+393,Pomalidomidi,Pomalidomide,KELA,2018-08-01,2099-12-31
+334,Treprostiniili,Treprostinil,KELA,2009-03-01,2099-12-31
+376,Syanokobalamiini*,Cyanocobalamin,KELA,2016-03-01,2099-12-31
+199,Rufinamidi,Rufinamide,KELA,2010-02-01,2099-12-31
+361,Aksitinibi*,Axitinib,KELA,2014-02-01,2099-12-31
+374,Ruksolitinibi*,Ruxolitinib,KELA,2015-12-01,2099-12-31
+350,Kapsaisiini,Capsaicin,KELA,2011-09-01,2099-12-31
+368,Natriumdokusaatin ja sorbitolin yhdistelmävalmiste,Combination product containing docusate sodium and sorbitol,KELA,2015-03-01,2099-12-31
+175,Deferasiroksi,Deferasirox,KELA,2016-08-01,2099-12-31
+316,Imatinibi*,Imatinib,KELA,2002-03-01,2099-12-31
+398,Iksatsomibi,Ixazomib,KELA,2018-11-01,2099-12-31
+195,"Agalsidaasi alfa, agalsidaasi beeta ja migalastaatti","Agalsidase alfa, agalsidase beta and migalastat",KELA,2009-03-01,2099-12-31
+1504,Alektinibi,Alectinib,KELA,2019-08-01,2099-12-31
+170,Bosutinibi,Bosutinib,KELA,2015-12-01,2099-12-31
+1509,Dabrafenibi (liitännäishoito),Dabrafenib (adjuvant treatment),KELA,2020-02-01,2099-12-31
+151,"Eliglustaatti, imigluseraasi ja velagluseraasi alfa","Eliglustat, imiglucerase and velaglucerase alfa",KELA,2010-04-01,2099-12-31
+1503,Emisitsumabi,Emicizumab,KELA,2019-07-01,2099-12-31
+194,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon,Blood coagulation factor VIII and von Willebrand factor for the treatment of von Willebrand disease,KELA,2009-01-01,2099-12-31
+172,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon,Blood coagulation factor VIII and von Willebrand factor for desensitisation treatment in inhibitor-positive patients with haemophilia A,KELA,2016-02-01,2099-12-31
+1512,Ibrutinibi,Ibrutinib,KELA,2020-03-01,2099-12-31
+1505,Iksatsomibi,Ixazomib,KELA,2019-10-01,2099-12-31
+1502,Kabotsantinibi,Cabozantinib,KELA,2019-06-01,2099-12-31
+1508,Lenvatinibi,Lenvatinib,KELA,2020-02-01,2099-12-31
+154,Mekasermiini,Mecasermin,KELA,2011-02-01,2099-12-31
+1510,Niraparibi,Niraparib,KELA,2020-03-01,2099-12-31
+1511,Olaparibi,Olaparib,KELA,2020-03-01,2099-12-31
+1501,Palbosiklibi,Palbociclib,KELA,2019-02-01,2099-12-31
+1507,Pomalidomidi,Pomalidomide,KELA,2020-02-01,2099-12-31
+173,Trastutsumabi-injektio,Trastuzumab injection,KELA,2016-04-01,2099-12-31
+1506,Trifluridiinin ja tipirasiilin yhdistelmävalmiste,The combination of trifluridine and tipiracil,KELA,2019-11-01,2099-12-31
+179,Vismodegibi,Vismodegib,KELA,2017-11-01,2099-12-31
+161,Von Willebrand -tekijävalmiste,Preparation with von Willebrand's factor,KELA,2013-06-01,2099-12-31
+292,Alirokumabi  ja evolokumabi familiaalisen hyperkolesterolemian hoidossa,Alirocumab and evolocumab for the treatment of familial hypercholesterolaemia,KELA,2019-06-01,2099-12-31
+294,Alirokumabi ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,Alirocumab and evolocumab for the treatment of hypercholesterolaemia and dyslipidaemia,KELA,2020-01-01,2099-12-31
+293,Barisitinibi,Baricitinib,KELA,2019-10-01,2099-12-31
+295,Liraglutidi  (lapset ja nuoret),Liraglutide (children and adolescents),KELA,2020-02-01,2099-12-31
+291,Tofasitinibi,Tofacitinib,KELA,2019-03-01,2099-12-31
+341,Afatinibi* ja gefitinibi*,Afatinib and gefitinib,KELA,2010-11-01,2099-12-31
+336,"Agalsidaasi alfa*, agalsidaasi beeta* ja migalastaatti*","Agalsidase alfa, agalsidase beta and migalastat",KELA,2009-03-01,2099-12-31
+3001,Alektinibi,Alectinib,KELA,2018-12-01,2099-12-31
+3015,Alirokumabi* ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,Alirocumab and evolocumab for the treatment of hypercholesterolaemia and dyslipidaemia,KELA,2019-08-01,2099-12-31
+387,Asfotaasi alfa,Asfotase alfa,KELA,2017-08-01,2099-12-31
+3006,Barisitinibi,Baricitinib,KELA,2019-03-01,2099-12-31
+3016,Binimetinibi ja enkorafenibi,Binimetinib and encorafenib,KELA,2019-10-01,2099-12-31
+360,Bosutinibi*,Bosutinib,KELA,2013-12-01,2099-12-31
+3017,Brigatinib,Brigatinib,KELA,2019-11-01,2099-12-31
+3024,Dabrafenibi ja trametinibi (liitännäishoito)*,Dabrafenib and trametinib (adjuvant treatment),KELA,2020-02-01,2099-12-31
+324,Dasatinibi*,Dasatinib,KELA,2007-11-01,2099-12-31
+395,Dupilumabi,Dupilumab,KELA,2018-10-01,2099-12-31
+333,"Eliglustaatti*, imigluseraasi* ja velagluseraasi alfa*","Eliglustat, imiglucerase and velaglucerase alfa",KELA,2009-02-01,2099-12-31
+397,Emisitsumabi,Emicizumab,KELA,2018-11-01,2099-12-31
+3007,Erenumabi ja fremanetsumabi,Erenumab and fremanezumab,KELA,2019-04-01,2099-12-31
+325,Erlotinibi*,Erlotinib,KELA,2007-11-01,2099-12-31
+392,Ferrimaltoli,Ferric maltol,KELA,2018-08-01,2099-12-31
+332,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon*,Blood coagulation factor VIII and von Willebrand factor for the treatment of von Willebrand disease,KELA,2009-01-01,2099-12-31
+375,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon*,Blood coagulation factor VIII and von Willebrand factor for desensitisation treatment in inhibitor-positive patients with haemophilia A,KELA,2016-02-01,2099-12-31
+396,Idebenoni,Idebenone,KELA,2018-10-01,2099-12-31
+354,Ivabradiini*,Ivabradine,KELA,2013-03-01,2099-12-31
+3012,Kabotsantinibi*,Cabozantinib,KELA,2019-06-01,2099-12-31
+3025,Kalsiumkarbonaatti,Calcium carbonate,KELA,2020-03-01,2099-12-31
+3021,Ketokonatsoli,Ketoconazole,KELA,2020-01-01,2099-12-31
+3023,Koivun allergeeniuute (aikuiset),Allergen extract of birch pollen (adults),KELA,2020-02-01,2099-12-31
+345,Kolesevelaami,Colesevelam,KELA,2011-02-01,2099-12-31
+363,Kritsotinibi*,Crizotinib,KELA,2014-08-01,2099-12-31
+335,Lapatinibi*,Lapatinib,KELA,2009-03-01,2099-12-31
+3019,Lenvatinibi,Lenvatinib,KELA,2019-11-01,2099-12-31
+385,Levofloksasiini-sumutinliuos,Levofloxacin nebuliser solution,KELA,2017-04-01,2099-12-31
+3022,Liraglutidi (lapset ja nuoret)*,Liraglutide (children and adolescents),KELA,2020-02-01,2099-12-31
+3026,Lorlatinibi,Lorlatinib,KELA,2020-04-01,2099-12-31
+330,Mekasermiini*,Mecasermin,KELA,2008-11-01,2099-12-31
+365,Metyraponi,Metyrapone,KELA,2014-11-01,2099-12-31
+3010,Midodriini,Midodrine,KELA,2019-05-01,2099-12-31
+3014,Midostauriini,Midostaurin,KELA,2019-08-01,2099-12-31
+328,Nilotinibi*,Nilotinib,KELA,2008-09-01,2099-12-31
+3009,Niraparibi*,Niraparib,KELA,2019-04-01,2099-12-31
+391,Obetikoolihappo,Obeticholic acid,KELA,2018-08-01,2099-12-31
+389,Olaparibi*,Olaparib,KELA,2017-12-01,2099-12-31
+3004,Osimertinibi,Osimertinib,KELA,2019-02-01,2099-12-31
+3020,Patiromeeri,Patiromer,KELA,2020-01-01,2099-12-31
+343,Patsopanibi*,Pazopanib,KELA,2011-01-01,2099-12-31
+373,Ponatinibi,Ponatinib,KELA,2015-10-01,2099-12-31
+3002,Ribosiklibi,Ribociclib,KELA,2018-12-01,2099-12-31
+3013,Rivaroksabaani sepelvaltimotaudin hoitoon,Rivaroxaban for the treatment of coronary artery disease,KELA,2019-07-01,2099-12-31
+383,Seleksipagi,Selexipag,KELA,2017-02-01,2099-12-31
+3011,Tafamidiisi,Tafamidis,KELA,2019-06-01,2099-12-31
+384,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste*","Combination product containing tegafur, gimeracil and oteracil",KELA,2017-09-01,2099-12-31
+386,Tikagrelori 60 mg*,Ticagrelor 60 mg,KELA,2017-04-01,2099-12-31
+3003,Tivotsanibi,Tivozanib,KELA,2019-01-01,2099-12-31
+3005,Tofasitinibi*,Tofacitinib,KELA,2019-03-01,2099-12-31
+3008,Tolvaptaani,Tolvaptan,KELA,2019-04-01,2099-12-31
+337,Trabektediini,Trabectedin,KELA,2009-05-01,2099-12-31
+370,Trastutsumabi-injektio*,Trastuzumab injection,KELA,2015-04-01,2099-12-31
+3018,Trifluridiinin ja tipirasiilin yhdistelmävalmiste*,The combination of trifluridine and tipiracil,KELA,2019-11-01,2099-12-31
+399,Venetoklaksi,Venetoclax,KELA,2018-11-01,2099-12-31
+378,Vismodegibi*,Vismodegib,KELA,2016-04-01,2099-12-31
+357,Von Willebrand -tekijävalmiste*,Preparation with von Willebrand's factor,KELA,2013-06-01,2099-12-31
+1513,Binimetinibi ja enkorafenibi,Binimetinib and encorafenib,KELA,2020-07-01,2099-12-31
+3027,Benralitsumabi,Benralizumab,KELA,2020-05-01,2099-12-31
+3028,Mepolitsumabi,Mepolizumab,KELA,2020-06-01,2099-12-31
+3029,Upadasitinibi,Upadacitinib,KELA,2020-07-01,2099-12-31
+3030,Abemasiklibi,Abemaciclib,KELA,2020-07-01,2099-12-31
+3031,Apalutamidi,Apalutamidi,Google,2020-08-01,2099-12-31
+367,Bimatoprostin ja timololin säilytysaineeton yhdistelmävalmiste,Preservative-free combination of bimatoprost and timolol,Google,2014-12-01,2015-10-31
+314,Takrolimuusi,tacrolimus,Google,2001-08-01,2003-11-01
+312,Doketakseli,docetaxel,Google,1999-04-01,2007-04-01
+311,Paklitakseli,paclitaxel,Google,1999-04-01,2007-04-01
+296,Rivaroksabaani sepelvaltimotaudin hoitoon,Rivaroxaban for the treatment of coronary heart disease,Google,2020-08-01,2099-12-31
+185,Doketakseli,docetaxel,Google,1999-04-01,2007-05-01
+184,Paklitakseli,paclitaxel,Google,1999-04-01,2007-05-01
