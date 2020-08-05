@@ -129,14 +129,17 @@ source_status_short <- source_status %>%
   
 db_info <- tribble(
   ~vocabulary, ~mapping_method, 
-  "ATC",       "Almost mapped by OMOP",
+  "ATC",       "Done by OMOP",
+  "ICDO3",      "Done by OMOP",
   "ICD10fi",   "ICD10who + USAGI",
   "ICD9fi",    "USAGI",
-  "ICPC2",     "Mapped to ICD10",
+  "ICPC2",     "ICD10who",
   "NOMESCO",   "USAGI", 
   "REIMB",   "TODO:USAGI", 
   "ICD8fi",   "TODO:USAGI",
-  "SPAT",   "TODO:USAGI"
+  "SPAT",   "TODO:USAGI", 
+  "Dental codes (NIHW)", "TODO", 
+  "FHL",    "TODO"
 )
 
 db_join <- db_info %>% 
