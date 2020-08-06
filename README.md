@@ -75,6 +75,7 @@ process of new vocabularies [here](https://github.com/OHDSI/Usagi)
 | [SPAT](./SPAT/)                                     | 415      | 0%     | TODO:USAGI       | <span style="color:green">99.9%</span> <span style="color:red">0.0%</span>                                       |                                                                                                                  |
 | [Dental codes (NIHW)](./Dental%20codes%20\(NIHW\)/) |          |        | TODO             |                                                                                                                  |                                                                                                                  |
 | [FHL](./FHL/)                                       |          |        | TODO             |                                                                                                                  |                                                                                                                  |
+| [lab\_tampere](./lab_tampere/)                      | 2839     | 23%    | USAGI            |                                                                                                                  | <span style="color:blue">87.8%</span> <span style="color:green">12.1%</span>                                     |
 
 </div>
 

@@ -139,7 +139,8 @@ db_info <- tribble(
   "ICD8fi",   "TODO:USAGI",
   "SPAT",   "TODO:USAGI", 
   "Dental codes (NIHW)", "TODO", 
-  "FHL",    "TODO"
+  "FHL",    "TODO", 
+  "lab_tampere", "USAGI"
 )
 
 db_join <- db_info %>% 
