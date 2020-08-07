@@ -146,22 +146,16 @@ The full list can be found in
 **How many codes labeled as nomesco in tays are not in the nomesco
 standard?**
 
-There are 1 119 codes not found in the standard
+There are 4 codes not found in the standard
 
 Top10 sort by freq:
 
-| code  |   freq | freq\_per |
-| :---- | -----: | :-------- |
-| S2600 | 181056 | 3.950%    |
-| H0434 |  55791 | 1.217%    |
-| H0519 |  52053 | 1.136%    |
-| RS221 |  22833 | 0.498%    |
-| H0275 |  21465 | 0.468%    |
-| H0142 |  20850 | 0.455%    |
-| H0113 |  20668 | 0.451%    |
-| H0188 |  19077 | 0.416%    |
-| H0130 |  16341 | 0.357%    |
-| H0476 |  16253 | 0.355%    |
+| code  | freq | freq\_per |
+| :---- | ---: | :-------- |
+| XX3GW |   35 | 0.001%    |
+| XX3FW |   15 | 0.000%    |
+| XX3EW |    8 | 0.000%    |
+| NK7AD |    4 | 0.000%    |
 
 The full list can be found in
 [./3\_freq\_of\_source\_codes/tays\_not\_in\_nomesco.csv](./3_freq_of_source_codes/tays_not_in_nomesco.csv)
@@ -170,6 +164,6 @@ The full list can be found in
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
-| mapped      |     1965 | 27.548%    |   4826176 | 81.043%     |
-| not\_mapped |     4049 | 56.764%    |    160602 | 2.697%      |
-| not\_found  |     1119 | 15.688%    |    968337 | 16.261%     |
+| mapped      |     1965 | 32.652%    |   4826176 | 96.778%     |
+| not\_mapped |     4049 | 67.281%    |    160602 | 3.221%      |
+| not\_found  |        4 | 0.066%     |        62 | 0.001%      |

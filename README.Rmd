@@ -147,10 +147,15 @@ db_join <- db_info %>%
   left_join(source_status_short, by="vocabulary") %>% 
   left_join(db_statuses_shot, by="vocabulary")
 
-db_join %>% select(vocabulary, n_codes, mapped, mapping_method, finngen, tays ) %>% 
+db_join <- db_join %>% select(vocabulary, n_codes, mapped, mapping_method, finngen, tays ) %>% 
   mutate_all(~if_else(is.na(.),"",as.character(.))) %>% 
   #make links 
   mutate(vocabulary = str_c("[", vocabulary,"](./", vocabulary,"/)"))
+
+
+db_join <- db_join %>% rename(FinnGen_DF5 = finngen, TAYS_oncology = tays)
+
+db_join
 
 ```
 

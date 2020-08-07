@@ -1,11 +1,11 @@
 library(tidyverse)
 library(lubridate)
-
+library(readxl)
 
 
 # Load --------------------------------------------------------------------
 freq_nomesco_finngen <- read_csv("./freq_nomesco_finngen.csv", )
-freq_procedures_tays <- read_csv("./freq_procedures_tays.csv",locale = locale(encoding = "ISO-8859-1"))
+freq_nomesco_tays <- read_excel("./freq_nomesco_tays.xlsx")
 
 
 
@@ -13,7 +13,7 @@ freq_procedures_tays <- read_csv("./freq_procedures_tays.csv",locale = locale(en
 
 freq_nomesco <- full_join(
   freq_nomesco_finngen %>% rename(code=CODE1, freq_finngen=freq) %>% select(code, freq_finngen),
-  freq_procedures_tays %>% rename(code=TOIMENPIDE, freq_tays=yhteensa) %>% select(code, freq_tays), 
+  freq_nomesco_tays %>% rename(code=TOIMENPIDE, freq_tays=yhteensa) %>% select(code, freq_tays), 
   by="code"
 )
 
