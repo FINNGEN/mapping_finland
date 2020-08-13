@@ -1,4 +1,4 @@
-code,concept_id,substance_name,new_atc_code,year_of_change
+concept_code,concept_id,substance_name,new_atc_code,year_of_change
 A11CC07,NA,paricalcitol,H05BX02,2010
 B01AC14,NA,anagrelide,L01XX35,2006
 B02AB03,NA,"c1-inhibitor, plasma derived",B06AC01,2012
@@ -75,7 +75,6 @@ L04AA14,NA,anakinra,L04AC03,2008
 L04AA16,NA,afelimomab,L04AB03,2008
 L04AA17,NA,adalimumab,L04AB04,2008
 N01AB03,NA,methoxyflurane,N02BG09,2009
-N02CX08,NA,galcanezumab,N02CD02,2020
 N05AK01,NA,tetrabenazine,N07XX06,2008
 N05AX09,NA,clotiapine,N05AH06,2010
 N05CM17,NA,melatonin,N05CH01,2008

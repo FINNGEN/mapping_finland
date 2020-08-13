@@ -2,3 +2,8 @@
 .ipynb_checkpoints/
 .Rhistory
 .Rdata
+
+
+lib/OMOP_VOCABULARY/*
+!lib/OMOP_VOCABULARY/VOCABULARY.csv
+.Rproj.user

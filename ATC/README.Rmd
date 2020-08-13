@@ -17,33 +17,8 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(scales)
 
+source("../lib/vocabulary_reporting_fuctions.r")
 
-getOutputFormat <- function() {
-  output <- rmarkdown:::parse_yaml_front_matter(
-    readLines(knitr::current_input())
-    )$output
-  if (is.list(output)){
-    return(names(output)[1])
-  } else {
-    return(output[1])
-  }
-}
-
-
-# Dynamic markdown functions
-my_print_line<- function(...){
-  cat(str_c(" \n",...," \n"))
-}
-
-my_print_table<- function(...){
-  cat(knitr::knit_print(rmarkdown::paged_table(...)))
-  # if(getOutputFormat() == 'html_document') {
-  #  cat(knitr::knit_print(rmarkdown::paged_table(...)))
-  # }else{
-  #   cat(knitr::knit_print(knitr::kable(...)))
-  # }
-  
-}
 
 # Document variables 
 N_TOPS <- 10
@@ -54,14 +29,11 @@ db_statuses <- tibble()
 ```
 
 ```{r load, message=FALSE, warning=FALSE}
-atc_source_vocabulary <- read_csv("./1_source_vocabulary/OMOP_ATC.csv")
+atc_concept <- read_csv("./1_source_vocabulary/CONCEPT_ATC.csv")
+
+atc_mapsto <- read_csv("./2_mapping_to_standard/CONCEPT_RELATIONSHIP_ATC.csv")
 
 atc_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
-
-atc_mapped <- read_csv("./2_mapping_to_standard/atc_mapped_by_omop.csv") %>% 
-  rename(code = concept_code)
-
-atc_missing_in_omop <- read_csv("1_source_vocabulary/missing_atc_in_omop.csv")
 ```
 
 
@@ -84,20 +56,14 @@ However, there is a working group in OMOP with this aim [here](https://www.ohdsi
 
 ## Progess in number of codes
 ```{r}
-n_codes <- atc_mapped %>% distinct(code) %>% nrow()
-n_codes_accepted <- atc_mapped %>% filter(mappingStatus=="MAPPED") %>% distinct(code) %>% nrow()
+n_codes <- atc_concept %>% nrow()
+n_codes_accepted <- atc_mapsto %>% distinct(concept_id_1) %>% nrow()
 ```
 
 
 From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
 
 This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
-
-
-```{r}
-atc_mapped %>% distinct(code, mappingStatus) %>% count(mappingStatus)
-```
-
 
 
 ```{r}
@@ -129,110 +95,11 @@ db_statuses <- bind_rows(
 
 
 ```{r  results='asis'}
-# get database names from freq tables 
-db_names <- atc_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
 
-#for each data base
-for(db_name in db_names){
-#assess_db <- function(i){
- # db_name <- db_names[i]
-
-  # get only preset dtabase info 
-  db_freq <- atc_freqs %>% 
-    select(code, str_c("freq_",db_name)) %>% 
-    rename(freq = str_c("freq_",db_name)) %>% 
-    filter(!is.na(freq))
-  
-  n_total_envents <- sum(db_freq$freq)
-  
-  # join with usagi output 
-  db_join <- left_join(
-    db_freq ,
-    atc_mapped %>% rename(code=code, name_en=concept_name) %>% 
-      select(code, name_en, mappingStatus ), 
-    by = "code") %>%
-  mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
-    arrange(-freq)
-  
-  #save not found codes
-  db_missing <- db_join %>% filter(is.na(mappingStatus)) %>% select(code, freq, freq_per)
-  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_atc.csv")
-  write_csv(db_missing, save_db_missing_path )
-  
-  # calculate status count
-  db_status <- db_join %>% 
-    mutate(status = case_when( 
-      is.na(mappingStatus) ~ "not_found",  
-      mappingStatus == "NOT_MAPPED" ~ "not_mapped", 
-      TRUE ~ "mapped"
-    )
-  ) %>% 
-  mutate(status = factor(status, levels = c("mapped", "not_mapped",  "not_found"))) %>% 
-  group_by(status) %>% 
-  summarise(n_codes=n(), 
-            per_codes= percent(n_codes/nrow(.), accuracy = 0.001),
-            n_events = sum(freq), 
-            per_events= percent(n_events/sum(.$freq), accuracy = 0.001), 
-            .groups = 'drop')
-  
-  db_statuses <- bind_rows(db_statuses, db_status %>% mutate(db_name = db_name))
-  
-  
-  # reason not found
-  db_missing_reason <- left_join(
-    db_missing, 
-    atc_missing_in_omop %>% mutate(is_not_in_omop = TRUE) %>% select(code, is_not_in_omop), 
-    by="code"
-  ) %>% 
-    # check if an E))) code
-    mutate(reason_not_found = case_when(
-      str_detect(code, "^E")~ "ATC starst with E", 
-      !is.na(is_not_in_omop)~ "Excluded from ATC releases", 
-      TRUE ~ "unknown"
-    ))
-  
-   db_missing_reasons <- db_missing_reason %>% 
-    group_by(reason_not_found) %>% 
-    summarise(n_codes=n(), 
-            per_codes= percent(n_codes/nrow(db_join), accuracy = 0.001),
-            n_events = sum(freq), 
-            per_events= percent(n_events/sum(db_join$freq), accuracy = 0.001), 
-            .groups = 'drop')
-  
-  
-   # plot markdown 
-  my_print_line()
-  my_print_line("## Database ", db_name)
-  
-  my_print_line("**How many codes labeled as atc in ", db_name," are not in the atc standard?**")
-  
-  my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
-  
-  my_print_line("Top", N_TOPS," sorted by freq:")
-  
-  my_print_table(db_missing %>% head(N_TOPS))
-  
-  my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
-  
- 
-  my_print_line("**Status of the atc codes in", db_name, "**")
-  
-  my_print_table(db_status)
-  
-  my_print_line("**Reasons why not found**")
-  
-  my_print_table(db_missing_reasons)
-  
-  my_print_line("Top", N_TOPS," of unknown sorted by freq:")
-  
-  my_print_table(db_missing_reason %>% filter(reason_not_found=="unknown") %>% select(code, freq, freq_per ) %>% head(N_TOPS))
-  
-  
-}
-
-
-write_csv(db_statuses, "status_table.csv" )
-  
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("ATC", atc_concept, atc_mapsto, atc_freqs, 
+                      atc_missing_in_omop = read_csv("./1_source_vocabulary/missing_atc_in_omop.csv")
+                      ) 
 
 ```
 
