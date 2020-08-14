@@ -154,7 +154,8 @@ nomescofi_concept <- nomescofi_source %>%
     standard_concept = as.character(NA), 
     concept_code = CodeId, 
     valid_start_date = dmy(BeginningDate), 
-    valid_end_date = dmy(ExpiringDate)
+    valid_end_date = dmy(ExpiringDate), 
+    tmp_name_fi = LongName # keep for USAGI
   ) 
     
         
@@ -172,8 +173,6 @@ nomescofi_concept %>% head(N_TOPS)
 ```
 
 
-
-## Adding other languages 
 #### Create CONCEPT_SYNONYM table 
 - 4181730 # Finnish language
 - 4175777 # Swedish language

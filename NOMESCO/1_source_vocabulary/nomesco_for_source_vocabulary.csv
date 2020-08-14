@@ -6703,7 +6703,6 @@ MWW96,Muu uusintaleikkaus raskaus- tai synnytysleikkauksen komplikaation vuoksi,
 MX,Muut raskauteen ja synnytykseen liittyvät toimenpiteet,Other procedures in obstetrics,Andra åtgärder i samband av graviditet eller förlossning,THL,1900-01-01,2030-12-31
 TMW99,Muu raskauteen tai synnytykseen liittyvä pientoimenpide,Other minor surgical procedure in obstetrics,Annan mindre obstetrisk åtgärd,THL,1900-01-01,2030-12-31
 N,Tuki- ja liikuntaelimet,Musculoskeletal system,Muskuloskeletala systemet,THL,1900-01-01,2030-12-31
-NA,Selkä ja kaula,Spine and neck,Rygg och hals,THL,1900-01-01,2030-12-31
 NA_,Selän ja kaulan diagnostinen radiologia,Diagnostic radiology of spine and neck,Diagnostisk radiologi av rygg och hals,THL,1900-01-01,2030-12-31
 NA1AA,Kaularangan röntgen,Cervical spine X-ray examination without contrast,"Halsrygg, röntgen",THL,1999-01-01,2030-12-31
 NA1AD,Kaularangan tietokonetomografiatutkimus,Cervical spine CT examination,"Halsrygg, DT",THL,1999-01-01,2030-12-31
@@ -10397,8 +10396,7 @@ WX307,Synnytysepiduraalipuudutus,Obstetric epidural analgesia,Epiduralanestesi v
 WX308,Sakraalipuudutus,Sacral anesthesy,Sakralanesesi,THL,1997-01-01,2030-12-31
 WX320,Spinaalipuudutus,Spinalanesthesy,Spinalanestesi,THL,1997-01-01,2030-12-31
 WX321,Spinaalipuudutus synnytyskivun lievitystä varten,Acute spinal anesthesia for delivery,Spinalanestesi för lindring av förlossningssmärta,THL,2006-01-01,2030-12-31
-WX322,Yhdistetty spinaali- ja epiduraalipuudutus synnytyksessä,Combined spinal-epidural analgesia in obstetrics,Kombinerad spinal- och epiduralbedövning vid förlossning,Translator,2016-01-01,2030-12-31
-WX322,Yhdistetty spinaali- ja epiduraalipuudutus synnytyksessä,Combined spinal and epidural anesthesia for delivery,Kombinerad spinal och epidural anestesi vid förlossning,THL,2006-01-01,2008-12-31
+WX322,Yhdistetty spinaali- ja epiduraalipuudutus synnytyksessä,Combined spinal-epidural analgesia in obstetrics,Kombinerad spinal- och epiduralbedövning vid förlossning,Translator,2006-01-01,2030-12-31
 WX323,Spinaalianestesiapuudutus katetrilla,Spinal anesthesia with catheter,Spinalanestesi med kateter,THL,2006-01-01,2007-12-31
 WX330,Paravertebraalipuudutus,Paravertebral ansthesia,Paravertebral bedövning,THL,2006-01-01,2030-12-31
 WX4,Yleisanestesiat,General anaesthesias,Generella anestesier,Translator,1997-01-01,2030-12-31
