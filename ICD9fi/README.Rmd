@@ -17,32 +17,8 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(scales)
 
+source("../lib/vocabulary_reporting_fuctions.r")
 
-getOutputFormat <- function() {
-  output <- rmarkdown:::parse_yaml_front_matter(
-    readLines(knitr::current_input())
-    )$output
-  if (is.list(output)){
-    return(names(output)[1])
-  } else {
-    return(output[1])
-  }
-}
-
-
-# Dynamic markdown functions
-my_print_line<- function(...){
-  cat(str_c(" \n",...," \n"))
-}
-
-my_print_table<- function(...){
-  if(getOutputFormat() == 'html_document') {
-   cat(knitr::knit_print(rmarkdown::paged_table(...)))
-  }else{
-    cat(knitr::knit_print(knitr::kable(...)))
-  }
-  
-}
 
 # Document variables 
 N_TOPS <- 10
@@ -53,24 +29,16 @@ db_statuses <- tibble()
 ```
 
 ```{r load, message=FALSE, warning=FALSE}
-icd9fi_source_vocabulary <- read_csv("./1_source_vocabulary/icd9fi_for_source_vocabulary.csv")
+icd9fi_concept <- read_csv("./1_source_vocabulary/CONCEPT_ICD9fi.csv")
+
+icd9fi_mapsto <- read_csv("./2_mapping_to_standard/CONCEPT_RELATIONSHIP_ICD9fi.csv")
 
 icd9fi_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
-
-col_types = cols( .default = col_character(), 
-                  sourceFrequency = col_integer(),
-                  matchScore  = col_integer(),
-                  conceptId  = col_integer()
-                  )
-
-icd9fi_after_usagi <- read_csv("./2_mapping_to_standard/USAGI/icd9fi_after_usagi.csv", col_types = col_types) %>% 
-  mutate(name_en_icd9 = `ADD_INFO:possible_english_name`)# cant get the encoding rigth
 ```
 
 
 # Intro
-TODO
-
+TODO: intro icd9fi
 
 
 # Formating source vocabulary to OMOP
@@ -84,28 +52,17 @@ There are 5 tipes of maching :
 
 TODO
 
-```{r}
-icd9fi_source_vocabulary %>% count(name_en_source, sort = T)
-```
-
-Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/icd9fi_for_source_vocabulary.csv](1_source_vocabulary/icd9fi_for_source_vocabulary.csv). 
-
-TODO: missing validity dates 
-
 # Mapping the source vocabulary to the standard vocabularies
-In short, USAGI directly on icd9fi's source names (Latin, Finnish, or English) ranked by frequency calculated from FinnGen-DF5.
 
-The frequencies from FinnGen-DF5 [3_freq_of_source_codes/freq_total.csv](3_freq_of_source_codes/freq_total.csv)
-were append to  [1_source_vocabulary/icd9fi_for_source_vocabulary.csv](1_source_vocabulary/icd9fi_for_source_vocabulary.csv). 
-Resulting table was imported in to USAGY with vocabularies [2_mapping_to_standard/USAGI/VocabularyIds.txt](2_mapping_to_standard/USAGI/VocabularyIds.txt) version [2_mapping_to_standard/USAGI/vocabularyVersion.txt](2_mapping_to_standard/USAGI/vocabularyVersion.txt). Mapping was performed on the icd9fi's source names (Latin, Finnish, or English) and the English name was solely use as a guide.  
+ICD9fi codes ranked by frequency calculated from  FinnGen-DF5.
 
-Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppala). 
+Mapping was carried in USAGI by medical student [\@kalleaseppala](github.com/kalleaseppala). 
 
 
 ## Progess in number of codes
 ```{r}
-n_codes <- icd9fi_after_usagi %>% distinct(sourceCode) %>% nrow()
-n_codes_accepted <- icd9fi_after_usagi %>% filter(mappingStatus=="APPROVED") %>% distinct(sourceCode) %>% nrow()
+n_codes <- icd9fi_concept %>% nrow()
+n_codes_accepted <- icd9fi_mapsto %>% distinct(concept_id_1) %>% nrow()
 ```
 
 
@@ -115,46 +72,21 @@ This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved.
 
 
 ```{r}
-icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus) %>% count(mappingStatus) %>% filter(mappingStatus!="0.3793565332889557")
-```
-
-```{r}
-a <- icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus, sourceFrequency)
-
-n_total_envents <- sum(a$sourceFrequency, na.rm = T)
-n_approved_events <- a %>% filter(mappingStatus=="APPROVED") %>% .$sourceFrequency %>% sum(na.rm = T)
-
-max_n_events_unmapped <-  a %>% filter(mappingStatus=="UNCHECKED") %>% .$sourceFrequency %>%  max(na.rm = T)
-```
-
-## Progess in number of events
-
-Accepted codes covers `r scales::percent(n_approved_events/n_total_envents)` of the total number of events in the combined databases. 
-
-Accepted codes covers all codes with more than `r scales::number(max_n_events_unmapped)` events in the combined databases.
-
-Top`r N_TOPS` of the unchecked events sort by number of events : 
-
-```{r}
-icd9fi_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, name_en_icd9) %>%  head(N_TOPS)
-```
-
-```{r}
 db_statuses <- bind_rows(
   tibble(
     status = "mapped",
     n_codes = n_codes_accepted,
-    per_codes = percent(n_codes_accepted/n_codes),
-    n_events = n_approved_events,
-    per_events = percent(n_approved_events/n_total_envents), 
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = as.double(NA),
+    per_events = as.character(NA), 
     db_name = "source"
   ),
  tibble(
     status = "not_mapped",
-    n_codes = n_codes-n_codes_accepted,
-    per_codes = percent((n_codes-n_codes_accepted)/n_codes),
-    n_events = n_total_envents-n_approved_events,
-    per_events = percent((n_total_envents-n_approved_events)/n_total_envents), 
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events =  as.double(NA),
+    per_events = as.character(NA), 
     db_name = "source"
   )
 )
@@ -162,89 +94,17 @@ db_statuses <- bind_rows(
 
 
 
+
+
 # Assessing coverage of databases
 
 
 ```{r  results='asis'}
-# get database names from freq tables 
-db_names <- icd9fi_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
 
-#for each data base
-for(db_name in db_names){
-#assess_db <- function(i){
- # db_name <- db_names[i]
-
-  # get only preset dtabase info 
-  db_freq <- icd9fi_freqs %>% 
-    select(code, str_c("freq_",db_name)) %>% 
-    rename(freq = str_c("freq_",db_name)) %>% 
-    filter(!is.na(freq))
-  
-  n_total_envents <- sum(db_freq$freq)
-  
-  # join with usagi output 
-  db_join <- left_join(
-    db_freq ,
-    icd9fi_after_usagi %>% rename(code=sourceCode, name_en=name_en_icd9, name_fi=sourceName) %>% 
-      select(code, name_en, name_fi, mappingStatus ), 
-    by = "code") %>%
-  mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
-    arrange(-freq)
-  
-  #save not found codes
-  db_missing <- db_join %>% filter(is.na(mappingStatus)) %>% select(code, freq, freq_per)
-  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_icd9fi.csv")
-  write_csv(db_missing, save_db_missing_path )
-  
-  # calculate status count
-  db_status <- db_join %>% 
-    mutate(status = case_when( 
-      is.na(mappingStatus) ~ "not_found",  
-      mappingStatus == "UNCHECKED" ~ "not_mapped", 
-      TRUE ~ "mapped"
-    )
-  ) %>% 
-  mutate(status = factor(status, levels = c("mapped", "not_mapped",  "not_found"))) %>% 
-  group_by(status) %>% 
-  summarise(n_codes=n(), 
-            per_codes= percent(n_codes/nrow(.), accuracy = 0.001),
-            n_events = sum(freq), 
-            per_events= percent(n_events/sum(.$freq), accuracy = 0.001), 
-            .groups = 'drop')
-  
-  db_statuses <- bind_rows(db_statuses, db_status %>% mutate(db_name = db_name))
-  
-   # plot markdown 
-  my_print_line()
-  my_print_line("## Database ", db_name)
-  
-  my_print_line("**How many codes labeled as icd9fi in ", db_name," are not in the icd9fi standard?**")
-  
-  my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
-  
-  my_print_line("Top", N_TOPS," sort by freq:")
-  
-  my_print_table(db_missing %>% head(N_TOPS))
-  
-  my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
-  
- 
-  my_print_line("**Status of the icd9fi codes in", db_name, "**")
-  
-  my_print_table(db_status)
-  
-  
-}
-
-
-write_csv(db_statuses, "status_table.csv" )
-  
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("ICD9fi", icd9fi_concept, icd9fi_mapsto, icd9fi_freqs ) 
 
 ```
-
-
-
-
 
 
 

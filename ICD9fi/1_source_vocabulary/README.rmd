@@ -1,0 +1,166 @@
+---
+title: "ICD9fi source vocabulary"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# Document variables 
+N_TOPS <- 10
+
+library(tidyverse)
+library(lubridate)
+library(readxl)
+
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+```
+
+## Import Vocabulary
+
+TODO: i got it from aki now in the gitlab repo 
+
+The concept names are a mixed of Latin, Finnish, and English !!. These are not translated to English !!. The English name were append by matching the ICD9fi code to the ICD9 code dowloaded from [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020). 
+
+```{r}
+icd9fi_source <- read_excel("./THL_ICD9fi_matched_ICD9CM_and_Wolfbane_ICD9.xlsx")
+```
+
+
+
+## Traslation to English 
+TODO: so far we have tried to match ICD9fi codes to ICD9CM and Wolfbane (seems to be the same) with  no success 
+
+ATM i will keep the names as they are and lets see later 
+
+## Formating source vocabulary to OMOP
+
+#### Create VOCABULARY table
+```{r}
+icd9fi_vocabulaly <- tibble(
+  vocabulary_id = "ICD9fi", 
+  vocabulary_name = "ICD9 Finnish modification",
+  vocabulary_reference = "", 
+  vocabulary_version = "", 
+  vocabulary_concept_id = 1
+)
+
+icd9fi_vocabulary_concept <- tibble(
+   concept_id = 1,                                                                
+   concept_name = "ICD9 Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Vocabulary",                                                             
+   concept_class_id = "Vocabulary",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+write_csv(icd9fi_vocabulaly, "./VOCABULARY_ICD9fi.csv")
+
+icd9fi_vocabulaly
+```
+
+#### Create CONCEPT_CLASS table
+```{r}
+icd9fi_concept_class <- tibble(
+  concept_class_id = "-char ICD9fi", 
+  concept_class_name = " ICD9 Finnish Modification Hierarchy Level ",
+  concept_class_concept_id = 2
+) %>% bind_cols( tibble( level = 3:5)) %>% 
+  mutate(
+    concept_class_id = str_c(level, concept_class_id ), 
+    concept_class_name = str_c(level, concept_class_name ), 
+    concept_class_concept_id = concept_class_concept_id + level
+    ) %>% 
+  select(-level)
+
+
+icd9fi_concept_class_concept <- tibble(
+   #concept_id = 1,                                                                
+   #concept_name = "NOMESCO Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Concept Class",                                                             
+   concept_class_id = "Concept Class",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+icd9fi_concept_class_concept <- 
+  bind_cols(
+    icd9fi_concept_class %>% 
+      rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
+      select(concept_id, concept_name), 
+    icd9fi_concept_class_concept
+  )
+
+
+write_csv(icd9fi_concept_class, "./CONCEPT_CLASS_ICD9fi.csv")
+
+icd9fi_concept_class
+```
+
+
+#### Create CONCEPT table 
+
+At the moment `domain_id` is "Condition" for all although several are not procedures. 
+
+TODO: recalcualte `domain_id` based on the mapping 
+
+```{r}
+
+# add concept_id
+icd9fi_source <- icd9fi_source %>% 
+   mutate( concept_id = 1:nrow(.)+7 ) # as already 6 for domain and concept_class
+
+
+icd9fi_concept <- icd9fi_source %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_name = ICD9TXT,
+    domain_id = "Condition", # at the moment
+    vocabulary_id = "ICD9fi", 
+    concept_class_id = str_c(nchar(ICD9), "-char ICD9fi"), 
+    standard_concept = as.character(NA), 
+    concept_code = ICD9, 
+    valid_start_date = as.Date("1970-01-01"), 
+    valid_end_date = as.Date("2099-12-31"), 
+    tmp_name_fi = concept_name  # keep for USAGI
+  ) 
+    
+        
+# add  concepts for domain and concept_class
+icd9fi_concept <- bind_rows(
+  icd9fi_vocabulary_concept, 
+  icd9fi_concept_class_concept, 
+  icd9fi_concept
+)
+
+
+write_csv(icd9fi_concept, "./CONCEPT_ICD9fi.csv")
+
+icd9fi_concept %>% head(N_TOPS)
+```
+
+
+
+
+
+
+
+
+
+

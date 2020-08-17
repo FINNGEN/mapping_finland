@@ -1,0 +1,173 @@
+---
+title: "ICD9fi mappings"
+output: 
+    github_document:
+        df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+library(tidyverse)
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+# Document variables 
+N_TOPS <- 10
+```
+
+## Mapping type : USAGUI 
+#### Preparation fotrUSAGI
+
+In short, USAGI directly on icd9fi's source names (Latin, Finnish, or English) ranked by frequency calculated from FinnGen-DF5.
+
+The frequencies from FinnGen-DF5 [3_freq_of_source_codes/freq_total.csv](3_freq_of_source_codes/freq_total.csv)
+were append to  [1_source_vocabulary/CONCEPT_ICD9fi.csv](1_source_vocabulary/CONCEPT_ICD9fi.csv). 
+
+
+Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppala). 
+ 
+
+
+```{r message=FALSE}
+icd9fi_concept <- read_csv("../1_source_vocabulary/CONCEPT_ICD9fi.csv") %>%  filter(vocabulary_id =="ICD9fi")
+icd9fi_freqs <- read_csv("../3_freq_of_source_codes/freq_total.csv")
+```
+
+```{r message=FALSE}
+icd9fi_source_for_usagi <- left_join(
+  icd9fi_concept,
+  icd9fi_freqs %>% rename(concept_name = code),
+  by="concept_name"
+) 
+```
+
+```{r}
+icd9fi_source_for_usagi <- icd9fi_source_for_usagi %>%
+  mutate_if(is.numeric, ~if_else(is.na(.), rep(0, length(.)), .)) %>% 
+  arrange(-freq_total)
+
+write_csv(icd9fi_source_for_usagi, "./USAGI/icd9fi_source_for_usagi.csv")
+```
+
+
+#### After USAGI
+
+```{r}
+icd9fi_after_usagi <- read_csv("./USAGI/icd9fi_after_usagi.csv", 
+  col_types = cols( 
+    .default = col_character(), 
+    sourceFrequency = col_integer(),
+    matchScore  = col_double(),
+    conceptId  = col_integer()
+  )
+) %>%  # cant get the encoding right %>%
+  filter(mappingStatus!="0.3793565332889557") # not sure what it is 
+```
+Summary of mapping progress after USAGI:
+
+```{r}
+icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus) %>% count(mappingStatus)
+```
+
+```{r}
+a <- icd9fi_after_usagi %>% distinct(sourceCode, mappingStatus, sourceFrequency)
+
+n_total_envents <- sum(a$sourceFrequency)
+n_approved_events <- a %>% filter(mappingStatus=="APPROVED") %>% .$sourceFrequency %>% sum()
+
+max_n_events_unmapped <-  a %>% filter(mappingStatus=="UNCHECKED") %>% .$sourceFrequency %>%  max()
+```
+
+Accepted codes covers `r scales::percent(n_approved_events/n_total_envents)` of the total number of events in the combined databases. 
+
+Accepted codes covers all codes with more than `r scales::number(max_n_events_unmapped)` events in the combined databases.
+
+Top`r N_TOPS` of the unchecked events sort by number of events : 
+
+```{r}
+icd9fi_after_usagi %>% filter(mappingStatus=="UNCHECKED") %>% arrange(-sourceFrequency) %>% select(sourceCode,  sourceFrequency, matchScore, sourceName, `ADD_INFO:possible_english_name`) %>%  head(N_TOPS)
+```
+
+## Formating mappigs to OMOP
+
+Mappings based on USAGI. 
+
+- For valid_start_date max of source concept and mapped concept is chosen 
+- For valid_end_date min of source concept and mapped concept is chosen 
+
+```{r}
+# load concept table
+concept <- read_table_concept(path_vocabulary_tables)
+```
+
+
+```{r}
+# join to icd9fi concepts
+icd9fi_mapping <- inner_join(
+  icd9fi_concept %>% 
+    select(concept_id, concept_code, valid_start_date, valid_end_date) %>% 
+    rename(concept_id_1 = concept_id),
+  icd9fi_after_usagi %>%  filter(mappingStatus == "APPROVED") %>% 
+    select(sourceCode, conceptId) %>% 
+    rename(concept_id_2 = conceptId, concept_code = sourceCode),
+  by="concept_code"
+) %>% select(-concept_code )
+
+
+
+# join to mapped concepts 
+icd9fi_mapping <- left_join(
+  icd9fi_mapping, 
+  concept %>% 
+    select(concept_id, valid_start_date, valid_end_date) %>% 
+    rename_all(str_c, "_2"), 
+  by="concept_id_2"
+)
+
+# select max valid_start_date and min for valid_end_date 
+icd9fi_mapsto <- icd9fi_mapping %>% 
+  transmute(
+    concept_id_1 = concept_id_1,
+    concept_id_2 = concept_id_2,
+    relationship_id = "Maps to",
+    valid_start_date = pmax(valid_start_date, valid_start_date_2), 
+    valid_end_date   = pmin(valid_end_date, valid_end_date_2), 
+    invalid_reason = as.character(NA), 
+    temp_mapping_type = "USAGI"
+  )
+
+
+write_csv(icd9fi_mapsto, "CONCEPT_RELATIONSHIP_icd9fi.csv")
+
+icd9fi_mapsto %>%  head(N_TOPS)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
