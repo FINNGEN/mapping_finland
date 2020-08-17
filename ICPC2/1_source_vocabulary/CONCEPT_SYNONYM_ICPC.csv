@@ -1,0 +1,1444 @@
+concept_id,concept_synonym_name,language_concept_id
+5,Laaja terveydentilan arviointi/tarkastus,4181730
+6,Suppea terveydentilan arviointi/tarkastus,4181730
+7,Allergiatutkimus,4181730
+8,Mikrobiologinen/immunologinen koe,4181730
+9,Veritutkimus,4181730
+10,Virtsatutkimus,4181730
+11,Ulostetutkimus,4181730
+12,Histologinen/sytologinen tutkimus,4181730
+13,Muu laboratoriotutkimus,4181730
+14,Kliininen toimintakoe,4181730
+15,Diagnostinen endoskopia,4181730
+16,Diagnostinen kuvantaminen,4181730
+17,Elektrofysiologinen tutkimus,4181730
+18,Muu tutkimustoimenpide,4181730
+19,Rokotus / ennaltaehkäisevä lääkitys,4181730
+20,Seuranta/terveysneuvonta/ruokavalioneuvonta,4181730
+21,Perusterveydenhuollon asiantuntijan konsultaatio,4181730
+22,Erikoislääkärin konsultaatio,4181730
+23,Potilaan tarpeiden/tulosyyn selvittäminen,4181730
+24,Muu ennaltaehkäisevä toimenpide,4181730
+25,Lääkitys/lääkemääräys/uusinta/injektio,4181730
+26,Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto,4181730
+27,Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto,4181730
+28,Katetrointi/intubointi/laajentaminen,4181730
+29,Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto),4181730
+30,Paikallinen lääkeaineinjektio,4181730
+31,Sidos/kompressi/tamponointi,4181730
+32,Fysikaalinen hoito / kuntoutus,4181730
+33,Terapeuttinen neuvonta / kuuntelu,4181730
+34,Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia,4181730
+35,Tutkimustulosten kuuleminen,4181730
+36,Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta,4181730
+37,Hallinnollinen toimenpide,4181730
+38,Muu seurantakäynti,4181730
+39,Hoidonantajan käynnistämä tapahtuma,4181730
+40,Muun henkilön käynnistämä tapahtuma,4181730
+41,Lähete perusterveydenhuollon ammattihenkilölle (pl. lääkäri),4181730
+42,Lähete erikoislääkärille/sairaalaan,4181730
+43,Muu lähete,4181730
+44,Muu käynnin syy,4181730
+45,Yleiset ja epämääräiset,4181730
+46,"Kipu, yleinen / monessa paikassa",4181730
+47,Vilunväristykset,4181730
+48,Kuume,4181730
+49,"Heikkous/väsymys, yleinen",4181730
+50,Sairauden tunne,4181730
+51,Pyörtyminen,4181730
+52,Tajuttomuus,4181730
+53,Turvotus,4181730
+54,Hikoiluongelma,4181730
+55,"Verenvuoto, määrittämätön",4181730
+56,"Rintakipu, määrittämätön",4181730
+57,Huoli lääkkeen/hoidon sivuvaikutuksesta,4181730
+58,Ärtyisä vauva,4181730
+59,Huoli ulkonäöstä,4181730
+60,Eutanasiaan liittyvä keskustelu/pyyntö,4181730
+61,Syöpäsairauden riskitekijä,4181730
+62,"Sairauden riskitekijä, määrittämätön",4181730
+63,Kuolemanpelko,4181730
+64,"Huoli/pelko syövästä, määrittämätön",4181730
+65,"Huoli/pelko muusta sairaudesta, määrittämätön",4181730
+66,"Toiminnanvajaus, määrittämätön",4181730
+67,Muu yleisoire/-vaiva,4181730
+68,"Yleiset ja epämääräiset, Laaja terveydentilan arviointi/tarkastus",4181730
+69,"Yleiset ja epämääräiset, Suppea terveydentilan arviointi/tarkastus",4181730
+70,"Yleiset ja epämääräiset, Allergiatutkimus",4181730
+71,"Yleiset ja epämääräiset, Mikrobiologinen/immunologinen koe",4181730
+72,"Yleiset ja epämääräiset, Veritutkimus",4181730
+73,"Yleiset ja epämääräiset, Virtsatutkimus",4181730
+74,"Yleiset ja epämääräiset, Ulostetutkimus",4181730
+75,"Yleiset ja epämääräiset, Histologinen/sytologinen tutkimus",4181730
+76,"Yleiset ja epämääräiset, Muu laboratoriotutkimus",4181730
+77,"Yleiset ja epämääräiset, Kliininen toimintakoe",4181730
+78,"Yleiset ja epämääräiset, Diagnostinen endoskopia",4181730
+79,"Yleiset ja epämääräiset, Diagnostinen kuvantaminen",4181730
+80,"Yleiset ja epämääräiset, Elektrofysiologinen tutkimus",4181730
+81,"Yleiset ja epämääräiset, Muu tutkimustoimenpide",4181730
+82,"Yleiset ja epämääräiset, Rokotus / ennaltaehkäisevä lääkitys",4181730
+83,"Yleiset ja epämääräiset, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+84,"Yleiset ja epämääräiset, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+85,"Yleiset ja epämääräiset, Erikoislääkärin konsultaatio",4181730
+86,"Yleiset ja epämääräiset, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+87,"Yleiset ja epämääräiset, Muu ennaltaehkäisevä toimenpide",4181730
+88,"Yleiset ja epämääräiset, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+89,"Yleiset ja epämääräiset, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+90,"Yleiset ja epämääräiset, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+91,"Yleiset ja epämääräiset, Katetrointi/intubointi/laajentaminen",4181730
+92,"Yleiset ja epämääräiset, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+93,"Yleiset ja epämääräiset, Paikallinen lääkeaineinjektio",4181730
+94,"Yleiset ja epämääräiset, Sidos/kompressi/tamponointi",4181730
+95,"Yleiset ja epämääräiset, Fysikaalinen hoito / kuntoutus",4181730
+96,"Yleiset ja epämääräiset, Terapeuttinen neuvonta / kuuntelu",4181730
+97,"Yleiset ja epämääräiset, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+98,"Yleiset ja epämääräiset, Tutkimustulosten kuuleminen",4181730
+99,"Yleiset ja epämääräiset, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+100,"Yleiset ja epämääräiset, Hallinnollinen toimenpide",4181730
+101,"Yleiset ja epämääräiset, Muu seurantakäynti",4181730
+102,"Yleiset ja epämääräiset, Hoidonantajan käynnistämä tapahtuma",4181730
+103,"Yleiset ja epämääräiset, Muun henkilön käynnistämä tapahtuma",4181730
+104,"Yleiset ja epämääräiset, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+105,"Yleiset ja epämääräiset, Lähete erikoislääkärille/sairaalaan",4181730
+106,"Yleiset ja epämääräiset, Muu lähete",4181730
+107,"Yleiset ja epämääräiset, Muu käynnin syy",4181730
+108,Tuberkuloosi,4181730
+109,Tuhkarokko,4181730
+110,Vesirokko,4181730
+111,Malaria,4181730
+112,Vihurirokko,4181730
+113,Mononukleoosi,4181730
+114,"Virusperäinen ihottuma, muu",4181730
+115,"Virustauti, muu",4181730
+116,"Tartuntatauti, muu",4181730
+117,"Syöpä, määrittämätön",4181730
+118,"Vamma, määrittämätön",4181730
+119,Monivamma,4181730
+120,Vamman myöhäisseuraus,4181730
+121,Lääkemyrkytys,4181730
+122,Lääkkeen haittavaikutus,4181730
+123,Muiden aineiden myrkkyvaikutus,4181730
+124,Kirurgisen tai muun hoidon komplikaatio,4181730
+125,Fysikaalisen tekijän haittavaikutus,4181730
+126,Proteesin haittavaikutus,4181730
+127,"Synnynnäinen epämuodostuma, määrittämätön/useita",4181730
+128,"Poikkeava tutkimustulos, muu",4181730
+129,"Allergia / allerginen reaktio, määrittämätön",4181730
+130,Ennenaikaisesti syntynyt lapsi,4181730
+131,"Vastasyntyneen sairastavuus, muu",4181730
+132,Perinataalikuolema,4181730
+133,Kuolema,4181730
+134,Ei sairautta,4181730
+135,Terveyden ylläpito / Sairauden ennaltaehkäisy,4181730
+136,"Sairaus/tila, luonne tai sijainti määrittämätön",4181730
+137,"Veri, vertamuodostavat elimet ja immuunijärjestelmä",4181730
+138,"Imusolmuke, suurentunut/kivulias",4181730
+139,Vereen / lymfaattiseen kudokseen liittyvä oire/vaiva,4181730
+140,Huoli/Pelko AIDSista/HIV:stä,4181730
+141,Huoli/pelko veren tai verta muodostavien elinten syövästä,4181730
+142,Huoli/pelko veren tai verta muodostavien elinten muusta taudista,4181730
+143,"Toiminnanvajaus, veren / vertamuodostavien kudosten",4181730
+144,Muu imusuoni-/immuunijärjestelmän oire/vaiva,4181730
+145,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Laaja terveydentilan arviointi/tarkastus",4181730
+146,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Suppea terveydentilan arviointi/tarkastus",4181730
+147,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Allergiatutkimus",4181730
+148,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Mikrobiologinen/immunologinen koe",4181730
+149,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Veritutkimus",4181730
+150,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Virtsatutkimus",4181730
+151,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Ulostetutkimus",4181730
+152,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Histologinen/sytologinen tutkimus",4181730
+153,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu laboratoriotutkimus",4181730
+154,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Kliininen toimintakoe",4181730
+155,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Diagnostinen endoskopia",4181730
+156,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Diagnostinen kuvantaminen",4181730
+157,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Elektrofysiologinen tutkimus",4181730
+158,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu tutkimustoimenpide",4181730
+159,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Rokotus / ennaltaehkäisevä lääkitys",4181730
+160,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+161,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+162,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Erikoislääkärin konsultaatio",4181730
+163,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+164,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu ennaltaehkäisevä toimenpide",4181730
+165,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+166,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+167,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+168,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Katetrointi/intubointi/laajentaminen",4181730
+169,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+170,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Paikallinen lääkeaineinjektio",4181730
+171,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Sidos/kompressi/tamponointi",4181730
+172,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Fysikaalinen hoito / kuntoutus",4181730
+173,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Terapeuttinen neuvonta / kuuntelu",4181730
+174,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+175,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Tutkimustulosten kuuleminen",4181730
+176,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+177,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Hallinnollinen toimenpide",4181730
+178,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu seurantakäynti",4181730
+179,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Hoidonantajan käynnistämä tapahtuma",4181730
+180,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muun henkilön käynnistämä tapahtuma",4181730
+181,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+182,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lähete erikoislääkärille/sairaalaan",4181730
+183,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu lähete",4181730
+184,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu käynnin syy",4181730
+185,"Imusolmuketulehdus, akuutti",4181730
+186,"Imusolmuketulehdus, krooninen/määrittämätön",4181730
+187,Hodgkinin tauti / lymfooma,4181730
+188,Leukemia,4181730
+189,"Pahanlaatuinen veritauti, muu",4181730
+190,"Hyvänlaatuinen/muu kasvain, vertamuodostavien elinten",4181730
+191,"Pernarepeämä, vamman aiheuttama",4181730
+192,"Vamma vertamuodostavassa elimessä / imukudoksessa / pernassa, muu",4181730
+193,"Anemia, perinnöllinen hemolyyttinen",4181730
+194,"Synnynnäinen epämuodostuma, verta muodostavien elinten ja imusuoniston, muu",4181730
+195,Raudanpuuteanemia,4181730
+196,"Anemia, B12-vitamiinin/folaatin puute",4181730
+197,"Anemia, muu/määrittämätön",4181730
+198,Punatäplätauti/hyytymishäiriö,4181730
+199,"Valkosolujen poikkeama, selittämätön",4181730
+200,Pernan suurentuma,4181730
+201,HIV/AIDS,4181730
+202,Muu veren / verta muodostavan elimen / imukudoksen / pernan sairaus,4181730
+203,Ruoansulatuselimet,4181730
+204,"Vatsakipu, yleinen",4181730
+205,Ylävatsakipu,4181730
+206,Närästys,4181730
+207,Peräsuolen/peräaukon kipu,4181730
+208,Peräaukon kutina,4181730
+209,"Vatsan alueen kipu, paikallinen, muu",4181730
+210,Happovaiva/ruoansulatushäiriö,4181730
+211,Ilmavaivat/röyhtäily,4181730
+212,Pahoinvointi,4181730
+213,Oksentelu,4181730
+214,Ripuli,4181730
+215,Ummetus,4181730
+216,Keltaisuus,4181730
+217,Verioksennus/hematemeesi,4181730
+218,Meleena,4181730
+219,Verenvuoto peräsuolesta,4181730
+220,Ulosteen pidätyskyvyttömyys,4181730
+221,Muutos ulosteessa / suolen toiminnassa,4181730
+222,Hampaiden/ikenien oire/vaiva,4181730
+223,Suun/kielen/huulen oire/vaiva,4181730
+224,Nielemisongelma,4181730
+225,Maksan suurentuma,4181730
+226,"Kyhmy/patti/muhkura mahassa, määrittämätön",4181730
+227,Vatsan turvotus,4181730
+228,Huoli/pelko ruuansulatuselimen syövästä,4181730
+229,Huoli/pelko ruuansulatuselimen muusta sairaudesta,4181730
+230,"Toiminnanvajaus, ruuansulatuselimen",4181730
+231,Muu ruuansulatuselimen oire/vaiva,4181730
+232,"Ruoansulatuselimet, Laaja terveydentilan arviointi/tarkastus",4181730
+233,"Ruoansulatuselimet, Suppea terveydentilan arviointi/tarkastus",4181730
+234,"Ruoansulatuselimet, Allergiatutkimus",4181730
+235,"Ruoansulatuselimet, Mikrobiologinen/immunologinen koe",4181730
+236,"Ruoansulatuselimet, Veritutkimus",4181730
+237,"Ruoansulatuselimet, Virtsatutkimus",4181730
+238,"Ruoansulatuselimet, Ulostetutkimus",4181730
+239,"Ruoansulatuselimet, Histologinen/sytologinen tutkimus",4181730
+240,"Ruoansulatuselimet, Muu laboratoriotutkimus",4181730
+241,"Ruoansulatuselimet, Kliininen toimintakoe",4181730
+242,"Ruoansulatuselimet, Diagnostinen endoskopia",4181730
+243,"Ruoansulatuselimet, Diagnostinen kuvantaminen",4181730
+244,"Ruoansulatuselimet, Elektrofysiologinen tutkimus",4181730
+245,"Ruoansulatuselimet, Muu tutkimustoimenpide",4181730
+246,"Ruoansulatuselimet, Rokotus / ennaltaehkäisevä lääkitys",4181730
+247,"Ruoansulatuselimet, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+248,"Ruoansulatuselimet, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+249,"Ruoansulatuselimet, Erikoislääkärin konsultaatio",4181730
+250,"Ruoansulatuselimet, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+251,"Ruoansulatuselimet, Muu ennaltaehkäisevä toimenpide",4181730
+252,"Ruoansulatuselimet, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+253,"Ruoansulatuselimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+254,"Ruoansulatuselimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+255,"Ruoansulatuselimet, Katetrointi/intubointi/laajentaminen",4181730
+256,"Ruoansulatuselimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+257,"Ruoansulatuselimet, Paikallinen lääkeaineinjektio",4181730
+258,"Ruoansulatuselimet, Sidos/kompressi/tamponointi",4181730
+259,"Ruoansulatuselimet, Fysikaalinen hoito / kuntoutus",4181730
+260,"Ruoansulatuselimet, Terapeuttinen neuvonta / kuuntelu",4181730
+261,"Ruoansulatuselimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+262,"Ruoansulatuselimet, Tutkimustulosten kuuleminen",4181730
+263,"Ruoansulatuselimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+264,"Ruoansulatuselimet, Hallinnollinen toimenpide",4181730
+265,"Ruoansulatuselimet, Muu seurantakäynti",4181730
+266,"Ruoansulatuselimet, Hoidonantajan käynnistämä tapahtuma",4181730
+267,"Ruoansulatuselimet, Muun henkilön käynnistämä tapahtuma",4181730
+268,"Ruoansulatuselimet, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+269,"Ruoansulatuselimet, Lähete erikoislääkärille/sairaalaan",4181730
+270,"Ruoansulatuselimet, Muu lähete",4181730
+271,"Ruoansulatuselimet, Muu käynnin syy",4181730
+272,Ruoansulatuskanavan infektio,4181730
+273,Sikotauti,4181730
+274,Virushepatiitti,4181730
+275,"Maha-suolitulehdus, tarttuvaksi oletettu",4181730
+276,"Pahanlaatuinen kasvain, mahalaukun",4181730
+277,"Pahanlaatuinen kasvain, paksusuolen/peräsuolen",4181730
+278,"Pahanlaatuinen kasvain, haiman",4181730
+279,"Pahanlaatuinen kasvain, ruuansulatuselinten, muu/määrittämätön",4181730
+280,"Hyvänlaatuinen/määrittämätön kasvain, ruoansulatuskanavan",4181730
+281,Vierasesine ruuansulatuskanavassa,4181730
+282,"Ruoansulatuselinten vamma, muu",4181730
+283,"Synnynnäinen epämuodostuma, ruuansulatuselimen",4181730
+284,Hampaiden/ikenien sairaus,4181730
+285,Suun/kielen/huulen sairaus,4181730
+286,Ruokatorven sairaus,4181730
+287,Pohjukaissuolen haava,4181730
+288,"Peptinen haava, muu",4181730
+289,Mahalaukun toimintahäiriö,4181730
+290,Umpilisäkkeen tulehdus,4181730
+291,Nivustyrä,4181730
+292,Palleatyrä,4181730
+293,"Vatsan alueen tyrä, muu",4181730
+294,Suolen umpipussitauti,4181730
+295,Ärtynyt paksusuoli,4181730
+296,Krooninen suolistotulehdus / haavainen paksusuolen tulehdus,4181730
+297,Peräaukon haavauma/paise,4181730
+298,Madot ja muut loiset,4181730
+299,"Maksasairaus, määrittämätön",4181730
+300,Sappirakon tulehdus / sappikivitauti,4181730
+301,Muu ruuansulatuselinten tauti,4181730
+302,Silmä,4181730
+303,Kipu silmässä,4181730
+304,Punainen silmä,4181730
+305,Rähmivä/vuotava silmä,4181730
+306,Pilkut näkökentässä,4181730
+307,"Näkökyvyn häiriö, muu",4181730
+308,Poikkeava tunne silmässä,4181730
+309,Poikkeavat silmän liikkeet,4181730
+310,Silmien poikkeava ulkonäkö,4181730
+311,Luomien oireet/vaivat,4181730
+312,Silmälaseihin liittyvät oireet/vaivat,4181730
+313,Piilolaseihin liittyvät oireet/vaivat,4181730
+314,Huoli/pelko silmäsairaudesta,4181730
+315,"Toiminnanvajaus, silmän",4181730
+316,Muu silmän oire/vaiva,4181730
+317,"Silmä, Laaja terveydentilan arviointi/tarkastus",4181730
+318,"Silmä, Suppea terveydentilan arviointi/tarkastus",4181730
+319,"Silmä, Allergiatutkimus",4181730
+320,"Silmä, Mikrobiologinen/immunologinen koe",4181730
+321,"Silmä, Veritutkimus",4181730
+322,"Silmä, Virtsatutkimus",4181730
+323,"Silmä, Ulostetutkimus",4181730
+324,"Silmä, Histologinen/sytologinen tutkimus",4181730
+325,"Silmä, Muu laboratoriotutkimus",4181730
+326,"Silmä, Kliininen toimintakoe",4181730
+327,"Silmä, Diagnostinen endoskopia",4181730
+328,"Silmä, Diagnostinen kuvantaminen",4181730
+329,"Silmä, Elektrofysiologinen tutkimus",4181730
+330,"Silmä, Muu tutkimustoimenpide",4181730
+331,"Silmä, Rokotus / ennaltaehkäisevä lääkitys",4181730
+332,"Silmä, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+333,"Silmä, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+334,"Silmä, Erikoislääkärin konsultaatio",4181730
+335,"Silmä, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+336,"Silmä, Muu ennaltaehkäisevä toimenpide",4181730
+337,"Silmä, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+338,"Silmä, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+339,"Silmä, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+340,"Silmä, Katetrointi/intubointi/laajentaminen",4181730
+341,"Silmä, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+342,"Silmä, Paikallinen lääkeaineinjektio",4181730
+343,"Silmä, Sidos/kompressi/tamponointi",4181730
+344,"Silmä, Fysikaalinen hoito / kuntoutus",4181730
+345,"Silmä, Terapeuttinen neuvonta / kuuntelu",4181730
+346,"Silmä, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+347,"Silmä, Tutkimustulosten kuuleminen",4181730
+348,"Silmä, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+349,"Silmä, Hallinnollinen toimenpide",4181730
+350,"Silmä, Muu seurantakäynti",4181730
+351,"Silmä, Hoidonantajan käynnistämä tapahtuma",4181730
+352,"Silmä, Muun henkilön käynnistämä tapahtuma",4181730
+353,"Silmä, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+354,"Silmä, Lähete erikoislääkärille/sairaalaan",4181730
+355,"Silmä, Muu lähete",4181730
+356,"Silmä, Muu käynnin syy",4181730
+357,"Sidekalvotulehdus, tarttuva",4181730
+358,"Sidekalvotulehdus, allerginen",4181730
+359,Luomitulehdus/näärännäppy/luomirakkula,4181730
+360,"Silmätulehdus, muu",4181730
+361,"Kasvain, silmän / silmän seudun",4181730
+362,"Ruhje/verenvuoto, silmän",4181730
+363,Vierasesine silmässä,4181730
+364,"Silmävamma, muu",4181730
+365,Vauvan kyyneltietukos,4181730
+366,"Synnynnäinen epämuodostuma, silmän, muu",4181730
+367,Verkkokalvon irtoaminen,4181730
+368,"Retinopatia, verkkokalvon rappeuma",4181730
+369,"Makuladegeneraatio, tarkan näön alueen rappeuma",4181730
+370,Sarveiskalvon haavauma,4181730
+371,Trakooma,4181730
+372,Taittovirhe,4181730
+373,Harmaakaihi,4181730
+374,Glaukooma,4181730
+375,Sokeus,4181730
+376,Karsastus,4181730
+377,Muu silmäsairaus,4181730
+378,Korva,4181730
+379,Korvan kipu/särky,4181730
+380,Kuulo-oire,4181730
+381,Korvien soiminen / tinnitus,4181730
+382,Erite korvasta,4181730
+383,Verenvuoto korvassa/korvasta,4181730
+384,Korvan tukkoisuus,4181730
+385,Huoli korvien ulkonäöstä,4181730
+386,Huoli/pelko korvataudista,4181730
+387,"Toiminnanvajaus, korvan",4181730
+388,Muu korvan oire/vaiva,4181730
+389,"Korva, Laaja terveydentilan arviointi/tarkastus",4181730
+390,"Korva, Suppea terveydentilan arviointi/tarkastus",4181730
+391,"Korva, Allergiatutkimus",4181730
+392,"Korva, Mikrobiologinen/immunologinen koe",4181730
+393,"Korva, Veritutkimus",4181730
+394,"Korva, Virtsatutkimus",4181730
+395,"Korva, Ulostetutkimus",4181730
+396,"Korva, Histologinen/sytologinen tutkimus",4181730
+397,"Korva, Muu laboratoriotutkimus",4181730
+398,"Korva, Kliininen toimintakoe",4181730
+399,"Korva, Diagnostinen endoskopia",4181730
+400,"Korva, Diagnostinen kuvantaminen",4181730
+401,"Korva, Elektrofysiologinen tutkimus",4181730
+402,"Korva, Muu tutkimustoimenpide",4181730
+403,"Korva, Rokotus / ennaltaehkäisevä lääkitys",4181730
+404,"Korva, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+405,"Korva, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+406,"Korva, Erikoislääkärin konsultaatio",4181730
+407,"Korva, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+408,"Korva, Muu ennaltaehkäisevä toimenpide",4181730
+409,"Korva, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+410,"Korva, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+411,"Korva, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+412,"Korva, Katetrointi/intubointi/laajentaminen",4181730
+413,"Korva, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+414,"Korva, Paikallinen lääkeaineinjektio",4181730
+415,"Korva, Sidos/kompressi/tamponointi",4181730
+416,"Korva, Fysikaalinen hoito / kuntoutus",4181730
+417,"Korva, Terapeuttinen neuvonta / kuuntelu",4181730
+418,"Korva, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+419,"Korva, Tutkimustulosten kuuleminen",4181730
+420,"Korva, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+421,"Korva, Hallinnollinen toimenpide",4181730
+422,"Korva, Muu seurantakäynti",4181730
+423,"Korva, Hoidonantajan käynnistämä tapahtuma",4181730
+424,"Korva, Muun henkilön käynnistämä tapahtuma",4181730
+425,"Korva, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+426,"Korva, Lähete erikoislääkärille/sairaalaan",4181730
+427,"Korva, Muu lähete",4181730
+428,"Korva, Muu käynnin syy",4181730
+429,Korvakäytävän tulehdus,4181730
+430,"Välikorvatulehdus/tärykalvotulehdus, akuutti",4181730
+431,"Välikorvatulehdus, seroosi",4181730
+432,Korvatorventulehdus,4181730
+433,"Välikorvatulehdus, krooninen",4181730
+434,"Kasvain, korvan",4181730
+435,Vierasesine korvassa,4181730
+436,Reikä tärykalvossa,4181730
+437,"Korvan vamma, pinnallinen",4181730
+438,"Korvan vamma, muu",4181730
+439,"Synnynnäinen epämuodostuma, korvan",4181730
+440,Korvavahatulppa,4181730
+441,Huimausoireyhtymä,4181730
+442,Otoskleroosi,4181730
+443,Ikähuonokuuloisuus,4181730
+444,Meluvamma,4181730
+445,Kuurous,4181730
+446,Muu korvan/kartiolisäkkeen sairaus,4181730
+447,Verenkiertoelimet,4181730
+448,Sydänperäinen kipu,4181730
+449,Painon/puristuksen tunne sydänalassa,4181730
+450,"Verenkiertoperäinen kipu, muu",4181730
+451,Sydämentykytys / sydämen lyöntien tuntuminen,4181730
+452,"Poikkeava/epäsäännöllinen pulssi, muu",4181730
+453,Korostuneet laskimot,4181730
+454,Nilkkaturvotus,4181730
+455,Sydän- ja verisuonisairauden riskitekijä,4181730
+456,Huoli/pelko sydänsairaudesta,4181730
+457,Huoli/pelko kohonneesta  verenpaineesta / verenpainetaudista,4181730
+458,Huoli/pelko verenkiertoelimistön muusta sairaudesta,4181730
+459,"Toiminnanvajaus, verenkierron",4181730
+460,"Muu oire/vaiva, verenkiertoelimistön",4181730
+461,"Verenkiertoelimet, Laaja terveydentilan arviointi/tarkastus",4181730
+462,"Verenkiertoelimet, Suppea terveydentilan arviointi/tarkastus",4181730
+463,"Verenkiertoelimet, Allergiatutkimus",4181730
+464,"Verenkiertoelimet, Mikrobiologinen/immunologinen koe",4181730
+465,"Verenkiertoelimet, Veritutkimus",4181730
+466,"Verenkiertoelimet, Virtsatutkimus",4181730
+467,"Verenkiertoelimet, Ulostetutkimus",4181730
+468,"Verenkiertoelimet, Histologinen/sytologinen tutkimus",4181730
+469,"Verenkiertoelimet, Muu laboratoriotutkimus",4181730
+470,"Verenkiertoelimet, Kliininen toimintakoe",4181730
+471,"Verenkiertoelimet, Diagnostinen endoskopia",4181730
+472,"Verenkiertoelimet, Diagnostinen kuvantaminen",4181730
+473,"Verenkiertoelimet, Elektrofysiologinen tutkimus",4181730
+474,"Verenkiertoelimet, Muu tutkimustoimenpide",4181730
+475,"Verenkiertoelimet, Rokotus / ennaltaehkäisevä lääkitys",4181730
+476,"Verenkiertoelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+477,"Verenkiertoelimet, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+478,"Verenkiertoelimet, Erikoislääkärin konsultaatio",4181730
+479,"Verenkiertoelimet, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+480,"Verenkiertoelimet, Muu ennaltaehkäisevä toimenpide",4181730
+481,"Verenkiertoelimet, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+482,"Verenkiertoelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+483,"Verenkiertoelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+484,"Verenkiertoelimet, Katetrointi/intubointi/laajentaminen",4181730
+485,"Verenkiertoelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+486,"Verenkiertoelimet, Paikallinen lääkeaineinjektio",4181730
+487,"Verenkiertoelimet, Sidos/kompressi/tamponointi",4181730
+488,"Verenkiertoelimet, Fysikaalinen hoito / kuntoutus",4181730
+489,"Verenkiertoelimet, Terapeuttinen neuvonta / kuuntelu",4181730
+490,"Verenkiertoelimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+491,"Verenkiertoelimet, Tutkimustulosten kuuleminen",4181730
+492,"Verenkiertoelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+493,"Verenkiertoelimet, Hallinnollinen toimenpide",4181730
+494,"Verenkiertoelimet, Muu seurantakäynti",4181730
+495,"Verenkiertoelimet, Hoidonantajan käynnistämä tapahtuma",4181730
+496,"Verenkiertoelimet, Muun henkilön käynnistämä tapahtuma",4181730
+497,"Verenkiertoelimet,Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+498,"Verenkiertoelimet, Lähete erikoislääkärille/sairaalaan",4181730
+499,"Verenkiertoelimet, Muu lähete",4181730
+500,"Verenkiertoelimet, Muu käynnin syy",4181730
+501,Verenkiertoelinten tartuntatauti,4181730
+502,Reumakuume / reumaattinen sydäntauti,4181730
+503,"Kasvain, verenkiertoelinten",4181730
+504,"Synnynnäinen epämuodostuma, verenkiertoelinten",4181730
+505,Iskeeminen sydänsairaus ja rintakipu,4181730
+506,"Sydäninfarkti, akuutti",4181730
+507,Iskeeminen sydänsairaus ilman rintakipua,4181730
+508,Sydämen vajaatoiminta,4181730
+509,Eteisvärinä/eteislepatus,4181730
+510,Kohtauksittainen tiheälyöntisyys,4181730
+511,"Rytmihäiriö, määrittämätön",4181730
+512,"Sivuääni sydämessä, määrittämätön",4181730
+513,Keuhkoperäinen sydäntauti,4181730
+514,"Sydänläppien ei-reumaattinen tauti, määrittämätön",4181730
+515,"Sydäntauti, muu",4181730
+516,Kohonnut verenpaine,4181730
+517,"Verenpainetauti, komplisoitumaton",4181730
+518,"Verenpainetauti, komplisoitunut",4181730
+519,Asentoon liittyvä matala verenpaine,4181730
+520,TIA / ohimenevä aivoverenkiertohäiriö,4181730
+521,Aivohalvaus,4181730
+522,Aivoverisuonten sairaus,4181730
+523,Valtimokovettumatauti / ääreisverisuonten sairaus,4181730
+524,Keuhkoembolia,4181730
+525,Laskimotulehdus/laskimontukkotulehdus,4181730
+526,"Suonikohjut, alaraajojen",4181730
+527,Peräpukamat,4181730
+528,Muu verenkiertoelimistön sairaus,4181730
+529,Tuki- ja liikuntaelimet,4181730
+530,Niskan oire/vaiva,4181730
+531,Yläselän oire/vaiva,4181730
+532,Alaselän oire/vaiva,4181730
+533,Rintakehän oire/vaiva,4181730
+534,Kyljen/kainalon oire/vaiva,4181730
+535,Leuan oire/vaiva,4181730
+536,Olkapään oire/vaiva,4181730
+537,Käsivarren oire/vaiva,4181730
+538,Kyynärpään oire/vaiva,4181730
+539,Ranteen oire/vaiva,4181730
+540,Käden/sormen oire/vaiva,4181730
+541,Lonkan oire/vaiva,4181730
+542,Säären/reiden oire/vaiva,4181730
+543,Polven oire/vaiva,4181730
+544,Nilkan oire/vaiva,4181730
+545,Jalan/varpaan oire/vaiva,4181730
+546,Lihaskipu,4181730
+547,"Lihasoire/-vaiva, määrittämätön",4181730
+548,"Niveloire/-vaiva, määrittämätön",4181730
+549,Huoli/pelko tuki- ja liikuntaelinten syövästä,4181730
+550,Huoli/pelko tuki- ja liikuntaelinten muusta sairaudesta,4181730
+551,"Toiminnanvajaus, tuki- ja liikuntaelinten",4181730
+552,"Muu oire/vaiva, tuki- ja liikuntaelinten",4181730
+553,"Tuki- ja liikuntaelimet, Laaja terveydentilan arviointi/tarkastus",4181730
+554,"Tuki- ja liikuntaelimet, Suppea terveydentilan arviointi/tarkastus",4181730
+555,"Tuki- ja liikuntaelimet, Allergiatutkimus",4181730
+556,"Tuki- ja liikuntaelimet, Mikrobiologinen/immunologinen koe",4181730
+557,"Tuki- ja liikuntaelimet, Veritutkimus",4181730
+558,"Tuki- ja liikuntaelimet, Virtsatutkimus",4181730
+559,"Tuki- ja liikuntaelimet, Ulostetutkimus",4181730
+560,"Tuki- ja liikuntaelimet, Histologinen/sytologinen tutkimus",4181730
+561,"Tuki- ja liikuntaelimet, Muu laboratoriotutkimus",4181730
+562,"Tuki- ja liikuntaelimet, Kliininen toimintakoe",4181730
+563,"Tuki- ja liikuntaelimet, Diagnostinen endoskopia",4181730
+564,"Tuki- ja liikuntaelimet, Diagnostinen kuvantaminen",4181730
+565,"Tuki- ja liikuntaelimet, Elektrofysiologinen tutkimus",4181730
+566,"Tuki- ja liikuntaelimet, Muu tutkimustoimenpide",4181730
+567,"Tuki- ja liikuntaelimet, Rokotus / ennaltaehkäisevä lääkitys",4181730
+568,"Tuki- ja liikuntaelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+569,"Tuki- ja liikuntaelimet, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+570,"Tuki- ja liikuntaelimet, Erikoislääkärin konsultaatio",4181730
+571,"Tuki- ja liikuntaelimet, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+572,"Tuki- ja liikuntaelimet, Muu ennaltaehkäisevä toimenpide",4181730
+573,"Tuki- ja liikuntaelimet, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+574,"Tuki- ja liikuntaelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+575,"Tuki- ja liikuntaelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+576,"Tuki- ja liikuntaelimet, Katetrointi/intubointi/laajentaminen",4181730
+577,"Tuki- ja liikuntaelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+578,"Tuki- ja liikuntaelimet, Paikallinen lääkeaineinjektio",4181730
+579,"Tuki- ja liikuntaelimet, Sidos/kompressi/tamponointi",4181730
+580,"Tuki- ja liikuntaelimet, Fysikaalinen hoito / kuntoutus",4181730
+581,"Tuki- ja liikuntaelimet, Terapeuttinen neuvonta / kuuntelu",4181730
+582,"Tuki- ja liikuntaelimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+583,"Tuki- ja liikuntaelimet, Tutkimustulosten kuuleminen",4181730
+584,"Tuki- ja liikuntaelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+585,"Tuki- ja liikuntaelimet, Hallinnollinen toimenpide",4181730
+586,"Tuki- ja liikuntaelimet, Muu seurantakäynti",4181730
+587,"Tuki- ja liikuntaelimet, Hoidonantajan käynnistämä tapahtuma",4181730
+588,"Tuki- ja liikuntaelimet, Muun henkilön käynnistämä tapahtuma",4181730
+589,"Tuki- ja liikuntaelimet, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+590,"Tuki- ja liikuntaelimet, Lähete erikoislääkärille/sairaalaan",4181730
+591,"Tuki- ja liikuntaelimet, Muu lähete",4181730
+592,"Tuki- ja liikuntaelimet, Muu käynnin syy",4181730
+593,Tuki- ja liikuntaelinten infektio,4181730
+594,"Pahanlaatuinen kasvain, tuki- ja liikuntaelinten",4181730
+595,"Murtuma, kyynärluu/värttinäluu",4181730
+596,"Murtuma, sääriluu/pohjeluu",4181730
+597,"Murtuma, käden/jalkaterän luu",4181730
+598,"Murtuma, reisiluu",4181730
+599,"Murtuma, muu",4181730
+600,"Nyrjähdys/venähdys, nilkka",4181730
+601,"Nyrjähdys/venähdys, polvi",4181730
+602,"Nyrjähdys/venähdys, muu",4181730
+603,Sijoiltaanmeno,4181730
+604,"Tuki- ja liikuntaelinten vamma, muu",4181730
+605,"Synnynnäinen epämuodostuma,  tuki- ja liikuntaelinten",4181730
+606,Kaularankaoireyhtymä,4181730
+607,Selkäsairaus ilman säteilykipua,4181730
+608,"Selkärangan rakenteellinen poikkeavuus, ei-synnynnäinen",4181730
+609,Selkäsairaus ja säteilykipu,4181730
+610,"Bursiitti/tendiniitti/synoviitti, muu",4181730
+611,Reumaattinen/seropositiivinen niveltulehdus,4181730
+612,Lonkan nivelrikko,4181730
+613,Polven nivelrikko,4181730
+614,"Nivelrikko, muu",4181730
+615,Olkapään oireyhtymä,4181730
+616,Tenniskyynärpää,4181730
+617,Luu-rustokasvuhäiriö,4181730
+618,Osteoporoosi,4181730
+619,"Polven nivelkierukan/ristisiteiden vamma, akuutti",4181730
+620,"Hyvänlaatuinen/muu kasvain, tuki- ja liikuntaelinten",4181730
+621,"Raajan epämuotoisuus, ei synnynnäinen",4181730
+622,Muu tuki- ja liikuntaelinten sairaus,4181730
+623,Hermosto,4181730
+624,Päänsärky,4181730
+625,Kasvokipu,4181730
+626,Levottomat jalat,4181730
+627,Sormien/jalkaterien/varpaiden pistely,4181730
+628,"Tuntohäiriö, muu",4181730
+629,Kouristelu/kouristuskohtaus,4181730
+630,Poikkeavat tahattomat liikkeet,4181730
+631,Hajun/maun häiriö,4181730
+632,Huimaus/pyörrytys,4181730
+633,Halvaus/heikkous,4181730
+634,Puhehäiriö,4181730
+635,Huoli/pelko hermoston syövästä,4181730
+636,Huoli/pelko muusta neurologisesta sairaudesta,4181730
+637,"Toiminnanvajaus, hermoston",4181730
+638,Muu hermostoon liittyvä oire/vaiva,4181730
+639,"Hermosto, Laaja terveydentilan arviointi/tarkastus",4181730
+640,"Hermosto, Suppea terveydentilan arviointi/tarkastus",4181730
+641,"Hermosto, Allergiatutkimus",4181730
+642,"Hermosto, Mikrobiologinen/immunologinen koe",4181730
+643,"Hermosto, Veritutkimus",4181730
+644,"Hermosto, Virtsatutkimus",4181730
+645,"Hermosto, Ulostetutkimus",4181730
+646,"Hermosto, Histologinen/sytologinen tutkimus",4181730
+647,"Hermosto, Muu laboratoriotutkimus",4181730
+648,"Hermosto, Kliininen toimintakoe",4181730
+649,"Hermosto, Diagnostinen endoskopia",4181730
+650,"Hermosto, Diagnostinen kuvantaminen",4181730
+651,"Hermosto, Elektrofysiologinen tutkimus",4181730
+652,"Hermosto, Muu tutkimustoimenpide",4181730
+653,"Hermosto, Rokotus / ennaltaehkäisevä lääkitys",4181730
+654,"Hermosto, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+655,"Hermosto, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+656,"Hermosto, Erikoislääkärin konsultaatio",4181730
+657,"Hermosto, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+658,"Hermosto, Muu ennaltaehkäisevä toimenpide",4181730
+659,"Hermosto, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+660,"Hermosto, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+661,"Hermosto, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+662,"Hermosto, Katetrointi/intubointi/laajentaminen",4181730
+663,"Hermosto, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+664,"Hermosto, Paikallinen lääkeaineinjektio",4181730
+665,"Hermosto, Sidos/kompressi/tamponointi",4181730
+666,"Hermosto, Fysikaalinen hoito / kuntoutus",4181730
+667,"Hermosto, Terapeuttinen neuvonta / kuuntelu",4181730
+668,"Hermosto, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+669,"Hermosto, Tutkimustulosten kuuleminen",4181730
+670,"Hermosto, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+671,"Hermosto, Hallinnollinen toimenpide",4181730
+672,"Hermosto, Muu seurantakäynti",4181730
+673,"Hermosto, Hoidonantajan käynnistämä tapahtuma",4181730
+674,"Hermosto, Muun henkilön käynnistämä tapahtuma",4181730
+675,"Hermosto, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+676,"Hermosto, Lähete erikoislääkärille/sairaalaan",4181730
+677,"Hermosto, Muu lähete",4181730
+678,"Hermosto, Muu käynnin syy",4181730
+679,Polio / muu enterovirus,4181730
+680,Aivokalvontulehdus/aivotulehdus,4181730
+681,Jäykkäkouristus,4181730
+682,"Hermoston infektio, muu",4181730
+683,"Pahanlaatuinen kasvain, hermoston",4181730
+684,"Hyvänlaatuinen kasvain, hermoston",4181730
+685,"Kasvain, hermoston, määrittämätön",4181730
+686,Aivotärähdys,4181730
+687,"Pään vamma, muu",4181730
+688,"Hermoston vamma, muu",4181730
+689,"Synnynnäinen epämuodostuma, hermoston",4181730
+690,Multippeliskleroosi,4181730
+691,Parkinsonismi,4181730
+692,Epilepsia,4181730
+693,Migreeni,4181730
+694,Sarjoittainen päänsärky,4181730
+695,Kasvohermohalvaus / Bellin pareesi,4181730
+696,Kolmoishermosärky,4181730
+697,Rannekanavaoireyhtymä,4181730
+698,Ääreishermotulehdus/-sairaus,4181730
+699,Jännityspäänsärky,4181730
+700,Muu hermoston sairaus,4181730
+701,Mielenterveys ja käyttäytyminen,4181730
+702,Ahdistuneisuuden/hermostuneisuuden/jännittyneisyyden tunne,4181730
+703,Akuutti stressireaktio,4181730
+704,Masennuksen tunne,4181730
+705,Ärtyneisyys,4181730
+706,Vanhuuden tunne / vanhusmaisuus / seniliteetti,4181730
+707,Unihäiriö,4181730
+708,Vähentynyt sukupuolinen halu,4181730
+709,Sukupuolisen tyydyttymisen heikentyminen,4181730
+710,Huoli seksuaalisesta suuntautumisesta,4181730
+711,Änkytys / tic-oireyhtymä,4181730
+712,Lapsen syömisongelma,4181730
+713,Yökastelu,4181730
+714,Tuhriminen,4181730
+715,"Alkoholin väärinkäyttö, pitkäaikainen",4181730
+716,"Alkoholin väärinkäyttö, akuutti",4181730
+717,Tupakointi,4181730
+718,Lääkkeen väärinkäyttö,4181730
+719,Huumeiden käyttö,4181730
+720,Muistihäiriö,4181730
+721,Lapsen käytösoire/-vaiva,4181730
+722,Nuoren käytösoire/-vaiva,4181730
+723,Erityinen oppimishäiriö,4181730
+724,Aikuisen elämänvaihekriisi,4181730
+725,Huoli/pelko mielenterveyden häiriöstä,4181730
+726,"Toiminnanvajaus/vamma, psyykkinen",4181730
+727,Muu psyykkinen oire/vaiva,4181730
+728,"Mielenterveys ja käyttäytyminen, Laaja terveydentilan arviointi/tarkastus",4181730
+729,"Mielenterveys ja käyttäytyminen, Suppea terveydentilan arviointi/tarkastus",4181730
+730,"Mielenterveys ja käyttäytyminen, Allergiatutkimus",4181730
+731,"Mielenterveys ja käyttäytyminen, Mikrobiologinen/immunologinen koe",4181730
+732,"Mielenterveys ja käyttäytyminen, Veritutkimus",4181730
+733,"Mielenterveys ja käyttäytyminen, Virtsatutkimus",4181730
+734,"Mielenterveys ja käyttäytyminen, Ulostetutkimus",4181730
+735,"Mielenterveys ja käyttäytyminen, Histologinen/sytologinen tutkimus",4181730
+736,"Mielenterveys ja käyttäytyminen, Muu laboratoriotutkimus",4181730
+737,"Mielenterveys ja käyttäytyminen, Kliininen toimintakoe",4181730
+738,"Mielenterveys ja käyttäytyminen, Diagnostinen endoskopia",4181730
+739,"Mielenterveys ja käyttäytyminen, Diagnostinen kuvantaminen",4181730
+740,"Mielenterveys ja käyttäytyminen, Elektrofysiologinen tutkimus",4181730
+741,"Mielenterveys ja käyttäytyminen, Muu tutkimustoimenpide",4181730
+742,"Mielenterveys ja käyttäytyminen, Rokotus / ennaltaehkäisevä lääkitys",4181730
+743,"Mielenterveys ja käyttäytyminen, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+744,"Mielenterveys ja käyttäytyminen, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+745,"Mielenterveys ja käyttäytyminen, Erikoislääkärin konsultaatio",4181730
+746,"Mielenterveys ja käyttäytyminen, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+747,"Mielenterveys ja käyttäytyminen, Muu ennaltaehkäisevä toimenpide",4181730
+748,"Mielenterveys ja käyttäytyminen, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+749,"Mielenterveys ja käyttäytyminen, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+750,"Mielenterveys ja käyttäytyminen, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+751,"Mielenterveys ja käyttäytyminen, Katetrointi/intubointi/laajentaminen",4181730
+752,"Mielenterveys ja käyttäytyminen, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+753,"Mielenterveys ja käyttäytyminen, Paikallinen lääkeaineinjektio",4181730
+754,"Mielenterveys ja käyttäytyminen, Sidos/kompressi/tamponointi",4181730
+755,"Mielenterveys ja käyttäytyminen, Fysikaalinen hoito / kuntoutus",4181730
+756,"Mielenterveys ja käyttäytyminen, Terapeuttinen neuvonta / kuuntelu",4181730
+757,"Mielenterveys ja käyttäytyminen, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia",4181730
+758,"Mielenterveys ja käyttäytyminen, Tutkimustulosten kuuleminen",4181730
+759,"Mielenterveys ja käyttäytyminen, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+760,"Mielenterveys ja käyttäytyminen, Hallinnollinen toimenpide",4181730
+761,"Mielenterveys ja käyttäytyminen, Muu seurantakäynti",4181730
+762,"Mielenterveys ja käyttäytyminen, Hoidonantajan käynnistämä tapahtuma",4181730
+763,"Mielenterveys ja käyttäytyminen, Muun henkilön käynnistämä tapahtuma",4181730
+764,"Mielenterveys ja käyttäytyminen, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+765,"Mielenterveys ja käyttäytyminen, Lähete erikoislääkärille/sairaalaan",4181730
+766,"Mielenterveys ja käyttäytyminen, Muu lähete",4181730
+767,"Mielenterveys ja käyttäytyminen, Muu käynnin syy",4181730
+768,Dementia,4181730
+769,"Orgaaninen psykoosi, muu",4181730
+770,Skitsofrenia,4181730
+771,Affektiivinen psykoosi,4181730
+772,Ahdistushäiriö/-tila,4181730
+773,Somatisaatiohäiriö,4181730
+774,Masennustila,4181730
+775,Itsemurha/itsemurhayritys,4181730
+776,Neurastenia/ylirasittuneisuus,4181730
+777,Pelkotila / pakko-oireinen häiriö,4181730
+778,Persoonallisuuden häiriö,4181730
+779,Hyperkineettinen oireyhtymä,4181730
+780,Vamman/trauman jälkeinen rasitusoireyhtymä,4181730
+781,Kehitysvammaisuus,4181730
+782,Anoreksia/bulimia,4181730
+783,"Psykoosi, määrittämätön/muu",4181730
+784,Muu mielenterveyden häiriö,4181730
+785,Hengityselimet,4181730
+786,Hengityselimiin liittyvä kipu,4181730
+787,Hengenahdistus/dyspnea,4181730
+788,Hengityksen vinkuna,4181730
+789,"Hengityksen häiriö, muu",4181730
+790,Yskä,4181730
+791,Nenäverenvuoto,4181730
+792,Aivastelu / nenän tukkoisuus,4181730
+793,"Nenän oire/vaiva, muu",4181730
+794,Sivuontelon oire/vaiva,4181730
+795,Kurkun/nielun oire/vaiva,4181730
+796,Äänen oire/vaiva,4181730
+797,Veriyskä,4181730
+798,Epänormaali yskös,4181730
+799,Huoli/pelko hengityselinten syövästä,4181730
+800,Huoli/pelko hengityselinten muusta sairaudesta,4181730
+801,"Toiminnanvajaus, hengityselinten",4181730
+802,Muu hengityselinten oire/vaiva,4181730
+803,"Hengityselimet, Laaja terveydentilan arviointi/tarkastus",4181730
+804,"Hengityselimet, Suppea terveydentilan arviointi/tarkastus",4181730
+805,"Hengityselimet, Allergiatutkimus",4181730
+806,"Hengityselimet, Mikrobiologinen/immunologinen koe",4181730
+807,"Hengityselimet, Veritutkimus",4181730
+808,"Hengityselimet, Virtsatutkimus",4181730
+809,"Hengityselimet, Ulostetutkimus",4181730
+810,"Hengityselimet, Histologinen/sytologinen tutkimus",4181730
+811,"Hengityselimet, Muu laboratoriotutkimus",4181730
+812,"Hengityselimet, Kliininen toimintakoe",4181730
+813,"Hengityselimet, Diagnostinen endoskopia",4181730
+814,"Hengityselimet, Diagnostinen kuvantaminen",4181730
+815,"Hengityselimet, Elektrofysiologinen tutkimus",4181730
+816,"Hengityselimet, Muu tutkimustoimenpide",4181730
+817,"Hengityselimet, Rokotus / ennaltaehkäisevä lääkitys",4181730
+818,"Hengityselimet, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+819,"Hengityselimet, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+820,"Hengityselimet, Erikoislääkärin konsultaatio",4181730
+821,"Hengityselimet, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+822,"Hengityselimet, Muu ennaltaehkäisevä toimenpide",4181730
+823,"Hengityselimet, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+824,"Hengityselimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+825,"Hengityselimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+826,"Hengityselimet, Katetrointi/intubointi/laajentaminen",4181730
+827,"Hengityselimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+828,"Hengityselimet, Paikallinen lääkeaineinjektio",4181730
+829,"Hengityselimet, Sidos/kompressi/tamponointi",4181730
+830,"Hengityselimet, Fysikaalinen hoito /kuntoutus",4181730
+831,"Hengityselimet, Terapeuttinen neuvonta/kuuntelu",4181730
+832,"Hengityselimet, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+833,"Hengityselimet, Tutkimustulosten kuuleminen",4181730
+834,"Hengityselimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+835,"Hengityselimet, Hallinnollinen toimenpide",4181730
+836,"Hengityselimet, Muu seurantakäynti",4181730
+837,"Hengityselimet, Hoidonantajan käynnistämä tapahtuma",4181730
+838,"Hengityselimet, Muun henkilön käynnistämä tapahtuma",4181730
+839,"Hengityselimet, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+840,"Hengityselimet, Lähete erikoislääkärille/sairaalaan",4181730
+841,"Hengityselimet, Muu lähete",4181730
+842,"Hengityselimet, Muu käynnin syy",4181730
+843,Hinkuyskä,4181730
+844,Streptokokkitonsilliitti,4181730
+845,Nenän äkämä/paise,4181730
+846,"Ylähengitystieinfektio, akuutti",4181730
+847,"Nenän sivuontelotulehdus, akuutti/krooninen",4181730
+848,"Nielurisatulehdus, akuutti",4181730
+849,"Kurkunpään/henkitorven tulehdus, akuutti",4181730
+850,"Keuhkoputkentulehdus/bronkioliitti, akuutti",4181730
+851,"Keuhkoputkentulehdus, krooninen",4181730
+852,Influenssa,4181730
+853,Keuhkokuume,4181730
+854,Keuhkopussintulehdus / nestekertymä keuhkopussissa,4181730
+855,"Hengitystieinfektio, muu",4181730
+856,"Pahanlaatuinen kasvain, keuhkojen/keuhkoputken",4181730
+857,"Pahanlaatuinen kasvain, hengityselinten, muu",4181730
+858,"Hyvänlaatuinen kasvain, hengityselinten",4181730
+859,Vierasesine nenässä/kurkunpäässä/keuhkoputkissa,4181730
+860,"Hengityselinten vamma, muu",4181730
+861,"Synnynnäinen epämuodostuma, hengityselinten",4181730
+862,Nielurisojen/kitarisojen liikakasvu,4181730
+863,"Hengityselinten kasvain, määrittämätön",4181730
+864,Keuhkoahtaumatauti,4181730
+865,Astma,4181730
+866,Allerginen nuha,4181730
+867,Hyperventilaatio,4181730
+868,Muu hengityselinten sairaus,4181730
+869,Iho,4181730
+870,Ihon kipu/arkuus,4181730
+871,Kutina,4181730
+872,Syylät,4181730
+873,"Kyhmy/patti, paikallinen",4181730
+874,"Kyhmyt/patit, yleistyneet",4181730
+875,"Punoitus, paikallinen",4181730
+876,"Punoitus, yleinen",4181730
+877,"Ihon värin muutos, muu",4181730
+878,Tulehtunut sormi/varvas,4181730
+879,Paise,4181730
+880,Ihotulehdus vamman jälkeen,4181730
+881,Hyönteisen purema/pisto,4181730
+882,Eläimen/ihmisen purema,4181730
+883,Palovamma,4181730
+884,Vierasesine ihossa,4181730
+885,Mustelma/ruhje,4181730
+886,Hiertymä/naarmu/rakkula,4181730
+887,Haava/laseraatio,4181730
+888,"Ihon vamma, muu",4181730
+889,Sarveistuma/kovettuma,4181730
+890,Ihon rakenteen oire/vaiva,4181730
+891,Kynnen oire/vaiva,4181730
+892,Kaljuus / hiustenlähtö,4181730
+893,"Päänahan/hiusten oire/vaiva, muu",4181730
+894,Huoli/pelko ihosyövästä,4181730
+895,Huoli/pelko muusta ihosairaudesta,4181730
+896,"Toiminnanvajaus, ihon",4181730
+897,Muu ihon oire/vaiva,4181730
+898,"Iho, Laaja terveydentilan arviointi/tarkastus",4181730
+899,"Iho, Suppea terveydentilan arviointi/tarkastus",4181730
+900,"Iho, Allergiatutkimus",4181730
+901,"Iho, Mikrobiologinen/immunologinen koe",4181730
+902,"Iho, Veritutkimus",4181730
+903,"Iho, Virtsatutkimus",4181730
+904,"Iho, Ulostetutkimus",4181730
+905,"Iho, Histologinen/sytologinen tutkimus",4181730
+906,"Iho, Muu laboratoriotutkimus",4181730
+907,"Iho, Kliininen toimintakoe",4181730
+908,"Iho, Diagnostinen endoskopia",4181730
+909,"Iho, Diagnostinen kuvantaminen",4181730
+910,"Iho, Elektrofysiologinen tutkimus",4181730
+911,"Iho, Muu tutkimustoimenpide",4181730
+912,"Iho, Rokotus / ennaltaehkäisevä lääkitys",4181730
+913,"Iho, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+914,"Iho, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+915,"Iho, Erikoislääkärin konsultaatio",4181730
+916,"Iho, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+917,"Iho, Muu ennaltaehkäisevä toimenpide",4181730
+918,"Iho, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+919,"Iho, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+920,"Iho, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+921,"Iho, Katetrointi/intubointi/laajentaminen",4181730
+922,"Iho, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+923,"Iho, Paikallinen lääkeaineinjektio",4181730
+924,"Iho, Sidos/kompressi/tamponointi",4181730
+925,"Iho, Fysikaalinen hoito /kuntoutus",4181730
+926,"Iho, Terapeuttinen neuvonta/kuuntelu",4181730
+927,"Iho, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+928,"Iho, Tutkimustulosten kuuleminen",4181730
+929,"Iho, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+930,"Iho, Hallinnollinen toimenpide",4181730
+931,"Iho, Muu seurantakäynti",4181730
+932,"Iho, Hoidonantajan käynnistämä tapahtuma",4181730
+933,"Iho, Muun henkilön käynnistämä tapahtuma",4181730
+934,"Iho, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+935,"Iho, Lähete erikoislääkärille/sairaalaan",4181730
+936,"Iho, Muu lähete",4181730
+937,"Iho, Muu käynnin syy",4181730
+938,Vyöruusu,4181730
+939,Herpes simplex,4181730
+940,Syyhy / muu punkkitauti,4181730
+941,Täi- / muu ihosyöpäläistartunta,4181730
+942,Sieni-ihottuma,4181730
+943,Hiivasieni iholla,4181730
+944,"Ihotulehdus, muu",4181730
+945,"Pahanlaatuinen kasvain, ihon",4181730
+946,Rasvakasvain,4181730
+947,"Hyvänlaatuinen/määrittämätön kasvain, ihon, muu",4181730
+948,Auringonpolttama / auringon aiheuttama sarveistuma,4181730
+949,Verisuonikasvain/imusuonikasvain,4181730
+950,Luomi,4181730
+951,"Synnynnäinen poikkeavuus, ihon, muu",4181730
+952,Märkärupi,4181730
+953,Pilonidaalikysta/fisteli,4181730
+954,Seborrooinen ihottuma,4181730
+955,Atooppinen ihottuma/ekseema,4181730
+956,Allerginen ihottuma / kosketusihottuma,4181730
+957,Vaippaihottuma,4181730
+958,Punatäplähilseily,4181730
+959,Psoriasis,4181730
+960,Hikirauhasten sairaus,4181730
+961,Talirauhasen tukkeuma,4181730
+962,Sisäänkasvanut kynsi,4181730
+963,Ontelosyylä,4181730
+964,Akne,4181730
+965,"Ihohaavauma, krooninen",4181730
+966,Nokkosrokko,4181730
+967,Muu ihon sairaus,4181730
+968,"Aineenvaihdunta, umpieritys ja ravitsemus",4181730
+969,Ylenmääräinen jano,4181730
+970,Ylenmääräinen ruokahalu,4181730
+971,Ruokahaluttomuus,4181730
+972,"Syöttämisongelma, vauvan/lapsen",4181730
+973,"Ruokailun ongelma, aikuisen",4181730
+974,Painonnousu,4181730
+975,Painon lasku,4181730
+976,Kasvun viivästymä,4181730
+977,Dehydraatio/kuivuminen,4181730
+978,Huoli/pelko umpieritysrauhasten syövästä,4181730
+979,Huoli/pelko aineenvaihduntaan/sisäeritykseen liittyvästä muusta sairaudesta,4181730
+980,"Toiminnanvajaus, aineenvaihduntaan/umpieritykseen/ravitsemukseen liittyvä",4181730
+981,Muu aineenvaihduntaan/umpieritykseen/ravitsemukseen liittyvä oire/vaiva,4181730
+982,"Aineenvaihdunta, umpieritys ja ravitsemus, Laaja terveydentilan arviointi/tarkastus",4181730
+983,"Aineenvaihdunta, umpieritys ja ravitsemus, Suppea terveydentilan arviointi/tarkastus",4181730
+984,"Aineenvaihdunta, umpieritys ja ravitsemus, Allergiatutkimus",4181730
+985,"Aineenvaihdunta, umpieritys ja ravitsemus, Mikrobiologinen/immunologinen koe",4181730
+986,"Aineenvaihdunta, umpieritys ja ravitsemus, Veritutkimus",4181730
+987,"Aineenvaihdunta, umpieritys ja ravitsemus, Virtsatutkimus",4181730
+988,"Aineenvaihdunta, umpieritys ja ravitsemus, Ulostetutkimus",4181730
+989,"Aineenvaihdunta, umpieritys ja ravitsemus, Histologinen/sytologinen tutkimus",4181730
+990,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu laboratoriotutkimus",4181730
+991,"Aineenvaihdunta, umpieritys ja ravitsemus, Kliininen toimintakoe",4181730
+992,"Aineenvaihdunta, umpieritys ja ravitsemus, Diagnostinen endoskopia",4181730
+993,"Aineenvaihdunta, umpieritys ja ravitsemus, Diagnostinen kuvantaminen",4181730
+994,"Aineenvaihdunta, umpieritys ja ravitsemus, Elektrofysiologinen tutkimus",4181730
+995,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu tutkimustoimenpide",4181730
+996,"Aineenvaihdunta, umpieritys ja ravitsemus, Rokotus / ennaltaehkäisevä lääkitys",4181730
+997,"Aineenvaihdunta, umpieritys ja ravitsemus, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+998,"Aineenvaihdunta, umpieritys ja ravitsemus, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+999,"Aineenvaihdunta, umpieritys ja ravitsemus, Erikoislääkärin konsultaatio",4181730
+1000,"Aineenvaihdunta, umpieritys ja ravitsemus, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1001,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu ennaltaehkäisevä toimenpide",4181730
+1002,"Aineenvaihdunta, umpieritys ja ravitsemus, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1003,"Aineenvaihdunta, umpieritys ja ravitsemus, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1004,"Aineenvaihdunta, umpieritys ja ravitsemus, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1005,"Aineenvaihdunta, umpieritys ja ravitsemus, Katetrointi/intubointi/laajentaminen",4181730
+1006,"Aineenvaihdunta, umpieritys ja ravitsemus, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1007,"Aineenvaihdunta, umpieritys ja ravitsemus, Paikallinen lääkeaineinjektio",4181730
+1008,"Aineenvaihdunta, umpieritys ja ravitsemus, Sidos/kompressi/tamponointi",4181730
+1009,"Aineenvaihdunta, umpieritys ja ravitsemus, Fysikaalinen hoito /kuntoutus",4181730
+1010,"Aineenvaihdunta, umpieritys ja ravitsemus, Terapeuttinen neuvonta/kuuntelu",4181730
+1011,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1012,"Aineenvaihdunta, umpieritys ja ravitsemus, Tutkimustulosten kuuleminen",4181730
+1013,"Aineenvaihdunta, umpieritys ja ravitsemus, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1014,"Aineenvaihdunta, umpieritys ja ravitsemus, Hallinnollinen toimenpide",4181730
+1015,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu seurantakäynti",4181730
+1016,"Aineenvaihdunta, umpieritys ja ravitsemus, Hoidonantajan käynnistämä tapahtuma",4181730
+1017,"Aineenvaihdunta, umpieritys ja ravitsemus, Muun henkilön käynnistämä tapahtuma",4181730
+1018,"Aineenvaihdunta, umpieritys ja ravitsemus, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1019,"Aineenvaihdunta, umpieritys ja ravitsemus, Lähete erikoislääkärille/sairaalaan",4181730
+1020,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu lähete",4181730
+1021,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu käynnin syy",4181730
+1022,Umpierityselimen infektio,4181730
+1023,"Pahanlaatuinen kasvain, kilpirauhasen",4181730
+1024,"Hyvänlaatuinen kasvain, kilpirauhasen",4181730
+1025,"Kasvain, endokrinologinen, muu/määrittämätön",4181730
+1026,"Kilpirauhas-kielitiehyt/rakkula, pysyväksi jäänyt",4181730
+1027,"Synnynnäinen epämuodostuma,  sisäeriterauhasten, muu",4181730
+1028,Struuma,4181730
+1029,"Lihavuus, merkittävä/vaikea",4181730
+1030,"Ylipaino / lihavuus, lievä",4181730
+1031,Kilpirauhasen liikatoiminta / tyreotoksikoosi,4181730
+1032,Kilpirauhasen vajaatoiminta / myksedeema,4181730
+1033,Hypoglykemia / matala verensokeri,4181730
+1034,"Diabetes, tyyppi 1",4181730
+1035,"Diabetes, tyyppi 2",4181730
+1036,Vitamiinin puute / ravitsemuksellinen  puutos,4181730
+1037,Kihti,4181730
+1038,Dyslipidemia,4181730
+1039,Muu endokriininen/aineenvaihdunnan/ravitsemuksen sairaus,4181730
+1040,Virtsaelimet,4181730
+1041,Kipu virtsatessa,4181730
+1042,Tihentynyt virtsaamistarve,4181730
+1043,Virtsankarkailu,4181730
+1044,"Virtsaamisongelma, muu",4181730
+1045,Verivirtsaisuus,4181730
+1046,Virtsaamiseen liittyvä muu oire/vaiva,4181730
+1047,Virtsaumpi,4181730
+1048,"Rakkoon liittyvä oire/vaiva, muu",4181730
+1049,Munuaiseen liittyvä oire/vaiva,4181730
+1050,Huoli/pelko virtsateiden syövästä,4181730
+1051,Huoli/pelko muusta virtsatiesairaudesta,4181730
+1052,"Toiminnanvajaus, virtsaelinten",4181730
+1053,Muu virtsaelinten vaiva/oire,4181730
+1054,"Virtsaelimet, Laaja terveydentilan arviointi/tarkastus",4181730
+1055,"Virtsaelimet, Suppea terveydentilan arviointi/tarkastus",4181730
+1056,"Virtsaelimet, Allergiatutkimus",4181730
+1057,"Virtsaelimet, Mikrobiologinen/immunologinen koe",4181730
+1058,"Virtsaelimet, Veritutkimus",4181730
+1059,"Virtsaelimet, Virtsatutkimus",4181730
+1060,"Virtsaelimet, Ulostetutkimus",4181730
+1061,"Virtsaelimet, Histologinen/sytologinen tutkimus",4181730
+1062,"Virtsaelimet, Muu laboratoriotutkimus",4181730
+1063,"Virtsaelimet, Kliininen toimintakoe",4181730
+1064,"Virtsaelimet, Diagnostinen endoskopia",4181730
+1065,"Virtsaelimet, Diagnostinen kuvantaminen",4181730
+1066,"Virtsaelimet, Elektrofysiologinen tutkimus",4181730
+1067,"Virtsaelimet, Muu tutkimustoimenpide",4181730
+1068,"Virtsaelimet, Rokotus / ennaltaehkäisevä lääkitys",4181730
+1069,"Virtsaelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+1070,"Virtsaelimet, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+1071,"Virtsaelimet, Erikoislääkärin konsultaatio",4181730
+1072,"Virtsaelimet, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1073,"Virtsaelimet, Muu ennaltaehkäisevä toimenpide",4181730
+1074,"Virtsaelimet, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1075,"Virtsaelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1076,"Virtsaelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1077,"Virtsaelimet, Katetrointi/intubointi/laajentaminen",4181730
+1078,"Virtsaelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1079,"Virtsaelimet, Paikallinen lääkeaineinjektio",4181730
+1080,"Virtsaelimet, Sidos/kompressi/tamponointi",4181730
+1081,"Virtsaelimet, Fysikaalinen hoito /kuntoutus",4181730
+1082,"Virtsaelimet, Terapeuttinen neuvonta/kuuntelu",4181730
+1083,"Virtsaelimet, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1084,"Virtsaelimet, Tutkimustulosten kuuleminen",4181730
+1085,"Virtsaelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1086,"Virtsaelimet, Hallinnollinen toimenpide",4181730
+1087,"Virtsaelimet, Muu seurantakäynti",4181730
+1088,"Virtsaelimet, Hoidonantajan käynnistämä tapahtuma",4181730
+1089,"Virtsaelimet, Muun henkilön käynnistämä tapahtuma",4181730
+1090,"Virtsaelimet,Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1091,"Virtsaelimet, Lähete erikoislääkärille/sairaalaan",4181730
+1092,"Virtsaelimet, Muu lähete",4181730
+1093,"Virtsaelimet, Muu käynnin syy",4181730
+1094,Pyelonefriitti/munuaisaltaan tulehdus,4181730
+1095,Virtsarakontulehdus / muu virtsatietulehdus,4181730
+1096,Virtsaputkentulehdus,4181730
+1097,"Pahanlaatuinen kasvain, munuaisen",4181730
+1098,"Pahanlaatuinen kasvain, virtsarakon",4181730
+1099,"Pahanlaatuinen kasvain, virtsaelimistön, muu",4181730
+1100,"Hyvänlaatuinen kasvain, virtsateiden",4181730
+1101,"Kasvain, virtsateiden, määrittämätön",4181730
+1102,Virtsateiden vamma,4181730
+1103,"Synnynnäinen epämuodostuma, virtsateiden",4181730
+1104,"Munuaiskerästulehdus, glomerulonefriitti/nefroosi",4181730
+1105,Asentoon liittyvä valkuaisvirtsaisuus,4181730
+1106,Virtsatiekivi,4181730
+1107,"Poikkeava virtsalöydös, määrittämätön",4181730
+1108,Muu virtsateiden sairaus,4181730
+1109,"Raskaus, synnytys ja perhesuunnittelu",4181730
+1110,Raskausepäily,4181730
+1111,Pelko raskaudesta,4181730
+1112,Raskaudenaikainen verenvuoto,4181730
+1113,Raskauspahoinvointi/-oksentelu,4181730
+1114,Yhdynnänjälkeinen ehkäisy,4181730
+1115,Raskaudenehkäisy pillerillä,4181730
+1116,"Raskaudenehkäisy, kohdunsisäinen",4181730
+1117,"Sterilisaatio, naisen",4181730
+1118,"Raskaudenehkäisy, muu",4181730
+1119,Hedelmättömyys,4181730
+1120,Synnytyksen jälkeinen verenvuoto,4181730
+1121,"Synnytyksen jälkeinen oire/vaiva, muu",4181730
+1122,Imetykseen liittyvä oire/vaiva,4181730
+1123,Huoli raskaudenaikaisesta kehonkuvasta,4181730
+1124,Huoli/pelko raskauskomplikaatiosta,4181730
+1125,"Toiminnanvajaus, raskauteen ja synnytykseen liittyvä",4181730
+1126,Muu raskauteen liittyvä oire/vaiva,4181730
+1127,"Raskaus, synnytys ja perhesuunnittelu, Laaja terveydentilan arviointi/tarkastus",4181730
+1128,"Raskaus, synnytys ja perhesuunnittelu, Suppea terveydentilan arviointi/tarkastus",4181730
+1129,"Raskaus, synnytys ja perhesuunnittelu, Allergiatutkimus",4181730
+1130,"Raskaus, synnytys ja perhesuunnittelu, Mikrobiologinen/immunologinen koe",4181730
+1131,"Raskaus, synnytys ja perhesuunnittelu, Veritutkimus",4181730
+1132,"Raskaus, synnytys ja perhesuunnittelu, Virtsatutkimus",4181730
+1133,"Raskaus, synnytys ja perhesuunnittelu, Ulostetutkimus",4181730
+1134,"Raskaus, synnytys ja perhesuunnittelu, Histologinen/sytologinen tutkimus",4181730
+1135,"Raskaus, synnytys ja perhesuunnittelu, Muu laboratoriotutkimus",4181730
+1136,"Raskaus, synnytys ja perhesuunnittelu, Kliininen toimintakoe",4181730
+1137,"Raskaus, synnytys ja perhesuunnittelu, Diagnostinen endoskopia",4181730
+1138,"Raskaus, synnytys ja perhesuunnittelu, Diagnostinen kuvantaminen",4181730
+1139,"Raskaus, synnytys ja perhesuunnittelu, Elektrofysiologinen tutkimus",4181730
+1140,"Raskaus, synnytys ja perhesuunnittelu, Muu tutkimustoimenpide",4181730
+1141,"Raskaus, synnytys ja perhesuunnittelu, Rokotus / ennaltaehkäisevä lääkitys",4181730
+1142,"Raskaus, synnytys ja perhesuunnittelu, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+1143,"Raskaus, synnytys ja perhesuunnittelu, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+1144,"Raskaus, synnytys ja perhesuunnittelu, Erikoislääkärin konsultaatio",4181730
+1145,"Raskaus, synnytys ja perhesuunnittelu, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1146,"Raskaus, synnytys ja perhesuunnittelu, Muu ennaltaehkäisevä toimenpide",4181730
+1147,"Raskaus, synnytys ja perhesuunnittelu, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1148,"Raskaus, synnytys ja perhesuunnittelu, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1149,"Raskaus, synnytys ja perhesuunnittelu, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1150,"Raskaus, synnytys ja perhesuunnittelu, Katetrointi/intubointi/laajentaminen",4181730
+1151,"Raskaus, synnytys ja perhesuunnittelu, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1152,"Raskaus, synnytys ja perhesuunnittelu, Paikallinen lääkeaineinjektio",4181730
+1153,"Raskaus, synnytys ja perhesuunnittelu, Sidos /kompressi/tamponointi",4181730
+1154,"Raskaus, synnytys ja perhesuunnittelu, Fysikaalinen hoito /kuntoutus",4181730
+1155,"Raskaus, synnytys ja perhesuunnittelu, Terapeuttinen neuvonta/kuuntelu",4181730
+1156,"Raskaus, synnytys ja perhesuunnittelu, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1157,"Raskaus, synnytys ja perhesuunnittelu, Tutkimustulosten kuuleminen",4181730
+1158,"Raskaus, synnytys ja perhesuunnittelu, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1159,"Raskaus, synnytys ja perhesuunnittelu, Hallinnollinen toimenpide",4181730
+1160,"Raskaus, synnytys ja perhesuunnittelu, Muu seurantakäynti",4181730
+1161,"Raskaus, synnytys ja perhesuunnittelu, Hoidonantajan käynnistämä tapahtuma",4181730
+1162,"Raskaus, synnytys ja perhesuunnittelu, Muun henkilön käynnistämä tapahtuma",4181730
+1163,"Raskaus, synnytys ja perhesuunnittelu, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1164,"Raskaus, synnytys ja perhesuunnittelu, Lähete erikoislääkärille/sairaalaan",4181730
+1165,"Raskaus, synnytys ja perhesuunnittelu, Muu lähete",4181730
+1166,"Raskaus, synnytys ja perhesuunnittelu, Muu käynnin syy",4181730
+1167,Lapsivuodetulehdus/verenmyrkytys,4181730
+1168,Raskautta komplisoiva tulehdus,4181730
+1169,"Pahanlaatuinen kasvain, raskauteen liittyvä",4181730
+1170,"Hyvänlaatuinen/muu kasvain, raskauteen liittyvä",4181730
+1171,Raskautta komplisoiva vamma,4181730
+1172,"Synnynnäinen epämuodostuma, raskautta komplisoiva",4181730
+1173,Raskaus,4181730
+1174,"Raskaus, ei-toivottu",4181730
+1175,"Raskaus, kohdunulkoinen",4181730
+1176,Raskausmyrkytys,4181730
+1177,Keskenmeno,4181730
+1178,Raskauden keskeytys,4181730
+1179,Riskiraskaus,4181730
+1180,Raskausdiabetes,4181730
+1181,"Normaali synnytys, elävä lapsi",4181730
+1182,"Normaali synnytys, kuollut lapsi",4181730
+1183,"Komplisoitunut synnytys, elävä lapsi",4181730
+1184,"Komplisoitunut synnytys, kuollut lapsi",4181730
+1185,"Rintatulehdus, imettämiseen liittyvä",4181730
+1186,"Rintarauhasen muu häiriö, raskauteen/imettämiseen liittyvä",4181730
+1187,"Imettämiseen liittyvä komplikaatio, muu",4181730
+1188,Muu raskauteen/synnytykseen liittyvä häiriö,4181730
+1189,Naisen sukuelimet sisältäen rinnan,4181730
+1190,"Kipu sukuelimissä,  naisen",4181730
+1191,Kuukautiskipu,4181730
+1192,Kuukautisten välillä esiintyvä kipu,4181730
+1193,"Yhdyntäkivut, naisen",4181730
+1194,Puuttuvat/niukat kuukautiset,4181730
+1195,Runsaat kuukautiset,4181730
+1196,Epäsäännölliset/tiheät kuukautiset,4181730
+1197,Välivuoto,4181730
+1198,Kuukautisia edeltävä oire/vaiva,4181730
+1199,Kuukautisten siirto,4181730
+1200,Vaihdevuosioireet/-vaiva,4181730
+1201,"Verenvuoto emättimestä, vaihdevuosien jälkeinen",4181730
+1202,"Verenvuoto emättimestä, yhdynnänjälkeinen",4181730
+1203,Vuoto emättimestä,4181730
+1204,"Emättimen oire/vaiva, muu",4181730
+1205,Ulkosynnyttimien oire/vaiva,4181730
+1206,"Lantionseudun oire/vaiva, naisen",4181730
+1207,"Rintarauhasen kipu, naisen",4181730
+1208,"Rintarauhasen kyhmy, naisen",4181730
+1209,"Nännin oire/vaiva, naisen",4181730
+1210,"Rintarauhasen muu oire/vaiva, naisen",4181730
+1211,"Huoli rintojen ulkonäöstä, naisen",4181730
+1212,"Huoli/pelko sukupuolitaudista, naisen",4181730
+1213,"Huoli/pelko seksuaalisesta toimintahäiriöstä, naisen",4181730
+1214,"Huoli/pelko sukuelinsyövästä, naisen",4181730
+1215,"Huoli/pelko rintasyövästä, naisen",4181730
+1216,"Huoli /pelko muusta sukuelimen/rintarauhasen sairaudesta, naisen",4181730
+1217,"Toiminnanvajaus, sukuelinten, naisen",4181730
+1218,Muu naisen sukuelinoire,4181730
+1219,"Naisen sukuelimet sisältäen rinnan, Laaja terveydentilan arviointi/tarkastus",4181730
+1220,"Naisen sukuelimet sisältäen rinnan, Suppea terveydentilan arviointi/tarkastus",4181730
+1221,"Naisen sukuelimet sisältäen rinnan, Allergiatutkimus",4181730
+1222,"Naisen sukuelimet sisältäen rinnan, Mikrobiologinen/immunologinen koe",4181730
+1223,"Naisen sukuelimet sisältäen rinnan, Veritutkimus",4181730
+1224,"Naisen sukuelimet sisältäen rinnan, Virtsatutkimus",4181730
+1225,"Naisen sukuelimet sisältäen rinnan, Ulostetutkimus",4181730
+1226,"Naisen sukuelimet sisältäen rinnan, Histologinen/sytologinen tutkimus",4181730
+1227,"Naisen sukuelimet sisältäen rinnan, Muu laboratoriotutkimus",4181730
+1228,"Naisen sukuelimet sisältäen rinnan, Kliininen toimintakoe",4181730
+1229,"Naisen sukuelimet sisältäen rinnan, Diagnostinen endoskopia",4181730
+1230,"Naisen sukuelimet sisältäen rinnan, Diagnostinen kuvantaminen",4181730
+1231,"Naisen sukuelimet sisältäen rinnan, Elektrofysiologinen tutkimus",4181730
+1232,"Naisen sukuelimet sisältäen rinnan, Muu tutkimustoimenpide",4181730
+1233,"Naisen sukuelimet sisältäen rinnan, Rokotus / ennaltaehkäisevä lääkitys",4181730
+1234,"Naisen sukuelimet sisältäen rinnan, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+1235,"Naisen sukuelimet sisältäen rinnan, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+1236,"Naisen sukuelimet sisältäen rinnan, Erikoislääkärin konsultaatio",4181730
+1237,"Naisen sukuelimet sisältäen rinnan, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1238,"Naisen sukuelimet sisältäen rinnan, Muu ennaltaehkäisevä toimenpide",4181730
+1239,"Naisen sukuelimet sisältäen rinnan, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1240,"Naisen sukuelimet sisältäen rinnan, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1241,"Naisen sukuelimet sisältäen rinnan, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1242,"Naisen sukuelimet sisältäen rinnan, Katetrointi/intubointi/laajentaminen",4181730
+1243,"Naisen sukuelimet sisältäen rinnan, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1244,"Naisen sukuelimet sisältäen rinnan, Paikallinen lääkeaineinjektio",4181730
+1245,"Naisen sukuelimet sisältäen rinnan, Sidos/kompressi/tamponointi",4181730
+1246,"Naisen sukuelimet sisältäen rinnan, Fysikaalinen hoito /kuntoutus",4181730
+1247,"Naisen sukuelimet sisältäen rinnan, Terapeuttinen neuvonta/kuuntelu",4181730
+1248,"Naisen sukuelimet sisältäen rinnan, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1249,"Naisen sukuelimet sisältäen rinnan, Tutkimustulosten kuuleminen",4181730
+1250,"Naisen sukuelimet sisältäen rinnan, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1251,"Naisen sukuelimet sisältäen rinnan, Hallinnollinen toimenpide",4181730
+1252,"Naisen sukuelimet sisältäen rinnan, Muu seurantakäynti",4181730
+1253,"Naisen sukuelimet sisältäen rinnan, Hoidonantajan käynnistämä tapahtuma",4181730
+1254,"Naisen sukuelimet sisältäen rinnan, Muun henkilön käynnistämä tapahtuma",4181730
+1255,"Naisen sukuelimet sisältäen rinnan, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1256,"Naisen sukuelimet sisältäen rinnan, Lähete erikoislääkärille/sairaalaan",4181730
+1257,"Naisen sukuelimet sisältäen rinnan, Muu lähete",4181730
+1258,"Naisen sukuelimet sisältäen rinnan, Muu käynnin syy",4181730
+1259,"Kuppa, naisen",4181730
+1260,"Tippuri, naisen",4181730
+1261,"Hiiva sukuelimissä, naisen",4181730
+1262,"Trikomonas sukuelimissä, naisen",4181730
+1263,Sisäsynnytintulehdus,4181730
+1264,"Pahanlaatuinen kasvain, kohdunkaulan",4181730
+1265,"Pahanlaatuinen kasvain, naisen rinnan",4181730
+1266,"Pahanlaatuinen kasvain, naisen sukuelimen, muu",4181730
+1267,"Lihaskasvain, kohdun",4181730
+1268,"Hyvänlaatuinen kasvain, naisen rintarauhasen",4181730
+1269,"Hyvänlaatuinen kasvain, naisen sukuelinten",4181730
+1270,"Kasvain, naisen sukuelinten, muu/määrittämätön",4181730
+1271,"Sukuelinvamma, naisen",4181730
+1272,"Synnynnäinen epämuodostuma, naisen sukuelinten",4181730
+1273,"Emättimen/ulkosynnyttymien tulehdus, määrittämätön",4181730
+1274,"Kohdunsuun sairaus, määrittämätön",4181730
+1275,Poikkeava irtosolunäyte,4181730
+1276,Kohdun ja emättimen laskeuma,4181730
+1277,Rintarauhasen rakkulatauti,4181730
+1278,Premenstruaalisyndrooma,4181730
+1279,"Sukuelinherpes, naisen",4181730
+1280,"Visvasyylä, naisen",4181730
+1281,"Sukuelinklamydia, naisen",4181730
+1282,Muu naisen sukuelinsairaus,4181730
+1283,Miehen sukuelimet sisältäen rinnan,4181730
+1284,Siittimen kipu,4181730
+1285,Kiveksen/kivespussin kipu,4181730
+1286,Vuoto virtsaputkesta,4181730
+1287,"Siittimen oire/vaiva, muu",4181730
+1288,Kiveksen/kivespussin oire/vaiva,4181730
+1289,Eturauhasen oire/vaiva,4181730
+1290,"Potenssiongelma, määrittämätön",4181730
+1291,"Seksuaaliseen toimintaan liittyvä oire/vaiva, miehen",4181730
+1292,"Alentunut hedelmällisyys / hedelmättömyys, miehen",4181730
+1293,"Sterilisaatio, miehen",4181730
+1294,"Ehkäisyneuvonta, miehen",4181730
+1295,"Rintarauhasen oire/vaiva, miehen",4181730
+1296,"Huoli/pelko seksuaalisesta toimintahäiriöstä, miehen",4181730
+1297,"Huoli/pelko sukupuolitaudista, miehen",4181730
+1298,"Huoli/pelko sukuelinten syövästä, miehen",4181730
+1299,"Huoli/pelko muusta sukuelinsairaudesta, miehen",4181730
+1300,"Toiminnanvajaus, sukuelinten, miehen",4181730
+1301,Muu miehen sukuelinten oire,4181730
+1302,"Miehen sukuelimet sisältäen rinnan, Laaja terveydentilan arviointi/tarkastus",4181730
+1303,"Miehen sukuelimet sisältäen rinnan, Suppea terveydentilan arviointi/tarkastus",4181730
+1304,"Miehen sukuelimet sisältäen rinnan, Allergiatutkimus",4181730
+1305,"Miehen sukuelimet sisältäen rinnan, Mikrobiologinen/immunologinen koe",4181730
+1306,"Miehen sukuelimet sisältäen rinnan, Veritutkimus",4181730
+1307,"Miehen sukuelimet sisältäen rinnan, Virtsatutkimus",4181730
+1308,"Miehen sukuelimet sisältäen rinnan, Ulostetutkimus",4181730
+1309,"Miehen sukuelimet sisältäen rinnan, Histologinen/sytologinen tutkimus",4181730
+1310,"Miehen sukuelimet sisältäen rinnan, Muu laboratoriotutkimus",4181730
+1311,"Miehen sukuelimet sisältäen rinnan, Kliininen toimintakoe",4181730
+1312,"Miehen sukuelimet sisältäen rinnan, Diagnostinen endoskopia",4181730
+1313,"Miehen sukuelimet sisältäen rinnan, Diagnostinen kuvantaminen",4181730
+1314,"Miehen sukuelimet sisältäen rinnan, Elektrofysiologinen tutkimus",4181730
+1315,"Miehen sukuelimet sisältäen rinnan, Muu tutkimustoimenpide",4181730
+1316,"Miehen sukuelimet sisältäen rinnan, Rokotus / ennaltaehkäisevä lääkitys",4181730
+1317,"Miehen sukuelimet sisältäen rinnan, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+1318,"Miehen sukuelimet sisältäen rinnan, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+1319,"Miehen sukuelimet sisältäen rinnan, Erikoislääkärin konsultaatio",4181730
+1320,"Miehen sukuelimet sisältäen rinnan, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1321,"Miehen sukuelimet sisältäen rinnan, Muu ennaltaehkäisevä toimenpide",4181730
+1322,"Miehen sukuelimet sisältäen rinnan, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1323,"Miehen sukuelimet sisältäen rinnan, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1324,"Miehen sukuelimet sisältäen rinnan, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1325,"Miehen sukuelimet sisältäen rinnan, Katetrointi/intubointi/laajentaminen",4181730
+1326,"Miehen sukuelimet sisältäen rinnan, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1327,"Miehen sukuelimet sisältäen rinnan, Paikallinen lääkeaineinjektio",4181730
+1328,"Miehen sukuelimet sisältäen rinnan, Sidos/kompressi/tamponointi",4181730
+1329,"Miehen sukuelimet sisältäen rinnan, Fysikaalinen hoito /kuntoutus",4181730
+1330,"Miehen sukuelimet sisältäen rinnan, Terapeuttinen neuvonta/kuuntelu",4181730
+1331,"Miehen sukuelimet sisältäen rinnan, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1332,"Miehen sukuelimet sisältäen rinnan, Tutkimustulosten kuuleminen",4181730
+1333,"Miehen sukuelimet sisältäen rinnan, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1334,"Miehen sukuelimet sisältäen rinnan, Hallinnollinen toimenpide",4181730
+1335,"Miehen sukuelimet sisältäen rinnan, Muu seurantakäynti",4181730
+1336,"Miehen sukuelimet sisältäen rinnan, Hoidonantajan käynnistämä tapahtuma",4181730
+1337,"Miehen sukuelimet sisältäen rinnan, Muun henkilön käynnistämä tapahtuma",4181730
+1338,"Miehen sukuelimet sisältäen rinnan, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1339,"Miehen sukuelimet sisältäen rinnan, Lähete erikoislääkärille/sairaalaan",4181730
+1340,"Miehen sukuelimet sisältäen rinnan, Muu lähete",4181730
+1341,"Miehen sukuelimet sisältäen rinnan, Muu käynnin syy",4181730
+1342,"Kuppa, miehen",4181730
+1343,"Tippuri, miehen",4181730
+1344,"Sukuelinherpes, miehen",4181730
+1345,Eturauhastulehdus/siemenrakkulatulehdus,4181730
+1346,Kivestulehdus/lisäkivestulehdus,4181730
+1347,Esinahan tulehdus,4181730
+1348,"Visvasyylä, miehen",4181730
+1349,"Pahanlaatuinen kasvain, eturauhasen",4181730
+1350,"Pahanlaatuinen kasvain, miehen sukuelinten,  muu",4181730
+1351,"Hyvänlaatuinen/muu kasvain, miehen sukuelinten",4181730
+1352,"Sukuelinvamma, miehen",4181730
+1353,Ahdas/liiallinen esinahka,4181730
+1354,Siittimen alahalkio,4181730
+1355,Kiveksen laskeutumattomuus/piilokiveksisyys,4181730
+1356,"Synnynnäinen epämuodostuma, miehen sukuelinten muu",4181730
+1357,"Eturauhasen liikakasvu, hyvänlaatuinen",4181730
+1358,Hydroseele,4181730
+1359,"Muu sukuelinten sairaus, miehen",4181730
+1360,Sosiaaliset ongelmat,4181730
+1361,Köyhyys/taloudellinen ongelma,4181730
+1362,Ruokaan/veteen liittyvä ongelma,4181730
+1363,Asumiseen/naapurustoon liittyvä ongelma,4181730
+1364,Sosiaaliseen yhteisöön / kulttuuriin liittyvä ongelma,4181730
+1365,Työhön liittyvä ongelma,4181730
+1366,Työttömyyteen liittyvä ongelma,4181730
+1367,Koulutukseen liittyvät ongelma,4181730
+1368,Toimeentuloon/sosiaaliturvaan liittyvä ongelma,4181730
+1369,Oikeudellinen ongelma,4181730
+1370,Terveydenhuoltojärjestelmään  liittyvä ongelma,4181730
+1371,Hoitomyönteisyyteen/sairastamiseen liittyvä ongelma,4181730
+1372,Parisuhdeongelma,4181730
+1373,Kumppanin käytökseen liittyvä ongelma,4181730
+1374,Kumppanin sairastamiseen liittyvä ongelma,4181730
+1375,Kumppanin menetykseen/kuolemaan liittyvä ongelma,4181730
+1376,Ongelma lapsisuhteessa,4181730
+1377,Lapsen sairastamiseen liittyvä ongelma,4181730
+1378,Lapsen menetyksestä/kuolemasta aiheutuva ongelma,4181730
+1379,Ihmissuhdeongelma liittyen  vanhempaan/perheenjäseneen,4181730
+1380,Vanhemman/perheenjäsenen käyttäytymiseen liittyvä ongelma,4181730
+1381,Vanhemman/perheenjäsenen sairastamiseen liittyvä ongelma,4181730
+1382,Vanhemman/perheenjäsenen menetykseen/kuolemaan liittyvä ongelma,4181730
+1383,Ystäviin liittyvä ihmissuhdeongelma,4181730
+1384,Väkivaltaan/vahingolliseen tapahtumaan liittyvä ongelma,4181730
+1385,Huoli/pelko sosiaalisesta ongelmasta,4181730
+1386,"Toiminnanvajaus, sosiaalinen",4181730
+1387,"Muu sosiaalinen ongelma, määrittämätön",4181730
+1388,"Sosiaaliset ongelmat, Laaja terveydentilan arviointi/tarkastus",4181730
+1389,"Sosiaaliset ongelmat, Suppea terveydentilan arviointi/tarkastus",4181730
+1390,"Sosiaaliset ongelmat, Allergiatutkimus",4181730
+1391,"Sosiaaliset ongelmat, Mikrobiologinen/immunologinen koe",4181730
+1392,"Sosiaaliset ongelmat, Veritutkimus",4181730
+1393,"Sosiaaliset ongelmat, Virtsatutkimus",4181730
+1394,"Sosiaaliset ongelmat, Ulostetutkimus",4181730
+1395,"Sosiaaliset ongelmat, Histologinen/sytologinen tutkimus",4181730
+1396,"Sosiaaliset ongelmat, Muu laboratoriotutkimus",4181730
+1397,"Sosiaaliset ongelmat, Kliininen toimintakoe",4181730
+1398,"Sosiaaliset ongelmat, Diagnostinen endoskopia",4181730
+1399,"Sosiaaliset ongelmat, Diagnostinen kuvantaminen",4181730
+1400,"Sosiaaliset ongelmat, Elektrofysiologinen tutkimus",4181730
+1401,"Sosiaaliset ongelmat, Muu tutkimustoimenpide",4181730
+1402,"Sosiaaliset ongelmat, Rokotus / ennaltaehkäisevä lääkitys",4181730
+1403,"Sosiaaliset ongelmat, Seuranta/terveysneuvonta/ruokavalioneuvonta",4181730
+1404,"Sosiaaliset ongelmat, Perusterveydenhuollon asiantuntijan konsultaatio",4181730
+1405,"Sosiaaliset ongelmat, Erikoislääkärin konsultaatio",4181730
+1406,"Sosiaaliset ongelmat, Potilaan tarpeiden/tulosyyn selvittäminen",4181730
+1407,"Sosiaaliset ongelmat, Muu ennaltaehkäisevä toimenpide",4181730
+1408,"Sosiaaliset ongelmat, Lääkitys/lääkemääräys/uusinta/injektio",4181730
+1409,"Sosiaaliset ongelmat, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto",4181730
+1410,"Sosiaaliset ongelmat, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto",4181730
+1411,"Sosiaaliset ongelmat, Katetrointi/intubointi/laajentaminen",4181730
+1412,"Sosiaaliset ongelmat, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)",4181730
+1413,"Sosiaaliset ongelmat, Paikallinen lääkeaineinjektio",4181730
+1414,"Sosiaaliset ongelmat, Sidos/kompressi tamponointi",4181730
+1415,"Sosiaaliset ongelmat, Fysikaalinen hoito /kuntoutus",4181730
+1416,"Sosiaaliset ongelmat, Terapeuttinen neuvonta/kuuntelu",4181730
+1417,"Sosiaaliset ongelmat, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia",4181730
+1418,"Sosiaaliset ongelmat, Tutkimustulosten kuuleminen",4181730
+1419,"Sosiaaliset ongelmat, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta",4181730
+1420,"Sosiaaliset ongelmat, Hallinnollinen toimenpide",4181730
+1421,"Sosiaaliset ongelmat, Muu seurantakäynti",4181730
+1422,"Sosiaaliset ongelmat, Hoidonantajan käynnistämä tapahtuma",4181730
+1423,"Sosiaaliset ongelmat, Muun henkilön käynnistämä tapahtuma",4181730
+1424,"Sosiaaliset ongelmat, Lähete muulle perusterveydenhuollon ammattihenkilölle",4181730
+1425,"Sosiaaliset ongelmat, Lähete erikoislääkärille/sairaalaan",4181730
+1426,"Sosiaaliset ongelmat, Muu lähete",4181730
+1427,"Sosiaaliset ongelmat, Muu käynnin syy",4181730
+1428,ALLERGIA / ALLERGINEN REAKTIO NUD,4181730
+1429,VAUVAN VATSAKIVUT,4181730
+1430,ITKUINEN VAUVA,4181730
+1431,MUUT VAUVOJEN YLEISOIREET,4181730
+1432,MUUT IMUSOLMUKKEIDEN OIREET,4181730
+1433,SELITTÄMÄTÖN POIKKEAVUUS VERIKOKEESSA,4181730
+1434,MUU HEMATOLOGINEN POIKKEAVUUS,4181730
+1435,MADOT / KIHOMADOT / MUUT LOISET,4181730
+1436,KAINALON OIREET / VAIVAT,4181730
+1437,LIHASJÄNNITYSPÄÄNSÄRKY,4181730
+1438,YLIAKTIIVINEN / HYPER- KINEETTINEN LAPSI,4181730
+1439,NIELURISOJEN OIRE / VAIVA,4181730
+1440,HENGITYSELINTEN TUBERKULOOSI,4181730
+1441,KROON. KEUHKOPUTKTUL / BRONKIEKTASIAT,4181730
+1442,KEUHKOPUSSIN (PLEURAN) NESTEKERTYMÄ NUD,4181730
+1443,ANOREXIA NERVOSA / BULIMIA,4181730
+1444,KILPIRAUHASEN KYHMY,4181730
+1445,MUNUAISPER SOKERI- VIRTSAISUUS,4181730
+1446,MUU RINT OIRE / VAIVA RASK AIKANA,4181730
+1447,MUUT RASKAUT LIITTYMÄTTÖMÄT TILAT,4181730

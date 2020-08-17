@@ -1,0 +1,530 @@
+---
+title: "ICD10fi source vocabulary"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# Document variables 
+N_TOPS <- 10
+
+library(tidyverse)
+library(lubridate)
+library(scales)
+
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+```
+
+## Import Vocabulary
+The list of the icd10fi codes have been downloaded from the official source:  [kodistopalvelu](https://91.202.112.142/codeserver/pages/publication-view-page.xhtml?distributionKey=9395&versionKey=58&returnLink=fromVersionPublicationList)(7.5.2020). 
+
+```{r}
+icd10fi_source <- read_delim("./58_1471433699473.txt", ";", 
+                             locale = locale(encoding = 'ISO-8859-1'),
+                             col_types = cols( .default = col_character() )
+)
+                             
+icd10fi_source <- icd10fi_source %>% 
+  mutate(code = CodeId, 
+         name_fi = LongName, name_en = `A:Long_name`, name_se = `A:Långt_namn`,  
+         valid_start_date = BeginningDate, valid_end_date = ExpiringDate,
+         code1=`A:Koodi1`, code2=`A:Koodi2`, connector_mark=`A:Yhdistelymerkki`
+         ) %>% 
+  mutate_at(vars(valid_start_date, valid_end_date), dmy)
+```
+
+This table contains all the single codes, some composed-codes, and classification. The last only used for hierarchy and not diagnose. 
+In addition, the table also contains the rules to generated other valid composed-codes (in column `A:Huom`).
+
+ 
+Table describes a total of  `r number(icd10fi_source %>% nrow)` codes distributed as follow: 
+
+```{r}
+
+icd10fi_source <- icd10fi_source %>% 
+  mutate(code_class = case_when(
+    is.na(connector_mark) & !is.na(code2) ~ "classification", 
+    !is.na(code2) ~ "2 code", 
+    TRUE ~ "1 code"
+  )
+)
+
+icd10fi_source %>%  count(code_class, sort = T)
+```
+
+We wont be using the classigfication codes 
+```{r}
+icd10fi_source <- icd10fi_source %>% filter(code_class != "classification")
+```
+
+
+
+## Traslation to English 
+All codes come with the name in Finnish, in Swedish, and many, but not all, also in English. 
+For these missing we used Google-translator. 
+
+- `THL`: concept name in English already exists in the source table. 
+- `Google`: translated using Google-translator API
+
+
+```{r}
+# Traslate missing using GT
+
+#gl_auth(r"(C:\Users\javier\AppData\Local\R\keys\traslater-e7e9c4dc6948.json)")
+#
+# icd10fi_source_google_tralations <- icd10fi_source %>%# head(10) %>% 
+#   mutate(name_en_source = if_else(!is.na(name_en), "THL",  "Google")) %>% 
+#   mutate(name_en = if_else(is.na(name_en), gl_translate(name_fi, source = "fi", target = "en")$translatedText, name_en ))
+#   select(code, name_en_source, name_en )
+#
+# write_csv(icd10fi_source_google_tralations, "icd10fi_source_google_tralations.csv" )
+
+
+icd10fi_source_google_tralations <- read_csv("./icd10fi_source_google_tralations.csv",
+  col_types = cols( .default = col_character() )
+)
+
+icd10fi_source <- left_join(
+  icd10fi_source %>%  select(-name_en), 
+  icd10fi_source_google_tralations, 
+  by="code"
+)
+
+```
+
+
+
+```{r}
+icd10fi_source %>% count(name_en_source, sort = T)
+```
+
+
+## Extending composed-codes
+We generate new composed-codes based on the "1 code" codes that contain generation rules in column `A:Huom`. 
+This process is detailed in [README.Rmd](README.Rmd).
+
+#### Parse descritions into regex rules 
+Get codes with a described expansion in `ALONG:Huom.`
+
+```{r}
+icd10fi_expansion_description <- icd10fi_source %>% 
+  filter(!is.na(`A:Yhdistelymerkki`)) %>% 
+  filter(!str_detect(CodeId,"[:digit:]$")) %>% #dont end with mark
+  filter(str_detect(`ALONG:Huom.`, "[:upper:][:digit:][:digit:]")) %>% 
+  filter(str_detect(`ALONG:Huom.`, "tiologi")) %>% 
+  arrange(`ALONG:Huom.`) %>% 
+  select(CodeId,`ALONG:Huom.`) 
+
+icd10fi_expansion_description %>% head(N_TOPS)
+```
+
+There are 2 types of expansion: 
+- Added single code "Etiologiseksi koodiksi valitaan Xxx.x"
+- To chose from a chapter/group "Etiologinen koodi valitaan ryhmistä"
+
+
+#### Expand one code addition
+Parse description in Huom to CodeId2
+```{r}
+#code
+icd10fi_extended_by_one_code <- 
+icd10fi_expansion_description %>% filter(str_detect(`ALONG:Huom.`, "koodik") & !str_detect(`ALONG:Huom.`, "Lisäksi")) %>% 
+ mutate(group_text = str_extract(`ALONG:Huom.`, "[:upper:][:digit:][:digit:].*")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\s-\\s.*", "\\1")) %>% 
+  # tai to , 
+  mutate_at(vars(group_text), str_replace_all,"\\stai\\s", "|") %>% 
+  #convert to regex
+  mutate(group_reg = str_c("^", str_replace_all(group_text,"\\|", "|^")))
+```
+
+#### Expand by class/chapter/group
+```{r}
+range_to_regex <- function(match){
+  range <- str_extract_all(match, "[:digit:][:digit:]") %>% unlist() %>% as.integer()
+  match <- range[1]:range[2] %>% as.character() %>% if_else(nchar(.)==1, str_c("0",.),.) %>% str_c(collapse = "|")
+  return(str_c("(",match,")"))
+}
+
+#group
+icd10fi_extended_by_group <- 
+icd10fi_expansion_description %>% filter(str_detect(`ALONG:Huom.`, "luokasta|luvusta|ryhmistä|ryhmästä|rymistä")) %>% 
+  #extract codes
+  mutate(group_text = str_extract(`ALONG:Huom.`, "[:upper:][:digit:][:digit:].*")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\s-\\s.*", "\\1")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\.\\s.*", "\\1")) %>% 
+  mutate(group_text = str_replace(group_text, "(.*)\\.\\s.*", "\\1")) %>% 
+  #extract negations
+  mutate(group_text_ei = str_extract(group_text, "\\(ei.*\\)")) %>% 
+  mutate(group_text = str_remove(group_text, "\\s\\(ei.*\\)")) %>% 
+  mutate(group_text_ei = str_replace(group_text_ei, "\\(ei\\s(.*)\\)", "\\1")) %>% 
+  # tai to , 
+  mutate_at(vars(group_text, group_text_ei), str_replace_all, "\\stai\\sryhmistä\\s|\\stai\\sryhmästä\\s|,\\s|\\stai\\s", "|") %>%
+  # format as regex
+  mutate(group_reg=group_text, group_reg_ei=group_text_ei) %>% 
+  mutate(group_reg = str_replace(group_reg, "C00-D", "C00-C99\\|D00-D")) %>% 
+  mutate(group_reg = str_replace(group_reg, "A([:digit:][:digit:])-B", "A\\1-A99\\|B00-B")) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "-[:upper:]", "-" ) %>% 
+  #mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "([:digit:][:digit:]-[:digit:][:digit:])", "\\[\\1\\]" ) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), str_replace_all, "\\|", "|^" ) %>% 
+  mutate_at(vars(group_reg,group_reg_ei), ~{str_c("^",.)} ) %>% 
+  mutate(group_reg = str_replace_all(group_reg, "[:digit:][:digit:]-[:digit:][:digit:]", range_to_regex)) %>% 
+  mutate(group_reg_ei = str_replace_all(group_reg_ei, "50-53", "(50|51|52|53)"))%>% 
+  #extract merkki
+  mutate(group_reg_4merkki = str_extract(`ALONG:Huom.`, "(\\.[:digit:])($|\\.$)")) %>% 
+  mutate(group_reg_4merkki = str_replace(group_reg_4merkki, "\\.$", "")) %>% 
+  mutate(group_reg_4merkki = str_c("\\", group_reg_4merkki) ) 
+
+  
+  
+  #icd10fi_extended_by_group %>% select(group_text, group_reg, group_reg_ei, group_reg_4merkki) %>% print(n=300)
+
+```
+
+Expand rules for  `H36.00*	Etiologinen koodi valitaan tässä ryhmässä ryhmistä E10-E14. Neljäs merkki on .3`
+
+```{r}
+a<-icd10fi_source %>% filter(ParentId == "H36*") %>% filter(is.na(`A:Koodi2`)) %>%  select(CodeId)
+b <- icd10fi_extended_by_group %>% filter(CodeId == "H36.00*")
+b$CodeId[1] = a
+b <- b %>%  unnest(CodeId)
+
+icd10fi_extended_by_group <- bind_rows(icd10fi_extended_by_group, b) %>%  distinct()
+
+```
+
+```{r}
+# join rules 
+icd10fi_extended_rules <- bind_rows(icd10fi_extended_by_one_code, icd10fi_extended_by_group)
+
+```
+
+
+#### apply regex rules 
+
+Extend leaves only 
+```{r}
+icd10fi_leaves <- icd10fi_source %>%
+  filter(`A:Lehtisolmu`=="T" & is.na(`A:Koodi2`)) %>% 
+  select(CodeId)
+  
+```
+
+apply rules 
+```{r}
+icd10fi_extended<- icd10fi_extended_rules %>% #slice(1)%>% 
+  mutate(code2 = pmap(list(group_reg, group_reg_ei, group_reg_4merkki), 
+                      function(group_reg, group_reg_ei, group_reg_4merkki){
+                        icd10fi_leaves %>% select(CodeId) %>%  
+                          filter(str_detect(CodeId, group_reg)) %>% 
+                          filter(is.na(group_reg_ei)      | !str_detect(CodeId, group_reg_ei)) %>% 
+                          filter(is.na(group_reg_4merkki) |  str_detect(CodeId, group_reg_4merkki)) %>% 
+                          rename(CodeId2 = CodeId)
+  })) %>% unnest(code2) 
+  
+icd10fi_extended <- icd10fi_extended %>% 
+  rename(CodeId1 = CodeId) %>% 
+  mutate(code1 = str_replace(CodeId1, "\\+|\\*|\\#|\\&", "")) %>% 
+  mutate(code2 = str_replace(CodeId2,"\\+|\\*|\\#|\\&", "")) %>% 
+  mutate(CodeId = str_c(CodeId1, code2)) %>% 
+  select(CodeId, CodeId1, CodeId2, code1, code2) %>%  
+  distinct(CodeId,.keep_all = T)
+  
+icd10fi_extended %>% head(N_TOPS)
+#icd10fi_extended_by_group %>%filter( str_detect(CodeId, "N08.3")) %>% view
+
+```
+
+
+How many already exists ?
+```{r}
+new_icd10fi_extended <- left_join(icd10fi_extended, 
+          icd10fi_source %>% select(CodeId) %>%  mutate(is=TRUE), 
+          by="CodeId"
+) %>%
+  filter(is.na(is))
+
+nrow(icd10fi_extended)-nrow(new_icd10fi_extended)
+```
+
+
+
+#### Append the new codes to the standard
+```{r}
+# lets set here the concept_id 
+icd10fi_source <- icd10fi_source %>% 
+  mutate(concept_id = 1:nrow(.))
+
+
+# get one code source codes 
+icd10fi_source_1_code <- icd10fi_source %>% filter(code_class=="1 code") %>%
+  select(concept_id, CodeId, name_fi, name_en, name_se, name_en_source, BeginningDate, valid_start_date, valid_end_date)
+```
+
+
+```{r}
+# join code1 info
+icd10_extended_tmp1 <- left_join(
+  new_icd10fi_extended, 
+  icd10fi_source_1_code %>% rename_all(~str_c("code1_",.)) %>% rename(CodeId1=code1_CodeId), 
+  by="CodeId1"
+)
+
+# join code2 info
+icd10_extended_tmp2 <- left_join(
+  icd10_extended_tmp1, 
+  icd10fi_source_1_code %>% rename_all(~str_c("code2_",.)) %>% rename(CodeId2=code2_CodeId), 
+  by="CodeId2"
+)
+
+```
+
+
+```{r}
+#merge cols 
+icd10_extended <- icd10_extended_tmp2 %>% mutate(
+    #names
+    name_fi = str_c(code1_name_fi, " LIITTYVÄ  ",code2_name_fi),
+    name_en = str_c(code1_name_en, " RELATED-TO  ",code2_name_en),
+    name_se = str_c(code1_name_se, " RELATERAD-TILL  ",code2_name_se),
+    name_en_source = case_when(
+      code1_name_en_source == "THL"    & code2_name_en_source == "THL"    ~ "THL",
+      code1_name_en_source == "THL"    & code2_name_en_source == "Google" ~ "THL+Google",
+      code1_name_en_source == "Google" & code2_name_en_source == "THL"    ~ "THL+Google",
+      code1_name_en_source == "Google" & code2_name_en_source == "Google" ~ "Google"
+    ),
+    # dates 
+    valid_start_date = pmax(code1_valid_start_date, code2_valid_start_date),
+    valid_end_date   = pmin(code1_valid_end_date,   code2_valid_end_date),
+    #
+    code_class = "2 code generated", 
+    connector_mark = "*", 
+    concept_id = (1:nrow(.))+max(icd10fi_source$concept_id)
+  ) %>% 
+  #rename(code=CodeId) %>% 
+  select(concept_id, CodeId, name_fi, name_en, name_se, name_en_source,
+         valid_start_date, valid_end_date,   
+         code_class, CodeId1, CodeId2, connector_mark, 
+         code1_concept_id, code2_concept_id)
+
+
+#join 
+icd10fi_source_extended <- bind_rows(icd10fi_source, icd10_extended)
+```
+
+For the new codes, name is given as both source code's names joined by "LIITTYVÄ", "RELATERAD-TILL", and "RELATED-TO" respectively for name_fi, name_se, and name_en. 
+
+For the validity dates, the latest is chose for valid_start_date and the earliest for valid_end_date. 
+
+For the how the English name was translated: `THL` if both were translated by THL, `Google` if both were translated by google-translator, and `THL+Google` if both.  
+
+```{r}
+icd10fi_source_extended %>%  count(name_en_source, sort = T)
+```
+
+
+
+## Formating source vocabulary to OMOP
+
+#### Create VOCABULARY table
+```{r}
+icd10fi_vocabulaly <- tibble(
+  vocabulary_id = "ICD10fi", 
+  vocabulary_name = "ICD10fi Finnish modification",
+  vocabulary_reference = "https://91.202.112.142/codeserver/pages/publication-view-page.xhtml?distributionKey=9395&versionKey=58&returnLink=fromVersionPublicationList", 
+  vocabulary_version = "", 
+  vocabulary_concept_id = 1
+)
+
+icd10fi_vocabulary_concept <- tibble(
+   concept_id = 1,                                                                
+   concept_name = "ICD10fi Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Vocabulary",                                                             
+   concept_class_id = "Vocabulary",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+write_csv(icd10fi_vocabulaly, "./VOCABULARY_ICD10fi.csv")
+
+icd10fi_vocabulaly
+```
+
+#### Create CONCEPT_CLASS table
+```{r}
+icd10fi_concept_class <-
+  bind_rows(
+    tibble(
+      concept_class_id = "ICD10fi Hierarchy", # TODO set to the omop code for this 
+      concept_class_name = "ICD10fi Hierarchy",
+      concept_class_concept_id = 2
+    ),
+    tibble(
+      concept_class_id = "ICD10fi code", 
+      concept_class_name = "ICD10fi code",
+      concept_class_concept_id = 3
+    ),
+    tibble(
+      concept_class_id = "ICD10fi 2 code", 
+      concept_class_name = "ICD10fi Finnish Modification composed code",
+      concept_class_concept_id = 5
+    ),
+    tibble(
+      concept_class_id = "ICD10fi 2 code [autogen]", 
+      concept_class_name = "ICD10fi Finnish Modification composed code [auto generated]",
+      concept_class_concept_id = 6
+    ),
+)
+
+icd10fi_concept_class_concept <- tibble(
+   #concept_id = 1,                                                                
+   #concept_name = "ICD10fi Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Concept Class",                                                             
+   concept_class_id = "Concept Class",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+icd10fi_concept_class_concept <- 
+  bind_cols(
+    icd10fi_concept_class %>% 
+      rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
+      select(concept_id, concept_name), 
+    icd10fi_concept_class_concept
+  )
+
+
+write_csv(icd10fi_concept_class, "./CONCEPT_CLASS_ICD10fi.csv")
+
+icd10fi_concept_class
+```
+
+
+#### Create CONCEPT table 
+
+At the moment `domain_id` is "Condition" for all although several are not procedures. 
+
+TODO: recalculate `domain_id` based on the mapping 
+
+```{r}
+
+# add concept_id
+icd10fi_source_extended <- icd10fi_source_extended %>% 
+  mutate(concept_id = concept_id+6)
+
+
+icd10fi_concept <- icd10fi_source_extended %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_name = name_en,
+    domain_id = "Condition", # at the moment
+    vocabulary_id = "ICD10fi", 
+    concept_class_id = case_when(
+      code_class=="2 code generated" ~ "ICD10fi 2 code [autogen]", 
+      code_class=="2 code" ~ "ICD10fi 2 code",
+      code_class=="1 code" & HierarchyLevel<=3 ~ "ICD10fi Hierarchy",
+      code_class=="1 code" & HierarchyLevel>3 ~ "ICD10fi 1 code"
+    ), 
+    standard_concept = as.character(NA), 
+    concept_code = CodeId, 
+    valid_start_date = valid_start_date, 
+    valid_end_date = valid_end_date, 
+    tmp_code1_concept_id = code1_concept_id, # keep for mapping
+    tmp_code2_concept_id = code2_concept_id, # keep for mapping
+    tmp_name_fi = name_fi # keep for USAGI
+  ) 
+    
+        
+# add  concepts for domain and concept_class
+icd10fi_concept <- bind_rows(
+  icd10fi_vocabulary_concept, 
+  icd10fi_concept_class_concept, 
+  icd10fi_concept
+)
+
+
+write_csv(icd10fi_concept, "./CONCEPT_ICD10fi.csv")
+
+icd10fi_concept %>% head(N_TOPS)
+```
+
+
+#### Create CONCEPT_SYNONYM table 
+- 4181730 # Finnish language
+- 4175777 # Swedish language
+
+TOASK: should we add the abbreviation and short_name as synonyms ??
+
+
+```{r} 
+icd10fi_concept_synomim <-
+bind_rows( 
+  # Finnish
+  icd10fi_source_extended %>% 
+  filter(!is.na(name_fi)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_fi, 
+    language_concept_id = 4181730
+  ),
+  # Swedish 
+  icd10fi_source_extended %>% 
+  filter(!is.na(name_se)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_se, 
+    language_concept_id = 4175777
+  )
+)
+
+
+write_csv(icd10fi_concept_synomim, "./CONCEPT_SYNONYM_ICD10fi.csv")
+
+icd10fi_concept_synomim %>% head(N_TOPS)
+
+```
+
+Summary of codes added in each language: 
+
+```{r}
+
+icd10fi_source_extended %>%
+  summarise(n_codes = n(), n_witn_name_fi = sum(!is.na(name_fi)), n_witn_name_se = sum(!is.na(name_se)))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
