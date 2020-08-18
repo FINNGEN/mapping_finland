@@ -13,7 +13,8 @@ ATC
 
 # Intro
 
-TODO:
+# TODO
+ATC, VNRO and KELA reimbursement codes are interrelated.
 
 # Formating source vocabulary to OMOP
 
