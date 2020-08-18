@@ -17,7 +17,7 @@ database_coverage_md <- function(vocabulary_name, concept_table, mapsto_table, f
   # build table of codes mapping status
   mapping_status <- left_join(
     concept_table %>% select(concept_id, concept_code, concept_name), 
-    mapsto_table %>% distinct(concept_id_1, temp_mapping_type) %>% rename(concept_id = concept_id_1), 
+    mapsto_table %>% distinct(concept_id_1, tmp_mapping_type) %>% rename(concept_id = concept_id_1), 
     by="concept_id"
   )
   
@@ -29,24 +29,55 @@ database_coverage_md <- function(vocabulary_name, concept_table, mapsto_table, f
     
     # get only preset database info 
     db_freq <- freq_table %>% 
-      select(code, str_c("freq_",db_name)) %>% 
+      select(starts_with("code"), str_c("freq_",db_name)) %>% 
       rename(freq = str_c("freq_",db_name)) %>% 
       filter(!is.na(freq))
     
     n_total_envents <- sum(db_freq$freq)
     
     # join mapping status with freq 
-    db_mapping_status <- left_join(
-      db_freq %>% rename(concept_code=code),
-      mapping_status,
-      by = "concept_code") %>%
-      mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
-      arrange(-freq)
+    if(vocabulary_name=="ICD10fi"){ # special case for ICD10fi
+      db_mapping_status <- left_join(
+        db_freq,
+        mapping_status %>% 
+          mutate(
+            code1 = str_extract(concept_code, "^[:alnum:][:alnum:][:alnum:]\\.?[:alnum:]?[:alnum:]?"),
+            code1 = str_replace(code1,"\\.",""),
+            code2 = str_extract(concept_code, "(\\+|\\*|\\#|\\&)[:alnum:][:alnum:][:alnum:]\\.?[:alnum:]?[:alnum:]?"),
+            code2 = str_replace(code2,"\\+|\\*|\\#|\\&",""),
+            code2 = str_replace(code2,"\\.","")
+          ),
+        by = c("code1","code2") 
+      ) %>%
+        mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
+        arrange(-freq)
+      
+      db_mapping_status <- db_mapping_status %>% 
+        mutate(concept_id = case_when(
+          #is.na(concept_id) & is.na(code1) & !is.na(code2) ~ 1,
+          #is.na(concept_id) & !is.na(code1) & is.na(code2) ~ 1,
+          is.na(concept_id) & code1 == code2 ~ 1,
+          TRUE ~ concept_id
+          )
+        )
+      
+      db_missing <- db_mapping_status %>%
+        filter(is.na(concept_id)) %>% 
+        select(code1, code2, freq, freq_per)
+    }else{
+      db_mapping_status <- left_join(
+        db_freq %>% rename(concept_code=code),
+        mapping_status,
+        by = "concept_code") %>%
+        mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
+        arrange(-freq)
+      
+      db_missing <- db_mapping_status %>%
+        filter(is.na(concept_id)) %>% 
+        select(concept_code, freq, freq_per)
+    }
     
     #save not found codes
-    db_missing <- db_mapping_status %>%
-      filter(is.na(concept_id)) %>% 
-      select(concept_code, freq, freq_per)
     save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_", vocabulary_name,".csv")
     write_csv(db_missing, save_db_missing_path )
     
@@ -54,7 +85,7 @@ database_coverage_md <- function(vocabulary_name, concept_table, mapsto_table, f
     db_status <- db_mapping_status %>% 
       mutate(status = case_when( 
         is.na(concept_id) ~ "not_found",  
-        is.na(temp_mapping_type) ~ "not_mapped", 
+        is.na(tmp_mapping_type) ~ "not_mapped", 
         TRUE ~ "mapped"
       )
       ) %>% 

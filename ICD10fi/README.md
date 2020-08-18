@@ -4,12 +4,9 @@ ICD10fi
   - [Intro](#intro)
   - [Formating source vocabulary to
     OMOP](#formating-source-vocabulary-to-omop)
-      - [English traslation](#english-traslation)
-      - [Extending composed-codes](#extending-composed-codes)
   - [Mapping the source vocabulary to the standard
     vocabularies](#mapping-the-source-vocabulary-to-the-standard-vocabularies)
       - [Progess in number of codes](#progess-in-number-of-codes)
-      - [Progess in number of events](#progess-in-number-of-events)
   - [Assessing coverage of databases](#assessing-coverage-of-databases)
       - [Database finngen](#database-finngen)
       - [Database tays](#database-tays)
@@ -55,60 +52,18 @@ classification. The last only used for hierarchy and not diagnose. In
 addition, the table also contains the rules to generated other valid
 composed-codes (in column `A:Huom`).
 
-Table describes a total of 14 681 codes distributed as follow:
-
-<div class="kable-table">
-
-| code\_class    |     n |
-| :------------- | ----: |
-| 1 code         | 13346 |
-| 2 code         |  1037 |
-| classification |   298 |
-
-</div>
-
-## English traslation
-
-All codes come with the name in Finnish, in Swedish, and many, but not
-all, also in English. For these missing we used Google-translator.
-
-  - `THL`: concept name in English already exists in the source table.
-  - `Google`: translated using Google-translator API
-
-<div class="kable-table">
-
-| name\_en\_source |     n |
-| :--------------- | ----: |
-| THL              | 12357 |
-| Google           |  2324 |
-
-</div>
-
-## Extending composed-codes
-
 We generate new composed-codes based on the “1 code” codes that contain
-generation rules in column `A:Huom`. This process is detailed in
-[1\_source\_vocabulary/generate\_missing\_composed\_codes.md](1_source_vocabulary/generate_missing_composed_codes.md).
-
-This results in 54 099 new codes:
+generation rules in column `A:Huom`.
 
 <div class="kable-table">
 
-| code\_class      |     n |
+| tmp\_code\_class |     n |
 | :--------------- | ----: |
-| 2 code generated | 54099 |
 | 1 code           | 13346 |
 | 2 code           |  1037 |
-| classification   |   298 |
+| 2 code generated | 54099 |
 
 </div>
-
-For the new codes, name is given as both source code’s names joined by
-“LIITTYVÄ”, “RELATERAD-TILL”, and “RELATED-TO” respectively for
-name\_fi, name\_se, and name\_en.
-
-For the validity dates, the latest is chose for valid\_start\_date and
-the earliest for valid\_end\_date.
 
 For the how the English name was translated: `THL` if both were
 translated by THL, `Google` if both were translated by
@@ -116,13 +71,16 @@ google-translator, and `THL+Google` if both.
 
 <div class="kable-table">
 
-| name\_en\_source |     n |
-| :--------------- | ----: |
-| THL              | 51763 |
-| THL+Google       | 14635 |
-| Google           |  2382 |
+| tmp\_name\_en\_source |     n |
+| :-------------------- | ----: |
+| THL                   | 51484 |
+| THL+Google            | 14635 |
+| Google                |  2363 |
 
 </div>
+
+Details in
+[./1\_source\_vocabulary/README.md](./1_source_vocabulary/README.md)
 
 # Mapping the source vocabulary to the standard vocabularies
 
@@ -133,87 +91,47 @@ in the ICD10fi table have the same name\_fi. We made sure that if any of
 these was mapped to ICD10who, the rest mapped to the same code `ICD10who
 name_fi`. These ICD10fi that didn’t match ICD10who were mapped to a
 standard vocabulary using USAGI by
-[@helmisuominen](github.com/helmisuominen) (`APPROVED` or `UNCHECKED`).
-The “2 code generated” are mapped to the mappings of both composing
-codes (`mappable` if both codes have a mapping, `missing one` if not).
+[@helmisuominen](github.com/helmisuominen) (`USAGI`). The “2 code
+generated” are mapped to the mappings of both composing codes (`fully
+mapped` if both codes have a mapping, `missing one` if not).
 
 Following table summaries the codes by mapping type and code class.
 
 <div class="kable-table">
 
-| code\_class      | Mapping\_type              |     n |
+| tmp\_code\_class | tmp\_mapping\_type         |     n |
 | :--------------- | :------------------------- | ----: |
 | 1 code           | ICD10who code and name\_en | 10676 |
-| 1 code           | UNCHECKED                  |  1813 |
-| 1 code           | APPROVED                   |   842 |
 | 1 code           | ICD10who name\_fi          |    15 |
-| 2 code           | UNCHECKED                  |   878 |
+| 1 code           | USAGI                      |   842 |
 | 2 code           | ICD10who name\_fi          |    95 |
-| 2 code           | APPROVED                   |    64 |
-| 2 code generated | mappeable                  | 44827 |
-| 2 code generated | missing one                |  9272 |
-| classification   | NA                         |   298 |
+| 2 code           | USAGI                      |    64 |
+| 2 code generated | fully mapped               | 31150 |
+| 2 code generated | missing one                | 19880 |
 
 </div>
 
 This process is detailed in
-[2\_mapping\_to\_standard/mapping\_ICD10fi.md](2_mapping_to_standard/mapping_ICD10fi.md)
+[2\_mapping\_to\_standard/README.md](2_mapping_to_standard/README.md)
 
 ## Progess in number of codes
 
-From 68 482 codes 56 519 have been approved.
+From 68 482 codes 62 722 have been approved.
 
-This makes 83% of codes mapped.
-
-<div class="kable-table">
-
-| mapped |     n |
-| :----- | ----: |
-| TRUE   | 56519 |
-| FALSE  | 11963 |
-
-</div>
-
-## Progess in number of events
-
-Accepted codes covers 98.96% of the total number of events in the
-combined databases.
-
-Accepted codes covers all codes with more than 50 040 events in the
-combined databases.
-
-Top10 of the unchecked events sort by number of events :
-
-<div class="kable-table">
-
-| code   | code1 | code2 | freq\_total | code\_class | name\_en                                                    | name\_fi                                                                   |
-| :----- | :---- | :---- | ----------: | :---------- | :---------------------------------------------------------- | :------------------------------------------------------------------------- |
-| K51.5  | K515  | NA    |       50040 | 1 code      | Mucosal proctocolitis                                       | Peräsuolen ja koolonin limakalvotulehdus                                   |
-| C91.1  | C911  | NA    |       41551 | 1 code      | Chronic lymphocytic leukaemia                               | Pitkäaikainen lymfosyyttileukemia                                          |
-| M47.82 | M4782 | NA    |       18041 | 1 code      | Thoracic spondylosis without myelopathy or radiculopathy    | Lanne-ristirangan spondyloosi ilman selkäytimen tai hermojuurten sairautta |
-| T36\#  | T36   | NA    |       17584 | 1 code      | Poisoning by medicine                                       | Lääkkeen aiheuttama myrkytys                                               |
-| C92.1  | C921  | NA    |       13344 | 1 code      | Chronic myeloid leukaemia                                   | Pitkäaikainen myelooinen leukemia                                          |
-| C30.0& | C300  | NA    |        9434 | 1 code      | Malignant neoplasm of nasal cavity and middle ear           | Nenäontelon syöpä                                                          |
-| M47.80 | M4780 | NA    |        6230 | 1 code      | Cervical spondylosis without myelopathy or radiculopathy    | Kaularangan spondyloosi ilman selkäytimen tai hermojuurten sairautta       |
-| C81.0& | C810  | NA    |        3931 | 1 code      | Lymphocytic predominance                                    | Runsaslymfosyyttinen Hodgkinin tauti                                       |
-| H54.2  | H542  | NA    |        2093 | 1 code      | Low vision, both eyes                                       | Molempien silmien heikkonäköisyys                                          |
-| M47.81 | M4781 | NA    |         987 | 1 code      | Lumbosacral spondylosis without myelopathy or radiculopathy | Rintarangan spondyloosi ilman selkäytimen tai hermojuurten sairautta       |
-
-</div>
-
-TOFIX: something happened. 16 codes with high freq went somehow out of
-USAGI. Because, Helmi mapped all these below 400 freq \!\!
+This makes 92% of codes approved.
 
 # Assessing coverage of databases
 
 ## Database finngen
 
-**How many codes labeled as icd10fi in finngen are not in the icd10fi
+**How many codes labeled as ICD10fi in finngen are not in the atc
 standard?**
 
-There are 344 codes not found in the standard
+There are 911 codes not found in the standard
 
-Top10 sort by freq:
+Top10 sorted by freq:
+
+<div class="kable-table">
 
 | code1    | code2 | freq | freq\_per |
 | :------- | :---- | ---: | :-------- |
@@ -228,25 +146,33 @@ Top10 sort by freq:
 | M073L405 | NA    |  640 | 0.004%    |
 | N0832    | E102  |  605 | 0.003%    |
 
-The full list can be found in
-[./3\_freq\_of\_source\_codes/finngen\_not\_in\_icd10fi.csv](./3_freq_of_source_codes/finngen_not_in_icd10fi.csv)
+</div>
 
-**Status of the icd10fi codes in finngen**
+The full list can be found in
+[./3\_freq\_of\_source\_codes/finngen\_not\_in\_ICD10fi.csv](./3_freq_of_source_codes/finngen_not_in_ICD10fi.csv)
+
+**Status of the ICD10fi codes infinngen**
+
+<div class="kable-table">
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
-| mapped      |     7801 | 86.842%    |  16924260 | 98.842%     |
-| not\_mapped |      838 | 9.329%     |    162547 | 0.949%      |
-| not\_found  |      344 | 3.829%     |     35777 | 0.209%      |
+| mapped      |     7803 | 63.070%    |  16924333 | 96.356%     |
+| not\_mapped |     3658 | 29.567%    |    582380 | 3.316%      |
+| not\_found  |      911 | 7.363%     |     57676 | 0.328%      |
+
+</div>
 
 ## Database tays
 
-**How many codes labeled as icd10fi in tays are not in the icd10fi
+**How many codes labeled as ICD10fi in tays are not in the atc
 standard?**
 
 There are 238 codes not found in the standard
 
-Top10 sort by freq:
+Top10 sorted by freq:
+
+<div class="kable-table">
 
 | code1   | code2 |   freq | freq\_per |
 | :------ | :---- | -----: | :-------- |
@@ -261,10 +187,14 @@ Top10 sort by freq:
 | E660    | NA    |     81 | 0.001%    |
 | H360    | NA    |     78 | 0.001%    |
 
-The full list can be found in
-[./3\_freq\_of\_source\_codes/tays\_not\_in\_icd10fi.csv](./3_freq_of_source_codes/tays_not_in_icd10fi.csv)
+</div>
 
-**Status of the icd10fi codes in tays**
+The full list can be found in
+[./3\_freq\_of\_source\_codes/tays\_not\_in\_ICD10fi.csv](./3_freq_of_source_codes/tays_not_in_ICD10fi.csv)
+
+**Status of the ICD10fi codes intays**
+
+<div class="kable-table">
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
@@ -272,15 +202,25 @@ The full list can be found in
 | not\_mapped |     1411 | 13.301%    |    168729 | 1.608%      |
 | not\_found  |      238 | 2.244%     |    212620 | 2.026%      |
 
+</div>
+
 # NOTES on missing codes
 
-NOTES: - Z038, E660, E890 : many are missing the last digit, should it
-be 0 ?? - K0401 : just don’t exists - F0019 G301 : not specify what can
-be include ?? **TOFIX** - H062 E050: invalid ?? “Etiologinen koodi
-valitaan ryhmästä B74” - H3603 E109 : invalid ?? In group H36\*
-“Etiologinen koodi valitaan tässä ryhmässä ryhmistäE10-E14. Neljäs
-merkki on .3” - M073L405 : should be fixed before or after in the ELT
-process
+NOTES:
+
+  - Z038, E660, E890 : many are missing the last digit, should it be 0
+    ??
+
+  - K0401 : just don’t exists
+
+  - F0019 G301 : not specify what can be include ?? **TOFIX**
+
+  - H062 E050: invalid ?? “Etiologinen koodi valitaan ryhmästä B74”
+
+  - H3603 E109 : invalid ?? In group H36\* “Etiologinen koodi valitaan
+    tässä ryhmässä ryhmistäE10-E14. Neljäs merkki on .3”
+
+  - M073L405 : should be fixed before or after in the ELT process
 
   - N0832 E102 : may be valid. In N08.3\* “Etiologinen koodi valitaan
     ryhmistä E10-E14.Neljänneksi merkiksi tulee valita .2” do i have to
@@ -288,3 +228,5 @@ process
 
   - T36 N05BA: code2 is atc code which is correct but supose to be in
     code3 \!\!
+
+  - many code1=NA what to do ??

@@ -1,4 +1,4 @@
-code,name_en,concept_name,English_name_match_level
+concept_code,concept_name,concept_name_who,English_name_match_level
 A02.2,Localized salmonella infection,Localized salmonella infections,1
 A05,"Other bacterial foodborn intoxications, not elsewhere classified","Other bacterial foodborne intoxications, not elsewhere classified",1
 A24,Ghanders and melioidosis,Glanders and melioidosis,1
@@ -260,6 +260,8 @@ R83.7,Abnormal findings in cerebrospinal fluid abnormal histological findings,"A
 R83.8,Abnormal findings in cerebrospinal fluid other abnormal findings,"Abnormal findings in cerebrospinal fluid, Other abnormal findings",2
 R83.9,Abnormal findings in cerebrospinal fluid unspecified abnormal finding,"Abnormal findings in cerebrospinal fluid, Unspecified abnormal finding",2
 S79,Other and specified injuries of hip and thigh,Other and unspecified injuries of hip and thigh,2
+W22,Striking against or struck by other objects,Striking against or struck by other object(s),2
+W24,"Contact with lifting and transmission devices, not elsewhere classified","Contact with lifting and transmission device(s), not elsewhere classified",2
 V01.0,Pedestrian injured in collision with pedal cycle nontraffic accident,"Pedestrian injured in collision with pedal cycle, Nontraffic accident",2
 V01.1,Pedestrian injured in collision with pedal cycle traffic accident,"Pedestrian injured in collision with pedal cycle, Traffic accident",2
 V01.9,Pedestrian injured in collision with pedal cycle unspecified whether traffic or nontraffic accident,"Pedestrian injured in collision with pedal cycle, Unspecified whether traffic or nontraffic accident",2
@@ -608,7 +610,6 @@ T59.8,"Toxic effect of other specified gases, fumes and vapours","Toxic effect: 
 T59.9,"Toxic effect of gases, fumes and vapours, unspecified","Toxic effect: Gases, fumes and vapours, unspecified",4
 T60.0,Toxic effect of organophosphate and carbamate insecticides,Toxic effect: Organophosphate and carbamate insecticides,4
 T60.1,Toxic effect of halogenated insecticides,Toxic effect: Halogenated insecticides,4
-T60.2,Toxic effect of other insecticides,Toxic effect: Other insecticides,4
 T60.3,Toxic effect of herbicides and fungicides,Toxic effect: Herbicides and fungicides,4
 T60.4,Toxic effect of rodenticides,Toxic effect: Rodenticides,4
 T60.8,Toxic effect of other pesticides,Toxic effect: Other pesticides,4
@@ -654,6 +655,7 @@ M73.1*,Syphilis mucositis,Syphilitic bursitis,6
 M90.0*,Tuberculosis in the bone,Tuberculosis of bone,6
 O71.4,Obstetric high vaginal laceration alone,Obstetric high vaginal laceration,6
 Q04.6,Congenital brain cysts,Congenital cerebral cysts,6
+T75.8,Other specified effects of external causes,Other specified effects of other external causes,6
 A02.1,Salmonella septicaemia,Salmonella sepsis,7
 A22.7,Anthrax septicaemia,Anthrax sepsis,7
 A26.7,Erysipelothrix septicaemia,Erysipelothrix sepsis,7
@@ -661,7 +663,6 @@ A32.7,Listerial septicaemia,Listerial sepsis,7
 A40,Streptococcal septicaemia,Streptococcal sepsis,7
 A40.0,"Septicaemia due to streptococcus, group A","Sepsis due to streptococcus, group A",7
 A40.1,"Septicaemia due to streptococcus, group B","Sepsis due to streptococcus, group B",7
-A40.2,"Septicaemia due to streptococcus, group D","Sepsis due to streptococcus, group D",7
 A40.3,Septicaemia due to Streptococcus pneumoniae,Sepsis due to Streptococcus pneumoniae,7
 A40.8,Other streptococcal septicaemia,Other streptococcal sepsis,7
 A40.9,"Streptococcal septicaemia, unspecified","Streptococcal sepsis, unspecified",7
@@ -696,10 +697,12 @@ K43.0,"Ventral hernia with obstruction, without gangrene","Incisional hernia wit
 K43.1,Ventral hernia with gangrene,Incisional hernia with gangrene,8
 O14.0,Moderate pre-eclampsia,Mild to moderate pre-eclampsia,8
 W06,Falling out of bed,Fall involving bed,8
+J10,Influenza due to identified influenza virus,Influenza due to identified seasonal influenza virus,9
 J10.0,"Influenza with pneumonia, influenza virus identified","Influenza with pneumonia, seasonal influenza virus identified",9
 J10.8,"Influenza with other manifestations, influenza virus identified","Influenza with other manifestations, seasonal influenza virus identified",9
 L91.0,Keloid scar,Hypertrophic scar,9
 M88.88,Paget's disease of other bones,"Paget disease of other bones, other",9
+A08.1,Acute gastroenteropathy due to Norwalk agent,Acute gastroenteropathy due to Norovirus,10
 B19.0,Unspecified viral hepatitis hepatic with coma,Unspecified viral hepatitis with hepatic coma,10
 B96,Other bacterial agents as the cause of diseases classified to other chapters,Other specified bacterial agents as the cause of diseases classified to other chapters,10
 C00.8&,Malignant overlapping lesion of lip,Malignant neoplasm: Overlapping lesion of lip,10
@@ -723,7 +726,6 @@ G46.3*,Brain stem stroke syndrome (I60-I67),Brain stem stroke syndrome,10
 G46.4*,Cerebellar stroke syndrome (I60-I67),Cerebellar stroke syndrome,10
 G46.8*,Other vascular syndromes of brain in cerebrovascular diseases (I60-I67),Other vascular syndromes of brain in cerebrovascular diseases,10
 G80.8,Other infantile cerebral palsy,Other cerebral palsy,10
-J10,Influenza due to identified influenza virus,influenza due to identified seasonal influenza virus,10
 N03.2#,Long-term nephritic syndrome diffuse membranous glomerulonephritis,"Chronic nephritic syndrome, diffuse membranous glomerulonephritis",10
 N03.3#,Long-term nephritic syndrome diffuse mesangial proliferative glomerulonephritis,"Chronic nephritic syndrome, diffuse mesangial proliferative glomerulonephritis",10
 N03.5#,Long-term nephritic syndrome diffuse mesangiocapillary glomerulonephritis,"Chronic nephritic syndrome, diffuse mesangiocapillary glomerulonephritis",10
@@ -756,6 +758,7 @@ M90.7*,Fracture of bone in neoplastic disease (C00-D48+),Fracture of bone in neo
 N18,Chronic renal failure,Chronic kidney disease,11
 N18.9,"Chronic renal failure, unspecified","Chronic kidney disease, unspecified",11
 S02.80,Fracture of other head or facial bone closed,"Fractures of other skull and facial bones, closed",11
+Z03,Medical observation and evaluation for suspected diseases and conditions,"Medical observation and evaluation for suspected diseases and conditions, ruled out",11
 C92.0,Acute myeloid leukaemia,Acute myeloblastic leukaemia [AML],12
 C93.0,Acute monocytic leukaemia,Acute monoblastic/monocytic leukaemia,12
 G46.5*,Pure motor hacunar syndrome (I60-I67+),Pure motor lacunar syndrome,12
@@ -764,6 +767,7 @@ G73.1*,Eaton-Lambert syndrome,Lambert-Eaton syndrome,12
 K30,Dyspepsia,Functional dyspepsia,12
 M01.4*,Rubella joint infection,Rubella arthritis,12
 P52.2,"Intraventricular (nontraumatic) haemorrhage, grade 3, of fetus and newborn","Intraventricular (nontraumatic) haemorrhage, grade 3, and grade 4 of fetus and newborn",12
+Q39.4,Oesophageal web,Congenital oesophageal web,12
 G13.2*,"Systemic atrophy primarily affecting central nervous system in myxoedema (E00.1, E03)",Systemic atrophy primarily affecting central nervous system in myxoedema,13
 K51.5,Mucosal proctocolitis,Left sided colitis,13
 O60,Preterm labour,Preterm labour and delivery,13
@@ -815,6 +819,7 @@ Q61.2,"Polycystic kidney, adult type","Polycystic kidney, autosomal dominant",16
 S02.30,Fracture of the base of the orbit closed,"Fracture of orbital floor, closed",16
 T36#,Poisoning by medicine,Poisoning by systemic antibiotics,16
 V16,Pedal cyclist injured in collision with train or tram,Pedal cyclist injured in collision with other nonmotor vehicle,16
+B17.0,Acute delta-(super)infection of hepatitis B carrier,Acute delta-(super)infection in chronic hepatitis B,17
 D10.0,Lip,Benign neoplasm: Lip,17
 D10.1,Tongue,Benign neoplasm: Tongue,17
 D10.2&,Floor of mouth,Benign neoplasm: Floor of mouth,17
@@ -1293,7 +1298,9 @@ G95,Other Spinal Cord Diseases,Other diseases of spinal cord,20
 N03.6#,Long-term nephritic syndrome dense precipitation disease,"Chronic nephritic syndrome, dense deposit disease",20
 Q43.2,Other congenital colonic dysfunction,Other congenital functional disorders of colon,20
 S02.40,Fracture of upper jaw and / or cheekbone closed,"Fracture of malar and maxillary bones, closed",20
+T60.2,Toxic effect of other insecticides,Toxic effect: Other and unspecified insecticides,20
 W92,Exposure to intense man-made heat,Exposure to excessive heat of man-made origin,20
+X47,Accidental poisoning by and exposure to other gases and vapours,Accidental poisoning by and exposure to carbon monoxide and other gases and vapours,20
 B00.4,Herpes causing meningitis or encephalitis,Herpesviral encephalitis,21
 E28.0#,Estrogen excess,Ovarian dysfunction: Estrogen excess,21
 E28.1#,Androgen excess,Ovarian dysfunction: Androgen excess,21
@@ -1335,6 +1342,7 @@ M07.0*,Distal psoriasis arthritis,Distal interphalangeal psoriatic arthropathy,2
 M88.81,Paget's disease of the mandible,"Paget disease of other bones, shoulder region",23
 S02.61,Lower jaw body fracture,"Fracture of mandible, open",23
 Y62,Failure to perform sterile precautions during surgical or other medical treatment,Failure of sterile precautions during surgical and medical care,23
+A40.2,"Septicaemia due to streptococcus, group D","Sepsis due to streptococcus, group D and enterococcus",24
 C82,Follicular [nodular] non-Hodgkin's lymphoma,Follicular lymphoma,24
 C90.2,"Plasmacytoma, extramedullary",Extramedullary plasmacytoma,24
 C92.1,Chronic myeloid leukaemia,"Chronic myeloid leukaemia [CML], BCR/ABL-positive",24
@@ -1382,7 +1390,6 @@ G55.3*,"Nerve root and plexus compressions in other dorsopathies (M45-M46+, M48.
 H54.3,"Unqualified visual loss, both eyes","Mild or no visual impairment, binocular",29
 Q63.1,Renal association disorder,"Lobulated, fused and horseshoe kidney",29
 S02.71,Multiple fractures of the head and / or facial bones open fractures,"Multiple fractures involving skull and facial bones, open",29
-U07.1,2019-nCoV acute respiratory disease,Emergency use of U07.1,29
 Y63.9,Failure to administer drug in unspecified surgical or other medical treatment,Failure in dosage during unspecified surgical and medical care,29
 B57.0,Acute Chagas disease as a cause of cardiovascular symptoms,Acute Chagas disease with heart involvement,30
 G23.1,Progressive supranuclear ophthalmoplegia,Progressive supranuclear ophthalmoplegia [Steele-Richardson-Olszewski],30
@@ -1409,6 +1416,7 @@ Y63.5,Use of inappropriate temperature in topical treatment or to stop bleeding,
 S02.10,Cranial fracture without intracranial injuries,"Fracture of base of skull, closed",34
 B42.0,Sporotricosis as a cause of lung infection,Pulmonary sporotrichosis,35
 C14.1&,Laryngopharynx,Malignant neoplasm of laryngopharynx unspecified,35
+I62.0,Subdural haemorrhage (acute)(nontraumatic),Nontraumatic subdural haemorrhage,35
 R87,Abnormal findings in secretions and smears from cervix uteri vagina vulva,Abnormal findings in specimens from female genital organs,35
 Y65.0,Giving blood belonging to the wrong blood type,Mismatched blood used in transfusion,35
 D47.2,Monoclonal gammopathy,Monoclonal gammopathy of undetermined significance (MGUS),36
@@ -1447,7 +1455,6 @@ R86.6,Abnormal spermatozoa - Abnormal cytological findings,"Abnormal findings in
 R86.7,Abnormal spermatozoa - Abnormal histological findings,"Abnormal findings in specimens from male genital organs, abnormal histological findings",39
 R86.8,Abnormal spermatozoa - Other abnormal findings,"Abnormal findings in specimens from male genital organs, other abnormal findings",39
 R86.9,Abnormal spermatozoa - Unspecified abnormal finding,"Abnormal findings in specimens from male genital organs, unspecified abnormal finding",39
-W20,"Accidents caused by a collision, falling or ejected object","Struck by thrown, projected or falling object",39
 Y22,"Damage from a pistol or revolver shot, intent unclear","Handgun discharge, undetermined intent",39
 A09,Diarrhoea and gastroenteritis of presumed infectious origin,Other gastroenteritis and colitis of infectious and unspecified origin,40
 A39.1,Meningococcus as a cause of adrenal inflammation,Waterhouse-Friderichsen syndrome,40
@@ -1456,7 +1463,9 @@ N03.0#,Long-term nephritic syndrome with slight abnormality of the glomeruli,"Ch
 V28.9,Motorcycle rider injured in noncollision transport accidents traffic accident,"Motorcycle rider injured in noncollision transport accident, unspecified motorcycle rider injured in traffic accident",40
 B58.2,Toxoplasmosis as a cause of central nervous system infection,Toxoplasma meningoencephalitis,41
 C83.2,Diffuse germ cell lymphoma,Mixed small and large cell (diffuse) non-Hodgkin's lymphoma,41
+G04.1,Tropical spastic paraplegia,Human T-cell lymphotropic virus associated myelopathy,41
 G63.3*,"Polyneuropathy in other endocrine and metabolic diseases (E00-E07+, E15-E16+, E20-E34+, E70-E89+)",Polyneuropathy in other endocrine and metabolic diseases,41
+W20,"Accidents caused by a collision, falling or ejected object","Struck by thrown, projected or falling object(s)",41
 W26,"Accident involving a knife, knife, dagger or sword",Contact with other sharp object(s),41
 V16.2,Pedal cyclist injured in collision with train or tram - Unspecified or nontraffic accident,"Pedal cyclist injured in collision with other nonmotor vehicle, unspecified pedal cyclist injured in nontraffic accident",41
 Y62.1,Failure to perform sterile precautions during infusion or transfusion,Failure of sterile precautions during surgical and medical care during infusion or transfusion,41
@@ -1477,6 +1486,7 @@ R85.9,Abnormal findings in peritoneal fluid saliva - Unspecified abnormal findin
 R89,Abnormal findings in nipple discharge synovial fluid wound secretions,"Abnormal findings in specimens from other organs, systems and tissues",42
 S02.90,Unspecified fracture of head and / or facial bones closed,"Fracture of skull and facial bones, part unspecified, closed",42
 S02.91,Unspecified fracture of head and / or facial bones open,"Fracture of skull and facial bones, part unspecified, open",42
+U07.1,2019-nCoV acute respiratory disease,"Emergency use of U07.1 | COVID-19, virus identified",42
 G59.0*,Diabetic mononeuropathy (E10-E14+ with common fourth character .4),Diabetic mononeuropathy,43
 G63.2*,Diabetic polyneuropathy (E10-E14+ with common fourth character .4),Diabetic polyneuropathy,43
 H28.0*,Diabetic cataract (E10-E14+ with common fourth character .3),Diabetic cataract,43
@@ -1603,6 +1613,7 @@ Y61.6,"Accidental ingestion of a foreign object during aspiration, puncture, or 
 Y62.2,Failure to perform sterile precautions during dialysis or other perfusion therapy,Failure of sterile precautions during surgical and medical care during kidney dialysis or other perfusion,56
 G40.3,"Generalized epileptic syndromes with atonic, clonic, myoclonic or tonic-clonic seizures",Generalized idiopathic epilepsy and epileptic syndromes,57
 Y60.6,"Accidental wound, puncture, perforation or bleeding due to aspiration, puncture or other catheterisation","Unintentional cut, puncture, perforation or haemorrhage during surgical and medical care during aspiration, puncture and other catheterization",57
+R17,Unspecified jaundice,"Hyperbilirubinaemia, with or without jaundice, not elsewhere classified",58
 V10.2,Pedal cyclist injured in collision with pedestrian or animal,"Pedal cyclist injured in collision with pedestrian or animal, Unspecified pedal cyclist injured in nontraffic accident",58
 Y61.5,Accidental ingestion of a foreign object during cardiac catheterization,Foreign object accidentally left in body during surgical and medical care during heart catheterization,58
 Y62.8,Failure to perform sterile precautions in connection with other specified surgical or other medical treatment,Failure of sterile precautions during surgical and medical care during other surgical and medical care,58

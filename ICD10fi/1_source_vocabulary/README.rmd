@@ -447,7 +447,11 @@ icd10fi_concept <- icd10fi_source_extended %>%
     valid_end_date = valid_end_date, 
     tmp_code1_concept_id = code1_concept_id, # keep for mapping
     tmp_code2_concept_id = code2_concept_id, # keep for mapping
-    tmp_name_fi = name_fi # keep for USAGI
+    tmp_name_fi = name_fi, # keep for USAGI
+    tmp_code_class = code_class, 
+    tmp_code1_code = `A:Koodi1`, 
+    tmp_code2_code = `A:Koodi2`, 
+    tmp_name_en_source = name_en_source
   ) 
     
         
