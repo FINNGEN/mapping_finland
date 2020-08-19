@@ -1,5 +1,5 @@
 ---
-title: "ICPC2"
+title: "ICPC"
 output:
   github_document:
     toc: true
@@ -17,32 +17,8 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(scales)
 
+source("../lib/vocabulary_reporting_fuctions.r")
 
-getOutputFormat <- function() {
-  output <- rmarkdown:::parse_yaml_front_matter(
-    readLines(knitr::current_input())
-    )$output
-  if (is.list(output)){
-    return(names(output)[1])
-  } else {
-    return(output[1])
-  }
-}
-
-
-# Dynamic markdown functions
-my_print_line<- function(...){
-  cat(str_c(" \n",...," \n"))
-}
-
-my_print_table<- function(...){
-  if(getOutputFormat() == 'html_document') {
-   cat(knitr::knit_print(rmarkdown::paged_table(...)))
-  }else{
-    cat(knitr::knit_print(knitr::kable(...)))
-  }
-  
-}
 
 # Document variables 
 N_TOPS <- 10
@@ -53,11 +29,12 @@ db_statuses <- tibble()
 ```
 
 ```{r load, message=FALSE, warning=FALSE}
-icpc2_source_vocabulary <- read_csv("./1_source_vocabulary/icpc2_for_source_vocabulary.csv")
+icpc_concept <- read_csv("./1_source_vocabulary/CONCEPT_ICPC.csv") %>% 
+  filter(domain_id != "Metadata")
 
-icpc2_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
+icpc_mapsto <- read_csv("./2_mapping_to_standard/CONCEPT_RELATIONSHIP_ICPC.csv")
 
-icpc2_auto_mapped <- read_csv("./2_mapping_to_standard/icpc2_auto_mapped.csv") # cant get the encoding rigth
+icpc_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
 ```
 
 
@@ -66,57 +43,36 @@ icpc2_auto_mapped <- read_csv("./2_mapping_to_standard/icpc2_auto_mapped.csv") #
 TODO:
 
 
+
+
 # Formating source vocabulary to OMOP
 `ICPC2_merged_and__ICPC1_from_DF6_UTF8.txt`
  Contains the ICPC codes with English and Finnish names.
 
- This table comes from the ontology gitlab repo. Created by  mikolaj.wojnicki@helsinki.fi.
-
- It combines
- - ICPD2 download from [kodistopalvelu](https://version.helsinki.fi/ontology-group/ontologists/-/wikis/uploads/ce2ce4426b394ef58021b198b28869d4/Koodistopalvelu_ICPC2_v5_2020-04-03.xlsx)  03.04.2020 `standard_ICPC2_kodistopalvelu_282_1471432260621.txt`
- - ICPD2_procedures download from [kodistopalvelu](https://version.helsinki.fi/ontology-group/ontologists/-/wikis/uploads/ca4885e34d5715029f3305e4fb222960/Koodistopalvelu_ICPC2_prosessikoodit_v5_2020-04-03.xlsx)  03.04.2020 `standard_ICPC2_procedures_kodistopalvelu_283_1472198856551.txt`
- - English names downloaded from [ Norwegian Directorate of eHealth](https://ehelse.no/kodeverk/icpc-2e--english-version) `icpc-2e-v7.0.xlsx`.
- - ICPC1 downloaded from ??
-
-TODO: not sure if all english names come from norwegian ??
-
-
+ This table comes from several sources. Created by  mikolaj.wojnicki@helsinki.fi.
+ 
 ```{r}
-#icpc2_source_vocabulary %>% count(name_en_source)
+icpc_concept %>%  count(concept_class_id, sort = T)
 ```
+ 
 
-There are 3 different types of ICPC codes: 
-```{r}
-icpc2_source_vocabulary %>% count(ICPC_version)
-```
-
-
-Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/icpc2_for_source_vocabulary.csv](1_source_vocabulary/icpc2_for_source_vocabulary.csv). 
+Details in  [./1_source_vocabulary/README.md](./1_source_vocabulary/README.md)
 
 
 # Mapping the source vocabulary to the standard vocabularies
 In short, the source table already includes a column with the equivalent ICD10 codes. This was mapped to the OMOP's ICD10who `concept_id`. 
 
+
 ## Progess in number of codes
 ```{r}
-n_codes <- icpc2_auto_mapped %>% distinct(code) %>% nrow()
-n_codes_accepted <- icpc2_auto_mapped %>% filter(mappingStatus=="AUTO_MAPPED") %>% distinct(code) %>% nrow()
+n_codes <- icpc_concept %>% nrow()
+n_codes_accepted <- icpc_mapsto %>% distinct(concept_id_1) %>% nrow()
 ```
 
 
-From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been mapped.
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
 
-This makes `r scales::percent(n_codes_accepted/n_codes)` of codes mapped. 
-
-
-```{r}
-icpc2_auto_mapped %>% distinct(code, mappingStatus) %>% count(mappingStatus)
-```
-
-Grouped by icpc version 
-```{r}
-icpc2_auto_mapped %>% distinct(code, mappingStatus, ICPC_version) %>% count(ICPC_version, mappingStatus)
-```
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
 
 
 ```{r}
@@ -142,89 +98,17 @@ db_statuses <- bind_rows(
 
 
 
+
+
 # Assessing coverage of databases
 
 
 ```{r  results='asis'}
-# get database names from freq tables 
-db_names <- icpc2_freqs %>% names %>% setdiff(c("code", "freq_total")) %>% str_replace("freq_","")
 
-#for each data base
-for(db_name in db_names){
-#assess_db <- function(i){
- # db_name <- db_names[i]
-
-  # get only preset dtabase info 
-  db_freq <- icpc2_freqs %>% 
-    select(code, str_c("freq_",db_name)) %>% 
-    rename(freq = str_c("freq_",db_name)) %>% 
-    filter(!is.na(freq))
-  
-  n_total_envents <- sum(db_freq$freq)
-  
-  # join with usagi output 
-  db_join <- left_join(
-    db_freq ,
-    icpc2_auto_mapped %>% #rename(code=sourceCode, name_en=sourceName, name_fi=`ADD_INFO:LongName`) %>% 
-      select(code, name_en, name_fi, mappingStatus ), 
-    by = "code") %>%
-  mutate( freq_per=percent(freq/n_total_envents, accuracy = 0.001)) %>% 
-    arrange(-freq)
-  
-  #save not found codes
-  db_missing <- db_join %>% filter(is.na(mappingStatus)) %>% select(code, freq, freq_per)
-  save_db_missing_path <- str_c("./3_freq_of_source_codes/",db_name,"_not_in_icpc2.csv")
-  write_csv(db_missing, save_db_missing_path )
-  
-  # calculate status count
-  db_status <- db_join %>% 
-    mutate(status = case_when( 
-      is.na(mappingStatus) ~ "not_found",  
-      mappingStatus == "NOT_MAPPED" ~ "not_mapped", 
-      TRUE ~ "mapped"
-    )
-  ) %>% 
-  mutate(status = factor(status, levels = c("mapped", "not_mapped",  "not_found"))) %>% 
-  group_by(status) %>% 
-  summarise(n_codes=n(), 
-            per_codes= percent(n_codes/nrow(.), accuracy = 0.001),
-            n_events = sum(freq), 
-            per_events= percent(n_events/sum(.$freq), accuracy = 0.001), 
-            .groups = 'drop')
-  
-  db_statuses <- bind_rows(db_statuses, db_status %>% mutate(db_name = db_name))
-  
-   # plot markdown 
-  my_print_line()
-  my_print_line("## Database ", db_name)
-  
-  my_print_line("**How many codes labeled as icpc2 in ", db_name," are not in the icpc2 standard?**")
-  
-  my_print_line("There are ", scales::number(db_missing %>% nrow())," codes not found in the standard")
-  
-  my_print_line("Top", N_TOPS," sort by freq:")
-  
-  my_print_table(db_missing %>% head(N_TOPS))
-  
-  my_print_line("The full list can be found in [",save_db_missing_path,"](",save_db_missing_path,")")
-  
- 
-  my_print_line("**Status of the icpc2 codes in", db_name, "**")
-  
-  my_print_table(db_status)
-  
-  
-}
-
-
-write_csv(db_statuses, "status_table.csv" )
-  
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("ICPC", icpc_concept, icpc_mapsto, icpc_freqs ) 
 
 ```
-
-
-
-
 
 
 
