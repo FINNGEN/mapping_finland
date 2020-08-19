@@ -1,0 +1,831 @@
+concept_id,concept_synonym_name,language_concept_id
+3,SILMÄN ALUE,4181730
+4,Silmäluomen paiseen puhkaisu,4181730
+5,Luomirakkulan poisto tai tyhjennys,4181730
+6,Silmäluomen haavan ompelu,4181730
+7,Kyynelpisteen tai -tiehyeen aukaisu,4181730
+8,Vierasesineen poisto sidekalvolta,4181730
+9,Sidekalvon vierasesineen poisto puudutuksessa,4181730
+10,Vierasesineen poisto sarveiskalvosta,4181730
+11,Silmänpohjan valokuvaus tai kuvan tulkinta,4181730
+12,Silmänpaineen mittaus,4181730
+13,Silmänpohjatutkimus (oftalmoskopia),4181730
+14,Muu silmän alueen tutkimus,4181730
+15,Muu silmän alueen pientoimenpide,4181730
+16,Karsastuskuntoutus ja -ohjaus,4181730
+17,Silmien hoito,4181730
+18,Karsastuksen tutkiminen,4181730
+19,Näön tutkiminen,4181730
+20,Värinäön tutkimus,4181730
+21,Silmän mikroskooppitutkimus,4181730
+22,"KORVA, NENÄ JA KURKUNPÄÄ",4181730
+23,Tympanostomiaputken asennus,4181730
+24,Kitarisaleikkaus,4181730
+25,Korvakäytävän paiseen puhkaisu,4181730
+26,Tärykalvopisto,4181730
+27,Polyypin poisto,4181730
+28,Nenän murtuman korjaaminen suljetusti,4181730
+29,Nenäverenvuodon hoito hyydyttämällä,4181730
+30,Nenän etutamponaatio,4181730
+31,Nenän takatamponaatio,4181730
+32,Nenän sivuonteloiden ultraäänitutkimus,4181730
+33,Sylkirauhasten ultraäänitutkimus,4181730
+34,Sylkirauhasen solunäytteen otto UÄ-ohjauksessa,4181730
+35,Nielupaiseen avaus tai tyhjennys,4181730
+36,Vierasesineen poisto nielusta,4181730
+37,Korvakäytävän huuhtelu tai vahan poisto,4181730
+38,Vierasesineen poisto korvakäytävästä,4181730
+39,Vierasesineen poisto nenästä,4181730
+40,Poskiontelopunktio,4181730
+41,"Muu korvan, nenän tai kurkunpään pientoimenpide",4181730
+42,Neulakudosnäytteen otto sylkirauhasesta,4181730
+43,Otomikroskopia,4181730
+44,Nenän ja kurkunpään tähystys,4181730
+45,Perusteellinen kuulontutkimus,4181730
+46,Tasapainon ylläpitoon liittyvä ohjaus,4181730
+47,Audiometria,4181730
+48,Tympanometria,4181730
+49,Tasapainoelimen kallistusprovokaatiotesti/Epleyn manööveri,4181730
+50,Nielurisaleikkaus,4181730
+51,Korvakäytävän tamponaatio,4181730
+52,Laaja korvan tutkimus,4181730
+53,"Kuulolaitteen tarkastus, huolto ja käytön ohjaus",4181730
+54,"HERMOSTO, UMPIERITYS, UNI-VALVETILA",4181730
+55,Kilpirauhasen ultraäänitutkimus,4181730
+56,Ohutneulanäytteen otto kilpirauhasesta,4181730
+57,Lannepisto (lumbaalipunktio),4181730
+58,Perusteellinen neurologinen tutkimus,4181730
+59,Unihäiriöihin liittyvä ohjaus,4181730
+60,Tajunnantason ja neurologisten oireiden seuranta,4181730
+61,Muistitutkimus,4181730
+62,Perifeerisen hermoston tutkiminen,4181730
+63,Unipolygrafiatutkimus,4181730
+64,HENGITYSELIMET,4181730
+65,Pleurapunktio,4181730
+66,Uloshengityksen huippuvirtausmittaus,4181730
+67,PEF-seurantaopetus,4181730
+68,Spirometrinen tutkimus vastaanotolla,4181730
+69,Hapen antaminen,4181730
+70,Hengitysharjoitusten toteuttaminen,4181730
+71,Keuhkojen tyhjennyshoito,4181730
+72,Liman imeminen hengitysteistä,4181730
+73,Trakeostomia-avanteen hoito,4181730
+74,Hengityksen hoitoon liittyvä ohjaus,4181730
+75,"SYDÄN, VERENKIERTOELIMISTÖ, IMUSUONISTO, LUUYDIN",4181730
+76,Vatsa-aortan ultraäänitutkimus,4181730
+77,Yläraajalaskimoiden ultraäänitutkimus,4181730
+78,Alaraajalaskimoiden ultraäänitutkimus,4181730
+79,Alaraajalaskimoiden verivirtauksen Doppler-ultraäänitutkimus,4181730
+80,Imusolmukkeiden ultraäänitutkimus,4181730
+81,Sähköinen rytminsiirto,4181730
+82,Venesektio,4181730
+83,Laskimon kanylointi,4181730
+84,Keskuslaskimokanylointi,4181730
+85,Valtimoverinäytteen otto,4181730
+86,Keskuslaskimo- tai valtimokanyylin poisto,4181730
+87,Sydämen ultraäänitutkimus,4181730
+88,Luuydinnäytteen otto,4181730
+89,Kardiorespiratorinen kokonaisarvio,4181730
+90,Lääkkeellinen rytminsiirto,4181730
+91,IV-nestehoidon aloitus ja seuranta,4181730
+92,"ELVYTYS, ANESTESIA, VERENKIERRON SEURANTA,YM.",4181730
+93,Inhalaatioanestesia,4181730
+94,Leikkaussaliolosuhteissa tehtävät leikkaukset ja vastaavat toimenpiteet,4181730
+95,Valtimon liuotushoito,4181730
+96,Verensiirto,4181730
+97,Sedaatio ilman anestesiaa,4181730
+98,"Suonensisäinen, intramuskulaarinen tai rektaalinen yleisanestesia",4181730
+99,Nenänielu- tai nieluputken asennus,4181730
+100,Intubaatio,4181730
+101,Trakeostomia,4181730
+102,Ylipainehengitys,4181730
+103,Verenkierron tai hengityksen elvytys,4181730
+104,Sydämen ulkoisen tahdistimen asetus tai käyttö,4181730
+105,EKG:n ottaminen,4181730
+106,Rasitus-EKG,4181730
+107,Verenpaineen mittaus Doppler-ultraäänilaitteen avulla,4181730
+108,Verenpaineen pitkäaikaisseuranta,4181730
+109,Ortostaattinen koe,4181730
+110,Verenvuotopotilaan hoito ja seuranta,4181730
+111,Vaativa sairaankuljetus,4181730
+112,Ensiapupotilaan seuranta,4181730
+113,Tehovalvonta,4181730
+114,"KIVUN HOITO, PUUDUTUKSET",4181730
+115,Akupunktio,4181730
+116,Laaja ihon pintapuudutus ulkoisesti voiteella tai geelillä,4181730
+117,Kylkiluuvälin puudutus,4181730
+118,Kivun hoito kipupumpun avulla,4181730
+119,Kivun voimakkuuden mittaaminen,4181730
+120,Kivunhoidon suunnittelu,4181730
+121,Paikallispuudutus,4181730
+122,Johtopuudutus,4181730
+123,"RUUANSULATUSKANAVA, KAULA, VATSA, RAVITSEMUS",4181730
+124,Muu ravitsemusterapianimikkeistön mukainen toimenpide,4181730
+125,Kaulan ultraäänitutkimus,4181730
+126,Nivusten ja/tai vatsapeitteiden ultraäänitutkimus,4181730
+127,Peräpukamatoimenpide,4181730
+128,Vatsan ultraäänitutkimus,4181730
+129,Ylävatsan ultraäänitutkimus,4181730
+130,Alavatsan ultraäänitutkimus,4181730
+131,Askitespunktio,4181730
+132,Nenämahaletkun laitto,4181730
+133,Mahalaukkuavanneletkun vaihto,4181730
+134,Avannehoito ja -ohjaus,4181730
+135,Vierasesineen poisto peräsuolesta,4181730
+136,Peräruiske,4181730
+137,Lantionpohjan/sulkijalihasten harjoituksen ohjaus,4181730
+138,Paikallisen muutoksen poisto mahasuolikanavan tähystyksessä,4181730
+139,"Esofago-, gastro- ja duodenoskopia",4181730
+140,Paksusuolen tähystys,4181730
+141,Sigmoideoskopia,4181730
+142,Peräsuolen tähystys (rektoskopia),4181730
+143,Peräaukon tähystys,4181730
+144,Erityisen vaativa peräaukon tähystys (proktoskopia/anoskopia),4181730
+145,Ruoka-ainealtistus,4181730
+146,Potilaan/asiakkaan hygieniasta huolehtiminen,4181730
+147,Suoliston toimintaan liittyvä ohjaus,4181730
+148,Ravitsemuskartoitus,4181730
+149,Mahahuuhtelu,4181730
+150,Tyrän reponointi,4181730
+151,IHO JA LIMAKALVOT,4181730
+152,Iho- tai limakalvomuutoksen poisto,4181730
+153,"Hampaiden, ikenien, suun ja nielun pientoimenpide",4181730
+154,Kynnen poisto osittain tai kokonaan,4181730
+155,Auenneen tai tulehtuneen leikkaushaavan hoito,4181730
+156,Pinnallisen resistenssin ultraäänitutkimus,4181730
+157,Paiseen puhkaisu tai ihon aukaisu,4181730
+158,Ihomuutoksen tuhoaminen ulkoisilla menetelmillä,4181730
+159,Kroonisen haavan tai palovamman hoito,4181730
+160,Traumaattisen haavan ompelu tai hoito,4181730
+161,Haavan ompelu,4181730
+162,Suurten haavojen hoito,4181730
+163,Ihon alle jääneen vierasesineen poisto,4181730
+164,Ompeleiden poisto,4181730
+165,Ihonalaisen lääkeainekapselin asettaminen tai poisto,4181730
+166,Ihosuikalesiirto,4181730
+167,Ihottuman ja ihon hoitoon liittyvä ohjaus,4181730
+168,Suun ja limakalvojen hoitoon liittyvä ohjaus,4181730
+169,Kynnen puhkaisu,4181730
+170,"VIRTSATIET, AINEENVAIHDUNTA",4181730
+171,Munuaisten ultraäänitutkimus,4181730
+172,Virtsarakon ultraäänitutkimus,4181730
+173,Jäännösvirtsan määritys UÄ:llä,4181730
+174,Virtsaelinten ultraäänitutkimus,4181730
+175,Hemodialyysi,4181730
+176,Vatsakalvodialyysi,4181730
+177,Virtsarakkopunktio,4181730
+178,Virtsarakkokatetrin asettaminen,4181730
+179,Katetrointiopetus,4181730
+180,Virtsaputken laajentaminen,4181730
+181,"Virtsasuihkun virtausmittaus, flowmetria",4181730
+182,Virtsarakkopunktio,4181730
+183,Nesteytykseen liittyvä ohjaus,4181730
+184,"NAISTENTAUDIT, SEKSUAALI- JA LISÄÄNTYMISTERVEYS",4181730
+185,Rintarauhasten ultraäänitutkimus,4181730
+186,Sikiön ulkokäännös,4181730
+187,Synnytyksen hoito,4181730
+188,Prostatan ultraäänitutkimus iholta,4181730
+189,Kivespussin ultraäänitutkimus,4181730
+190,Skleroterapia,4181730
+191,Parafimoosin repositio,4181730
+192,Kohdun ja sivuelinten ultraäänitutkimus,4181730
+193,"Kohdun, sivuelinten ja alavatsan UÄ",4181730
+194,Ehkäisykierukan paikantaminen tai muu yksittäisen gynekologisen kohteen UÄ,4181730
+195,Kohdun runko-osan kaavinta,4181730
+196,Raskauden keskeytys lääkkeellä,4181730
+197,Kohdun kaulan laserhoito tai poltto,4181730
+198,Varhaisraskauden yleinen ultraäänitutkimus,4181730
+199,Sikiön mittakontrolli,4181730
+200,Muu raskaudenaikainen ultraäänitutkimus,4181730
+201,Kohdunsisäisen ehkäisimen asettaminen tai poisto,4181730
+202,Vierasesineen poisto emättimestä,4181730
+203,Gynekologinen tutkimus,4181730
+204,Gynekologinen irtosolunäytteen otto,4181730
+205,Normaaliraskauden seuranta,4181730
+206,Kohdun kaulakanavan laajennus,4181730
+207,Perinnöllisyysneuvonta,4181730
+208,Kohdun runko-osan lihas- tai limakalvonäytteen otto,4181730
+209,Raskaudenaikaisen ongelman seuranta,4181730
+210,Raskauden keskeytyksen tarpeen arviointi,4181730
+211,Raskauden keskeytyksen jälkitarkastus,4181730
+212,TUKI- JA LIIKUNTAELIMET,4181730
+213,Nivelinjektio,4181730
+214,Injektiohoito muualle kuin lihaksiin tai ihon alle,4181730
+215,Nivelpunktio,4181730
+216,Nivelen sijoiltaanmenon paikalleenasetus,4181730
+217,Murtuman paikalleenasetus ja sidos,4181730
+218,Sormen tai varpaan tyngän typistys,4181730
+219,Lihaksen tai jänteen ultraäänitutkimus,4181730
+220,Nivelen ultraäänitutkimus,4181730
+221,Kipsin tai yksilöllisen tuen asetus,4181730
+222,Pehmeän sidoksen asetus,4181730
+223,Tuki- ja liikuntaelimistön laaja tutkimus,4181730
+224,Ryhtivirheen tutkimus,4181730
+225,"KUNTOUTUS, TOIMINNAN TUKEMINEN, APUVÄLINEPALVELUT",4181730
+226,Lääkinnällisen kuntoutustarpeen arviointi,4181730
+227,Toimintakyvyn arviointi,4181730
+228,Palvelutarpeen arviointi (iäkkäät/hoitotuki),4181730
+229,Kasvatuksellisen kuntoutuksen tarpeen arviointi,4181730
+230,Ammatillisen kuntoutuksen tarpeen arviointi,4181730
+231,Kuntoutustarpeen arvio ja/tai kuntoutussuunnitelma,4181730
+232,Kuntoutuspalveluita ja toimeentuloa koskeva ohjaus,4181730
+233,Itsenäistä selviytymistä edistävä neuvonta/ohjaus,4181730
+234,Fysioterapeuttisen kuntoutussuunnitelman toteuttaminen,4181730
+235,Puheterapeuttisen kuntoutussuunnitelman toteuttaminen,4181730
+236,Jalkaterapeuttisen kuntoutussuunnitelman toteuttaminen,4181730
+237,Toimintaterapeuttisen kuntoutussuunnitelman toteuttaminen,4181730
+238,Päihdekuntoutus,4181730
+239,Kasvatuksellisen kuntoutuksen terapiamuodot,4181730
+240,Apuvälinetarpeen arviointi,4181730
+241,"Apuvälinesovitus, -lainaus ja käytön seuranta",4181730
+242,Arvio elinympäristössä tarvittavista muutostöistä,4181730
+243,Kommunikaatio tulkin tai avustajan avulla,4181730
+244,Työkyvyn arviointi,4181730
+245,Sosiaalisen toimintakyvyn tukeminen,4181730
+246,"Mielenterveys, emotionaalinen tuki",4181730
+247,Ensitiedon antaminen,4181730
+248,Psykoterapia,4181730
+249,Lyhytterapia,4181730
+250,Perheterapia,4181730
+251,Terapeuttinen keskustelu,4181730
+252,Psykososiaalisen tilanteen laaja kartoitus,4181730
+253,Traumaterapia,4181730
+254,Psykiatrinen/psykologinen tutkimus,4181730
+255,Toiminnallinen terapia,4181730
+256,Potilaan läheisten tukeminen ja informointi,4181730
+257,Depression tai muun psyykkisen ongelman seulonta,4181730
+258,Avokatkaisuhoito ja seuranta,4181730
+259,Psykiatrinen tarkkailulähete eli M1-lähete,4181730
+260,"MUU TUTKIMINEN, TOIMENPITEET, HOITO, YM.",4181730
+261,Ohutneulanäytteen otto,4181730
+262,Hoitoon liittyvä neuvonta vastaanoton ulkopuolella,4181730
+263,Kroonisen sairauden perusteellinen seuranta,4181730
+264,Lääkityksen järjestely,4181730
+265,Kokonaislääkehoitosuunnitelma tai sen tarkastus,4181730
+266,"Lääkityksen aloitus, muutos, lopetus tai uusinta",4181730
+267,Lääkkeenanto,4181730
+268,Suonensisäinen lääkkeenanto,4181730
+269,Lihas- ja ihonalaisinjektio,4181730
+270,Lääkeinhalaatiotekniikan opetus,4181730
+271,Lausunto jatkuvan lääkityksen tarpeesta,4181730
+272,Lausunto natiivikuvista,4181730
+273,Toisen työntekijän konsultoiminen,4181730
+274,Reaaliaikainen kuvansiirtokonsultaatio,4181730
+275,Hoitotarvikkeiden luovutus,4181730
+276,Näytteen otto,4181730
+277,Pikatesti vastaanotolla tai kotona,4181730
+278,Alkometri,4181730
+279,Toimenpiteeseen valmistava erillinen ohjaus,4181730
+280,Siedätyshoito,4181730
+281,Allergiatestaus,4181730
+282,Muu punktio ja/tai nesteenpoisto,4181730
+283,Huume-/humalatilatutkimus,4181730
+284,Huumeiden IV-käyttäjien neuvonta/välineiden vaihto,4181730
+285,Huumeseulonta,4181730
+286,Päihteiden/tupakan käytön strukturoitu kartoitus,4181730
+287,Riippuvuusoireisen mini-interventio,4181730
+288,Opioidiriippuvaisen vieroitus- ja korvaushoito,4181730
+289,Hoitolinjaus potilaan tai hänen omaistensa kanssa,4181730
+290,Oikeusturvaa ja potilaan oikeuksia koskeva ohjaus,4181730
+291,Saattohoidon kotikäynti,4181730
+292,Välittömän sairaalahoidon valmistelu,4181730
+293,Virka-avun antaminen,4181730
+294,Muu hallinnollinen toiminto,4181730
+295,Ajokyvyn arviointi ja lausunto,4181730
+296,Suppea todistus terveydentilasta,4181730
+297,Laaja todistus terveydentilasta terveydentilasta,4181730
+298,Konsultaatiovastauksen antaminen,4181730
+299,Leikkauskelpoisuuden arviointi lausuntoineen,4181730
+300,Elävän henkilön oikeuslääketieteellinen tutkimus,4181730
+301,Kuolinsyyn selvittäminen,4181730
+302,Vainajan ulkoinen tarkastus mahdollisine jatkotoimineen,4181730
+303,Vainajan laitto,4181730
+304,Muu NCSP-luokituksen mukainen toiminto,4181730
+305,Muu SHToL:n mukainen toiminto,4181730
+306,Muu kuntoutusohjausnimikkeistön mukainen toiminto,4181730
+307,Muu terveyssosiaalityönimikkeistön mukainen toiminto,4181730
+308,Muu fysioterapianimikkeistön mukainen toiminto,4181730
+309,Muu toimintaterapianimikkeistön mukainen toiminto,4181730
+310,Muu puheterapianimikkeistön mukainen toiminto,4181730
+311,Muu ravitsemusterapianimikkeistön mukainen toiminto,4181730
+312,Muu jalkaterapianimikkeistön mukainen toiminto,4181730
+313,Muu FINLOINC -luokituksen mukainen toiminto,4181730
+314,Ei toimenpidettä,4181730
+315,Oirepäiväkirjan käyttö,4181730
+316,Laaja yleistutkimus,4181730
+317,Kudosnäytteen otto,4181730
+318,EHKÄISEVÄ TOIMINTA JA TERVEYDEN EDISTÄMINEN,4181730
+319,Hormonikorvaushoidon aloittaminen joko naiselle tai miehelle,4181730
+320,Perhevalmennus,4181730
+321,Lasta odottavan perheen laaja terveystarkastus,4181730
+322,Imetyksen ja rintojen hoidon ohjaus,4181730
+323,Kasvuun ja kehitykseen liittyvä neuvonta ja ohjaus,4181730
+324,Ikääntymiseen liittyvä neuvonta ja ohjeistus,4181730
+325,Liikuntaan liittyvä neuvonta ja ohjaus,4181730
+326,Ravitsemukseen ja painonhallintaan liittyvä neuvonta ja ohjaus,4181730
+327,Psykososiaalinen neuvonta ja ohjaus,4181730
+328,Seksuaaliterveysneuvonta,4181730
+329,Päihteisiin/riskikäyttäytymiseen liittyvä ohjaus,4181730
+330,Tunnettuun terveysongelmaan liittyvä neuvonta,4181730
+331,Työterveyteen liittyvä neuvonta ja ohjaus,4181730
+332,Yleinen terveysneuvonta,4181730
+333,Tapaturmien ehkäisyyn liittyvä ohjaus ja neuvonta,4181730
+334,Lasten ja nuorten määräaikainen terveystarkastus,4181730
+335,"Sovittu terveystarkastuksen seuranta, yksilöllisen tarpeen mukaan tehty terveystarkastus",4181730
+336,Lapsille suoritettava viimeinen neuvolatarkastus ennen kouluunmenoa,4181730
+337,"Koulu- ja opiskeluterveydenhuoltoon kuuluva tarkastus, jonka yhteydessä tehdään lausunto",4181730
+338,Lastensuojelulain mukainen lapsen terveydentilan tutkiminen,4181730
+339,Asevelvollisen terveystarkastus,4181730
+340,Työhönsijoitustarkastus,4181730
+341,Terveystarkastus terveysuhkaa aiheuttavassa työssä,4181730
+342,Seulontatoimenpide,4181730
+343,"Työ-, koulu- tai opiskeluyhteisötyö",4181730
+344,Työpaikan perusselvitys,4181730
+345,"Työ-, koulu- tai opiskeluympäristöaltisteisiin liittyvä selvitys",4181730
+346,"Työ-, koulu- tai opiskeluyhteisöön liittyvä selvitys (esim. työ- ja opiskeluilmapiiri)",4181730
+347,Työpaikan ensiapuvalmiuden suunnittelu,4181730
+348,Kouluyhteisön ja opiskeluympäristön terveydellisten olojen tarkastus,4181730
+349,Terveydenhoitajan arvio suun terveydentilasta,4181730
+350,"Ensimmäisenä opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle",4181730
+351,"Toisena opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle",4181730
+352,Ensimmäisenä opiskeluvuonna erityistarpeen vuoksi  tehty terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,4181730
+353,"Yliopistossa, ammattikorkeakoulussa tms. opiskelevalle terveyskyselyn perusteella tehty terveystarkastus",4181730
+354,Yksilöllisestä tarpeesta johtuva terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,4181730
+355,Työterveyshuollon määräaikaistarkastus,4181730
+356,Oppilaitoksen opiskeluhuoltoryhmän tapaaminen,4181730
+357,Muu terveystarkastus,4181730
+358,Varhaisraskauden yhdistelmäseulonta,4181730
+359,Toisen raskauskolmanneksen seerumiseulonta,4181730
+360,"Rakenneuäseulonta, viikot 18+0-21+6",4181730
+361,"Rakenneuäseulonta, viikot 24+0",4181730
+362,Raskaana olevan terveystarkastus,4181730
+363,Synnytyksen jälkitarkastus,4181730
+364,Laaja terveystarkastus neljän kuukauden iässä,4181730
+365,Laaja terveystarkastus kahdeksantoista kuukauden iässä,4181730
+366,Laaja terveystarkastus neljän vuoden iässä,4181730
+367,Laaja terveystarkastus ensimmäisellä luokalla,4181730
+368,Laaja terveystarkastus viidennellä luokalla,4181730
+369,Laaja terveystarkastus kahdeksannella luokalla,4181730
+370,"Ensimmäisen opiskeluvuoden terveyskysely, korkea aste",4181730
+371,Yksilöllisen tarpeen mukainen laaja terveystarkastus,4181730
+372,Erityisen tuen tarpeen mukainen käynti,4181730
+373,Opiskeluun soveltumattomuuden arviointi,4181730
+374,Perhetilanteeseen liittyvä neuvonta ja ohjaus,4181730
+375,Parisuhteeseen liittyvä neuvonta ja ohjaus,4181730
+376,Vanhemman ja lapsen vuorovaikutusta tukeva ohjaus,4181730
+377,Elinolosuhteisiin liittyvä neuvonta ja ohjaus,4181730
+378,Opiskelu- ja työelämän ulkopuolella olevien terveystarkastus,4181730
+379,Monialaisen asiantuntijaryhmän tapaaminen,4181730
+380,Avioliiton ulkopuolella syntyvän lapsen isyyden tunnustamisen vastaanottaminen äitiysneuvolassa ennen lapsen syntymää. Isyyslaki 16 §,4181730
+381,MUUT ENNALTAEHKÄISEVÄT TOIMINNOT,4181730
+382,Laaja lasten ja nuorten terveystarkastus,4181730
+383,Rokotus,4181730
+384,"TOIMINNOT, JOTKA EIVÄT LIITY YKSILÖÖN",4181730
+385,"HOIDON SUUNNITTELU, JATKOHOIDON JÄRJESTÄMINEN",4181730
+386,Ei jatkotoimenpidettä,4181730
+387,"Jatkohoidon suunnitelma, jatkohoidon järjestäminen",4181730
+388,Tutkimuspyyntö,4181730
+389,Puhelinajan varaaminen,4181730
+390,Sopimus kirjeestä/sähköisestä yhteydenotosta,4181730
+391,Uusi vastaanottoaika,4181730
+392,Ohjaus muulle ammattiryhmälle kuin lääkärille,4181730
+393,Ohjaus lääkärille  tai hammaslääkärille,4181730
+394,Lähete erikoissairaanhoitoon,4181730
+395,Ohjaus yksityiseen tutkimukseen tai hoitoon,4181730
+396,Ohjaus päihdepalveluihin,4181730
+397,Ohjaus lääkinnälliseen kuntoutukseen,4181730
+398,Ohjaus ammatilliseen kuntoutukseen,4181730
+399,Lähete perusterveydenhuollon vuodeosastolle,4181730
+400,Ohjaus opiskeluhuollon erikoistutkimuksiin,4181730
+401,Ohjaus opiskelijahuollon kuraattori- ja psykologipalveluihin,4181730
+402,Käynnissä olevien työkyvyn tukitoimien jatkuminen,4181730
+403,Hoidon tehostus työterveyshuollossa,4181730
+404,Tunnettuun terveysongelmaan liittyvä neuvonta työterveyshuollossa,4181730
+405,Työterveyteen liittyvä neuvonta ja ohjaus,4181730
+406,Yhteydenotto työpaikalle,4181730
+407,Työympäristöaltisteiden selvitys,4181730
+408,Työn fyysisen kuormituksen tai ergonomian selvitys,4181730
+409,Työn psykososiaalisen kuormituksen selvitys,4181730
+410,Ohjaus verkostoneuvotteluun,4181730
+411,Ohjaus työterveysneuvotteluun,4181730
+412,Työkyvyn arviointi,4181730
+413,Lausunto työkyvystä,4181730
+414,Suositus osasairauspäivärahasta,4181730
+415,Ohjaus diagnostisiin jatkotutkimuksiin,4181730
+416,Ohjaus perusterveydenhuoltoon,4181730
+417,Tutkimukset ammattitautiepäilyn vuoksi,4181730
+3,ÖGONOMRÅDET,4175777
+4,Incision av abscess i ögonlocket,4175777
+5,Excision eller exkokleation av chalazion,4175777
+6,Sutur av sår i ögonlocket,4175777
+7,"Sondering av tårpunkt och tårrör, canaliculus lacrimalis",4175777
+8,Avlägsnande av främmande kropp i bindehinnan,4175777
+9,Avlägsnande av främmande kropp i bindehinnan under ytlig bedövning,4175777
+10,Avlägsnande av främmande kropp i hornhinnan,4175777
+11,Fotografering av ögonbotten och tolkning,4175777
+12,Mätning av ögontrycket,4175777
+13,Ögonbottenundersökning (oftalmoskopi),4175777
+14,Annan undersökning av ögonområdet,4175777
+15,Annan mindre åtgärd i ögonområdet,4175777
+16,Rehabilitation och patientinstruktioner för skelning,4175777
+17,Behandling av ögon,4175777
+18,Skelningstestning,4175777
+19,Synundersökning,4175777
+20,Undersökning av färgseendet,4175777
+21,Ögonmikroskopi,4175777
+22,"ÖRON, NÄSA OCH STRUPHUVUD",4175777
+23,Tympanostomi,4175777
+24,"Tonsilloperation, adenoidoperation",4175777
+25,Incision av abscess i yttre hörselgången,4175777
+26,Paracentes av trumhinnan,4175777
+27,Polypevulsion,4175777
+28,Sluten reposition av näsfraktur,4175777
+29,Behandling av näsblödning med koagulering,4175777
+30,Främre nästamponad,4175777
+31,Bakre nästamponad,4175777
+32,Ultraljudsundersökning av näsans bihålor,4175777
+33,Ultraljudsundersökning av spottkörtlar,4175777
+34,"Spottkörtel, UL-styrd finnålsbiopsi",4175777
+35,Incision av abscess i farynx eller närliggande mjukdelar,4175777
+36,Avlägsnande av främmande föremål från farynx,4175777
+37,Öronspolning eller borttagning av vaxpropp,4175777
+38,Avlägsnande av främmande kropp från hörselgången,4175777
+39,Avlägsnande av främmande kropp från näsan,4175777
+40,Punktion av käkhåla,4175777
+41,"Annan mindre ingrepp på öron, näsa eller larynx",4175777
+42,Punktionsbiopsi av spottkörtel,4175777
+43,Otomikroskopi,4175777
+44,Rinoskopi med laryngoskopi,4175777
+45,Grundlig klinisk hörselundersökning,4175777
+46,Patientinstruktioner för uppehåll av balans,4175777
+47,Audiometri,4175777
+48,Tympanometri,4175777
+49,Lutningsprovokationstest av balansorganet/Epley manöver,4175777
+50,Tonsillektomi,4175777
+51,"Tamponadinläggning, öra",4175777
+52,"Klinisk undersökning av öron, omfattande",4175777
+53,"Justering, granskning och patientinstruktioner av hörselapparat",4175777
+54,"NERVSYSTEMET, ENDOKRINA ORGAN, SÖMN-VAKENHETSNIVÅ",4175777
+55,Ultraljudsundersökning av sköldkörteln,4175777
+56,Finnålsbiopsi av sköldkörteln,4175777
+57,Lumbalpunktion,4175777
+58,Grundlig neurologisk undersökning,4175777
+59,Patientinstruktioner om sömnstörningar,4175777
+60,Övervakning av medvetandenivå och neurologiska symtom,4175777
+61,Minnesundersökning,4175777
+62,Undersökning av det perifera nervsystemet,4175777
+63,Sömnpolygrafiundersökning,4175777
+64,ANDNINGSORGANEN,4175777
+65,Pleurapunktion,4175777
+66,Mätning av maximalt utandningsflöde,4175777
+67,Patientinstruktion för PEF-uppföljning,4175777
+68,Spirometrisk undersökning på mottagning,4175777
+69,Syrgasbehandling,4175777
+70,Andningsövningar,4175777
+71,Slemmobilisering och slemevakuering ur lungor,4175777
+72,Slemsugning av luftvägarna,4175777
+73,Skötsel av trakeostomi,4175777
+74,Patientinstruktioner för andningsvård,4175777
+75,"HJÄRTA, CIRKULATIONSORGAN, LYMFSYSTEM, BENMÄRG",4175777
+76,"Ultraljudsundersökning, bukaorta",4175777
+77,"Ultraljudsundersökning, övre extremiteternas vener",4175777
+78,"Ultraljudsundersökning, nedre extremiteternas vener",4175777
+79,"Ultraljudsundersökning med Doppler-teknik, nedre extremiteternas venflöde",4175777
+80,"Ultraljudsundersökning, lymfkörtlar",4175777
+81,Elektronisk kardioversion,4175777
+82,Venesektion,4175777
+83,Kanylering av ven,4175777
+84,Inläggning av central venkateter,4175777
+85,Artärpunktion,4175777
+86,Avlägsnande av central venkateter eller artärkateter,4175777
+87,Ultraljudsundersökning av hjärta,4175777
+88,Benmärgsprovtagning,4175777
+89,Helhetsbedömning av kardiorespiratorisk status,4175777
+90,Farmakologisk konvertering,4175777
+91,Intravenös vätskebehandling,4175777
+92,"ÅTERUPPLIVNING, ANESTESI, CIRKULATORISK UPPFÖLJNING, MED MERA",4175777
+93,Generell anestesi baserad på inhalationsanestesi,4175777
+94,Operationssalsåtgärder,4175777
+95,Arteriell trombolysbehandling,4175777
+96,Blodtransfusion,4175777
+97,Sedering eller analgesi utan anestesi,4175777
+98,"Intravenös, intramuskulär eller rektal generell anestesi",4175777
+99,Insättning av nasofaryngeal- eller svalgtub,4175777
+100,Intubering,4175777
+101,Trakeostomi,4175777
+102,Övertrycksandning,4175777
+103,Återupplivning vid hjärt- eller andningsstopp,4175777
+104,Insättning och användning hjärt-pacemaker,4175777
+105,Standard EKG,4175777
+106,Arbets-EKG,4175777
+107,Blodtrycksmätning med Doppler-metod,4175777
+108,Långtidsregistrering av blodtrycket,4175777
+109,Ortostatiskt prov,4175777
+110,Vård och övervakning av patient med blödning,4175777
+111,Krävande patienttransport,4175777
+112,Övervakning av patient i förstahjälp,4175777
+113,"Lättövervakning, intensivövervakning eller intensivvård",4175777
+114,"SMÄRTBEHANDLING, BEDÖVNINGAR",4175777
+115,Akupunktur,4175777
+116,Omfattande ytlig hudbedövning med salva eller gel,4175777
+117,Interkostalblockad,4175777
+118,Patientkontrollerad analgesi (PCA),4175777
+119,Mätning av smärtans intensitet,4175777
+120,Planering av smärtbehandling,4175777
+121,Lokal bedövning,4175777
+122,Blockad av perifer nerv,4175777
+123,"GASTROINTESTINALKANAL, HALS, BUK, NUTRITION",4175777
+124,Annan näringsterapi,4175777
+125,Ultraljudsundersökning av hals,4175777
+126,Ultraljudundersökning av ljumske och/eller bukvägg,4175777
+127,Hemorrojdsåtgärd,4175777
+128,Ultraljudsundersökning av buk,4175777
+129,Ultraljudsundersökning av övre delen av buk,4175777
+130,Ultraljudsundersökning av nedre delen av buk,4175777
+131,Punktion av ascites,4175777
+132,Nasogastrisk sond,4175777
+133,Byte av gastrotomikateter,4175777
+134,Utprovning och underhåll av stomi,4175777
+135,Borttagande av främmande kropp från rektum,4175777
+136,Lavemang,4175777
+137,Patientinstruktion för bäckenbottenträning,4175777
+138,Excision av lokal förändring genom gastrointestinal endoskopi,4175777
+139,"Esofago-, gastro- och duodenoskopi",4175777
+140,Kolonoskopi,4175777
+141,Sigmoidoskopi,4175777
+142,Endoskopi av ändtarmen (rektoskopi),4175777
+143,Endoskopi av anus,4175777
+144,Speciellt krävande endoskopi av anus,4175777
+145,Födoämnesprovokation,4175777
+146,Skötsel av klientens personliga hygieni,4175777
+147,Patientinstruktioner om tarmfunktion,4175777
+148,Näringsutredning,4175777
+149,Ventrikelsköljning,4175777
+150,Reponering av bråck,4175777
+151,HUD OCH SLEMHINNOR,4175777
+152,Avlägsnande av hud- eller slemhinneförändringen,4175777
+153,"Mindre ingrepp i tänder, tandkött, mun och svalg",4175777
+154,Total eller partiell evulsion av nagel,4175777
+155,Behandling av rupturerat eller infekterat operationssår,4175777
+156,Ultraljudsundersökning av ytlig resistens,4175777
+157,Incision/dränage i huden,4175777
+158,Hudförändringens lokal destruktion,4175777
+159,Behandling av kronisk sår eller brännsår,4175777
+160,Sutur eller behandling av traumatiskt sår,4175777
+161,Sutur av sår,4175777
+162,Omfattande behandling av sår i hud,4175777
+163,Avlägsnande av en främmande kropp som penetrerat huden,4175777
+164,Borttagning av suturer,4175777
+165,Inläggning eller uttagning av subkutan läkemedelskapsel,4175777
+166,Fritt autologt delhudstransplantat,4175777
+167,Patientinstruktioner för vård av hudsjukdomar,4175777
+168,Patientinstruktioner för vård av mun och slemhinnor,4175777
+169,Perforering av nagel,4175777
+170,"URINVÄGAR, ÄMNESOMSÄTTNING",4175777
+171,Ultraljudsundersökning av njurarna,4175777
+172,Ultraljudsundersökning av urinblåsan,4175777
+173,Residualurinets mätning med UL,4175777
+174,Ultraljudsundersökning av njurar och urinvägar,4175777
+175,Hemodialys,4175777
+176,Peritonealdialys,4175777
+177,Perkutan punktion/dränage av urinblåsan,4175777
+178,Kateterisering av urinblåsa,4175777
+179,Patientinstruktioner om kateterisering,4175777
+180,Dilatation av uretra,4175777
+181,"Urinflödesmätning, flowmetri",4175777
+182,Urinblåspunktion,4175777
+183,Patientinstruktioner om rehydrering,4175777
+184,"KÖNSORGAN, GRAVIDITET, FÖRLOSSNING",4175777
+185,Ultraljudundersökning av bröstkörtlar,4175777
+186,Yttre vändning av foster,4175777
+187,Medhjälp vid normal förlossning,4175777
+188,Perkutan ultraljudsundersökning av prostata,4175777
+189,Ultraljudsundersökning av skrotum,4175777
+190,Skleroterapi,4175777
+191,Parafimos reposition,4175777
+192,Gynekologiskt UL i samband med klinisk undersökning,4175777
+193,"Ultraljudundersökning av livmoder, parametrier och nedre delen av buken",4175777
+194,emotio,4175777
+195,Abrasio av corpus uteri,4175777
+196,Farmakologisk abort,4175777
+197,Laserbehandling eller bränning av livmoderhalsen,4175777
+198,Ultraljudsundersökning i tidig graviditet,4175777
+199,Enskild mått från foster,4175777
+200,Ultraljudsundersökning i graviditet,4175777
+201,Insättande och avlägsnande av intrauterint preventivmedel,4175777
+202,Avlägsnande av främmande kropp ur vagina,4175777
+203,Gynekologisk undersökning,4175777
+204,Gynekologisk cellprovtagning,4175777
+205,Uppföljning av normal graviditet,4175777
+206,Cervixdilatation,4175777
+207,Genetisk rådgivning,4175777
+208,Corpus uteri muskel- eller slemhinneprovtagning,4175777
+209,Uppföljning av problem under graviditet,4175777
+210,Bedömning av abortbehov,4175777
+211,Kontrollundersökning efter abort,4175777
+212,STÖD- OCH RÖRELSEORGANEN,4175777
+213,Ledinjektion,4175777
+214,Annan injektionsbehandling än i muskler eller under huden,4175777
+215,Ledpunktion,4175777
+216,Reposition av luxerad led,4175777
+217,Repositionering och bandagering av fraktur,4175777
+218,Resektion av finger- eller tåstump,4175777
+219,Ultraljudsundersökning av muskel eller sena,4175777
+220,Ultraljudsundersökning av led,4175777
+221,Anläggande bandage av formbart material,4175777
+222,Anläggande av mjukt bandage,4175777
+223,Omfattande klinisk undersökning av stöd- och rörelseorgan,4175777
+224,Undersökning av hållningsfel,4175777
+225,"REHABILITERING, AKTIVITETSSTÖD, HJÄLPMEDELSSERVICE",4175777
+226,Bedömning av annat rehabiliteringsbehov,4175777
+227,Bedömning av funktionsförmåga,4175777
+228,Bedömning av behov för service för äldre person eller person med vårdbidrag eller över 75 års ålder,4175777
+229,Bedömning av behovet av pedagogisk rehabilitering,4175777
+230,Bedömning av behovet av yrkesinriktad rehabilitering,4175777
+231,Utarbetandet av rehabiliteringsplanen,4175777
+232,Information och handledning angående rehabiliteringstjänster och social skydd,4175777
+233,Rådgivning och handledning om självständig levande,4175777
+234,Fysioterapi enligt rehabilitationsplan,4175777
+235,Talterapi enligt rehabilitationsplan,4175777
+236,Fotterapi enligt rehabilitationsplan,4175777
+237,Ergoterapi enligt rehabilitationsplan,4175777
+238,Rehabilitering för missbrukare,4175777
+239,Terapiformer inom pedagogisk rehabilitering,4175777
+240,Bedömning av hjälpmedelsbehov,4175777
+241,"Överlåtelse, anpassning och uppföljning av hjälpmedel",4175777
+242,Bedömning av nödvändiga ändringsarbeten i livsmiljön,4175777
+243,Kommunikation via tolk eller assistent,4175777
+244,Bedömning av arbetsförmåga,4175777
+245,Stödjande av den sociala funktionsförmågan,4175777
+246,Emotionellt stödjande av psykisk hälsa,4175777
+247,Avgivande av förstahandsinformation,4175777
+248,Psykoterapi,4175777
+249,Korttidsterapi,4175777
+250,Familjeterapi,4175777
+251,Stödjande samtal,4175777
+252,Omfattande kartläggning av psykosociala situationen med utlåtande eller remiss,4175777
+253,Traumaterapi,4175777
+254,Psykiatrisk/psykologisk undersökning,4175777
+255,Aktivitetsterapi,4175777
+256,Stöd och information till patientens närstående,4175777
+257,Screening för psykiska problem,4175777
+258,Öppen avgiftningsvård och uppföljning,4175777
+259,Psykiatrisk remiss eller observationsremiss,4175777
+260,"ANDRA UNDERSÖKNINGAR, ÅTGÄRDER, VÅRD OCH BEHANDLING, M.M.",4175777
+261,Lymfkörtel finnålsbiopsi eller biopsi,4175777
+262,Separat fjärrkontakt med patient i hälsovården,4175777
+263,Uppföljning för kronisk sjukdom,4175777
+264,Organisering av läkemedelsbehandling,4175777
+265,Helhetsplanering av läkemedelsbehandling,4175777
+266,"Läkemedelsbehandling start, förändring, avslutning eller förnyelse",4175777
+267,Administrering av läkemedel,4175777
+268,Intravenös administrering av läkemedel,4175777
+269,Intramuskulär och subkutan injektion,4175777
+270,Inlärning av läkemedelsinhalationsteknik,4175777
+271,Utlåtande om behov av fortsatt medicinering,4175777
+272,Utlåtande om röntgenbilder utan kontrast,4175777
+273,Konsultering av medarbetare,4175777
+274,Telemedicinsk konsultation under patientkontakten,4175777
+275,Utdelning av förbrukningsartiklar,4175777
+276,Provtagning,4175777
+277,Utförande av snabbtest på mottagning eller hemma,4175777
+278,Alkometertest,4175777
+279,Separat vägledningskontakt som förberedelse till en åtgärd,4175777
+280,Hyposensibilisering,4175777
+281,Allergitestning,4175777
+282,Annan punktion och/eller tömning,4175777
+283,Undersökning av berusningstillstånd,4175777
+284,Hälsorådgivning och redskapsutbyte för injektionsmissbrukare,4175777
+285,Drogscreening,4175777
+286,Strukturerad kartläggning av bruk av berusningsmedel och tobak,4175777
+287,Mini-intervention för patient med missbruksproblem,4175777
+288,Avgiftnings- och substitutionsbehandling för opioidberoende,4175777
+289,Samråd om behandlingsriktlinjer med patient eller anhörig,4175777
+290,Vägledning om rättsskydd och patientens rättigheter,4175777
+291,Hembesök i terminalskedet,4175777
+292,Förberedande av omedelbar sjukhusvård,4175777
+293,Lämnande av handräckning,4175777
+294,Annan administrativ åtgärd i patientvård,4175777
+295,Bedömning och utlåtande av körförmåga,4175777
+296,Kortfattat intyg om hälsotillstånd,4175777
+297,Omfattande intyg om hälsotillstånd,4175777
+298,Svar till konsultationsbegäran,4175777
+299,Skriftlig dömning av operabilitet,4175777
+300,Rättsmedicinsk undersökning av en levande människa,4175777
+301,Dödsorsaksutredning,4175777
+302,Yttre besiktning av en avliden person med eventuella fortsatta åtgärder,4175777
+303,Omhändertagande av avliden,4175777
+304,Annan åtgärd enligt NCSP-klassificering,4175777
+305,Annan vårdåtgärd enligt SHToL-klassificering,4175777
+306,Annan rehabiliteringshandledning,4175777
+307,Annat hälsosocialt arbete,4175777
+308,Annan fysioterapi,4175777
+309,Annan ergoterapi,4175777
+310,Annan talterapi,4175777
+311,Annan näringsterapi,4175777
+312,Annan fotterapi,4175777
+313,Annan mätning enligt FINLOINC-klassificering,4175777
+314,Inga signifikanta åtgärder,4175777
+315,Symptomsdagbok,4175777
+316,Utvidgad allmän undersökning,4175777
+317,Biopsi,4175777
+318,FÖREBYGGANDE VERKSAMHET OCH FRÄMJANDE AV HÄLSA,4175777
+319,Påbörjande av hormonersättningsbehandling,4175777
+320,Familjeförberedelse,4175777
+321,Utvidgad mödravårdsundersökning,4175777
+322,Instruktioner om amning och skötsel av bröst,4175777
+323,Rådgivning om tillväxt och utveckling,4175777
+324,Rådgivning om åldrande,4175777
+325,Rådgivning om motionering,4175777
+326,Rådgivning om näring och behärskning av vikt,4175777
+327,Relations- och mentalvårdsrådgivning,4175777
+328,Rådgivning om sexualhälsa,4175777
+329,Rådgivning om drog- och tobaksbruk och annat riskbeteende,4175777
+330,Rådgivning om specificerat hälsoproblem,4175777
+331,Rådgivning om arbetshälsa,4175777
+332,Allmän hälsorådgivning,4175777
+333,Rådgivning om skyddsutrustning och annat förebyggande av olycksfall,4175777
+334,Tidsbunden hälsoundersökning av barn och ungdomar,4175777
+335,Överenskommen uppföljning av hälsoundersökning,4175777
+336,Sista hälsoundersökningen i rådgivningen före skolstart,4175777
+337,Skol- och studerandehälsovårdens avslutningshälsoundersökning,4175777
+338,Undersökning av barnets hälsotillstånd enligt barnskyddslagen,4175777
+339,Hälsoundersökning av värnpliktig,4175777
+340,Anställningsundersökning,4175777
+341,Hälsoundersökning i arbete som medför särskild fara för ohälsa,4175777
+342,Screeningsåtgärd,4175777
+343,Arbetsgemenskapsarbete,4175777
+344,Grundläggande arbetsplatsutredning,4175777
+345,Utredning av exponeringsfaktorer i arbetsmiljön,4175777
+346,Arbetsgemenskapsutredning på arbetsplatsen,4175777
+347,Planering av arbetsplatsens förstahjälpsberedskap,4175777
+348,Granskning av hälsoförhållandena i skol- och studiemiljön,4175777
+349,Hälsovårdarens bedömning av munhälsan,4175777
+350,"Hälsoundersökning under det första studieåret för studerande i gymnasiet, vid yrkesläroanstalter och andra studerande",4175777
+351,"Hälsoundersökning under det andra studieåret för studerande i gymnasiet, vid yrkesläroanstalter och andra studerande",4175777
+352,Hälsoundersökning under det första studieåret som på grund av ett särskilt behov genomförs för studerande i gymnasiet eller vid en yrkesläroanstalt,4175777
+353,"Hälsoundersökning som utgående från en hälsoenkät görs för studerande vid universitet, yrkeshögskolor osv.",4175777
+354,Hälsoundersökning på grund av individuellt behov för studerande i gymnasiet eller vid en yrkesläroanstalt,4175777
+355,Periodisk hälsoundersökning inom företagshälsovården,4175777
+356,Elevvårdsgruppens möte,4175777
+357,Övrig hälsoundersökning,4175777
+358,Kombinerad screening under tidig graviditet,4175777
+359,Serumscreening under andra trimestern,4175777
+360,"Ultraljudsscreening av fostrets anatomi, veckorna 18-21+6",4175777
+361,"Ultraljudsscreening av fostrets anatomi, veckorna 24+",4175777
+362,Hälsoundersökning av gravid,4175777
+363,Eftergranskning efter förlossning,4175777
+364,Omfattande hälsoundersökning i 4 mån. Ålder,4175777
+365,Omfattande hälsoundersökning i 18 mån. Ålder,4175777
+366,Omfattande hälsoundersökning i 4 års ålder,4175777
+367,Omfattande hälsoundersökning i första klass,4175777
+368,Omfattande hälsoundersökning i femte klass,4175777
+369,Omfattande hälsoundersökning i åttonde klass,4175777
+370,"Hälsoundersökning under det första studieåret, högre stadiet",4175777
+371,Omfattande hälsoundersökning efter individuellt behov,4175777
+372,Besök efter särskilt behov,4175777
+373,Bedömning av olämplighet för studier,4175777
+374,Rådgivning och handledning relaterad till familjesituation,4175777
+375,Rådgivning och handledning relaterad till parrelation,4175777
+376,Handledning som stöder växelverkan mellan föräldrar och barn,4175777
+377,Rådgivning och handledning relaterad till levnadsförhållanden,4175777
+378,Hälsoundersökning av personer utanför studie- och arbetslivet,4175777
+379,Möte med sektorsövergripande expertgrupp,4175777
+380,Erkännande av faderskap vid mödrarådgivningen,4175777
+381,ANDRA FÖREBYGGANDE ÅTGÄRDER,4175777
+382,Omfattande hälsoundersökning av barn och ungdomar,4175777
+383,Vaccinering,4175777
+384,ÅTGÄRDER SOM INTE GÄLLER EN ENSKILD PERSON,4175777
+385,"PLANERING AV VÅRD OCH BEHANDLING, ORDNANDE AV VIDARE VÅRD",4175777
+386,Ingen plan för fortsatt vård,4175777
+387,Annan planering och ordnande av fortsatt vård eller behandling,4175777
+388,Undersökningsremiss,4175777
+389,Avtal om telefontid,4175777
+390,Avtal om brev/elektronisk kontakt,4175777
+391,Ny mottagningstid,4175777
+392,Hänvisning till andra yrkesgrupper än läkare,4175777
+393,Hänvisning till läkare eller tandläkare,4175777
+394,Remiss till specialistsjukvård,4175777
+395,Remiss till privat undersökning eller vård,4175777
+396,Hänvisning till missbrukarservice,4175777
+397,Hänvisning till medicinsk rehabilitering,4175777
+398,Hänvisning till yrkesinriktad rehabilitering,4175777
+399,Hänvisning till vårdavdelning inom primärvården,4175777
+400,Hänvisning till specialundersökningar inom skolhälsovården,4175777
+401,Hänvisning till kurator- och psykologtjänster inom studerandehälsovården,4175777
+402,Fortsättning av pågående stödåtgärder för arbetsförmågan,4175777
+403,Effektiverad vård inom företagshälsovården,4175777
+404,Rådgivning angående känt hälsoproblem inom företagshälsovården,4175777
+405,Rådgivning om arbetshälsa,4175777
+406,Kontakt med arbetsplatsen,4175777
+407,Utredning av arbetsmiljöagenser,4175777
+408,Utredning av arbetets fysiska belastning eller ergonomin,4175777
+409,Utredning av arbetets psykosociala belastning,4175777
+410,Hänvisning till nätverksförhandling,4175777
+411,Hänvisning till företagshälsoförhandling,4175777
+412,Bedömning av arbetsförmågan,4175777
+413,Utlåtande om arbetsförmågan,4175777
+414,Rekommendation till partiell sjukdagpenning,4175777
+415,Hänvisning till diagnostiska fortsatta undersökningar,4175777
+416,Hänvisning till primärhälsovården,4175777
+417,Undersökningar på grund av misstanke om yrkesskada,4175777

@@ -137,7 +137,7 @@ icd9fi_mapsto <- icd9fi_mapping %>%
     valid_start_date = pmax(valid_start_date, valid_start_date_2), 
     valid_end_date   = pmin(valid_end_date, valid_end_date_2), 
     invalid_reason = as.character(NA), 
-    temp_mapping_type = "USAGI"
+    tmp_mapping_type = "USAGI"
   )
 
 

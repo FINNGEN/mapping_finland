@@ -1,0 +1,223 @@
+---
+title: "REIMB source vocabulary"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# Document variables 
+N_TOPS <- 10
+
+library(tidyverse)
+library(lubridate)
+library(readxl)
+
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+```
+
+## Import Vocabulary
+REIMB codes  were downloaded from [dono](dono) (3.4.2020). Missing codes, translations and validity dates were manually colledted from kela's web page into table [./1_source_vocabulary/Kela_reimbursement_codes.xlsx](./1_source_vocabulary/Kela_reimbursement_codes.xlsx) by [\@CoderMikolaj](github.com/CoderMikolaj). 
+
+Resulting table contains the codes, names, and validity periods. Some codes (e.g 307) have a different names during different periods, and therefore codes are repeated on the table for name and time period. 
+
+TODO: we got the name changes over time only for the top 21 codes. The rest should be checked. (top 21 bcs were the ones with no name at all kela's )
+
+Missing English translations were made using Google-tralator
+
+
+```{r load, message=FALSE, warning=FALSE}
+reimb_source <- read_excel("./Kela_reimbursement_codes.xlsx") %>% 
+  rename(code = CODE, 
+         name_fi = FIN_TXT, 
+         name_en = ENG_TXT,
+         name_en_source = ENG_SRC ) %>% 
+  mutate(name_en_source = str_replace(name_en_source, "GOOGE", "Google")) %>% 
+  mutate(code = as.character(code), valid_start_date = dmy(valid_start_date), valid_end_date = dmy(valid_end_date)) 
+ 
+```
+
+
+## Traslation to English 
+The concept names were translated to English as follow: 
+
+- `THL`: concept name in English already exists in the source table. 
+- `Traslator`: missing names were send to a translator by <mary.reeve@helsinki.fi>
+
+```{r}
+reimb_source %>% count(name_en_source, sort = T)
+```
+
+## Formating source vocabulary to OMOP
+
+#### Create VOCABULARY table
+```{r}
+reimb_vocabulaly <- tibble(
+  vocabulary_id = "REIMB", 
+  vocabulary_name = "Finnish reimbursement code",
+  vocabulary_reference = "", 
+  vocabulary_version = "", 
+  vocabulary_concept_id = 1
+)
+
+reimb_vocabulary_concept <- tibble(
+   concept_id = 1,                                                                
+   concept_name = "Finnish reimbursement code",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Vocabulary",                                                             
+   concept_class_id = "Vocabulary",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+write_csv(reimb_vocabulaly, "./VOCABULARY_REIMB.csv")
+
+reimb_vocabulaly
+```
+
+#### Create CONCEPT_CLASS table
+```{r}
+reimb_concept_class <- tibble(
+  concept_class_id = "REIMB", 
+  concept_class_name = "Finnish reimbursement code",
+  concept_class_concept_id = 2
+) 
+ # TOASK: any level or classes ??
+
+reimb_concept_class_concept <- tibble(
+   #concept_id = 1,                                                                
+   #concept_name = "NOMESCO Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Concept Class",                                                             
+   concept_class_id = "Concept Class",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+reimb_concept_class_concept <- 
+  bind_cols(
+    reimb_concept_class %>% 
+      rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
+      select(concept_id, concept_name), 
+    reimb_concept_class_concept
+  )
+
+
+write_csv(reimb_concept_class, "./CONCEPT_CLASS_REIMB.csv")
+
+reimb_concept_class
+```
+
+
+#### Create CONCEPT table 
+
+At the moment `domain_id` is "Condition" for all although several are not procedures. 
+
+TODO: recalcualte `domain_id` based on the mapping 
+
+```{r}
+
+# add concept_id
+reimb_source <- reimb_source %>% 
+   mutate( concept_id = 1:nrow(.)+2 ) # as already 2 for domain and concept_class
+
+
+reimb_concept <- reimb_source %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_name = name_en,
+    domain_id = "Condition", # at the moment
+    vocabulary_id = "REIMB", 
+    concept_class_id = "REIMB", 
+    standard_concept = as.character(NA), 
+    concept_code = code, 
+    valid_start_date = if_else(is.na(valid_start_date), as.Date("1970-01-01"), valid_start_date), 
+    valid_end_date = if_else(is.na(valid_end_date), as.Date("2099-12-31"), valid_end_date), 
+    tmp_name_fi = name_fi, # keep for USAGI
+    tmp_name_en_source = name_en_source
+  ) 
+    
+        
+# add  concepts for domain and concept_class
+reimb_concept <- bind_rows(
+  reimb_vocabulary_concept, 
+  reimb_concept_class_concept, 
+  reimb_concept
+)
+
+
+write_csv(reimb_concept, "./CONCEPT_REIMB.csv")
+
+reimb_concept %>% head(N_TOPS)
+```
+
+
+#### Create CONCEPT_SYNONYM table 
+- 4181730 # Finnish language
+- 4175777 # Swedish language
+
+TOASK: should we add the abbreviation and short_name as synonyms ??
+
+
+```{r} 
+reimb_concept_synomim <-
+bind_rows( 
+  # Finnish
+  reimb_source %>% 
+  filter(!is.na(name_fi)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_fi, 
+    language_concept_id = 4181730
+  )
+)
+
+
+write_csv(reimb_concept_synomim, "./CONCEPT_SYNONYM_REIMB.csv")
+
+reimb_concept_synomim %>% head(N_TOPS)
+
+```
+
+Summary of codes added in each language: 
+
+```{r}
+
+reimb_source %>%
+  summarise(n_codes = n(), n_witn_name_fi = sum(!is.na(name_fi)))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

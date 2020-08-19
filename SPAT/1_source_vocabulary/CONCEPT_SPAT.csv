@@ -1,0 +1,418 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason,tmp_name_fi,tmp_name_en_source
+1,SPAT,Metadata,Vocabulary,Vocabulary,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+2,SPAT,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+3,EYE AREA,Condition,SPAT,SPAT,NA,SPAT1000,2009-01-01,2099-12-31,NA,SILMÄN ALUE,Traslator
+4,Puncture of abscess of eyelid,Condition,SPAT,SPAT,NA,SPAT1001,2009-01-01,2010-12-31,NA,Silmäluomen paiseen puhkaisu,Traslator
+5,Excision or drainage of chalazion,Condition,SPAT,SPAT,NA,SPAT1002,2009-01-01,2099-12-31,NA,Luomirakkulan poisto tai tyhjennys,Traslator
+6,Suture of wound of eyelid,Condition,SPAT,SPAT,NA,SPAT1003,2009-01-01,2010-12-31,NA,Silmäluomen haavan ompelu,Traslator
+7,Incision of lacrimal point or canaliculus,Condition,SPAT,SPAT,NA,SPAT1004,2009-01-01,2017-12-31,NA,Kyynelpisteen tai -tiehyeen aukaisu,Traslator
+8,Removal of foreign body from conjunctiva,Condition,SPAT,SPAT,NA,SPAT1005,2009-01-01,2017-12-31,NA,Vierasesineen poisto sidekalvolta,Traslator
+9,Removal of foreign body from conjunctiva under regional anaesthesia,Condition,SPAT,SPAT,NA,SPAT1006,2009-01-01,2010-12-31,NA,Sidekalvon vierasesineen poisto puudutuksessa,Traslator
+10,Removal of foreign body from cornea,Condition,SPAT,SPAT,NA,SPAT1007,2009-01-01,2017-12-31,NA,Vierasesineen poisto sarveiskalvosta,Traslator
+11,Photography of fundus of the eye or interpretation of photograph,Condition,SPAT,SPAT,NA,SPAT1008,2009-01-01,2099-12-31,NA,Silmänpohjan valokuvaus tai kuvan tulkinta,Traslator
+12,Measurement of intraocular pressure,Condition,SPAT,SPAT,NA,SPAT1009,2009-01-01,2099-12-31,NA,Silmänpaineen mittaus,Traslator
+13,Ophthalmoscopy,Condition,SPAT,SPAT,NA,SPAT1010,2009-01-01,2099-12-31,NA,Silmänpohjatutkimus (oftalmoskopia),Traslator
+14,Other examination of eye area,Condition,SPAT,SPAT,NA,SPAT1011,2009-01-01,2010-12-31,NA,Muu silmän alueen tutkimus,Traslator
+15,Other minor procedure on eye area,Condition,SPAT,SPAT,NA,SPAT1012,2009-01-01,2010-12-31,NA,Muu silmän alueen pientoimenpide,Traslator
+16,Strabismus rehabilitation and guidance,Condition,SPAT,SPAT,NA,SPAT1013,2009-01-01,2099-12-31,NA,Karsastuskuntoutus ja -ohjaus,Traslator
+17,Treatment of eyes,Condition,SPAT,SPAT,NA,SPAT1014,2009-01-01,2017-12-31,NA,Silmien hoito,Traslator
+18,Examination of strabismus,Condition,SPAT,SPAT,NA,SPAT1015,2009-01-01,2099-12-31,NA,Karsastuksen tutkiminen,Traslator
+19,Examination of vision,Condition,SPAT,SPAT,NA,SPAT1016,2009-01-01,2099-12-31,NA,Näön tutkiminen,Traslator
+20,Examination of colour vision,Condition,SPAT,SPAT,NA,SPAT1017,2009-01-01,2099-12-31,NA,Värinäön tutkimus,Traslator
+21,Microscopic examination of eye,Condition,SPAT,SPAT,NA,SPAT1348,2011-01-01,2017-12-31,NA,Silmän mikroskooppitutkimus,Traslator
+22,"EAR, NOSE AND LARYNX",Condition,SPAT,SPAT,NA,SPAT1018,2009-01-01,2099-12-31,NA,"KORVA, NENÄ JA KURKUNPÄÄ",Traslator
+23,Insertion of tympanostomy tube,Condition,SPAT,SPAT,NA,SPAT1019,2009-01-01,2017-12-31,NA,Tympanostomiaputken asennus,Traslator
+24,Adenoid operation,Condition,SPAT,SPAT,NA,SPAT1020,2009-01-01,2017-12-31,NA,Kitarisaleikkaus,Traslator
+25,Puncture of abscess of outer auditory canal,Condition,SPAT,SPAT,NA,SPAT1021,2009-01-01,2010-12-31,NA,Korvakäytävän paiseen puhkaisu,Traslator
+26,Tympanic paracentesis,Condition,SPAT,SPAT,NA,SPAT1022,2009-01-01,2017-12-31,NA,Tärykalvopisto,Traslator
+27,Excision of polyp,Condition,SPAT,SPAT,NA,SPAT1023,2009-01-01,2017-12-31,NA,Polyypin poisto,Traslator
+28,Closed reduction of nasal fracture,Condition,SPAT,SPAT,NA,SPAT1024,2009-01-01,2017-12-31,NA,Nenän murtuman korjaaminen suljetusti,Traslator
+29,Treatment of epistaxis with coagulation,Condition,SPAT,SPAT,NA,SPAT1025,2009-01-01,2099-12-31,NA,Nenäverenvuodon hoito hyydyttämällä,Traslator
+30,Anterior nasal pack,Condition,SPAT,SPAT,NA,SPAT1026,2009-01-01,2017-12-31,NA,Nenän etutamponaatio,Traslator
+31,Posterior nasal pack,Condition,SPAT,SPAT,NA,SPAT1027,2009-01-01,2017-12-31,NA,Nenän takatamponaatio,Traslator
+32,Ultrasound examination of paranasal sinuses,Condition,SPAT,SPAT,NA,SPAT1028,2009-01-01,2017-12-31,NA,Nenän sivuonteloiden ultraäänitutkimus,Traslator
+33,Ultrasound examination of salivary glands,Condition,SPAT,SPAT,NA,SPAT1029,2009-01-01,2017-12-31,NA,Sylkirauhasten ultraäänitutkimus,Traslator
+34,Cell biopsy of salivary gland under ultrasound guidance,Condition,SPAT,SPAT,NA,SPAT1030,2009-01-01,2010-12-31,NA,Sylkirauhasen solunäytteen otto UÄ-ohjauksessa,Traslator
+35,Incision or drainage of pharyngeal abscess,Condition,SPAT,SPAT,NA,SPAT1031,2009-01-01,2017-12-31,NA,Nielupaiseen avaus tai tyhjennys,Traslator
+36,Removal of foreign body from pharynx,Condition,SPAT,SPAT,NA,SPAT1032,2009-01-01,2017-12-31,NA,Vierasesineen poisto nielusta,Traslator
+37,Irrigation or wax removal of outer auditory canal,Condition,SPAT,SPAT,NA,SPAT1033,2009-01-01,2099-12-31,NA,Korvakäytävän huuhtelu tai vahan poisto,Traslator
+38,Removal of foreign body from ear canal,Condition,SPAT,SPAT,NA,SPAT1034,2009-01-01,2017-12-31,NA,Vierasesineen poisto korvakäytävästä,Traslator
+39,Removal of foreign body from nose,Condition,SPAT,SPAT,NA,SPAT1035,2009-01-01,2099-12-31,NA,Vierasesineen poisto nenästä,Traslator
+40,Maxillary puncture,Condition,SPAT,SPAT,NA,SPAT1036,2009-01-01,2099-12-31,NA,Poskiontelopunktio,Traslator
+41,"Other minor procedure on ear, nose or larynx",Condition,SPAT,SPAT,NA,SPAT1037,2009-01-01,2010-12-31,NA,"Muu korvan, nenän tai kurkunpään pientoimenpide",Traslator
+42,Needle biopsy of salivary gland,Condition,SPAT,SPAT,NA,SPAT1038,2009-01-01,2010-12-31,NA,Neulakudosnäytteen otto sylkirauhasesta,Traslator
+43,Otomicroscopy,Condition,SPAT,SPAT,NA,SPAT1039,2009-01-01,2017-12-31,NA,Otomikroskopia,Traslator
+44,Nasolaryngoscopy,Condition,SPAT,SPAT,NA,SPAT1040,2009-01-01,2017-12-31,NA,Nenän ja kurkunpään tähystys,Traslator
+45,Comprehensive hearing test,Condition,SPAT,SPAT,NA,SPAT1041,2009-01-01,2017-12-31,NA,Perusteellinen kuulontutkimus,Traslator
+46,Guidance concerning balance maintenance,Condition,SPAT,SPAT,NA,SPAT1042,2009-01-01,2099-12-31,NA,Tasapainon ylläpitoon liittyvä ohjaus,Traslator
+47,Audiometry,Condition,SPAT,SPAT,NA,SPAT1043,2009-01-01,2099-12-31,NA,Audiometria,Traslator
+48,Tympanometry,Condition,SPAT,SPAT,NA,SPAT1044,2009-01-01,2099-12-31,NA,Tympanometria,Traslator
+49,Tilt provocation test of vestibular organ / Epley maneuver,Condition,SPAT,SPAT,NA,SPAT1045,2009-01-01,2099-12-31,NA,Tasapainoelimen kallistusprovokaatiotesti/Epleyn manööveri,Traslator
+50,Tonsil operation,Condition,SPAT,SPAT,NA,SPAT1349,2011-01-01,2017-12-31,NA,Nielurisaleikkaus,Traslator
+51,Tamponade of outer auditory canal,Condition,SPAT,SPAT,NA,SPAT1350,2011-01-01,2017-12-31,NA,Korvakäytävän tamponaatio,Traslator
+52,Extensive ear examination,Condition,SPAT,SPAT,NA,SPAT1351,2011-01-01,2017-12-31,NA,Laaja korvan tutkimus,Traslator
+53,"Inspection, maintenance and instruction for use of hearing aid",Condition,SPAT,SPAT,NA,SPAT1352,2011-01-01,2099-12-31,NA,"Kuulolaitteen tarkastus, huolto ja käytön ohjaus",Traslator
+54,"NERVOUS SYSTEM, ENDOCRINE SYSTEM, SLEEP-WAKE STATE",Condition,SPAT,SPAT,NA,SPAT1046,2009-01-01,2099-12-31,NA,"HERMOSTO, UMPIERITYS, UNI-VALVETILA",Traslator
+55,Ultrasound examination of thyroid,Condition,SPAT,SPAT,NA,SPAT1047,2009-01-01,2017-12-31,NA,Kilpirauhasen ultraäänitutkimus,Traslator
+56,Fine needle aspiration biopsy from thyroid,Condition,SPAT,SPAT,NA,SPAT1048,2009-01-01,2010-12-31,NA,Ohutneulanäytteen otto kilpirauhasesta,Traslator
+57,Lumbar puncture,Condition,SPAT,SPAT,NA,SPAT1049,2009-01-01,2017-12-31,NA,Lannepisto (lumbaalipunktio),Traslator
+58,Extensive neurological examination,Condition,SPAT,SPAT,NA,SPAT1050,2009-01-01,2099-12-31,NA,Perusteellinen neurologinen tutkimus,Traslator
+59,Guidance regarding sleep disorders,Condition,SPAT,SPAT,NA,SPAT1051,2009-01-01,2099-12-31,NA,Unihäiriöihin liittyvä ohjaus,Traslator
+60,Monitoring of level of consciousness and neurological symptoms,Condition,SPAT,SPAT,NA,SPAT1052,2009-01-01,2017-12-31,NA,Tajunnantason ja neurologisten oireiden seuranta,Traslator
+61,Memory test,Condition,SPAT,SPAT,NA,SPAT1053,2009-01-01,2099-12-31,NA,Muistitutkimus,Traslator
+62,Examination of peripheral nervous system,Condition,SPAT,SPAT,NA,SPAT1054,2009-01-01,2017-12-31,NA,Perifeerisen hermoston tutkiminen,Traslator
+63,Polysomnography,Condition,SPAT,SPAT,NA,SPAT1377,2013-01-01,2017-12-31,NA,Unipolygrafiatutkimus,Traslator
+64,RESPIRATORY ORGANS,Condition,SPAT,SPAT,NA,SPAT1055,2009-01-01,2099-12-31,NA,HENGITYSELIMET,Traslator
+65,Pleural puncture,Condition,SPAT,SPAT,NA,SPAT1056,2009-01-01,2099-12-31,NA,Pleurapunktio,Traslator
+66,Peak expiratory flow measurement,Condition,SPAT,SPAT,NA,SPAT1057,2009-01-01,2099-12-31,NA,Uloshengityksen huippuvirtausmittaus,Traslator
+67,PEF monitoring instruction,Condition,SPAT,SPAT,NA,SPAT1058,2009-01-01,2099-12-31,NA,PEF-seurantaopetus,Traslator
+68,Spirometry at the office,Condition,SPAT,SPAT,NA,SPAT1059,2009-01-01,2017-12-31,NA,Spirometrinen tutkimus vastaanotolla,Traslator
+69,Administration of oxygen,Condition,SPAT,SPAT,NA,SPAT1060,2009-01-01,2017-12-31,NA,Hapen antaminen,Traslator
+70,Implementation of breathing exercises,Condition,SPAT,SPAT,NA,SPAT1061,2009-01-01,2017-12-31,NA,Hengitysharjoitusten toteuttaminen,Traslator
+71,Lung clearance therapy,Condition,SPAT,SPAT,NA,SPAT1062,2009-01-01,2099-12-31,NA,Keuhkojen tyhjennyshoito,Traslator
+72,Suctioning of mucus from airways,Condition,SPAT,SPAT,NA,SPAT1063,2009-01-01,2099-12-31,NA,Liman imeminen hengitysteistä,Traslator
+73,Management of tracheostomy stoma,Condition,SPAT,SPAT,NA,SPAT1064,2009-01-01,2099-12-31,NA,Trakeostomia-avanteen hoito,Traslator
+74,Guidance concerning management of breathing,Condition,SPAT,SPAT,NA,SPAT1065,2009-01-01,2010-12-31,NA,Hengityksen hoitoon liittyvä ohjaus,Traslator
+75,"HEART, CIRCULATORY SYSTEM, LYMPHATIC SYSTEM, BONE MARROW",Condition,SPAT,SPAT,NA,SPAT1066,2009-01-01,2099-12-31,NA,"SYDÄN, VERENKIERTOELIMISTÖ, IMUSUONISTO, LUUYDIN",Traslator
+76,Ultrasound examination of abdominal aorta,Condition,SPAT,SPAT,NA,SPAT1067,2009-01-01,2017-12-31,NA,Vatsa-aortan ultraäänitutkimus,Traslator
+77,Ultrasound examination of arteries of upper extremity,Condition,SPAT,SPAT,NA,SPAT1068,2009-01-01,2017-12-31,NA,Yläraajalaskimoiden ultraäänitutkimus,Traslator
+78,Ultrasound examination of arteries of lower extremity,Condition,SPAT,SPAT,NA,SPAT1069,2009-01-01,2017-12-31,NA,Alaraajalaskimoiden ultraäänitutkimus,Traslator
+79,Doppler ultrasound examination of blood flow in arteries of lower extremity,Condition,SPAT,SPAT,NA,SPAT1070,2009-01-01,2099-12-31,NA,Alaraajalaskimoiden verivirtauksen Doppler-ultraäänitutkimus,Traslator
+80,Ultrasound examination of lymph nodes,Condition,SPAT,SPAT,NA,SPAT1071,2009-01-01,2017-12-31,NA,Imusolmukkeiden ultraäänitutkimus,Traslator
+81,Electrical cardioversion,Condition,SPAT,SPAT,NA,SPAT1073,2009-01-01,2017-12-31,NA,Sähköinen rytminsiirto,Traslator
+82,Venesection,Condition,SPAT,SPAT,NA,SPAT1074,2009-01-01,2099-12-31,NA,Venesektio,Traslator
+83,Cannulation of vein,Condition,SPAT,SPAT,NA,SPAT1075,2009-01-01,2010-12-31,NA,Laskimon kanylointi,Traslator
+84,Cannulation of central vein,Condition,SPAT,SPAT,NA,SPAT1076,2009-01-01,2017-12-31,NA,Keskuslaskimokanylointi,Traslator
+85,Arterial blood sampling,Condition,SPAT,SPAT,NA,SPAT1077,2009-01-01,2017-12-31,NA,Valtimoverinäytteen otto,Traslator
+86,Removal of central venous or arterial cannula,Condition,SPAT,SPAT,NA,SPAT1078,2009-01-01,2017-12-31,NA,Keskuslaskimo- tai valtimokanyylin poisto,Traslator
+87,Echocardiography,Condition,SPAT,SPAT,NA,SPAT1079,2009-01-01,2017-12-31,NA,Sydämen ultraäänitutkimus,Traslator
+88,Bone marrow biopsy,Condition,SPAT,SPAT,NA,SPAT1080,2009-01-01,2017-12-31,NA,Luuydinnäytteen otto,Traslator
+89,Cardiorespiratory global assessment,Condition,SPAT,SPAT,NA,SPAT1081,2009-01-01,2099-12-31,NA,Kardiorespiratorinen kokonaisarvio,Traslator
+90,Pharmacological cardioversion,Condition,SPAT,SPAT,NA,SPAT1082,2009-01-01,2099-12-31,NA,Lääkkeellinen rytminsiirto,Traslator
+91,Initiation and monitoring of IV fluid therapy,Condition,SPAT,SPAT,NA,SPAT1083,2009-01-01,2099-12-31,NA,IV-nestehoidon aloitus ja seuranta,Traslator
+92,"RESUSCITATION, ANAESTHESIA, MONITORING OF CIRCULATION ETC.",Condition,SPAT,SPAT,NA,SPAT1084,2009-01-01,2099-12-31,NA,"ELVYTYS, ANESTESIA, VERENKIERRON SEURANTA,YM.",Traslator
+93,Inhalation anaesthesia,Condition,SPAT,SPAT,NA,SPAT1085,2009-01-01,2017-12-31,NA,Inhalaatioanestesia,Traslator
+94,Operations and comparable procedures performed in operating theatre setting,Condition,SPAT,SPAT,NA,SPAT1086,2009-01-01,2010-12-31,NA,Leikkaussaliolosuhteissa tehtävät leikkaukset ja vastaavat toimenpiteet,Traslator
+95,Thrombolytic therapy of artery,Condition,SPAT,SPAT,NA,SPAT1087,2009-01-01,2017-12-31,NA,Valtimon liuotushoito,Traslator
+96,Blood transfusion,Condition,SPAT,SPAT,NA,SPAT1088,2009-01-01,2099-12-31,NA,Verensiirto,Traslator
+97,Sedation without anaesthesia,Condition,SPAT,SPAT,NA,SPAT1089,2009-01-01,2017-12-31,NA,Sedaatio ilman anestesiaa,Traslator
+98,"Intravenous, intramuscular or rectal general anaesthesia",Condition,SPAT,SPAT,NA,SPAT1090,2009-01-01,2017-12-31,NA,"Suonensisäinen, intramuskulaarinen tai rektaalinen yleisanestesia",Traslator
+99,Insertion of nasopharyngeal or pharyngeal tube,Condition,SPAT,SPAT,NA,SPAT1091,2009-01-01,2017-12-31,NA,Nenänielu- tai nieluputken asennus,Traslator
+100,Intubation,Condition,SPAT,SPAT,NA,SPAT1092,2009-01-01,2017-12-31,NA,Intubaatio,Traslator
+101,Tracheostomy,Condition,SPAT,SPAT,NA,SPAT1093,2009-01-01,2017-12-31,NA,Trakeostomia,Traslator
+102,Continuous Positive Airway Pressure,Condition,SPAT,SPAT,NA,SPAT1094,2009-01-01,2017-12-31,NA,Ylipainehengitys,Traslator
+103,Cardiopulmonary resuscitation,Condition,SPAT,SPAT,NA,SPAT1095,2009-01-01,2017-12-31,NA,Verenkierron tai hengityksen elvytys,Traslator
+104,Insertion or use of external pacemaker,Condition,SPAT,SPAT,NA,SPAT1096,2009-01-01,2017-12-31,NA,Sydämen ulkoisen tahdistimen asetus tai käyttö,Traslator
+105,Recording of ECG,Condition,SPAT,SPAT,NA,SPAT1097,2009-01-01,2099-12-31,NA,EKG:n ottaminen,Traslator
+106,Exercise ECG,Condition,SPAT,SPAT,NA,SPAT1098,2009-01-01,2017-12-31,NA,Rasitus-EKG,Traslator
+107,Measurement of blood pressure with Doppler ultrasound device,Condition,SPAT,SPAT,NA,SPAT1099,2009-01-01,2099-12-31,NA,Verenpaineen mittaus Doppler-ultraäänilaitteen avulla,Traslator
+108,Long-term monitoring of blood pressure,Condition,SPAT,SPAT,NA,SPAT1100,2009-01-01,2099-12-31,NA,Verenpaineen pitkäaikaisseuranta,Traslator
+109,Orthostatic test,Condition,SPAT,SPAT,NA,SPAT1101,2009-01-01,2099-12-31,NA,Ortostaattinen koe,Traslator
+110,Treatment and monitoring of patient with bleeding,Condition,SPAT,SPAT,NA,SPAT1102,2009-01-01,2010-12-31,NA,Verenvuotopotilaan hoito ja seuranta,Traslator
+111,Demanding ambulance transportation,Condition,SPAT,SPAT,NA,SPAT1103,2009-01-01,2017-12-31,NA,Vaativa sairaankuljetus,Traslator
+112,Monitoring of emergency patient,Condition,SPAT,SPAT,NA,SPAT1104,2009-01-01,2099-12-31,NA,Ensiapupotilaan seuranta,Traslator
+113,Intensive monitoring,Condition,SPAT,SPAT,NA,SPAT1353,2011-01-01,2017-12-31,NA,Tehovalvonta,Traslator
+114,"ANALGESIA, REGIONAL ANAESTHESIA",Condition,SPAT,SPAT,NA,SPAT1105,2009-01-01,2099-12-31,NA,"KIVUN HOITO, PUUDUTUKSET",Traslator
+115,Acupuncture,Condition,SPAT,SPAT,NA,SPAT1106,2009-01-01,2099-12-31,NA,Akupunktio,Traslator
+116,Extensive external surface anaesthesia of skin with cream or gel,Condition,SPAT,SPAT,NA,SPAT1107,2009-01-01,2017-12-31,NA,Laaja ihon pintapuudutus ulkoisesti voiteella tai geelillä,Traslator
+117,Regional anaesthesia of intercostal space,Condition,SPAT,SPAT,NA,SPAT1108,2009-01-01,2017-12-31,NA,Kylkiluuvälin puudutus,Traslator
+118,Analgesia with portable analgesic pump,Condition,SPAT,SPAT,NA,SPAT1109,2009-01-01,2099-12-31,NA,Kivun hoito kipupumpun avulla,Traslator
+119,Measurement of pain intensity,Condition,SPAT,SPAT,NA,SPAT1110,2009-01-01,2099-12-31,NA,Kivun voimakkuuden mittaaminen,Traslator
+120,Planning of analgesia,Condition,SPAT,SPAT,NA,SPAT1111,2009-01-01,2099-12-31,NA,Kivunhoidon suunnittelu,Traslator
+121,Local anaesthesia,Condition,SPAT,SPAT,NA,SPAT1112,2009-01-01,2017-12-31,NA,Paikallispuudutus,Traslator
+122,Nerve block anaesthesia,Condition,SPAT,SPAT,NA,SPAT1113,2009-01-01,2017-12-31,NA,Johtopuudutus,Traslator
+123,"DIGESTIVE TRACT, NECK, ABDOMEN, NUTRITION",Condition,SPAT,SPAT,NA,SPAT1114,2009-01-01,2099-12-31,NA,"RUUANSULATUSKANAVA, KAULA, VATSA, RAVITSEMUS",Traslator
+124,Other procedure in accordance with nutritional therapy nomenclature,Condition,SPAT,SPAT,NA,SPAT1115,2009-01-01,2010-12-31,NA,Muu ravitsemusterapianimikkeistön mukainen toimenpide,Traslator
+125,Ultrasound examination of neck,Condition,SPAT,SPAT,NA,SPAT1116,2009-01-01,2017-12-31,NA,Kaulan ultraäänitutkimus,Traslator
+126,Ultrasound examination of groins and/or abdominal wall,Condition,SPAT,SPAT,NA,SPAT1117,2009-01-01,2017-12-31,NA,Nivusten ja/tai vatsapeitteiden ultraäänitutkimus,Traslator
+127,Haemorrhoid procedure,Condition,SPAT,SPAT,NA,SPAT1118,2009-01-01,2099-12-31,NA,Peräpukamatoimenpide,Traslator
+128,Ultrasound examination of abdomen,Condition,SPAT,SPAT,NA,SPAT1119,2009-01-01,2017-12-31,NA,Vatsan ultraäänitutkimus,Traslator
+129,Ultrasound examination of upper abdomen,Condition,SPAT,SPAT,NA,SPAT1120,2009-01-01,2017-12-31,NA,Ylävatsan ultraäänitutkimus,Traslator
+130,Ultrasound examination of lower abdomen,Condition,SPAT,SPAT,NA,SPAT1121,2009-01-01,2017-12-31,NA,Alavatsan ultraäänitutkimus,Traslator
+131,Ascites puncture,Condition,SPAT,SPAT,NA,SPAT1122,2009-01-01,2099-12-31,NA,Askitespunktio,Traslator
+132,Insertion of nasogastric tube,Condition,SPAT,SPAT,NA,SPAT1123,2009-01-01,2017-12-31,NA,Nenämahaletkun laitto,Traslator
+133,Replacement of gastrostomy tube,Condition,SPAT,SPAT,NA,SPAT1124,2009-01-01,2017-12-31,NA,Mahalaukkuavanneletkun vaihto,Traslator
+134,Stoma care and guidance,Condition,SPAT,SPAT,NA,SPAT1125,2009-01-01,2099-12-31,NA,Avannehoito ja -ohjaus,Traslator
+135,Removal of foreign body from rectum,Condition,SPAT,SPAT,NA,SPAT1126,2009-01-01,2017-12-31,NA,Vierasesineen poisto peräsuolesta,Traslator
+136,Enema,Condition,SPAT,SPAT,NA,SPAT1127,2009-01-01,2099-12-31,NA,Peräruiske,Traslator
+137,Instruction of pelvic floor / sphincter exercises,Condition,SPAT,SPAT,NA,SPAT1128,2009-01-01,2099-12-31,NA,Lantionpohjan/sulkijalihasten harjoituksen ohjaus,Traslator
+138,Removal of local lesion during endoscopy of gastrointestinal tract,Condition,SPAT,SPAT,NA,SPAT1129,2009-01-01,2010-12-31,NA,Paikallisen muutoksen poisto mahasuolikanavan tähystyksessä,Traslator
+139,"Esophagoscopy, gastroscopy and duodenoscopy",Condition,SPAT,SPAT,NA,SPAT1130,2009-01-01,2099-12-31,NA,"Esofago-, gastro- ja duodenoskopia",Traslator
+140,Colonoscopy,Condition,SPAT,SPAT,NA,SPAT1131,2009-01-01,2099-12-31,NA,Paksusuolen tähystys,Traslator
+141,Sigmoidoscopy,Condition,SPAT,SPAT,NA,SPAT1132,2009-01-01,2017-12-31,NA,Sigmoideoskopia,Traslator
+142,Rectoscopy,Condition,SPAT,SPAT,NA,SPAT1133,2009-01-01,2010-12-31,NA,Peräsuolen tähystys (rektoskopia),Traslator
+143,Anoscopy,Condition,SPAT,SPAT,NA,SPAT1134,2009-01-01,2099-12-31,NA,Peräaukon tähystys,Traslator
+144,Particularly demanding anoscopy (proctoscopy/anoscopy),Condition,SPAT,SPAT,NA,SPAT1135,2009-01-01,2010-12-31,NA,Erityisen vaativa peräaukon tähystys (proktoskopia/anoskopia),Traslator
+145,Food exposure,Condition,SPAT,SPAT,NA,SPAT1136,2009-01-01,2017-12-31,NA,Ruoka-ainealtistus,Traslator
+146,Taking care of patient’s/customer’s hygiene,Condition,SPAT,SPAT,NA,SPAT1137,2009-01-01,2017-12-31,NA,Potilaan/asiakkaan hygieniasta huolehtiminen,Traslator
+147,Guidance concerning bowel function,Condition,SPAT,SPAT,NA,SPAT1138,2009-01-01,2017-12-31,NA,Suoliston toimintaan liittyvä ohjaus,Traslator
+148,Nutrition survey,Condition,SPAT,SPAT,NA,SPAT1139,2009-01-01,2017-12-31,NA,Ravitsemuskartoitus,Traslator
+149,Gastric lavage,Condition,SPAT,SPAT,NA,SPAT1354,2011-01-01,2017-12-31,NA,Mahahuuhtelu,Traslator
+150,Reposition of hernia,Condition,SPAT,SPAT,NA,SPAT1355,2011-01-01,2017-12-31,NA,Tyrän reponointi,Traslator
+151,SKIN AND MUCOUS MEMBRANES,Condition,SPAT,SPAT,NA,SPAT1140,2009-01-01,2099-12-31,NA,IHO JA LIMAKALVOT,Traslator
+152,Excision of skin or mucous membrane lesion,Condition,SPAT,SPAT,NA,SPAT1141,2009-01-01,2099-12-31,NA,Iho- tai limakalvomuutoksen poisto,Traslator
+153,"Minor procedure on teeth, gums, mouth and pharynx",Condition,SPAT,SPAT,NA,SPAT1142,2009-01-01,2017-12-31,NA,"Hampaiden, ikenien, suun ja nielun pientoimenpide",Traslator
+154,Partial or complete excision of nail,Condition,SPAT,SPAT,NA,SPAT1143,2009-01-01,2099-12-31,NA,Kynnen poisto osittain tai kokonaan,Traslator
+155,Treatment of reopened or infected surgical wound,Condition,SPAT,SPAT,NA,SPAT1144,2009-01-01,2099-12-31,NA,Auenneen tai tulehtuneen leikkaushaavan hoito,Traslator
+156,Ultrasound examination of superficial resistance,Condition,SPAT,SPAT,NA,SPAT1145,2009-01-01,2017-12-31,NA,Pinnallisen resistenssin ultraäänitutkimus,Traslator
+157,Puncture of abscess or incision of skin,Condition,SPAT,SPAT,NA,SPAT1146,2009-01-01,2099-12-31,NA,Paiseen puhkaisu tai ihon aukaisu,Traslator
+158,Destruction of skin lesion with external methods,Condition,SPAT,SPAT,NA,SPAT1147,2009-01-01,2099-12-31,NA,Ihomuutoksen tuhoaminen ulkoisilla menetelmillä,Traslator
+159,Treatment of chronic ulcer or burn,Condition,SPAT,SPAT,NA,SPAT1148,2009-01-01,2099-12-31,NA,Kroonisen haavan tai palovamman hoito,Traslator
+160,Suture or treatment of traumatic wound,Condition,SPAT,SPAT,NA,SPAT1149,2009-01-01,2099-12-31,NA,Traumaattisen haavan ompelu tai hoito,Traslator
+161,Suture of wound,Condition,SPAT,SPAT,NA,SPAT1150,2009-01-01,2010-12-31,NA,Haavan ompelu,Traslator
+162,Treatment of major wounds,Condition,SPAT,SPAT,NA,SPAT1151,2009-01-01,2099-12-31,NA,Suurten haavojen hoito,Traslator
+163,Removal of foreign body from under the skin,Condition,SPAT,SPAT,NA,SPAT1152,2009-01-01,2099-12-31,NA,Ihon alle jääneen vierasesineen poisto,Traslator
+164,Removal of sutures,Condition,SPAT,SPAT,NA,SPAT1153,2009-01-01,2099-12-31,NA,Ompeleiden poisto,Traslator
+165,Insertion or removal of subcutaneous medicine capsule,Condition,SPAT,SPAT,NA,SPAT1154,2009-01-01,2099-12-31,NA,Ihonalaisen lääkeainekapselin asettaminen tai poisto,Traslator
+166,Pinch skin grafting,Condition,SPAT,SPAT,NA,SPAT1155,2009-01-01,2010-12-31,NA,Ihosuikalesiirto,Traslator
+167,Guidance concerning treatment of rash and skin,Condition,SPAT,SPAT,NA,SPAT1156,2009-01-01,2099-12-31,NA,Ihottuman ja ihon hoitoon liittyvä ohjaus,Traslator
+168,Guidance concerning treatment of mouth and mucous membranes,Condition,SPAT,SPAT,NA,SPAT1157,2009-01-01,2099-12-31,NA,Suun ja limakalvojen hoitoon liittyvä ohjaus,Traslator
+169,Puncture of nail,Condition,SPAT,SPAT,NA,SPAT1158,2009-01-01,2099-12-31,NA,Kynnen puhkaisu,Traslator
+170,"URINARY TRACT, METABOLISM",Condition,SPAT,SPAT,NA,SPAT1159,2009-01-01,2099-12-31,NA,"VIRTSATIET, AINEENVAIHDUNTA",Traslator
+171,Ultrasound examination of kidneys,Condition,SPAT,SPAT,NA,SPAT1160,2009-01-01,2017-12-31,NA,Munuaisten ultraäänitutkimus,Traslator
+172,Ultrasound examination of urinary bladder,Condition,SPAT,SPAT,NA,SPAT1161,2009-01-01,2017-12-31,NA,Virtsarakon ultraäänitutkimus,Traslator
+173,Determination of residual urine with ultrasound,Condition,SPAT,SPAT,NA,SPAT1162,2009-01-01,2010-12-31,NA,Jäännösvirtsan määritys UÄ:llä,Traslator
+174,Ultrasound examination of urinary organs,Condition,SPAT,SPAT,NA,SPAT1163,2009-01-01,2017-12-31,NA,Virtsaelinten ultraäänitutkimus,Traslator
+175,Haemodialysis,Condition,SPAT,SPAT,NA,SPAT1164,2009-01-01,2017-12-31,NA,Hemodialyysi,Traslator
+176,Peritoneal dialysis,Condition,SPAT,SPAT,NA,SPAT1165,2009-01-01,2017-12-31,NA,Vatsakalvodialyysi,Traslator
+177,Bladder puncture,Condition,SPAT,SPAT,NA,SPAT1166,2009-01-01,2010-12-31,NA,Virtsarakkopunktio,Traslator
+178,Insertion of urinary catheter,Condition,SPAT,SPAT,NA,SPAT1167,2009-01-01,2099-12-31,NA,Virtsarakkokatetrin asettaminen,Traslator
+179,Catheterisation training,Condition,SPAT,SPAT,NA,SPAT1168,2009-01-01,2099-12-31,NA,Katetrointiopetus,Traslator
+180,Dilatation of urethra,Condition,SPAT,SPAT,NA,SPAT1169,2009-01-01,2017-12-31,NA,Virtsaputken laajentaminen,Traslator
+181,Uroflowmetry,Condition,SPAT,SPAT,NA,SPAT1170,2009-01-01,2017-12-31,NA,"Virtsasuihkun virtausmittaus, flowmetria",Traslator
+182,Bladder puncture,Condition,SPAT,SPAT,NA,SPAT1171,2009-01-01,2099-12-31,NA,Virtsarakkopunktio,Traslator
+183,Guidance concerning hydration,Condition,SPAT,SPAT,NA,SPAT1172,2009-01-01,2099-12-31,NA,Nesteytykseen liittyvä ohjaus,Traslator
+184,"gynaecological diseases, SEXUAL AND REPRODUCTIVE HEALTH",Condition,SPAT,SPAT,NA,SPAT1173,2009-01-01,2099-12-31,NA,"NAISTENTAUDIT, SEKSUAALI- JA LISÄÄNTYMISTERVEYS",Traslator
+185,Ultrasound examination of mammary glands,Condition,SPAT,SPAT,NA,SPAT1174,2009-01-01,2017-12-31,NA,Rintarauhasten ultraäänitutkimus,Traslator
+186,External version of foetus,Condition,SPAT,SPAT,NA,SPAT1175,2009-01-01,2017-12-31,NA,Sikiön ulkokäännös,Traslator
+187,Management of childbirth,Condition,SPAT,SPAT,NA,SPAT1176,2009-01-01,2017-12-31,NA,Synnytyksen hoito,Traslator
+188,Ultrasound examination of prostate through the skin,Condition,SPAT,SPAT,NA,SPAT1177,2009-01-01,2017-12-31,NA,Prostatan ultraäänitutkimus iholta,Traslator
+189,Ultrasound examination of scrotum,Condition,SPAT,SPAT,NA,SPAT1178,2009-01-01,2017-12-31,NA,Kivespussin ultraäänitutkimus,Traslator
+190,Sclerotherapy,Condition,SPAT,SPAT,NA,SPAT1179,2009-01-01,2017-12-31,NA,Skleroterapia,Traslator
+191,Repositioning of paraphimosis,Condition,SPAT,SPAT,NA,SPAT1180,2009-01-01,2017-12-31,NA,Parafimoosin repositio,Traslator
+192,Ultrasound examination of uterus and uterine appendages,Condition,SPAT,SPAT,NA,SPAT1181,2009-01-01,2099-12-31,NA,Kohdun ja sivuelinten ultraäänitutkimus,Traslator
+193,"Ultrasound examination of uterus, appendages and lower abdomen",Condition,SPAT,SPAT,NA,SPAT1182,2009-01-01,2017-12-31,NA,"Kohdun, sivuelinten ja alavatsan UÄ",Traslator
+194,Localisation of IUD or other ultrasound examination of separate gynaecological object,Condition,SPAT,SPAT,NA,SPAT1183,2009-01-01,2010-12-31,NA,Ehkäisykierukan paikantaminen tai muu yksittäisen gynekologisen kohteen UÄ,Traslator
+195,Curettage of body of uterus,Condition,SPAT,SPAT,NA,SPAT1184,2009-01-01,2017-12-31,NA,Kohdun runko-osan kaavinta,Traslator
+196,Medical abortion,Condition,SPAT,SPAT,NA,SPAT1185,2009-01-01,2017-12-31,NA,Raskauden keskeytys lääkkeellä,Traslator
+197,Laser therapy or thermotherapy of uterine cervix,Condition,SPAT,SPAT,NA,SPAT1186,2009-01-01,2017-12-31,NA,Kohdun kaulan laserhoito tai poltto,Traslator
+198,General ultrasound examination in early pregnancy,Condition,SPAT,SPAT,NA,SPAT1187,2009-01-01,2099-12-31,NA,Varhaisraskauden yleinen ultraäänitutkimus,Traslator
+199,Monitoring of foetal growth,Condition,SPAT,SPAT,NA,SPAT1188,2009-01-01,2012-12-31,NA,Sikiön mittakontrolli,Traslator
+200,Other ultrasound examination during pregnancy,Condition,SPAT,SPAT,NA,SPAT1189,2009-01-01,2099-12-31,NA,Muu raskaudenaikainen ultraäänitutkimus,Traslator
+201,Insertion or removal of intrauterine contraceptive device,Condition,SPAT,SPAT,NA,SPAT1190,2009-01-01,2099-12-31,NA,Kohdunsisäisen ehkäisimen asettaminen tai poisto,Traslator
+202,Removal of foreign body from vagina,Condition,SPAT,SPAT,NA,SPAT1191,2009-01-01,2099-12-31,NA,Vierasesineen poisto emättimestä,Traslator
+203,Gynaecological examination,Condition,SPAT,SPAT,NA,SPAT1192,2009-01-01,2099-12-31,NA,Gynekologinen tutkimus,Traslator
+204,Pap smear,Condition,SPAT,SPAT,NA,SPAT1193,2009-01-01,2099-12-31,NA,Gynekologinen irtosolunäytteen otto,Traslator
+205,Monitoring of normal pregnancy,Condition,SPAT,SPAT,NA,SPAT1196,2009-01-01,2014-12-31,NA,Normaaliraskauden seuranta,Traslator
+206,Dilatation of cervical canal,Condition,SPAT,SPAT,NA,SPAT1198,2009-01-01,2010-12-31,NA,Kohdun kaulakanavan laajennus,Traslator
+207,Genetic counselling,Condition,SPAT,SPAT,NA,SPAT1199,2009-01-01,2099-12-31,NA,Perinnöllisyysneuvonta,Traslator
+208,Collection of muscle or mucous membrane sample from body of uterus,Condition,SPAT,SPAT,NA,SPAT1356,2011-01-01,2017-12-31,NA,Kohdun runko-osan lihas- tai limakalvonäytteen otto,Traslator
+209,Monitoring of problem during pregnancy,Condition,SPAT,SPAT,NA,SPAT1357,2011-01-01,2014-12-31,NA,Raskaudenaikaisen ongelman seuranta,Traslator
+210,Assessment of need for induced abortion,Condition,SPAT,SPAT,NA,SPAT1371,2013-01-01,2099-12-31,NA,Raskauden keskeytyksen tarpeen arviointi,Traslator
+211,Follow-up examination after induced abortion,Condition,SPAT,SPAT,NA,SPAT1372,2013-01-01,2099-12-31,NA,Raskauden keskeytyksen jälkitarkastus,Traslator
+212,MUSCULOSKELETAL SYSTEM,Condition,SPAT,SPAT,NA,SPAT1201,2009-01-01,2099-12-31,NA,TUKI- JA LIIKUNTAELIMET,Traslator
+213,Intra-articular injection,Condition,SPAT,SPAT,NA,SPAT1202,2009-01-01,2099-12-31,NA,Nivelinjektio,Traslator
+214,"Injection therapy, other than intramuscular or subcutaneous",Condition,SPAT,SPAT,NA,SPAT1203,2009-01-01,2017-12-31,NA,Injektiohoito muualle kuin lihaksiin tai ihon alle,Traslator
+215,Arthrocentesis,Condition,SPAT,SPAT,NA,SPAT1204,2009-01-01,2099-12-31,NA,Nivelpunktio,Traslator
+216,Repositioning of dislocated joint,Condition,SPAT,SPAT,NA,SPAT1205,2009-01-01,2017-12-31,NA,Nivelen sijoiltaanmenon paikalleenasetus,Traslator
+217,Repositioning and bandage of fracture,Condition,SPAT,SPAT,NA,SPAT1206,2009-01-01,2017-12-31,NA,Murtuman paikalleenasetus ja sidos,Traslator
+218,Resection of finger or toe stump,Condition,SPAT,SPAT,NA,SPAT1207,2009-01-01,2017-12-31,NA,Sormen tai varpaan tyngän typistys,Traslator
+219,Ultrasound examination of muscle or tendon,Condition,SPAT,SPAT,NA,SPAT1208,2009-01-01,2017-12-31,NA,Lihaksen tai jänteen ultraäänitutkimus,Traslator
+220,Ultrasound examination of joint,Condition,SPAT,SPAT,NA,SPAT1209,2009-01-01,2017-12-31,NA,Nivelen ultraäänitutkimus,Traslator
+221,Application of cast or individual aid,Condition,SPAT,SPAT,NA,SPAT1210,2009-01-01,2099-12-31,NA,Kipsin tai yksilöllisen tuen asetus,Traslator
+222,Application of soft bandage,Condition,SPAT,SPAT,NA,SPAT1211,2009-01-01,2017-12-31,NA,Pehmeän sidoksen asetus,Traslator
+223,Extensive examination of musculoskeletal system,Condition,SPAT,SPAT,NA,SPAT1212,2009-01-01,2017-12-31,NA,Tuki- ja liikuntaelimistön laaja tutkimus,Traslator
+224,Examination of postural anomaly,Condition,SPAT,SPAT,NA,SPAT1213,2009-01-01,2099-12-31,NA,Ryhtivirheen tutkimus,Traslator
+225,"REHABILITATION, FUNCTION SUPPORT, AID SERVICES",Condition,SPAT,SPAT,NA,SPAT1214,2009-01-01,2099-12-31,NA,"KUNTOUTUS, TOIMINNAN TUKEMINEN, APUVÄLINEPALVELUT",Traslator
+226,Assessment of need for medical rehabilitation,Condition,SPAT,SPAT,NA,SPAT1215,2009-01-01,2099-12-31,NA,Lääkinnällisen kuntoutustarpeen arviointi,Traslator
+227,Assessment of functional ability,Condition,SPAT,SPAT,NA,SPAT1216,2009-01-01,2099-12-31,NA,Toimintakyvyn arviointi,Traslator
+228,Assessment of need for services (elderly/care support),Condition,SPAT,SPAT,NA,SPAT1217,2009-01-01,2099-12-31,NA,Palvelutarpeen arviointi (iäkkäät/hoitotuki),Traslator
+229,Assessment of need for educational rehabilitation,Condition,SPAT,SPAT,NA,SPAT1218,2009-01-01,2017-12-31,NA,Kasvatuksellisen kuntoutuksen tarpeen arviointi,Traslator
+230,Assessment of need for vocational rehabilitation,Condition,SPAT,SPAT,NA,SPAT1219,2009-01-01,2099-12-31,NA,Ammatillisen kuntoutuksen tarpeen arviointi,Traslator
+231,Assessment of need for rehabilitation and/or rehabilitation plan,Condition,SPAT,SPAT,NA,SPAT1220,2009-01-01,2099-12-31,NA,Kuntoutustarpeen arvio ja/tai kuntoutussuunnitelma,Traslator
+232,Guidance concerning rehabilitation services and livelihood,Condition,SPAT,SPAT,NA,SPAT1221,2009-01-01,2099-12-31,NA,Kuntoutuspalveluita ja toimeentuloa koskeva ohjaus,Traslator
+233,Counselling/guidance promoting independent living,Condition,SPAT,SPAT,NA,SPAT1222,2009-01-01,2099-12-31,NA,Itsenäistä selviytymistä edistävä neuvonta/ohjaus,Traslator
+234,Implementation of physical therapy rehabilitation plan,Condition,SPAT,SPAT,NA,SPAT1223,2009-01-01,2099-12-31,NA,Fysioterapeuttisen kuntoutussuunnitelman toteuttaminen,Traslator
+235,Implementation of speech therapy rehabilitation plan,Condition,SPAT,SPAT,NA,SPAT1224,2009-01-01,2017-12-31,NA,Puheterapeuttisen kuntoutussuunnitelman toteuttaminen,Traslator
+236,Implementation of podiatry rehabilitation plan,Condition,SPAT,SPAT,NA,SPAT1225,2009-01-01,2017-12-31,NA,Jalkaterapeuttisen kuntoutussuunnitelman toteuttaminen,Traslator
+237,Implementation of occupational therapy rehabilitation plan,Condition,SPAT,SPAT,NA,SPAT1226,2009-01-01,2017-12-31,NA,Toimintaterapeuttisen kuntoutussuunnitelman toteuttaminen,Traslator
+238,Substance abuse rehabilitation,Condition,SPAT,SPAT,NA,SPAT1227,2009-01-01,2099-12-31,NA,Päihdekuntoutus,Traslator
+239,Forms of educational rehabilitation therapy,Condition,SPAT,SPAT,NA,SPAT1228,2009-01-01,2099-12-31,NA,Kasvatuksellisen kuntoutuksen terapiamuodot,Traslator
+240,Assessment of need for aid,Condition,SPAT,SPAT,NA,SPAT1229,2009-01-01,2099-12-31,NA,Apuvälinetarpeen arviointi,Traslator
+241,Aid fitting and borrowing and monitoring of use,Condition,SPAT,SPAT,NA,SPAT1230,2009-01-01,2017-12-31,NA,"Apuvälinesovitus, -lainaus ja käytön seuranta",Traslator
+242,Assessment of adjustments needed in living environment,Condition,SPAT,SPAT,NA,SPAT1231,2009-01-01,2017-12-31,NA,Arvio elinympäristössä tarvittavista muutostöistä,Traslator
+243,Communication with help of interpreter or assistant,Condition,SPAT,SPAT,NA,SPAT1232,2009-01-01,2099-12-31,NA,Kommunikaatio tulkin tai avustajan avulla,Traslator
+244,Assessment of ability to work,Condition,SPAT,SPAT,NA,SPAT1233,2009-01-01,2010-12-31,NA,Työkyvyn arviointi,Traslator
+245,Support of social functional capacity,Condition,SPAT,SPAT,NA,SPAT1234,2009-01-01,2099-12-31,NA,Sosiaalisen toimintakyvyn tukeminen,Traslator
+246,"Mental health, emotional support",Condition,SPAT,SPAT,NA,SPAT1235,2009-01-01,2010-12-31,NA,"Mielenterveys, emotionaalinen tuki",Traslator
+247,Informing family of child’s disability,Condition,SPAT,SPAT,NA,SPAT1236,2009-01-01,2017-12-31,NA,Ensitiedon antaminen,Traslator
+248,Psychotherapy,Condition,SPAT,SPAT,NA,SPAT1237,2009-01-01,2099-12-31,NA,Psykoterapia,Traslator
+249,Brief therapy,Condition,SPAT,SPAT,NA,SPAT1238,2009-01-01,2017-12-31,NA,Lyhytterapia,Traslator
+250,Family therapy,Condition,SPAT,SPAT,NA,SPAT1239,2009-01-01,2099-12-31,NA,Perheterapia,Traslator
+251,Therapeutic discussion,Condition,SPAT,SPAT,NA,SPAT1240,2009-01-01,2099-12-31,NA,Terapeuttinen keskustelu,Traslator
+252,Extensive assessment of psychosocial situation,Condition,SPAT,SPAT,NA,SPAT1241,2009-01-01,2099-12-31,NA,Psykososiaalisen tilanteen laaja kartoitus,Traslator
+253,Trauma therapy,Condition,SPAT,SPAT,NA,SPAT1242,2009-01-01,2099-12-31,NA,Traumaterapia,Traslator
+254,Psychiatric/psychological examination,Condition,SPAT,SPAT,NA,SPAT1243,2009-01-01,2099-12-31,NA,Psykiatrinen/psykologinen tutkimus,Traslator
+255,Occupational therapy,Condition,SPAT,SPAT,NA,SPAT1244,2009-01-01,2099-12-31,NA,Toiminnallinen terapia,Traslator
+256,Provision of support and information to patient’s family members,Condition,SPAT,SPAT,NA,SPAT1245,2009-01-01,2099-12-31,NA,Potilaan läheisten tukeminen ja informointi,Traslator
+257,Screening of depression or other psychiatric problem,Condition,SPAT,SPAT,NA,SPAT1246,2009-01-01,2099-12-31,NA,Depression tai muun psyykkisen ongelman seulonta,Traslator
+258,Outpatient detoxication and monitoring,Condition,SPAT,SPAT,NA,SPAT1247,2009-01-01,2099-12-31,NA,Avokatkaisuhoito ja seuranta,Traslator
+259,Referral to psychiatric observation (M1 referral),Condition,SPAT,SPAT,NA,SPAT1358,2011-01-01,2099-12-31,NA,Psykiatrinen tarkkailulähete eli M1-lähete,Traslator
+260,"OTHER EXAMINATIONS, PROCEDURES, TREATMENT ETC.",Condition,SPAT,SPAT,NA,SPAT1248,2009-01-01,2099-12-31,NA,"MUU TUTKIMINEN, TOIMENPITEET, HOITO, YM.",Traslator
+261,Fine needle aspiration biopsy,Condition,SPAT,SPAT,NA,SPAT1072,2009-01-01,2017-12-31,NA,Ohutneulanäytteen otto,Traslator
+262,Treatment-related counselling outside office,Condition,SPAT,SPAT,NA,SPAT1249,2009-01-01,2099-12-31,NA,Hoitoon liittyvä neuvonta vastaanoton ulkopuolella,Traslator
+263,Comprehensive monitoring of chronic illness,Condition,SPAT,SPAT,NA,SPAT1250,2009-01-01,2017-12-31,NA,Kroonisen sairauden perusteellinen seuranta,Traslator
+264,Organisation of medication,Condition,SPAT,SPAT,NA,SPAT1251,2009-01-01,2012-12-31,NA,Lääkityksen järjestely,Traslator
+265,Overall medication plan or its review,Condition,SPAT,SPAT,NA,SPAT1252,2009-01-01,2017-12-31,NA,Kokonaislääkehoitosuunnitelma tai sen tarkastus,Traslator
+266,"Initiation, adjustment, discontinuation or repetition of medication",Condition,SPAT,SPAT,NA,SPAT1253,2009-01-01,2017-12-31,NA,"Lääkityksen aloitus, muutos, lopetus tai uusinta",Traslator
+267,Administration of medicine,Condition,SPAT,SPAT,NA,SPAT1254,2009-01-01,2099-12-31,NA,Lääkkeenanto,Traslator
+268,Intravenous administration of medicine,Condition,SPAT,SPAT,NA,SPAT1255,2009-01-01,2099-12-31,NA,Suonensisäinen lääkkeenanto,Traslator
+269,Intramuscular and subcutaneous injection,Condition,SPAT,SPAT,NA,SPAT1256,2009-01-01,2099-12-31,NA,Lihas- ja ihonalaisinjektio,Traslator
+270,Teaching of medicine inhalation technique,Condition,SPAT,SPAT,NA,SPAT1257,2009-01-01,2099-12-31,NA,Lääkeinhalaatiotekniikan opetus,Traslator
+271,Opinion on need for continuous medication,Condition,SPAT,SPAT,NA,SPAT1258,2009-01-01,2010-12-31,NA,Lausunto jatkuvan lääkityksen tarpeesta,Traslator
+272,Opinion on plain films,Condition,SPAT,SPAT,NA,SPAT1259,2009-01-01,2017-12-31,NA,Lausunto natiivikuvista,Traslator
+273,Consultation of another employee,Condition,SPAT,SPAT,NA,SPAT1260,2009-01-01,2099-12-31,NA,Toisen työntekijän konsultoiminen,Traslator
+274,Real-time image transmission consultation,Condition,SPAT,SPAT,NA,SPAT1261,2009-01-01,2017-12-31,NA,Reaaliaikainen kuvansiirtokonsultaatio,Traslator
+275,Handing over of treatment supplies,Condition,SPAT,SPAT,NA,SPAT1262,2009-01-01,2017-12-31,NA,Hoitotarvikkeiden luovutus,Traslator
+276,Sampling,Condition,SPAT,SPAT,NA,SPAT1263,2009-01-01,2017-12-31,NA,Näytteen otto,Traslator
+277,Quick test at office or at home,Condition,SPAT,SPAT,NA,SPAT1264,2009-01-01,2010-12-31,NA,Pikatesti vastaanotolla tai kotona,Traslator
+278,Breathalyser,Condition,SPAT,SPAT,NA,SPAT1265,2009-01-01,2099-12-31,NA,Alkometri,Traslator
+279,Separate instruction to prepare for procedure,Condition,SPAT,SPAT,NA,SPAT1266,2009-01-01,2017-12-31,NA,Toimenpiteeseen valmistava erillinen ohjaus,Traslator
+280,Desensitisation,Condition,SPAT,SPAT,NA,SPAT1267,2009-01-01,2099-12-31,NA,Siedätyshoito,Traslator
+281,Allergy testing,Condition,SPAT,SPAT,NA,SPAT1268,2009-01-01,2017-12-31,NA,Allergiatestaus,Traslator
+282,Other puncture and/or drainage,Condition,SPAT,SPAT,NA,SPAT1269,2009-01-01,2017-12-31,NA,Muu punktio ja/tai nesteenpoisto,Traslator
+283,Narcotic/sobriety test,Condition,SPAT,SPAT,NA,SPAT1270,2009-01-01,2099-12-31,NA,Huume-/humalatilatutkimus,Traslator
+284,Counselling / supply exchange for users of IV drugs,Condition,SPAT,SPAT,NA,SPAT1271,2009-01-01,2099-12-31,NA,Huumeiden IV-käyttäjien neuvonta/välineiden vaihto,Traslator
+285,Drug screening,Condition,SPAT,SPAT,NA,SPAT1272,2009-01-01,2099-12-31,NA,Huumeseulonta,Traslator
+286,Structured assessment of psychoactive substance / tobacco use,Condition,SPAT,SPAT,NA,SPAT1273,2009-01-01,2099-12-31,NA,Päihteiden/tupakan käytön strukturoitu kartoitus,Traslator
+287,Brief intervention in person with addiction symptoms,Condition,SPAT,SPAT,NA,SPAT1274,2009-01-01,2099-12-31,NA,Riippuvuusoireisen mini-interventio,Traslator
+288,Drug rehabilitation and replacement therapy of opioid-dependent person,Condition,SPAT,SPAT,NA,SPAT1275,2009-01-01,2099-12-31,NA,Opioidiriippuvaisen vieroitus- ja korvaushoito,Traslator
+289,Outlining of treatment with patient or their family members,Condition,SPAT,SPAT,NA,SPAT1276,2009-01-01,2017-12-31,NA,Hoitolinjaus potilaan tai hänen omaistensa kanssa,Traslator
+290,Instruction concerning legal protection and patient’s rights,Condition,SPAT,SPAT,NA,SPAT1277,2009-01-01,2017-12-31,NA,Oikeusturvaa ja potilaan oikeuksia koskeva ohjaus,Traslator
+291,End-of-life care-related house call,Condition,SPAT,SPAT,NA,SPAT1278,2009-01-01,2010-12-31,NA,Saattohoidon kotikäynti,Traslator
+292,Preparation of immediate hospitalisation,Condition,SPAT,SPAT,NA,SPAT1279,2009-01-01,2017-12-31,NA,Välittömän sairaalahoidon valmistelu,Traslator
+293,Provision of administrative assistance,Condition,SPAT,SPAT,NA,SPAT1280,2009-01-01,2017-12-31,NA,Virka-avun antaminen,Traslator
+294,Other administrative function,Condition,SPAT,SPAT,NA,SPAT1281,2009-01-01,2017-12-31,NA,Muu hallinnollinen toiminto,Traslator
+295,Assessment of ability to drive and opinion,Condition,SPAT,SPAT,NA,SPAT1282,2009-01-01,2099-12-31,NA,Ajokyvyn arviointi ja lausunto,Traslator
+296,Restricted health certificate,Condition,SPAT,SPAT,NA,SPAT1283,2009-01-01,2099-12-31,NA,Suppea todistus terveydentilasta,Traslator
+297,Extensive health certificate,Condition,SPAT,SPAT,NA,SPAT1284,2009-01-01,2099-12-31,NA,Laaja todistus terveydentilasta terveydentilasta,Traslator
+298,Provision of consultation response,Condition,SPAT,SPAT,NA,SPAT1285,2009-01-01,2017-12-31,NA,Konsultaatiovastauksen antaminen,Traslator
+299,"Assessment of operability, including opinions",Condition,SPAT,SPAT,NA,SPAT1286,2009-01-01,2017-12-31,NA,Leikkauskelpoisuuden arviointi lausuntoineen,Traslator
+300,Forensic medical examination of living person,Condition,SPAT,SPAT,NA,SPAT1287,2009-01-01,2017-12-31,NA,Elävän henkilön oikeuslääketieteellinen tutkimus,Traslator
+301,Determination of cause of death,Condition,SPAT,SPAT,NA,SPAT1288,2009-01-01,2017-12-31,NA,Kuolinsyyn selvittäminen,Traslator
+302,"External examination of deceased person, including possible further measures",Condition,SPAT,SPAT,NA,SPAT1289,2009-01-01,2017-12-31,NA,Vainajan ulkoinen tarkastus mahdollisine jatkotoimineen,Traslator
+303,Preparation of deceased person,Condition,SPAT,SPAT,NA,SPAT1290,2009-01-01,2017-12-31,NA,Vainajan laitto,Traslator
+304,Other function in accordance with NCSP classification,Condition,SPAT,SPAT,NA,SPAT1291,2009-01-01,2017-12-31,NA,Muu NCSP-luokituksen mukainen toiminto,Traslator
+305,Other function in accordance with SHToL (Finnish classification of nursing interventions),Condition,SPAT,SPAT,NA,SPAT1292,2009-01-01,2017-12-31,NA,Muu SHToL:n mukainen toiminto,Traslator
+306,Other function in accordance with rehabilitation guidance nomenclature,Condition,SPAT,SPAT,NA,SPAT1293,2009-01-01,2017-12-31,NA,Muu kuntoutusohjausnimikkeistön mukainen toiminto,Traslator
+307,Other function in accordance with health social work nomenclature,Condition,SPAT,SPAT,NA,SPAT1294,2009-01-01,2017-12-31,NA,Muu terveyssosiaalityönimikkeistön mukainen toiminto,Traslator
+308,Other function in accordance with physical therapy nomenclature,Condition,SPAT,SPAT,NA,SPAT1295,2009-01-01,2017-12-31,NA,Muu fysioterapianimikkeistön mukainen toiminto,Traslator
+309,Other function in accordance with occupational therapy nomenclature,Condition,SPAT,SPAT,NA,SPAT1296,2009-01-01,2017-12-31,NA,Muu toimintaterapianimikkeistön mukainen toiminto,Traslator
+310,Other function in accordance with speech therapy nomenclature,Condition,SPAT,SPAT,NA,SPAT1297,2009-01-01,2017-12-31,NA,Muu puheterapianimikkeistön mukainen toiminto,Traslator
+311,Other function in accordance with nutritional therapy nomenclature,Condition,SPAT,SPAT,NA,SPAT1298,2009-01-01,2017-12-31,NA,Muu ravitsemusterapianimikkeistön mukainen toiminto,Traslator
+312,Other function in accordance with podiatry nomenclature,Condition,SPAT,SPAT,NA,SPAT1299,2009-01-01,2017-12-31,NA,Muu jalkaterapianimikkeistön mukainen toiminto,Traslator
+313,Other function in accordance with FinLOINC classification,Condition,SPAT,SPAT,NA,SPAT1300,2009-01-01,2017-12-31,NA,Muu FINLOINC -luokituksen mukainen toiminto,Traslator
+314,No procedures,Condition,SPAT,SPAT,NA,SPAT1301,2009-01-01,2017-12-31,NA,Ei toimenpidettä,Traslator
+315,Use of symptom diary,Condition,SPAT,SPAT,NA,SPAT1359,2011-01-01,2099-12-31,NA,Oirepäiväkirjan käyttö,Traslator
+316,Extensive global examination,Condition,SPAT,SPAT,NA,SPAT1360,2011-01-01,2017-12-31,NA,Laaja yleistutkimus,Traslator
+317,Collection of tissue sample,Condition,SPAT,SPAT,NA,SPAT1361,2011-01-01,2017-12-31,NA,Kudosnäytteen otto,Traslator
+318,PREVENTIVE ACTION AND PROMOTION OF HEALTH,Condition,SPAT,SPAT,NA,SPAT1302,2009-01-01,2099-12-31,NA,EHKÄISEVÄ TOIMINTA JA TERVEYDEN EDISTÄMINEN,Traslator
+319,Initiation of hormone replacement therapy for woman or man,Condition,SPAT,SPAT,NA,SPAT1194,2009-01-01,2017-12-31,NA,Hormonikorvaushoidon aloittaminen joko naiselle tai miehelle,Traslator
+320,Antenatal classes,Condition,SPAT,SPAT,NA,SPAT1195,2009-01-01,2099-12-31,NA,Perhevalmennus,Traslator
+321,Extensive health check-up of expecting family,Condition,SPAT,SPAT,NA,SPAT1197,2009-01-01,2099-12-31,NA,Lasta odottavan perheen laaja terveystarkastus,Traslator
+322,Guidance for breast-feeding and breast care,Condition,SPAT,SPAT,NA,SPAT1200,2009-01-01,2099-12-31,NA,Imetyksen ja rintojen hoidon ohjaus,Traslator
+323,Counselling and guidance related to growth and development,Condition,SPAT,SPAT,NA,SPAT1303,2009-01-01,2099-12-31,NA,Kasvuun ja kehitykseen liittyvä neuvonta ja ohjaus,Traslator
+324,Counselling and guidance related to ageing,Condition,SPAT,SPAT,NA,SPAT1304,2009-01-01,2099-12-31,NA,Ikääntymiseen liittyvä neuvonta ja ohjeistus,Traslator
+325,Counselling and guidance related to physical exercise,Condition,SPAT,SPAT,NA,SPAT1305,2009-01-01,2099-12-31,NA,Liikuntaan liittyvä neuvonta ja ohjaus,Traslator
+326,Counselling and guidance related to nutrition and weight management,Condition,SPAT,SPAT,NA,SPAT1306,2009-01-01,2099-12-31,NA,Ravitsemukseen ja painonhallintaan liittyvä neuvonta ja ohjaus,Traslator
+327,Psychosocial counselling and guidance,Condition,SPAT,SPAT,NA,SPAT1307,2009-01-01,2099-12-31,NA,Psykososiaalinen neuvonta ja ohjaus,Traslator
+328,Sexual health counselling,Condition,SPAT,SPAT,NA,SPAT1308,2009-01-01,2099-12-31,NA,Seksuaaliterveysneuvonta,Traslator
+329,Guidance related to psychoactive substances / risk behaviour,Condition,SPAT,SPAT,NA,SPAT1309,2009-01-01,2099-12-31,NA,Päihteisiin/riskikäyttäytymiseen liittyvä ohjaus,Traslator
+330,Counselling related to known health issue,Condition,SPAT,SPAT,NA,SPAT1310,2009-01-01,2099-12-31,NA,Tunnettuun terveysongelmaan liittyvä neuvonta,Traslator
+331,Counselling and guidance related to occupational health,Condition,SPAT,SPAT,NA,SPAT1311,2009-01-01,2099-12-31,NA,Työterveyteen liittyvä neuvonta ja ohjaus,Traslator
+332,General health counselling,Condition,SPAT,SPAT,NA,SPAT1312,2009-01-01,2099-12-31,NA,Yleinen terveysneuvonta,Traslator
+333,Guidance and counselling related to accident prevention,Condition,SPAT,SPAT,NA,SPAT1313,2009-01-01,2099-12-31,NA,Tapaturmien ehkäisyyn liittyvä ohjaus ja neuvonta,Traslator
+334,Periodic health check-up of children and adolescents,Condition,SPAT,SPAT,NA,SPAT1315,2009-01-01,2099-12-31,NA,Lasten ja nuorten määräaikainen terveystarkastus,Traslator
+335,"Planned health check-up monitoring, health check-up performed based on individual need",Condition,SPAT,SPAT,NA,SPAT1317,2009-01-01,2099-12-31,NA,"Sovittu terveystarkastuksen seuranta, yksilöllisen tarpeen mukaan tehty terveystarkastus",Traslator
+336,Child’s final check at child health clinic before school start,Condition,SPAT,SPAT,NA,SPAT1318,2009-01-01,2010-12-31,NA,Lapsille suoritettava viimeinen neuvolatarkastus ennen kouluunmenoa,Traslator
+337,Check-up and opinion included in school and student health care,Condition,SPAT,SPAT,NA,SPAT1319,2009-01-01,2010-12-31,NA,"Koulu- ja opiskeluterveydenhuoltoon kuuluva tarkastus, jonka yhteydessä tehdään lausunto",Traslator
+338,Examination of child’s state of health referred to in Child Welfare Act,Condition,SPAT,SPAT,NA,SPAT1320,2009-01-01,2099-12-31,NA,Lastensuojelulain mukainen lapsen terveydentilan tutkiminen,Traslator
+339,Health examination of person liable for military service,Condition,SPAT,SPAT,NA,SPAT1321,2009-01-01,2099-12-31,NA,Asevelvollisen terveystarkastus,Traslator
+340,Pre-employment physical examination,Condition,SPAT,SPAT,NA,SPAT1322,2009-01-01,2099-12-31,NA,Työhönsijoitustarkastus,Traslator
+341,Health check-up related to work causing occupational hazard,Condition,SPAT,SPAT,NA,SPAT1323,2009-01-01,2099-12-31,NA,Terveystarkastus terveysuhkaa aiheuttavassa työssä,Traslator
+342,Screening procedure,Condition,SPAT,SPAT,NA,SPAT1324,2009-01-01,2099-12-31,NA,Seulontatoimenpide,Traslator
+343,"Work, school or study community work",Condition,SPAT,SPAT,NA,SPAT1327,2009-01-01,2099-12-31,NA,"Työ-, koulu- tai opiskeluyhteisötyö",Traslator
+344,Basic workplace survey,Condition,SPAT,SPAT,NA,SPAT1328,2009-01-01,2099-12-31,NA,Työpaikan perusselvitys,Traslator
+345,"Assessment related to exposure factors in work, school or study environment",Condition,SPAT,SPAT,NA,SPAT1329,2009-01-01,2099-12-31,NA,"Työ-, koulu- tai opiskeluympäristöaltisteisiin liittyvä selvitys",Traslator
+346,"Assessment related to work, school or study community (e.g. work and study atmosphere)",Condition,SPAT,SPAT,NA,SPAT1330,2009-01-01,2099-12-31,NA,"Työ-, koulu- tai opiskeluyhteisöön liittyvä selvitys (esim. työ- ja opiskeluilmapiiri)",Traslator
+347,Planning of first aid preparedness in workplace,Condition,SPAT,SPAT,NA,SPAT1331,2009-01-01,2014-12-31,NA,Työpaikan ensiapuvalmiuden suunnittelu,Traslator
+348,Inspection of health-related conditions of school community and studying environment,Condition,SPAT,SPAT,NA,SPAT1332,2009-01-01,2099-12-31,NA,Kouluyhteisön ja opiskeluympäristön terveydellisten olojen tarkastus,Traslator
+349,Assessment of oral health performed by public health nurse,Condition,SPAT,SPAT,NA,SPAT1362,2012-01-01,2099-12-31,NA,Terveydenhoitajan arvio suun terveydentilasta,Traslator
+350,"Health check-up performed during first study year in students of upper secondary schools, vocational schools etc.",Condition,SPAT,SPAT,NA,SPAT1363,2012-01-01,2099-12-31,NA,"Ensimmäisenä opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle",Traslator
+351,"Health check-up performed during second study year in students of upper secondary schools, vocational schools etc.",Condition,SPAT,SPAT,NA,SPAT1364,2012-01-01,2099-12-31,NA,"Toisena opiskeluvuonna tehty terveystarkastus lukion, ammatillisen oppilaitoksen ym. opiskelijalle",Traslator
+352,Health check-up performed during first study year due to special need in students of upper secondary schools or vocational schools,Condition,SPAT,SPAT,NA,SPAT1365,2012-01-01,2099-12-31,NA,Ensimmäisenä opiskeluvuonna erityistarpeen vuoksi  tehty terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,Traslator
+353,"Health check-up performed based on health survey in students of universities, universities of applied sciences etc.",Condition,SPAT,SPAT,NA,SPAT1366,2012-01-01,2099-12-31,NA,"Yliopistossa, ammattikorkeakoulussa tms. opiskelevalle terveyskyselyn perusteella tehty terveystarkastus",Traslator
+354,Health check-up due to individual need in students of upper secondary schools or vocational schools,Condition,SPAT,SPAT,NA,SPAT1367,2012-01-01,2099-12-31,NA,Yksilöllisestä tarpeesta johtuva terveystarkastus lukiossa tai ammatillisessa oppilaitoksessa opiskelevalle,Traslator
+355,Periodic check-up in occupational healthcare,Condition,SPAT,SPAT,NA,SPAT1368,2012-01-01,2099-12-31,NA,Työterveyshuollon määräaikaistarkastus,Traslator
+356,Meeting with student welfare group of educational institution,Condition,SPAT,SPAT,NA,SPAT1369,2012-01-01,2099-12-31,NA,Oppilaitoksen opiskeluhuoltoryhmän tapaaminen,Traslator
+357,Other health check-up,Condition,SPAT,SPAT,NA,SPAT1370,2013-01-01,2099-12-31,NA,Muu terveystarkastus,Traslator
+358,Combined screening in early pregnancy,Condition,SPAT,SPAT,NA,SPAT1373,2013-01-01,2099-12-31,NA,Varhaisraskauden yhdistelmäseulonta,Traslator
+359,Serum screening during second trimester,Condition,SPAT,SPAT,NA,SPAT1374,2013-01-01,2099-12-31,NA,Toisen raskauskolmanneksen seerumiseulonta,Traslator
+360,"Structural ultrasound screening, weeks 18+0-21+6",Condition,SPAT,SPAT,NA,SPAT1375,2013-01-01,2099-12-31,NA,"Rakenneuäseulonta, viikot 18+0-21+6",Traslator
+361,"Structural ultrasound screening, weeks 24+0",Condition,SPAT,SPAT,NA,SPAT1376,2013-01-01,2099-12-31,NA,"Rakenneuäseulonta, viikot 24+0",Traslator
+362,Health check-up of pregnant person,Condition,SPAT,SPAT,NA,SPAT1379,2015-01-01,2099-12-31,NA,Raskaana olevan terveystarkastus,Traslator
+363,Postpartum check-up,Condition,SPAT,SPAT,NA,SPAT1380,2015-01-01,2099-12-31,NA,Synnytyksen jälkitarkastus,Traslator
+364,Extensive health check-up at 4 months of age,Condition,SPAT,SPAT,NA,SPAT1381,2015-01-01,2099-12-31,NA,Laaja terveystarkastus neljän kuukauden iässä,Traslator
+365,Extensive health check-up at 18 months of age,Condition,SPAT,SPAT,NA,SPAT1382,2015-01-01,2099-12-31,NA,Laaja terveystarkastus kahdeksantoista kuukauden iässä,Traslator
+366,Extensive health check-up at 4 years of age,Condition,SPAT,SPAT,NA,SPAT1383,2015-01-01,2099-12-31,NA,Laaja terveystarkastus neljän vuoden iässä,Traslator
+367,Extensive health check-up on first grade,Condition,SPAT,SPAT,NA,SPAT1384,2015-01-01,2099-12-31,NA,Laaja terveystarkastus ensimmäisellä luokalla,Traslator
+368,Extensive health check-up on fifth grade,Condition,SPAT,SPAT,NA,SPAT1385,2015-01-01,2099-12-31,NA,Laaja terveystarkastus viidennellä luokalla,Traslator
+369,Extensive health check-up on eighth grade,Condition,SPAT,SPAT,NA,SPAT1386,2015-01-01,2099-12-31,NA,Laaja terveystarkastus kahdeksannella luokalla,Traslator
+370,"Health survey during first study year, university level",Condition,SPAT,SPAT,NA,SPAT1387,2015-01-01,2099-12-31,NA,"Ensimmäisen opiskeluvuoden terveyskysely, korkea aste",Traslator
+371,Extensive health check-up based on individual need,Condition,SPAT,SPAT,NA,SPAT1388,2015-01-01,2099-12-31,NA,Yksilöllisen tarpeen mukainen laaja terveystarkastus,Traslator
+372,Visit based on need for special support,Condition,SPAT,SPAT,NA,SPAT1389,2015-01-01,2099-12-31,NA,Erityisen tuen tarpeen mukainen käynti,Traslator
+373,Assessment of unsuitability for studying,Condition,SPAT,SPAT,NA,SPAT1390,2015-01-01,2099-12-31,NA,Opiskeluun soveltumattomuuden arviointi,Traslator
+374,Counselling and guidance related to family situation,Condition,SPAT,SPAT,NA,SPAT1391,2015-01-01,2099-12-31,NA,Perhetilanteeseen liittyvä neuvonta ja ohjaus,Traslator
+375,Counselling and guidance related to couple relationship,Condition,SPAT,SPAT,NA,SPAT1392,2015-01-01,2099-12-31,NA,Parisuhteeseen liittyvä neuvonta ja ohjaus,Traslator
+376,Guidance to support interaction between parent and child,Condition,SPAT,SPAT,NA,SPAT1393,2015-01-01,2099-12-31,NA,Vanhemman ja lapsen vuorovaikutusta tukeva ohjaus,Traslator
+377,Counselling and guidance related to living conditions,Condition,SPAT,SPAT,NA,SPAT1394,2015-01-01,2099-12-31,NA,Elinolosuhteisiin liittyvä neuvonta ja ohjaus,Traslator
+378,Health check-up of persons outside student and working life,Condition,SPAT,SPAT,NA,SPAT1395,2015-01-01,2099-12-31,NA,Opiskelu- ja työelämän ulkopuolella olevien terveystarkastus,Traslator
+379,Meeting with multidisciplinary group of experts,Condition,SPAT,SPAT,NA,SPAT1396,2015-01-01,2099-12-31,NA,Monialaisen asiantuntijaryhmän tapaaminen,Traslator
+380,"Acceptance of acknowledgement of paternity of child born outside of marriage before the birth of the child at the maternity clinic. Paternity Act, Section 16.",Condition,SPAT,SPAT,NA,SPAT1399,2016-01-01,2099-12-31,NA,Avioliiton ulkopuolella syntyvän lapsen isyyden tunnustamisen vastaanottaminen äitiysneuvolassa ennen lapsen syntymää. Isyyslaki 16 §,Traslator
+381,OTHER PREVENTIVE FUNCTIONS,Condition,SPAT,SPAT,NA,SPAT1314,2009-01-01,2014-12-31,NA,MUUT ENNALTAEHKÄISEVÄT TOIMINNOT,Traslator
+382,Extensive health check-up of children and adolescents,Condition,SPAT,SPAT,NA,SPAT1316,2009-01-01,2014-12-31,NA,Laaja lasten ja nuorten terveystarkastus,Traslator
+383,Vaccination,Condition,SPAT,SPAT,NA,SPAT1325,2009-01-01,2014-12-31,NA,Rokotus,Traslator
+384,FUNCTIONS NOT RELATED TO INDIVIDUALS,Condition,SPAT,SPAT,NA,SPAT1326,2009-01-01,2014-12-31,NA,"TOIMINNOT, JOTKA EIVÄT LIITY YKSILÖÖN",Traslator
+385,"PLANNING OF TREATMENT, ORGANISATION OF FURTHER CARE",Condition,SPAT,SPAT,NA,SPAT1333,2009-01-01,2099-12-31,NA,"HOIDON SUUNNITTELU, JATKOHOIDON JÄRJESTÄMINEN",Traslator
+386,No further measures,Condition,SPAT,SPAT,NA,SPAT1334,2009-01-01,2099-12-31,NA,Ei jatkotoimenpidettä,Traslator
+387,"Plan for further care, organisation of further care",Condition,SPAT,SPAT,NA,SPAT1335,2009-01-01,2099-12-31,NA,"Jatkohoidon suunnitelma, jatkohoidon järjestäminen",Traslator
+388,Request for examination,Condition,SPAT,SPAT,NA,SPAT1336,2009-01-01,2099-12-31,NA,Tutkimuspyyntö,Traslator
+389,Booking of telephone appointment,Condition,SPAT,SPAT,NA,SPAT1337,2009-01-01,2099-12-31,NA,Puhelinajan varaaminen,Traslator
+390,Agreement on letter / electronic contact,Condition,SPAT,SPAT,NA,SPAT1338,2009-01-01,2099-12-31,NA,Sopimus kirjeestä/sähköisestä yhteydenotosta,Traslator
+391,New appointment,Condition,SPAT,SPAT,NA,SPAT1339,2009-01-01,2099-12-31,NA,Uusi vastaanottoaika,Traslator
+392,Referral to other occupational group than physician,Condition,SPAT,SPAT,NA,SPAT1340,2009-01-01,2099-12-31,NA,Ohjaus muulle ammattiryhmälle kuin lääkärille,Traslator
+393,Referral to physician or dentist,Condition,SPAT,SPAT,NA,SPAT1341,2009-01-01,2099-12-31,NA,Ohjaus lääkärille  tai hammaslääkärille,Traslator
+394,Referral to specialised care,Condition,SPAT,SPAT,NA,SPAT1342,2009-01-01,2099-12-31,NA,Lähete erikoissairaanhoitoon,Traslator
+395,Referral to private examination or care,Condition,SPAT,SPAT,NA,SPAT1343,2009-01-01,2099-12-31,NA,Ohjaus yksityiseen tutkimukseen tai hoitoon,Traslator
+396,Referral to services for substance abusers,Condition,SPAT,SPAT,NA,SPAT1344,2009-01-01,2099-12-31,NA,Ohjaus päihdepalveluihin,Traslator
+397,Referral tomedical rehabilitation,Condition,SPAT,SPAT,NA,SPAT1345,2009-01-01,2099-12-31,NA,Ohjaus lääkinnälliseen kuntoutukseen,Traslator
+398,Referral to vocational rehabilitation,Condition,SPAT,SPAT,NA,SPAT1346,2009-01-01,2099-12-31,NA,Ohjaus ammatilliseen kuntoutukseen,Traslator
+399,Referral to primary health care ward,Condition,SPAT,SPAT,NA,SPAT1347,2009-01-01,2099-12-31,NA,Lähete perusterveydenhuollon vuodeosastolle,Traslator
+400,Referral to specialised examinations in student welfare,Condition,SPAT,SPAT,NA,SPAT1397,2015-01-01,2099-12-31,NA,Ohjaus opiskeluhuollon erikoistutkimuksiin,Traslator
+401,Referral to social worker and psychologist services of student welfare,Condition,SPAT,SPAT,NA,SPAT1398,2015-01-01,2099-12-31,NA,Ohjaus opiskelijahuollon kuraattori- ja psykologipalveluihin,Traslator
+402,Continuation of ongoing measures to support ability to work,Condition,SPAT,SPAT,NA,SPAT1400,2019-01-01,2099-12-31,NA,Käynnissä olevien työkyvyn tukitoimien jatkuminen,Traslator
+403,Enhancement of treatment in occupational healthcare,Condition,SPAT,SPAT,NA,SPAT1401,2019-01-01,2099-12-31,NA,Hoidon tehostus työterveyshuollossa,Traslator
+404,Counselling related to known health issue in occupational healthcare,Condition,SPAT,SPAT,NA,SPAT1402,2019-01-01,2099-12-31,NA,Tunnettuun terveysongelmaan liittyvä neuvonta työterveyshuollossa,Traslator
+405,Counselling and guidance related to occupational health,Condition,SPAT,SPAT,NA,SPAT1403,2019-01-01,2099-12-31,NA,Työterveyteen liittyvä neuvonta ja ohjaus,Traslator
+406,Contact with workplace,Condition,SPAT,SPAT,NA,SPAT1404,2019-01-01,2099-12-31,NA,Yhteydenotto työpaikalle,Traslator
+407,Assessment of exposure factors in work environment,Condition,SPAT,SPAT,NA,SPAT1405,2019-01-01,2099-12-31,NA,Työympäristöaltisteiden selvitys,Traslator
+408,Assessment of physical work load or ergonomics at work,Condition,SPAT,SPAT,NA,SPAT1406,2019-01-01,2099-12-31,NA,Työn fyysisen kuormituksen tai ergonomian selvitys,Traslator
+409,Assessment of psychosocial load at work,Condition,SPAT,SPAT,NA,SPAT1407,2019-01-01,2099-12-31,NA,Työn psykososiaalisen kuormituksen selvitys,Traslator
+410,Referral to network negotiation,Condition,SPAT,SPAT,NA,SPAT1408,2019-01-01,2099-12-31,NA,Ohjaus verkostoneuvotteluun,Traslator
+411,Referral to occupational health negotiation,Condition,SPAT,SPAT,NA,SPAT1409,2019-01-01,2099-12-31,NA,Ohjaus työterveysneuvotteluun,Traslator
+412,Assessment of ability to work,Condition,SPAT,SPAT,NA,SPAT1410,2019-01-01,2099-12-31,NA,Työkyvyn arviointi,Traslator
+413,Opinion on ability to work,Condition,SPAT,SPAT,NA,SPAT1411,2019-01-01,2099-12-31,NA,Lausunto työkyvystä,Traslator
+414,Recommendation on partial sickness allowance,Condition,SPAT,SPAT,NA,SPAT1412,2019-01-01,2099-12-31,NA,Suositus osasairauspäivärahasta,Traslator
+415,Referral to further diagnostic examinations,Condition,SPAT,SPAT,NA,SPAT1413,2019-01-01,2099-12-31,NA,Ohjaus diagnostisiin jatkotutkimuksiin,Traslator
+416,Referral to primary health care,Condition,SPAT,SPAT,NA,SPAT1414,2019-01-01,2099-12-31,NA,Ohjaus perusterveydenhuoltoon,Traslator
+417,Examinations due to suspected occupational disease,Condition,SPAT,SPAT,NA,SPAT1415,2019-01-01,2099-12-31,NA,Tutkimukset ammattitautiepäilyn vuoksi,Traslator

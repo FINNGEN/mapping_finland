@@ -1,0 +1,232 @@
+---
+title: "SPAT source vocabulary"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# Document variables 
+N_TOPS <- 10
+
+library(tidyverse)
+library(lubridate)
+library(readxl)
+
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+```
+
+## Import Vocabulary
+The list of the SPAT codes have been downloaded from the official
+source:
+[kodistopalvelu](https://91.202.112.142/codeserver/pages/classification-view-page.xhtml?classificationKey=393&versionKey=471)(7.5.2020).
+
+It contains the codes, Finnish names, Swedish names, and validity periods. 
+
+All the codes missed the English names which was added by a professional translator (Elina Ritala Lääketieteellinen käännöstoimisto Oy)
+
+TODO ask  [\@CoderMikolaj](github.com/CoderMikolaj) if this is correct. 
+
+```{r load, message=FALSE, warning=FALSE}
+spat_source <- spat_source <- read_excel("./SPAT_FIN_THLplusENG.xlsx") %>%  
+  rename(code = CodeId, 
+         name_fi = LongName,
+         name_se = `A:Långt_namn`, 
+         name_en = ENGLongName, 
+         valid_start_date = BeginningDate, 
+         valid_end_date = ExpiringDate) %>% 
+  mutate( name_en_source = "Traslator") %>% 
+  mutate(valid_start_date = as_date(valid_start_date), valid_end_date = as_date(valid_end_date))
+ 
+```
+
+
+## Traslation to English 
+The concept names were translated to English as follow: 
+- `Traslator`: missing names were send to a translator by <mary.reeve@helsinki.fi>
+
+```{r}
+spat_source %>% count(name_en_source, sort = T)
+```
+
+## Formating source vocabulary to OMOP
+
+#### Create VOCABULARY table
+```{r}
+spat_vocabulaly <- tibble(
+  vocabulary_id = "SPAT", 
+  vocabulary_name = "SPAT",
+  vocabulary_reference = "", 
+  vocabulary_version = "", 
+  vocabulary_concept_id = 1
+)
+
+spat_vocabulary_concept <- tibble(
+   concept_id = 1,                                                                
+   concept_name = "SPAT",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Vocabulary",                                                             
+   concept_class_id = "Vocabulary",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+write_csv(spat_vocabulaly, "./VOCABULARY_SPAT.csv")
+
+spat_vocabulaly
+```
+
+#### Create CONCEPT_CLASS table
+```{r}
+spat_concept_class <- tibble(
+  concept_class_id = "SPAT", 
+  concept_class_name = "SPAT",
+  concept_class_concept_id = 2
+) 
+ # TOASK: any level or classes ??
+
+spat_concept_class_concept <- tibble(
+   #concept_id = 1,                                                                
+   #concept_name = "NOMESCO Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Concept Class",                                                             
+   concept_class_id = "Concept Class",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+spat_concept_class_concept <- 
+  bind_cols(
+    spat_concept_class %>% 
+      rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
+      select(concept_id, concept_name), 
+    spat_concept_class_concept
+  )
+
+
+write_csv(spat_concept_class, "./CONCEPT_CLASS_SPAT.csv")
+
+spat_concept_class
+```
+
+
+#### Create CONCEPT table 
+
+At the moment `domain_id` is "Condition" for all although several are not procedures. 
+
+TODO: recalcualte `domain_id` based on the mapping 
+
+```{r}
+
+# add concept_id
+spat_source <- spat_source %>% 
+   mutate( concept_id = 1:nrow(.)+2 ) # as already 2 for domain and concept_class
+
+
+spat_concept <- spat_source %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_name = name_en,
+    domain_id = "Condition", # at the moment
+    vocabulary_id = "SPAT", 
+    concept_class_id = "SPAT", 
+    standard_concept = as.character(NA), 
+    concept_code = code, 
+    valid_start_date = if_else(is.na(valid_start_date), as.Date("1970-01-01"), valid_start_date), 
+    valid_end_date = if_else(is.na(valid_end_date), as.Date("2099-12-31"), valid_end_date), 
+    tmp_name_fi = name_fi, # keep for USAGI
+    tmp_name_en_source = name_en_source
+  ) 
+    
+        
+# add  concepts for domain and concept_class
+spat_concept <- bind_rows(
+  spat_vocabulary_concept, 
+  spat_concept_class_concept, 
+  spat_concept
+)
+
+
+write_csv(spat_concept, "./CONCEPT_SPAT.csv")
+
+spat_concept %>% head(N_TOPS)
+```
+
+
+#### Create CONCEPT_SYNONYM table 
+- 4181730 # Finnish language
+- 4175777 # Swedish language
+
+TOASK: should we add the abbreviation and short_name as synonyms ??
+
+
+```{r} 
+spat_concept_synomim <-
+bind_rows( 
+  # Finnish
+  spat_source %>% 
+  filter(!is.na(name_fi)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_fi, 
+    language_concept_id = 4181730
+  ),
+  # Finnish
+  spat_source %>% 
+  filter(!is.na(name_se)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_se, 
+    language_concept_id = 4175777
+  )
+)
+
+
+write_csv(spat_concept_synomim, "./CONCEPT_SYNONYM_SPAT.csv")
+
+spat_concept_synomim %>% head(N_TOPS)
+
+```
+
+Summary of codes added in each language: 
+
+```{r}
+
+spat_source %>%
+  summarise(n_codes = n(), n_witn_name_fi = sum(!is.na(name_fi)), n_witn_name_se = sum(!is.na(name_se)))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

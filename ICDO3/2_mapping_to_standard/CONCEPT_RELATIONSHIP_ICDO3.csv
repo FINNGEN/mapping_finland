@@ -1,4 +1,4 @@
-concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invalid_reason,temp_mapping_type
+concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invalid_reason,tmp_mapping_type
 44500329,44500329,Maps to,20150918,20991231,NA,OMOP
 44500940,44500940,Maps to,20150918,20991231,NA,OMOP
 44500398,44500398,Maps to,20150918,20991231,NA,OMOP

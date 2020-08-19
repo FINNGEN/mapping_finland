@@ -1,19 +1,16 @@
-reimb
+REIMB
 ================
 
   - [Intro](#intro)
   - [Formating source vocabulary to
     OMOP](#formating-source-vocabulary-to-omop)
-  - [Mapping the source vocabulary to the standard
-    vocabularies](#mapping-the-source-vocabulary-to-the-standard-vocabularies)
       - [Progess in number of codes](#progess-in-number-of-codes)
-      - [Progess in number of events](#progess-in-number-of-events)
   - [Assessing coverage of databases](#assessing-coverage-of-databases)
       - [Database finngen](#database-finngen)
 
 # Intro
 
-TODO
+TODO:
 
 # Formating source vocabulary to OMOP
 
@@ -35,10 +32,10 @@ Missing English translations were made using Google-tralator
 
 <div class="kable-table">
 
-| name\_en\_source |   n |
-| :--------------- | --: |
-| KELA             | 236 |
-| Google           |  31 |
+| tmp\_name\_en\_source |   n |
+| :-------------------- | --: |
+| KELA                  | 236 |
+| Google                |  31 |
 
 </div>
 
@@ -46,38 +43,39 @@ Source table with added translation has been formatted to be similar to
 OMOP in
 [1\_source\_vocabulary/reimb\_for\_source\_vocabulary.csv](1_source_vocabulary/reimb_for_source_vocabulary.csv).
 
-# Mapping the source vocabulary to the standard vocabularies
-
-TODO: In short, USAGI , to conditions high level concepts ?? WE NEED AN
-EXPERT HERE \!\!
-
 ## Progess in number of codes
 
-From 264 codes 0 have been approved.
+From 267 codes 0 have been approved.
 
 This makes 0% of codes approved.
-
-## Progess in number of events
 
 # Assessing coverage of databases
 
 ## Database finngen
 
-**How many codes labeled as reimb in finngen are not in the reimb
+**How many codes labeled as REIMB in finngen are not in the atc
 standard?**
 
 There are 0 codes not found in the standard
 
-Top10 sort by freq:
+Top10 sorted by freq:
 
-| code | freq | freq\_per |
-| :--- | ---: | :-------- |
+<div class="kable-table">
+
+| concept\_code | freq | freq\_per |
+| :------------ | ---: | :-------- |
+
+</div>
 
 The full list can be found in
-[./3\_freq\_of\_source\_codes/finngen\_not\_in\_reimb.csv](./3_freq_of_source_codes/finngen_not_in_reimb.csv)
+[./3\_freq\_of\_source\_codes/finngen\_not\_in\_REIMB.csv](./3_freq_of_source_codes/finngen_not_in_REIMB.csv)
 
-**Status of the reimb codes infinngen**
+**Status of the REIMB codes infinngen**
+
+<div class="kable-table">
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
 | not\_mapped |      169 | 100.000%   |    318175 | 100.000%    |
+
+</div>

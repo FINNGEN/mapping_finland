@@ -1,4 +1,4 @@
-concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invalid_reason,temp_mapping_type
+concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invalid_reason,tmp_mapping_type
 19,196328,Maps to,1970-01-01,2099-12-31,NA,USAGI
 65,46273592,Maps to,2015-07-31,2099-12-31,NA,USAGI
 67,4314257,Maps to,1970-01-01,2099-12-31,NA,USAGI

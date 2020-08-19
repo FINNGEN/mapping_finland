@@ -1,0 +1,270 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason,tmp_name_fi,tmp_name_en_source
+1,Finnish reimbursement code,Metadata,Vocabulary,Vocabulary,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+2,REIMB,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+3,Fat metabolism disorder associated with chronic coronary artery disease,Condition,REIMB,REIMB,NA,213,1970-01-01,2012-03-31,NA,Krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö,Google
+4,"NA",Condition,REIMB,REIMB,NA,204,1970-01-01,2099-12-31,NA,"NA",Google
+5,"Tacrine, donepezil, rivastigmine, galantamine and other major and expensive drugs used to treat Alzheimer's disease",Condition,REIMB,REIMB,NA,307,1999-01-01,2003-03-31,NA,"Takriini, donepetsiili, rivastigmiini, galantamiini ja muut merkittävät ja kalliit Alzheimerin taudin hoidossa käytettävät lääkkeet",Google
+6,"Donepezil, galantamine, memantine and rivastigmine",Condition,REIMB,REIMB,NA,307,2003-04-01,2016-10-31,NA,"Donepetsiili, galantamiini, memantiini ja rivastigmiini",Google
+7,Rivastigmine,Condition,REIMB,REIMB,NA,307,2016-11-01,2018-05-31,NA,Rivastigmiini,Google
+8,Insulin glargine 300 U / ml,Condition,REIMB,REIMB,NA,177,2017-01-01,2020-02-29,NA,Glargininsuliini 300 U/ml,Google
+9,Psychosis requiring demanding treatment,Condition,REIMB,REIMB,NA,188,2000-04-01,2014-10-31,NA,Vaikeahoitoinen psykoosi,KELA
+10,exenatide,Condition,REIMB,REIMB,NA,160,2013-04-01,2016-02-29,NA,Eksenatidi,Google
+11,Exenatide and liraglutide,Condition,REIMB,REIMB,NA,160,2016-03-01,2016-12-31,NA,Eksenatidi ja liraglutidi,Google
+12,Clopidogrel,Condition,REIMB,REIMB,NA,280,2004-08-01,2016-10-31,NA,Clopidogrel,Google
+13,Clopidogrel,Condition,REIMB,REIMB,NA,315,2002-02-01,2016-10-31,NA,Clopidogrel,Google
+14,"Orlistat, sibutramine and other major and expensive medicines used to treat obesity",Condition,REIMB,REIMB,NA,310,1999-01-01,2016-10-31,NA,"Orlistaatti, sibutramiini ja muut merkittävät ja kalliit liikalihavuuden hoidossa käytettävät lääkkeet",Google
+15,liraglutide,Condition,REIMB,REIMB,NA,162,2013-08-01,2016-02-29,NA,Liraglutidi,Google
+16,"Adalimumab, brodalumab, certolizumab pegol, etanercept, guselkumab, infliximab, ixekizumab, risankizumab, sekukinumab and ustekinumab (skin psoriasis)",Condition,REIMB,REIMB,NA,319,2005-09-01,2099-12-31,NA,"Adalimumabi, brodalumabi, etanersepti, guselkumabi, iksekitsumabi, infliksimabi, risankitsumabi, sekukinumabi, sertolitsumabipegoli ja ustekinumabi (ihopsoriaasi)",KELA
+17,Cow's milk and / or soy protein allergy in young children,Condition,REIMB,REIMB,NA,501,1970-01-01,2005-11-30,NA,Pienten lasten lehmänmaito- ja/tai soijaproteiiniallergia,Google
+18,Degludekinsuliini,Condition,REIMB,REIMB,NA,171,2015-06-01,2020-02-29,NA,Degludekinsuliini,Google
+19,Mirabegroni,Condition,REIMB,REIMB,NA,359,2013-11-01,2015-02-28,NA,Mirabegroni,Google
+20,liraglutide,Condition,REIMB,REIMB,NA,358,2013-08-01,2016-02-29,NA,Liraglutidi,Google
+21,Degludekinsuliini,Condition,REIMB,REIMB,NA,371,2015-12-01,2020-02-29,NA,Degludekinsuliini,Google
+22,strontium ranelate,Condition,REIMB,REIMB,NA,327,2008-08-01,2010-11-30,NA,Strontiumranelaatti,Google
+23,denosumab,Condition,REIMB,REIMB,NA,347,2011-03-01,2011-12-31,NA,Denosumabi,Google
+24,MPA,Condition,REIMB,REIMB,NA,187,1999-11-01,2001-06-30,NA,Mykofenolihappo,Google
+25,Insulin glargine 300 U / ml,Condition,REIMB,REIMB,NA,382,2017-01-01,2020-02-29,NA,Glargininsuliini 300 U/ml,Google
+26,Preservative-free combination of bimatoprost and timolol,Condition,REIMB,REIMB,NA,165,2014-12-01,2015-10-31,NA,Bimatoprostin ja timololin säilytysaineeton yhdistelmävalmiste,Google
+27,MPA,Condition,REIMB,REIMB,NA,305,1999-04-01,2001-06-30,NA,Mykofenolihappo,Google
+28,Chronic hypertension,Condition,REIMB,REIMB,NA,205,1970-01-01,2099-12-31,NA,Krooninen verenpainetauti,KELA
+29,"Diabetes, insulin-treated",Condition,REIMB,REIMB,NA,103,1970-01-01,2099-12-31,NA,"Diabetes, insuliinihoito",KELA
+30,"Diabetes, non-insulin-treated",Condition,REIMB,REIMB,NA,215,2017-01-01,2099-12-31,NA,"Diabetes, muu kuin insuliinihoito",KELA
+31,Chronic asthma and similar chronic obstructive pulmonary diseases,Condition,REIMB,REIMB,NA,203,1970-01-01,2099-12-31,NA,Krooninen keuhkoastma ja sitä läheisesti muistuttavat krooniset obstruktiiviset keuhkosairaudet,KELA
+32,Chronic coronary artery disease and dyslipidaemia associated with chronic coronary artery disease,Condition,REIMB,REIMB,NA,206,1970-01-01,2099-12-31,NA,Krooninen sepelvaltimotauti ja krooniseen sepelvaltimotautiin liittyvä rasva-aineenvaihdunnan häiriö,KELA
+33,Severe psychotic and other severe mental disorders,Condition,REIMB,REIMB,NA,112,1970-01-01,2099-12-31,NA,Vaikeat psykoosit ja muut vaikeat mielenterveyden häiriöt,KELA
+34,"Connective tissue diseases, rheumatoid arthritis and comparable disease",Condition,REIMB,REIMB,NA,202,1970-01-01,2099-12-31,NA,"Hajapesäkkeiset sidekudostaudit, reumaattiset niveltulehdukset ja niihin verrattavat tilat",KELA
+35,Chronic arrhythmias,Condition,REIMB,REIMB,NA,207,1970-01-01,2099-12-31,NA,Krooniset sydämen rytmihäiriöt,KELA
+36,"Apixaban, dabigatran, edoxaban and rivaroxaban for the treatment of atrial fibrillation",Condition,REIMB,REIMB,NA,290,2018-03-01,2099-12-31,NA,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani eteisvärinän hoitoon",KELA
+37,Thyroid insufficiency,Condition,REIMB,REIMB,NA,104,1970-01-01,2099-12-31,NA,Kilpirauhasen vajaatoiminta,KELA
+38,Glaucoma,Condition,REIMB,REIMB,NA,114,1970-01-01,2099-12-31,NA,Glaukooma,KELA
+39,Breast cancer,Condition,REIMB,REIMB,NA,115,1970-01-01,2099-12-31,NA,Rintasyöpä,KELA
+40,Malignant tumour,Condition,REIMB,REIMB,NA,130,1970-01-01,2099-12-31,NA,"Pahanlaatuiset kasvaimet, joita ei ole edellä erikseen mainittu",KELA
+41,"Apixaban, dabigatran, edoxaban and rivaroxaban for the treatment of atrial fibrillation",Condition,REIMB,REIMB,NA,351,2012-04-01,2099-12-31,NA,"Apiksabaani*, dabigatraani, edoksabaani ja rivaroksabaani* eteisvärinän hoitoon",KELA
+42,Epilepsy and comparable convulsive disorders,Condition,REIMB,REIMB,NA,111,1970-01-01,2099-12-31,NA,Epilepsia ja siihen verrattavat kouristustilat,KELA
+43,"Abatacept, adalimumab, anakinra, certolizumab pegol, etanercept, golimumab, infliximab, ixekizumab, sarilumab, secukinumab, tocilizumab and ustekinumab (rheumatoid diseases)",Condition,REIMB,REIMB,NA,313,2001-07-01,2099-12-31,NA,"Abatasepti*, adalimumabi*, anakinra*, etanersepti*, golimumabi*, iksekitsumabi, infliksimabi*, sarilumabi, sekukinumabi, sertolitsumabipegoli*, tosilitsumabi* ja ustekinumabi (reumasairaudet)",KELA
+44,Ulcerative colitis and Crohn's disease,Condition,REIMB,REIMB,NA,208,1970-01-01,2099-12-31,NA,Haavainen paksusuolentulehdus ja Crohnin tauti,KELA
+45,"Abatacept, adalimumab, anakinra, certolizumab pegol, etanercept, golimumab, infliximab, ixekizumab, sarilumab, secukinumab and tocilizumab",Condition,REIMB,REIMB,NA,281,2011-02-01,2099-12-31,NA,"Abatasepti, adalimumabi, anakinra, etanersepti, golimumabi, iksekitsumabi, infliksimabi, sarilumabi, sekukinumabi, sertolitsumabipegoli ja tosilitsumabi",KELA
+46,Prostate cancer,Condition,REIMB,REIMB,NA,116,1970-01-01,2099-12-31,NA,Eturauhassyöpä,KELA
+47,Chronic cardiac insufficiency,Condition,REIMB,REIMB,NA,201,1970-01-01,2099-12-31,NA,Krooninen sydämen vajaatoiminta,KELA
+48,"Leukaemia and other malignant diseases of the blood and bone marrow, and malignant diseases of the lymphatic tissue",Condition,REIMB,REIMB,NA,117,1970-01-01,2099-12-31,NA,"Leukemiat, muut pahanlaatuiset veri- ja luuydintaudit sekä pahanlaatuiset imukudostaudit",KELA
+49,"Dulaglutide, exenatide, liraglutide, lixisenatide and semaglutide (adults)",Condition,REIMB,REIMB,NA,285,2017-01-01,2099-12-31,NA,"Dulaglutidi, eksenatidi, liksisenatidi, liraglutidi ja semaglutidi (aikuiset)",KELA
+50,Parkinson's disease and comparable movement disrorders,Condition,REIMB,REIMB,NA,110,1970-01-01,2099-12-31,NA,Parkinsonin tauti ja siihen verrattavat liikehäiriöt,KELA
+51,Chronic disorders of vitamin D metabolism,Condition,REIMB,REIMB,NA,123,1970-01-01,2099-12-31,NA,D-vitamiinin krooniset aineenvaihduntahäiriöt,KELA
+52,"Dulaglutide, exenatide, liraglutide, lixisenatide and semaglutide (adults)",Condition,REIMB,REIMB,NA,346,2011-02-01,2099-12-31,NA,"Dulaglutidi*, eksenatidi*, liksisenatidi*, liraglutidi* ja semaglutidi (aikuiset)",KELA
+53,Topical pimecrolimus and tacrolimus,Condition,REIMB,REIMB,NA,317,2003-11-01,2099-12-31,NA,Pimekrolimuusi- ja takrolimuusivoide*,KELA
+54,Severe anaemia associated with chronic renal failure,Condition,REIMB,REIMB,NA,138,1970-01-01,2099-12-31,NA,Munuaisten vajaatoimintaan liittyvä vaikea anemia,KELA
+55,Pernicious anaemia,Condition,REIMB,REIMB,NA,107,1970-01-01,2099-12-31,NA,Pernisiöösi anemia ja muut B12-vitamiinin imeytymishäiriöt,KELA
+56,"Brivaracetam, eslikarbazepin, gabapentin, lacosamide, levetiracetam, perampanel, pregabalin, tiagabin and zonisamide",Condition,REIMB,REIMB,NA,182,1996-07-01,2099-12-31,NA,"Brivarasetaami, eslikarbatsepiini, gabapentiini, lakosamidi, levetirasetaami, perampaneeli, pregabaliini, tiagabiini ja tsonisamidi",KELA
+57,Severe hypofunction of sexual glands,Condition,REIMB,REIMB,NA,121,1970-01-01,2099-12-31,NA,Sukurauhasten vaikea vajaatoiminta,KELA
+58,Gout,Condition,REIMB,REIMB,NA,212,1970-01-01,2099-12-31,NA,Kihti,KELA
+59,Transplant complication,Condition,REIMB,REIMB,NA,127,1970-01-01,2099-12-31,NA,Elinsiirron tai kudossiirron jälkitila,KELA
+60,"Dimethyl fumarate, glatiramer acetate, interferon beta and teriflunomid (Multiple sclerosis)",Condition,REIMB,REIMB,NA,157,2011-07-01,2099-12-31,NA,"Dimetyylifumaraatti, glatirameeriasetaatti, interferoni beeta ja teriflunomidi (MS-tauti)",KELA
+61,"Dimethyl fumarate, interferon beta, glatiramer acetate and teriflunomid (Multiple sclerosis)",Condition,REIMB,REIMB,NA,303,1999-01-01,2099-12-31,NA,"Dimetyylifumaraatti*, glatirameeriasetaatti*, interferoni beeta* ja teriflunomidi* (MS-tauti)",KELA
+62,"Alprostadil, sildenafil and combination product containing aviptadil and phentolamine",Condition,REIMB,REIMB,NA,308,1999-04-01,2099-12-31,NA,"Alprostadiili, aviptadiilin ja fentolamiinin yhdistelmävalmiste ja sildenafiili",KELA
+63,Conditions requiring daily forced enteral nutrition,Condition,REIMB,REIMB,NA,504,1970-01-01,2099-12-31,NA,Päivittäistä letkuruokintaa vaativat tilat,KELA
+64,Cancers of female genital organs,Condition,REIMB,REIMB,NA,128,1970-01-01,2099-12-31,NA,Gynekologiset syövät,KELA
+65,"Lanthanum carbonate, sevelamer and sucroferric oxyhydroxide",Condition,REIMB,REIMB,NA,190,2008-03-01,2099-12-31,NA,"Lantaanikarbonaatti, sevalameeri ja sukroferrinen oksihydroksidi",KELA
+66,Lamotrigin and topiramate,Condition,REIMB,REIMB,NA,183,1996-07-01,2099-12-31,NA,Lamotrigiini ja topiramaatti,KELA
+67,Multiple sclerosis,Condition,REIMB,REIMB,NA,109,1970-01-01,2099-12-31,NA,MS-tauti,KELA
+68,Severe chronic pancreatic insufficiency,Condition,REIMB,REIMB,NA,133,1970-01-01,2099-12-31,NA,Vaikea haiman krooninen vajaatoiminta,KELA
+69,"Apixaban, dabigatran, edoxaban and rivaroxaban for the long-term prevention of recurrent deep veinthrombosis and pulmonary embolism",Condition,REIMB,REIMB,NA,379,2016-05-01,2099-12-31,NA,"Apiksabaani, dabigatraani, edoksabaani ja rivaroksabaani syvän laskimotukoksen ja keuhkoembolian uusiutumisen pitkäaikaiseen ehkäisyyn",KELA
+70,"Severe malabsorption of nutrients, mainly fats",Condition,REIMB,REIMB,NA,601,1970-01-01,2099-12-31,NA,"Ravintoaineiden, lähinnä rasvojen, vaikeat imeytymishäiriöt",KELA
+71,Uraemia requiring dialysis,Condition,REIMB,REIMB,NA,137,1970-01-01,2099-12-31,NA,Dialyysihoitoa edellyttävä uremia,KELA
+72,"Adalimumab, golimumab, infliximab and ustekinumab (intestinal diseases)",Condition,REIMB,REIMB,NA,326,2007-12-01,2099-12-31,NA,"Adalimumabi, golimumabi, infliksimabi ja ustekinumabi (suolistosairaudet)",KELA
+73,Anterior pituitary hypofunction,Condition,REIMB,REIMB,NA,101,1999-11-01,2099-12-31,NA,Aivolisäkkeen etulohkon vajaatoiminta,KELA
+74,Sarcoidosis,Condition,REIMB,REIMB,NA,132,1970-01-01,2099-12-31,NA,Sarkoidoosi,KELA
+75,Dronedarone,Condition,REIMB,REIMB,NA,342,2010-12-01,2099-12-31,NA,Dronedaroni,KELA
+76,Abiraterone and enzalutamide,Condition,REIMB,REIMB,NA,163,2014-10-01,2099-12-31,NA,Abirateroni ja entsalutamidi,KELA
+77,Nalmefene and naltrexone,Condition,REIMB,REIMB,NA,309,1999-04-01,2099-12-31,NA,Nalmefeeni ja naltreksoni,KELA
+78,Severe hereditary disorders of lipid metabolism (familial hypercholesterolaemia and type III dyslipoproteinemia),Condition,REIMB,REIMB,NA,211,1970-01-01,2099-12-31,NA,Periytyvät rasva-aineenvaihdunnan vaikea-asteiset häiriöt (familiaalinen hyperkolesterolemia ja tyypin III dyslipoproteinemia),KELA
+79,Rasagiline,Condition,REIMB,REIMB,NA,193,2008-07-01,2099-12-31,NA,Rasagiliini,KELA
+80,Dalteparin and tinzaparin (treatment for more than 6 months),Condition,REIMB,REIMB,NA,166,2015-03-01,2099-12-31,NA,Daltepariini ja tintsapariini (yli 6 kuukauden hoidossa),KELA
+81,Teriparatide,Condition,REIMB,REIMB,NA,318,2004-12-01,2099-12-31,NA,Teriparatidi,KELA
+82,Paricalcitol and cinacalcet,Condition,REIMB,REIMB,NA,196,2009-05-01,2099-12-31,NA,Parikalsitoli ja sinakalseetti,KELA
+83,Lenalidomid,Condition,REIMB,REIMB,NA,153,2010-10-01,2099-12-31,NA,Lenalidomidi,KELA
+84,Imatinib,Condition,REIMB,REIMB,NA,189,2002-03-01,2099-12-31,NA,Imatinibi,KELA
+85,Nintedanib and pirfenidone,Condition,REIMB,REIMB,NA,284,2015-11-01,2099-12-31,NA,Nintedanibi ja pirfenidoni,KELA
+86,Trigeminal neuralgia or glossofaryngeusneuralgia,Condition,REIMB,REIMB,NA,119,1970-01-01,2099-12-31,NA,Trigeminus- tai glossofaryngikusneuralgia,KELA
+87,Children's severe malnutrition,Condition,REIMB,REIMB,NA,602,1970-01-01,2099-12-31,NA,Lasten vaikeat aliravitsemustilat,KELA
+88,Combination product containing sacubitril and valsartan,Condition,REIMB,REIMB,NA,289,2018-01-01,2099-12-31,NA,Sakubitriilin ja valsartaanin yhdistelmävalmiste,KELA
+89,Fulvestrant,Condition,REIMB,REIMB,NA,192,2008-06-01,2099-12-31,NA,Fulvestrantti,KELA
+90,General erythroderma,Condition,REIMB,REIMB,NA,134,1970-01-01,2099-12-31,NA,Yleinen erytrodermia,KELA
+91,Hypoparathyroidism,Condition,REIMB,REIMB,NA,106,1970-01-01,2099-12-31,NA,Lisäkilpirauhasten vajaatoiminta,KELA
+92,Paricalcitol and cinacalcet,Condition,REIMB,REIMB,NA,321,2007-03-01,2099-12-31,NA,Parikalsitoli* ja sinakalseetti*,KELA
+93,Interferon alfa,Condition,REIMB,REIMB,NA,180,1994-04-01,2099-12-31,NA,Interferoni alfa,KELA
+94,Sunitinib,Condition,REIMB,REIMB,NA,197,2009-09-01,2099-12-31,NA,Sunitinibi,KELA
+95,Fingolimod,Condition,REIMB,REIMB,NA,164,2014-10-01,2099-12-31,NA,Fingolimodi,KELA
+96,Myasthenia gravis,Condition,REIMB,REIMB,NA,108,1970-01-01,2099-12-31,NA,Myasthenia gravis,KELA
+97,Anxiety disorders associated with mental retardation,Condition,REIMB,REIMB,NA,113,1970-01-01,2099-12-31,NA,Älyllisesti kehitysvammaisilla esiintyvät käyttäytymisen häiriöt,KELA
+98,Adrenal cortical hypofunction,Condition,REIMB,REIMB,NA,105,1970-01-01,2099-12-31,NA,Lisämunuaisten kuorikerroksen vajaatoiminta,KELA
+99,"Lanthanum carbonate, sevelamer and sucroferric oxyhydroxide",Condition,REIMB,REIMB,NA,320,2005-10-01,2099-12-31,NA,"Lantaanikarbonaatti*, sevelameeri*ja sukroferrinen oksihydroksidi*",KELA
+100,"Atomoxetine, dexamphetamine, guanfacine and lisdexamphetamine",Condition,REIMB,REIMB,NA,331,2008-12-01,2099-12-31,NA,"Atomoksetiini, deksamfetamiini, guanfasiini ja lisdeksamfetamiini",KELA
+101,Roflumilast,Condition,REIMB,REIMB,NA,348,2011-06-01,2099-12-31,NA,Roflumilasti,KELA
+102,Combination product containing sacubitril and valsartan,Condition,REIMB,REIMB,NA,381,2016-07-01,2099-12-31,NA,Sakubitriilin ja valsartaanin yhdistelmävalmiste*,KELA
+103,Diabetes insipidus,Condition,REIMB,REIMB,NA,102,1970-01-01,2099-12-31,NA,Vesitystauti,KELA
+104,Growth hormone,Condition,REIMB,REIMB,NA,301,1999-04-01,2099-12-31,NA,Kasvuhormoni*,KELA
+105,Nintedanib and pirfenidone,Condition,REIMB,REIMB,NA,356,2013-06-01,2099-12-31,NA,Nintedanibi* ja pirfenidoni*,KELA
+106,Hypogammaglobulinaemia,Condition,REIMB,REIMB,NA,120,1970-01-01,2099-12-31,NA,Gammaglobuliinin puutostila,KELA
+107,Febuxostat,Condition,REIMB,REIMB,NA,288,2017-10-01,2099-12-31,NA,Febuksostaatti,KELA
+108,Pazopanib,Condition,REIMB,REIMB,NA,159,2013-02-01,2099-12-31,NA,Patsopanibi,KELA
+109,Sorafenib,Condition,REIMB,REIMB,NA,198,2009-09-01,2099-12-31,NA,Sorafenibi,KELA
+110,Erlotinib,Condition,REIMB,REIMB,NA,191,2008-03-01,2099-12-31,NA,Erlotinibi,KELA
+111,Erythropoietin and darbepoetin,Condition,REIMB,REIMB,NA,306,1999-04-01,2099-12-31,NA,Erytropoietiini* ja darbepoetiini*,KELA
+112,Febuxostat,Condition,REIMB,REIMB,NA,349,2011-07-01,2099-12-31,NA,Febuksostaatti,KELA
+113,Cladribine and fingolimod,Condition,REIMB,REIMB,NA,353,2012-09-01,2099-12-31,NA,Fingolimodi* ja kladribiini,KELA
+114,Idiopathic thrombocytopaenia or granulocytopenia,Condition,REIMB,REIMB,NA,129,1970-01-01,2099-12-31,NA,Itsenäinen verihiutaleiden tai granulosyyttien niukkuus,KELA
+115,Dienogest,Condition,REIMB,REIMB,NA,355,2013-06-01,2099-12-31,NA,Dienogesti,KELA
+116,Abiraterone and enzalutamide,Condition,REIMB,REIMB,NA,352,2012-09-01,2099-12-31,NA,Abirateroni* ja entsalutamidi*,KELA
+117,Retigabine and vigabatrin,Condition,REIMB,REIMB,NA,181,1995-05-01,2099-12-31,NA,Retigabiini ja vigabatriini,KELA
+118,Apremilast and dimethyl fumarate (psoriasis),Condition,REIMB,REIMB,NA,377,2016-04-01,2099-12-31,NA,Apremilasti ja dimetyylifumaraatti (psoriaasi),KELA
+119,Allergy to cow's milk in infants,Condition,REIMB,REIMB,NA,505,1970-01-01,2099-12-31,NA,Pienten lasten lehmänmaitoallergia,KELA
+120,Regorafenib,Condition,REIMB,REIMB,NA,176,2016-10-01,2099-12-31,NA,Regorafenibi,KELA
+121,Chronic coagulation defects,Condition,REIMB,REIMB,NA,126,1970-01-01,2099-12-31,NA,Krooniset hyytymishäiriöt,KELA
+122,Everolimus,Condition,REIMB,REIMB,NA,158,2012-09-01,2099-12-31,NA,Everolimuusi,KELA
+123,Palbociclib,Condition,REIMB,REIMB,NA,394,2018-08-01,2099-12-31,NA,Palbosiklibi*,KELA
+124,"Combination product containing tegafur, gimeracil and oteracil",Condition,REIMB,REIMB,NA,178,2017-09-01,2099-12-31,NA,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste",KELA
+125,"Dabrafenib, trametinib and vemurafenib",Condition,REIMB,REIMB,NA,167,2015-04-01,2099-12-31,NA,"Dabrafenibi, trametinibi ja vemurafenibi",KELA
+126,Afatinib and gefitinib,Condition,REIMB,REIMB,NA,155,2011-05-01,2099-12-31,NA,Afatinibi ja gefitinibi,KELA
+127,Dornase alfa,Condition,REIMB,REIMB,NA,304,1999-01-01,2099-12-31,NA,Dornaasi alfa,KELA
+128,Regorafenib,Condition,REIMB,REIMB,NA,369,2015-03-01,2099-12-31,NA,Regorafenibi*,KELA
+129,Allergen extract of birch pollen and allergen extract of grass pollen,Condition,REIMB,REIMB,NA,364,2014-11-01,2099-12-31,NA,Koivun allergeeniuute ja heinien allergeeniuute,KELA
+130,"Dabrafenib, trametinib and vemurafenib",Condition,REIMB,REIMB,NA,362,2014-08-01,2099-12-31,NA,"Dabrafenibi*, trametinibi ja vemurafenibi*",KELA
+131,Dasatinib,Condition,REIMB,REIMB,NA,150,1970-01-01,2099-12-31,NA,Dasatinibi,KELA
+132,Nilotinib,Condition,REIMB,REIMB,NA,152,2010-08-01,2099-12-31,NA,Nilotinibi,KELA
+133,Aplastic anaemia,Condition,REIMB,REIMB,NA,122,1970-01-01,2099-12-31,NA,Aplastinen anemia,KELA
+134,Product containing buprenorfine and naloxone,Condition,REIMB,REIMB,NA,339,2009-08-01,2099-12-31,NA,Buprenorfiinia ja naloksonia sisältävä valmiste,KELA
+135,Lapatinib,Condition,REIMB,REIMB,NA,156,2011-05-01,2099-12-31,NA,Lapatinibi,KELA
+136,Interferon alfa,Condition,REIMB,REIMB,NA,302,1999-04-01,2099-12-31,NA,Interferoni alfa*,KELA
+137,Ibrutinib,Condition,REIMB,REIMB,NA,390,2018-02-01,2099-12-31,NA,Ibrutinibi*,KELA
+138,Axitinib,Condition,REIMB,REIMB,NA,168,2015-08-01,2099-12-31,NA,Aksitinibi,KELA
+139,Ticagrelor 60 mg,Condition,REIMB,REIMB,NA,287,2017-04-01,2099-12-31,NA,Tikagrelori 60 mg,KELA
+140,Alirocumab and evolocumab for the treatment of familial hypercholesterolaemia,Condition,REIMB,REIMB,NA,388,2017-11-01,2099-12-31,NA,Alirokumabi* ja evolokumabi* familiaalisen hyperkolesterolemian hoidossa,KELA
+141,Lenalidomide,Condition,REIMB,REIMB,NA,329,2008-11-01,2099-12-31,NA,Lenalidomidi*,KELA
+142,Pemphigus,Condition,REIMB,REIMB,NA,135,1970-01-01,2099-12-31,NA,Rakkoihottuma,KELA
+143,Ruxolitinib,Condition,REIMB,REIMB,NA,174,2016-07-01,2099-12-31,NA,Ruksolitinibi,KELA
+144,Growth retardation associated with renal failure (growth hormone),Condition,REIMB,REIMB,NA,186,1999-11-01,2099-12-31,NA,Kasvuhormoni (munuaisten vajaatoimintaan liittyvä kasvuhäiriö),KELA
+145,Adalimumab (hidradenitis suppurativa),Condition,REIMB,REIMB,NA,380,2016-06-01,2099-12-31,NA,Adalimumabi (hidradenitis suppurativa),KELA
+146,Ciclosporin eye drop,Condition,REIMB,REIMB,NA,286,2017-04-01,2099-12-31,NA,Siklosporiini-silmätippa,KELA
+147,Everolimus,Condition,REIMB,REIMB,NA,340,2010-06-01,2099-12-31,NA,Everolimuusi*,KELA
+148,Allergy to cow's milk and hypersensibility to conventional formula in infants,Condition,REIMB,REIMB,NA,506,1970-01-01,2099-12-31,NA,Pienten lasten lehmänmaitoallergia ja yliherkkyys tavanomaisille erityisvalmisteille,KELA
+149,Sodium oxybat,Condition,REIMB,REIMB,NA,282,2012-08-01,2099-12-31,NA,Natriumoksibaatti ja modafiniili,KELA
+150,Sunitinib,Condition,REIMB,REIMB,NA,322,2007-05-01,2099-12-31,NA,Sunitinibi*,KELA
+151,Omalizumab,Condition,REIMB,REIMB,NA,344,2011-01-01,2099-12-31,NA,Omalitsumabi,KELA
+152,Idelalisib,Condition,REIMB,REIMB,NA,372,2015-10-01,2099-12-31,NA,Idelalisibi,KELA
+153,"C1-esterase inhibitor, icatibant and conestat alfa",Condition,REIMB,REIMB,NA,338,2009-08-01,2099-12-31,NA,"C1-esteraasin estäjä, ikatibantti ja konestaatti alfa",KELA
+154,Sorafenib,Condition,REIMB,REIMB,NA,323,2007-06-01,2099-12-31,NA,Sorafenibi*,KELA
+155,Combination product containing naproxen and esomeprazole,Condition,REIMB,REIMB,NA,366,2014-11-01,2099-12-31,NA,Naprokseenin ja esomepratsolin yhdistelmävalmiste,KELA
+156,Inborn metabolic disorders,Condition,REIMB,REIMB,NA,503,1970-01-01,2099-12-31,NA,Synnynnäiset aineenvaihdunnan häiriöt,KELA
+157,Crizotinib,Condition,REIMB,REIMB,NA,169,2015-08-01,2099-12-31,NA,Kritsotinibi,KELA
+158,Ivabradine,Condition,REIMB,REIMB,NA,283,2015-07-01,2099-12-31,NA,Ivabradiini,KELA
+159,Inborn metabolic disorders,Condition,REIMB,REIMB,NA,124,1970-01-01,2099-12-31,NA,Synnynnäiset aineenvaihduntahäiriöt,KELA
+160,Severe and chronic narcolepsy,Condition,REIMB,REIMB,NA,214,2012-01-01,2099-12-31,NA,Vaikea ja pitkäaikainen narkolepsia,KELA
+161,Pomalidomide,Condition,REIMB,REIMB,NA,393,2018-08-01,2099-12-31,NA,Pomalidomidi,KELA
+162,Treprostinil,Condition,REIMB,REIMB,NA,334,2009-03-01,2099-12-31,NA,Treprostiniili,KELA
+163,Cyanocobalamin,Condition,REIMB,REIMB,NA,376,2016-03-01,2099-12-31,NA,Syanokobalamiini*,KELA
+164,Rufinamide,Condition,REIMB,REIMB,NA,199,2010-02-01,2099-12-31,NA,Rufinamidi,KELA
+165,Axitinib,Condition,REIMB,REIMB,NA,361,2014-02-01,2099-12-31,NA,Aksitinibi*,KELA
+166,Ruxolitinib,Condition,REIMB,REIMB,NA,374,2015-12-01,2099-12-31,NA,Ruksolitinibi*,KELA
+167,Capsaicin,Condition,REIMB,REIMB,NA,350,2011-09-01,2099-12-31,NA,Kapsaisiini,KELA
+168,Combination product containing docusate sodium and sorbitol,Condition,REIMB,REIMB,NA,368,2015-03-01,2099-12-31,NA,Natriumdokusaatin ja sorbitolin yhdistelmävalmiste,KELA
+169,Deferasirox,Condition,REIMB,REIMB,NA,175,2016-08-01,2099-12-31,NA,Deferasiroksi,KELA
+170,Imatinib,Condition,REIMB,REIMB,NA,316,2002-03-01,2099-12-31,NA,Imatinibi*,KELA
+171,Ixazomib,Condition,REIMB,REIMB,NA,398,2018-11-01,2099-12-31,NA,Iksatsomibi,KELA
+172,"Agalsidase alfa, agalsidase beta and migalastat",Condition,REIMB,REIMB,NA,195,2009-03-01,2099-12-31,NA,"Agalsidaasi alfa, agalsidaasi beeta ja migalastaatti",KELA
+173,Alectinib,Condition,REIMB,REIMB,NA,1504,2019-08-01,2099-12-31,NA,Alektinibi,KELA
+174,Bosutinib,Condition,REIMB,REIMB,NA,170,2015-12-01,2099-12-31,NA,Bosutinibi,KELA
+175,Dabrafenib (adjuvant treatment),Condition,REIMB,REIMB,NA,1509,2020-02-01,2099-12-31,NA,Dabrafenibi (liitännäishoito),KELA
+176,"Eliglustat, imiglucerase and velaglucerase alfa",Condition,REIMB,REIMB,NA,151,2010-04-01,2099-12-31,NA,"Eliglustaatti, imigluseraasi ja velagluseraasi alfa",KELA
+177,Emicizumab,Condition,REIMB,REIMB,NA,1503,2019-07-01,2099-12-31,NA,Emisitsumabi,KELA
+178,Blood coagulation factor VIII and von Willebrand factor for the treatment of von Willebrand disease,Condition,REIMB,REIMB,NA,194,2009-01-01,2099-12-31,NA,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon,KELA
+179,Blood coagulation factor VIII and von Willebrand factor for desensitisation treatment in inhibitor-positive patients with haemophilia A,Condition,REIMB,REIMB,NA,172,2016-02-01,2099-12-31,NA,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon,KELA
+180,Ibrutinib,Condition,REIMB,REIMB,NA,1512,2020-03-01,2099-12-31,NA,Ibrutinibi,KELA
+181,Ixazomib,Condition,REIMB,REIMB,NA,1505,2019-10-01,2099-12-31,NA,Iksatsomibi,KELA
+182,Cabozantinib,Condition,REIMB,REIMB,NA,1502,2019-06-01,2099-12-31,NA,Kabotsantinibi,KELA
+183,Lenvatinib,Condition,REIMB,REIMB,NA,1508,2020-02-01,2099-12-31,NA,Lenvatinibi,KELA
+184,Mecasermin,Condition,REIMB,REIMB,NA,154,2011-02-01,2099-12-31,NA,Mekasermiini,KELA
+185,Niraparib,Condition,REIMB,REIMB,NA,1510,2020-03-01,2099-12-31,NA,Niraparibi,KELA
+186,Olaparib,Condition,REIMB,REIMB,NA,1511,2020-03-01,2099-12-31,NA,Olaparibi,KELA
+187,Palbociclib,Condition,REIMB,REIMB,NA,1501,2019-02-01,2099-12-31,NA,Palbosiklibi,KELA
+188,Pomalidomide,Condition,REIMB,REIMB,NA,1507,2020-02-01,2099-12-31,NA,Pomalidomidi,KELA
+189,Trastuzumab injection,Condition,REIMB,REIMB,NA,173,2016-04-01,2099-12-31,NA,Trastutsumabi-injektio,KELA
+190,The combination of trifluridine and tipiracil,Condition,REIMB,REIMB,NA,1506,2019-11-01,2099-12-31,NA,Trifluridiinin ja tipirasiilin yhdistelmävalmiste,KELA
+191,Vismodegib,Condition,REIMB,REIMB,NA,179,2017-11-01,2099-12-31,NA,Vismodegibi,KELA
+192,Preparation with von Willebrand's factor,Condition,REIMB,REIMB,NA,161,2013-06-01,2099-12-31,NA,Von Willebrand -tekijävalmiste,KELA
+193,Alirocumab and evolocumab for the treatment of familial hypercholesterolaemia,Condition,REIMB,REIMB,NA,292,2019-06-01,2099-12-31,NA,Alirokumabi  ja evolokumabi familiaalisen hyperkolesterolemian hoidossa,KELA
+194,Alirocumab and evolocumab for the treatment of hypercholesterolaemia and dyslipidaemia,Condition,REIMB,REIMB,NA,294,2020-01-01,2099-12-31,NA,Alirokumabi ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,KELA
+195,Baricitinib,Condition,REIMB,REIMB,NA,293,2019-10-01,2099-12-31,NA,Barisitinibi,KELA
+196,Liraglutide (children and adolescents),Condition,REIMB,REIMB,NA,295,2020-02-01,2099-12-31,NA,Liraglutidi  (lapset ja nuoret),KELA
+197,Tofacitinib,Condition,REIMB,REIMB,NA,291,2019-03-01,2099-12-31,NA,Tofasitinibi,KELA
+198,Afatinib and gefitinib,Condition,REIMB,REIMB,NA,341,2010-11-01,2099-12-31,NA,Afatinibi* ja gefitinibi*,KELA
+199,"Agalsidase alfa, agalsidase beta and migalastat",Condition,REIMB,REIMB,NA,336,2009-03-01,2099-12-31,NA,"Agalsidaasi alfa*, agalsidaasi beeta* ja migalastaatti*",KELA
+200,Alectinib,Condition,REIMB,REIMB,NA,3001,2018-12-01,2099-12-31,NA,Alektinibi,KELA
+201,Alirocumab and evolocumab for the treatment of hypercholesterolaemia and dyslipidaemia,Condition,REIMB,REIMB,NA,3015,2019-08-01,2099-12-31,NA,Alirokumabi* ja evolokumabi hyperkolesterolemian ja sekamuotoisen dyslipidemian hoidossa,KELA
+202,Asfotase alfa,Condition,REIMB,REIMB,NA,387,2017-08-01,2099-12-31,NA,Asfotaasi alfa,KELA
+203,Baricitinib,Condition,REIMB,REIMB,NA,3006,2019-03-01,2099-12-31,NA,Barisitinibi,KELA
+204,Binimetinib and encorafenib,Condition,REIMB,REIMB,NA,3016,2019-10-01,2099-12-31,NA,Binimetinibi ja enkorafenibi,KELA
+205,Bosutinib,Condition,REIMB,REIMB,NA,360,2013-12-01,2099-12-31,NA,Bosutinibi*,KELA
+206,Brigatinib,Condition,REIMB,REIMB,NA,3017,2019-11-01,2099-12-31,NA,Brigatinib,KELA
+207,Dabrafenib and trametinib (adjuvant treatment),Condition,REIMB,REIMB,NA,3024,2020-02-01,2099-12-31,NA,Dabrafenibi ja trametinibi (liitännäishoito)*,KELA
+208,Dasatinib,Condition,REIMB,REIMB,NA,324,2007-11-01,2099-12-31,NA,Dasatinibi*,KELA
+209,Dupilumab,Condition,REIMB,REIMB,NA,395,2018-10-01,2099-12-31,NA,Dupilumabi,KELA
+210,"Eliglustat, imiglucerase and velaglucerase alfa",Condition,REIMB,REIMB,NA,333,2009-02-01,2099-12-31,NA,"Eliglustaatti*, imigluseraasi* ja velagluseraasi alfa*",KELA
+211,Emicizumab,Condition,REIMB,REIMB,NA,397,2018-11-01,2099-12-31,NA,Emisitsumabi,KELA
+212,Erenumab and fremanezumab,Condition,REIMB,REIMB,NA,3007,2019-04-01,2099-12-31,NA,Erenumabi ja fremanetsumabi,KELA
+213,Erlotinib,Condition,REIMB,REIMB,NA,325,2007-11-01,2099-12-31,NA,Erlotinibi*,KELA
+214,Ferric maltol,Condition,REIMB,REIMB,NA,392,2018-08-01,2099-12-31,NA,Ferrimaltoli,KELA
+215,Blood coagulation factor VIII and von Willebrand factor for the treatment of von Willebrand disease,Condition,REIMB,REIMB,NA,332,2009-01-01,2099-12-31,NA,Hyytymistekijä VIII ja von Willebrand -tekijä von Willebrandin taudin hoitoon*,KELA
+216,Blood coagulation factor VIII and von Willebrand factor for desensitisation treatment in inhibitor-positive patients with haemophilia A,Condition,REIMB,REIMB,NA,375,2016-02-01,2099-12-31,NA,Hyytymistekijä VIII ja von Willebrand -tekijä A-hemofiliaa sairastavien vasta-ainepositiivisten potilaiden siedätyshoitoon*,KELA
+217,Idebenone,Condition,REIMB,REIMB,NA,396,2018-10-01,2099-12-31,NA,Idebenoni,KELA
+218,Ivabradine,Condition,REIMB,REIMB,NA,354,2013-03-01,2099-12-31,NA,Ivabradiini*,KELA
+219,Cabozantinib,Condition,REIMB,REIMB,NA,3012,2019-06-01,2099-12-31,NA,Kabotsantinibi*,KELA
+220,Calcium carbonate,Condition,REIMB,REIMB,NA,3025,2020-03-01,2099-12-31,NA,Kalsiumkarbonaatti,KELA
+221,Ketoconazole,Condition,REIMB,REIMB,NA,3021,2020-01-01,2099-12-31,NA,Ketokonatsoli,KELA
+222,Allergen extract of birch pollen (adults),Condition,REIMB,REIMB,NA,3023,2020-02-01,2099-12-31,NA,Koivun allergeeniuute (aikuiset),KELA
+223,Colesevelam,Condition,REIMB,REIMB,NA,345,2011-02-01,2099-12-31,NA,Kolesevelaami,KELA
+224,Crizotinib,Condition,REIMB,REIMB,NA,363,2014-08-01,2099-12-31,NA,Kritsotinibi*,KELA
+225,Lapatinib,Condition,REIMB,REIMB,NA,335,2009-03-01,2099-12-31,NA,Lapatinibi*,KELA
+226,Lenvatinib,Condition,REIMB,REIMB,NA,3019,2019-11-01,2099-12-31,NA,Lenvatinibi,KELA
+227,Levofloxacin nebuliser solution,Condition,REIMB,REIMB,NA,385,2017-04-01,2099-12-31,NA,Levofloksasiini-sumutinliuos,KELA
+228,Liraglutide (children and adolescents),Condition,REIMB,REIMB,NA,3022,2020-02-01,2099-12-31,NA,Liraglutidi (lapset ja nuoret)*,KELA
+229,Lorlatinib,Condition,REIMB,REIMB,NA,3026,2020-04-01,2099-12-31,NA,Lorlatinibi,KELA
+230,Mecasermin,Condition,REIMB,REIMB,NA,330,2008-11-01,2099-12-31,NA,Mekasermiini*,KELA
+231,Metyrapone,Condition,REIMB,REIMB,NA,365,2014-11-01,2099-12-31,NA,Metyraponi,KELA
+232,Midodrine,Condition,REIMB,REIMB,NA,3010,2019-05-01,2099-12-31,NA,Midodriini,KELA
+233,Midostaurin,Condition,REIMB,REIMB,NA,3014,2019-08-01,2099-12-31,NA,Midostauriini,KELA
+234,Nilotinib,Condition,REIMB,REIMB,NA,328,2008-09-01,2099-12-31,NA,Nilotinibi*,KELA
+235,Niraparib,Condition,REIMB,REIMB,NA,3009,2019-04-01,2099-12-31,NA,Niraparibi*,KELA
+236,Obeticholic acid,Condition,REIMB,REIMB,NA,391,2018-08-01,2099-12-31,NA,Obetikoolihappo,KELA
+237,Olaparib,Condition,REIMB,REIMB,NA,389,2017-12-01,2099-12-31,NA,Olaparibi*,KELA
+238,Osimertinib,Condition,REIMB,REIMB,NA,3004,2019-02-01,2099-12-31,NA,Osimertinibi,KELA
+239,Patiromer,Condition,REIMB,REIMB,NA,3020,2020-01-01,2099-12-31,NA,Patiromeeri,KELA
+240,Pazopanib,Condition,REIMB,REIMB,NA,343,2011-01-01,2099-12-31,NA,Patsopanibi*,KELA
+241,Ponatinib,Condition,REIMB,REIMB,NA,373,2015-10-01,2099-12-31,NA,Ponatinibi,KELA
+242,Ribociclib,Condition,REIMB,REIMB,NA,3002,2018-12-01,2099-12-31,NA,Ribosiklibi,KELA
+243,Rivaroxaban for the treatment of coronary artery disease,Condition,REIMB,REIMB,NA,3013,2019-07-01,2099-12-31,NA,Rivaroksabaani sepelvaltimotaudin hoitoon,KELA
+244,Selexipag,Condition,REIMB,REIMB,NA,383,2017-02-01,2099-12-31,NA,Seleksipagi,KELA
+245,Tafamidis,Condition,REIMB,REIMB,NA,3011,2019-06-01,2099-12-31,NA,Tafamidiisi,KELA
+246,"Combination product containing tegafur, gimeracil and oteracil",Condition,REIMB,REIMB,NA,384,2017-09-01,2099-12-31,NA,"Tegafuurin, gimerasiilin ja oterasiilin yhdistelmävalmiste*",KELA
+247,Ticagrelor 60 mg,Condition,REIMB,REIMB,NA,386,2017-04-01,2099-12-31,NA,Tikagrelori 60 mg*,KELA
+248,Tivozanib,Condition,REIMB,REIMB,NA,3003,2019-01-01,2099-12-31,NA,Tivotsanibi,KELA
+249,Tofacitinib,Condition,REIMB,REIMB,NA,3005,2019-03-01,2099-12-31,NA,Tofasitinibi*,KELA
+250,Tolvaptan,Condition,REIMB,REIMB,NA,3008,2019-04-01,2099-12-31,NA,Tolvaptaani,KELA
+251,Trabectedin,Condition,REIMB,REIMB,NA,337,2009-05-01,2099-12-31,NA,Trabektediini,KELA
+252,Trastuzumab injection,Condition,REIMB,REIMB,NA,370,2015-04-01,2099-12-31,NA,Trastutsumabi-injektio*,KELA
+253,The combination of trifluridine and tipiracil,Condition,REIMB,REIMB,NA,3018,2019-11-01,2099-12-31,NA,Trifluridiinin ja tipirasiilin yhdistelmävalmiste*,KELA
+254,Venetoclax,Condition,REIMB,REIMB,NA,399,2018-11-01,2099-12-31,NA,Venetoklaksi,KELA
+255,Vismodegib,Condition,REIMB,REIMB,NA,378,2016-04-01,2099-12-31,NA,Vismodegibi*,KELA
+256,Preparation with von Willebrand's factor,Condition,REIMB,REIMB,NA,357,2013-06-01,2099-12-31,NA,Von Willebrand -tekijävalmiste*,KELA
+257,Binimetinib and encorafenib,Condition,REIMB,REIMB,NA,1513,2020-07-01,2099-12-31,NA,Binimetinibi ja enkorafenibi,KELA
+258,Benralizumab,Condition,REIMB,REIMB,NA,3027,2020-05-01,2099-12-31,NA,Benralitsumabi,KELA
+259,Mepolizumab,Condition,REIMB,REIMB,NA,3028,2020-06-01,2099-12-31,NA,Mepolitsumabi,KELA
+260,Upadacitinib,Condition,REIMB,REIMB,NA,3029,2020-07-01,2099-12-31,NA,Upadasitinibi,KELA
+261,Abemaciclib,Condition,REIMB,REIMB,NA,3030,2020-07-01,2099-12-31,NA,Abemasiklibi,KELA
+262,Apalutamidi,Condition,REIMB,REIMB,NA,3031,2020-08-01,2099-12-31,NA,Apalutamidi,Google
+263,Preservative-free combination of bimatoprost and timolol,Condition,REIMB,REIMB,NA,367,2014-12-01,2015-10-31,NA,Bimatoprostin ja timololin säilytysaineeton yhdistelmävalmiste,Google
+264,tacrolimus,Condition,REIMB,REIMB,NA,314,2001-08-01,2003-11-01,NA,Takrolimuusi,Google
+265,docetaxel,Condition,REIMB,REIMB,NA,312,1999-04-01,2007-04-01,NA,Doketakseli,Google
+266,paclitaxel,Condition,REIMB,REIMB,NA,311,1999-04-01,2007-04-01,NA,Paklitakseli,Google
+267,Rivaroxaban for the treatment of coronary heart disease,Condition,REIMB,REIMB,NA,296,2020-08-01,2099-12-31,NA,Rivaroksabaani sepelvaltimotaudin hoitoon,Google
+268,docetaxel,Condition,REIMB,REIMB,NA,185,1999-04-01,2007-05-01,NA,Doketakseli,Google
+269,paclitaxel,Condition,REIMB,REIMB,NA,184,1999-04-01,2007-05-01,NA,Paklitakseli,Google
