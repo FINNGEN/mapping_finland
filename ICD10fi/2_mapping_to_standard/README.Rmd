@@ -410,14 +410,43 @@ icd10fi_domain <- icd10_mapsto %>%
 ```
 
 ```{r}
+icd10fi_concept <- read_csv("../1_source_vocabulary/CONCEPT_ICD10fi.csv", 
+  col_types = cols(
+    concept_id = col_double(),
+    concept_name = col_character(),
+    domain_id = col_character(),
+    vocabulary_id = col_character(),
+    concept_class_id = col_character(),
+    standard_concept = col_character(),
+    concept_code = col_character(),
+    valid_start_date = col_date(format = ""),
+    valid_end_date = col_date(format = ""),
+    invalid_reason = col_character(),
+    tmp_code1_concept_id = col_double(),
+    tmp_code2_concept_id = col_double(),
+    tmp_name_fi = col_character(),
+    tmp_code_class = col_character(),
+    tmp_code1_code = col_character(),
+    tmp_code2_code = col_character()
+  )                        
+)
+
 icd10fi_concept_new <- left_join(
   icd10fi_concept, 
   icd10fi_domain, 
   by="concept_id"
 ) %>% 
-  mutate(domain_id = if_else(is.na(domain), domain_id, domain ))
+  mutate(domain_id = if_else(is.na(domain), domain_id, domain )) %>%
+  select(-domain)
+
+#overwrite
+write_csv(icd10fi_concept_new, "../1_source_vocabulary/CONCEPT_ICD10fi.csv")
+
 ```
 
+```{r}
+icd10fi_concept %>% count(domain_id, sort=T)
+```
 
 
 

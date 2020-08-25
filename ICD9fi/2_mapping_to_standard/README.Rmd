@@ -33,7 +33,8 @@ Mapping was carried by medical student [\@kalleaseppala](github.com/kalleaseppal
 
 
 ```{r message=FALSE}
-icd9fi_concept <- read_csv("../1_source_vocabulary/CONCEPT_ICD9fi.csv") %>%  filter(vocabulary_id =="ICD9fi")
+icd9fi_concept <- read_csv("../1_source_vocabulary/CONCEPT_ICD9fi.csv") %>%  
+  filter(vocabulary_id =="ICD9fi")
 icd9fi_freqs <- read_csv("../3_freq_of_source_codes/freq_total.csv")
 ```
 
@@ -123,10 +124,15 @@ icd9fi_mapping <- inner_join(
 icd9fi_mapping <- left_join(
   icd9fi_mapping, 
   concept %>% 
-    select(concept_id, valid_start_date, valid_end_date) %>% 
+    select(concept_id, valid_start_date, valid_end_date, domain_id) %>% 
     rename_all(str_c, "_2"), 
   by="concept_id_2"
 )
+
+# TOFIX : removing nonsensical domains 
+icd9fi_mapping <- icd9fi_mapping %>% 
+  filter(domain_id_2 %in% c("Condition", "Observation", "Procedure"))
+
 
 # select max valid_start_date and min for valid_end_date 
 icd9fi_mapsto <- icd9fi_mapping %>% 
@@ -137,7 +143,8 @@ icd9fi_mapsto <- icd9fi_mapping %>%
     valid_start_date = pmax(valid_start_date, valid_start_date_2), 
     valid_end_date   = pmin(valid_end_date, valid_end_date_2), 
     invalid_reason = as.character(NA), 
-    tmp_mapping_type = "USAGI"
+    tmp_mapping_type = "USAGI", 
+    tmp_domain_id_2 = domain_id_2
   )
 
 
@@ -146,6 +153,41 @@ write_csv(icd9fi_mapsto, "CONCEPT_RELATIONSHIP_icd9fi.csv")
 icd9fi_mapsto %>%  head(N_TOPS)
 
 ```
+
+
+
+## Recalculate domain 
+```{r}
+icd9fi_domain <- icd9fi_mapsto %>% 
+  rename(concept_id = concept_id_1) %>% 
+  group_by(concept_id) %>% 
+  summarise(domain = str_c( sort(unique(tmp_domain_id_2))  , collapse = " "), .groups="drop") %>% 
+  mutate(domain = str_replace(domain, "Condition Observation", "Condition/Obs" )) %>% 
+  mutate(domain = str_replace(domain, "Condition Procedure", "Condition/Procedure" ))
+  
+```
+
+```{r message=FALSE, warning=FALSE}
+icd9fi_concept <- read_csv("../1_source_vocabulary/CONCEPT_ICD9fi.csv")
+
+icd9fi_concept_new <- left_join(
+  icd9fi_concept, 
+  icd9fi_domain, 
+  by="concept_id"
+) %>% 
+  mutate(domain_id = if_else(is.na(domain), domain_id, domain )) %>%
+  select(-domain)
+
+#overwrite
+write_csv(icd9fi_concept_new, "../1_source_vocabulary/CONCEPT_ICD9fi.csv")
+
+```
+
+```{r}
+icd10fi_concept %>% count(domain_id, sort=T)
+```
+
+
 
 
 
