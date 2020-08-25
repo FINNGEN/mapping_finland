@@ -184,7 +184,7 @@ write_csv(icd9fi_concept_new, "../1_source_vocabulary/CONCEPT_ICD9fi.csv")
 ```
 
 ```{r}
-icd10fi_concept %>% count(domain_id, sort=T)
+icd9fi_concept %>% count(domain_id, sort=T)
 ```
 
 

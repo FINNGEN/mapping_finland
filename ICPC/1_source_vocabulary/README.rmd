@@ -146,7 +146,7 @@ icpc_concept <- icpc_source %>%
   transmute(
     concept_id = concept_id, 
     concept_name = name_en,
-    domain_id = "Condition", # at the moment
+    domain_id = if_else(ICPC_version == "ICPC2proc", "Procedure", "Condition"), # at the moment
     vocabulary_id = "ICPC", 
     concept_class_id = ICPC_version, 
     standard_concept = as.character(NA), 

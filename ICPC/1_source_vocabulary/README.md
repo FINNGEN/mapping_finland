@@ -72,12 +72,12 @@ TODO: recalcualte `domain_id` based on the mapping
 |           2 | ICPC1                               | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                 |
 |           3 | ICPC2                               | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                 |
 |           4 | ICPC2proc                           | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|           5 | Medical examin/health eval complete | Condition  | ICPC           | ICPC2proc          | NA                | \-30           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|           6 | Medical examin/health eval partial  | Condition  | ICPC           | ICPC2proc          | NA                | \-31           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|           7 | Sensitivity test                    | Condition  | ICPC           | ICPC2proc          | NA                | \-32           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|           8 | Microbiological/immunological test  | Condition  | ICPC           | ICPC2proc          | NA                | \-33           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|           9 | Blood test                          | Condition  | ICPC           | ICPC2proc          | NA                | \-34           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
-|          10 | Urine test                          | Condition  | ICPC           | ICPC2proc          | NA                | \-35           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|           5 | Medical examin/health eval complete | Procedure  | ICPC           | ICPC2proc          | NA                | \-30           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|           6 | Medical examin/health eval partial  | Procedure  | ICPC           | ICPC2proc          | NA                | \-31           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|           7 | Sensitivity test                    | Procedure  | ICPC           | ICPC2proc          | NA                | \-32           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|           8 | Microbiological/immunological test  | Procedure  | ICPC           | ICPC2proc          | NA                | \-33           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|           9 | Blood test                          | Procedure  | ICPC           | ICPC2proc          | NA                | \-34           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
+|          10 | Urine test                          | Procedure  | ICPC           | ICPC2proc          | NA                | \-35           | 1970-01-01         | 2099-12-31       | NA              | NA                 |
 
 </div>
 

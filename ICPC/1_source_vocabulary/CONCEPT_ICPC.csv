@@ -3,46 +3,46 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 2,ICPC1,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA
 3,ICPC2,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA
 4,ICPC2proc,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA
-5,Medical examin/health eval complete,Condition,ICPC,ICPC2proc,NA,-30,1970-01-01,2099-12-31,NA,NA
-6,Medical examin/health eval partial,Condition,ICPC,ICPC2proc,NA,-31,1970-01-01,2099-12-31,NA,NA
-7,Sensitivity test,Condition,ICPC,ICPC2proc,NA,-32,1970-01-01,2099-12-31,NA,NA
-8,Microbiological/immunological test,Condition,ICPC,ICPC2proc,NA,-33,1970-01-01,2099-12-31,NA,NA
-9,Blood test,Condition,ICPC,ICPC2proc,NA,-34,1970-01-01,2099-12-31,NA,NA
-10,Urine test,Condition,ICPC,ICPC2proc,NA,-35,1970-01-01,2099-12-31,NA,NA
-11,Faeces test,Condition,ICPC,ICPC2proc,NA,-36,1970-01-01,2099-12-31,NA,NA
-12,Histological/exfoliative cytology,Condition,ICPC,ICPC2proc,NA,-37,1970-01-01,2099-12-31,NA,NA
-13,Other laboratory test NEC,Condition,ICPC,ICPC2proc,NA,-38,1970-01-01,2099-12-31,NA,NA
-14,Physical function test,Condition,ICPC,ICPC2proc,NA,-39,1970-01-01,2099-12-31,NA,NA
-15,Diagnostic endoscopy,Condition,ICPC,ICPC2proc,NA,-40,1970-01-01,2099-12-31,NA,NA
-16,Diagnostic radiology/imaging,Condition,ICPC,ICPC2proc,NA,-41,1970-01-01,2099-12-31,NA,NA
-17,Electrical tracing,Condition,ICPC,ICPC2proc,NA,-42,1970-01-01,2099-12-31,NA,NA
-18,Other diagnostic procedure,Condition,ICPC,ICPC2proc,NA,-43,1970-01-01,2099-12-31,NA,NA
-19,Preventive immunization/medic,Condition,ICPC,ICPC2proc,NA,-44,1970-01-01,2099-12-31,NA,NA
-20,Observ/health educat/advice/diet,Condition,ICPC,ICPC2proc,NA,-45,1970-01-01,2099-12-31,NA,NA
-21,Consultation primary care provider,Condition,ICPC,ICPC2proc,NA,-46,1970-01-01,2099-12-31,NA,NA
-22,Consultation with specialist,Condition,ICPC,ICPC2proc,NA,-47,1970-01-01,2099-12-31,NA,NA
-23,Clarification/discussion RFE/demand,Condition,ICPC,ICPC2proc,NA,-48,1970-01-01,2099-12-31,NA,NA
-24,Other preventive procedure,Condition,ICPC,ICPC2proc,NA,-49,1970-01-01,2099-12-31,NA,NA
-25,Medication/prescr/renewal,Condition,ICPC,ICPC2proc,NA,-50,1970-01-01,2099-12-31,NA,NA
-26,I&d/flush/aspiration,Condition,ICPC,ICPC2proc,NA,-51,1970-01-01,2099-12-31,NA,NA
-27,Exc/remov/biopsy/destruc/debrid/caut,Condition,ICPC,ICPC2proc,NA,-52,1970-01-01,2099-12-31,NA,NA
-28,Instrument/catheter/intubate/dilate,Condition,ICPC,ICPC2proc,NA,-53,1970-01-01,2099-12-31,NA,NA
-29,Repair/fix-suture/cast/prosth device,Condition,ICPC,ICPC2proc,NA,-54,1970-01-01,2099-12-31,NA,NA
-30,Local injection/infiltration,Condition,ICPC,ICPC2proc,NA,-55,1970-01-01,2099-12-31,NA,NA
-31,Dressing/pressure/compress/tamponade,Condition,ICPC,ICPC2proc,NA,-56,1970-01-01,2099-12-31,NA,NA
-32,Physical medicine/rehabilitation,Condition,ICPC,ICPC2proc,NA,-57,1970-01-01,2099-12-31,NA,NA
-33,Therapeutic counselling/listening,Condition,ICPC,ICPC2proc,NA,-58,1970-01-01,2099-12-31,NA,NA
-34,Other therap proced/minor surg NEC,Condition,ICPC,ICPC2proc,NA,-59,1970-01-01,2099-12-31,NA,NA
-35,Result test/procedure,Condition,ICPC,ICPC2proc,NA,-60,1970-01-01,2099-12-31,NA,NA
-36,Result examination/test/record/letter from other provider,Condition,ICPC,ICPC2proc,NA,-61,1970-01-01,2099-12-31,NA,NA
-37,Administrative procedure,Condition,ICPC,ICPC2proc,NA,-62,1970-01-01,2099-12-31,NA,NA
-38,Follow-up encounter unspecified,Condition,ICPC,ICPC2proc,NA,-63,1970-01-01,2099-12-31,NA,NA
-39,Encounter/prob initiated by provider,Condition,ICPC,ICPC2proc,NA,-64,1970-01-01,2099-12-31,NA,NA
-40,Enc/prob init by other than pt/prov,Condition,ICPC,ICPC2proc,NA,-65,1970-01-01,2099-12-31,NA,NA
-41,Referral to non-MD provider,Condition,ICPC,ICPC2proc,NA,-66,1970-01-01,2099-12-31,NA,NA
-42,Referral to physician/hospital,Condition,ICPC,ICPC2proc,NA,-67,1970-01-01,2099-12-31,NA,NA
-43,Other referral NEC,Condition,ICPC,ICPC2proc,NA,-68,1970-01-01,2099-12-31,NA,NA
-44,Other reason for encounter NEC,Condition,ICPC,ICPC2proc,NA,-69,1970-01-01,2099-12-31,NA,NA
+5,Medical examin/health eval complete,Procedure,ICPC,ICPC2proc,NA,-30,1970-01-01,2099-12-31,NA,NA
+6,Medical examin/health eval partial,Procedure,ICPC,ICPC2proc,NA,-31,1970-01-01,2099-12-31,NA,NA
+7,Sensitivity test,Procedure,ICPC,ICPC2proc,NA,-32,1970-01-01,2099-12-31,NA,NA
+8,Microbiological/immunological test,Procedure,ICPC,ICPC2proc,NA,-33,1970-01-01,2099-12-31,NA,NA
+9,Blood test,Procedure,ICPC,ICPC2proc,NA,-34,1970-01-01,2099-12-31,NA,NA
+10,Urine test,Procedure,ICPC,ICPC2proc,NA,-35,1970-01-01,2099-12-31,NA,NA
+11,Faeces test,Procedure,ICPC,ICPC2proc,NA,-36,1970-01-01,2099-12-31,NA,NA
+12,Histological/exfoliative cytology,Procedure,ICPC,ICPC2proc,NA,-37,1970-01-01,2099-12-31,NA,NA
+13,Other laboratory test NEC,Procedure,ICPC,ICPC2proc,NA,-38,1970-01-01,2099-12-31,NA,NA
+14,Physical function test,Procedure,ICPC,ICPC2proc,NA,-39,1970-01-01,2099-12-31,NA,NA
+15,Diagnostic endoscopy,Procedure,ICPC,ICPC2proc,NA,-40,1970-01-01,2099-12-31,NA,NA
+16,Diagnostic radiology/imaging,Procedure,ICPC,ICPC2proc,NA,-41,1970-01-01,2099-12-31,NA,NA
+17,Electrical tracing,Procedure,ICPC,ICPC2proc,NA,-42,1970-01-01,2099-12-31,NA,NA
+18,Other diagnostic procedure,Procedure,ICPC,ICPC2proc,NA,-43,1970-01-01,2099-12-31,NA,NA
+19,Preventive immunization/medic,Procedure,ICPC,ICPC2proc,NA,-44,1970-01-01,2099-12-31,NA,NA
+20,Observ/health educat/advice/diet,Procedure,ICPC,ICPC2proc,NA,-45,1970-01-01,2099-12-31,NA,NA
+21,Consultation primary care provider,Procedure,ICPC,ICPC2proc,NA,-46,1970-01-01,2099-12-31,NA,NA
+22,Consultation with specialist,Procedure,ICPC,ICPC2proc,NA,-47,1970-01-01,2099-12-31,NA,NA
+23,Clarification/discussion RFE/demand,Procedure,ICPC,ICPC2proc,NA,-48,1970-01-01,2099-12-31,NA,NA
+24,Other preventive procedure,Procedure,ICPC,ICPC2proc,NA,-49,1970-01-01,2099-12-31,NA,NA
+25,Medication/prescr/renewal,Procedure,ICPC,ICPC2proc,NA,-50,1970-01-01,2099-12-31,NA,NA
+26,I&d/flush/aspiration,Procedure,ICPC,ICPC2proc,NA,-51,1970-01-01,2099-12-31,NA,NA
+27,Exc/remov/biopsy/destruc/debrid/caut,Procedure,ICPC,ICPC2proc,NA,-52,1970-01-01,2099-12-31,NA,NA
+28,Instrument/catheter/intubate/dilate,Procedure,ICPC,ICPC2proc,NA,-53,1970-01-01,2099-12-31,NA,NA
+29,Repair/fix-suture/cast/prosth device,Procedure,ICPC,ICPC2proc,NA,-54,1970-01-01,2099-12-31,NA,NA
+30,Local injection/infiltration,Procedure,ICPC,ICPC2proc,NA,-55,1970-01-01,2099-12-31,NA,NA
+31,Dressing/pressure/compress/tamponade,Procedure,ICPC,ICPC2proc,NA,-56,1970-01-01,2099-12-31,NA,NA
+32,Physical medicine/rehabilitation,Procedure,ICPC,ICPC2proc,NA,-57,1970-01-01,2099-12-31,NA,NA
+33,Therapeutic counselling/listening,Procedure,ICPC,ICPC2proc,NA,-58,1970-01-01,2099-12-31,NA,NA
+34,Other therap proced/minor surg NEC,Procedure,ICPC,ICPC2proc,NA,-59,1970-01-01,2099-12-31,NA,NA
+35,Result test/procedure,Procedure,ICPC,ICPC2proc,NA,-60,1970-01-01,2099-12-31,NA,NA
+36,Result examination/test/record/letter from other provider,Procedure,ICPC,ICPC2proc,NA,-61,1970-01-01,2099-12-31,NA,NA
+37,Administrative procedure,Procedure,ICPC,ICPC2proc,NA,-62,1970-01-01,2099-12-31,NA,NA
+38,Follow-up encounter unspecified,Procedure,ICPC,ICPC2proc,NA,-63,1970-01-01,2099-12-31,NA,NA
+39,Encounter/prob initiated by provider,Procedure,ICPC,ICPC2proc,NA,-64,1970-01-01,2099-12-31,NA,NA
+40,Enc/prob init by other than pt/prov,Procedure,ICPC,ICPC2proc,NA,-65,1970-01-01,2099-12-31,NA,NA
+41,Referral to non-MD provider,Procedure,ICPC,ICPC2proc,NA,-66,1970-01-01,2099-12-31,NA,NA
+42,Referral to physician/hospital,Procedure,ICPC,ICPC2proc,NA,-67,1970-01-01,2099-12-31,NA,NA
+43,Other referral NEC,Procedure,ICPC,ICPC2proc,NA,-68,1970-01-01,2099-12-31,NA,NA
+44,Other reason for encounter NEC,Procedure,ICPC,ICPC2proc,NA,-69,1970-01-01,2099-12-31,NA,NA
 45,General and Unspecified,Condition,ICPC,ICPC2,NA,A,1970-01-01,2099-12-31,NA,NA
 46,Pain general/multiple sites,Condition,ICPC,ICPC2,NA,A01,1970-01-01,2099-12-31,NA,R52.9
 47,Chills,Condition,ICPC,ICPC2,NA,A02,1970-01-01,2099-12-31,NA,R68.88
@@ -797,7 +797,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 796,Voice symptom/complaint,Condition,ICPC,ICPC2,NA,R23,1970-01-01,2099-12-31,NA,R49.8
 797,Haemoptysis,Condition,ICPC,ICPC2,NA,R24,1970-01-01,2099-12-31,NA,R04.2
 798,Sputum/phlegm abnormal,Condition,ICPC,ICPC2,NA,R25,1970-01-01,2099-12-31,NA,R09.3
-799,Fear  cancer  respiratory system,Condition,ICPC,ICPC2,NA,R26,1970-01-01,2099-12-31,NA,Z71.1
+799,Fear  cancer  respiratory system,Observation,ICPC,ICPC2,NA,R26,1970-01-01,2099-12-31,NA,Z71.1
 800,Fear of respiratory disease other,Condition,ICPC,ICPC2,NA,R27,1970-01-01,2099-12-31,NA,Z71.1
 801,Limited function/disability (R),Condition,ICPC,ICPC2,NA,R28,1970-01-01,2099-12-31,NA,Z73.6
 802,Respiratory symptom/complaint other,Condition,ICPC,ICPC2,NA,R29,1970-01-01,2099-12-31,NA,R09.8
@@ -834,27 +834,27 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 833,"Respiratory, Result test/procedure",Condition,ICPC,ICPC2,NA,R60,1970-01-01,2099-12-31,NA,NA
 834,"Respiratory, Result examination/test/record/letter from other provider",Condition,ICPC,ICPC2,NA,R61,1970-01-01,2099-12-31,NA,NA
 835,"Respiratory, Administrative procedure",Condition,ICPC,ICPC2,NA,R62,1970-01-01,2099-12-31,NA,NA
-836,"Respiratory, Follow-up encounter unspecified",Condition,ICPC,ICPC2,NA,R63,1970-01-01,2099-12-31,NA,NA
+836,"Respiratory, Follow-up encounter unspecified",Observation,ICPC,ICPC2,NA,R63,1970-01-01,2099-12-31,NA,NA
 837,"Respiratory, Encounter/prob initiated by provider",Condition,ICPC,ICPC2,NA,R64,1970-01-01,2099-12-31,NA,NA
 838,"Respiratory, Enc/prob init by other than pt/prov",Condition,ICPC,ICPC2,NA,R65,1970-01-01,2099-12-31,NA,NA
 839,"Respiratory, Referral to non-MD provider",Condition,ICPC,ICPC2,NA,R66,1970-01-01,2099-12-31,NA,NA
 840,"Respiratory, Referral to physician/hospital",Condition,ICPC,ICPC2,NA,R67,1970-01-01,2099-12-31,NA,NA
 841,"Respiratory, Other referral NEC",Condition,ICPC,ICPC2,NA,R68,1970-01-01,2099-12-31,NA,NA
 842,"Respiratory, Other reason for encounter NEC",Condition,ICPC,ICPC2,NA,R69,1970-01-01,2099-12-31,NA,NA
-843,Whooping cough,Condition,ICPC,ICPC2,NA,R71,1970-01-01,2099-12-31,NA,A37.9
+843,Whooping cough,Measurement,ICPC,ICPC2,NA,R71,1970-01-01,2099-12-31,NA,A37.9
 844,Strep throat,Condition,ICPC,ICPC2,NA,R72,1970-01-01,2099-12-31,NA,J03.0
 845,Boil/abscess nose,Condition,ICPC,ICPC2,NA,R73,1970-01-01,2099-12-31,NA,J34.0
-846,Upper respiratory infection acute,Condition,ICPC,ICPC2,NA,R74,1970-01-01,2099-12-31,NA,J06.9
+846,Upper respiratory infection acute,Measurement,ICPC,ICPC2,NA,R74,1970-01-01,2099-12-31,NA,J06.9
 847,Sinusitis acute/chronic,Condition,ICPC,ICPC2,NA,R75,1970-01-01,2099-12-31,NA,J01.9
-848,Tonsillitis acute,Condition,ICPC,ICPC2,NA,R76,1970-01-01,2099-12-31,NA,J03.9
-849,Laryngitis/tracheitis acute,Condition,ICPC,ICPC2,NA,R77,1970-01-01,2099-12-31,NA,J04.2
-850,Acute bronchitis/bronchiolitis,Condition,ICPC,ICPC2,NA,R78,1970-01-01,2099-12-31,NA,J20.9
+848,Tonsillitis acute,Measurement,ICPC,ICPC2,NA,R76,1970-01-01,2099-12-31,NA,J03.9
+849,Laryngitis/tracheitis acute,Measurement,ICPC,ICPC2,NA,R77,1970-01-01,2099-12-31,NA,J04.2
+850,Acute bronchitis/bronchiolitis,Measurement,ICPC,ICPC2,NA,R78,1970-01-01,2099-12-31,NA,J20.9
 851,Chronic bronchitis,Condition,ICPC,ICPC2,NA,R79,1970-01-01,2099-12-31,NA,J42
 852,Influenza,Condition,ICPC,ICPC2,NA,R80,1970-01-01,2099-12-31,NA,J10.1
 853,Pneumonia,Condition,ICPC,ICPC2,NA,R81,1970-01-01,2099-12-31,NA,J18.9
 854,Pleurisy/pleural effusion,Condition,ICPC,ICPC2,NA,R82,1970-01-01,2099-12-31,NA,J90
 855,Respiratory infection other,Condition,ICPC,ICPC2,NA,R83,1970-01-01,2099-12-31,NA,A36.9
-856,Malignant neoplasm bronchus/lung,Condition,ICPC,ICPC2,NA,R84,1970-01-01,2099-12-31,NA,C34.99&
+856,Malignant neoplasm bronchus/lung,Measurement,ICPC,ICPC2,NA,R84,1970-01-01,2099-12-31,NA,C34.99&
 857,Malignant neopl respiratory other,Condition,ICPC,ICPC2,NA,R85,1970-01-01,2099-12-31,NA,C39.9&
 858,Benign neoplasm respiratory,Condition,ICPC,ICPC2,NA,R86,1970-01-01,2099-12-31,NA,D14.4&
 859,Foreign body nose/larynx/bronchus,Condition,ICPC,ICPC2,NA,R87,1970-01-01,2099-12-31,NA,T17.9
@@ -863,10 +863,10 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 862,Hypertrophy tonsils/adenoids,Condition,ICPC,ICPC2,NA,R90,1970-01-01,2099-12-31,NA,J35.9
 863,Neoplasm respiratory unspecified,Condition,ICPC,ICPC2,NA,R92,1970-01-01,2099-12-31,NA,D38.6&
 864,Chron obstructive pulmonary disease,Condition,ICPC,ICPC2,NA,R95,1970-01-01,2099-12-31,NA,J43.9
-865,Asthma,Condition,ICPC,ICPC2,NA,R96,1970-01-01,2099-12-31,NA,J45.9
+865,Asthma,Observation,ICPC,ICPC2,NA,R96,1970-01-01,2099-12-31,NA,J45.9
 866,Allergic rhinitis,Condition,ICPC,ICPC2,NA,R97,1970-01-01,2099-12-31,NA,J30.4
-867,Hyperventilation syndrome,Condition,ICPC,ICPC2,NA,R98,1970-01-01,2099-12-31,NA,R06.4
-868,Respiratory disease other,Condition,ICPC,ICPC2,NA,R99,1970-01-01,2099-12-31,NA,J98.9
+867,Hyperventilation syndrome,Observation,ICPC,ICPC2,NA,R98,1970-01-01,2099-12-31,NA,R06.4
+868,Respiratory disease other,Observation,ICPC,ICPC2,NA,R99,1970-01-01,2099-12-31,NA,J98.9
 869,Skin,Condition,ICPC,ICPC2,NA,S,1970-01-01,2099-12-31,NA,NA
 870,Pain/tenderness of skin,Condition,ICPC,ICPC2,NA,S01,1970-01-01,2099-12-31,NA,R20.8
 871,Pruritus,Condition,ICPC,ICPC2,NA,S02,1970-01-01,2099-12-31,NA,L29.9
@@ -1021,10 +1021,10 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1020,"Metabolic, Other referral NEC",Condition,ICPC,ICPC2,NA,T68,1970-01-01,2099-12-31,NA,NA
 1021,"Metabolic, Other reason for encounter NEC",Condition,ICPC,ICPC2,NA,T69,1970-01-01,2099-12-31,NA,NA
 1022,Endocrine infection,Condition,ICPC,ICPC2,NA,T70,1970-01-01,2099-12-31,NA,E06.0
-1023,Malignant neoplasm thyroid,Condition,ICPC,ICPC2,NA,T71,1970-01-01,2099-12-31,NA,C73.99&
+1023,Malignant neoplasm thyroid,Observation,ICPC,ICPC2,NA,T71,1970-01-01,2099-12-31,NA,C73.99&
 1024,Benign neoplasm thyroid,Condition,ICPC,ICPC2,NA,T72,1970-01-01,2099-12-31,NA,D34&
 1025,Neoplasm endocrine other/unspecified,Condition,ICPC,ICPC2,NA,T73,1970-01-01,2099-12-31,NA,D44.9&
-1026,Thyroglossal duct/cyst,Condition,ICPC,ICPC2,NA,T78,1970-01-01,2099-12-31,NA,Q89.23
+1026,Thyroglossal duct/cyst,Observation,ICPC,ICPC2,NA,T78,1970-01-01,2099-12-31,NA,Q89.23
 1027,Congen  anomaly endocrine/metabolic,Condition,ICPC,ICPC2,NA,T80,1970-01-01,2099-12-31,NA,E25.01
 1028,Goitre,Condition,ICPC,ICPC2,NA,T81,1970-01-01,2099-12-31,NA,E04.9
 1029,Obesity,Condition,ICPC,ICPC2,NA,T82,1970-01-01,2099-12-31,NA,E66.8
@@ -1044,7 +1044,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1043,Incontinence urine,Condition,ICPC,ICPC2,NA,U04,1970-01-01,2099-12-31,NA,N39.4
 1044,Urination problems other,Condition,ICPC,ICPC2,NA,U05,1970-01-01,2099-12-31,NA,R39.1
 1045,Haematuria,Condition,ICPC,ICPC2,NA,U06,1970-01-01,2099-12-31,NA,R31
-1046,Urine symptom/complaint other,Condition,ICPC,ICPC2,NA,U07,1970-01-01,2099-12-31,NA,R39.8
+1046,Urine symptom/complaint other,Observation,ICPC,ICPC2,NA,U07,1970-01-01,2099-12-31,NA,R39.8
 1047,Urinary retention,Condition,ICPC,ICPC2,NA,U08,1970-01-01,2099-12-31,NA,R33
 1048,Bladder symptom/complaint other,Condition,ICPC,ICPC2,NA,U13,1970-01-01,2099-12-31,NA,R39.8
 1049,Kidney symptom/complaint,Condition,ICPC,ICPC2,NA,U14,1970-01-01,2099-12-31,NA,N23
@@ -1108,125 +1108,125 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1107,Abnormal urine test NOS,Condition,ICPC,ICPC2,NA,U98,1970-01-01,2099-12-31,NA,R82.9
 1108,Urinary disease other,Condition,ICPC,ICPC2,NA,U99,1970-01-01,2099-12-31,NA,N39.9
 1109,Pregnancy,Condition,ICPC,ICPC2,NA,W,1970-01-01,2099-12-31,NA,NA
-1110,Question of pregnancy,Condition,ICPC,ICPC2,NA,W01,1970-01-01,2099-12-31,NA,Z32.0
+1110,Question of pregnancy,Observation,ICPC,ICPC2,NA,W01,1970-01-01,2099-12-31,NA,Z32.0
 1111,Fear of pregnancy,Condition,ICPC,ICPC2,NA,W02,1970-01-01,2099-12-31,NA,Z71.1
 1112,Antepartum bleeding,Condition,ICPC,ICPC2,NA,W03,1970-01-01,2099-12-31,NA,O20.9
 1113,Pregnancy vomiting/nausea,Condition,ICPC,ICPC2,NA,W05,1970-01-01,2099-12-31,NA,O21.9
-1114,Contraception postcoital,Condition,ICPC,ICPC2,NA,W10,1970-01-01,2099-12-31,NA,Z30.3
-1115,Contraception oral,Condition,ICPC,ICPC2,NA,W11,1970-01-01,2099-12-31,NA,Z30.4
+1114,Contraception postcoital,Observation,ICPC,ICPC2,NA,W10,1970-01-01,2099-12-31,NA,Z30.3
+1115,Contraception oral,Observation,ICPC,ICPC2,NA,W11,1970-01-01,2099-12-31,NA,Z30.4
 1116,Contraception intrauterine,Condition,ICPC,ICPC2,NA,W12,1970-01-01,2099-12-31,NA,Z30.1
 1117,Sterilization female,Condition,ICPC,ICPC2,NA,W13,1970-01-01,2099-12-31,NA,Z30.2
 1118,Contraception female other,Condition,ICPC,ICPC2,NA,W14,1970-01-01,2099-12-31,NA,Z30.0
 1119,Infertility/subfertility female,Condition,ICPC,ICPC2,NA,W15,1970-01-01,2099-12-31,NA,N97.9
-1120,Post-partum bleeding,Condition,ICPC,ICPC2,NA,W17,1970-01-01,2099-12-31,NA,O72.1
+1120,Post-partum bleeding,Observation,ICPC,ICPC2,NA,W17,1970-01-01,2099-12-31,NA,O72.1
 1121,Post-partum symptom/complaint other,Condition,ICPC,ICPC2,NA,W18,1970-01-01,2099-12-31,NA,O90.9
-1122,Lactation symptom/complaint,Condition,ICPC,ICPC2,NA,W19,1970-01-01,2099-12-31,NA,O92.7
+1122,Lactation symptom/complaint,Observation,ICPC,ICPC2,NA,W19,1970-01-01,2099-12-31,NA,O92.7
 1123,Concern with body image in pregnancy,Condition,ICPC,ICPC2,NA,W21,1970-01-01,2099-12-31,NA,R46.8
-1124,Fear of complications of pregnancy,Condition,ICPC,ICPC2,NA,W27,1970-01-01,2099-12-31,NA,Z71.1
+1124,Fear of complications of pregnancy,Observation,ICPC,ICPC2,NA,W27,1970-01-01,2099-12-31,NA,Z71.1
 1125,Limited function/disability (W),Condition,ICPC,ICPC2,NA,W28,1970-01-01,2099-12-31,NA,Z73.6
 1126,Pregnancy symptom/complaint other,Condition,ICPC,ICPC2,NA,W29,1970-01-01,2099-12-31,NA,O26.0
 1127,"Pregnancy, Medical examin/health eval complete",Condition,ICPC,ICPC2,NA,W30,1970-01-01,2099-12-31,NA,NA
-1128,"Pregnancy, Medical examin/health eval partial",Condition,ICPC,ICPC2,NA,W31,1970-01-01,2099-12-31,NA,NA
-1129,"Pregnancy, Sensitivity test",Condition,ICPC,ICPC2,NA,W32,1970-01-01,2099-12-31,NA,NA
-1130,"Pregnancy, Microbiological/immunological test",Condition,ICPC,ICPC2,NA,W33,1970-01-01,2099-12-31,NA,NA
-1131,"Pregnancy, Blood test",Condition,ICPC,ICPC2,NA,W34,1970-01-01,2099-12-31,NA,NA
+1128,"Pregnancy, Medical examin/health eval partial",Observation,ICPC,ICPC2,NA,W31,1970-01-01,2099-12-31,NA,NA
+1129,"Pregnancy, Sensitivity test",Observation,ICPC,ICPC2,NA,W32,1970-01-01,2099-12-31,NA,NA
+1130,"Pregnancy, Microbiological/immunological test",Observation,ICPC,ICPC2,NA,W33,1970-01-01,2099-12-31,NA,NA
+1131,"Pregnancy, Blood test",Observation,ICPC,ICPC2,NA,W34,1970-01-01,2099-12-31,NA,NA
 1132,"Pregnancy, Urine test",Condition,ICPC,ICPC2,NA,W35,1970-01-01,2099-12-31,NA,NA
 1133,"Pregnancy, Faeces test",Condition,ICPC,ICPC2,NA,W36,1970-01-01,2099-12-31,NA,NA
 1134,"Pregnancy, Histological/exfoliative cytology",Condition,ICPC,ICPC2,NA,W37,1970-01-01,2099-12-31,NA,NA
 1135,"Pregnancy, Other laboratory test NEC",Condition,ICPC,ICPC2,NA,W38,1970-01-01,2099-12-31,NA,NA
-1136,"Pregnancy, Physical function test",Condition,ICPC,ICPC2,NA,W39,1970-01-01,2099-12-31,NA,NA
-1137,"Pregnancy, Diagnostic endoscopy",Condition,ICPC,ICPC2,NA,W40,1970-01-01,2099-12-31,NA,NA
-1138,"Pregnancy, Diagnostic radiology/imaging",Condition,ICPC,ICPC2,NA,W41,1970-01-01,2099-12-31,NA,NA
-1139,"Pregnancy, Electrical tracing",Condition,ICPC,ICPC2,NA,W42,1970-01-01,2099-12-31,NA,NA
-1140,"Pregnancy, Other diagnostic procedure",Condition,ICPC,ICPC2,NA,W43,1970-01-01,2099-12-31,NA,NA
-1141,"Pregnancy, Preventive immunization/medic",Condition,ICPC,ICPC2,NA,W44,1970-01-01,2099-12-31,NA,NA
+1136,"Pregnancy, Physical function test",Observation,ICPC,ICPC2,NA,W39,1970-01-01,2099-12-31,NA,NA
+1137,"Pregnancy, Diagnostic endoscopy",Observation,ICPC,ICPC2,NA,W40,1970-01-01,2099-12-31,NA,NA
+1138,"Pregnancy, Diagnostic radiology/imaging",Observation,ICPC,ICPC2,NA,W41,1970-01-01,2099-12-31,NA,NA
+1139,"Pregnancy, Electrical tracing",Observation,ICPC,ICPC2,NA,W42,1970-01-01,2099-12-31,NA,NA
+1140,"Pregnancy, Other diagnostic procedure",Observation,ICPC,ICPC2,NA,W43,1970-01-01,2099-12-31,NA,NA
+1141,"Pregnancy, Preventive immunization/medic",Observation,ICPC,ICPC2,NA,W44,1970-01-01,2099-12-31,NA,NA
 1142,"Pregnancy, Observ/health educat/advice/diet",Condition,ICPC,ICPC2,NA,W45,1970-01-01,2099-12-31,NA,NA
 1143,"Pregnancy, Consultation primary care provider",Condition,ICPC,ICPC2,NA,W46,1970-01-01,2099-12-31,NA,NA
 1144,"Pregnancy, Consultation with specialist",Condition,ICPC,ICPC2,NA,W47,1970-01-01,2099-12-31,NA,NA
 1145,"Pregnancy, Clarification/discussion RFE/demand",Condition,ICPC,ICPC2,NA,W48,1970-01-01,2099-12-31,NA,NA
-1146,"Pregnancy, Other preventive procedure",Condition,ICPC,ICPC2,NA,W49,1970-01-01,2099-12-31,NA,NA
+1146,"Pregnancy, Other preventive procedure",Observation,ICPC,ICPC2,NA,W49,1970-01-01,2099-12-31,NA,NA
 1147,"Pregnancy, Medication/prescr/renewal",Condition,ICPC,ICPC2,NA,W50,1970-01-01,2099-12-31,NA,NA
 1148,"Pregnancy, I&d/flush/aspiration",Condition,ICPC,ICPC2,NA,W51,1970-01-01,2099-12-31,NA,NA
-1149,"Pregnancy, Exc/remov/biopsy/destruc/debrid/caut",Condition,ICPC,ICPC2,NA,W52,1970-01-01,2099-12-31,NA,NA
+1149,"Pregnancy, Exc/remov/biopsy/destruc/debrid/caut",Observation,ICPC,ICPC2,NA,W52,1970-01-01,2099-12-31,NA,NA
 1150,"Pregnancy, Instrument/catheter/intubate/dilate",Condition,ICPC,ICPC2,NA,W53,1970-01-01,2099-12-31,NA,NA
 1151,"Pregnancy, Repair/fix-suture/cast/prosth device",Condition,ICPC,ICPC2,NA,W54,1970-01-01,2099-12-31,NA,NA
-1152,"Pregnancy, Local injection/infiltration",Condition,ICPC,ICPC2,NA,W55,1970-01-01,2099-12-31,NA,NA
+1152,"Pregnancy, Local injection/infiltration",Observation,ICPC,ICPC2,NA,W55,1970-01-01,2099-12-31,NA,NA
 1153,"Pregnancy, Dressing/pressure/compress/tamponade",Condition,ICPC,ICPC2,NA,W56,1970-01-01,2099-12-31,NA,NA
-1154,"Pregnancy, Physical medicine/rehabilitation",Condition,ICPC,ICPC2,NA,W57,1970-01-01,2099-12-31,NA,NA
+1154,"Pregnancy, Physical medicine/rehabilitation",Observation,ICPC,ICPC2,NA,W57,1970-01-01,2099-12-31,NA,NA
 1155,"Pregnancy, Therapeutic counselling/listening",Condition,ICPC,ICPC2,NA,W58,1970-01-01,2099-12-31,NA,NA
 1156,"Pregnancy, Other therap proced/minor surg NEC",Condition,ICPC,ICPC2,NA,W59,1970-01-01,2099-12-31,NA,NA
 1157,"Pregnancy, Result test/procedure",Condition,ICPC,ICPC2,NA,W60,1970-01-01,2099-12-31,NA,NA
 1158,"Pregnancy, Result examination/test/record/letter from other provider",Condition,ICPC,ICPC2,NA,W61,1970-01-01,2099-12-31,NA,NA
 1159,"Pregnancy, Administrative procedure",Condition,ICPC,ICPC2,NA,W62,1970-01-01,2099-12-31,NA,NA
 1160,"Pregnancy, Follow-up encounter unspecified",Condition,ICPC,ICPC2,NA,W63,1970-01-01,2099-12-31,NA,NA
-1161,"Pregnancy, Encounter/prob initiated by provider",Condition,ICPC,ICPC2,NA,W64,1970-01-01,2099-12-31,NA,NA
+1161,"Pregnancy, Encounter/prob initiated by provider",Observation,ICPC,ICPC2,NA,W64,1970-01-01,2099-12-31,NA,NA
 1162,"Pregnancy, Enc/prob init by other than pt/prov",Condition,ICPC,ICPC2,NA,W65,1970-01-01,2099-12-31,NA,NA
 1163,"Pregnancy, Referral to non-MD provider",Condition,ICPC,ICPC2,NA,W66,1970-01-01,2099-12-31,NA,NA
 1164,"Pregnancy, Referral to physician/hospital",Condition,ICPC,ICPC2,NA,W67,1970-01-01,2099-12-31,NA,NA
 1165,"Pregnancy, Other referral NEC",Condition,ICPC,ICPC2,NA,W68,1970-01-01,2099-12-31,NA,NA
-1166,"Pregnancy, Other reason for encounter NEC",Condition,ICPC,ICPC2,NA,W69,1970-01-01,2099-12-31,NA,NA
+1166,"Pregnancy, Other reason for encounter NEC",Observation,ICPC,ICPC2,NA,W69,1970-01-01,2099-12-31,NA,NA
 1167,Puerperal infection/sepsis,Condition,ICPC,ICPC2,NA,W70,1970-01-01,2099-12-31,NA,O85
 1168,Other infect complic pregn/puerp,Condition,ICPC,ICPC2,NA,W71,1970-01-01,2099-12-31,NA,O98.9
 1169,Malignant neopl related to pregnancy,Condition,ICPC,ICPC2,NA,W72,1970-01-01,2099-12-31,NA,C58
 1170,Benign/unspecif neopl relat to pregn,Condition,ICPC,ICPC2,NA,W73,1970-01-01,2099-12-31,NA,O01.9
 1171,Injury complicating pregnancy,Condition,ICPC,ICPC2,NA,W75,1970-01-01,2099-12-31,NA,T14.9
-1172,Congen anom complicating pregnancy,Condition,ICPC,ICPC2,NA,W76,1970-01-01,2099-12-31,NA,O99.89
+1172,Congen anom complicating pregnancy,Observation,ICPC,ICPC2,NA,W76,1970-01-01,2099-12-31,NA,O99.89
 1173,Pregnancy,Condition,ICPC,ICPC2,NA,W78,1970-01-01,2099-12-31,NA,Z32.1
 1174,Unwanted pregnancy,Condition,ICPC,ICPC2,NA,W79,1970-01-01,2099-12-31,NA,Z64.0
 1175,Ectopic pregnancy,Condition,ICPC,ICPC2,NA,W80,1970-01-01,2099-12-31,NA,O00.9
 1176,Toxaemia of pregnancy,Condition,ICPC,ICPC2,NA,W81,1970-01-01,2099-12-31,NA,O14.9
 1177,Abortion spontaneous,Condition,ICPC,ICPC2,NA,W82,1970-01-01,2099-12-31,NA,O03.9
 1178,Abortion induced,Condition,ICPC,ICPC2,NA,W83,1970-01-01,2099-12-31,NA,O04.9
-1179,Pregnancy high risk,Condition,ICPC,ICPC2,NA,W84,1970-01-01,2099-12-31,NA,Z35.9
-1180,Gestational diabetes,Condition,ICPC,ICPC2,NA,W85,1970-01-01,2099-12-31,NA,O24.4
+1179,Pregnancy high risk,Observation,ICPC,ICPC2,NA,W84,1970-01-01,2099-12-31,NA,Z35.9
+1180,Gestational diabetes,Observation,ICPC,ICPC2,NA,W85,1970-01-01,2099-12-31,NA,O24.4
 1181,Uncompl labour/delivery livebirth,Condition,ICPC,ICPC2,NA,W90,1970-01-01,2099-12-31,NA,O80.9
-1182,Uncompl labour/delivery stillbirth,Condition,ICPC,ICPC2,NA,W91,1970-01-01,2099-12-31,NA,Z37.1
-1183,Compl labour/ delivery livebirth,Condition,ICPC,ICPC2,NA,W92,1970-01-01,2099-12-31,NA,O83.1
-1184,Compl labour/delivery stillbirth,Condition,ICPC,ICPC2,NA,W93,1970-01-01,2099-12-31,NA,Z37.1
-1185,Puerperal mastitis,Condition,ICPC,ICPC2,NA,W94,1970-01-01,2099-12-31,NA,O91.2
+1182,Uncompl labour/delivery stillbirth,Observation,ICPC,ICPC2,NA,W91,1970-01-01,2099-12-31,NA,Z37.1
+1183,Compl labour/ delivery livebirth,Observation,ICPC,ICPC2,NA,W92,1970-01-01,2099-12-31,NA,O83.1
+1184,Compl labour/delivery stillbirth,Observation,ICPC,ICPC2,NA,W93,1970-01-01,2099-12-31,NA,Z37.1
+1185,Puerperal mastitis,Observation,ICPC,ICPC2,NA,W94,1970-01-01,2099-12-31,NA,O91.2
 1186,Breast dis in pregn/puerperium other,Condition,ICPC,ICPC2,NA,W95,1970-01-01,2099-12-31,NA,O92.2
 1187,Complications of puerperium other,Condition,ICPC,ICPC2,NA,W96,1970-01-01,2099-12-31,NA,O90.9
-1188,Disorder of pregn/delivery other,Condition,ICPC,ICPC2,NA,W99,1970-01-01,2099-12-31,NA,O26.9
+1188,Disorder of pregn/delivery other,Observation,ICPC,ICPC2,NA,W99,1970-01-01,2099-12-31,NA,O26.9
 1189,Female Genital,Condition,ICPC,ICPC2,NA,X,1970-01-01,2099-12-31,NA,NA
-1190,Genital pain female,Condition,ICPC,ICPC2,NA,X01,1970-01-01,2099-12-31,NA,R10.2
+1190,Genital pain female,Observation,ICPC,ICPC2,NA,X01,1970-01-01,2099-12-31,NA,R10.2
 1191,Menstrual pain,Condition,ICPC,ICPC2,NA,X02,1970-01-01,2099-12-31,NA,N94.6
-1192,Intermenstrual pain,Condition,ICPC,ICPC2,NA,X03,1970-01-01,2099-12-31,NA,N94.0
-1193,Painful intercourse female,Condition,ICPC,ICPC2,NA,X04,1970-01-01,2099-12-31,NA,N94.1
+1192,Intermenstrual pain,Observation,ICPC,ICPC2,NA,X03,1970-01-01,2099-12-31,NA,N94.0
+1193,Painful intercourse female,Observation,ICPC,ICPC2,NA,X04,1970-01-01,2099-12-31,NA,N94.1
 1194,Menstruation absent/scanty,Condition,ICPC,ICPC2,NA,X05,1970-01-01,2099-12-31,NA,N91.5
-1195,Menstruation excessive,Condition,ICPC,ICPC2,NA,X06,1970-01-01,2099-12-31,NA,N92.0
+1195,Menstruation excessive,Observation,ICPC,ICPC2,NA,X06,1970-01-01,2099-12-31,NA,N92.0
 1196,Menstruation irregular/frequent,Condition,ICPC,ICPC2,NA,X07,1970-01-01,2099-12-31,NA,N92.1
 1197,Intermenstrual bleeding,Condition,ICPC,ICPC2,NA,X08,1970-01-01,2099-12-31,NA,N92.3
-1198,Premenstrual symptom/complaint,Condition,ICPC,ICPC2,NA,X09,1970-01-01,2099-12-31,NA,N94.9
+1198,Premenstrual symptom/complaint,Observation,ICPC,ICPC2,NA,X09,1970-01-01,2099-12-31,NA,N94.9
 1199,Postponement of menstruation,Condition,ICPC,ICPC2,NA,X10,1970-01-01,2099-12-31,NA,Z30.9
 1200,Menopausal symptom/complaint,Condition,ICPC,ICPC2,NA,X11,1970-01-01,2099-12-31,NA,N95.9
-1201,Postmenopausal bleeding,Condition,ICPC,ICPC2,NA,X12,1970-01-01,2099-12-31,NA,N95.0
+1201,Postmenopausal bleeding,Observation,ICPC,ICPC2,NA,X12,1970-01-01,2099-12-31,NA,N95.0
 1202,Postcoital bleeding,Condition,ICPC,ICPC2,NA,X13,1970-01-01,2099-12-31,NA,N93.0
-1203,Vaginal discharge,Condition,ICPC,ICPC2,NA,X14,1970-01-01,2099-12-31,NA,N89.8
+1203,Vaginal discharge,Observation,ICPC,ICPC2,NA,X14,1970-01-01,2099-12-31,NA,N89.8
 1204,Vaginal symptom/complaint other,Condition,ICPC,ICPC2,NA,X15,1970-01-01,2099-12-31,NA,N89.9
 1205,Vulval symptom/complaint,Condition,ICPC,ICPC2,NA,X16,1970-01-01,2099-12-31,NA,N90.9
 1206,Pelvis symptom/complaint female,Condition,ICPC,ICPC2,NA,X17,1970-01-01,2099-12-31,NA,N94.9
-1207,Breast pain female,Condition,ICPC,ICPC2,NA,X18,1970-01-01,2099-12-31,NA,N64.4
-1208,Breast lump/mass female,Condition,ICPC,ICPC2,NA,X19,1970-01-01,2099-12-31,NA,N63
-1209,Nipple symptom/complaint female,Condition,ICPC,ICPC2,NA,X20,1970-01-01,2099-12-31,NA,N64.0
+1207,Breast pain female,Observation,ICPC,ICPC2,NA,X18,1970-01-01,2099-12-31,NA,N64.4
+1208,Breast lump/mass female,Observation,ICPC,ICPC2,NA,X19,1970-01-01,2099-12-31,NA,N63
+1209,Nipple symptom/complaint female,Observation,ICPC,ICPC2,NA,X20,1970-01-01,2099-12-31,NA,N64.0
 1210,Breast sympt/compl female other,Condition,ICPC,ICPC2,NA,X21,1970-01-01,2099-12-31,NA,N64.5
 1211,Concern breast appearance fema,Condition,ICPC,ICPC2,NA,X22,1970-01-01,2099-12-31,NA,R46.8
 1212,Fear sexually transm dis female,Condition,ICPC,ICPC2,NA,X23,1970-01-01,2099-12-31,NA,Z71.1
 1213,Fear of sexual dysfunction female,Condition,ICPC,ICPC2,NA,X24,1970-01-01,2099-12-31,NA,Z71.1
 1214,Fear of genital cancer female,Condition,ICPC,ICPC2,NA,X25,1970-01-01,2099-12-31,NA,Z71.1
 1215,Fear of breast cancer female,Condition,ICPC,ICPC2,NA,X26,1970-01-01,2099-12-31,NA,Z71.1
-1216,Fear genital/breast dis female other,Condition,ICPC,ICPC2,NA,X27,1970-01-01,2099-12-31,NA,Z71.1
-1217,Limited function/disability (X),Condition,ICPC,ICPC2,NA,X28,1970-01-01,2099-12-31,NA,Z73.6
+1216,Fear genital/breast dis female other,Observation,ICPC,ICPC2,NA,X27,1970-01-01,2099-12-31,NA,Z71.1
+1217,Limited function/disability (X),Observation,ICPC,ICPC2,NA,X28,1970-01-01,2099-12-31,NA,Z73.6
 1218,Genital sympt/compl female other,Condition,ICPC,ICPC2,NA,X29,1970-01-01,2099-12-31,NA,N94.9
 1219,"Female Genital, Medical examin/health eval complete",Condition,ICPC,ICPC2,NA,X30,1970-01-01,2099-12-31,NA,NA
-1220,"Female Genital, Medical examin/health eval partial",Condition,ICPC,ICPC2,NA,X31,1970-01-01,2099-12-31,NA,NA
-1221,"Female Genital, Sensitivity test",Condition,ICPC,ICPC2,NA,X32,1970-01-01,2099-12-31,NA,NA
-1222,"Female Genital, Microbiological/immunological test",Condition,ICPC,ICPC2,NA,X33,1970-01-01,2099-12-31,NA,NA
+1220,"Female Genital, Medical examin/health eval partial",Observation,ICPC,ICPC2,NA,X31,1970-01-01,2099-12-31,NA,NA
+1221,"Female Genital, Sensitivity test",Observation,ICPC,ICPC2,NA,X32,1970-01-01,2099-12-31,NA,NA
+1222,"Female Genital, Microbiological/immunological test",Observation,ICPC,ICPC2,NA,X33,1970-01-01,2099-12-31,NA,NA
 1223,"Female Genital, Blood test",Condition,ICPC,ICPC2,NA,X34,1970-01-01,2099-12-31,NA,NA
 1224,"Female Genital, Urine test",Condition,ICPC,ICPC2,NA,X35,1970-01-01,2099-12-31,NA,NA
 1225,"Female Genital, Faeces test",Condition,ICPC,ICPC2,NA,X36,1970-01-01,2099-12-31,NA,NA
 1226,"Female Genital, Histological/exfoliative cytology",Condition,ICPC,ICPC2,NA,X37,1970-01-01,2099-12-31,NA,NA
 1227,"Female Genital, Other laboratory test NEC",Condition,ICPC,ICPC2,NA,X38,1970-01-01,2099-12-31,NA,NA
-1228,"Female Genital, Physical function test",Condition,ICPC,ICPC2,NA,X39,1970-01-01,2099-12-31,NA,NA
+1228,"Female Genital, Physical function test",Observation,ICPC,ICPC2,NA,X39,1970-01-01,2099-12-31,NA,NA
 1229,"Female Genital, Diagnostic endoscopy",Condition,ICPC,ICPC2,NA,X40,1970-01-01,2099-12-31,NA,NA
 1230,"Female Genital, Diagnostic radiology/imaging",Condition,ICPC,ICPC2,NA,X41,1970-01-01,2099-12-31,NA,NA
 1231,"Female Genital, Electrical tracing",Condition,ICPC,ICPC2,NA,X42,1970-01-01,2099-12-31,NA,NA
@@ -1237,16 +1237,16 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1236,"Female Genital, Consultation with specialist",Condition,ICPC,ICPC2,NA,X47,1970-01-01,2099-12-31,NA,NA
 1237,"Female Genital, Clarification/discussion RFE/demand",Condition,ICPC,ICPC2,NA,X48,1970-01-01,2099-12-31,NA,NA
 1238,"Female Genital, Other preventive procedure",Condition,ICPC,ICPC2,NA,X49,1970-01-01,2099-12-31,NA,NA
-1239,"Female Genital, Medication/prescr/renewal",Condition,ICPC,ICPC2,NA,X50,1970-01-01,2099-12-31,NA,NA
+1239,"Female Genital, Medication/prescr/renewal",Observation,ICPC,ICPC2,NA,X50,1970-01-01,2099-12-31,NA,NA
 1240,"Female Genital, I&d/flush/aspiration",Condition,ICPC,ICPC2,NA,X51,1970-01-01,2099-12-31,NA,NA
 1241,"Female Genital, Exc/remov/biopsy/destruc/debrid/caut",Condition,ICPC,ICPC2,NA,X52,1970-01-01,2099-12-31,NA,NA
 1242,"Female Genital, Instrument/catheter/intubate/dilate",Condition,ICPC,ICPC2,NA,X53,1970-01-01,2099-12-31,NA,NA
 1243,"Female Genital, Repair/fix-suture/cast/prosth device",Condition,ICPC,ICPC2,NA,X54,1970-01-01,2099-12-31,NA,NA
 1244,"Female Genital, Local injection/infiltration",Condition,ICPC,ICPC2,NA,X55,1970-01-01,2099-12-31,NA,NA
 1245,"Female Genital, Dressing/pressure/compress/tamponade",Condition,ICPC,ICPC2,NA,X56,1970-01-01,2099-12-31,NA,NA
-1246,"Female Genital, Physical medicine/rehabilitation",Condition,ICPC,ICPC2,NA,X57,1970-01-01,2099-12-31,NA,NA
-1247,"Female Genital, Therapeutic counselling/listening",Condition,ICPC,ICPC2,NA,X58,1970-01-01,2099-12-31,NA,NA
-1248,"Female Genital, Other therap proced/minor surg NEC",Condition,ICPC,ICPC2,NA,X59,1970-01-01,2099-12-31,NA,NA
+1246,"Female Genital, Physical medicine/rehabilitation",Observation,ICPC,ICPC2,NA,X57,1970-01-01,2099-12-31,NA,NA
+1247,"Female Genital, Therapeutic counselling/listening",Observation,ICPC,ICPC2,NA,X58,1970-01-01,2099-12-31,NA,NA
+1248,"Female Genital, Other therap proced/minor surg NEC",Observation,ICPC,ICPC2,NA,X59,1970-01-01,2099-12-31,NA,NA
 1249,"Female Genital, Result test/procedure",Condition,ICPC,ICPC2,NA,X60,1970-01-01,2099-12-31,NA,NA
 1250,"Female Genital, Result examination/test/record/letter from other provider",Condition,ICPC,ICPC2,NA,X61,1970-01-01,2099-12-31,NA,NA
 1251,"Female Genital, Administrative procedure",Condition,ICPC,ICPC2,NA,X62,1970-01-01,2099-12-31,NA,NA
@@ -1257,39 +1257,39 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1256,"Female Genital, Referral to physician/hospital",Condition,ICPC,ICPC2,NA,X67,1970-01-01,2099-12-31,NA,NA
 1257,"Female Genital, Other referral NEC",Condition,ICPC,ICPC2,NA,X68,1970-01-01,2099-12-31,NA,NA
 1258,"Female Genital, Other reason for encounter NEC",Condition,ICPC,ICPC2,NA,X69,1970-01-01,2099-12-31,NA,NA
-1259,Syphilis female,Condition,ICPC,ICPC2,NA,X70,1970-01-01,2099-12-31,NA,A53.9
-1260,Gonorrhoea female,Condition,ICPC,ICPC2,NA,X71,1970-01-01,2099-12-31,NA,A54.9
+1259,Syphilis female,Observation,ICPC,ICPC2,NA,X70,1970-01-01,2099-12-31,NA,A53.9
+1260,Gonorrhoea female,Observation,ICPC,ICPC2,NA,X71,1970-01-01,2099-12-31,NA,A54.9
 1261,Genital candidiasis female,Condition,ICPC,ICPC2,NA,X72,1970-01-01,2099-12-31,NA,B37.4
 1262,Genital trichomoniasis female,Condition,ICPC,ICPC2,NA,X73,1970-01-01,2099-12-31,NA,A59.0
-1263,Pelvic inflammatory disease,Condition,ICPC,ICPC2,NA,X74,1970-01-01,2099-12-31,NA,N70.9
-1264,Malignant neoplasm cervix,Condition,ICPC,ICPC2,NA,X75,1970-01-01,2099-12-31,NA,C53.99&
-1265,Malignant neoplasm breast female,Condition,ICPC,ICPC2,NA,X76,1970-01-01,2099-12-31,NA,C50.99&
+1263,Pelvic inflammatory disease,Observation,ICPC,ICPC2,NA,X74,1970-01-01,2099-12-31,NA,N70.9
+1264,Malignant neoplasm cervix,Observation,ICPC,ICPC2,NA,X75,1970-01-01,2099-12-31,NA,C53.99&
+1265,Malignant neoplasm breast female,Observation,ICPC,ICPC2,NA,X76,1970-01-01,2099-12-31,NA,C50.99&
 1266,Malignant neopl genital female other,Condition,ICPC,ICPC2,NA,X77,1970-01-01,2099-12-31,NA,C57.9&
-1267,Fibromyoma uterus,Condition,ICPC,ICPC2,NA,X78,1970-01-01,2099-12-31,NA,D25.9&
+1267,Fibromyoma uterus,Observation,ICPC,ICPC2,NA,X78,1970-01-01,2099-12-31,NA,D25.9&
 1268,Benign neoplasm breast female,Condition,ICPC,ICPC2,NA,X79,1970-01-01,2099-12-31,NA,D24&
-1269,Benign neoplasm female genital,Condition,ICPC,ICPC2,NA,X80,1970-01-01,2099-12-31,NA,D28.9&
-1270,Genital neopl female other/unspecif,Condition,ICPC,ICPC2,NA,X81,1970-01-01,2099-12-31,NA,D39.9&
-1271,Injury genital female,Condition,ICPC,ICPC2,NA,X82,1970-01-01,2099-12-31,NA,S30.2
+1269,Benign neoplasm female genital,Observation,ICPC,ICPC2,NA,X80,1970-01-01,2099-12-31,NA,D28.9&
+1270,Genital neopl female other/unspecif,Observation,ICPC,ICPC2,NA,X81,1970-01-01,2099-12-31,NA,D39.9&
+1271,Injury genital female,Observation,ICPC,ICPC2,NA,X82,1970-01-01,2099-12-31,NA,S30.2
 1272,Congenital anomaly genital female,Condition,ICPC,ICPC2,NA,X83,1970-01-01,2099-12-31,NA,Q51.9
-1273,Vaginitis/vulvitis NOS,Condition,ICPC,ICPC2,NA,X84,1970-01-01,2099-12-31,NA,N76.8
-1274,Cervical disease NOS,Condition,ICPC,ICPC2,NA,X85,1970-01-01,2099-12-31,NA,N88.9
+1273,Vaginitis/vulvitis NOS,Observation,ICPC,ICPC2,NA,X84,1970-01-01,2099-12-31,NA,N76.8
+1274,Cervical disease NOS,Observation,ICPC,ICPC2,NA,X85,1970-01-01,2099-12-31,NA,N88.9
 1275,Abnormal cervix smear,Condition,ICPC,ICPC2,NA,X86,1970-01-01,2099-12-31,NA,R87.6
 1276,Uterovaginal prolapse,Condition,ICPC,ICPC2,NA,X87,1970-01-01,2099-12-31,NA,N81.9
 1277,Fibrocystic disease breast,Condition,ICPC,ICPC2,NA,X88,1970-01-01,2099-12-31,NA,N60.9
 1278,Premenstrual tension syndrome,Condition,ICPC,ICPC2,NA,X89,1970-01-01,2099-12-31,NA,N94.3
-1279,Genital herpes female,Condition,ICPC,ICPC2,NA,X90,1970-01-01,2099-12-31,NA,A60.0
-1280,Condylomata acuminata female,Condition,ICPC,ICPC2,NA,X91,1970-01-01,2099-12-31,NA,A63.0
-1281,Chlamydia infection genital female,Condition,ICPC,ICPC2,NA,X92,1970-01-01,2099-12-31,NA,A56.2
-1282,Genital disease female other,Condition,ICPC,ICPC2,NA,X99,1970-01-01,2099-12-31,NA,N94.9
+1279,Genital herpes female,Observation,ICPC,ICPC2,NA,X90,1970-01-01,2099-12-31,NA,A60.0
+1280,Condylomata acuminata female,Observation,ICPC,ICPC2,NA,X91,1970-01-01,2099-12-31,NA,A63.0
+1281,Chlamydia infection genital female,Observation,ICPC,ICPC2,NA,X92,1970-01-01,2099-12-31,NA,A56.2
+1282,Genital disease female other,Observation,ICPC,ICPC2,NA,X99,1970-01-01,2099-12-31,NA,N94.9
 1283,Male Genital,Condition,ICPC,ICPC2,NA,Y,1970-01-01,2099-12-31,NA,NA
 1284,Pain in penis,Condition,ICPC,ICPC2,NA,Y01,1970-01-01,2099-12-31,NA,N48.8
 1285,Pain in testis/scrotum,Condition,ICPC,ICPC2,NA,Y02,1970-01-01,2099-12-31,NA,R10.2
 1286,Urethral discharge male,Condition,ICPC,ICPC2,NA,Y03,1970-01-01,2099-12-31,NA,R36
-1287,Penis symptom/complaint other,Condition,ICPC,ICPC2,NA,Y04,1970-01-01,2099-12-31,NA,N48.9
-1288,Scrotum/testis sympt/compl other,Condition,ICPC,ICPC2,NA,Y05,1970-01-01,2099-12-31,NA,L29.1
-1289,Prostate symptom/complaint,Condition,ICPC,ICPC2,NA,Y06,1970-01-01,2099-12-31,NA,N42.9
-1290,Impotence NOS,Condition,ICPC,ICPC2,NA,Y07,1970-01-01,2099-12-31,NA,N48.4
-1291,Sexual function sympt/compl male,Condition,ICPC,ICPC2,NA,Y08,1970-01-01,2099-12-31,NA,N48.3
+1287,Penis symptom/complaint other,Observation,ICPC,ICPC2,NA,Y04,1970-01-01,2099-12-31,NA,N48.9
+1288,Scrotum/testis sympt/compl other,Observation,ICPC,ICPC2,NA,Y05,1970-01-01,2099-12-31,NA,L29.1
+1289,Prostate symptom/complaint,Observation,ICPC,ICPC2,NA,Y06,1970-01-01,2099-12-31,NA,N42.9
+1290,Impotence NOS,Observation,ICPC,ICPC2,NA,Y07,1970-01-01,2099-12-31,NA,N48.4
+1291,Sexual function sympt/compl male,Observation,ICPC,ICPC2,NA,Y08,1970-01-01,2099-12-31,NA,N48.3
 1292,Infertility/subfertility male,Condition,ICPC,ICPC2,NA,Y10,1970-01-01,2099-12-31,NA,N46
 1293,Sterilization male,Condition,ICPC,ICPC2,NA,Y13,1970-01-01,2099-12-31,NA,Z30.2
 1294,Family planning male other,Condition,ICPC,ICPC2,NA,Y14,1970-01-01,2099-12-31,NA,Z30.0
@@ -1305,8 +1305,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1304,"Male Genital, Sensitivity test",Condition,ICPC,ICPC2,NA,Y32,1970-01-01,2099-12-31,NA,NA
 1305,"Male Genital, Microbiological/immunological test",Condition,ICPC,ICPC2,NA,Y33,1970-01-01,2099-12-31,NA,NA
 1306,"Male Genital, Blood test",Condition,ICPC,ICPC2,NA,Y34,1970-01-01,2099-12-31,NA,NA
-1307,"Male Genital, Urine test",Condition,ICPC,ICPC2,NA,Y35,1970-01-01,2099-12-31,NA,NA
-1308,"Male Genital, Faeces test",Condition,ICPC,ICPC2,NA,Y36,1970-01-01,2099-12-31,NA,NA
+1307,"Male Genital, Urine test",Observation,ICPC,ICPC2,NA,Y35,1970-01-01,2099-12-31,NA,NA
+1308,"Male Genital, Faeces test",Observation,ICPC,ICPC2,NA,Y36,1970-01-01,2099-12-31,NA,NA
 1309,"Male Genital, Histological/exfoliative cytology",Condition,ICPC,ICPC2,NA,Y37,1970-01-01,2099-12-31,NA,NA
 1310,"Male Genital, Other laboratory test NEC",Condition,ICPC,ICPC2,NA,Y38,1970-01-01,2099-12-31,NA,NA
 1311,"Male Genital, Physical function test",Condition,ICPC,ICPC2,NA,Y39,1970-01-01,2099-12-31,NA,NA
@@ -1327,99 +1327,99 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1326,"Male Genital, Repair/fix-suture/cast/prosth device",Condition,ICPC,ICPC2,NA,Y54,1970-01-01,2099-12-31,NA,NA
 1327,"Male Genital, Local injection/infiltration",Condition,ICPC,ICPC2,NA,Y55,1970-01-01,2099-12-31,NA,NA
 1328,"Male Genital, Dressing/pressure/compress/tamponade",Condition,ICPC,ICPC2,NA,Y56,1970-01-01,2099-12-31,NA,NA
-1329,"Male Genital, Physical medicine/rehabilitation",Condition,ICPC,ICPC2,NA,Y57,1970-01-01,2099-12-31,NA,NA
-1330,"Male Genital, Therapeutic counselling/listening",Condition,ICPC,ICPC2,NA,Y58,1970-01-01,2099-12-31,NA,NA
-1331,"Male Genital, Other therap proced/minor surg NEC",Condition,ICPC,ICPC2,NA,Y59,1970-01-01,2099-12-31,NA,NA
-1332,"Male Genital, Result test/procedure",Condition,ICPC,ICPC2,NA,Y60,1970-01-01,2099-12-31,NA,NA
-1333,"Male Genital, Result examination/test/record/letter from other provider",Condition,ICPC,ICPC2,NA,Y61,1970-01-01,2099-12-31,NA,NA
-1334,"Male Genital, Administrative procedure",Condition,ICPC,ICPC2,NA,Y62,1970-01-01,2099-12-31,NA,NA
-1335,"Male Genital, Follow-up encounter unspecified",Condition,ICPC,ICPC2,NA,Y63,1970-01-01,2099-12-31,NA,NA
-1336,"Male Genital, Encounter/prob initiated by provider",Condition,ICPC,ICPC2,NA,Y64,1970-01-01,2099-12-31,NA,NA
-1337,"Male Genital, Enc/prob init by other than pt/prov",Condition,ICPC,ICPC2,NA,Y65,1970-01-01,2099-12-31,NA,NA
-1338,"Male Genital, Referral to non-MD provider",Condition,ICPC,ICPC2,NA,Y66,1970-01-01,2099-12-31,NA,NA
+1329,"Male Genital, Physical medicine/rehabilitation",Observation,ICPC,ICPC2,NA,Y57,1970-01-01,2099-12-31,NA,NA
+1330,"Male Genital, Therapeutic counselling/listening",Observation,ICPC,ICPC2,NA,Y58,1970-01-01,2099-12-31,NA,NA
+1331,"Male Genital, Other therap proced/minor surg NEC",Observation,ICPC,ICPC2,NA,Y59,1970-01-01,2099-12-31,NA,NA
+1332,"Male Genital, Result test/procedure",Observation,ICPC,ICPC2,NA,Y60,1970-01-01,2099-12-31,NA,NA
+1333,"Male Genital, Result examination/test/record/letter from other provider",Observation,ICPC,ICPC2,NA,Y61,1970-01-01,2099-12-31,NA,NA
+1334,"Male Genital, Administrative procedure",Observation,ICPC,ICPC2,NA,Y62,1970-01-01,2099-12-31,NA,NA
+1335,"Male Genital, Follow-up encounter unspecified",Observation,ICPC,ICPC2,NA,Y63,1970-01-01,2099-12-31,NA,NA
+1336,"Male Genital, Encounter/prob initiated by provider",Observation,ICPC,ICPC2,NA,Y64,1970-01-01,2099-12-31,NA,NA
+1337,"Male Genital, Enc/prob init by other than pt/prov",Observation,ICPC,ICPC2,NA,Y65,1970-01-01,2099-12-31,NA,NA
+1338,"Male Genital, Referral to non-MD provider",Observation,ICPC,ICPC2,NA,Y66,1970-01-01,2099-12-31,NA,NA
 1339,"Male Genital, Referral to physician/hospital",Condition,ICPC,ICPC2,NA,Y67,1970-01-01,2099-12-31,NA,NA
 1340,"Male Genital, Other referral NEC",Condition,ICPC,ICPC2,NA,Y68,1970-01-01,2099-12-31,NA,NA
-1341,"Male Genital, Other reason for encounter NEC",Condition,ICPC,ICPC2,NA,Y69,1970-01-01,2099-12-31,NA,NA
-1342,Syphilis male,Condition,ICPC,ICPC2,NA,Y70,1970-01-01,2099-12-31,NA,A53.9
-1343,Gonorrhoea male,Condition,ICPC,ICPC2,NA,Y71,1970-01-01,2099-12-31,NA,A54.9
-1344,Genital herpes male,Condition,ICPC,ICPC2,NA,Y72,1970-01-01,2099-12-31,NA,A60.0
-1345,Prostatitis/seminal vesiculitis,Condition,ICPC,ICPC2,NA,Y73,1970-01-01,2099-12-31,NA,N41.9
-1346,Orchitis/epididymitis,Condition,ICPC,ICPC2,NA,Y74,1970-01-01,2099-12-31,NA,N45.9
-1347,Balanitis,Condition,ICPC,ICPC2,NA,Y75,1970-01-01,2099-12-31,NA,N48.1
+1341,"Male Genital, Other reason for encounter NEC",Observation,ICPC,ICPC2,NA,Y69,1970-01-01,2099-12-31,NA,NA
+1342,Syphilis male,Observation,ICPC,ICPC2,NA,Y70,1970-01-01,2099-12-31,NA,A53.9
+1343,Gonorrhoea male,Observation,ICPC,ICPC2,NA,Y71,1970-01-01,2099-12-31,NA,A54.9
+1344,Genital herpes male,Observation,ICPC,ICPC2,NA,Y72,1970-01-01,2099-12-31,NA,A60.0
+1345,Prostatitis/seminal vesiculitis,Observation,ICPC,ICPC2,NA,Y73,1970-01-01,2099-12-31,NA,N41.9
+1346,Orchitis/epididymitis,Observation,ICPC,ICPC2,NA,Y74,1970-01-01,2099-12-31,NA,N45.9
+1347,Balanitis,Observation,ICPC,ICPC2,NA,Y75,1970-01-01,2099-12-31,NA,N48.1
 1348,Condylomata acuminata male,Condition,ICPC,ICPC2,NA,Y76,1970-01-01,2099-12-31,NA,A63.0
-1349,Malignant neoplasm prostate,Condition,ICPC,ICPC2,NA,Y77,1970-01-01,2099-12-31,NA,C61
-1350,Malign neopl male genital other,Condition,ICPC,ICPC2,NA,Y78,1970-01-01,2099-12-31,NA,C63.9&
+1349,Malignant neoplasm prostate,Observation,ICPC,ICPC2,NA,Y77,1970-01-01,2099-12-31,NA,C61
+1350,Malign neopl male genital other,Observation,ICPC,ICPC2,NA,Y78,1970-01-01,2099-12-31,NA,C63.9&
 1351,Benign/unspecif neopl male genital,Condition,ICPC,ICPC2,NA,Y79,1970-01-01,2099-12-31,NA,D29.9&
-1352,Injury male genital,Condition,ICPC,ICPC2,NA,Y80,1970-01-01,2099-12-31,NA,S30.2
-1353,Phimosis/redundant prepuce,Condition,ICPC,ICPC2,NA,Y81,1970-01-01,2099-12-31,NA,N47
-1354,Hypospadias,Condition,ICPC,ICPC2,NA,Y82,1970-01-01,2099-12-31,NA,Q54.9
+1352,Injury male genital,Observation,ICPC,ICPC2,NA,Y80,1970-01-01,2099-12-31,NA,S30.2
+1353,Phimosis/redundant prepuce,Observation,ICPC,ICPC2,NA,Y81,1970-01-01,2099-12-31,NA,N47
+1354,Hypospadias,Observation,ICPC,ICPC2,NA,Y82,1970-01-01,2099-12-31,NA,Q54.9
 1355,Undescended testicle,Condition,ICPC,ICPC2,NA,Y83,1970-01-01,2099-12-31,NA,Q53.9
 1356,Congenital genital anom male other,Condition,ICPC,ICPC2,NA,Y84,1970-01-01,2099-12-31,NA,Q55.9
 1357,Benign prostatic hypertrophy,Condition,ICPC,ICPC2,NA,Y85,1970-01-01,2099-12-31,NA,N40
 1358,Hydrocoele,Condition,ICPC,ICPC2,NA,Y86,1970-01-01,2099-12-31,NA,N43.3
 1359,Genital disease male other,Condition,ICPC,ICPC2,NA,Y99,1970-01-01,2099-12-31,NA,N50.9
 1360,Social Problems,Condition,ICPC,ICPC2,NA,Z,1970-01-01,2099-12-31,NA,NA
-1361,Poverty/financial problem,Condition,ICPC,ICPC2,NA,Z01,1970-01-01,2099-12-31,NA,Z59.5
-1362,Food/water problem,Condition,ICPC,ICPC2,NA,Z02,1970-01-01,2099-12-31,NA,Z58.6
-1363,Housing/neighbourhood problem,Condition,ICPC,ICPC2,NA,Z03,1970-01-01,2099-12-31,NA,Z59.2
-1364,Social cultural problem,Condition,ICPC,ICPC2,NA,Z04,1970-01-01,2099-12-31,NA,Z60.9
+1361,Poverty/financial problem,Procedure,ICPC,ICPC2,NA,Z01,1970-01-01,2099-12-31,NA,Z59.5
+1362,Food/water problem,Procedure,ICPC,ICPC2,NA,Z02,1970-01-01,2099-12-31,NA,Z58.6
+1363,Housing/neighbourhood problem,Procedure,ICPC,ICPC2,NA,Z03,1970-01-01,2099-12-31,NA,Z59.2
+1364,Social cultural problem,Procedure,ICPC,ICPC2,NA,Z04,1970-01-01,2099-12-31,NA,Z60.9
 1365,Work problem,Condition,ICPC,ICPC2,NA,Z05,1970-01-01,2099-12-31,NA,Z57.9
 1366,Unemployment problem,Condition,ICPC,ICPC2,NA,Z06,1970-01-01,2099-12-31,NA,Z56.0
 1367,Education problem,Condition,ICPC,ICPC2,NA,Z07,1970-01-01,2099-12-31,NA,Z55.9
-1368,Social welfare problem,Condition,ICPC,ICPC2,NA,Z08,1970-01-01,2099-12-31,NA,Z59.7
-1369,Legal problem,Condition,ICPC,ICPC2,NA,Z09,1970-01-01,2099-12-31,NA,Z65.3
-1370,Health care system problem,Condition,ICPC,ICPC2,NA,Z10,1970-01-01,2099-12-31,NA,Z75.9
-1371,Compliance/being ill problem,Condition,ICPC,ICPC2,NA,Z11,1970-01-01,2099-12-31,NA,Z75.9
-1372,Relationship problem with partner,Condition,ICPC,ICPC2,NA,Z12,1970-01-01,2099-12-31,NA,Z63.0
-1373,Partner's behaviour problem,Condition,ICPC,ICPC2,NA,Z13,1970-01-01,2099-12-31,NA,Z63.0
+1368,Social welfare problem,Observation,ICPC,ICPC2,NA,Z08,1970-01-01,2099-12-31,NA,Z59.7
+1369,Legal problem,Observation,ICPC,ICPC2,NA,Z09,1970-01-01,2099-12-31,NA,Z65.3
+1370,Health care system problem,Procedure,ICPC,ICPC2,NA,Z10,1970-01-01,2099-12-31,NA,Z75.9
+1371,Compliance/being ill problem,Procedure,ICPC,ICPC2,NA,Z11,1970-01-01,2099-12-31,NA,Z75.9
+1372,Relationship problem with partner,Procedure,ICPC,ICPC2,NA,Z12,1970-01-01,2099-12-31,NA,Z63.0
+1373,Partner's behaviour problem,Procedure,ICPC,ICPC2,NA,Z13,1970-01-01,2099-12-31,NA,Z63.0
 1374,Partner illness problem,Condition,ICPC,ICPC2,NA,Z14,1970-01-01,2099-12-31,NA,Z63.6
 1375,Loss/death of partner problem,Condition,ICPC,ICPC2,NA,Z15,1970-01-01,2099-12-31,NA,Z63.4
 1376,Relationship problem with child,Condition,ICPC,ICPC2,NA,Z16,1970-01-01,2099-12-31,NA,Z62.9
 1377,Illness problem with child,Condition,ICPC,ICPC2,NA,Z18,1970-01-01,2099-12-31,NA,Z63.6
 1378,Loss/death of child problem,Condition,ICPC,ICPC2,NA,Z19,1970-01-01,2099-12-31,NA,Z63.4
-1379,Relationship problem parent/fam memb,Condition,ICPC,ICPC2,NA,Z20,1970-01-01,2099-12-31,NA,Z63.8
+1379,Relationship problem parent/fam memb,Observation,ICPC,ICPC2,NA,Z20,1970-01-01,2099-12-31,NA,Z63.8
 1380,Behaviour problem parent/fam memb,Condition,ICPC,ICPC2,NA,Z21,1970-01-01,2099-12-31,NA,Z63.9
 1381,Illness problem parent/family memb,Condition,ICPC,ICPC2,NA,Z22,1970-01-01,2099-12-31,NA,Z63.7
-1382,Loss/death parent/fam memb problem,Condition,ICPC,ICPC2,NA,Z23,1970-01-01,2099-12-31,NA,Z63.4
-1383,Relationship problem friend,Condition,ICPC,ICPC2,NA,Z24,1970-01-01,2099-12-31,NA,Z63.9
-1384,Assault/harmful event problem,Condition,ICPC,ICPC2,NA,Z25,1970-01-01,2099-12-31,NA,T74.9
-1385,Fear of a social problem,Condition,ICPC,ICPC2,NA,Z27,1970-01-01,2099-12-31,NA,Z71.1
-1386,Limited function/disability (Z),Condition,ICPC,ICPC2,NA,Z28,1970-01-01,2099-12-31,NA,Z73.6
-1387,Social problem NOS,Condition,ICPC,ICPC2,NA,Z29,1970-01-01,2099-12-31,NA,Z65.9
-1388,"Social Problems, Medical examin/health eval complete",Condition,ICPC,ICPC2,NA,Z30,1970-01-01,2099-12-31,NA,NA
-1389,"Social Problems, Medical examin/health eval partial",Condition,ICPC,ICPC2,NA,Z31,1970-01-01,2099-12-31,NA,NA
-1390,"Social Problems, Sensitivity test",Condition,ICPC,ICPC2,NA,Z32,1970-01-01,2099-12-31,NA,NA
+1382,Loss/death parent/fam memb problem,Observation,ICPC,ICPC2,NA,Z23,1970-01-01,2099-12-31,NA,Z63.4
+1383,Relationship problem friend,Observation,ICPC,ICPC2,NA,Z24,1970-01-01,2099-12-31,NA,Z63.9
+1384,Assault/harmful event problem,Observation,ICPC,ICPC2,NA,Z25,1970-01-01,2099-12-31,NA,T74.9
+1385,Fear of a social problem,Observation,ICPC,ICPC2,NA,Z27,1970-01-01,2099-12-31,NA,Z71.1
+1386,Limited function/disability (Z),Observation,ICPC,ICPC2,NA,Z28,1970-01-01,2099-12-31,NA,Z73.6
+1387,Social problem NOS,Procedure,ICPC,ICPC2,NA,Z29,1970-01-01,2099-12-31,NA,Z65.9
+1388,"Social Problems, Medical examin/health eval complete",Procedure,ICPC,ICPC2,NA,Z30,1970-01-01,2099-12-31,NA,NA
+1389,"Social Problems, Medical examin/health eval partial",Procedure,ICPC,ICPC2,NA,Z31,1970-01-01,2099-12-31,NA,NA
+1390,"Social Problems, Sensitivity test",Procedure,ICPC,ICPC2,NA,Z32,1970-01-01,2099-12-31,NA,NA
 1391,"Social Problems, Microbiological/immunological test",Condition,ICPC,ICPC2,NA,Z33,1970-01-01,2099-12-31,NA,NA
-1392,"Social Problems, Blood test",Condition,ICPC,ICPC2,NA,Z34,1970-01-01,2099-12-31,NA,NA
-1393,"Social Problems, Urine test",Condition,ICPC,ICPC2,NA,Z35,1970-01-01,2099-12-31,NA,NA
-1394,"Social Problems, Faeces test",Condition,ICPC,ICPC2,NA,Z36,1970-01-01,2099-12-31,NA,NA
+1392,"Social Problems, Blood test",Observation,ICPC,ICPC2,NA,Z34,1970-01-01,2099-12-31,NA,NA
+1393,"Social Problems, Urine test",Observation,ICPC,ICPC2,NA,Z35,1970-01-01,2099-12-31,NA,NA
+1394,"Social Problems, Faeces test",Procedure,ICPC,ICPC2,NA,Z36,1970-01-01,2099-12-31,NA,NA
 1395,"Social Problems, Histological/exfoliative cytology",Condition,ICPC,ICPC2,NA,Z37,1970-01-01,2099-12-31,NA,NA
 1396,"Social Problems, Other laboratory test NEC",Condition,ICPC,ICPC2,NA,Z38,1970-01-01,2099-12-31,NA,NA
-1397,"Social Problems, Physical function test",Condition,ICPC,ICPC2,NA,Z39,1970-01-01,2099-12-31,NA,NA
-1398,"Social Problems, Diagnostic endoscopy",Condition,ICPC,ICPC2,NA,Z40,1970-01-01,2099-12-31,NA,NA
-1399,"Social Problems, Diagnostic radiology/imaging",Condition,ICPC,ICPC2,NA,Z41,1970-01-01,2099-12-31,NA,NA
-1400,"Social Problems, Electrical tracing",Condition,ICPC,ICPC2,NA,Z42,1970-01-01,2099-12-31,NA,NA
-1401,"Social Problems, Other diagnostic procedure",Condition,ICPC,ICPC2,NA,Z43,1970-01-01,2099-12-31,NA,NA
-1402,"Social Problems, Preventive immunization/medic",Condition,ICPC,ICPC2,NA,Z44,1970-01-01,2099-12-31,NA,NA
-1403,"Social Problems, Observ/health educat/advice/diet",Condition,ICPC,ICPC2,NA,Z45,1970-01-01,2099-12-31,NA,NA
-1404,"Social Problems, Consultation primary care provider",Condition,ICPC,ICPC2,NA,Z46,1970-01-01,2099-12-31,NA,NA
-1405,"Social Problems, Consultation with specialist",Condition,ICPC,ICPC2,NA,Z47,1970-01-01,2099-12-31,NA,NA
-1406,"Social Problems, Clarification/discussion RFE/demand",Condition,ICPC,ICPC2,NA,Z48,1970-01-01,2099-12-31,NA,NA
-1407,"Social Problems, Other preventive procedure",Condition,ICPC,ICPC2,NA,Z49,1970-01-01,2099-12-31,NA,NA
-1408,"Social Problems, Medication/prescr/renewal",Condition,ICPC,ICPC2,NA,Z50,1970-01-01,2099-12-31,NA,NA
-1409,"Social Problems, I&d/flush/aspiration",Condition,ICPC,ICPC2,NA,Z51,1970-01-01,2099-12-31,NA,NA
-1410,"Social Problems, Exc/remov/biopsy/destruc/debrid/caut",Condition,ICPC,ICPC2,NA,Z52,1970-01-01,2099-12-31,NA,NA
-1411,"Social Problems, Instrument/catheter/intubate/dilate",Condition,ICPC,ICPC2,NA,Z53,1970-01-01,2099-12-31,NA,NA
+1397,"Social Problems, Physical function test",Procedure,ICPC,ICPC2,NA,Z39,1970-01-01,2099-12-31,NA,NA
+1398,"Social Problems, Diagnostic endoscopy",Procedure,ICPC,ICPC2,NA,Z40,1970-01-01,2099-12-31,NA,NA
+1399,"Social Problems, Diagnostic radiology/imaging",Procedure,ICPC,ICPC2,NA,Z41,1970-01-01,2099-12-31,NA,NA
+1400,"Social Problems, Electrical tracing",Observation,ICPC,ICPC2,NA,Z42,1970-01-01,2099-12-31,NA,NA
+1401,"Social Problems, Other diagnostic procedure",Procedure,ICPC,ICPC2,NA,Z43,1970-01-01,2099-12-31,NA,NA
+1402,"Social Problems, Preventive immunization/medic",Procedure,ICPC,ICPC2,NA,Z44,1970-01-01,2099-12-31,NA,NA
+1403,"Social Problems, Observ/health educat/advice/diet",Procedure,ICPC,ICPC2,NA,Z45,1970-01-01,2099-12-31,NA,NA
+1404,"Social Problems, Consultation primary care provider",Procedure,ICPC,ICPC2,NA,Z46,1970-01-01,2099-12-31,NA,NA
+1405,"Social Problems, Consultation with specialist",Observation,ICPC,ICPC2,NA,Z47,1970-01-01,2099-12-31,NA,NA
+1406,"Social Problems, Clarification/discussion RFE/demand",Observation,ICPC,ICPC2,NA,Z48,1970-01-01,2099-12-31,NA,NA
+1407,"Social Problems, Other preventive procedure",Observation,ICPC,ICPC2,NA,Z49,1970-01-01,2099-12-31,NA,NA
+1408,"Social Problems, Medication/prescr/renewal",Procedure,ICPC,ICPC2,NA,Z50,1970-01-01,2099-12-31,NA,NA
+1409,"Social Problems, I&d/flush/aspiration",Observation,ICPC,ICPC2,NA,Z51,1970-01-01,2099-12-31,NA,NA
+1410,"Social Problems, Exc/remov/biopsy/destruc/debrid/caut",Observation,ICPC,ICPC2,NA,Z52,1970-01-01,2099-12-31,NA,NA
+1411,"Social Problems, Instrument/catheter/intubate/dilate",Observation,ICPC,ICPC2,NA,Z53,1970-01-01,2099-12-31,NA,NA
 1412,"Social Problems, Repair/fix-suture/cast/prosth device",Condition,ICPC,ICPC2,NA,Z54,1970-01-01,2099-12-31,NA,NA
-1413,"Social Problems, Local injection/infiltration",Condition,ICPC,ICPC2,NA,Z55,1970-01-01,2099-12-31,NA,NA
-1414,"Social Problems, Dressing/pressure/compress/tamponade",Condition,ICPC,ICPC2,NA,Z56,1970-01-01,2099-12-31,NA,NA
-1415,"Social Problems, Physical medicine/rehabilitation",Condition,ICPC,ICPC2,NA,Z57,1970-01-01,2099-12-31,NA,NA
-1416,"Social Problems, Therapeutic counselling/listening",Condition,ICPC,ICPC2,NA,Z58,1970-01-01,2099-12-31,NA,NA
-1417,"Social Problems, Other therap proced/minor surg NEC",Condition,ICPC,ICPC2,NA,Z59,1970-01-01,2099-12-31,NA,NA
-1418,"Social Problems, Result test/procedure",Condition,ICPC,ICPC2,NA,Z60,1970-01-01,2099-12-31,NA,NA
-1419,"Social Problems, Result examination/test/record/letter from other provider",Condition,ICPC,ICPC2,NA,Z61,1970-01-01,2099-12-31,NA,NA
-1420,"Social Problems, Administrative procedure",Condition,ICPC,ICPC2,NA,Z62,1970-01-01,2099-12-31,NA,NA
-1421,"Social Problems, Follow-up encounter unspecified",Condition,ICPC,ICPC2,NA,Z63,1970-01-01,2099-12-31,NA,NA
+1413,"Social Problems, Local injection/infiltration",Observation,ICPC,ICPC2,NA,Z55,1970-01-01,2099-12-31,NA,NA
+1414,"Social Problems, Dressing/pressure/compress/tamponade",Observation,ICPC,ICPC2,NA,Z56,1970-01-01,2099-12-31,NA,NA
+1415,"Social Problems, Physical medicine/rehabilitation",Observation,ICPC,ICPC2,NA,Z57,1970-01-01,2099-12-31,NA,NA
+1416,"Social Problems, Therapeutic counselling/listening",Observation,ICPC,ICPC2,NA,Z58,1970-01-01,2099-12-31,NA,NA
+1417,"Social Problems, Other therap proced/minor surg NEC",Observation,ICPC,ICPC2,NA,Z59,1970-01-01,2099-12-31,NA,NA
+1418,"Social Problems, Result test/procedure",Observation,ICPC,ICPC2,NA,Z60,1970-01-01,2099-12-31,NA,NA
+1419,"Social Problems, Result examination/test/record/letter from other provider",Observation,ICPC,ICPC2,NA,Z61,1970-01-01,2099-12-31,NA,NA
+1420,"Social Problems, Administrative procedure",Observation,ICPC,ICPC2,NA,Z62,1970-01-01,2099-12-31,NA,NA
+1421,"Social Problems, Follow-up encounter unspecified",Observation,ICPC,ICPC2,NA,Z63,1970-01-01,2099-12-31,NA,NA
 1422,"Social Problems, Encounter/prob initiated by provider",Condition,ICPC,ICPC2,NA,Z64,1970-01-01,2099-12-31,NA,NA
 1423,"Social Problems, Enc/prob init by other than pt/prov",Condition,ICPC,ICPC2,NA,Z65,1970-01-01,2099-12-31,NA,NA
 1424,"Social Problems, Referral to non-MD provider",Condition,ICPC,ICPC2,NA,Z66,1970-01-01,2099-12-31,NA,NA
@@ -1438,11 +1438,11 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 1437,TENSION HEADACHE,Condition,ICPC,ICPC1,NA,N02,1970-01-01,2099-12-31,NA,NA
 1438,"OVERACTIVE CHILD, HYPERKINETIC",Condition,ICPC,ICPC1,NA,P21,1970-01-01,2099-12-31,NA,NA
 1439,SYMPTOM/COMPLAINT TONSILS,Condition,ICPC,ICPC1,NA,R22,1970-01-01,2099-12-31,NA,NA
-1440,TUBERCULOSIS,Condition,ICPC,ICPC1,NA,R70,1970-01-01,2099-12-31,NA,NA
+1440,TUBERCULOSIS,Measurement,ICPC,ICPC1,NA,R70,1970-01-01,2099-12-31,NA,NA
 1441,CHRONIC BRONCHITIS,Condition,ICPC,ICPC1,NA,R91,1970-01-01,2099-12-31,NA,NA
 1442,PLEURAL EFFUSION,Condition,ICPC,ICPC1,NA,R93,1970-01-01,2099-12-31,NA,NA
 1443,ANOREXIA NERVOSA W/WO BULIMIA,Condition,ICPC,ICPC1,NA,T06,1970-01-01,2099-12-31,NA,NA
 1444,THYROID LUMP/MASS,Condition,ICPC,ICPC1,NA,T15,1970-01-01,2099-12-31,NA,NA
 1445,RENAL GLYCOSURIA,Condition,ICPC,ICPC1,NA,T88,1970-01-01,2099-12-31,NA,NA
-1446,OTHER SYMPTOMS/COMPLAINTS OF BREAST,Condition,ICPC,ICPC1,NA,W20,1970-01-01,2099-12-31,NA,NA
+1446,OTHER SYMPTOMS/COMPLAINTS OF BREAST,Observation,ICPC,ICPC1,NA,W20,1970-01-01,2099-12-31,NA,NA
 1447,OTHER NON-OBSTETRICAL CONDITION,Condition,ICPC,ICPC1,NA,W77,1970-01-01,2099-12-31,NA,NA
