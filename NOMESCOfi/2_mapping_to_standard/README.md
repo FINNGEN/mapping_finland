@@ -68,17 +68,33 @@ Mappings based on USAGI.
 
 <div class="kable-table">
 
-| concept\_id\_1 | concept\_id\_2 | relationship\_id | valid\_start\_date | valid\_end\_date | invalid\_reason | temp\_mapping\_type |
-| -------------: | -------------: | :--------------- | :----------------- | :--------------- | :-------------- | :------------------ |
-|              7 |        4096246 | Maps to          | 1970-01-01         | 2030-12-31       | NA              | USAGI               |
-|             10 |        4184771 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             11 |        4145739 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             11 |        4125350 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             13 |        4082979 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             16 |       46272801 | Maps to          | 2015-07-31         | 2030-12-31       | NA              | USAGI               |
-|             16 |       36713176 | Maps to          | 2017-01-31         | 2030-12-31       | NA              | USAGI               |
-|             16 |        4288538 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             16 |        4244986 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
-|             18 |        4082979 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI               |
+| concept\_id\_1 | concept\_id\_2 | relationship\_id | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_mapping\_type | tmp\_domain\_id\_2 |
+| -------------: | -------------: | :--------------- | :----------------- | :--------------- | :-------------- | :----------------- | :----------------- |
+|             10 |        4184771 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             11 |        4145739 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             11 |        4125350 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             13 |        4082979 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             16 |       46272801 | Maps to          | 2015-07-31         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             16 |       36713176 | Maps to          | 2017-01-31         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             16 |        4288538 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             16 |        4244986 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             18 |        4082979 | Maps to          | 1999-01-01         | 2030-12-31       | NA              | USAGI              | Procedure          |
+|             18 |       37311324 | Maps to          | 2020-03-09         | 2030-12-31       | NA              | USAGI              | Procedure          |
+
+</div>
+
+## Recalculate domain
+
+<div class="kable-table">
+
+| domain\_id          |     n |
+| :------------------ | ----: |
+| Procedure           | 11174 |
+| Observation         |    72 |
+| Measurement         |    21 |
+| Obs/Procedure       |    10 |
+| Metadata            |     6 |
+| Condition           |     5 |
+| Condition/Procedure |     2 |
 
 </div>

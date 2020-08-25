@@ -58,7 +58,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 57,Brain PET,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5AP,2009-01-01,2018-11-30,NA,Aivojen PET
 58,PET-CT of brain,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5AR,2016-01-01,2030-12-31,NA,Aivojen PET-tietokonetomografiatutkimus
 59,Restricted PET-MRI of brain oxygen consumption,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5AS,2014-01-01,2030-12-31,NA,Aivojen hapenkulutuksen suppea PET-magneettitutkimus
-60,CT of cerebral ischaemia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5BD,2016-01-01,2030-12-31,NA,Aivoiskemian tietokonetomografiatutkimus
+60,CT of cerebral ischaemia,Condition,NOMESCOfi,NOMESCOfi Level 3,NA,AA5BD,2016-01-01,2030-12-31,NA,Aivoiskemian tietokonetomografiatutkimus
 61,Extensive brain spectroscopy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5BK,2003-01-01,2030-12-31,NA,Aivojen laaja spektroskopia
 62,Brain blood flow isotope examination,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5CN,2009-01-01,2030-12-31,NA,Aivoperfuusion gammakuvaus
 63,Brain perfusion PET,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,AA5CP,2009-01-01,2018-11-30,NA,Aivojen perfuusion PET
@@ -728,7 +728,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 727,Operation on carotid body,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,BDA10,1900-01-01,2030-12-31,NA,Hankarauhasen leikkaus
 728,Endocrine pancreas,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,BE,2010-01-01,2030-12-31,NA,Endokriininen haima
 729,Endocrine pancreas functioning,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,BEF,2010-01-01,2030-12-31,NA,Endokriiniseen haimaan kohdistuvat tutkimukset
-730,Continuous subcutaneous glucose monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,BEF00,2010-01-01,2030-12-31,NA,Pitkäaikainen ihonalainen glukoosimonitorointi
+730,Continuous subcutaneous glucose monitoring,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,BEF00,2010-01-01,2030-12-31,NA,Pitkäaikainen ihonalainen glukoosimonitorointi
 731,Reoperations in endocrine surgery,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,BW,1900-01-01,2030-12-31,NA,Umpierityselinleikkausten haavakomplikaatioleikkaukset
 732,Repair of wound dehiscence in endocrine surgery,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,BWA00,1900-01-01,2030-12-31,NA,Auenneen tai tulehtuneen umpierityselinleikkaushaavan tarkistaminen
 733,Reoperation for deep haemorrhage in endocrine surgery,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,BWD00,1900-01-01,2030-12-31,NA,Umpierityselinleikkauksen uusintaleikkaus vuodon vuoksi
@@ -2825,7 +2825,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 2824,Examination of structure and blood flow of coronary arteries with high intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1BG,2000-01-01,2030-12-31,NA,Sepelvaltimoiden ja virtausolosuhteiden magneettitutkimus
 2825,Coronary artery structure MRI examination with 3 Tesla magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1BM,2009-01-01,2016-12-31,NA,Sepelvaltimoiden rakenteen arviointi 3 Teslan MT
 2826,Optical coherence tomography of coronary arteries,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1CA,2016-01-01,2030-12-31,NA,Sepelvaltimoiden valokerroskuvaus
-2827,Coronary flow reserve measurement with pressure wire,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1CB,2016-01-01,2030-12-31,NA,Sepelvaltimokierron reservimittaus painevaijerilla
+2827,Coronary flow reserve measurement with pressure wire,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,FN1CB,2016-01-01,2030-12-31,NA,Sepelvaltimokierron reservimittaus painevaijerilla
 2828,Very extensive angiography of heart and/or coronary arteries,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1CC,1999-01-01,2015-12-31,NA,Sydämen ja/tai sepelvaltimoiden erittäin laaja varjoainetutkimus
 2829,Very extensive CT of coronary arteries,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1CD,2003-01-01,2015-12-31,NA,Sepelvaltimoiden erittäin laaja tietokonetomografiatutkimus
 2830,Coranary artery calcifcation measurement with CT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FN1HD,2009-01-01,2030-12-31,NA,Sepelvaltimon kalkkikertymämääritys-TT
@@ -3044,8 +3044,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3043,Ventricular cathetric examination for cardiac arrythmia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP31,1998-01-01,2010-12-31,NA,Sydämen kammioiden katetritutkimus rytmihäiriön takia
 3044,Cathetric treatmen of cardiac arrythmia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP32,1997-01-01,2010-12-31,NA,Sydämen rytmihäiriön katetrihoito
 3045,Simple electrophysiological investigation (e.g. ventricular stimulation),Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP33,2011-01-01,2030-12-31,NA,Yksinkertainen elektrofysiologinen tutkimus (esim. kammiostimulaatio)
-3046,Electrophysiological investigation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP34,2011-01-01,2030-12-31,NA,Elektrofysiologinen tutkimus
-3047,Electroanatomical mapping,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP35,2011-01-01,2030-12-31,NA,Elektroanatominen kartoitus
+3046,Electrophysiological investigation,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,TFP34,2011-01-01,2030-12-31,NA,Elektrofysiologinen tutkimus
+3047,Electroanatomical mapping,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,TFP35,2011-01-01,2030-12-31,NA,Elektroanatominen kartoitus
 3048,Non-contact mapping,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP36,2011-01-01,2030-12-31,NA,Kontaktiton kartoitus
 3049,"Mapping, other method than electroanatomical or non-contact",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP39,2011-01-01,2030-12-31,NA,Muu kartoitusmenetelmä kuin elektroanatominen tai kontaktiton
 3050,Ablation treatment for a-v node re-entry activation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TFP40,2011-01-01,2030-12-31,NA,Eteiskammiosolmukkeen kiertoaktivaation ablaatio
@@ -3157,7 +3157,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3156,Thoracoscopic epicardial ultrasonography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XFE01,1900-01-01,2030-12-31,NA,Ultraäänitutkimus sydämen pinnalta tähystyksessä
 3157,Angioscopic cardiac ultrasonography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XFE12,1900-01-01,1998-11-06,NA,Angioskooppinen sydämen ultraäänitutkimus
 3158,Intraoperative total cardiopulmonary bypass,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,FXA,1900-01-01,2030-12-31,NA,Kehonulkoinen verenkierto
-3159,Total cardiopulmonary bypass in normothermia or moderate hypothermia at concurrent surgical procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FXA00,1900-01-01,2030-12-31,NA,"Täydellinen sydämen ja keuhkojen ohitus normotermia, tai lievä hypotermia"
+3159,Total cardiopulmonary bypass in normothermia or moderate hypothermia at concurrent surgical procedure,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FXA00,1900-01-01,2030-12-31,NA,"Täydellinen sydämen ja keuhkojen ohitus normotermia, tai lievä hypotermia"
 3160,Total cardiopulmonary bypass in deep hypothermia at concurrent surgical procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FXA10,1900-01-01,2030-12-31,NA,"Täydellinen sydämen ja keuhkojen ohitus, syvä hypotermia"
 3161,Total cardiopulmonary bypass in deep hypothermia and exclusive cerebral perfusion,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FXA13,2005-01-01,2030-12-31,NA,"Täydellinen sydämen ja keuhkojen ohitus, syvä hypotermia ja erillinen aivoverenkierron ylläpito"
 3162,Total cardiopulmonary bypass in deep hypothermia and circulatory arrest at concurrent surgical procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FXA20,1900-01-01,2030-12-31,NA,"Täydellinen sydämen ja keuhkojen ohitus, syvä hypotermia ja verenkierron pysäytys"
@@ -3186,10 +3186,10 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3185,Esophageal ECG,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF408,1997-01-01,2030-12-31,NA,Ruokatorvi EKG
 3186,Other special ECG,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF409,1997-01-01,2019-12-31,NA,Muu erityisrekisteröinti EKG
 3187,Other investigations of hearth function,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,FX_3,1900-01-01,2030-12-31,NA,Muut sydämen toiminnan tutkimustoimenpiteet
-3188,Bloodpressure measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF600,1997-01-01,2030-12-31,NA,Verenpaineen mittaus
+3188,Bloodpressure measurement,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XF600,1997-01-01,2030-12-31,NA,Verenpaineen mittaus
 3189,Blood pressure measurement with Doppler method,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF601,1997-01-01,2030-12-31,NA,Verenpaineen mittaus Doppler-ultraäänilaitteen avulla
-3190,Bloodpressure monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF602,1997-01-01,2030-12-31,NA,Verenpaineen pitkäaikaisseuranta
-3191,Direct intraarterial blood pressure measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF603,1998-01-01,2030-12-31,NA,Suora valtimopaineen mittaus
+3190,Bloodpressure monitoring,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XF602,1997-01-01,2030-12-31,NA,Verenpaineen pitkäaikaisseuranta
+3191,Direct intraarterial blood pressure measurement,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XF603,1998-01-01,2030-12-31,NA,Suora valtimopaineen mittaus
 3192,Baroreflex sensitivity measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF604,1997-01-01,2030-12-31,NA,Barorefleksin herkkyyden mittaus
 3193,Ortostatic test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF606,1997-01-01,2030-12-31,NA,Ortostaattinen koe
 3194,Measurement of pulsvariation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XF610,1997-01-01,2030-12-31,NA,Sykevaihtelun mittaaminen
@@ -3460,7 +3460,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3459,Dynamic X-ray examination of respiratory organs with convetional X-ray picture,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD1RA,1999-01-01,2030-12-31,NA,Hengityselimistön läpivalaisu ja natiiviröntgen
 3460,Lung tissue SPECT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD1SN,2009-01-01,2020-03-31,NA,Keuhkoparenkyymin SPET lisäkuvauksena
 3461,Thorax X-ray examination outside radiological department,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD1UA,1999-01-01,2030-12-31,NA,Thoraxin röntgen radiologian yksikön ulkopuolella
-3462,Lung circulation SPECT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD1UN,2009-01-01,2030-12-31,NA,Keuhkoperfuusion SPET
+3462,Lung circulation SPECT,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,GD1UN,2009-01-01,2030-12-31,NA,Keuhkoperfuusion SPET
 3463,Other CT-examinaiton of thorax,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD1XD,1999-01-01,2003-11-04,NA,Rintakehän muu TT
 3464,Thorax and upper abdomen combined CT examination of,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD5AD,2003-01-01,2030-12-31,NA,Thoraxin ja ylävatsan tietokonetomografiatutkimus
 3465,Thorax and upper abdomen combined extensive CT examination of,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD5BD,2003-01-01,2030-12-31,NA,Thoraxin ja ylävatsan laaja tietokonetomografiatutkimus
@@ -3553,7 +3553,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3552,Cytology of the lungs with X-ray guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD2BT,1999-01-01,2030-12-31,NA,Keuhkon solunäytteen otto LPV-ohjauksessa
 3553,Cytology of the lungs with CT guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD2CT,1999-01-01,2030-12-31,NA,Keuhkon solunäytteen otto TT-ohjauksessa
 3554,Lung ventilation distribution isotope examination (radiospirometry),Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD2FN,2009-01-01,2030-12-31,NA,Keuhkojen alueellisen toiminnan gammakuvaus
-3555,Lung ventilation SPECT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD2SN,2009-01-01,2030-12-31,NA,Keuhkoventilaation SPET
+3555,Lung ventilation SPECT,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,GD2SN,2009-01-01,2030-12-31,NA,Keuhkoventilaation SPET
 3556,Cytology evaluation of sputum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD3A3,2020-01-01,2030-12-31,NA,Ysköksen irtosolututkimus
 3557,Labeling lungs with CT guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD3CT,2000-01-01,2030-12-31,NA,Keuhkon merkkaus TT-ohjauksessa
 3558,Scintigraphy of lung and brain circulation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GD3PN,2017-01-01,2030-12-31,NA,Keuhkojen ja aivojen verenkierron gammakuvaus
@@ -3658,8 +3658,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3657,Other clinicophysiological assessment of respiratory function,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,GX5B5,2020-01-01,2030-12-31,NA,Muu hengitysfunktion kliinis-fysiologinen tutkimus
 3658,Analysis of respiratory sounds,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG400,1997-01-01,2030-12-31,NA,Hengitysäänianalyysi
 3659,Peak expiratory flow (PEF) measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG404,1998-01-01,2019-12-31,NA,Uloshengityksen huippuvirtausmittaus
-3660,Education on PEF monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG405,2006-01-01,2030-12-31,NA,Peak expir.flow-seurantaopetus
-3661,Flow-volume spirometry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG410,1997-01-01,2019-12-31,NA,Virtaus-tilavuus spirometria
+3660,Education on PEF monitoring,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XG405,2006-01-01,2030-12-31,NA,Peak expir.flow-seurantaopetus
+3661,Flow-volume spirometry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XG410,1997-01-01,2019-12-31,NA,Virtaus-tilavuus spirometria
 3662,Flow-volume spirometry with bronchospasmolysis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG412,1997-01-01,2019-12-31,NA,Virtaus-tilavuusspirometria ja bronkodilataatiokoe
 3663,Spirometry with oscillometry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG413,2006-01-01,2019-12-31,NA,Keuhkojen oskillometrinen impedanssi
 3664,Measurement of maximal airway pressure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG416,1997-01-01,2019-12-31,NA,Maksimaalisten hengitystiepaineiden mittaus
@@ -3672,16 +3672,16 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 3671,Spirometry with blood gass analysis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG434,1997-01-01,2030-12-31,NA,Spiroergometria ja verikaasuarvojen seuranta
 3672,Total body pletysmography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG440,1997-01-01,2019-12-31,NA,Koko vartalon pletysmografia
 3673,Total body pletysmography with bronchodilatation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG442,1997-01-01,2019-12-31,NA,Koko vartalon pletysmografia ja bronkodilataatiokoe
-3674,Short time oxymetry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG460,1997-01-01,2019-12-31,NA,Lyhytaikainen oksimetria
+3674,Short time oxymetry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XG460,1997-01-01,2019-12-31,NA,Lyhytaikainen oksimetria
 3675,Examination of perfusion of lungs with multichannel device,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG462,1997-01-01,2019-12-31,NA,Keuhkoperfuusion moni-ilmaisintutkimus
 3676,Examination of ventilation in lungs with multichanne device,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG464,1997-01-01,2019-12-31,NA,Keuhkoventilaation moni-ilmaisintutkimus
-3677,Sleep oxymetry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG466,1997-01-01,2019-12-31,NA,Unioksimetria
+3677,Sleep oxymetry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XG466,1997-01-01,2019-12-31,NA,Unioksimetria
 3678,Nocturnal CO2 monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG467,2019-01-01,2019-12-31,NA,Yöllinen CO2-seuranta
-3679,Measurement of diffusion capastity of the lungs,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG470,1997-01-01,2019-12-31,NA,Diffuusiokapasiteetti
+3679,Measurement of diffusion capastity of the lungs,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XG470,1997-01-01,2019-12-31,NA,Diffuusiokapasiteetti
 3680,Single breath nitrography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG472,1997-01-01,2030-12-31,NA,Yhden henkäyksen nitrografia
 3681,Exhalation nntrogen oxide,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG474,1997-01-01,2019-12-31,NA,Uloshengityksen typpioksidianalyysi
 3682,Testing of controll of respiration and C02 stimulaition,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG476,1997-01-01,2030-12-31,NA,Hengityksen säätely ja CO2 stimulaatio
-3683,Histamine provocation of respiratroy tract,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG480,1997-01-01,2030-12-31,NA,Hengitysteiden epäspesifinen altistuskoe (histamiinikoe)
+3683,Histamine provocation of respiratroy tract,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XG480,1997-01-01,2030-12-31,NA,Hengitysteiden epäspesifinen altistuskoe (histamiinikoe)
 3684,Other provokation of respiratroy tract,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG488,1998-01-01,2019-12-31,NA,Hengitysteiden muu altistuskoe
 3685,Other fysiological examination of respiatory function,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XG499,1998-01-01,2019-12-31,NA,Muu hengitysfunktion kliinis-fysiologinen tutkimus
 3686,Other procedures of thorax,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,GX_3,1900-01-01,2030-12-31,NA,Muut rintaontelon toimenpiteet
@@ -4010,7 +4010,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4009,"Intensified psychiatric outpatient care, Assertive Community Treatment (ACT)",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY02,2018-01-01,2030-12-31,NA,"Tehostettu psykiatrinen avohoito, Assertive Community Treatment (ACT)"
 4010,Vocational rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY03,2018-01-01,2030-12-31,NA,Ammatillinen kuntoutus
 4011,Psychiatric neuropsychological rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY04,2018-01-01,2030-12-31,NA,Psykiatrian neuropsykologinen kuntoutus
-4012,"Dedicated profession-specific psychiatric intervention, individual",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY05,2018-01-01,2030-12-31,NA,"Psykiatrian ammattikohtainen erityisinterventio, yksilö"
+4012,"Dedicated profession-specific psychiatric intervention, individual",Observation,NOMESCOfi,NOMESCOfi Level 3,NA,IEY05,2018-01-01,2030-12-31,NA,"Psykiatrian ammattikohtainen erityisinterventio, yksilö"
 4013,Psychiatric treatment and rehabilitation coaching,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY06,2018-01-01,2030-12-31,NA,Psykiatrinen hoito- ja kuntoutusvalmennus
 4014,Psychiatric job coaching,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY07,2018-01-01,2030-12-31,NA,Psykiatrinen työvalmennus
 4015,"Psychiatric coaching, domestic and community skills",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IEY08,2018-01-01,2030-12-31,NA,Psykiatrinen asumis- ja asioimistaitojen valmennus
@@ -4104,8 +4104,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4103,Psychiatric network contact,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IGV01,2018-01-01,2030-12-31,NA,Psykiatrinen verkostokontakti
 4104,"Other person-centred treatment, assessment and monitoring",Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,IGY,2018-01-01,2030-12-31,NA,"Muu yksilökeskeinen hoito, selvittely ja seuranta"
 4105,Accelerated psychiatric treatment contact,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IGY01,2018-01-01,2030-12-31,NA,Nopeutettu psykiatrinen hoitokontakti
-4106,Psychiatric monitoring contact,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IGY02,2018-01-01,2030-12-31,NA,Psykiatrinen seurantakontakti
-4107,Other psychiatric treatment contact,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IGY99,2018-01-01,2030-12-31,NA,Muu psykiatrinen hoitokontakti
+4106,Psychiatric monitoring contact,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,IGY02,2018-01-01,2030-12-31,NA,Psykiatrinen seurantakontakti
+4107,Other psychiatric treatment contact,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,IGY99,2018-01-01,2030-12-31,NA,Muu psykiatrinen hoitokontakti
 4108,Mental health and addiction services in primary care,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,IH,2018-01-01,2030-12-31,NA,Perustason mielenterveys- ja päihdepalvelut
 4109,Treatment and rehabilitation of addiction in primary care,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,IHA,2018-01-01,2030-12-31,NA,Riippuvuuden hoito ja kuntoutus perustasolla
 4110,Assessment of drug/alcohol intoxication,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,IHA01,2018-01-01,2030-12-31,NA,Huume-/humalatilatutkimus
@@ -4380,7 +4380,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4379,Other endoscopic procedure for hemostasis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA42,1900-01-01,2030-12-31,NA,Muu ruokatorven vuodon tyrehdyttäminen tähystyksessä
 4380,Endoscopic mucosal or submucosal resection in oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA45,2009-01-01,2030-12-31,NA,Endoskooppinen mukoresektio (EMR) ruokatorvessa
 4381,Other endoscopic procedure using diathermy or heat in oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA52,1900-01-01,2030-12-31,NA,Muu ruokatorven paikallinen lämpökäsittely tähystyksessä
-4382,Endoscopic dilatation of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA55,1900-01-01,2030-12-31,NA,Ruokatorven ahtautuman tai ruokatorviliitoksen laajennus tähystyksessä
+4382,Endoscopic dilatation of oesophagus,Condition/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA55,1900-01-01,2030-12-31,NA,Ruokatorven ahtautuman tai ruokatorviliitoksen laajennus tähystyksessä
 4383,Transcervical excision of diverticulum of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA60,1900-01-01,2030-12-31,NA,Ruokatorven umpipussin leikkaus kaula-avauksesta
 4384,Other local operation on oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA96,1900-01-01,2030-12-31,NA,Muu ruokatorven avaus tai paikallinen toimenpide
 4385,Other local thoracoscopic or laparoscopic operation on oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JCA97,1900-01-01,2030-12-31,NA,Muu ruokatorven aukaisu tai paikallinen toimenpide rinta- tai vatsaontelon tähystyksessä
@@ -4434,9 +4434,9 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4433,Profylactic radiotherapy of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JC090,1997-01-01,2010-12-31,NA,Sädehoito ruokatorven profylaktisena hoitona
 4434,Other radiotherapy of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JC099,1997-01-01,2010-12-31,NA,Muu ruokatorven sädehoito
 4435,Physiological examinations of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JC_2,1900-01-01,2030-12-31,NA,Ruokatorven fysiologiset tutkimukset
-4436,Oesophageal manometry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJC00,1900-01-01,2030-12-31,NA,Ruokatorven painemittaus
+4436,Oesophageal manometry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XJC00,1900-01-01,2030-12-31,NA,Ruokatorven painemittaus
 4437,Mesurement of oesophageal pressure and pressure profile of lower oesophageal sphincter,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJC02,1998-01-01,2030-12-31,NA,Ruokatorven paineenmittaus ja ruokatorven alemman sulkijalihaksen paineprofiili
-4438,Oesophageal pH monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJC10,1900-01-01,2030-12-31,NA,"Ruokatorven happamuuden jatkuva mittaus, pH-monitorointi"
+4438,Oesophageal pH monitoring,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XJC10,1900-01-01,2030-12-31,NA,"Ruokatorven happamuuden jatkuva mittaus, pH-monitorointi"
 4439,Follow-up of esophagus function and pressure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJC15,1999-01-01,2030-12-31,NA,Ruokatorven toiminnan ja paineen seuranta
 4440,Oesophageal electromyography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJC20,1900-01-01,2030-12-31,NA,"Ruokatorven lihassähkötutkimus, EMG"
 4441,Other procedures of oesophagus,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JC_3,1900-01-01,2030-12-31,NA,Muut ruokatorven toimenpiteet
@@ -4831,10 +4831,10 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4830,Excision of rectum,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JGB,1900-01-01,2030-12-31,NA,Peräsuolen typistysleikkaukset
 4831,Partial proctectomy and colorectal or coloanal anastomosis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB00,1900-01-01,2011-12-31,NA,"Peräsuolen typistys, anteriorinen resektio"
 4832,Laparoscopic partial proctectomy and colorectal or coloanal anastomosis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB01,1900-01-01,2011-12-31,NA,Peräsuolen typistys vatsaontelon tähystyksessä
-4833,Partial proctectomy with partial excision of mesorectum ,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB03,2012-01-01,2030-12-31,NA,Peräsuolen ja mesorektumin typistys
-4834,Laparoscopic partial proctectomy with partial excision of mesorectum ,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB04,2012-01-01,2030-12-31,NA,Peräsuolen ja mesorektumin typistys tähystyksessä
-4835,Partial proctectomy with total excision of mesorectum ,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB06,2012-01-01,2030-12-31,NA,Peräsuolen typistys ja mesorektumin poisto
-4836,Laparoscopic partial proctectomy with total excision of mesorectum ,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB07,2012-01-01,2030-12-31,NA,Peräsuolen typistys ja mesorektumin poisto tähystyksessä
+4833,Partial proctectomy with partial excision of mesorectum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB03,2012-01-01,2030-12-31,NA,Peräsuolen ja mesorektumin typistys
+4834,Laparoscopic partial proctectomy with partial excision of mesorectum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB04,2012-01-01,2030-12-31,NA,Peräsuolen ja mesorektumin typistys tähystyksessä
+4835,Partial proctectomy with total excision of mesorectum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB06,2012-01-01,2030-12-31,NA,Peräsuolen typistys ja mesorektumin poisto
+4836,Laparoscopic partial proctectomy with total excision of mesorectum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB07,2012-01-01,2030-12-31,NA,Peräsuolen typistys ja mesorektumin poisto tähystyksessä
 4837,Partial proctectomy and end colostomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB10,1900-01-01,2030-12-31,NA,"Perä- ja sigmasuolen typistys, sigma-avanne ja peräsuolityngän sulku (Hartmann)"
 4838,Laparoscopic partial proctectomy and end colostomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB11,1900-01-01,2030-12-31,NA,"Perä- ja sigmasuolen typistys, sigma-avanne ja peräsuolen sulku (Hartmann) vatsaontelon tähystyksessä"
 4839,Partial rectosigmoidectomy and abdominoperineal pull-through anastomosis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JGB20,1900-01-01,2030-12-31,NA,Peräsuolen ja sigmasuolen typistys ja koolo-anaalinen läpivetoliitos
@@ -4939,7 +4939,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 4938,Anoscopy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,UJH02,1900-01-01,2030-12-31,NA,Peräaukon tähystys
 4939,Other diagnostic procedures of anus and perianal tissue,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JH_3,1900-01-01,2030-12-31,NA,Muut peräaukon diagnostiset toimenpiteet
 4940,Extensive MRI of perianal area,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JH1CG,2006-01-01,2030-12-31,NA,Perianaalialueen laaja magneettitutkimus
-4941,Anorectal manometry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJH10,1900-01-01,2030-12-31,NA,Peräaukon/suolen painemittaus
+4941,Anorectal manometry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XJH10,1900-01-01,2030-12-31,NA,Peräaukon/suolen painemittaus
 4942,Electromyography of anal sphincter,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XJH20,1900-01-01,2030-12-31,NA,"Peräaukon sulkijan lihassähkötutkimus, EMG"
 4943,Liver,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,JJ,1900-01-01,2030-12-31,NA,Maksa
 4944,Diagnostic radiology of liver,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JJ_,1900-01-01,2030-12-31,NA,Maksan diagnostinen radiologia
@@ -5104,7 +5104,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 5103,Catherisation of bile duct with ultrasound guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3AT,1999-01-01,2030-12-31,NA,Sappiteiden kanavointi UÄ-ohjauksessa
 5104,Catherisation of bile duct with X-ray guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3BT,1999-01-01,2030-12-31,NA,Sappiteiden kanavointi LPV-ohjauksessa
 5105,Catherisation of bile duct with CT guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3CT,1999-01-01,2030-12-31,NA,Sappiteiden kanavointi TT-ohjauksessa
-5106,Exchange of bile duct catheter with radiological guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3FT,1999-01-01,2030-12-31,NA,Sappitiekatetrin vaihto radiologisessa ohjauksessa
+5106,Exchange of bile duct catheter with radiological guidance,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,JK3FT,1999-01-01,2030-12-31,NA,Sappitiekatetrin vaihto radiologisessa ohjauksessa
 5107,Coagulation of biliary tract under radiological guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3LT,2006-01-01,2030-12-31,NA,Sappiteiden koagulaatio radiologisessa ohjauksessa
 5108,Percutaneous transhepatic dilatation of bileducts,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3NT,1999-01-01,2030-12-31,NA,Sappiteiden laajentaminen maksan läpi radiologisessa ohjauksessa
 5109,Percutaneous transhepatic removal of stones from bile ducts,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JK3RT,1999-01-01,2030-12-31,NA,Sappiteiden kivien ja vierasesineiden poisto maksan läpi (PTC) radiologisessa ohjauksessa
@@ -5222,7 +5222,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 5221,Spleen and accessory spleen SPECT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JM1SN,2009-01-01,2030-12-31,NA,Pernan ja lisäpernan SPET
 5222,Splenectomy,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JMA,1900-01-01,2030-12-31,NA,Pernan poistoleikkaukset
 5223,Partial splenectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JMA00,1900-01-01,2030-12-31,NA,Pernan typistys
-5224,Transabdominal total splenectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JMA10,1900-01-01,2030-12-31,NA,Pernan poisto vatsaontelotietä
+5224,Transabdominal total splenectomy,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JMA10,1900-01-01,2030-12-31,NA,Pernan poisto vatsaontelotietä
 5225,Laparoscopic total splenectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JMA11,1900-01-01,2030-12-31,NA,Pernan poisto vatsaontelon tähystyksessä
 5226,Transthoracic total splenectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,JMA20,1900-01-01,2030-12-31,NA,Pernan poisto rintaontelon kautta
 5227,Miscellaneous operations on spleen,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,JMB,1900-01-01,2030-12-31,NA,Koepalan otot pernasta ja pernan ompelut
@@ -5829,7 +5829,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 5828,Endoscopy of urethra,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,KD_2,1900-01-01,2030-12-31,NA,Virtsaputken tähystykset
 5829,Urethroscopy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,UKD02,1900-01-01,2030-12-31,NA,Virtsaputken tähystys
 5830,Physiologic diagnostic procedures of urethra,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,KD_3,1900-01-01,2030-12-31,NA,Virtsaputken diagnostiset toimenpiteet
-5831,Uroflowmetry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XKD00,1900-01-01,2030-12-31,NA,"Virtsasuihkun virtausmittaus, flowmetria"
+5831,Uroflowmetry,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XKD00,1900-01-01,2030-12-31,NA,"Virtsasuihkun virtausmittaus, flowmetria"
 5832,Urethral pressure profilometry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XKD03,1900-01-01,2030-12-31,NA,Virtsaputken paineprofiilin mittaus
 5833,Physiologic investigation of micturition,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XKD06,1900-01-01,2030-12-31,NA,"Virtsaamistutkimus (paine, virtaus)"
 5834,Transurethral ultrasonography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XKD10,1900-01-01,2030-12-31,NA,Ultraäänitutkimus virtsaputken kautta
@@ -6124,7 +6124,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6123,Pelvic floor electromyography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XKX00,1900-01-01,2030-12-31,NA,Lantion pohjan EMG tutkimus
 6124,Other diagnostic procedures related to urinary organs,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,KX_3,1900-01-01,2030-12-31,NA,"Muut virtsateiden, miehen sukuelinten tai vatsaontelon takaisen tilan diagnostiset toimenpiteet"
 6125,Transrectal gold marker implantation in prostate under ultrasound guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,KE3AT,2010-01-01,2030-12-31,NA,Eturauhasen kultajyvämerkkaus UÄ-ohjauksessa peräsuolen kautta
-6126,Other minor surgical procedure in urology,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TKW99,1900-01-01,2030-12-31,NA,Muu virsateiden ja miehen sukuelinten pientoimenpide
+6126,Other minor surgical procedure in urology,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,TKW99,1900-01-01,2030-12-31,NA,Muu virsateiden ja miehen sukuelinten pientoimenpide
 6127,Female genital organs,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,L,1900-01-01,2030-12-31,NA,Naisen sukuelimet
 6128,Ovary,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,LA,1900-01-01,2030-12-31,NA,Munasarjat
 6129,Diagnostic radiology of ovary,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,LA_,1900-01-01,2030-12-31,NA,Munasarjan diagnostinen radiologia
@@ -6166,7 +6166,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6165,Partial excision of ovary,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAD00,1900-01-01,2030-12-31,NA,Munasarjan osan poisto
 6166,Laparoscopic partial excision of ovary,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAD01,1900-01-01,2030-12-31,NA,Munasarjan osan poisto vatsaontelon tähystyksessä
 6167,Total excision of ovary,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,LAE,1900-01-01,2030-12-31,NA,Munasarjojen poistot
-6168,Unilateral oophorectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAE10,1900-01-01,2030-12-31,NA,Toisen munasarjan poisto
+6168,Unilateral oophorectomy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,LAE10,1900-01-01,2030-12-31,NA,Toisen munasarjan poisto
 6169,Unilateral laparoscopic oophorectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAE11,1900-01-01,2030-12-31,NA,Toisen munasarjan poisto vatsaontelon tähystyksessä
 6170,Bilateral oophorectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAE20,1900-01-01,2030-12-31,NA,Munasarjojen poisto
 6171,Bilateral laparoscopic oophorectomy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LAE21,1900-01-01,2030-12-31,NA,Munasarjojen poisto vatsaontelon tähystyksessä
@@ -6511,7 +6511,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6510,Other operation on vulva or perineum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LFW96,1997-01-01,2030-12-31,NA,Muu ulkosynnyttimien ja välilihan leikkaus
 6511,Female sterilisation and fertilisation,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,LG,1900-01-01,2030-12-31,NA,Naisen sterilisaatio ja hedelmättömyyshoidot
 6512,Assited fertilisation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,LG_,1900-01-01,2030-12-31,NA,Hedelmöityshoidot
-6513,Insemination,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TLW00,1997-01-01,2030-12-31,NA,Inseminaatio
+6513,Insemination,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,TLW00,1997-01-01,2030-12-31,NA,Inseminaatio
 6514,Transfer of fresh embryo,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TLW10,1997-01-01,2030-12-31,NA,Tuoreen alkion siirto tavanomaisella tekniikalla
 6515,Transmyometral transfer of embryo,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TLW11,2009-01-01,2030-12-31,NA,Transmyometraalinen alkion siirto
 6516,Insertion of frozen embryo,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TLW12,1998-01-01,2030-12-31,NA,Pakastettuna säilytetyn alkion siirto
@@ -6552,7 +6552,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6551,Coagulation of female reproductive organs under radiological guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LX1LT,2006-01-01,2030-12-31,NA,Synnytyselinten koagulaatio radiologisessa ohjauksessa
 6552,"Gynaecological cytology evaluation, screening",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,LX2A3,2020-01-01,2030-12-31,NA,"Gynekologinen irtosolututkimus, seulonta"
 6553,Other minor surgical procedure in gynaecology,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TLW99,1900-01-01,2030-12-31,NA,Muu naisen sukuelinten pientoimenpide
-6554,Obstetrics,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,M,1900-01-01,2030-12-31,NA,Obstetriset toimenpiteet
+6554,Obstetrics,Observation,NOMESCOfi,NOMESCOfi Level 0,NA,M,1900-01-01,2030-12-31,NA,Obstetriset toimenpiteet
 6555,Pregnancy and at delivery,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,MA,1900-01-01,2030-12-31,NA,Raskaus ja synnytys
 6556,Diagnostic radiology in pregnancy and at delivery,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,MA_,1900-01-01,2030-12-31,NA,Raskauden ja synnytyksen aikainen diagnostinen radiologia
 6557,Ultrasound examination of fetal heart,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,FM1NE,1999-01-01,2030-12-31,NA,Sikiön sydämen ultraäänitutkimus
@@ -6646,7 +6646,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6645,Other transluminal endoscopic operation in pregnancy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MAW98,1900-01-01,2030-12-31,NA,Muu raskaus- tai synnytystoimenpide synnytyselinten sisätilan tähystyksessä
 6646,Other diagnostic procedure in pregnancy and at delivery,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,MA_2,1900-01-01,2030-12-31,NA,Muut raskauden ja synnytyksen aikaiset diagnostiset toimenpiteet
 6647,Early examination of pregnancy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XMA20,1997-01-01,2030-12-31,NA,Varhaisraskauden tutkimus
-6648,General examination of pregnant woman,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XMA22,1997-01-01,2030-12-31,NA,Raskauden yleistutkimus
+6648,General examination of pregnant woman,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XMA22,1997-01-01,2030-12-31,NA,Raskauden yleistutkimus
 6649,Other procedures in pregnancy and at delivery,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,MA_3,1900-01-01,2030-12-31,NA,Muut raskauden ja synnytyksen aikaiset toimenpiteet
 6650,Assistance to normal delivery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MAX99,2004-01-01,2030-12-31,NA,Normaalin synnytyksen avustaminen
 6651,Histological assessment of placenta,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MA4D3,2020-01-01,2030-12-31,NA,Istukan histologinen tutkimus
@@ -6667,7 +6667,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 6666,Expression of placenta,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBA20,1900-01-01,2030-12-31,NA,Istukan ulospuristaminen Creden ottein
 6667,Manual removal of placenta from delivered uterus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBA30,1900-01-01,2030-12-31,NA,Istukan ja sikiökalvojen käsinirroitus
 6668,Pharmacological evacuation of uterus after abortion,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBA40,2011-01-01,2030-12-31,NA,Lääkkeellinen kohdun tyhjennys keskenmenon jälkeen
-6669,Other removal of retained products of conception after delivery or abortion,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBA96,1900-01-01,2030-12-31,NA,Muu kohtuun jääneiden hedelmöitystuotteiden poisto synnytyksen tai keskenmenon jälkeen
+6669,Other removal of retained products of conception after delivery or abortion,Condition,NOMESCOfi,NOMESCOfi Level 3,NA,MBA96,1900-01-01,2030-12-31,NA,Muu kohtuun jääneiden hedelmöitystuotteiden poisto synnytyksen tai keskenmenon jälkeen
 6670,Minor procedures after delivery or abortion,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,MBB,1900-01-01,2030-12-31,NA,Synnytyksen tai keskenmenon jälkeiset pientoimenpiteet
 6671,Manual repositioning of inverted delivered uterus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBB00,1900-01-01,2030-12-31,NA,Nurinkääntyneen kohdun sisääntyöntö
 6672,Packing of delivered uterus,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,MBB10,1900-01-01,2030-12-31,NA,Kohtuontelon vuodon tukkiminen liinalla
@@ -8121,7 +8121,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 8120,Very extensive MRI examination of extremities with high intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3DG,1999-01-01,2030-12-31,NA,Raajojen erittäin laaja magneettitutkimus
 8121,Very extensive MRI examination of extremities with 3 Tesla magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3DM,2009-01-01,2016-12-31,NA,Raajojen erittäin laaja 3 Teslan MT
 8122,Measurement of extremity length with X-ray,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3MA,1999-01-01,2030-12-31,NA,Raajojen pituusmittausröntgen
-8123,Measurement of difference in extremity lengty with X-ray,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3NA,1999-01-01,2030-12-31,NA,Raajojen pituuseromittausröntgen
+8123,Measurement of difference in extremity lengty with X-ray,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3NA,1999-01-01,2030-12-31,NA,Raajojen pituuseromittausröntgen
 8124,Other CT examination of extremities and joints,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NJ3XD,1999-01-01,2002-11-12,NA,Raajojen ja nivelten TT muulla tekniikalla
 8125,Spectroscopy of muscles,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NK1AK,1999-01-01,2030-12-31,NA,Lihasten spektroskopia
 8126,Muscle perfusion PET,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,NK1CP,2009-01-01,2018-11-30,NA,Lihaksen perfuusion PET
@@ -8240,7 +8240,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 8239,"Soft bandage, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX30,1997-01-01,2030-12-31,NA,Pehmeä sidos
 8240,"Prefabricated orthosis, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX31,1997-01-01,2030-12-31,NA,"Kova, esivalmistettu sidos"
 8241,"Custom moulded splint, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX32,1997-01-01,2030-12-31,NA,Muovailtava lasta
-8242,"Custom moulded cast, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX33,1997-01-01,2030-12-31,NA,Muovailtava sidos
+8242,"Custom moulded cast, unspecified region",Observation,NOMESCOfi,NOMESCOfi Level 3,NA,TNX33,1997-01-01,2030-12-31,NA,Muovailtava sidos
 8243,"Major custom molded cast, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX34,1997-01-01,2030-12-31,NA,Laaja muovailtava sidos
 8244,"Other orthopedic bandage, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX39,1997-01-01,2030-12-31,NA,Muu ortopedinen sidos
 8245,"External traction, unspecified region",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX40,1997-01-01,2030-12-31,NA,Raajavedon asettaminen
@@ -8249,7 +8249,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 8248,Dynamic splint of upper limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX90,1900-01-01,2030-12-31,NA,Dynaaminen yläraajalasta
 8249,Supporting bandage or orthosis of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX92,1900-01-01,2030-12-31,NA,Alaraajan tukisidos tai ortoosi
 8250,Preprothesis of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX94,1900-01-01,2030-12-31,NA,Alaraajan varhaisproteesi
-8251,Other orthopaedic minor procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TNX99,1998-01-01,2030-12-31,NA,Muu ortopedinen pientoimenpide
+8251,Other orthopaedic minor procedure,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,TNX99,1998-01-01,2030-12-31,NA,Muu ortopedinen pientoimenpide
 8252,Prophylactic measures and health promotion,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,O,2018-01-01,2030-12-31,NA,Ehkäisevä toiminta ja terveyden edistäminen
 8253,Health checks and guidance,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,OA,2018-01-01,2030-12-31,NA,Terveystarkastukset ja neuvonta
 8254,Health checks,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,OAA,2018-01-01,2030-12-31,NA,Terveystarkastukset
@@ -9493,7 +9493,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9492,Puncture of skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQB05,2011-01-01,2030-12-31,NA,Vartalon ihon pisto
 9493,Procedures for wounds of skin,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QBB,1900-01-01,2030-12-31,NA,Vartalon ihohaavojen ompelut ja siteenvaihdot
 9494,Suture of skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QBB00,1900-01-01,2030-12-31,NA,Vartalon ihohaavan ompelu
-9495,Revision of wound of skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QBB05,1997-01-01,2030-12-31,NA,Vartalon syvän ihohaavan revisio ja mahdollinen sulku
+9495,Revision of wound of skin of trunk,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QBB05,1997-01-01,2030-12-31,NA,Vartalon syvän ihohaavan revisio ja mahdollinen sulku
 9496,Major dressing of wound of skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QBB10,1900-01-01,2030-12-31,NA,Vartalon ihohaavan tarkistus ja siteenvaihto
 9497,Other procedure for wound of skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QBB99,1900-01-01,2030-12-31,NA,Muu vartalon ihohaavan ompelu tai siteenvaihto
 9498,Removal of foreign body from skin of trunk,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QBC,1900-01-01,2030-12-31,NA,Vartalon ihon vierasesineiden poistot
@@ -9634,7 +9634,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9633,Operations for chronic ulcers and fistulae of skin of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QDG,1900-01-01,2030-12-31,NA,Alaraajojen kroonisten haavojen ja avanteiden leikkaukset
 9634,Debridement of bedsore of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG00,1900-01-01,2030-12-31,NA,"Alaraajan painehaavan puhdistusleikkaus, débridement"
 9635,Excision and repair of bedsore of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG10,1900-01-01,2030-12-31,NA,Alaraajan painehaavan poisto ja korjaus
-9636,Operation for chronic ulcer or fistula of skin of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG20,1900-01-01,2030-12-31,NA,Alaraajan kroonisen haavan leikkaus
+9636,Operation for chronic ulcer or fistula of skin of lower limb,Condition/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG20,1900-01-01,2030-12-31,NA,Alaraajan kroonisen haavan leikkaus
 9637,Delayed skin closure of surgical wound in lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG30,1900-01-01,2030-12-31,NA,Alaraajan ihon leikkaushaavan suunniteltu myöhäissulku
 9638,Other operation for chronic ulcer or fistula of skin of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QDG99,1900-01-01,2030-12-31,NA,Muu alaraajan kroonisen haavan tai avanteen leikkaus
 9639,Operations on toe nails,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QDH,1900-01-01,2030-12-31,NA,Varpaan kynsien toimenpiteet
@@ -9695,7 +9695,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9694,"Skin wound suturation, unspecified location",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QXB00,2004-01-01,2030-12-31,NA,"Ihohaavan ompelu, paikkaa ei määritelty"
 9695,"Skin wound assessment, unspecified location",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QXB05,2004-01-01,2030-12-31,NA,"Ihohaavan tarkistaminen, paikkaa ei määritelty"
 9696,"Exchange of dressing for large skin wound, unspecified location",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QXB10,2004-01-01,2030-12-31,NA,"Suuren ihohaavan sidevaihto, paikkaa ei määritelty"
-9697,"Other procedure to treat skin wound, unspecified location",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QXB99,2004-01-01,2030-12-31,NA,"Muu ihohaavan hoitotoimenpide, paikkaa ei määritelty"
+9697,"Other procedure to treat skin wound, unspecified location",Observation,NOMESCOfi,NOMESCOfi Level 3,NA,QXB99,2004-01-01,2030-12-31,NA,"Muu ihohaavan hoitotoimenpide, paikkaa ei määritelty"
 9698,Removal of foreign body,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QXC,1900-01-01,2030-12-31,NA,"Ihon vierasesineiden poistot, paikkaa ei määritetly"
 9699,Removal of foreign body from unspecified region of skin or subcutaneous tissue,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QXC00,2004-01-01,2030-12-31,NA,"Pinnallisen vierasesineen poisto, paikkaa ei määritelty"
 9700,Removal of foreign body close to skin with radiological guidance,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QX2ZT,2000-01-01,2030-12-31,NA,Pinnallisen vierasesineen poisto radiologisessa ohjauksessa
@@ -9727,9 +9727,9 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9726,Radiotherapy of skin,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QX0,1900-01-01,2030-12-31,NA,Ihon sädehoito
 9727,Whole skin radiotherapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,QX099,1997-01-01,2030-12-31,NA,Koko ihon sädehoito
 9728,Other diagnostic procedures of skin,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,QX_2,1900-01-01,2030-12-31,NA,Ihon muut tutkimukset
-9729,Prick test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ800,1997-01-01,2030-12-31,NA,Prick-testi
+9729,Prick test,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XQ800,1997-01-01,2030-12-31,NA,Prick-testi
 9730,Intracutantest,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ801,2009-01-01,2030-12-31,NA,Intrakutaanitesti
-9731,Epicutan test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ802,1997-01-01,2030-12-31,NA,Epikutaanitesti
+9731,Epicutan test,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XQ802,1997-01-01,2030-12-31,NA,Epikutaanitesti
 9732,Photopatchtest of photoallergen,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ805,2009-01-01,2030-12-31,NA,Valoepikutaanitesti
 9733,Minimal Erythema Dose (MED) test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ806,2010-01-01,2030-12-31,NA,Punekynnyskoe (MED-testi)
 9734,Minimal Phototoxic Dose (MPD) test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ807,2010-01-01,2030-12-31,NA,Valotoksisuuskynnyskoe (MPD-testi)
@@ -9753,7 +9753,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9752,Digital dermatoscopy and registration of nevi,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ846,2009-01-01,2030-12-31,NA,Digitaalinen dermatoskopia ja luomikartoitus
 9753,Dermatological photography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ848,2010-01-01,2030-12-31,NA,Dermatologinen valokuvaus
 9754,Transepidermal water loss quantification (TEWL),Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ850,2010-01-01,2030-12-31,NA,Transepidermaalisen veden haihtumisen mittaus (TEWL)
-9755,Sweat test,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ851,2009-01-01,2030-12-31,NA,Hikikoe
+9755,Sweat test,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XQ851,2009-01-01,2030-12-31,NA,Hikikoe
 9756,Skin stratum corneum water content quantification,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ852,2010-01-01,2030-12-31,NA,Ihon sarveiskerroksen kosteusmittaus
 9757,Skin pH measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ853,2010-01-01,2030-12-31,NA,Ihon pH-mittaus
 9758,Skin sebum production measurement,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XQ854,2010-01-01,2030-12-31,NA,Ihon talinerityksen mittaus
@@ -9785,7 +9785,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9784,Removal of molluscum,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW00,1997-01-01,2030-12-31,NA,Ontelosyylänpoisto
 9785,Removal of wart,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW02,1997-01-01,2030-12-31,NA,Muun syylän poisto
 9786,Exchange of bandage for burn,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW10,1997-01-01,2030-12-31,NA,Palovammasiteen vaihto
-9787,Tatoe,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW20,1997-01-01,2030-12-31,NA,Tatuointi
+9787,Tatoe,Condition,NOMESCOfi,NOMESCOfi Level 3,NA,TQW20,1997-01-01,2030-12-31,NA,Tatuointi
 9788,Acupuncture,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW30,1997-01-01,2030-12-31,NA,Akupunktio
 9789,Remowal of suture of skin,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW40,1997-01-01,2030-12-31,NA,Ompeleen tai ompeleiden poisto ihosta
 9790,Iontoferesis therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,TQW70,2009-01-01,2030-12-31,NA,Iontoforeesihoito
@@ -9810,7 +9810,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9809,Photodynamic therapy of lower limb,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WXQ44,2009-01-01,2011-12-31,NA,Alaraajan ihomuutoksen fotodynaaminen hoito
 9810,Other light therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WXQ99,2009-01-01,2030-12-31,NA,Muu valohoito
 9811,Depilatory treatment of transplant,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,YQX00,2009-01-01,2030-12-31,NA,Ihokarvojen poisto ihosiirteestä
-9812,Rehabilitation services,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,R,1997-01-01,2030-12-31,NA,Kuntoutuspalvelut
+9812,Rehabilitation services,Observation,NOMESCOfi,NOMESCOfi Level 0,NA,R,1997-01-01,2030-12-31,NA,Kuntoutuspalvelut
 9813,Evaluation of the need and prospects for rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,R1,1997-01-01,2030-12-31,NA,Kuntoutustarpeen ja -mahdollisuuksien arviointi
 9814,General overview of the need for rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R11,1997-01-01,2030-12-31,NA,Kuntoutuksen yleisarvio
 9815,General evaluation of the need for rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1100,1997-01-01,2030-12-31,NA,Yleisarvio kuntoutustarpeesta
@@ -9819,7 +9819,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9818,Psychological examination of need and possibilities to rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1220,1997-01-01,2030-12-31,NA,Psykologinen arvio kuntoutustarpeesta ja -mahdollisuuksista
 9819,Neuropsychological evaluation of need and possibilities to rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1230,1997-01-01,2030-12-31,NA,Neuropsykologinen arvio kuntoutustarpeesta ja -mahdollisuuksista
 9820,Social assessment of need and possibilities of rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1240,1997-01-01,2030-12-31,NA,Sosiaalinen arvio kuntoutustarpeesta ja -mahdollisuuksista
-9821,Evaluation of functional capability,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1250,1997-01-01,2030-12-31,NA,Toimintakyvyn arviointi
+9821,Evaluation of functional capability,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,R1250,1997-01-01,2030-12-31,NA,Toimintakyvyn arviointi
 9822,Evaluation of communicative skills,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1260,1997-01-01,2030-12-31,NA,Kommunikaatiokyvyn arviointi
 9823,Evaluation of the need for educational rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1270,1997-01-01,2030-12-31,NA,Kasvatuksellisen kuntoutuksen tarpeen arviointi
 9824,Evaluation of the need for vocational rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1280,1997-01-01,2030-12-31,NA,Ammatillisen kuntoutuksen tarpeen arviointi
@@ -9835,7 +9835,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9834,Implementation of physiotherapy rehabilitation plan,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R1430,2018-01-01,2030-12-31,NA,Fysioterapeuttisen kuntoutussuunnitelman toteuttaminen
 9835,Guidance supporting rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,R2,1997-01-01,2030-12-31,NA,Kuntoutumista tukeva ohjaus
 9836,Counselling and guidance in rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R21,1997-01-01,2030-12-31,NA,Kuntoutusneuvonta ja kuntoutusohjaus
-9837,Giving the first information,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R2110,1997-01-01,2030-12-31,NA,Ensitiedon antaminen
+9837,Giving the first information,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R2110,1997-01-01,2030-12-31,NA,Ensitiedon antaminen
 9838,Counselling and guidance concerning rehabilitation services and social security,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R2120,1997-01-01,2030-12-31,NA,Kuntoutuspalveluita ja toimeentulon turvaamista koskeva neuvonta ja ohjaus
 9839,Counselling and guidance which enhance independent living,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R2130,1997-01-01,2030-12-31,NA,Itsenäistä selviytymistä edistävä neuvonta ja ohjaus
 9840,Guidance related to maintaining physical balance and balance exercises,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R2140,2018-01-01,2030-12-31,NA,Fyysisen tasapainon ylläpitoon ja tasapainoharjoituksiin liittyvä ohjaus
@@ -9874,16 +9874,16 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9873,Training in recreational and free-time activities,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R3610,1997-01-01,2030-12-31,NA,Harrastus- ja vapaa-aikatoiminnan ohjaus
 9874,Therapies enhancing rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,R4,1997-01-01,2030-12-31,NA,Kuntoutumista edistävät terapiat
 9875,Therapies as part of rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R41,1997-01-01,2030-12-31,NA,Kuntoutumista tukevat terapiat
-9876,Physiotherapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4110,1997-01-01,2030-12-31,NA,Fysioterapia
-9877,Occupational therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4120,1997-01-01,2030-12-31,NA,Toimintaterapia
-9878,Speech therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4130,1997-01-01,2030-12-31,NA,Puheterapia
+9876,Physiotherapy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R4110,1997-01-01,2030-12-31,NA,Fysioterapia
+9877,Occupational therapy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R4120,1997-01-01,2030-12-31,NA,Toimintaterapia
+9878,Speech therapy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R4130,1997-01-01,2030-12-31,NA,Puheterapia
 9879,Rehabilitation for hearing problems,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4135,2009-01-01,2030-12-31,NA,Kuulon kuntoutus
 9880,Music therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4136,2015-01-01,2030-12-31,NA,Musiikkiterapia
 9881,Psychotherapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4140,1997-01-01,2030-12-31,NA,Psykoterapia
 9882,Neuropsychological rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4150,1997-01-01,2030-12-31,NA,Neuropsykologinen kuntoutus
 9883,Other therapy enhancing rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4160,1997-01-01,2030-12-31,NA,Muu kuntoutumista edistävä terapia
 9884,Therapy forms involving educational rehabilitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4170,1997-01-01,2030-12-31,NA,Kasvatuksellisen kuntoutuksen terapiamuodot
-9885,Podiatric therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4180,2015-01-01,2030-12-31,NA,Jalkaterapia
+9885,Podiatric therapy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R4180,2015-01-01,2030-12-31,NA,Jalkaterapia
 9886,Nutritional therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R4190,2015-01-01,2030-12-31,NA,Ravitsemusterapia
 9887,Other rehabilitation services,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,R5,1997-01-01,2030-12-31,NA,Muut kuntoutuspalvelut
 9888,Aids services,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R51,1997-01-01,2030-12-31,NA,Apuvälinepalvelut
@@ -9900,7 +9900,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9899,Placement by subsidy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5320,1997-01-01,2030-12-31,NA,Työhönsijoitus taloudellisten tukitoimien avulla
 9900,Support given to entrepreneurship,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5330,1997-01-01,2030-12-31,NA,Oman elinkeinon harjoittamisen tukeminen
 9901,Support given to ensure the person's continuing in working life,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5340,1997-01-01,2030-12-31,NA,Työelämässä pysymisen tukitoimet
-9902,Sheltered work,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5350,1997-01-01,2030-12-31,NA,Suojatyö
+9902,Sheltered work,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R5350,1997-01-01,2030-12-31,NA,Suojatyö
 9903,Personal services and supportive measures,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R54,1997-01-01,2030-12-31,NA,Henkilökohtaiset palvelut ja tukitoimet
 9904,Transport services and escort,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5410,1997-01-01,2030-12-31,NA,Kuljetus- ja saattajapalvelut
 9905,Guide dog services,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5420,1997-01-01,2030-12-31,NA,Opaskoirapalvelut
@@ -9911,7 +9911,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9910,Assessment of service requirements (elderly persons/care allowance),Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5470,2018-01-01,2030-12-31,NA,Palvelutarpeen arviointi (iäkkäät/hoitotuki)
 9911,Patient hotel,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5480,2019-01-01,2030-12-31,NA,Potilashotelli
 9912,Other rehabilitation services,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,R55,1998-01-01,2030-12-31,NA,Muut kuntoutuspalvelut
-9913,Other rehabilitation service,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,R5599,1998-01-01,2030-12-31,NA,Muu kuntoutuspalvelu
+9913,Other rehabilitation service,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,R5599,1998-01-01,2030-12-31,NA,Muu kuntoutuspalvelu
 9914,Non-surgical procedures of mouth and teeth,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,S,2000-01-01,2030-12-31,NA,Suun ja hampaiston avohoidon toimenpiteet
 9915,Examination of mouth and teeth,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,SA,2000-01-01,2030-12-31,NA,Suun ja hampaiston tutkimukset ja terveystarkastukset
 9916,Examination and care plan of mouth and teeth made by a dentist,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SAA,2000-01-01,2030-12-31,NA,Tutkimus ja hoitosuunnitelma
@@ -9934,12 +9934,12 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9933,Diagnostic radiology of mouth at patient visit,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SB_,2000-01-01,2030-12-31,NA,Suun diagnostinen radiologia hoitokäynnin yhteydessä
 9934,Tooth X-ray examination in conjunction with visit to dentist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBB20,2000-08-20,2009-12-31,NA,Hammasröntgenkuva hoitokäynnin yhteydessä
 9935,Sampling and locally performed tests och other corresponding tests,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SBA,2000-01-01,2030-12-31,NA,Vastaanotolla suoritetut testit ja näytteenotot
-9936,Microbiological examinations,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBA00,2000-01-01,2030-12-31,NA,Mikrobiologiset tutkimukset
+9936,Microbiological examinations,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,SBA00,2000-01-01,2030-12-31,NA,Mikrobiologiset tutkimukset
 9937,Measurement of excretion of saliva,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBA10,2000-01-01,2030-12-31,NA,Syljen eritysnopeuden määritys
 9938,Measurement of buffering capacity of saliva,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBA20,2000-01-01,2030-12-31,NA,Syljen puskurikapasiteetin määritys
 9939,Other examinations of mouth,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SBB,2000-01-01,2030-12-31,NA,Muut suun tutkimustoimenpiteet
 9940,Fotograf of mouth and teeth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBB00,2000-01-01,2030-12-31,NA,Suun ja hampaiston valokuvaus
-9941,Teeth copy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SBB10,2000-01-01,2030-12-31,NA,Hampaiston jäljennökset
+9941,Teeth copy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,SBB10,2000-01-01,2030-12-31,NA,Hampaiston jäljennökset
 9942,Oral health promotion,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,SC,2000-01-01,2030-12-31,NA,Suun terveyden edistäminen
 9943,Preventive oral health care,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SCA,2000-01-01,2030-12-31,NA,Ehkäisevä suun terveydenhoito
 9944,Simple analysis and advice of nutrition with regard to dentistry,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SCA01,2000-01-01,2030-12-31,NA,"Ehkäisevä suun terveydenhoito, suppea"
@@ -9965,7 +9965,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9964,Treatment of periodontitis and gingival lesions,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SDA,2000-01-01,2030-12-31,NA,Parodontologisen tulehduksen ja ienmuutosten hoito
 9965,Simple parodonthologic therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA01,2000-01-01,2030-12-31,NA,"Parodontologinen hoito, erittäin suppea"
 9966,Parodonthologic therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA02,2000-01-01,2030-12-31,NA,"Parodontologinen hoito, suppea"
-9967,Demanding parodonthologic therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA03,2000-01-01,2030-12-31,NA,Parodontologinen hoito
+9967,Demanding parodonthologic therapy,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA03,2000-01-01,2030-12-31,NA,Parodontologinen hoito
 9968,Very demanding parodonthologic therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA04,2000-01-01,2030-12-31,NA,"Parodontologinen hoito, pitkäkestoinen"
 9969,Very demanding and lengthy parodonthologic therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA05,2002-01-01,2030-12-31,NA,"Parodontologinen hoito, erittäin pitkäkestoinen"
 9970,Parodonthologic therapy of advnaced and complicated changes of alveolar bone,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SDA10,2004-01-01,2013-12-31,NA,"Parodontologinen hoito, komplisoitu sairaus"
@@ -9996,8 +9996,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 9995,"Filling treatment, direct",Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SFA,2000-01-01,2030-12-31,NA,Paikkaushoito suoralla menetelmällä
 9996,Small filling,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFA00,2000-01-01,2030-12-31,NA,Pieni hammastäyte
 9997,Fillning on one surface of tooth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFA10,2000-01-01,2030-12-31,NA,Yhden pinnan täyte
-9998,Filling on two surfaces of tooth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFA20,2000-01-01,2030-12-31,NA,Kahden pinnan täyte
-9999,Filling on tree or more surfaces of tooth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFA30,2000-01-01,2030-12-31,NA,Kolmen tai useamman pinnan täyte
+9998,Filling on two surfaces of tooth,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,SFA20,2000-01-01,2030-12-31,NA,Kahden pinnan täyte
+9999,Filling on tree or more surfaces of tooth,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,SFA30,2000-01-01,2030-12-31,NA,Kolmen tai useamman pinnan täyte
 10000,Replacement of krone of tooth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFA40,2000-01-01,2030-12-31,NA,Hammasterä tai kruunu
 10001,"Filling treatment, indirect",Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,SFB,2000-01-01,2030-12-31,NA,Paikkaushoito epäsuoralla menetelmällä
 10002,Filling on one surface of tooth reproduced outside mouth,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,SFB10,2000-01-01,2030-12-31,NA,Suun ulkopuolella valmistettu yhden pinnan täyte
@@ -10360,13 +10360,13 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10359,Determination of CD2 and CD3 lymphocytes in blood,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,WW6F3,2020-01-01,2030-12-31,NA,CD2- ja CD3-lymfosyyttien osoitus verestä
 10360,"Anaesthesia, respiratory support and resuscitation",Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,WX,1900-01-01,2030-12-31,NA,"Anestesia, hengityksen tuki ja elvytys"
 10361,No anaesthesia,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WX0,1997-01-01,2030-12-31,NA,Ei anestesiaa
-10362,Monitoring vital functions without anesthesy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX000,1997-01-01,2030-12-31,NA,Elintoimintojen valvonta ilman anestesiaa
+10362,Monitoring vital functions without anesthesy,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX000,1997-01-01,2030-12-31,NA,Elintoimintojen valvonta ilman anestesiaa
 10363,Nonpharmacological sedation or pain relief,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX001,2019-02-01,2030-12-31,NA,Sedaatio tai kivunlievitys ilman lääkettä
 10364,Sedation and analgesia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX002,1997-01-01,2030-12-31,NA,Sedaatio tai kivunlievitys ilman anestesiaa
 10365,Patient-controlled sedation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX004,2014-01-01,2030-12-31,NA,Potilaan säätelemä sedaatio
 10366,Local analgesia,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WX1,1900-01-01,2030-12-31,NA,Paikalliset puudutukset
 10367,Conjunctival surface anesthesia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX100,2006-01-01,2030-12-31,NA,Sidekalvon pintapuudutus
-10368,Surface analgesia on skin or mucosa,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX105,2009-01-01,2030-12-31,NA,Pintapuudutus iholle tai limakalvolle
+10368,Surface analgesia on skin or mucosa,Condition,NOMESCOfi,NOMESCOfi Level 3,NA,WX105,2009-01-01,2030-12-31,NA,Pintapuudutus iholle tai limakalvolle
 10369,Extensive surface anesthesy of skin with external ointment or geel,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX109,2006-01-01,2030-12-31,NA,Laaja ihon pintapuudutus ulkoisesti voiteella tai geelillä
 10370,Local anesthesy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX110,1997-01-01,2030-12-31,NA,Infiltraatiopuudutus
 10371,Local infiltration anesthesia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX111,2011-01-01,2030-12-31,NA,Laaja nivelalueen puudutus
@@ -10393,7 +10393,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10392,Paracervical blockade,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX234,1997-01-01,2030-12-31,NA,Kohdunkaulan vieruskudosten puudutus
 10393,Penis blockade,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX240,1997-01-01,2030-12-31,NA,Peniksen johtopuudutus
 10394,Intercostal blockade,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX250,1900-01-01,2030-12-31,NA,Kylkiluuvälin puudutus
-10395,Other blockade of nerve,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX290,1998-01-01,2030-12-31,NA,Muu johtopuudutus
+10395,Other blockade of nerve,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX290,1998-01-01,2030-12-31,NA,Muu johtopuudutus
 10396,Epidural and spinal anaesthesia,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WX3,1997-01-01,2030-12-31,NA,Epiduraali- ja spinaalianestesia
 10397,Cervicalepidural anesthesy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX300,1997-01-01,2030-12-31,NA,Epiduraalipuudutus kaularangan tasolla
 10398,Thoracal epidural anesthesy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX302,1997-01-01,2030-12-31,NA,Epiduraalipuudutus rintarangan tasolla
@@ -10416,15 +10416,15 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10415,Repeated or continuing anesthesia shots throug a catheter,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX602,1997-01-01,2030-12-31,NA,Toistuva tai jatkuva puudutus katetrilla
 10416,Patient controlled analgesia,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX610,2006-01-01,2030-12-31,NA,Potilaan annostelema kivunhoito (PCA)
 10417,Respiratory support,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WX7,1900-01-01,2030-12-31,NA,Hengityksen tukeminen
-10418,Respiratory and circulatory monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX700,1998-01-01,2030-12-31,NA,Hengityksen ja verenkierron valvonta
+10418,Respiratory and circulatory monitoring,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX700,1998-01-01,2030-12-31,NA,Hengityksen ja verenkierron valvonta
 10419,Supraglottic ventilation device,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX702,1997-01-01,2030-12-31,NA,Supraglottinen hengitystien varmistusväline
 10420,Insertion of pharyngeal or nasopharyngeal tube,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX703,1900-01-01,2030-12-31,NA,Nenänielu- tai nieluputki
 10421,Intubation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX704,1997-01-01,2030-12-31,NA,Intubaatio
 10422,Retrograde intubation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX706,1998-01-01,2030-12-31,NA,Retrogradinen intubaatio
 10423,Fiberoscopic intubation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX707,2012-01-01,2030-12-31,NA,Fiberoskooppinen intubaatio
-10424,Own respiration,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX720,1997-01-01,2030-12-31,NA,Oma hengitys
+10424,Own respiration,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX720,1997-01-01,2030-12-31,NA,Oma hengitys
 10425,Oxygen concentrator therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX721,2019-03-01,2030-12-31,NA,Happirikastinhoito
-10426,PEEP,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX722,1997-01-01,2030-12-31,NA,Ylipainehengitys
+10426,PEEP,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX722,1997-01-01,2030-12-31,NA,Ylipainehengitys
 10427,CPAP therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX723,2019-03-01,2030-12-31,NA,CPAP-hoito
 10428,Adaptive servoventilation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX724,2019-03-01,2030-12-31,NA,Adaptiivinen servoventilaatio
 10429,Noninvasive ventilation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX725,2006-01-01,2030-12-31,NA,Noninvasiivinen ventilaatio
@@ -10445,10 +10445,10 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10444,Intensive care,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX872,2008-01-01,2030-12-31,NA,Tehohoito
 10445,Other non-postsurgical intensive care,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX880,2005-01-01,2007-12-31,NA,Muu ei leikkauksen jälkeinen tehohoito
 10446,"Intensive monitoring, postoperative setting",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX881,2006-01-01,2007-12-31,NA,Leikkauksen jälkeinen tehovalvonta
-10447,High dependency care,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX882,2008-01-01,2030-12-31,NA,Tehovalvonta
+10447,High dependency care,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX882,2008-01-01,2030-12-31,NA,Tehovalvonta
 10448,"Intensive monitoring, non-postoperative setting",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX885,2006-01-01,2007-12-31,NA,Muu kuin leikkauksen jälkeinen tehovalvonta
 10449,Intesive care monitoring,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX890,2005-01-01,2007-12-31,NA,Tehohoitotasoinen valvonta
-10450,Monitored bed care,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX892,2008-01-01,2030-12-31,NA,Valvontatasoinen hoito
+10450,Monitored bed care,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WX892,2008-01-01,2030-12-31,NA,Valvontatasoinen hoito
 10451,Resuscitation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WX9,1900-01-01,2030-12-31,NA,Resuskitaatio
 10452,Resuscitation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX900,1900-01-01,2030-12-31,NA,Verenkierron ja hengityksen elvytys
 10453,External defibrillation of heart,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WX902,1998-01-01,2030-12-31,NA,Sydämen ulkoinen defibrillaatio
@@ -10471,7 +10471,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10470,"Oral care complete, next examination or health check after three years",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA03,2019-10-01,2030-12-31,NA,"Suunhoito valmis, seuraava tutkimus tai terveystarkastus kolmen vuoden kuluttua"
 10471,Emergency visit or other similar visit involving procedures,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA05,2006-04-01,2016-12-31,NA,"Ensiapuluontoinen tai muu vastaava käynti, jolla tehdään toimenpiteitä"
 10472,First aid or other corresponding healthcare contact,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA10,2000-01-01,2016-12-31,NA,Ensiapuluontoinen tai muu vastaava käynti
-10473,Home visit,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA20,2000-01-01,2030-12-31,NA,Käynti potilaan luona
+10473,Home visit,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,WYA20,2000-01-01,2030-12-31,NA,Käynti potilaan luona
 10474,Preparations for expected poor cooperation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA30,2000-01-01,2030-12-31,NA,Erityisjärjestelyitä vaativan potilaan hoito
 10475,Visit related to urgent need for oral care,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,WYA60,2019-10-01,2030-12-31,NA,Kiireelliseen suunhoidon tarpeeseen liittyvä käynti
 10476,Assessment of oral health and treatment needs for family expecting first child,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WYA40,2012-01-01,2030-12-31,NA,Suun terveydentilan ja hoidon tarpeen arvio ensimmäistä lasta odottavalle perheelle
@@ -10482,13 +10482,13 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10481,Overall cardiorespiratory evaluation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZA20,2018-01-01,2030-12-31,NA,Kardiorespiratorinen kokonaisarvio
 10482,Assessment of driving capacity and statement,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZA30,2018-01-01,2030-12-31,NA,Ajokyvyn arviointi ja lausunto
 10483,Other doctors statement,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZA90,2000-01-01,2030-12-31,NA,Muu lääkärin tai hammaslääkärin todistus
-10484,Telephone receipt or other advice,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZB00,2000-01-01,2030-12-31,NA,Puhelimitse annettu hoito-ohje ja mahdollinen resepti
-10485,Planning of intervention or health care consultation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC00,2000-01-01,2030-12-31,NA,Hoidon suunnittelu tai konsultaatio
-10486,Specialty-specific consultation based on referral by dentist or doctor,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC05,2006-04-01,2016-12-31,NA,Hammaslääkärin tai lääkärin lähetteeseen perustuva erikoisalakohtainen konsultaatio
-10487,Extensive specialist consultion with written report,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC10,2000-09-14,2016-12-31,NA,Hammaslääkärin tai lääkärin lähetteeseen perustuva laaja erikoisalakohtainen kirjallinen konsultaatio
+10484,Telephone receipt or other advice,Observation,NOMESCOfi,NOMESCOfi Level 2,NA,WZB00,2000-01-01,2030-12-31,NA,Puhelimitse annettu hoito-ohje ja mahdollinen resepti
+10485,Planning of intervention or health care consultation,Observation,NOMESCOfi,NOMESCOfi Level 2,NA,WZC00,2000-01-01,2030-12-31,NA,Hoidon suunnittelu tai konsultaatio
+10486,Specialty-specific consultation based on referral by dentist or doctor,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC05,2006-04-01,2016-12-31,NA,Hammaslääkärin tai lääkärin lähetteeseen perustuva erikoisalakohtainen konsultaatio
+10487,Extensive specialist consultion with written report,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC10,2000-09-14,2016-12-31,NA,Hammaslääkärin tai lääkärin lähetteeseen perustuva laaja erikoisalakohtainen kirjallinen konsultaatio
 10488,Estimation of continuous need for medical therapy,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,W0X00,1997-01-01,2030-12-31,NA,Arvio jatkuvan lääkityksen tarpeesta lausuntoineen
 10489,Psychosocial measures,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,W0,1997-01-01,2030-12-31,NA,Psykososiaaliset toimenpiteet
-10490,Multidisciplinary treatment meeting,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC20,2006-01-01,2030-12-31,NA,Moniammatillinen hoitokokous
+10490,Multidisciplinary treatment meeting,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC20,2006-01-01,2030-12-31,NA,Moniammatillinen hoitokokous
 10491,Teaching,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,WZC30,2010-01-01,2030-12-31,NA,Hoidonohjaus
 10492,Estimation of social function ability,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,W0A00,1997-01-01,2030-12-31,NA,Sosiaalisen toimintakyvyn arviointi lausuntoineen
 10493,Mapping of psychosocial situation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,W0A10,1997-01-01,2030-12-31,NA,Psykososiaalisen tilanteen laaja kartoitus
@@ -10594,24 +10594,24 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10593,Prcedure with MRI guidance with low intensity agnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1TG,2009-01-01,2010-12-31,NA,Toimenpide magneettiohjauksessa vahvakenttälaitteella
 10594,Prcedure with MRI guidance with low intensity agnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1TH,2009-01-01,2010-12-31,NA,Toimenpide magneettiohjauksessa matalakenttälaitteella
 10595,Prcedure with MRI guidance with 3 Tesla agnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1TM,2009-01-01,2010-12-31,NA,Toimenpide magneettiohjauksessa 3 Teslan laitteella
-10596,Written report from radiologist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1VW,2009-01-01,2030-12-31,NA,Radiologin lausunto
+10596,Written report from radiologist,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX1VW,2009-01-01,2030-12-31,NA,Radiologin lausunto
 10597,Other isotope examination,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XN,2009-01-01,2030-12-31,NA,Muu isotooppitutkimus
 10598,Other PET,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XP,2009-01-01,2030-12-31,NA,Muu PET
 10599,Other SPECT-CT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XQ,2011-01-01,2030-12-31,NA,Muu SPET-tietokonetomografiatutkimus
 10600,Other PET with CT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XR,2009-01-01,2030-12-31,NA,Muu PET-tietokonetomografiatutkimus
 10601,Other PET-MRI,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XS,2014-01-01,2030-12-31,NA,Muu PET-magneettitutkimus
-10602,Extensive written report from radiologist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XW,2009-01-01,2030-12-31,NA,Radiologin laaja lausunto
-10603,Very extensive written report from radiologist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX1ZW,2009-01-01,2030-12-31,NA,Radiologin erittäin laaja lausunto
+10602,Extensive written report from radiologist,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX1XW,2009-01-01,2030-12-31,NA,Radiologin laaja lausunto
+10603,Very extensive written report from radiologist,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX1ZW,2009-01-01,2030-12-31,NA,Radiologin erittäin laaja lausunto
 10604,Teleradiological consultation from X-ray examination without contrast,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2AW,1999-01-01,2010-12-31,NA,Radiologin konsultaatio natiiviröntgentutkimuksista
 10605,Teleradiological consultation about X-ray examination with contrast,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2BW,1999-01-01,2010-12-31,NA,Teleradiologinen konsultaatio varjoainekuvista
 10606,Teleradiological consultation about angiography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2CW,1999-01-01,2010-12-31,NA,Teleradiologinen konsultaatio angiografiakuvista
 10607,Teleradiological consultation about CT examination with contrast,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2DW,1999-01-01,2010-12-31,NA,Teleradiologionen konsultaatio TT-kuvista
 10608,Teleradiological consultation about MRI examination with contrast,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2FW,1999-01-01,2010-12-31,NA,Teleradiologinen konsultaatio magneettikuvista
 10609,Radiological consultation concerning radionuclide scans,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2NW,2007-01-01,2016-12-31,NA,Radiologinen konsultaatio isotooppikuvista
-10610,Radiologic consultation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2VW,2009-01-01,2030-12-31,NA,Radiologin konsultaatio
+10610,Radiologic consultation,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX2VW,2009-01-01,2030-12-31,NA,Radiologin konsultaatio
 10611,Other teleradiological consultation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2XW,1999-01-01,2030-12-31,NA,Radiologin laaja konsultaatio
 10612,Very extensive radiologic consultation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX2ZW,2009-01-01,2030-12-31,NA,Radiologin erittäin laaja konsultaatio
-10613,Time consuming IT work,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX3DW,1999-01-01,2030-12-31,NA,Laaja lisäanalyysi radiologisesta tutkimusaineistosta
+10613,Time consuming IT work,Measurement,NOMESCOfi,NOMESCOfi Level 3,NA,XX3DW,1999-01-01,2030-12-31,NA,Laaja lisäanalyysi radiologisesta tutkimusaineistosta
 10614,3D printout,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX3EW,2020-04-01,2030-12-31,NA,Kolmiulotteinen tuloste
 10615,"3D printout, extensive",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX3FW,2020-04-01,2030-12-31,NA,"Kolmiulotteinen tuloste, laaja"
 10616,"3D printout, very extensive",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX3GW,2020-04-01,2030-12-31,NA,"Kolmiulotteinen tuloste, erittäin laaja"
@@ -10622,17 +10622,17 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10621,Other spectroscopy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AK,1999-01-01,2030-12-31,NA,Muu spektroskopia
 10622,Other magnetography,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AL,1999-01-01,2016-12-31,NA,Muu magneettikenttämittaus (magnetografia)
 10623,Complementary isotope examination or additional picture,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AN,2009-01-01,2030-12-31,NA,Täydentävä gammakuvaus tai lisäkuvaus
-10624,Supplementary SPECT-CT or additional scan,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AQ,2014-01-01,2030-12-31,NA,Täydentävä SPET-tietokonetomografiatutkimus tai lisäkuvaus
+10624,Supplementary SPECT-CT or additional scan,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AQ,2014-01-01,2030-12-31,NA,Täydentävä SPET-tietokonetomografiatutkimus tai lisäkuvaus
 10625,Production of copy from X-ray picture,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9AW,1999-01-01,2030-12-31,NA,Röntgenkuvien kopio
 10626,Extensive complementary CT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BD,2003-01-01,2030-12-31,NA,Täydentävä laaja tietokonetomografiatutkimus
 10627,Other MRI examination with median intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BF,1999-01-01,2005-01-01,NA,Muu magneettitutkimus keskikenttälaitteella
 10628,Other MRI examination with high intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BG,1999-01-01,2005-01-01,NA,Muu magneettitutkimus vahvakenttälaitteella
 10629,SPECT scan or additional scan,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BN,2018-12-01,2030-12-31,NA,SPET kuvaus tai lisäkuvaus
-10630,Submitting image material and/or investigation material to authority or other institution,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BW,2017-01-01,2030-12-31,NA,Kuva- ja/tai tutkimusmateriaalin toimittaminen viranomaiselle tai muulle laitokselle
+10630,Submitting image material and/or investigation material to authority or other institution,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,XX9BW,2017-01-01,2030-12-31,NA,Kuva- ja/tai tutkimusmateriaalin toimittaminen viranomaiselle tai muulle laitokselle
 10631,Very extensive complementary CT,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9CD,2003-01-01,2030-12-31,NA,Täydentävä erittäin laaja tietokonetomografiatutkimus
 10632,Other extensive MRI examination with median intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9CF,1999-01-01,2005-01-01,NA,Muu laaja magneettitutkimus keskikenttälaitteella
 10633,Other extensive MRI examination with high intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9CG,1999-01-01,2005-01-01,NA,Muu laaja magneettitutkimus vahvakenttälaitteella
-10634,Submitting image material and/or investigation material to patient,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9CW,2017-01-01,2030-12-31,NA,Kuva- ja/tai tutkimusmateriaalin toimittaminen potilaalle
+10634,Submitting image material and/or investigation material to patient,Condition,NOMESCOfi,NOMESCOfi Level 3,NA,XX9CW,2017-01-01,2030-12-31,NA,Kuva- ja/tai tutkimusmateriaalin toimittaminen potilaalle
 10635,Other very extensive MRI examination with median intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9DF,1999-01-01,2005-01-01,NA,Muu erittäin laaja magneettitutkimus keskikenttälaitteella
 10636,Other very extensive MRI examination with high intensity magnet,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9DG,1999-01-01,2005-01-01,NA,Muu erittäin laaja magneettitutkimus vahvakenttälaitteella
 10637,Ultrasound examination with contrast,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9KE,1999-01-01,2030-12-31,NA,Muu ultraäänitutkimus kontrastiainetta käyttäen
@@ -10745,7 +10745,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10744,Radiosamarium therapy,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX7KT,2009-01-01,2030-12-31,NA,Radiosamariumhoito
 10745,Complementary radiological intervention,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9TT,1999-01-01,2030-12-31,NA,Täydentävä radiologinen toimenpide
 10746,Other radiological intervention,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,XX9XT,1999-01-01,2005-01-01,NA,Muu radiologinen toimenpide
-10747,Active surveillance of a diagnosed cancer,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,XZZ00,2017-01-26,2030-12-31,NA,Todetun syöpäsairauden aktiivinen seuranta
+10747,Active surveillance of a diagnosed cancer,Observation,NOMESCOfi,NOMESCOfi Level 1,NA,XZZ00,2017-01-26,2030-12-31,NA,Todetun syöpäsairauden aktiivinen seuranta
 10748,Procurement of organs or tissue for transplantation,Procedure,NOMESCOfi,NOMESCOfi Level 0,NA,Y,1900-01-01,2030-12-31,NA,Elinten ja kudosten irrottaminen siirtoa varten
 10749,Excision of cornea for transplantation,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,YCA,1900-01-01,2030-12-31,NA,Sarveiskalvon irrottaminen siirtoa varten
 10750,Excision of cornea for transplantation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,YCA00,1900-01-01,2030-12-31,NA,Sarveiskalvon irrottaminen siirtoa varten
@@ -10860,7 +10860,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10859,Free venous xenograft,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB28,1900-01-01,2030-12-31,NA,"Vapaa laskimosiirre, xenografti"
 10860,Dacron,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB30,1900-01-01,2030-12-31,NA,Dacron
 10861,Covered dacron,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB32,1900-01-01,2030-12-31,NA,"Dacron, päällystetty"
-10862,Polytetrafluoroethylene,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB40,1900-01-01,2030-12-31,NA,"Polytetrafluoroetyleeni, PTFE"
+10862,Polytetrafluoroethylene,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB40,1900-01-01,2030-12-31,NA,"Polytetrafluoroetyleeni, PTFE"
 10863,Umbilical vein,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB50,1900-01-01,2030-12-31,NA,Napalaskimosiirre
 10864,Combi graft -transplant,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB60,1900-01-01,2030-12-31,NA,Combi graft -siirre
 10865,Other material in vessel transplant,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZPB96,1900-01-01,2030-12-31,NA,Verisuonisiirre muusta materiaalista
@@ -10932,12 +10932,12 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10931,Secondary repair operation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZSZ10,1900-01-01,2030-12-31,NA,Sekundaarinen korjausleikkaus
 10932,Various circumstances and events in surgery,Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,ZX,1900-01-01,2030-12-31,NA,Erityiset tapahtumat ja olosuhteet toimenpiteeseen liittyen
 10933,Side of body,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXA,1900-01-01,2030-12-31,NA,Kehon puoli: oikea-vasen
-10934,Right side,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA00,1900-01-01,2030-12-31,NA,Oikea puoli
-10935,Left side,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA05,1900-01-01,2030-12-31,NA,Vasen puoli
-10936,Bilateral,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA10,1900-01-01,2030-12-31,NA,Molemminpuolinen
+10934,Right side,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA00,1900-01-01,2030-12-31,NA,Oikea puoli
+10935,Left side,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA05,1900-01-01,2030-12-31,NA,Vasen puoli
+10936,Bilateral,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXA10,1900-01-01,2030-12-31,NA,Molemminpuolinen
 10937,Lateral or medial,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXB,1900-01-01,2030-12-31,NA,Sijainti: lateraliteetti
-10938,Lateral,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB00,1900-01-01,2030-12-31,NA,"Sivun puoleinen, lateraalinen"
-10939,Medial,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB10,1900-01-01,2030-12-31,NA,"Keskiviivan puoleinen, mediaalinen"
+10938,Lateral,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB00,1900-01-01,2030-12-31,NA,"Sivun puoleinen, lateraalinen"
+10939,Medial,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB10,1900-01-01,2030-12-31,NA,"Keskiviivan puoleinen, mediaalinen"
 10940,Both lateral and medial,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB20,1900-01-01,2030-12-31,NA,Sekä sivun että keskiviivan puoleinen
 10941,Specific technique,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXC,1900-01-01,2030-12-31,NA,Erityiset tekniikat
 10942,"Balloon dilation, paranasal sinuses",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXB87,2015-01-01,2030-12-31,NA,"Pallolaajennusmenetelmä, nenän sivuontelot"
@@ -10972,12 +10972,12 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10971,Other special technic in surgery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXC99,1998-01-01,2030-12-31,NA,Muu erityinen leikkaustekniikka
 10972,Emergency or scheduled procedure,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXD,1900-01-01,2030-12-31,NA,Toimenpiteen kiireellisyys ja vaikeus
 10973,Emergency procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD00,1900-01-01,2030-12-31,NA,Hätätoimenpide
-10974,Urgent procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD05,1900-01-01,2030-12-31,NA,Kiireellinen toimenpide
+10974,Urgent procedure,Obs/Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD05,1900-01-01,2030-12-31,NA,Kiireellinen toimenpide
 10975,Scheduled procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD10,1900-01-01,2030-12-31,NA,Suunniteltu toimenpide
 10976,Day surgery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD20,2001-01-01,2030-12-31,NA,Polikliininen päiväkirurgia
-10977,Difficulties in perfomrming procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD30,1997-01-01,2030-12-31,NA,Laaja tai vaikea toimenpide
+10977,Difficulties in perfomrming procedure,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD30,1997-01-01,2030-12-31,NA,Laaja tai vaikea toimenpide
 10978,Major difficulties in performing procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD31,1999-01-01,2030-12-31,NA,Erittäin laaja tai vaikea toimenpide
-10979,Usual procedure,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD35,1997-01-01,2030-12-31,NA,Vaikeusasteeltaan tavallinen toimenpide
+10979,Usual procedure,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD35,1997-01-01,2030-12-31,NA,Vaikeusasteeltaan tavallinen toimenpide
 10980,Procedure on patient requiring isolation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXD40,2016-01-01,2030-12-31,NA,Eristystä vaativan potilaan toimenpide
 10981,Duration of operation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXE,1900-01-01,2030-12-31,NA,Toimenpiteen kesto
 10982,One hour or less,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE00,1900-01-01,2017-12-31,NA,Toimenpiteen kesto enintään 1 tunti
@@ -10986,9 +10986,9 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10985,Procedure duration 20 to 29 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE03,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 20-29 minuuttia
 10986,Procedure duration 30 to 39 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE04,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 30-39 minuuttia
 10987,Procedure duration 40 to 49 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE05,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 40-49 minuuttia
-10988,Procedure duration 50 to 59 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE06,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 50-59 minuuttia
+10988,Procedure duration 50 to 59 minutes,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE06,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 50-59 minuuttia
 10989,More than one and less than three hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE10,1900-01-01,2017-12-31,NA,Toimenpiteen kesto vähintään 1 mutta alle 3 tuntia
-10990,Procedure duration 60 to 89 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE11,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 60-89 minuuttia
+10990,Procedure duration 60 to 89 minutes,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE11,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 60-89 minuuttia
 10991,Procedure duration 90 to 119 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE12,2018-01-01,2018-01-01,NA,Toimenpiteen kesto 90-119 minuuttia
 10992,Procedure duration 90 to 119 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE13,2018-01-01,2030-12-31,NA,Toimenpiteen kesto 90-119 minuuttia
 10993,Procedure duration 150 to 179 minutes,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE14,2018-01-01,2018-01-01,NA,Toimenpiteen kesto 150-179 minuuttia
@@ -10997,9 +10997,9 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 10996,More than three and less than five hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE20,1900-01-01,2017-12-31,NA,Toimenpiteen kesto vähintään 3 mutta alle 5 tuntia
 10997,Procedure duration at least 3 but less than 4 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE21,2018-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 3 mutta alle 4 tuntia
 10998,Procedure duration at least 4 but less than 5 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE22,2018-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 4 mutta alle 5 tuntia
-10999,More than five and less than seven hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE30,1900-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 5 mutta alle 7 tuntia
+10999,More than five and less than seven hours,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE30,1900-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 5 mutta alle 7 tuntia
 11000,More than seven and less than nine hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE40,1900-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 7 mutta alle 9 tuntia
-11001,More than nine and less than 12 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE50,1900-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 9 mutta alle 12 tuntia
+11001,More than nine and less than 12 hours,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE50,1900-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 9 mutta alle 12 tuntia
 11002,More than 12 and less than 15 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE60,1997-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 12 mutta alle 15 tuntia
 11003,Moren than 15 and less than 18 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE70,1997-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 15 mutta alle 18 tuntia
 11004,More than 18 and less than 21 hours,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXE80,1997-01-01,2030-12-31,NA,Toimenpiteen kesto vähintään 18 mutta alle 21 tuntia
@@ -11039,7 +11039,7 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 11038,Extent of proceudre,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZXX,2006-01-01,2030-12-31,NA,Toimenpiteen laajuus
 11039,Active surveillance of a diagnosed cancer,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX00,2017-01-01,2017-01-25,NA,Todetun syöpäsairauden aktiivinen seuranta
 11040,"Extent of proceudre, 1 unit",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX01,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 1 yksikkö"
-11041,"Extent of procedure, 2 units",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX02,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 2 yksikköä"
+11041,"Extent of procedure, 2 units",Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX02,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 2 yksikköä"
 11042,"Extent of procedure, 3 units",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX03,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 3 yksikköä"
 11043,"Extent of procedure, 4 units",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX04,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 4 yksikköä"
 11044,"Extent of procedure, 5 units",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXX05,2006-01-01,2030-12-31,NA,"Toimenpiteen laajuus, 5 yksikköä"
@@ -11071,29 +11071,29 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 11070,Pharmacotherapy administration route,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZX1,1900-01-01,2030-12-31,NA,Lääkehoidon reitti
 11071,Medical infusion to cerebral artery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,PA7RT,2004-01-01,2030-12-31,NA,Lääkeinfuusio aivojen valtimoon radiologisessa ohjauksessa
 11072,Extensive medical infusion to cerebral artery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,PA7ST,2004-01-01,2030-12-31,NA,"Lääkeinfuusio aivojen valtimoon radiologisessa ohjauksessa, laaja"
-11073,Oral,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX100,1900-01-01,2030-12-31,NA,Suun kautta
-11074,Sublingual,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX101,1997-01-01,2030-12-31,NA,Kielen alle
-11075,Rectal,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX102,1997-01-01,2030-12-31,NA,Peräsuolen kautta
-11076,Intranasal,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX106,1997-01-01,2030-12-31,NA,Intranasaalinen
+11073,Oral,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX100,1900-01-01,2030-12-31,NA,Suun kautta
+11074,Sublingual,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX101,1997-01-01,2030-12-31,NA,Kielen alle
+11075,Rectal,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX102,1997-01-01,2030-12-31,NA,Peräsuolen kautta
+11076,Intranasal,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX106,1997-01-01,2030-12-31,NA,Intranasaalinen
 11077,Inhalation,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX108,1998-01-01,2030-12-31,NA,Inhalaatio
 11078,Instruction on medicine inhalation technique,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX109,2006-01-01,2030-12-31,NA,Lääkeinhalaatiotekniikan opetus
 11079,Intracutaneous,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX110,1997-01-01,2030-12-31,NA,Ihonsisäinen
-11080,Subcutaneous,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX112,1997-01-01,2030-12-31,NA,Ihon alle
+11080,Subcutaneous,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX112,1997-01-01,2030-12-31,NA,Ihon alle
 11081,Intramuscular,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX114,1997-01-01,2030-12-31,NA,Lihakseen
 11082,To bone marrow,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX116,1997-01-01,2030-12-31,NA,Luuytimeen
 11083,Intravenous,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX120,1900-01-01,2030-12-31,NA,Laskimoon
 11084,Central venous catheter,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX121,2003-01-01,2030-12-31,NA,Keskuslaskimokatetriin
-11085,Intra-arterial,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX122,1900-01-01,2030-12-31,NA,Valtimoon
+11085,Intra-arterial,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX122,1900-01-01,2030-12-31,NA,Valtimoon
 11086,Artery of object organ,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX123,2003-01-01,2030-12-31,NA,Kohde-elimen valtimoon
 11087,Perfusion of a organ or target,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX124,1997-01-01,2030-12-31,NA,Elimen tai kohteen perfuusio
 11088,Epidural,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX130,1998-01-01,2030-12-31,NA,Epiduraalitilaan
 11089,Intrathecal,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX131,1997-01-01,2030-12-31,NA,Selkäydinkanavaan
 11090,Intrapleural,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX132,1900-01-01,2030-12-31,NA,Keuhkopussiin
 11091,Intra-abdominal,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX134,1997-01-01,2030-12-31,NA,Vatsaonteloon
-11092,Intravesicalis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX136,1997-01-01,2030-12-31,NA,Virtsarakkoon
+11092,Intravesicalis,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX136,1997-01-01,2030-12-31,NA,Virtsarakkoon
 11093,To penis,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX137,2009-01-01,2030-12-31,NA,Paisuvaiskudokseen
-11094,Intra articular,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX140,2000-01-01,2030-12-31,NA,Niveleen
-11095,Intralesional,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX190,1997-01-01,2030-12-31,NA,Kasvaimen tai muutoksen sisään
+11094,Intra articular,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX140,2000-01-01,2030-12-31,NA,Niveleen
+11095,Intralesional,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZX190,1997-01-01,2030-12-31,NA,Kasvaimen tai muutoksen sisään
 11096,Other local administration,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX198,2000-01-01,2030-12-31,NA,Muu paikallinen lääkehoito
 11097,Other rote,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZX199,1997-01-01,2030-12-31,NA,Muu lääkehoidon reitti
 11098,Healthcare providers occupation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZX2,2005-01-01,2030-12-31,NA,Palveluntuottajan ammatti
@@ -11144,8 +11144,8 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 11143,Physiotherapist in multidisciplinary team,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZXY86,2019-03-01,2030-12-31,NA,Fysioterapeutti moniammatillisessa työryhmässä
 11144,Medical doctor,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z2221,2005-01-01,2030-12-31,NA,Lääkäri
 11145,Head nurse,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z2230,2005-01-01,2030-12-31,NA,Ylihoitaja tai osastonhoitaja
-11146,Psychologist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z2445,2005-01-01,2030-12-31,NA,Psykologi
-11147,Social worker,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z2446,2005-01-01,2030-12-31,NA,Sosiaalityöntekijä
+11146,Psychologist,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,Z2445,2005-01-01,2030-12-31,NA,Psykologi
+11147,Social worker,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,Z2446,2005-01-01,2030-12-31,NA,Sosiaalityöntekijä
 11148,Physiotherapist,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z3226,2005-01-01,2030-12-31,NA,Fysioterapeutti
 11149,Other healthcare associate professional,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z3229,2005-01-01,2030-12-31,NA,Muu terveydenhuollon erityistyöntekijä
 11150,Registered nurse,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,Z3231,2005-01-01,2030-12-31,NA,Sairaanhoitaja
@@ -11159,13 +11159,13 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 11158,Outreach service at unit of same specialty,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB01,2018-01-01,2030-12-31,NA,Oman erikoisalan yksikköön jalkautuva palvelu
 11159,Outreach service at unit of another specialty,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB02,2018-01-01,2030-12-31,NA,Muun erikoisalan yksikköön jalkautuva palvelu
 11160,Outreach service at primary care or social services unit,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB03,2018-01-01,2030-12-31,NA,Perustason tai sosiaalitoimen yksikköön jalkautuva palvelu
-11161,Outreach service in patient’s home or everyday environment,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB04,2018-01-01,2030-12-31,NA,Potilaan koti- tai arkiympäristöön jalkautuva palvelu
+11161,Outreach service in patient’s home or everyday environment,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB04,2018-01-01,2030-12-31,NA,Potilaan koti- tai arkiympäristöön jalkautuva palvelu
 11162,"Outreach service at patient’s workplace, school or occupational/school health care",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB05,2018-01-01,2030-12-31,NA,"Potilaan työpaikalle, kouluun tai työ-/kouluterveydenhuoltoon jalkautuva palvelu"
 11163,Outreach service in patient's nursery,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB06,2018-01-01,2030-12-31,NA,Potilaan päiväkotiin jalkautuva palvelu
 11164,Outreach service at sheltered housing unit,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB07,2018-01-01,2030-12-31,NA,Palveluasumisyksikköön jalkautuva palvelu
 11165,Outreach service elsewhere in the private sector or third sector,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYB08,2018-01-01,2030-12-31,NA,Muualle yksityiselle tai kolmannelle sektorille jalkautuva palvelu
 11166,Remote contact,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZYC,2018-01-01,2030-12-31,NA,Etäasiointi
-11167,Remote contact by phone,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYC01,2018-01-01,2030-12-31,NA,Etäasiointi puhelimella
+11167,Remote contact by phone,Observation,NOMESCOfi,NOMESCOfi Level 3,NA,ZYC01,2018-01-01,2030-12-31,NA,Etäasiointi puhelimella
 11168,Remote contact by video link,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYC02,2018-01-01,2030-12-31,NA,Etäasiointi videoyhteydellä
 11169,"Remote contact, text-based",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYC03,2018-01-01,2030-12-31,NA,Etäasiointi tekstipohjaisesti
 11170,"Remote contact, IT assisted",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYC04,2018-01-01,2030-12-31,NA,Etäasiointi tietotekniikka-avusteisesti
@@ -11182,9 +11182,9 @@ concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concep
 11181,"Missed treatment contact, notification given by patient",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYY97,2018-01-01,2030-12-31,NA,"Toteutumaton hoitokontakti, potilaan ilmoittama poisjäänti"
 11182,"Missed treatment contact, no notification given by patient",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYY98,2018-01-01,2030-12-31,NA,"Toteutumaton hoitokontakti, potilaan ilmoittamaton poisjäänti"
 11183,"Missed treatment contact, cancelled by professional",Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,ZYY99,2018-01-01,2030-12-31,NA,"Toteutumaton hoitokontakti, ammattihenkilön peruma"
-11184,Hospital inpatient,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZY000,2005-01-01,2030-12-31,NA,Vuodeosastolla tapahtuva hoitokontakti
-11185,Hospital outpatient,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZY010,2005-01-01,2030-12-31,NA,Poliklinikalla tapahtuva hoitokontakti
-11186,"Telephone, letter or other consultation without direct patient contact",Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,ZY020,2005-01-01,2017-12-31,NA,"Puhelu, kirje tai konsultaatio"
+11184,Hospital inpatient,Observation,NOMESCOfi,NOMESCOfi Level 2,NA,ZY000,2005-01-01,2030-12-31,NA,Vuodeosastolla tapahtuva hoitokontakti
+11185,Hospital outpatient,Observation,NOMESCOfi,NOMESCOfi Level 2,NA,ZY010,2005-01-01,2030-12-31,NA,Poliklinikalla tapahtuva hoitokontakti
+11186,"Telephone, letter or other consultation without direct patient contact",Observation,NOMESCOfi,NOMESCOfi Level 2,NA,ZY020,2005-01-01,2017-12-31,NA,"Puhelu, kirje tai konsultaatio"
 11187,"Grafts, flaps and tissue expanders",Procedure,NOMESCOfi,NOMESCOfi Level 1,NA,ZZ,1900-01-01,2030-12-31,NA,Kudossiirteet
 11188,Harvest of composite tissue transplant for transplantation,Procedure,NOMESCOfi,NOMESCOfi Level 2,NA,YLA,2014-01-01,2030-12-31,NA,Monikudossiirteen irrottaminen siirtoa varten
 11189,Harvest of facial transplant,Procedure,NOMESCOfi,NOMESCOfi Level 3,NA,YLA00,2014-01-01,2030-12-31,NA,Kasvosiirteen irrottaminen

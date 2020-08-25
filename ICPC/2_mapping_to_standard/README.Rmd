@@ -116,7 +116,7 @@ write_csv(icpc_concept_new, "../1_source_vocabulary/CONCEPT_ICPC.csv")
 ```
 
 ```{r}
-icpc_concept %>% count(domain_id, sort=T)
+icpc_concept_new %>% count(domain_id, sort=T)
 ```
 
 
