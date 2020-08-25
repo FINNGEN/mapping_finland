@@ -1,0 +1,122 @@
+---
+title: "NOMESCOfi"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+#   html_document:
+#     df_print: paged
+#     toc: true
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+source("../lib/vocabulary_reporting_fuctions.r")
+
+
+# Document variables 
+N_TOPS <- 10
+
+# output status
+db_statuses <- tibble()
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+nomescofi_concept <- read_csv("./1_source_vocabulary/CONCEPT_NOMESCOfi.csv")
+
+nomescofi_mapsto <- read_csv("./2_mapping_to_standard/CONCEPT_RELATIONSHIP_NOMESCO.csv")
+
+nomescofi_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
+```
+
+
+# Intro
+The procedure classification is based on the NCSP Nordic Classification of Surgical Procedures, first published in 1996. The NCSP classification is maintained by the Nordic Classification Center (NCC) and is copyrighted by NOMESKO [ref](
+https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)
+
+
+
+# Formating source vocabulary to OMOP
+The NOMESCO codes have been downloaded from [kodistopalvelu](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=57&versionKey=119)(7.5.2020). 
+
+The concept names were translated to English as  translator by <mary.reeve@helsinki.fi>
+
+Details in  [./1_source_vocabulary/README.md](./1_source_vocabulary/README.md)
+
+
+# Mapping the source vocabulary to the standard vocabularies
+
+NOMESCO codes ranked by frequency calculated from  FinnGen-DF5 and TAYS-oncology.
+
+Mapping was carried in USAGI by medical student [\@kalleaseppala](github.com/kalleaseppala) and reviewed by [\@helmisuominen](github.com/helmisuominen). 
+
+
+## Progess in number of codes
+```{r}
+n_codes <- nomescofi_concept %>% nrow()
+n_codes_accepted <- nomescofi_mapsto %>% distinct(concept_id_1) %>% nrow()
+```
+
+
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
+
+
+```{r}
+db_statuses <- bind_rows(
+  tibble(
+    status = "mapped",
+    n_codes = n_codes_accepted,
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  ),
+ tibble(
+    status = "not_mapped",
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events =  as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  )
+)
+```
+
+
+
+
+
+# Assessing coverage of databases
+
+
+```{r  results='asis'}
+
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("NOMESCOfi", nomescofi_concept, nomescofi_mapsto, nomescofi_freqs ) 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

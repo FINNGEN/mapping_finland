@@ -58,3 +58,24 @@ read_table_drug_strength <- function(path_vocabulary_tables){
   read_tsv(file.path(path_vocabulary_tables, "DRUG_STRENGTH.csv"), quote = "", col_types = col_type)
   
 }
+
+read_table_concept_class <- function(path_vocabulary_tables){
+  
+  col_type <- cols(
+    drug_concept_id = col_double(),
+    ingredient_concept_id = col_double(),
+    amount_value = col_double(),
+    amount_unit_concept_id = col_double(),
+    numerator_value = col_double(),
+    numerator_unit_concept_id = col_double(),
+    denominator_value = col_double(),
+    denominator_unit_concept_id = col_double(),
+    box_size = col_double(),
+    valid_start_date =  col_date("%Y%m%d"),
+    valid_end_date =  col_date("%Y%m%d"),
+    invalid_reason = col_character()
+  )
+  
+  read_tsv(file.path(path_vocabulary_tables, "CONCEPT_CLASS"), quote = "", col_types = col_type)
+  
+}

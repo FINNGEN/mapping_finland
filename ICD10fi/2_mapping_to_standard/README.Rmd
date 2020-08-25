@@ -71,6 +71,10 @@ icd10fi_concept  %>% count(tmp_code_class)
 
 ## 1. Mapping type : ICD10who + USAGUI 
 
+First, we map codes to ICD10who by code and name
+
+Second, codes that didn't find a map to ICD10who are mapped to standard-OMOP using USAGI 
+
 ### 1.1 Matchind codes to ICD10who
 ```{r}
 icd10who_concept <- read_table_concept(path_vocabulary_tables) %>% 
@@ -183,9 +187,8 @@ ICD10fi_2code_1code_not_matched <- bind_rows(
 
 ICD10fi_2code_1code_name_match <- 
   inner_join(
-    ICD10fi_2code_1code_not_matched %>% select(-concept_id_who, -concept_code_who),
-    ICD10fi_1code_full_match  %>% select(concept_id, tmp_name_fi, concept_code) %>% 
-      rename(concept_id_who = concept_id, concept_code_who = concept_code), 
+    ICD10fi_2code_1code_not_matched %>% select(-ends_with("_who")),
+    ICD10fi_1code_full_match  %>% select(tmp_name_fi, ends_with("_who")), 
     by = c("tmp_name_fi")
   ) %>% 
   mutate(tmp_mapping_type="ICD10who name_fi")
@@ -195,27 +198,32 @@ ICD10fi_2code_1code_name_match %>%  select(concept_code, concept_code_who, tmp_n
 
 ```{r}
 
-ICD10fi_2code_1code_not_matched <- ICD10fi_2code_1code_not_matched %>% filter(!(concept_id %in% ICD10fi_2code_1code_name_match$concept_id))
+ICD10fi_2code_1code_not_matched <- ICD10fi_2code_1code_not_matched %>% 
+  filter(!(concept_id %in% ICD10fi_2code_1code_name_match$concept_id))
 
 ```
 
-### Create CONCEPT_RELATIONSHIP  for  ICD10who matcc
-
 ```{r}
-concept_relationship_mapsto <- read_table_concept_relationship_mapsto(path_vocabulary_tables)
-
 
 ICD10fi_mapped_icd10who <- bind_rows(
   ICD10fi_1code_full_match,
   ICD10fi_2code_1code_name_match
 )
+
+```
+
+
+### Create CONCEPT_RELATIONSHIP  for  ICD10who matcc
+
+```{r}
+concept_relationship_mapsto <- read_table_concept_relationship_mapsto(path_vocabulary_tables)
 ```
 
 
 ```{r}
 
 icd10fi_mapsto_icd10who <- left_join(
-  ICD10fi_mapped_icd10who %>% select(concept_id, concept_id_who, tmp_mapping_type, tmp_code_class) %>% rename(concept_id_1 = concept_id), 
+  ICD10fi_mapped_icd10who %>% select(concept_id, concept_id_who, tmp_mapping_type, tmp_code_class, domain_id_who) %>% rename(concept_id_1 = concept_id, tmp_domain_id_2 = domain_id_who), 
   concept_relationship_mapsto %>% rename(concept_id_who = concept_id_1), 
   by="concept_id_who"
 )
@@ -223,7 +231,6 @@ icd10fi_mapsto_icd10who <- left_join(
 
 icd10fi_mapsto_icd10who %>%  head(N_TOPS)
 ```
-
 
 
 ### 1.2 Matchind unmatched "1 code" and "2 code" fwith USAGUI
@@ -288,10 +295,15 @@ icd10fi_mapping_usagui <- left_join(
     select(-ends_with("who"), -English_name_match_level ) %>% 
     rename(concept_id_1 = concept_id, concept_id_2 = conceptId), 
   concept %>% 
-    select(concept_id, valid_start_date, valid_end_date) %>% 
+    select(concept_id, valid_start_date, valid_end_date, domain_id, concept_name) %>% 
     rename_all(str_c, "_2"), 
   by="concept_id_2"
 )
+
+# TOFIX : removing nonsensical domains 
+icd10fi_mapping_usagui <- icd10fi_mapping_usagui %>% 
+  filter(domain_id_2 %in% c("Condition", "Observation", "Procedure"))
+
 
 # select max valid_start_date and min for valid_end_date 
 icd10fi_mapsto_usagi <- icd10fi_mapping_usagui %>% 
@@ -303,15 +315,14 @@ icd10fi_mapsto_usagi <- icd10fi_mapping_usagui %>%
     valid_end_date   = pmin(valid_end_date, valid_end_date_2), 
     invalid_reason = as.character(NA), 
     tmp_mapping_type = "USAGI", 
-    tmp_code_class = tmp_code_class
+    tmp_code_class = tmp_code_class, 
+    tmp_domain_id_2 = domain_id_2
   )
 
 
 icd10fi_mapsto_usagi %>%  head(N_TOPS)
 
 ```
-
-
 
 ### 2 Create CONCEPT_RELATIONSHIP  for 2 code generated 
 
@@ -349,7 +360,8 @@ icd10fi_2codegenerated_mapsto <- icd10fi_2codegenerated_mapping %>%
     valid_end_date = pmin(valid_end_date.x, valid_end_date.y ), 
     invalid_reason = invalid_reason, 
     tmp_mapping_type = tmp_mapping_type, 
-    tmp_code_class ="2 code generated"   
+    tmp_code_class ="2 code generated", 
+    tmp_domain_id_2 = tmp_domain_id_2
   ) %>% 
   distinct()
 
@@ -369,11 +381,13 @@ icd10fi_2codegenerated_mapsto <- icd10fi_2codegenerated_mapsto %>%
 ```
 
 
+
+
 ```{r}
 icd10_mapsto <- bind_rows(
   icd10fi_mapsto_icd10who_and_usagi, 
   icd10fi_2codegenerated_mapsto
-) %>% select(1, 4:8, tmp_mapping_type, tmp_code_class)
+) %>% select(1, 4:8, tmp_mapping_type, tmp_code_class, tmp_domain_id_2)
 
 
 write_csv(icd10_mapsto, "./CONCEPT_RELATIONSHIP_ICD10fi.csv")
@@ -384,7 +398,25 @@ icd10_mapsto %>% head(N_TOPS)
 
 
 
+## Recalculate domain 
+```{r}
+icd10fi_domain <- icd10_mapsto %>% 
+  rename(concept_id = concept_id_1) %>% 
+  group_by(concept_id) %>% 
+  summarise(domain = str_c( sort(unique(tmp_domain_id_2))  , collapse = " "), .groups="drop") %>% 
+  mutate(domain = str_replace(domain, "Condition Observation", "Condition/Obs" )) %>% 
+  mutate(domain = str_replace(domain, "Condition Procedure", "Condition/Procedure" ))
+  
+```
 
+```{r}
+icd10fi_concept_new <- left_join(
+  icd10fi_concept, 
+  icd10fi_domain, 
+  by="concept_id"
+) %>% 
+  mutate(domain_id = if_else(is.na(domain), domain_id, domain ))
+```
 
 
 

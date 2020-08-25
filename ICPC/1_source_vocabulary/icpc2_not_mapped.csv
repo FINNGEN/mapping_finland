@@ -1,0 +1,1444 @@
+code,name_fi,name_en,ICPC_version,main_icd10fi,concept_id
+-30,Laaja terveydentilan arviointi/tarkastus,Medical examin/health eval complete,ICPC2_proc,NA,NA
+-31,Suppea terveydentilan arviointi/tarkastus,Medical examin/health eval partial,ICPC2_proc,NA,NA
+-32,Allergiatutkimus,Sensitivity test,ICPC2_proc,NA,NA
+-33,Mikrobiologinen/immunologinen koe,Microbiological/immunological test,ICPC2_proc,NA,NA
+-34,Veritutkimus,Blood test,ICPC2_proc,NA,NA
+-35,Virtsatutkimus,Urine test,ICPC2_proc,NA,NA
+-36,Ulostetutkimus,Faeces test,ICPC2_proc,NA,NA
+-37,Histologinen/sytologinen tutkimus,Histological/exfoliative cytology,ICPC2_proc,NA,NA
+-38,Muu laboratoriotutkimus,Other laboratory test NEC,ICPC2_proc,NA,NA
+-39,Kliininen toimintakoe,Physical function test,ICPC2_proc,NA,NA
+-40,Diagnostinen endoskopia,Diagnostic endoscopy,ICPC2_proc,NA,NA
+-41,Diagnostinen kuvantaminen,Diagnostic radiology/imaging,ICPC2_proc,NA,NA
+-42,Elektrofysiologinen tutkimus,Electrical tracing,ICPC2_proc,NA,NA
+-43,Muu tutkimustoimenpide,Other diagnostic procedure,ICPC2_proc,NA,NA
+-44,Rokotus / ennaltaehkäisevä lääkitys,Preventive immunization/medic,ICPC2_proc,NA,NA
+-45,Seuranta/terveysneuvonta/ruokavalioneuvonta,Observ/health educat/advice/diet,ICPC2_proc,NA,NA
+-46,Perusterveydenhuollon asiantuntijan konsultaatio,Consultation primary care provider,ICPC2_proc,NA,NA
+-47,Erikoislääkärin konsultaatio,Consultation with specialist,ICPC2_proc,NA,NA
+-48,Potilaan tarpeiden/tulosyyn selvittäminen,Clarification/discussion RFE/demand,ICPC2_proc,NA,NA
+-49,Muu ennaltaehkäisevä toimenpide,Other preventive procedure,ICPC2_proc,NA,NA
+-50,Lääkitys/lääkemääräys/uusinta/injektio,Medication/prescr/renewal,ICPC2_proc,NA,NA
+-51,Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto,I&d/flush/aspiration,ICPC2_proc,NA,NA
+-52,Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto,Exc/remov/biopsy/destruc/debrid/caut,ICPC2_proc,NA,NA
+-53,Katetrointi/intubointi/laajentaminen,Instrument/catheter/intubate/dilate,ICPC2_proc,NA,NA
+-54,Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto),Repair/fix-suture/cast/prosth device,ICPC2_proc,NA,NA
+-55,Paikallinen lääkeaineinjektio,Local injection/infiltration,ICPC2_proc,NA,NA
+-56,Sidos/kompressi/tamponointi,Dressing/pressure/compress/tamponade,ICPC2_proc,NA,NA
+-57,Fysikaalinen hoito / kuntoutus,Physical medicine/rehabilitation,ICPC2_proc,NA,NA
+-58,Terapeuttinen neuvonta / kuuntelu,Therapeutic counselling/listening,ICPC2_proc,NA,NA
+-59,Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia,Other therap proced/minor surg NEC,ICPC2_proc,NA,NA
+-60,Tutkimustulosten kuuleminen,Result test/procedure,ICPC2_proc,NA,NA
+-61,Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta,Result examination/test/record/letter from other provider,ICPC2_proc,NA,NA
+-62,Hallinnollinen toimenpide,Administrative procedure,ICPC2_proc,NA,NA
+-63,Muu seurantakäynti,Follow-up encounter unspecified,ICPC2_proc,NA,NA
+-64,Hoidonantajan käynnistämä tapahtuma,Encounter/prob initiated by provider,ICPC2_proc,NA,NA
+-65,Muun henkilön käynnistämä tapahtuma,Enc/prob init by other than pt/prov,ICPC2_proc,NA,NA
+-66,Lähete perusterveydenhuollon ammattihenkilölle (pl. lääkäri),Referral to non-MD provider,ICPC2_proc,NA,NA
+-67,Lähete erikoislääkärille/sairaalaan,Referral to physician/hospital,ICPC2_proc,NA,NA
+-68,Muu lähete,Other referral NEC,ICPC2_proc,NA,NA
+-69,Muu käynnin syy,Other reason for encounter NEC,ICPC2_proc,NA,NA
+A,Yleiset ja epämääräiset,General and Unspecified,ICPC2,NA,NA
+A01,"Kipu, yleinen / monessa paikassa",Pain general/multiple sites,ICPC2,R52.9,45576225
+A02,Vilunväristykset,Chills,ICPC2,R68.88,45532807
+A03,Kuume,Fever,ICPC2,R50.9,45600395
+A04,"Heikkous/väsymys, yleinen",Weakness/tiredness general,ICPC2,R53,45532809
+A05,Sairauden tunne,Feeling ill,ICPC2,R53,45547384
+A06,Pyörtyminen,Fainting/syncope,ICPC2,R55,45532812
+A07,Tajuttomuus,Coma,ICPC2,R40.2,45547387
+A08,Turvotus,Swelling,ICPC2,R68.88,45755296
+A09,Hikoiluongelma,Sweating problem,ICPC2,R61.9,45605189
+A10,"Verenvuoto, määrittämätön",Bleeding/haemorrhage NOS,ICPC2,R58,NA
+A11,"Rintakipu, määrittämätön",Chest pain NOS,ICPC2,R07.4,NA
+A13,Huoli lääkkeen/hoidon sivuvaikutuksesta,Concern/fear medical treatment,ICPC2,Z71.1,NA
+A16,Ärtyisä vauva,Irritable infant,ICPC2,R68.1,45576232
+A18,Huoli ulkonäöstä,Concern about appearance,ICPC2,R46.8,45755302
+A20,Eutanasiaan liittyvä keskustelu/pyyntö,Euthanasia request/discussion,ICPC2,Z71.8,45600402
+A21,Syöpäsairauden riskitekijä,Risk factor for malignancy,ICPC2,Z85.9,45585906
+A23,"Sairauden riskitekijä, määrittämätön",Risk factor NOS,ICPC2,Z91.8,45532821
+A25,Kuolemanpelko,Fear of death/dying,ICPC2,Z71.1,45600404
+A26,"Huoli/pelko syövästä, määrittämätön","Fear of cancer, NOS",ICPC2,Z71.1,45566496
+A27,"Huoli/pelko muusta sairaudesta, määrittämätön",Fear of other disease NOS,ICPC2,Z71.1,45561695
+A28,"Toiminnanvajaus, määrittämätön",Limited function/disability NOS,ICPC2,Z73.6,45552168
+A29,Muu yleisoire/-vaiva,General symptom/complaint other,ICPC2,R68.88,NA
+A30,"Yleiset ja epämääräiset, Laaja terveydentilan arviointi/tarkastus","General and Unspecified, Medical examin/health eval complete",ICPC2,NA,45552170
+A31,"Yleiset ja epämääräiset, Suppea terveydentilan arviointi/tarkastus","General and Unspecified, Medical examin/health eval partial",ICPC2,NA,45552171
+A32,"Yleiset ja epämääräiset, Allergiatutkimus","General and Unspecified, Sensitivity test",ICPC2,NA,45595582
+A33,"Yleiset ja epämääräiset, Mikrobiologinen/immunologinen koe","General and Unspecified, Microbiological/immunological test",ICPC2,NA,45552175
+A34,"Yleiset ja epämääräiset, Veritutkimus","General and Unspecified, Blood test",ICPC2,NA,45556894
+A35,"Yleiset ja epämääräiset, Virtsatutkimus","General and Unspecified, Urine test",ICPC2,NA,45542526
+A36,"Yleiset ja epämääräiset, Ulostetutkimus","General and Unspecified, Faeces test",ICPC2,NA,45590807
+A37,"Yleiset ja epämääräiset, Histologinen/sytologinen tutkimus","General and Unspecified, Histological/exfoliative cytology",ICPC2,NA,45547403
+A38,"Yleiset ja epämääräiset, Muu laboratoriotutkimus","General and Unspecified, Other laboratory test NEC",ICPC2,NA,45552176
+A39,"Yleiset ja epämääräiset, Kliininen toimintakoe","General and Unspecified, Physical function test",ICPC2,NA,45571426
+A40,"Yleiset ja epämääräiset, Diagnostinen endoskopia","General and Unspecified, Diagnostic endoscopy",ICPC2,NA,45556901
+A41,"Yleiset ja epämääräiset, Diagnostinen kuvantaminen","General and Unspecified, Diagnostic radiology/imaging",ICPC2,NA,45532831
+A42,"Yleiset ja epämääräiset, Elektrofysiologinen tutkimus","General and Unspecified, Electrical tracing",ICPC2,NA,45532834
+A43,"Yleiset ja epämääräiset, Muu tutkimustoimenpide","General and Unspecified, Other diagnostic procedure",ICPC2,NA,45590815
+A44,"Yleiset ja epämääräiset, Rokotus / ennaltaehkäisevä lääkitys","General and Unspecified, Preventive immunization/medic",ICPC2,NA,45605203
+A45,"Yleiset ja epämääräiset, Seuranta/terveysneuvonta/ruokavalioneuvonta","General and Unspecified, Observ/health educat/advice/diet",ICPC2,NA,NA
+A46,"Yleiset ja epämääräiset, Perusterveydenhuollon asiantuntijan konsultaatio","General and Unspecified, Consultation primary care provider",ICPC2,NA,45561706
+A47,"Yleiset ja epämääräiset, Erikoislääkärin konsultaatio","General and Unspecified, Consultation with specialist",ICPC2,NA,NA
+A48,"Yleiset ja epämääräiset, Potilaan tarpeiden/tulosyyn selvittäminen","General and Unspecified, Clarification/discussion RFE/demand",ICPC2,NA,45755303
+A49,"Yleiset ja epämääräiset, Muu ennaltaehkäisevä toimenpide","General and Unspecified, Other preventive procedure",ICPC2,NA,45561708
+A50,"Yleiset ja epämääräiset, Lääkitys/lääkemääräys/uusinta/injektio","General and Unspecified, Medication/prescr/renewal",ICPC2,NA,45605205
+A51,"Yleiset ja epämääräiset, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","General and Unspecified, I&d/flush/aspiration",ICPC2,NA,45532841
+A52,"Yleiset ja epämääräiset, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","General and Unspecified, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45576242
+A53,"Yleiset ja epämääräiset, Katetrointi/intubointi/laajentaminen","General and Unspecified, Instrument/catheter/intubate/dilate",ICPC2,NA,45556908
+A54,"Yleiset ja epämääräiset, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","General and Unspecified, Repair/fix-suture/cast/prosth device",ICPC2,NA,45547415
+A55,"Yleiset ja epämääräiset, Paikallinen lääkeaineinjektio","General and Unspecified, Local injection/infiltration",ICPC2,NA,45552190
+A56,"Yleiset ja epämääräiset, Sidos/kompressi/tamponointi","General and Unspecified, Dressing/pressure/compress/tamponade",ICPC2,NA,45755304
+A57,"Yleiset ja epämääräiset, Fysikaalinen hoito / kuntoutus","General and Unspecified, Physical medicine/rehabilitation",ICPC2,NA,45581127
+A58,"Yleiset ja epämääräiset, Terapeuttinen neuvonta / kuuntelu","General and Unspecified, Therapeutic counselling/listening",ICPC2,NA,45532847
+A59,"Yleiset ja epämääräiset, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","General and Unspecified, Other therap proced/minor surg NEC",ICPC2,NA,45600429
+A60,"Yleiset ja epämääräiset, Tutkimustulosten kuuleminen","General and Unspecified, Result test/procedure",ICPC2,NA,45561722
+A61,"Yleiset ja epämääräiset, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","General and Unspecified, Result examination/test/record/letter from other provider",ICPC2,NA,NA
+A62,"Yleiset ja epämääräiset, Hallinnollinen toimenpide","General and Unspecified, Administrative procedure",ICPC2,NA,NA
+A63,"Yleiset ja epämääräiset, Muu seurantakäynti","General and Unspecified, Follow-up encounter unspecified",ICPC2,NA,45755305
+A64,"Yleiset ja epämääräiset, Hoidonantajan käynnistämä tapahtuma","General and Unspecified, Encounter/prob initiated by provider",ICPC2,NA,45532848
+A65,"Yleiset ja epämääräiset, Muun henkilön käynnistämä tapahtuma","General and Unspecified, Enc/prob init by other than pt/prov",ICPC2,NA,45600432
+A66,"Yleiset ja epämääräiset, Lähete muulle perusterveydenhuollon ammattihenkilölle","General and Unspecified, Referral to non-MD provider",ICPC2,NA,45556913
+A67,"Yleiset ja epämääräiset, Lähete erikoislääkärille/sairaalaan","General and Unspecified, Referral to physician/hospital",ICPC2,NA,45595592
+A68,"Yleiset ja epämääräiset, Muu lähete","General and Unspecified, Other referral NEC",ICPC2,NA,45556915
+A69,"Yleiset ja epämääräiset, Muu käynnin syy","General and Unspecified, Other reason for encounter NEC",ICPC2,NA,45542534
+A70,Tuberkuloosi,Tuberculosis,ICPC2,A15.8,45595595
+A71,Tuhkarokko,Measles,ICPC2,B05.9,45552195
+A72,Vesirokko,Chickenpox,ICPC2,B01.9,NA
+A73,Malaria,Malaria,ICPC2,B54,NA
+A74,Vihurirokko,Rubella,ICPC2,B06.9,45542537
+A75,Mononukleoosi,Infectious mononucleosis,ICPC2,B27.9,45571442
+A76,"Virusperäinen ihottuma, muu",Viral exanthem other,ICPC2,B09,NA
+A77,"Virustauti, muu",Viral disease other/NOS,ICPC2,B34.9,45537744
+A78,"Tartuntatauti, muu",Infectious disease other/NOS,ICPC2,B99,45542540
+A79,"Syöpä, määrittämätön",Malignancy NOS,ICPC2,C80.90&,45585933
+A80,"Vamma, määrittämätön",Trauma/injury NOS,ICPC2,T14.9,45532851
+A81,Monivamma,Multiple trauma/injuries,ICPC2,T07,45532852
+A82,Vamman myöhäisseuraus,Secondary effect of trauma,ICPC2,T94.1,45576247
+A84,Lääkemyrkytys,Poisoning by medical agent,ICPC2,T50.9,45571446
+A85,Lääkkeen haittavaikutus,Adverse effect medical agent,ICPC2,T88.7#,45755299
+A86,Muiden aineiden myrkkyvaikutus,Toxic effect non-medicinal substance,ICPC2,T65.9,45542542
+A87,Kirurgisen tai muun hoidon komplikaatio,Complication of medical treatment,ICPC2,T88.9,45585935
+A88,Fysikaalisen tekijän haittavaikutus,Adverse effect physical factor,ICPC2,T78.9,45755300
+A89,Proteesin haittavaikutus,Effect prosthetic device,ICPC2,T85.9,45561731
+A90,"Synnynnäinen epämuodostuma, määrittämätön/useita",Congenital anomaly NOS/multiple,ICPC2,Q89.7,45581135
+A91,"Poikkeava tutkimustulos, muu",Abnormal result investigation NOS,ICPC2,R89.9,45566527
+A92,"Allergia / allerginen reaktio, määrittämätön",Allergy/allergic reaction NOS,ICPC2,T78.4,45576251
+A93,Ennenaikaisesti syntynyt lapsi,Premature newborn,ICPC2,P07.3,45755301
+A94,"Vastasyntyneen sairastavuus, muu",Perinatal morbidity other,ICPC2,P96.9,45576252
+A95,Perinataalikuolema,Perinatal mortality,ICPC2,R95,45571449
+A96,Kuolema,Death,ICPC2,R99,45566529
+A97,Ei sairautta,No disease,ICPC2,Z00.0,42616294
+A98,Terveyden ylläpito / Sairauden ennaltaehkäisy,Health maint/preventive medicine,ICPC2,Z29.9,45755322
+A99,"Sairaus/tila, luonne tai sijainti määrittämätön",Disease/condition unspecnature/site,ICPC2,R69,45561734
+B,"Veri, vertamuodostavat elimet ja immuunijärjestelmä",Blood and Immunity,ICPC2,NA,NA
+B02,"Imusolmuke, suurentunut/kivulias",Lymph gland(s) enlarged/painful,ICPC2,R59.0,45552205
+B04,Vereen / lymfaattiseen kudokseen liittyvä oire/vaiva,Blood symptom/complaint,ICPC2,R68.88,45556928
+B25,Huoli/Pelko AIDSista/HIV:stä,Fear of AIDS/HIV,ICPC2,Z71.1,45552214
+B26,Huoli/pelko veren tai verta muodostavien elinten syövästä,Fear cancer blood/lymph,ICPC2,Z71.1,45556934
+B27,Huoli/pelko veren tai verta muodostavien elinten muusta taudista,Fear blood/lymph disease other,ICPC2,Z71.1,45547444
+B28,"Toiminnanvajaus, veren / vertamuodostavien kudosten",Limited function/disability (B),ICPC2,Z73.6,NA
+B29,Muu imusuoni-/immuunijärjestelmän oire/vaiva,Lymph/immune mech sympt/complt other,ICPC2,R68.88,NA
+B30,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Laaja terveydentilan arviointi/tarkastus","Blood and Immunity, Medical examin/health eval complete",ICPC2,NA,45561751
+B31,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Suppea terveydentilan arviointi/tarkastus","Blood and Immunity, Medical examin/health eval partial",ICPC2,NA,NA
+B32,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Allergiatutkimus","Blood and Immunity, Sensitivity test",ICPC2,NA,NA
+B33,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Mikrobiologinen/immunologinen koe","Blood and Immunity, Microbiological/immunological test",ICPC2,NA,45755327
+B34,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Veritutkimus","Blood and Immunity, Blood test",ICPC2,NA,45547449
+B35,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Virtsatutkimus","Blood and Immunity, Urine test",ICPC2,NA,45537760
+B36,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Ulostetutkimus","Blood and Immunity, Faeces test",ICPC2,NA,45532874
+B37,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Histologinen/sytologinen tutkimus","Blood and Immunity, Histological/exfoliative cytology",ICPC2,NA,45595615
+B38,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu laboratoriotutkimus","Blood and Immunity, Other laboratory test NEC",ICPC2,NA,45542560
+B39,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Kliininen toimintakoe","Blood and Immunity, Physical function test",ICPC2,NA,45561755
+B40,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Diagnostinen endoskopia","Blood and Immunity, Diagnostic endoscopy",ICPC2,NA,45542562
+B41,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Diagnostinen kuvantaminen","Blood and Immunity, Diagnostic radiology/imaging",ICPC2,NA,45600457
+B42,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Elektrofysiologinen tutkimus","Blood and Immunity, Electrical tracing",ICPC2,NA,45561756
+B43,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu tutkimustoimenpide","Blood and Immunity, Other diagnostic procedure",ICPC2,NA,45605236
+B44,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Rokotus / ennaltaehkäisevä lääkitys","Blood and Immunity, Preventive immunization/medic",ICPC2,NA,45595619
+B45,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Seuranta/terveysneuvonta/ruokavalioneuvonta","Blood and Immunity, Observ/health educat/advice/diet",ICPC2,NA,45537765
+B46,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Perusterveydenhuollon asiantuntijan konsultaatio","Blood and Immunity, Consultation primary care provider",ICPC2,NA,45547457
+B47,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Erikoislääkärin konsultaatio","Blood and Immunity, Consultation with specialist",ICPC2,NA,45542566
+B48,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Potilaan tarpeiden/tulosyyn selvittäminen","Blood and Immunity, Clarification/discussion RFE/demand",ICPC2,NA,45755328
+B49,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu ennaltaehkäisevä toimenpide","Blood and Immunity, Other preventive procedure",ICPC2,NA,45600461
+B50,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lääkitys/lääkemääräys/uusinta/injektio","Blood and Immunity, Medication/prescr/renewal",ICPC2,NA,45556942
+B51,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Blood and Immunity, I&d/flush/aspiration",ICPC2,NA,45600462
+B52,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Blood and Immunity, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45590857
+B53,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Katetrointi/intubointi/laajentaminen","Blood and Immunity, Instrument/catheter/intubate/dilate",ICPC2,NA,45755306
+B54,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Blood and Immunity, Repair/fix-suture/cast/prosth device",ICPC2,NA,45552228
+B55,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Paikallinen lääkeaineinjektio","Blood and Immunity, Local injection/infiltration",ICPC2,NA,45576275
+B56,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Sidos/kompressi/tamponointi","Blood and Immunity, Dressing/pressure/compress/tamponade",ICPC2,NA,45571472
+B57,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Fysikaalinen hoito / kuntoutus","Blood and Immunity, Physical medicine/rehabilitation",ICPC2,NA,45585964
+B58,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Terapeuttinen neuvonta / kuuntelu","Blood and Immunity, Therapeutic counselling/listening",ICPC2,NA,45605242
+B59,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Blood and Immunity, Other therap proced/minor surg NEC",ICPC2,NA,45566559
+B60,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Tutkimustulosten kuuleminen","Blood and Immunity, Result test/procedure",ICPC2,NA,45755307
+B61,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Blood and Immunity, Result examination/test/record/letter from other provider",ICPC2,NA,NA
+B62,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Hallinnollinen toimenpide","Blood and Immunity, Administrative procedure",ICPC2,NA,NA
+B63,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu seurantakäynti","Blood and Immunity, Follow-up encounter unspecified",ICPC2,NA,NA
+B64,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Hoidonantajan käynnistämä tapahtuma","Blood and Immunity, Encounter/prob initiated by provider",ICPC2,NA,45576277
+B65,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muun henkilön käynnistämä tapahtuma","Blood and Immunity, Enc/prob init by other than pt/prov",ICPC2,NA,45595622
+B66,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lähete muulle perusterveydenhuollon ammattihenkilölle","Blood and Immunity, Referral to non-MD provider",ICPC2,NA,45547463
+B67,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Lähete erikoislääkärille/sairaalaan","Blood and Immunity, Referral to physician/hospital",ICPC2,NA,45581181
+B68,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu lähete","Blood and Immunity, Other referral NEC",ICPC2,NA,45547467
+B69,"Veri, vertamuodostavat elimet ja immuunijärjestelmä, Muu käynnin syy","Blood and Immunity, Other reason for encounter NEC",ICPC2,NA,45566562
+B70,"Imusolmuketulehdus, akuutti",Lymphadenitis acute,ICPC2,L04.9,45755308
+B71,"Imusolmuketulehdus, krooninen/määrittämätön",Lymphadenitis chronic/non-specific,ICPC2,I88.9,45576282
+B72,Hodgkinin tauti / lymfooma,Hodgkin Lymphoma,ICPC2,C81.9,45556951
+B73,Leukemia,Leukaemia,ICPC2,C95.9,45585970
+B74,"Pahanlaatuinen veritauti, muu",Malignant neoplasm blood other,ICPC2,C96.9,45532885
+B75,"Hyvänlaatuinen/muu kasvain, vertamuodostavien elinten",Neoplasm blood benign/unspecified,ICPC2,D47.9,45556953
+B76,"Pernarepeämä, vamman aiheuttama",Ruptured spleen traumatic,ICPC2,S36.0,45605247
+B77,"Vamma vertamuodostavassa elimessä / imukudoksessa / pernassa, muu",Injury blood/lymph/spleen other,ICPC2,T14.9,45600467
+B78,"Anemia, perinnöllinen hemolyyttinen",Hereditary haemolytic anaemia,ICPC2,D58.9,45581185
+B79,"Synnynnäinen epämuodostuma, verta muodostavien elinten ja imusuoniston, muu",Congen anomaly blood/lymph other,ICPC2,Q89.88,45532887
+B80,Raudanpuuteanemia,Iron deficiency anaemia,ICPC2,D50.9,45571479
+B81,"Anemia, B12-vitamiinin/folaatin puute",Anaemia vit B12/folate deficiency,ICPC2,D51.9,45755309
+B82,"Anemia, muu/määrittämätön",Anaemia other/unspecified,ICPC2,D64.9,45581187
+B83,Punatäplätauti/hyytymishäiriö,Purpura/coagulation defect,ICPC2,D69.9,45576287
+B84,"Valkosolujen poikkeama, selittämätön",Unexplained abnormal white cells,ICPC2,R72,NA
+B87,Pernan suurentuma,Splenomegaly,ICPC2,R16.1,45595626
+B90,HIV/AIDS,HIV-infection/AIDS,ICPC2,B24,45552240
+B99,Muu veren / verta muodostavan elimen / imukudoksen / pernan sairaus,Blood/lymph/spleen disease other,ICPC2,D75.8,45590874
+D,Ruoansulatuselimet,Digestive,ICPC2,NA,NA
+D01,"Vatsakipu, yleinen",Abdominal pain/cramps general,ICPC2,R10.4,45581271
+D02,Ylävatsakipu,Abdominal pain epigastric,ICPC2,R10.1,45755332
+D03,Närästys,Heartburn,ICPC2,R12,45561883
+D04,Peräsuolen/peräaukon kipu,Rectal/anal pain,ICPC2,R10.2,45590971
+D05,Peräaukon kutina,Perianal itching,ICPC2,L29.0,45532967
+D06,"Vatsan alueen kipu, paikallinen, muu",Abdominal pain localized other,ICPC2,R10.3,45581278
+D07,Happovaiva/ruoansulatushäiriö,Dyspepsia/indigestion,ICPC2,K30,45755333
+D08,Ilmavaivat/röyhtäily,Flatulence/gas/belching,ICPC2,R14,NA
+D09,Pahoinvointi,Nausea,ICPC2,R11,45755334
+D10,Oksentelu,Vomiting,ICPC2,R11,45586083
+D11,Ripuli,Diarrhoea,ICPC2,K59.1,45590978
+D12,Ummetus,Constipation,ICPC2,K59.0,45537891
+D13,Keltaisuus,Jaundice,ICPC2,R17,45547576
+D14,Verioksennus/hematemeesi,Haematemesis/vomiting blood,ICPC2,K92.0,45755335
+D15,Meleena,Melaena,ICPC2,K92.1,45566664
+D16,Verenvuoto peräsuolesta,Rectal bleeding,ICPC2,K62.5,45581285
+D17,Ulosteen pidätyskyvyttömyys,Incontinence of bowel,ICPC2,R15,45537894
+D18,Muutos ulosteessa / suolen toiminnassa,Change in faeces/bowel movements,ICPC2,R19.4,45755336
+D19,Hampaiden/ikenien oire/vaiva,Teeth/gum symptom/complaint,ICPC2,K03.88,45561901
+D20,Suun/kielen/huulen oire/vaiva,Mouth/tongue/lip symptom/complaint,ICPC2,K13.7,45755337
+D21,Nielemisongelma,Swallowing problem,ICPC2,R13,45590985
+D23,Maksan suurentuma,Hepatomegaly,ICPC2,R16.0,45590988
+D24,"Kyhmy/patti/muhkura mahassa, määrittämätön",Abdominal mass NOS,ICPC2,R19.0,45532979
+D25,Vatsan turvotus,Abdominal distension,ICPC2,R19.0,45571605
+D26,Huoli/pelko ruuansulatuselimen syövästä,Fear of cancer of digestive system,ICPC2,Z71.1,45600586
+D27,Huoli/pelko ruuansulatuselimen muusta sairaudesta,Fear of digestive disease other,ICPC2,Z71.1,45571606
+D28,"Toiminnanvajaus, ruuansulatuselimen",Limited function/disability (D),ICPC2,Z73.6,45581296
+D29,Muu ruuansulatuselimen oire/vaiva,Digestive symptom/complaint other,ICPC2,R19.8,45557068
+D30,"Ruoansulatuselimet, Laaja terveydentilan arviointi/tarkastus","Digestive, Medical examin/health eval complete",ICPC2,NA,45547589
+D31,"Ruoansulatuselimet, Suppea terveydentilan arviointi/tarkastus","Digestive, Medical examin/health eval partial",ICPC2,NA,45755338
+D32,"Ruoansulatuselimet, Allergiatutkimus","Digestive, Sensitivity test",ICPC2,NA,45595751
+D33,"Ruoansulatuselimet, Mikrobiologinen/immunologinen koe","Digestive, Microbiological/immunological test",ICPC2,NA,45566683
+D34,"Ruoansulatuselimet, Veritutkimus","Digestive, Blood test",ICPC2,NA,45542696
+D35,"Ruoansulatuselimet, Virtsatutkimus","Digestive, Urine test",ICPC2,NA,45576390
+D36,"Ruoansulatuselimet, Ulostetutkimus","Digestive, Faeces test",ICPC2,NA,45755363
+D37,"Ruoansulatuselimet, Histologinen/sytologinen tutkimus","Digestive, Histological/exfoliative cytology",ICPC2,NA,45571611
+D38,"Ruoansulatuselimet, Muu laboratoriotutkimus","Digestive, Other laboratory test NEC",ICPC2,NA,45755364
+D39,"Ruoansulatuselimet, Kliininen toimintakoe","Digestive, Physical function test",ICPC2,NA,45552350
+D40,"Ruoansulatuselimet, Diagnostinen endoskopia","Digestive, Diagnostic endoscopy",ICPC2,NA,45586104
+D41,"Ruoansulatuselimet, Diagnostinen kuvantaminen","Digestive, Diagnostic radiology/imaging",ICPC2,NA,45576398
+D42,"Ruoansulatuselimet, Elektrofysiologinen tutkimus","Digestive, Electrical tracing",ICPC2,NA,45542702
+D43,"Ruoansulatuselimet, Muu tutkimustoimenpide","Digestive, Other diagnostic procedure",ICPC2,NA,45591006
+D44,"Ruoansulatuselimet, Rokotus / ennaltaehkäisevä lääkitys","Digestive, Preventive immunization/medic",ICPC2,NA,45595759
+D45,"Ruoansulatuselimet, Seuranta/terveysneuvonta/ruokavalioneuvonta","Digestive, Observ/health educat/advice/diet",ICPC2,NA,45595761
+D46,"Ruoansulatuselimet, Perusterveydenhuollon asiantuntijan konsultaatio","Digestive, Consultation primary care provider",ICPC2,NA,45605369
+D47,"Ruoansulatuselimet, Erikoislääkärin konsultaatio","Digestive, Consultation with specialist",ICPC2,NA,45586111
+D48,"Ruoansulatuselimet, Potilaan tarpeiden/tulosyyn selvittäminen","Digestive, Clarification/discussion RFE/demand",ICPC2,NA,45600599
+D49,"Ruoansulatuselimet, Muu ennaltaehkäisevä toimenpide","Digestive, Other preventive procedure",ICPC2,NA,NA
+D50,"Ruoansulatuselimet, Lääkitys/lääkemääräys/uusinta/injektio","Digestive, Medication/prescr/renewal",ICPC2,NA,45571628
+D51,"Ruoansulatuselimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Digestive, I&d/flush/aspiration",ICPC2,NA,45571630
+D52,"Ruoansulatuselimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Digestive, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45566698
+D53,"Ruoansulatuselimet, Katetrointi/intubointi/laajentaminen","Digestive, Instrument/catheter/intubate/dilate",ICPC2,NA,45605374
+D54,"Ruoansulatuselimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Digestive, Repair/fix-suture/cast/prosth device",ICPC2,NA,NA
+D55,"Ruoansulatuselimet, Paikallinen lääkeaineinjektio","Digestive, Local injection/infiltration",ICPC2,NA,45595764
+D56,"Ruoansulatuselimet, Sidos/kompressi/tamponointi","Digestive, Dressing/pressure/compress/tamponade",ICPC2,NA,45566699
+D57,"Ruoansulatuselimet, Fysikaalinen hoito / kuntoutus","Digestive, Physical medicine/rehabilitation",ICPC2,NA,45755365
+D58,"Ruoansulatuselimet, Terapeuttinen neuvonta / kuuntelu","Digestive, Therapeutic counselling/listening",ICPC2,NA,45581325
+D59,"Ruoansulatuselimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Digestive, Other therap proced/minor surg NEC",ICPC2,NA,45605377
+D60,"Ruoansulatuselimet, Tutkimustulosten kuuleminen","Digestive, Result test/procedure",ICPC2,NA,45591011
+D61,"Ruoansulatuselimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Digestive, Result examination/test/record/letter from other provider",ICPC2,NA,45537921
+D62,"Ruoansulatuselimet, Hallinnollinen toimenpide","Digestive, Administrative procedure",ICPC2,NA,45591014
+D63,"Ruoansulatuselimet, Muu seurantakäynti","Digestive, Follow-up encounter unspecified",ICPC2,NA,45755366
+D64,"Ruoansulatuselimet, Hoidonantajan käynnistämä tapahtuma","Digestive, Encounter/prob initiated by provider",ICPC2,NA,45537924
+D65,"Ruoansulatuselimet, Muun henkilön käynnistämä tapahtuma","Digestive, Enc/prob init by other than pt/prov",ICPC2,NA,45547609
+D66,"Ruoansulatuselimet, Lähete muulle perusterveydenhuollon ammattihenkilölle","Digestive, Referral to non-MD provider",ICPC2,NA,45532993
+D67,"Ruoansulatuselimet, Lähete erikoislääkärille/sairaalaan","Digestive, Referral to physician/hospital",ICPC2,NA,45600611
+D68,"Ruoansulatuselimet, Muu lähete","Digestive, Other referral NEC",ICPC2,NA,45542713
+D69,"Ruoansulatuselimet, Muu käynnin syy","Digestive, Other reason for encounter NEC",ICPC2,NA,45561930
+D70,Ruoansulatuskanavan infektio,Gastrointestinal infection,ICPC2,A08.5,45557092
+D71,Sikotauti,Mumps,ICPC2,B26.9,45566709
+D72,Virushepatiitti,Viral hepatitis,ICPC2,B19.9,45552364
+D73,"Maha-suolitulehdus, tarttuvaksi oletettu",Gastroenteritis presumed infection,ICPC2,A09,45595775
+D74,"Pahanlaatuinen kasvain, mahalaukun",Malignant neoplasm stomach,ICPC2,C16.9&,45566712
+D75,"Pahanlaatuinen kasvain, paksusuolen/peräsuolen",Malignant neoplasm colon/rectum,ICPC2,C18.99&,45547613
+D76,"Pahanlaatuinen kasvain, haiman",Malignant neoplasm pancreas,ICPC2,C25.9&,45755353
+D77,"Pahanlaatuinen kasvain, ruuansulatuselinten, muu/määrittämätön",Malignant digestive neopl other/NOS,ICPC2,C26.9&,45542718
+D78,"Hyvänlaatuinen/määrittämätön kasvain, ruoansulatuskanavan",Neoplasm digestive benign/unspecif,ICPC2,D13.9&,NA
+D79,Vierasesine ruuansulatuskanavassa,Foreign body digestive system,ICPC2,T18.9,NA
+D80,"Ruoansulatuselinten vamma, muu",Injury digestive system other,ICPC2,T28.7,45605386
+D81,"Synnynnäinen epämuodostuma, ruuansulatuselimen",Congenital anomaly digestive system,ICPC2,Q45.9,45533003
+D82,Hampaiden/ikenien sairaus,Teeth/gum disease,ICPC2,K08.9,45600620
+D83,Suun/kielen/huulen sairaus,Mouth/tongue/lip disease,ICPC2,K13.7,45557099
+D84,Ruokatorven sairaus,Oesophagus disease,ICPC2,K22.9,45605388
+D85,Pohjukaissuolen haava,Duodenal ulcer,ICPC2,K26.9#,NA
+D86,"Peptinen haava, muu",Peptic ulcer other,ICPC2,K25.9,45552367
+D87,Mahalaukun toimintahäiriö,Stomach function disorder,ICPC2,K29.9,NA
+D88,Umpilisäkkeen tulehdus,Appendicitis,ICPC2,K37,NA
+D89,Nivustyrä,Inguinal hernia,ICPC2,K40.9,45595781
+D90,Palleatyrä,Hiatus hernia,ICPC2,K44.9,NA
+D91,"Vatsan alueen tyrä, muu",Abdominal hernia other,ICPC2,K46.9,NA
+D92,Suolen umpipussitauti,Diverticular disease,ICPC2,K57.9,NA
+D93,Ärtynyt paksusuoli,Irritable bowel syndrome,ICPC2,K58.9,NA
+D94,Krooninen suolistotulehdus / haavainen paksusuolen tulehdus,Chronic enteritis/ulcerative colitis,ICPC2,K51.2,NA
+D95,Peräaukon haavauma/paise,Anal fissure/perianal abscess,ICPC2,K60.2,NA
+D96,Madot ja muut loiset,Worms/other parasites,ICPC2,B83.9,NA
+D97,"Maksasairaus, määrittämätön",Liver disease NOS,ICPC2,K76.9,NA
+D98,Sappirakon tulehdus / sappikivitauti,Cholecystitis/cholelithiasis,ICPC2,K82.9,NA
+D99,Muu ruuansulatuselinten tauti,Disease digestive system other,ICPC2,K92.9,NA
+F,Silmä,Eye,ICPC2,NA,NA
+F01,Kipu silmässä,Eye pain,ICPC2,H57.1,45557147
+F02,Punainen silmä,Red eye,ICPC2,H57.8,45581394
+F03,Rähmivä/vuotava silmä,Eye discharge,ICPC2,H04.2,45566772
+F04,Pilkut näkökentässä,Visual floaters/spots,ICPC2,H53.1,45533062
+F05,"Näkökyvyn häiriö, muu",Visual disturbance other,ICPC2,H53.1,45581397
+F13,Poikkeava tunne silmässä,Eye sensation abnormal,ICPC2,H57.8,45538018
+F14,Poikkeavat silmän liikkeet,Eye movements abnormal,ICPC2,H55,45595869
+F15,Silmien poikkeava ulkonäkö,Eye appearance abnormal,ICPC2,H57.8,45600710
+F16,Luomien oireet/vaivat,Eyelid symptom/complaint,ICPC2,H02.5,45586215
+F17,Silmälaseihin liittyvät oireet/vaivat,Glasses symptom/complaint,ICPC2,Z46.0,45586218
+F18,Piilolaseihin liittyvät oireet/vaivat,Contact lens symptom/complaint,ICPC2,Z46.0,45547682
+F27,Huoli/pelko silmäsairaudesta,Fear of eye disease,ICPC2,Z71.1,NA
+F28,"Toiminnanvajaus, silmän",Limited function/disability (F),ICPC2,Z73.6,45605491
+F29,Muu silmän oire/vaiva,Eye symptom/complaint other,ICPC2,H57.9,45533099
+F30,"Silmä, Laaja terveydentilan arviointi/tarkastus","Eye, Medical examin/health eval complete",ICPC2,NA,45547701
+F31,"Silmä, Suppea terveydentilan arviointi/tarkastus","Eye, Medical examin/health eval partial",ICPC2,NA,45595902
+F32,"Silmä, Allergiatutkimus","Eye, Sensitivity test",ICPC2,NA,45595904
+F33,"Silmä, Mikrobiologinen/immunologinen koe","Eye, Microbiological/immunological test",ICPC2,NA,45576542
+F34,"Silmä, Veritutkimus","Eye, Blood test",ICPC2,NA,45557203
+F35,"Silmä, Virtsatutkimus","Eye, Urine test",ICPC2,NA,NA
+F36,"Silmä, Ulostetutkimus","Eye, Faeces test",ICPC2,NA,NA
+F37,"Silmä, Histologinen/sytologinen tutkimus","Eye, Histological/exfoliative cytology",ICPC2,NA,NA
+F38,"Silmä, Muu laboratoriotutkimus","Eye, Other laboratory test NEC",ICPC2,NA,45755367
+F39,"Silmä, Kliininen toimintakoe","Eye, Physical function test",ICPC2,NA,45591137
+F40,"Silmä, Diagnostinen endoskopia","Eye, Diagnostic endoscopy",ICPC2,NA,45595906
+F41,"Silmä, Diagnostinen kuvantaminen","Eye, Diagnostic radiology/imaging",ICPC2,NA,45571763
+F42,"Silmä, Elektrofysiologinen tutkimus","Eye, Electrical tracing",ICPC2,NA,45562048
+F43,"Silmä, Muu tutkimustoimenpide","Eye, Other diagnostic procedure",ICPC2,NA,45557206
+F44,"Silmä, Rokotus / ennaltaehkäisevä lääkitys","Eye, Preventive immunization/medic",ICPC2,NA,45562050
+F45,"Silmä, Seuranta/terveysneuvonta/ruokavalioneuvonta","Eye, Observ/health educat/advice/diet",ICPC2,NA,45571765
+F46,"Silmä, Perusterveydenhuollon asiantuntijan konsultaatio","Eye, Consultation primary care provider",ICPC2,NA,NA
+F47,"Silmä, Erikoislääkärin konsultaatio","Eye, Consultation with specialist",ICPC2,NA,NA
+F48,"Silmä, Potilaan tarpeiden/tulosyyn selvittäminen","Eye, Clarification/discussion RFE/demand",ICPC2,NA,45547712
+F49,"Silmä, Muu ennaltaehkäisevä toimenpide","Eye, Other preventive procedure",ICPC2,NA,NA
+F50,"Silmä, Lääkitys/lääkemääräys/uusinta/injektio","Eye, Medication/prescr/renewal",ICPC2,NA,45605499
+F51,"Silmä, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Eye, I&d/flush/aspiration",ICPC2,NA,45552491
+F52,"Silmä, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Eye, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45538072
+F53,"Silmä, Katetrointi/intubointi/laajentaminen","Eye, Instrument/catheter/intubate/dilate",ICPC2,NA,45576552
+F54,"Silmä, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Eye, Repair/fix-suture/cast/prosth device",ICPC2,NA,45591146
+F55,"Silmä, Paikallinen lääkeaineinjektio","Eye, Local injection/infiltration",ICPC2,NA,45576553
+F56,"Silmä, Sidos/kompressi/tamponointi","Eye, Dressing/pressure/compress/tamponade",ICPC2,NA,NA
+F57,"Silmä, Fysikaalinen hoito / kuntoutus","Eye, Physical medicine/rehabilitation",ICPC2,NA,NA
+F58,"Silmä, Terapeuttinen neuvonta / kuuntelu","Eye, Therapeutic counselling/listening",ICPC2,NA,NA
+F59,"Silmä, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Eye, Other therap proced/minor surg NEC",ICPC2,NA,45591148
+F60,"Silmä, Tutkimustulosten kuuleminen","Eye, Result test/procedure",ICPC2,NA,45542858
+F61,"Silmä, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Eye, Result examination/test/record/letter from other provider",ICPC2,NA,45595913
+F62,"Silmä, Hallinnollinen toimenpide","Eye, Administrative procedure",ICPC2,NA,45605505
+F63,"Silmä, Muu seurantakäynti","Eye, Follow-up encounter unspecified",ICPC2,NA,45576555
+F64,"Silmä, Hoidonantajan käynnistämä tapahtuma","Eye, Encounter/prob initiated by provider",ICPC2,NA,45542860
+F65,"Silmä, Muun henkilön käynnistämä tapahtuma","Eye, Enc/prob init by other than pt/prov",ICPC2,NA,45571770
+F66,"Silmä, Lähete muulle perusterveydenhuollon ammattihenkilölle","Eye, Referral to non-MD provider",ICPC2,NA,45595917
+F67,"Silmä, Lähete erikoislääkärille/sairaalaan","Eye, Referral to physician/hospital",ICPC2,NA,NA
+F68,"Silmä, Muu lähete","Eye, Other referral NEC",ICPC2,NA,45586254
+F69,"Silmä, Muu käynnin syy","Eye, Other reason for encounter NEC",ICPC2,NA,45538081
+F70,"Sidekalvotulehdus, tarttuva",Conjunctivitis infectious,ICPC2,H10.9,45538082
+F71,"Sidekalvotulehdus, allerginen",Conjunctivitis allergic,ICPC2,H10.1,45586256
+F72,Luomitulehdus/näärännäppy/luomirakkula,Blepharitis/stye/chalazion,ICPC2,H01.9,45533123
+F73,"Silmätulehdus, muu",Eye infection/inflammation other,ICPC2,H20.8,45586258
+F74,"Kasvain, silmän / silmän seudun",Neoplasm of eye/adnexa,ICPC2,D31.9&,NA
+F75,"Ruhje/verenvuoto, silmän",Contusion/haemorrhage eye,ICPC2,S05.1,NA
+F76,Vierasesine silmässä,Foreign body in eye,ICPC2,T15.9,NA
+F79,"Silmävamma, muu",Injury eye other,ICPC2,S05.9,45581472
+F80,Vauvan kyyneltietukos,Blocked lacrimal duct of infant,ICPC2,Q10.5,45600761
+F81,"Synnynnäinen epämuodostuma, silmän, muu",Congenital anomaly eye other,ICPC2,Q15.9,45591156
+F82,Verkkokalvon irtoaminen,Detached retina,ICPC2,H33.5,45605516
+F83,"Retinopatia, verkkokalvon rappeuma",Retinopathy,ICPC2,H35.0,45595922
+F84,"Makuladegeneraatio, tarkan näön alueen rappeuma",Macular degeneration,ICPC2,H35.39#,45600762
+F85,Sarveiskalvon haavauma,Corneal ulcer,ICPC2,H16.0,NA
+F86,Trakooma,Trachoma,ICPC2,A71.9,NA
+F91,Taittovirhe,Refractive error,ICPC2,H52.7,45600764
+F92,Harmaakaihi,Cataract,ICPC2,H26.9,45591157
+F93,Glaukooma,Glaucoma,ICPC2,H40.9,45595925
+F94,Sokeus,Blindness,ICPC2,H54.0,45576564
+F95,Karsastus,Strabismus,ICPC2,H50.9,45538093
+F99,Muu silmäsairaus,Eye/adnexa disease other,ICPC2,H57.8,45605525
+H,Korva,Ear,ICPC2,NA,NA
+H01,Korvan kipu/särky,Ear pain/earache,ICPC2,H92.0,45542921
+H02,Kuulo-oire,Hearing complaint,ICPC2,H93.2,45552557
+H03,Korvien soiminen / tinnitus,"Tinnitus, ringing/buzzing ear",ICPC2,H93.1,45755398
+H04,Erite korvasta,Ear discharge,ICPC2,H92.1,45581549
+H05,Verenvuoto korvassa/korvasta,Bleeding ear,ICPC2,H92.2,45557306
+H13,Korvan tukkoisuus,Plugged feeling ear,ICPC2,H93.8,45755401
+H15,Huoli korvien ulkonäöstä,Concern with appearance of ears,ICPC2,R46.8,45557333
+H27,Huoli/pelko korvataudista,Fear of ear disease,ICPC2,Z71.1,45538246
+H28,"Toiminnanvajaus, korvan",Limited function/disability (H),ICPC2,Z73.6,45571931
+H29,Muu korvan oire/vaiva,Ear symptom/complaint other,ICPC2,H93.9,NA
+H30,"Korva, Laaja terveydentilan arviointi/tarkastus","Ear, Medical examin/health eval complete",ICPC2,NA,45543012
+H31,"Korva, Suppea terveydentilan arviointi/tarkastus","Ear, Medical examin/health eval partial",ICPC2,NA,45576714
+H32,"Korva, Allergiatutkimus","Ear, Sensitivity test",ICPC2,NA,45562222
+H33,"Korva, Mikrobiologinen/immunologinen koe","Ear, Microbiological/immunological test",ICPC2,NA,45755393
+H34,"Korva, Veritutkimus","Ear, Blood test",ICPC2,NA,45533297
+H35,"Korva, Virtsatutkimus","Ear, Urine test",ICPC2,NA,45538260
+H36,"Korva, Ulostetutkimus","Ear, Faeces test",ICPC2,NA,45547878
+H37,"Korva, Histologinen/sytologinen tutkimus","Ear, Histological/exfoliative cytology",ICPC2,NA,NA
+H38,"Korva, Muu laboratoriotutkimus","Ear, Other laboratory test NEC",ICPC2,NA,NA
+H39,"Korva, Kliininen toimintakoe","Ear, Physical function test",ICPC2,NA,NA
+H40,"Korva, Diagnostinen endoskopia","Ear, Diagnostic endoscopy",ICPC2,NA,45547879
+H41,"Korva, Diagnostinen kuvantaminen","Ear, Diagnostic radiology/imaging",ICPC2,NA,NA
+H42,"Korva, Elektrofysiologinen tutkimus","Ear, Electrical tracing",ICPC2,NA,45600924
+H43,"Korva, Muu tutkimustoimenpide","Ear, Other diagnostic procedure",ICPC2,NA,45557431
+H44,"Korva, Rokotus / ennaltaehkäisevä lääkitys","Ear, Preventive immunization/medic",ICPC2,NA,45552700
+H45,"Korva, Seuranta/terveysneuvonta/ruokavalioneuvonta","Ear, Observ/health educat/advice/diet",ICPC2,NA,45755394
+H46,"Korva, Perusterveydenhuollon asiantuntijan konsultaatio","Ear, Consultation primary care provider",ICPC2,NA,45571994
+H47,"Korva, Erikoislääkärin konsultaatio","Ear, Consultation with specialist",ICPC2,NA,45596114
+H48,"Korva, Potilaan tarpeiden/tulosyyn selvittäminen","Ear, Clarification/discussion RFE/demand",ICPC2,NA,45755396
+H49,"Korva, Muu ennaltaehkäisevä toimenpide","Ear, Other preventive procedure",ICPC2,NA,45533345
+H50,"Korva, Lääkitys/lääkemääräys/uusinta/injektio","Ear, Medication/prescr/renewal",ICPC2,NA,45562265
+H51,"Korva, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Ear, I&d/flush/aspiration",ICPC2,NA,45562269
+H52,"Korva, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Ear, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45755397
+H53,"Korva, Katetrointi/intubointi/laajentaminen","Ear, Instrument/catheter/intubate/dilate",ICPC2,NA,45591389
+H54,"Korva, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Ear, Repair/fix-suture/cast/prosth device",ICPC2,NA,45755414
+H55,"Korva, Paikallinen lääkeaineinjektio","Ear, Local injection/infiltration",ICPC2,NA,45562288
+H56,"Korva, Sidos/kompressi/tamponointi","Ear, Dressing/pressure/compress/tamponade",ICPC2,NA,NA
+H57,"Korva, Fysikaalinen hoito / kuntoutus","Ear, Physical medicine/rehabilitation",ICPC2,NA,45600970
+H58,"Korva, Terapeuttinen neuvonta / kuuntelu","Ear, Therapeutic counselling/listening",ICPC2,NA,45755416
+H59,"Korva, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Ear, Other therap proced/minor surg NEC",ICPC2,NA,45755417
+H60,"Korva, Tutkimustulosten kuuleminen","Ear, Result test/procedure",ICPC2,NA,45581713
+H61,"Korva, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Ear, Result examination/test/record/letter from other provider",ICPC2,NA,45755418
+H62,"Korva, Hallinnollinen toimenpide","Ear, Administrative procedure",ICPC2,NA,45755419
+H63,"Korva, Muu seurantakäynti","Ear, Follow-up encounter unspecified",ICPC2,NA,NA
+H64,"Korva, Hoidonantajan käynnistämä tapahtuma","Ear, Encounter/prob initiated by provider",ICPC2,NA,NA
+H65,"Korva, Muun henkilön käynnistämä tapahtuma","Ear, Enc/prob init by other than pt/prov",ICPC2,NA,45547960
+H66,"Korva, Lähete muulle perusterveydenhuollon ammattihenkilölle","Ear, Referral to non-MD provider",ICPC2,NA,45538332
+H67,"Korva, Lähete erikoislääkärille/sairaalaan","Ear, Referral to physician/hospital",ICPC2,NA,45755420
+H68,"Korva, Muu lähete","Ear, Other referral NEC",ICPC2,NA,45755421
+H69,"Korva, Muu käynnin syy","Ear, Other reason for encounter NEC",ICPC2,NA,45576825
+H70,Korvakäytävän tulehdus,Otitis externa,ICPC2,H60.9,45557501
+H71,"Välikorvatulehdus/tärykalvotulehdus, akuutti",Acute otitis media/myringitis,ICPC2,H73.0,45557507
+H72,"Välikorvatulehdus, seroosi",Serous otitis media,ICPC2,H65.2,45581739
+H73,Korvatorventulehdus,Eustachian salpingitis,ICPC2,H68.0,45596168
+H74,"Välikorvatulehdus, krooninen",Chronic otitis media,ICPC2,H66.9,45755422
+H75,"Kasvain, korvan",Neoplasm of ear,ICPC2,C30.1&,45755423
+H76,Vierasesine korvassa,Foreign body in ear,ICPC2,T16,NA
+H77,Reikä tärykalvossa,Perforation ear drum,ICPC2,H72.9,NA
+H78,"Korvan vamma, pinnallinen",Superficial injury of ear,ICPC2,S00.4,NA
+H79,"Korvan vamma, muu",Ear injury other,ICPC2,S09.2,NA
+H80,"Synnynnäinen epämuodostuma, korvan",Congenital anomaly of ear,ICPC2,Q17.9,45596172
+H81,Korvavahatulppa,Excessive ear wax,ICPC2,H61.2,45543139
+H82,Huimausoireyhtymä,Vertiginous syndrome,ICPC2,H81.9,45572064
+H83,Otoskleroosi,Otosclerosis,ICPC2,H80.9,45547989
+H84,Ikähuonokuuloisuus,Presbyacusis,ICPC2,H91.1,NA
+H85,Meluvamma,Acoustic trauma,ICPC2,H83.3,NA
+H86,Kuurous,Deafness,ICPC2,H90.8,NA
+H99,Muu korvan/kartiolisäkkeen sairaus,Ear/mastoid disease other,ICPC2,H93.9,NA
+K,Verenkiertoelimet,Cardiovascular,ICPC2,NA,NA
+K01,Sydänperäinen kipu,Heart pain,ICPC2,R07.2,45533566
+K02,Painon/puristuksen tunne sydänalassa,Pressure/tightness of heart,ICPC2,R07.2,45552906
+K03,"Verenkiertoperäinen kipu, muu",Cardiovascular pain NOS,ICPC2,R09.8,45548135
+K04,Sydämentykytys / sydämen lyöntien tuntuminen,Palpitations/awareness of heart,ICPC2,R00.2,45755432
+K05,"Poikkeava/epäsäännöllinen pulssi, muu",Irregular heartbeat other,ICPC2,R00.8,45755433
+K06,Korostuneet laskimot,Prominent veins,ICPC2,I87.8,45586696
+K07,Nilkkaturvotus,Swollen ankles/oedema,ICPC2,R60.0,45586697
+K22,Sydän- ja verisuonisairauden riskitekijä,Risk factor cardiovascular disease,ICPC2,Z86.7,45576982
+K24,Huoli/pelko sydänsairaudesta,Fear of heart disease,ICPC2,Z71.1,NA
+K25,Huoli/pelko kohonneesta  verenpaineesta / verenpainetaudista,Fear of hypertension,ICPC2,Z71.1,45601157
+K27,Huoli/pelko verenkiertoelimistön muusta sairaudesta,Fear cardiovascular disease other,ICPC2,Z71.1,45538514
+K28,"Toiminnanvajaus, verenkierron",Limited function/disability (K),ICPC2,Z73.6,45572201
+K29,"Muu oire/vaiva, verenkiertoelimistön",Cardiovascular sympt/complt other,ICPC2,R09.8,45576984
+K30,"Verenkiertoelimet, Laaja terveydentilan arviointi/tarkastus","Cardiovascular, Medical examin/health eval complete",ICPC2,NA,45591584
+K31,"Verenkiertoelimet, Suppea terveydentilan arviointi/tarkastus","Cardiovascular, Medical examin/health eval partial",ICPC2,NA,45605930
+K32,"Verenkiertoelimet, Allergiatutkimus","Cardiovascular, Sensitivity test",ICPC2,NA,NA
+K33,"Verenkiertoelimet, Mikrobiologinen/immunologinen koe","Cardiovascular, Microbiological/immunological test",ICPC2,NA,NA
+K34,"Verenkiertoelimet, Veritutkimus","Cardiovascular, Blood test",ICPC2,NA,NA
+K35,"Verenkiertoelimet, Virtsatutkimus","Cardiovascular, Urine test",ICPC2,NA,45601166
+K36,"Verenkiertoelimet, Ulostetutkimus","Cardiovascular, Faeces test",ICPC2,NA,45533587
+K37,"Verenkiertoelimet, Histologinen/sytologinen tutkimus","Cardiovascular, Histological/exfoliative cytology",ICPC2,NA,45596319
+K38,"Verenkiertoelimet, Muu laboratoriotutkimus","Cardiovascular, Other laboratory test NEC",ICPC2,NA,45605934
+K39,"Verenkiertoelimet, Kliininen toimintakoe","Cardiovascular, Physical function test",ICPC2,NA,NA
+K40,"Verenkiertoelimet, Diagnostinen endoskopia","Cardiovascular, Diagnostic endoscopy",ICPC2,NA,45543305
+K41,"Verenkiertoelimet, Diagnostinen kuvantaminen","Cardiovascular, Diagnostic radiology/imaging",ICPC2,NA,45596321
+K42,"Verenkiertoelimet, Elektrofysiologinen tutkimus","Cardiovascular, Electrical tracing",ICPC2,NA,45557652
+K43,"Verenkiertoelimet, Muu tutkimustoimenpide","Cardiovascular, Other diagnostic procedure",ICPC2,NA,45538526
+K44,"Verenkiertoelimet, Rokotus / ennaltaehkäisevä lääkitys","Cardiovascular, Preventive immunization/medic",ICPC2,NA,45533595
+K45,"Verenkiertoelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta","Cardiovascular, Observ/health educat/advice/diet",ICPC2,NA,45755434
+K46,"Verenkiertoelimet, Perusterveydenhuollon asiantuntijan konsultaatio","Cardiovascular, Consultation primary care provider",ICPC2,NA,45591592
+K47,"Verenkiertoelimet, Erikoislääkärin konsultaatio","Cardiovascular, Consultation with specialist",ICPC2,NA,NA
+K48,"Verenkiertoelimet, Potilaan tarpeiden/tulosyyn selvittäminen","Cardiovascular, Clarification/discussion RFE/demand",ICPC2,NA,NA
+K49,"Verenkiertoelimet, Muu ennaltaehkäisevä toimenpide","Cardiovascular, Other preventive procedure",ICPC2,NA,NA
+K50,"Verenkiertoelimet, Lääkitys/lääkemääräys/uusinta/injektio","Cardiovascular, Medication/prescr/renewal",ICPC2,NA,45755435
+K51,"Verenkiertoelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Cardiovascular, I&d/flush/aspiration",ICPC2,NA,45557655
+K52,"Verenkiertoelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Cardiovascular, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45586724
+K53,"Verenkiertoelimet, Katetrointi/intubointi/laajentaminen","Cardiovascular, Instrument/catheter/intubate/dilate",ICPC2,NA,NA
+K54,"Verenkiertoelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Cardiovascular, Repair/fix-suture/cast/prosth device",ICPC2,NA,NA
+K55,"Verenkiertoelimet, Paikallinen lääkeaineinjektio","Cardiovascular, Local injection/infiltration",ICPC2,NA,45576992
+K56,"Verenkiertoelimet, Sidos/kompressi/tamponointi","Cardiovascular, Dressing/pressure/compress/tamponade",ICPC2,NA,45755437
+K57,"Verenkiertoelimet, Fysikaalinen hoito / kuntoutus","Cardiovascular, Physical medicine/rehabilitation",ICPC2,NA,45755438
+K58,"Verenkiertoelimet, Terapeuttinen neuvonta / kuuntelu","Cardiovascular, Therapeutic counselling/listening",ICPC2,NA,45572218
+K59,"Verenkiertoelimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Cardiovascular, Other therap proced/minor surg NEC",ICPC2,NA,45543326
+K60,"Verenkiertoelimet, Tutkimustulosten kuuleminen","Cardiovascular, Result test/procedure",ICPC2,NA,45755439
+K61,"Verenkiertoelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Cardiovascular, Result examination/test/record/letter from other provider",ICPC2,NA,45755440
+K62,"Verenkiertoelimet, Hallinnollinen toimenpide","Cardiovascular, Administrative procedure",ICPC2,NA,45548165
+K63,"Verenkiertoelimet, Muu seurantakäynti","Cardiovascular, Follow-up encounter unspecified",ICPC2,NA,45562501
+K64,"Verenkiertoelimet, Hoidonantajan käynnistämä tapahtuma","Cardiovascular, Encounter/prob initiated by provider",ICPC2,NA,45755464
+K65,"Verenkiertoelimet, Muun henkilön käynnistämä tapahtuma","Cardiovascular, Enc/prob init by other than pt/prov",ICPC2,NA,45548167
+K66,"Verenkiertoelimet,Lähete muulle perusterveydenhuollon ammattihenkilölle","Cardiovascular, Referral to non-MD provider",ICPC2,NA,45601185
+K67,"Verenkiertoelimet, Lähete erikoislääkärille/sairaalaan","Cardiovascular, Referral to physician/hospital",ICPC2,NA,45552945
+K68,"Verenkiertoelimet, Muu lähete","Cardiovascular, Other referral NEC",ICPC2,NA,NA
+K69,"Verenkiertoelimet, Muu käynnin syy","Cardiovascular, Other reason for encounter NEC",ICPC2,NA,NA
+K70,Verenkiertoelinten tartuntatauti,Infection of circulatory system,ICPC2,I40.8,45591605
+K71,Reumakuume / reumaattinen sydäntauti,Rheumatic fever/heart disease,ICPC2,I09.9,45557670
+K72,"Kasvain, verenkiertoelinten",Neoplasm cardiovascular,ICPC2,D48.7&,45755466
+K73,"Synnynnäinen epämuodostuma, verenkiertoelinten",Congenital anomaly cardiovascular,ICPC2,Q28.9,45596344
+K74,Iskeeminen sydänsairaus ja rintakipu,Ischaemic heart dis with angina,ICPC2,I20.99,45755467
+K75,"Sydäninfarkti, akuutti",Acute myocardial infarction,ICPC2,I21.9,45572230
+K76,Iskeeminen sydänsairaus ilman rintakipua,Ischaemic heart dis without angina,ICPC2,I25.0,45605956
+K77,Sydämen vajaatoiminta,Heart failure,ICPC2,I50.9,45543342
+K78,Eteisvärinä/eteislepatus,Atrial fibrillation/flutter,ICPC2,I48,NA
+K79,Kohtauksittainen tiheälyöntisyys,Paroxysmal tachycardia,ICPC2,I47.9,NA
+K80,"Rytmihäiriö, määrittämätön",Cardiac arrhythmia NOS,ICPC2,I49.9,45581914
+K81,"Sivuääni sydämessä, määrittämätön",Heart/arterial murmur NOS,ICPC2,R01.1,45567330
+K82,Keuhkoperäinen sydäntauti,Pulmonary heart disease,ICPC2,I27.9,45601194
+K83,"Sydänläppien ei-reumaattinen tauti, määrittämätön",Heart valve disease NOS,ICPC2,I35.9,45533622
+K84,"Sydäntauti, muu",Heart disease other,ICPC2,I51.9,NA
+K85,Kohonnut verenpaine,Elevated blood pressure,ICPC2,R03.0,45567331
+K86,"Verenpainetauti, komplisoitumaton",Hypertension uncomplicated,ICPC2,I10,45577005
+K87,"Verenpainetauti, komplisoitunut",Hypertension complicated,ICPC2,I15.9,45601196
+K88,Asentoon liittyvä matala verenpaine,Postural hypotension,ICPC2,I95.1,NA
+K89,TIA / ohimenevä aivoverenkiertohäiriö,Transient cerebral ischaemia,ICPC2,G45.9,NA
+K90,Aivohalvaus,Stroke/cerebrovascular accident,ICPC2,I64,45557682
+K91,Aivoverisuonten sairaus,Cerebrovascular disease,ICPC2,I67.9,45755468
+K92,Valtimokovettumatauti / ääreisverisuonten sairaus,Atherosclerosis/periph vascular dis,ICPC2,I70.9,45567332
+K93,Keuhkoembolia,Pulmonary embolism,ICPC2,I26.9,45755469
+K94,Laskimotulehdus/laskimontukkotulehdus,Phlebitis/thrombophlebitis,ICPC2,I80.9#,NA
+K95,"Suonikohjut, alaraajojen",Varicose veins of leg,ICPC2,I83.9,NA
+K96,Peräpukamat,Haemorrhoids,ICPC2,I84.9,NA
+K99,Muu verenkiertoelimistön sairaus,Cardiovascular disease other,ICPC2,I99,NA
+L,Tuki- ja liikuntaelimet,Musculoskeletal,ICPC2,NA,NA
+L01,Niskan oire/vaiva,Neck symptom/complaint,ICPC2,M54.2,45548179
+L02,Yläselän oire/vaiva,Back symptom/complaint,ICPC2,M54.9,45538561
+L03,Alaselän oire/vaiva,Low back symptom/complaint,ICPC2,M54.5,45591621
+L04,Rintakehän oire/vaiva,Chest symptom/complaint,ICPC2,R07.3,45605976
+L05,Kyljen/kainalon oire/vaiva,Flank/axilla symptom/complaint,ICPC2,R29.8,45581932
+L07,Leuan oire/vaiva,Jaw symptom/complaint,ICPC2,K10.88,NA
+L08,Olkapään oire/vaiva,Shoulder symptom/complaint,ICPC2,M25.5,45596365
+L09,Käsivarren oire/vaiva,Arm symptom/complaint,ICPC2,M79.6,NA
+L10,Kyynärpään oire/vaiva,Elbow symptom/complaint,ICPC2,M25.5,45562531
+L11,Ranteen oire/vaiva,Wrist symptom/complaint,ICPC2,M25.5,45533634
+L12,Käden/sormen oire/vaiva,Hand/finger symptom/complaint,ICPC2,M79.6,45605979
+L13,Lonkan oire/vaiva,Hip symptom/complaint,ICPC2,M25.5,45538569
+L14,Säären/reiden oire/vaiva,Leg/thigh symptom/complaint,ICPC2,M79.6,45586765
+L15,Polven oire/vaiva,Knee symptom/complaint,ICPC2,M25.5,NA
+L16,Nilkan oire/vaiva,Ankle symptom/complaint,ICPC2,M25.5,NA
+L17,Jalan/varpaan oire/vaiva,Foot/toe symptom/complaint,ICPC2,M79.6,NA
+L18,Lihaskipu,Muscle pain,ICPC2,M79.1,NA
+L19,"Lihasoire/-vaiva, määrittämätön",Muscle symptom/complaint NOS,ICPC2,M62.6,NA
+L20,"Niveloire/-vaiva, määrittämätön",Joint symptom/complaint NOS,ICPC2,M25.5,45557698
+L26,Huoli/pelko tuki- ja liikuntaelinten syövästä,Fear of cancer musculoskeletal,ICPC2,Z71.1,45581939
+L27,Huoli/pelko tuki- ja liikuntaelinten muusta sairaudesta,Fear of musculoskeletal dis other,ICPC2,Z71.1,45567354
+L28,"Toiminnanvajaus, tuki- ja liikuntaelinten",Limited function/disability (L),ICPC2,Z73.6,45755471
+L29,"Muu oire/vaiva, tuki- ja liikuntaelinten",Musculoskeletal sympt/complt other,ICPC2,R29.8,45596372
+L30,"Tuki- ja liikuntaelimet, Laaja terveydentilan arviointi/tarkastus","Musculoskeletal, Medical examin/health eval complete",ICPC2,NA,45591633
+L31,"Tuki- ja liikuntaelimet, Suppea terveydentilan arviointi/tarkastus","Musculoskeletal, Medical examin/health eval partial",ICPC2,NA,NA
+L32,"Tuki- ja liikuntaelimet, Allergiatutkimus","Musculoskeletal, Sensitivity test",ICPC2,NA,NA
+L33,"Tuki- ja liikuntaelimet, Mikrobiologinen/immunologinen koe","Musculoskeletal, Microbiological/immunological test",ICPC2,NA,NA
+L34,"Tuki- ja liikuntaelimet, Veritutkimus","Musculoskeletal, Blood test",ICPC2,NA,NA
+L35,"Tuki- ja liikuntaelimet, Virtsatutkimus","Musculoskeletal, Urine test",ICPC2,NA,NA
+L36,"Tuki- ja liikuntaelimet, Ulostetutkimus","Musculoskeletal, Faeces test",ICPC2,NA,NA
+L37,"Tuki- ja liikuntaelimet, Histologinen/sytologinen tutkimus","Musculoskeletal, Histological/exfoliative cytology",ICPC2,NA,NA
+L38,"Tuki- ja liikuntaelimet, Muu laboratoriotutkimus","Musculoskeletal, Other laboratory test NEC",ICPC2,NA,NA
+L39,"Tuki- ja liikuntaelimet, Kliininen toimintakoe","Musculoskeletal, Physical function test",ICPC2,NA,NA
+L40,"Tuki- ja liikuntaelimet, Diagnostinen endoskopia","Musculoskeletal, Diagnostic endoscopy",ICPC2,NA,45577035
+L41,"Tuki- ja liikuntaelimet, Diagnostinen kuvantaminen","Musculoskeletal, Diagnostic radiology/imaging",ICPC2,NA,45586769
+L42,"Tuki- ja liikuntaelimet, Elektrofysiologinen tutkimus","Musculoskeletal, Electrical tracing",ICPC2,NA,45538573
+L43,"Tuki- ja liikuntaelimet, Muu tutkimustoimenpide","Musculoskeletal, Other diagnostic procedure",ICPC2,NA,45562537
+L44,"Tuki- ja liikuntaelimet, Rokotus / ennaltaehkäisevä lääkitys","Musculoskeletal, Preventive immunization/medic",ICPC2,NA,45562538
+L45,"Tuki- ja liikuntaelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta","Musculoskeletal, Observ/health educat/advice/diet",ICPC2,NA,45557704
+L46,"Tuki- ja liikuntaelimet, Perusterveydenhuollon asiantuntijan konsultaatio","Musculoskeletal, Consultation primary care provider",ICPC2,NA,NA
+L47,"Tuki- ja liikuntaelimet, Erikoislääkärin konsultaatio","Musculoskeletal, Consultation with specialist",ICPC2,NA,NA
+L48,"Tuki- ja liikuntaelimet, Potilaan tarpeiden/tulosyyn selvittäminen","Musculoskeletal, Clarification/discussion RFE/demand",ICPC2,NA,NA
+L49,"Tuki- ja liikuntaelimet, Muu ennaltaehkäisevä toimenpide","Musculoskeletal, Other preventive procedure",ICPC2,NA,NA
+L50,"Tuki- ja liikuntaelimet, Lääkitys/lääkemääräys/uusinta/injektio","Musculoskeletal, Medication/prescr/renewal",ICPC2,NA,45543371
+L51,"Tuki- ja liikuntaelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Musculoskeletal, I&d/flush/aspiration",ICPC2,NA,45543372
+L52,"Tuki- ja liikuntaelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Musculoskeletal, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45552985
+L53,"Tuki- ja liikuntaelimet, Katetrointi/intubointi/laajentaminen","Musculoskeletal, Instrument/catheter/intubate/dilate",ICPC2,NA,45577040
+L54,"Tuki- ja liikuntaelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Musculoskeletal, Repair/fix-suture/cast/prosth device",ICPC2,NA,45552987
+L55,"Tuki- ja liikuntaelimet, Paikallinen lääkeaineinjektio","Musculoskeletal, Local injection/infiltration",ICPC2,NA,45586773
+L56,"Tuki- ja liikuntaelimet, Sidos/kompressi/tamponointi","Musculoskeletal, Dressing/pressure/compress/tamponade",ICPC2,NA,45538577
+L57,"Tuki- ja liikuntaelimet, Fysikaalinen hoito / kuntoutus","Musculoskeletal, Physical medicine/rehabilitation",ICPC2,NA,45596378
+L58,"Tuki- ja liikuntaelimet, Terapeuttinen neuvonta / kuuntelu","Musculoskeletal, Therapeutic counselling/listening",ICPC2,NA,45577046
+L59,"Tuki- ja liikuntaelimet, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Musculoskeletal, Other therap proced/minor surg NEC",ICPC2,NA,45581951
+L60,"Tuki- ja liikuntaelimet, Tutkimustulosten kuuleminen","Musculoskeletal, Result test/procedure",ICPC2,NA,45538578
+L61,"Tuki- ja liikuntaelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Musculoskeletal, Result examination/test/record/letter from other provider",ICPC2,NA,NA
+L62,"Tuki- ja liikuntaelimet, Hallinnollinen toimenpide","Musculoskeletal, Administrative procedure",ICPC2,NA,45596381
+L63,"Tuki- ja liikuntaelimet, Muu seurantakäynti","Musculoskeletal, Follow-up encounter unspecified",ICPC2,NA,45533646
+L64,"Tuki- ja liikuntaelimet, Hoidonantajan käynnistämä tapahtuma","Musculoskeletal, Encounter/prob initiated by provider",ICPC2,NA,45596383
+L65,"Tuki- ja liikuntaelimet, Muun henkilön käynnistämä tapahtuma","Musculoskeletal, Enc/prob init by other than pt/prov",ICPC2,NA,45572277
+L66,"Tuki- ja liikuntaelimet, Lähete muulle perusterveydenhuollon ammattihenkilölle","Musculoskeletal, Referral to non-MD provider",ICPC2,NA,45601228
+L67,"Tuki- ja liikuntaelimet, Lähete erikoislääkärille/sairaalaan","Musculoskeletal, Referral to physician/hospital",ICPC2,NA,45548203
+L68,"Tuki- ja liikuntaelimet, Muu lähete","Musculoskeletal, Other referral NEC",ICPC2,NA,45572278
+L69,"Tuki- ja liikuntaelimet, Muu käynnin syy","Musculoskeletal, Other reason for encounter NEC",ICPC2,NA,NA
+L70,Tuki- ja liikuntaelinten infektio,Infection of musculoskeletal system,ICPC2,M00.9,45562544
+L71,"Pahanlaatuinen kasvain, tuki- ja liikuntaelinten",Malignant neoplasm musculoskeletal,ICPC2,C49.99&,45586779
+L72,"Murtuma, kyynärluu/värttinäluu",Fracture: radius/ulna,ICPC2,S52.9,45543379
+L73,"Murtuma, sääriluu/pohjeluu",Fracture: tibia/fibula,ICPC2,S82.9,45557710
+L74,"Murtuma, käden/jalkaterän luu",Fracture: hand/foot bone,ICPC2,S62.8,45577050
+L75,"Murtuma, reisiluu",Fracture: femur,ICPC2,S72.9,45586781
+L76,"Murtuma, muu",Fracture: other,ICPC2,T14.2,NA
+L77,"Nyrjähdys/venähdys, nilkka",Sprain/strain of ankle,ICPC2,S93.4,NA
+L78,"Nyrjähdys/venähdys, polvi",Sprain/strain of knee,ICPC2,S83.6,NA
+L79,"Nyrjähdys/venähdys, muu",Sprain/strain of joint NOS,ICPC2,T14.3,NA
+L80,Sijoiltaanmeno,Dislocation/subluxation,ICPC2,T14.3,45581962
+L81,"Tuki- ja liikuntaelinten vamma, muu",Injury musculoskeletal NOS,ICPC2,T14.6,45562548
+L82,"Synnynnäinen epämuodostuma,  tuki- ja liikuntaelinten",Congenital anomaly musculoskeletal,ICPC2,Q79.9,45548208
+L83,Kaularankaoireyhtymä,Neck syndrome,ICPC2,M53.1,45605999
+L84,Selkäsairaus ilman säteilykipua,Back syndrome without radiat pain,ICPC2,M53.9,45533651
+L85,"Selkärangan rakenteellinen poikkeavuus, ei-synnynnäinen",Acquired deformity of spine,ICPC2,M43.9,45601233
+L86,Selkäsairaus ja säteilykipu,Back syndrome with radiating pain,ICPC2,M54.4,45577055
+L87,"Bursiitti/tendiniitti/synoviitti, muu",Bursitis/tendinitis/synovitis NOS,ICPC2,M67.4,45606001
+L88,Reumaattinen/seropositiivinen niveltulehdus,Rheumatoid/seropositive arthritis,ICPC2,M06.9,45538588
+L89,Lonkan nivelrikko,Osteoarthrosis of hip,ICPC2,M16.9,45601235
+L90,Polven nivelrikko,Osteoarthrosis of knee,ICPC2,M17.9,45562559
+L91,"Nivelrikko, muu",Osteoarthrosis other,ICPC2,M19.8,45577067
+L92,Olkapään oireyhtymä,Shoulder syndrome,ICPC2,M75.9,45606013
+L93,Tenniskyynärpää,Tennis elbow,ICPC2,M77.1,45567376
+L94,Luu-rustokasvuhäiriö,Osteochondrosis,ICPC2,M93.9,45557725
+L95,Osteoporoosi,Osteoporosis,ICPC2,M81.9,45557726
+L96,"Polven nivelkierukan/ristisiteiden vamma, akuutti",Acute internal damage knee,ICPC2,S83.2,NA
+L97,"Hyvänlaatuinen/muu kasvain, tuki- ja liikuntaelinten",Neoplasm musculoskel benign/unspec,ICPC2,D16.90&,45591659
+L98,"Raajan epämuotoisuus, ei synnynnäinen",Acquired deformity of limb,ICPC2,M21.9,45601258
+L99,Muu tuki- ja liikuntaelinten sairaus,Musculoskeletal disease other,ICPC2,M99.9,45567383
+N,Hermosto,Neurological,ICPC2,NA,NA
+N01,Päänsärky,Headache,ICPC2,R51.80,45592119
+N03,Kasvokipu,Pain face,ICPC2,R51.81,45577509
+N04,Levottomat jalat,Restless legs,ICPC2,G25.8,45543851
+N05,Sormien/jalkaterien/varpaiden pistely,Tingling fingers/feet/toes,ICPC2,R20.2,45567820
+N06,"Tuntohäiriö, muu",Sensation disturbance other,ICPC2,R20.8,45567821
+N07,Kouristelu/kouristuskohtaus,Convulsion/seizure,ICPC2,R56.8,45553431
+N08,Poikkeavat tahattomat liikkeet,Abnormal involuntary movements,ICPC2,R25.8,45592123
+N16,Hajun/maun häiriö,Disturbance of smell/taste,ICPC2,R43.8,45606483
+N17,Huimaus/pyörrytys,Vertigo/dizziness,ICPC2,R42,45606484
+N18,Halvaus/heikkous,Paralysis/weakness,ICPC2,G83.9,45582391
+N19,Puhehäiriö,Speech disorder,ICPC2,R47.8,45601718
+N26,Huoli/pelko hermoston syövästä,Fear cancer neurological system,ICPC2,Z71.1,45601720
+N27,Huoli/pelko muusta neurologisesta sairaudesta,Fear of neurological disease other,ICPC2,Z71.1,45539036
+N28,"Toiminnanvajaus, hermoston",Limited function/disability (N),ICPC2,Z73.6,45587239
+N29,Muu hermostoon liittyvä oire/vaiva,Neurological sympt/complt other,ICPC2,R29.8,45548656
+N30,"Hermosto, Laaja terveydentilan arviointi/tarkastus","Neurological, Medical examin/health eval complete",ICPC2,NA,45563012
+N31,"Hermosto, Suppea terveydentilan arviointi/tarkastus","Neurological, Medical examin/health eval partial",ICPC2,NA,45534127
+N32,"Hermosto, Allergiatutkimus","Neurological, Sensitivity test",ICPC2,NA,45592129
+N33,"Hermosto, Mikrobiologinen/immunologinen koe","Neurological, Microbiological/immunological test",ICPC2,NA,45592131
+N34,"Hermosto, Veritutkimus","Neurological, Blood test",ICPC2,NA,45755577
+N35,"Hermosto, Virtsatutkimus","Neurological, Urine test",ICPC2,NA,45596861
+N36,"Hermosto, Ulostetutkimus","Neurological, Faeces test",ICPC2,NA,45572708
+N37,"Hermosto, Histologinen/sytologinen tutkimus","Neurological, Histological/exfoliative cytology",ICPC2,NA,45534129
+N38,"Hermosto, Muu laboratoriotutkimus","Neurological, Other laboratory test NEC",ICPC2,NA,NA
+N39,"Hermosto, Kliininen toimintakoe","Neurological, Physical function test",ICPC2,NA,45567841
+N40,"Hermosto, Diagnostinen endoskopia","Neurological, Diagnostic endoscopy",ICPC2,NA,45563015
+N41,"Hermosto, Diagnostinen kuvantaminen","Neurological, Diagnostic radiology/imaging",ICPC2,NA,45596865
+N42,"Hermosto, Elektrofysiologinen tutkimus","Neurological, Electrical tracing",ICPC2,NA,45548666
+N43,"Hermosto, Muu tutkimustoimenpide","Neurological, Other diagnostic procedure",ICPC2,NA,45755578
+N44,"Hermosto, Rokotus / ennaltaehkäisevä lääkitys","Neurological, Preventive immunization/medic",ICPC2,NA,45592137
+N45,"Hermosto, Seuranta/terveysneuvonta/ruokavalioneuvonta","Neurological, Observ/health educat/advice/diet",ICPC2,NA,45558156
+N46,"Hermosto, Perusterveydenhuollon asiantuntijan konsultaatio","Neurological, Consultation primary care provider",ICPC2,NA,45596868
+N47,"Hermosto, Erikoislääkärin konsultaatio","Neurological, Consultation with specialist",ICPC2,NA,45596870
+N48,"Hermosto, Potilaan tarpeiden/tulosyyn selvittäminen","Neurological, Clarification/discussion RFE/demand",ICPC2,NA,45567849
+N49,"Hermosto, Muu ennaltaehkäisevä toimenpide","Neurological, Other preventive procedure",ICPC2,NA,45587248
+N50,"Hermosto, Lääkitys/lääkemääräys/uusinta/injektio","Neurological, Medication/prescr/renewal",ICPC2,NA,45577535
+N51,"Hermosto, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Neurological, I&d/flush/aspiration",ICPC2,NA,45539053
+N52,"Hermosto, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Neurological, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,NA
+N53,"Hermosto, Katetrointi/intubointi/laajentaminen","Neurological, Instrument/catheter/intubate/dilate",ICPC2,NA,NA
+N54,"Hermosto, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Neurological, Repair/fix-suture/cast/prosth device",ICPC2,NA,NA
+N55,"Hermosto, Paikallinen lääkeaineinjektio","Neurological, Local injection/infiltration",ICPC2,NA,NA
+N56,"Hermosto, Sidos/kompressi/tamponointi","Neurological, Dressing/pressure/compress/tamponade",ICPC2,NA,NA
+N57,"Hermosto, Fysikaalinen hoito / kuntoutus","Neurological, Physical medicine/rehabilitation",ICPC2,NA,NA
+N58,"Hermosto, Terapeuttinen neuvonta / kuuntelu","Neurological, Therapeutic counselling/listening",ICPC2,NA,NA
+N59,"Hermosto, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Neurological, Other therap proced/minor surg NEC",ICPC2,NA,NA
+N60,"Hermosto, Tutkimustulosten kuuleminen","Neurological, Result test/procedure",ICPC2,NA,45548673
+N61,"Hermosto, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Neurological, Result examination/test/record/letter from other provider",ICPC2,NA,45543886
+N62,"Hermosto, Hallinnollinen toimenpide","Neurological, Administrative procedure",ICPC2,NA,45577538
+N63,"Hermosto, Muu seurantakäynti","Neurological, Follow-up encounter unspecified",ICPC2,NA,45601743
+N64,"Hermosto, Hoidonantajan käynnistämä tapahtuma","Neurological, Encounter/prob initiated by provider",ICPC2,NA,45601744
+N65,"Hermosto, Muun henkilön käynnistämä tapahtuma","Neurological, Enc/prob init by other than pt/prov",ICPC2,NA,NA
+N66,"Hermosto, Lähete muulle perusterveydenhuollon ammattihenkilölle","Neurological, Referral to non-MD provider",ICPC2,NA,NA
+N67,"Hermosto, Lähete erikoislääkärille/sairaalaan","Neurological, Referral to physician/hospital",ICPC2,NA,NA
+N68,"Hermosto, Muu lähete","Neurological, Other referral NEC",ICPC2,NA,NA
+N69,"Hermosto, Muu käynnin syy","Neurological, Other reason for encounter NEC",ICPC2,NA,NA
+N70,Polio / muu enterovirus,Poliomyelitis,ICPC2,A80.9,45558165
+N71,Aivokalvontulehdus/aivotulehdus,Meningitis/encephalitis,ICPC2,G03.9,45572723
+N72,Jäykkäkouristus,Tetanus,ICPC2,A35,45543889
+N73,"Hermoston infektio, muu",Neurological infection other,ICPC2,A89,45596881
+N74,"Pahanlaatuinen kasvain, hermoston",Malignant neoplasm nervous system,ICPC2,C72.9&,45543890
+N75,"Hyvänlaatuinen kasvain, hermoston",Benign neoplasm nervous system,ICPC2,D33.9&,45539063
+N76,"Kasvain, hermoston, määrittämätön",Neoplasm nervous system unspecified,ICPC2,D43.9&,45755567
+N79,Aivotärähdys,Concussion,ICPC2,S06.0,NA
+N80,"Pään vamma, muu",Head injury other,ICPC2,S09.9,45563024
+N81,"Hermoston vamma, muu",Injury nervous system other,ICPC2,T14.4,45577540
+N85,"Synnynnäinen epämuodostuma, hermoston",Congenital anomaly neurological,ICPC2,Q07.9,45539067
+N86,Multippeliskleroosi,Multiple sclerosis,ICPC2,G35,45592153
+N87,Parkinsonismi,Parkinsonism,ICPC2,G20,45601754
+N88,Epilepsia,Epilepsy,ICPC2,G40.9,45572731
+N89,Migreeni,Migraine,ICPC2,G43.9#,45539070
+N90,Sarjoittainen päänsärky,Cluster headache,ICPC2,G44.0,45601756
+N91,Kasvohermohalvaus / Bellin pareesi,Facial paralysis/bell's palsy,ICPC2,G51.0,45755569
+N92,Kolmoishermosärky,Trigeminal neuralgia,ICPC2,G50.0,45755570
+N93,Rannekanavaoireyhtymä,Carpal tunnel syndrome,ICPC2,G56.0,45563029
+N94,Ääreishermotulehdus/-sairaus,Peripheral neuritis/neuropathy,ICPC2,G64,45563030
+N95,Jännityspäänsärky,Tension headache,ICPC2,G44.2,45582429
+N99,Muu hermoston sairaus,Neurological disease other,ICPC2,G98,45755571
+P,Mielenterveys ja käyttäytyminen,Psychological,ICPC2,NA,NA
+P01,Ahdistuneisuuden/hermostuneisuuden/jännittyneisyyden tunne,Feeling anxious/nervous/tense,ICPC2,R45.0,45601914
+P02,Akuutti stressireaktio,Acute stress reaction,ICPC2,F43.0,45577681
+P03,Masennuksen tunne,Feeling depressed,ICPC2,R45.3,45553627
+P04,Ärtyneisyys,Feeling/behaving irritable/angry,ICPC2,R45.4,45553628
+P05,Vanhuuden tunne / vanhusmaisuus / seniliteetti,"Senility, feeling/behaving old",ICPC2,R54,45582608
+P06,Unihäiriö,Sleep disturbance,ICPC2,G47.9,NA
+P07,Vähentynyt sukupuolinen halu,Sexual desire reduced,ICPC2,F52.0,45755590
+P08,Sukupuolisen tyydyttymisen heikentyminen,Sexual fulfilment reduced,ICPC2,F52.9,45755591
+P09,Huoli seksuaalisesta suuntautumisesta,Sexual preference concern,ICPC2,F66.19,NA
+P10,Änkytys / tic-oireyhtymä,Stammering/stuttering/tic,ICPC2,F98.5,45563211
+P11,Lapsen syömisongelma,Eating problem in child,ICPC2,F98.2,45568021
+P12,Yökastelu,Bedwetting/enuresis,ICPC2,F98.00,45606691
+P13,Tuhriminen,Encopresis/bowel training problem,ICPC2,F98.19,45606693
+P15,"Alkoholin väärinkäyttö, pitkäaikainen",Chronic alcohol abuse,ICPC2,F10.25,45534336
+P16,"Alkoholin väärinkäyttö, akuutti",Acute alcohol abuse,ICPC2,F10.0,NA
+P17,Tupakointi,Tobacco abuse,ICPC2,F17.1,NA
+P18,Lääkkeen väärinkäyttö,Medication abuse,ICPC2,F13.9,NA
+P19,Huumeiden käyttö,Drug abuse,ICPC2,F11.9,NA
+P20,Muistihäiriö,Memory disturbance,ICPC2,R41.3,45755592
+P22,Lapsen käytösoire/-vaiva,Child behaviour symptom/complaint,ICPC2,F98.9,45606697
+P23,Nuoren käytösoire/-vaiva,Adolescent behaviour sympt/compl,ICPC2,F98.9,45582614
+P24,Erityinen oppimishäiriö,Specific learning problem,ICPC2,F81.9,45572930
+P25,Aikuisen elämänvaihekriisi,Phase of life problem adult,ICPC2,Z60.0,45755594
+P27,Huoli/pelko mielenterveyden häiriöstä,Fear of mental disorder,ICPC2,Z71.1,45558367
+P28,"Toiminnanvajaus/vamma, psyykkinen",Limited function/disability (P),ICPC2,Z73.6,45563217
+P29,Muu psyykkinen oire/vaiva,Psychological sympt/compl other,ICPC2,R45.8,45601934
+P30,"Mielenterveys ja käyttäytyminen, Laaja terveydentilan arviointi/tarkastus","Psychological, Medical examin/health eval complete",ICPC2,NA,NA
+P31,"Mielenterveys ja käyttäytyminen, Suppea terveydentilan arviointi/tarkastus","Psychological, Medical examin/health eval partial",ICPC2,NA,NA
+P32,"Mielenterveys ja käyttäytyminen, Allergiatutkimus","Psychological, Sensitivity test",ICPC2,NA,NA
+P33,"Mielenterveys ja käyttäytyminen, Mikrobiologinen/immunologinen koe","Psychological, Microbiological/immunological test",ICPC2,NA,NA
+P34,"Mielenterveys ja käyttäytyminen, Veritutkimus","Psychological, Blood test",ICPC2,NA,NA
+P35,"Mielenterveys ja käyttäytyminen, Virtsatutkimus","Psychological, Urine test",ICPC2,NA,45534345
+P36,"Mielenterveys ja käyttäytyminen, Ulostetutkimus","Psychological, Faeces test",ICPC2,NA,45601935
+P37,"Mielenterveys ja käyttäytyminen, Histologinen/sytologinen tutkimus","Psychological, Histological/exfoliative cytology",ICPC2,NA,45582619
+P38,"Mielenterveys ja käyttäytyminen, Muu laboratoriotutkimus","Psychological, Other laboratory test NEC",ICPC2,NA,45544062
+P39,"Mielenterveys ja käyttäytyminen, Kliininen toimintakoe","Psychological, Physical function test",ICPC2,NA,45568027
+P40,"Mielenterveys ja käyttäytyminen, Diagnostinen endoskopia","Psychological, Diagnostic endoscopy",ICPC2,NA,NA
+P41,"Mielenterveys ja käyttäytyminen, Diagnostinen kuvantaminen","Psychological, Diagnostic radiology/imaging",ICPC2,NA,NA
+P42,"Mielenterveys ja käyttäytyminen, Elektrofysiologinen tutkimus","Psychological, Electrical tracing",ICPC2,NA,NA
+P43,"Mielenterveys ja käyttäytyminen, Muu tutkimustoimenpide","Psychological, Other diagnostic procedure",ICPC2,NA,NA
+P44,"Mielenterveys ja käyttäytyminen, Rokotus / ennaltaehkäisevä lääkitys","Psychological, Preventive immunization/medic",ICPC2,NA,NA
+P45,"Mielenterveys ja käyttäytyminen, Seuranta/terveysneuvonta/ruokavalioneuvonta","Psychological, Observ/health educat/advice/diet",ICPC2,NA,NA
+P46,"Mielenterveys ja käyttäytyminen, Perusterveydenhuollon asiantuntijan konsultaatio","Psychological, Consultation primary care provider",ICPC2,NA,NA
+P47,"Mielenterveys ja käyttäytyminen, Erikoislääkärin konsultaatio","Psychological, Consultation with specialist",ICPC2,NA,NA
+P48,"Mielenterveys ja käyttäytyminen, Potilaan tarpeiden/tulosyyn selvittäminen","Psychological, Clarification/discussion RFE/demand",ICPC2,NA,NA
+P49,"Mielenterveys ja käyttäytyminen, Muu ennaltaehkäisevä toimenpide","Psychological, Other preventive procedure",ICPC2,NA,NA
+P50,"Mielenterveys ja käyttäytyminen, Lääkitys/lääkemääräys/uusinta/injektio","Psychological, Medication/prescr/renewal",ICPC2,NA,45534349
+P51,"Mielenterveys ja käyttäytyminen, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Psychological, I&d/flush/aspiration",ICPC2,NA,45597080
+P52,"Mielenterveys ja käyttäytyminen, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Psychological, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45582621
+P53,"Mielenterveys ja käyttäytyminen, Katetrointi/intubointi/laajentaminen","Psychological, Instrument/catheter/intubate/dilate",ICPC2,NA,45587424
+P54,"Mielenterveys ja käyttäytyminen, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Psychological, Repair/fix-suture/cast/prosth device",ICPC2,NA,45597083
+P55,"Mielenterveys ja käyttäytyminen, Paikallinen lääkeaineinjektio","Psychological, Local injection/infiltration",ICPC2,NA,45558375
+P56,"Mielenterveys ja käyttäytyminen, Sidos/kompressi/tamponointi","Psychological, Dressing/pressure/compress/tamponade",ICPC2,NA,45558377
+P57,"Mielenterveys ja käyttäytyminen, Fysikaalinen hoito / kuntoutus","Psychological, Physical medicine/rehabilitation",ICPC2,NA,45755619
+P58,"Mielenterveys ja käyttäytyminen, Terapeuttinen neuvonta / kuuntelu","Psychological, Therapeutic counselling/listening",ICPC2,NA,45544067
+P59,"Mielenterveys ja käyttäytyminen, Muu hoitotoimenpide / muualla luokittelematon pikkukirurgia","Psychological, Other therap proced/minor surg NEC",ICPC2,NA,45544068
+P60,"Mielenterveys ja käyttäytyminen, Tutkimustulosten kuuleminen","Psychological, Result test/procedure",ICPC2,NA,45587427
+P61,"Mielenterveys ja käyttäytyminen, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Psychological, Result examination/test/record/letter from other provider",ICPC2,NA,45568034
+P62,"Mielenterveys ja käyttäytyminen, Hallinnollinen toimenpide","Psychological, Administrative procedure",ICPC2,NA,NA
+P63,"Mielenterveys ja käyttäytyminen, Muu seurantakäynti","Psychological, Follow-up encounter unspecified",ICPC2,NA,NA
+P64,"Mielenterveys ja käyttäytyminen, Hoidonantajan käynnistämä tapahtuma","Psychological, Encounter/prob initiated by provider",ICPC2,NA,NA
+P65,"Mielenterveys ja käyttäytyminen, Muun henkilön käynnistämä tapahtuma","Psychological, Enc/prob init by other than pt/prov",ICPC2,NA,NA
+P66,"Mielenterveys ja käyttäytyminen, Lähete muulle perusterveydenhuollon ammattihenkilölle","Psychological, Referral to non-MD provider",ICPC2,NA,NA
+P67,"Mielenterveys ja käyttäytyminen, Lähete erikoislääkärille/sairaalaan","Psychological, Referral to physician/hospital",ICPC2,NA,NA
+P68,"Mielenterveys ja käyttäytyminen, Muu lähete","Psychological, Other referral NEC",ICPC2,NA,NA
+P69,"Mielenterveys ja käyttäytyminen, Muu käynnin syy","Psychological, Other reason for encounter NEC",ICPC2,NA,NA
+P70,Dementia,Dementia,ICPC2,F03,45592341
+P71,"Orgaaninen psykoosi, muu",Organic psychosis other,ICPC2,F09,45568035
+P72,Skitsofrenia,Schizophrenia,ICPC2,F25.9,45544069
+P73,Affektiivinen psykoosi,Affective psychosis,ICPC2,F31.9,NA
+P74,Ahdistushäiriö/-tila,Anxiety disorder/anxiety state,ICPC2,F41.9,45553648
+P75,Somatisaatiohäiriö,Somatization disorder,ICPC2,F45.0,45606711
+P76,Masennustila,Depressive disorder,ICPC2,F32.9,45539250
+P77,Itsemurha/itsemurhayritys,Suicide/suicide attempt,ICPC2,Z91.5,45582628
+P78,Neurastenia/ylirasittuneisuus,Neuraesthenia/surmenage,ICPC2,F48.0,45592346
+P79,Pelkotila / pakko-oireinen häiriö,Phobia/compulsive disorder,ICPC2,F42.9,NA
+P80,Persoonallisuuden häiriö,Personality disorder,ICPC2,F69,45582629
+P81,Hyperkineettinen oireyhtymä,Hyperkinetic disorder,ICPC2,F90.9,45558382
+P82,Vamman/trauman jälkeinen rasitusoireyhtymä,Post-traumatic stress disorder,ICPC2,F43.1,NA
+P85,Kehitysvammaisuus,Mental retardation,ICPC2,F79.9,NA
+P86,Anoreksia/bulimia,Anorexia nervosa/bulimia,ICPC2,F50.0,NA
+P98,"Psykoosi, määrittämätön/muu",Psychosis NOS/other,ICPC2,F23.8,NA
+P99,Muu mielenterveyden häiriö,Psychological disorders other,ICPC2,F99,NA
+R,Hengityselimet,Respiratory,ICPC2,NA,NA
+R01,Hengityselimiin liittyvä kipu,Pain respiratory system,ICPC2,R07.1,45755624
+R02,Hengenahdistus/dyspnea,Shortness of breath/dyspnoea,ICPC2,R06.0,45534421
+R03,Hengityksen vinkuna,Wheezing,ICPC2,R06.2,45755625
+R04,"Hengityksen häiriö, muu",Breathing problem other,ICPC2,R06.8,45755626
+R05,Yskä,Cough,ICPC2,R05,45606792
+R06,Nenäverenvuoto,Nose bleed/epistaxis,ICPC2,R04.0,45582691
+R07,Aivastelu / nenän tukkoisuus,Sneezing/nasal congestion,ICPC2,R06.7,45602001
+R08,"Nenän oire/vaiva, muu",Nose symptom/complaint other,ICPC2,J34.8,NA
+R09,Sivuontelon oire/vaiva,Sinus symptom/complaint,ICPC2,J34.8,45755627
+R21,Kurkun/nielun oire/vaiva,Throat symptom/complaint,ICPC2,R07.0,45553721
+R23,Äänen oire/vaiva,Voice symptom/complaint,ICPC2,R49.8,45568122
+R24,Veriyskä,Haemoptysis,ICPC2,R04.2,NA
+R25,Epänormaali yskös,Sputum/phlegm abnormal,ICPC2,R09.3,45534436
+R26,Huoli/pelko hengityselinten syövästä,Fear  cancer  respiratory system,ICPC2,Z71.1,45606801
+R27,Huoli/pelko hengityselinten muusta sairaudesta,Fear of respiratory disease other,ICPC2,Z71.1,45592415
+R28,"Toiminnanvajaus, hengityselinten",Limited function/disability (R),ICPC2,Z73.6,NA
+R29,Muu hengityselinten oire/vaiva,Respiratory symptom/complaint other,ICPC2,R09.8,45755636
+R30,"Hengityselimet, Laaja terveydentilan arviointi/tarkastus","Respiratory, Medical examin/health eval complete",ICPC2,NA,45577789
+R31,"Hengityselimet, Suppea terveydentilan arviointi/tarkastus","Respiratory, Medical examin/health eval partial",ICPC2,NA,45553726
+R32,"Hengityselimet, Allergiatutkimus","Respiratory, Sensitivity test",ICPC2,NA,45606803
+R33,"Hengityselimet, Mikrobiologinen/immunologinen koe","Respiratory, Microbiological/immunological test",ICPC2,NA,45587507
+R34,"Hengityselimet, Veritutkimus","Respiratory, Blood test",ICPC2,NA,45602018
+R35,"Hengityselimet, Virtsatutkimus","Respiratory, Urine test",ICPC2,NA,45539331
+R36,"Hengityselimet, Ulostetutkimus","Respiratory, Faeces test",ICPC2,NA,45602019
+R37,"Hengityselimet, Histologinen/sytologinen tutkimus","Respiratory, Histological/exfoliative cytology",ICPC2,NA,NA
+R38,"Hengityselimet, Muu laboratoriotutkimus","Respiratory, Other laboratory test NEC",ICPC2,NA,NA
+R39,"Hengityselimet, Kliininen toimintakoe","Respiratory, Physical function test",ICPC2,NA,45587510
+R40,"Hengityselimet, Diagnostinen endoskopia","Respiratory, Diagnostic endoscopy",ICPC2,NA,45755637
+R41,"Hengityselimet, Diagnostinen kuvantaminen","Respiratory, Diagnostic radiology/imaging",ICPC2,NA,45544146
+R42,"Hengityselimet, Elektrofysiologinen tutkimus","Respiratory, Electrical tracing",ICPC2,NA,45568132
+R43,"Hengityselimet, Muu tutkimustoimenpide","Respiratory, Other diagnostic procedure",ICPC2,NA,45544147
+R44,"Hengityselimet, Rokotus / ennaltaehkäisevä lääkitys","Respiratory, Preventive immunization/medic",ICPC2,NA,45755638
+R45,"Hengityselimet, Seuranta/terveysneuvonta/ruokavalioneuvonta","Respiratory, Observ/health educat/advice/diet",ICPC2,NA,45755639
+R46,"Hengityselimet, Perusterveydenhuollon asiantuntijan konsultaatio","Respiratory, Consultation primary care provider",ICPC2,NA,45592420
+R47,"Hengityselimet, Erikoislääkärin konsultaatio","Respiratory, Consultation with specialist",ICPC2,NA,45755640
+R48,"Hengityselimet, Potilaan tarpeiden/tulosyyn selvittäminen","Respiratory, Clarification/discussion RFE/demand",ICPC2,NA,45577797
+R49,"Hengityselimet, Muu ennaltaehkäisevä toimenpide","Respiratory, Other preventive procedure",ICPC2,NA,45606816
+R50,"Hengityselimet, Lääkitys/lääkemääräys/uusinta/injektio","Respiratory, Medication/prescr/renewal",ICPC2,NA,45568138
+R51,"Hengityselimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Respiratory, I&d/flush/aspiration",ICPC2,NA,45558474
+R52,"Hengityselimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Respiratory, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45548974
+R53,"Hengityselimet, Katetrointi/intubointi/laajentaminen","Respiratory, Instrument/catheter/intubate/dilate",ICPC2,NA,45553741
+R54,"Hengityselimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Respiratory, Repair/fix-suture/cast/prosth device",ICPC2,NA,45568140
+R55,"Hengityselimet, Paikallinen lääkeaineinjektio","Respiratory, Local injection/infiltration",ICPC2,NA,45568141
+R56,"Hengityselimet, Sidos/kompressi/tamponointi","Respiratory, Dressing/pressure/compress/tamponade",ICPC2,NA,45592425
+R57,"Hengityselimet, Fysikaalinen hoito /kuntoutus","Respiratory, Physical medicine/rehabilitation",ICPC2,NA,45563316
+R58,"Hengityselimet, Terapeuttinen neuvonta/kuuntelu","Respiratory, Therapeutic counselling/listening",ICPC2,NA,45573033
+R59,"Hengityselimet, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Respiratory, Other therap proced/minor surg NEC",ICPC2,NA,45606820
+R60,"Hengityselimet, Tutkimustulosten kuuleminen","Respiratory, Result test/procedure",ICPC2,NA,45577801
+R61,"Hengityselimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Respiratory, Result examination/test/record/letter from other provider",ICPC2,NA,45553742
+R62,"Hengityselimet, Hallinnollinen toimenpide","Respiratory, Administrative procedure",ICPC2,NA,45544153
+R63,"Hengityselimet, Muu seurantakäynti","Respiratory, Follow-up encounter unspecified",ICPC2,NA,45755630
+R64,"Hengityselimet, Hoidonantajan käynnistämä tapahtuma","Respiratory, Encounter/prob initiated by provider",ICPC2,NA,45568145
+R65,"Hengityselimet, Muun henkilön käynnistämä tapahtuma","Respiratory, Enc/prob init by other than pt/prov",ICPC2,NA,45755631
+R66,"Hengityselimet, Lähete muulle perusterveydenhuollon ammattihenkilölle","Respiratory, Referral to non-MD provider",ICPC2,NA,NA
+R67,"Hengityselimet, Lähete erikoislääkärille/sairaalaan","Respiratory, Referral to physician/hospital",ICPC2,NA,NA
+R68,"Hengityselimet, Muu lähete","Respiratory, Other referral NEC",ICPC2,NA,45755634
+R69,"Hengityselimet, Muu käynnin syy","Respiratory, Other reason for encounter NEC",ICPC2,NA,45558480
+R71,Hinkuyskä,Whooping cough,ICPC2,A37.9,45573038
+R72,Streptokokkitonsilliitti,Strep throat,ICPC2,J03.0,45602037
+R73,Nenän äkämä/paise,Boil/abscess nose,ICPC2,J34.0,45553744
+R74,"Ylähengitystieinfektio, akuutti",Upper respiratory infection acute,ICPC2,J06.9,45582723
+R75,"Nenän sivuontelotulehdus, akuutti/krooninen",Sinusitis acute/chronic,ICPC2,J01.9,45568149
+R76,"Nielurisatulehdus, akuutti",Tonsillitis acute,ICPC2,J03.9,45577810
+R77,"Kurkunpään/henkitorven tulehdus, akuutti",Laryngitis/tracheitis acute,ICPC2,J04.2,45606822
+R78,"Keuhkoputkentulehdus/bronkioliitti, akuutti",Acute bronchitis/bronchiolitis,ICPC2,J20.9,45539360
+R79,"Keuhkoputkentulehdus, krooninen",Chronic bronchitis,ICPC2,J42,45587527
+R80,Influenssa,Influenza,ICPC2,J10.1,45568153
+R81,Keuhkokuume,Pneumonia,ICPC2,J18.9,45548983
+R82,Keuhkopussintulehdus / nestekertymä keuhkopussissa,Pleurisy/pleural effusion,ICPC2,J90,45592436
+R83,"Hengitystieinfektio, muu",Respiratory infection other,ICPC2,A36.9,45563326
+R84,"Pahanlaatuinen kasvain, keuhkojen/keuhkoputken",Malignant neoplasm bronchus/lung,ICPC2,C34.99&,45592437
+R85,"Pahanlaatuinen kasvain, hengityselinten, muu",Malignant neopl respiratory other,ICPC2,C39.9&,45563327
+R86,"Hyvänlaatuinen kasvain, hengityselinten",Benign neoplasm respiratory,ICPC2,D14.4&,45544162
+R87,Vierasesine nenässä/kurkunpäässä/keuhkoputkissa,Foreign body nose/larynx/bronchus,ICPC2,T17.9,45548988
+R88,"Hengityselinten vamma, muu",Injury respiratory other,ICPC2,S27.8,NA
+R89,"Synnynnäinen epämuodostuma, hengityselinten",Congenital anomaly respiratory,ICPC2,Q34.9,45558490
+R90,Nielurisojen/kitarisojen liikakasvu,Hypertrophy tonsils/adenoids,ICPC2,J35.9,45755748
+R92,"Hengityselinten kasvain, määrittämätön",Neoplasm respiratory unspecified,ICPC2,D38.6&,45577824
+R95,Keuhkoahtaumatauti,Chron obstructive pulmonary disease,ICPC2,J43.9,45539373
+R96,Astma,Asthma,ICPC2,J45.9,45755752
+R97,Allerginen nuha,Allergic rhinitis,ICPC2,J30.4,NA
+R98,Hyperventilaatio,Hyperventilation syndrome,ICPC2,R06.4,45592445
+R99,Muu hengityselinten sairaus,Respiratory disease other,ICPC2,J98.9,45606834
+S,Iho,Skin,ICPC2,NA,NA
+S01,Ihon kipu/arkuus,Pain/tenderness of skin,ICPC2,R20.8,45582756
+S02,Kutina,Pruritus,ICPC2,L29.9,45592480
+S03,Syylät,Warts,ICPC2,B07.9,45755771
+S04,"Kyhmy/patti, paikallinen",Lump/swelling localized,ICPC2,R22.9,45573100
+S05,"Kyhmyt/patit, yleistyneet",Lumps/swellings generalized,ICPC2,R22.7,45755772
+S06,"Punoitus, paikallinen",Rash localized,ICPC2,R21,45544245
+S07,"Punoitus, yleinen",Rash generalized,ICPC2,R21,45755791
+S08,"Ihon värin muutos, muu",Skin colour change,ICPC2,L81.1,45755792
+S09,Tulehtunut sormi/varvas,Infected finger/toe,ICPC2,L03.0,45592553
+S10,Paise,Boil/carbuncle,ICPC2,L02.9,45602141
+S11,Ihotulehdus vamman jälkeen,Skin infection post-traumatic,ICPC2,T79.3,45558618
+S12,Hyönteisen purema/pisto,Insect bite/sting,ICPC2,T14.0,45534602
+S13,Eläimen/ihmisen purema,Animal/human bite,ICPC2,T14.1,45755803
+S14,Palovamma,Burn/scald,ICPC2,T30.0,45568309
+S15,Vierasesine ihossa,Foreign body in skin,ICPC2,T14.0,45755804
+S16,Mustelma/ruhje,Bruise/contusion,ICPC2,T14.0,45592612
+S17,Hiertymä/naarmu/rakkula,Abrasion/scratch/blister,ICPC2,T14.0,45607023
+S18,Haava/laseraatio,Laceration/cut,ICPC2,T14.1,45553950
+S19,"Ihon vamma, muu",Skin injury other,ICPC2,T14.0,45597395
+S20,Sarveistuma/kovettuma,Corn/callosity,ICPC2,L84,45755805
+S21,Ihon rakenteen oire/vaiva,Skin texture symptom/complaint,ICPC2,R23.4,45592636
+S22,Kynnen oire/vaiva,Nail symptom/complaint,ICPC2,L60.9,45755806
+S23,Kaljuus / hiustenlähtö,Hair loss/baldness,ICPC2,L64.9,45755823
+S24,"Päänahan/hiusten oire/vaiva, muu",Hair/scalp symptom/complaint other,ICPC2,L67.9,45573295
+S26,Huoli/pelko ihosyövästä,Fear of cancer of skin,ICPC2,Z71.1,45607103
+S27,Huoli/pelko muusta ihosairaudesta,Fear of skin disease other,ICPC2,Z71.1,45573314
+S28,"Toiminnanvajaus, ihon",Limited function/disability (S),ICPC2,Z73.6,45755673
+S29,Muu ihon oire/vaiva,Skin symptom/complaint other,ICPC2,R23.8,45592716
+S30,"Iho, Laaja terveydentilan arviointi/tarkastus","Skin, Medical examin/health eval complete",ICPC2,NA,45539654
+S31,"Iho, Suppea terveydentilan arviointi/tarkastus","Skin, Medical examin/health eval partial",ICPC2,NA,45755674
+S32,"Iho, Allergiatutkimus","Skin, Sensitivity test",ICPC2,NA,45592752
+S33,"Iho, Mikrobiologinen/immunologinen koe","Skin, Microbiological/immunological test",ICPC2,NA,45755691
+S34,"Iho, Veritutkimus","Skin, Blood test",ICPC2,NA,45755692
+S35,"Iho, Virtsatutkimus","Skin, Urine test",ICPC2,NA,45755693
+S36,"Iho, Ulostetutkimus","Skin, Faeces test",ICPC2,NA,45568567
+S37,"Iho, Histologinen/sytologinen tutkimus","Skin, Histological/exfoliative cytology",ICPC2,NA,45534916
+S38,"Iho, Muu laboratoriotutkimus","Skin, Other laboratory test NEC",ICPC2,NA,45755729
+S39,"Iho, Kliininen toimintakoe","Skin, Physical function test",ICPC2,NA,45755731
+S40,"Iho, Diagnostinen endoskopia","Skin, Diagnostic endoscopy",ICPC2,NA,45587978
+S41,"Iho, Diagnostinen kuvantaminen","Skin, Diagnostic radiology/imaging",ICPC2,NA,45755732
+S42,"Iho, Elektrofysiologinen tutkimus","Skin, Electrical tracing",ICPC2,NA,45597678
+S43,"Iho, Muu tutkimustoimenpide","Skin, Other diagnostic procedure",ICPC2,NA,45755747
+S44,"Iho, Rokotus / ennaltaehkäisevä lääkitys","Skin, Preventive immunization/medic",ICPC2,NA,45583299
+S45,"Iho, Seuranta/terveysneuvonta/ruokavalioneuvonta","Skin, Observ/health educat/advice/diet",ICPC2,NA,45755906
+S46,"Iho, Perusterveydenhuollon asiantuntijan konsultaatio","Skin, Consultation primary care provider",ICPC2,NA,45549607
+S47,"Iho, Erikoislääkärin konsultaatio","Skin, Consultation with specialist",ICPC2,NA,45554387
+S48,"Iho, Potilaan tarpeiden/tulosyyn selvittäminen","Skin, Clarification/discussion RFE/demand",ICPC2,NA,45755907
+S49,"Iho, Muu ennaltaehkäisevä toimenpide","Skin, Other preventive procedure",ICPC2,NA,45554393
+S50,"Iho, Lääkitys/lääkemääräys/uusinta/injektio","Skin, Medication/prescr/renewal",ICPC2,NA,45755908
+S51,"Iho, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Skin, I&d/flush/aspiration",ICPC2,NA,45607470
+S52,"Iho, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Skin, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45544818
+S53,"Iho, Katetrointi/intubointi/laajentaminen","Skin, Instrument/catheter/intubate/dilate",ICPC2,NA,45755929
+S54,"Iho, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Skin, Repair/fix-suture/cast/prosth device",ICPC2,NA,45755930
+S55,"Iho, Paikallinen lääkeaineinjektio","Skin, Local injection/infiltration",ICPC2,NA,45573911
+S56,"Iho, Sidos/kompressi/tamponointi","Skin, Dressing/pressure/compress/tamponade",ICPC2,NA,45755931
+S57,"Iho, Fysikaalinen hoito /kuntoutus","Skin, Physical medicine/rehabilitation",ICPC2,NA,45602904
+S58,"Iho, Terapeuttinen neuvonta/kuuntelu","Skin, Therapeutic counselling/listening",ICPC2,NA,45549871
+S59,"Iho, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Skin, Other therap proced/minor surg NEC",ICPC2,NA,45554650
+S60,"Iho, Tutkimustulosten kuuleminen","Skin, Result test/procedure",ICPC2,NA,45755932
+S61,"Iho, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Skin, Result examination/test/record/letter from other provider",ICPC2,NA,45578755
+S62,"Iho, Hallinnollinen toimenpide","Skin, Administrative procedure",ICPC2,NA,45540316
+S63,"Iho, Muu seurantakäynti","Skin, Follow-up encounter unspecified",ICPC2,NA,45755950
+S64,"Iho, Hoidonantajan käynnistämä tapahtuma","Skin, Encounter/prob initiated by provider",ICPC2,NA,45755951
+S65,"Iho, Muun henkilön käynnistämä tapahtuma","Skin, Enc/prob init by other than pt/prov",ICPC2,NA,45755952
+S66,"Iho, Lähete muulle perusterveydenhuollon ammattihenkilölle","Skin, Referral to non-MD provider",ICPC2,NA,45755953
+S67,"Iho, Lähete erikoislääkärille/sairaalaan","Skin, Referral to physician/hospital",ICPC2,NA,45755954
+S68,"Iho, Muu lähete","Skin, Other referral NEC",ICPC2,NA,45755955
+S69,"Iho, Muu käynnin syy","Skin, Other reason for encounter NEC",ICPC2,NA,45608079
+S70,Vyöruusu,Herpes zoster,ICPC2,B02.9,45755956
+S71,Herpes simplex,Herpes simplex,ICPC2,B00.10,45559719
+S72,Syyhy / muu punkkitauti,Scabies/other acariasis,ICPC2,B86,45569417
+S73,Täi- / muu ihosyöpäläistartunta,Pediculosis/skin infestation other,ICPC2,B88.9,45755971
+S74,Sieni-ihottuma,Dermatophytosis,ICPC2,B35.9,45755824
+S75,Hiivasieni iholla,Moniliasis/candidiasis skin,ICPC2,B37.2,45755825
+S76,"Ihotulehdus, muu",Skin infection other,ICPC2,L08.9,45755826
+S77,"Pahanlaatuinen kasvain, ihon",Malignant neoplasm of skin,ICPC2,C44.99,45755827
+S78,Rasvakasvain,Lipoma,ICPC2,D17.9&,45550377
+S79,"Hyvänlaatuinen/määrittämätön kasvain, ihon, muu",Neoplasm skin benign/unspecified,ICPC2,D23.9&,45545603
+S80,Auringonpolttama / auringon aiheuttama sarveistuma,Solar keratosis/sunburn,ICPC2,L55.9,45603531
+S81,Verisuonikasvain/imusuonikasvain,Haemangioma/lymphangioma,ICPC2,D18.0&,45555217
+S82,Luomi,Naevus/mole,ICPC2,D22.9&,45755828
+S83,"Synnynnäinen poikkeavuus, ihon, muu",Congenital skin anomaly other,ICPC2,Q82.9,45755848
+S84,Märkärupi,Impetigo,ICPC2,L01.0,45589253
+S85,Pilonidaalikysta/fisteli,Pilonidal cyst/fistula,ICPC2,L05.9,45550639
+S86,Seborrooinen ihottuma,Dermatitis seborrhoeic,ICPC2,L21.9,45598943
+S87,Atooppinen ihottuma/ekseema,Dermatitis/atopic eczema,ICPC2,L20.9,45555482
+S88,Allerginen ihottuma / kosketusihottuma,Dermatitis contact/allergic,ICPC2,L25.9,45574785
+S89,Vaippaihottuma,Diaper rash,ICPC2,L22,45569919
+S90,Punatäplähilseily,Pityriasis rosea,ICPC2,L42,45755849
+S91,Psoriasis,Psoriasis,ICPC2,L40.9,45755850
+S92,Hikirauhasten sairaus,Sweat gland disease,ICPC2,L73.2,45560281
+S93,Talirauhasen tukkeuma,Sebaceous cyst,ICPC2,L72.1,45755867
+S94,Sisäänkasvanut kynsi,Ingrowing nail,ICPC2,L60.0,45599134
+S95,Ontelosyylä,Molluscum contagiosum,ICPC2,B08.1,45541207
+S96,Akne,Acne,ICPC2,L70.9,45584624
+S97,"Ihohaavauma, krooninen",Chronic ulcer skin,ICPC2,L98.4,45755890
+S98,Nokkosrokko,Urticaria,ICPC2,L50.9,45755891
+S99,Muu ihon sairaus,Skin disease other,ICPC2,L98.9,45755892
+T,"Aineenvaihdunta, umpieritys ja ravitsemus",Metabolic,ICPC2,NA,NA
+T01,Ylenmääräinen jano,Excessive thirst,ICPC2,R63.1,45604007
+T02,Ylenmääräinen ruokahalu,Excessive appetite,ICPC2,R63.2,45594352
+T03,Ruokahaluttomuus,Loss of appetite,ICPC2,R63.0,45550900
+T04,"Syöttämisongelma, vauvan/lapsen",Feeding problem of infant/child,ICPC2,R63.3,45755873
+T05,"Ruokailun ongelma, aikuisen",Feeding problem of adult,ICPC2,R63.3,45755874
+T07,Painonnousu,Weight gain,ICPC2,R63.5,45604013
+T08,Painon lasku,Weight loss,ICPC2,R63.4,45594355
+T10,Kasvun viivästymä,Growth delay,ICPC2,R62.8,45575015
+T11,Dehydraatio/kuivuminen,Dehydration,ICPC2,E86,45755881
+T26,Huoli/pelko umpieritysrauhasten syövästä,Fear of cancer of endocrine system,ICPC2,Z71.1,45594534
+T27,Huoli/pelko aineenvaihduntaan/sisäeritykseen liittyvästä muusta sairaudesta,Fear endocrine/metabol disease other,ICPC2,Z71.1,45756562
+T28,"Toiminnanvajaus, aineenvaihduntaan/umpieritykseen/ravitsemukseen liittyvä",Limited function/disability (T),ICPC2,Z73.6,45756563
+T29,Muu aineenvaihduntaan/umpieritykseen/ravitsemukseen liittyvä oire/vaiva,Endocr/metab/nutr sympt/compl other,ICPC2,R63.8,45756564
+T30,"Aineenvaihdunta, umpieritys ja ravitsemus, Laaja terveydentilan arviointi/tarkastus","Metabolic, Medical examin/health eval complete",ICPC2,NA,45756565
+T31,"Aineenvaihdunta, umpieritys ja ravitsemus, Suppea terveydentilan arviointi/tarkastus","Metabolic, Medical examin/health eval partial",ICPC2,NA,45756585
+T32,"Aineenvaihdunta, umpieritys ja ravitsemus, Allergiatutkimus","Metabolic, Sensitivity test",ICPC2,NA,45756586
+T33,"Aineenvaihdunta, umpieritys ja ravitsemus, Mikrobiologinen/immunologinen koe","Metabolic, Microbiological/immunological test",ICPC2,NA,45594555
+T34,"Aineenvaihdunta, umpieritys ja ravitsemus, Veritutkimus","Metabolic, Blood test",ICPC2,NA,45594563
+T35,"Aineenvaihdunta, umpieritys ja ravitsemus, Virtsatutkimus","Metabolic, Urine test",ICPC2,NA,45756587
+T36,"Aineenvaihdunta, umpieritys ja ravitsemus, Ulostetutkimus","Metabolic, Faeces test",ICPC2,NA,45756588
+T37,"Aineenvaihdunta, umpieritys ja ravitsemus, Histologinen/sytologinen tutkimus","Metabolic, Histological/exfoliative cytology",ICPC2,NA,45756589
+T38,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu laboratoriotutkimus","Metabolic, Other laboratory test NEC",ICPC2,NA,45756622
+T39,"Aineenvaihdunta, umpieritys ja ravitsemus, Kliininen toimintakoe","Metabolic, Physical function test",ICPC2,NA,45565513
+T40,"Aineenvaihdunta, umpieritys ja ravitsemus, Diagnostinen endoskopia","Metabolic, Diagnostic endoscopy",ICPC2,NA,45756623
+T41,"Aineenvaihdunta, umpieritys ja ravitsemus, Diagnostinen kuvantaminen","Metabolic, Diagnostic radiology/imaging",ICPC2,NA,45756624
+T42,"Aineenvaihdunta, umpieritys ja ravitsemus, Elektrofysiologinen tutkimus","Metabolic, Electrical tracing",ICPC2,NA,45756625
+T43,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu tutkimustoimenpide","Metabolic, Other diagnostic procedure",ICPC2,NA,45580133
+T44,"Aineenvaihdunta, umpieritys ja ravitsemus, Rokotus / ennaltaehkäisevä lääkitys","Metabolic, Preventive immunization/medic",ICPC2,NA,45756626
+T45,"Aineenvaihdunta, umpieritys ja ravitsemus, Seuranta/terveysneuvonta/ruokavalioneuvonta","Metabolic, Observ/health educat/advice/diet",ICPC2,NA,45756627
+T46,"Aineenvaihdunta, umpieritys ja ravitsemus, Perusterveydenhuollon asiantuntijan konsultaatio","Metabolic, Consultation primary care provider",ICPC2,NA,45756645
+T47,"Aineenvaihdunta, umpieritys ja ravitsemus, Erikoislääkärin konsultaatio","Metabolic, Consultation with specialist",ICPC2,NA,45756646
+T48,"Aineenvaihdunta, umpieritys ja ravitsemus, Potilaan tarpeiden/tulosyyn selvittäminen","Metabolic, Clarification/discussion RFE/demand",ICPC2,NA,45756647
+T49,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu ennaltaehkäisevä toimenpide","Metabolic, Other preventive procedure",ICPC2,NA,45756648
+T50,"Aineenvaihdunta, umpieritys ja ravitsemus, Lääkitys/lääkemääräys/uusinta/injektio","Metabolic, Medication/prescr/renewal",ICPC2,NA,45756649
+T51,"Aineenvaihdunta, umpieritys ja ravitsemus, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Metabolic, I&d/flush/aspiration",ICPC2,NA,45580249
+T52,"Aineenvaihdunta, umpieritys ja ravitsemus, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Metabolic, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45756650
+T53,"Aineenvaihdunta, umpieritys ja ravitsemus, Katetrointi/intubointi/laajentaminen","Metabolic, Instrument/catheter/intubate/dilate",ICPC2,NA,45756688
+T54,"Aineenvaihdunta, umpieritys ja ravitsemus, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Metabolic, Repair/fix-suture/cast/prosth device",ICPC2,NA,45756689
+T55,"Aineenvaihdunta, umpieritys ja ravitsemus, Paikallinen lääkeaineinjektio","Metabolic, Local injection/infiltration",ICPC2,NA,45551322
+T56,"Aineenvaihdunta, umpieritys ja ravitsemus, Sidos/kompressi/tamponointi","Metabolic, Dressing/pressure/compress/tamponade",ICPC2,NA,45585086
+T57,"Aineenvaihdunta, umpieritys ja ravitsemus, Fysikaalinen hoito /kuntoutus","Metabolic, Physical medicine/rehabilitation",ICPC2,NA,45756690
+T58,"Aineenvaihdunta, umpieritys ja ravitsemus, Terapeuttinen neuvonta/kuuntelu","Metabolic, Therapeutic counselling/listening",ICPC2,NA,45599611
+T59,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Metabolic, Other therap proced/minor surg NEC",ICPC2,NA,45756691
+T60,"Aineenvaihdunta, umpieritys ja ravitsemus, Tutkimustulosten kuuleminen","Metabolic, Result test/procedure",ICPC2,NA,45551355
+T61,"Aineenvaihdunta, umpieritys ja ravitsemus, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Metabolic, Result examination/test/record/letter from other provider",ICPC2,NA,45756692
+T62,"Aineenvaihdunta, umpieritys ja ravitsemus, Hallinnollinen toimenpide","Metabolic, Administrative procedure",ICPC2,NA,45546583
+T63,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu seurantakäynti","Metabolic, Follow-up encounter unspecified",ICPC2,NA,45604455
+T64,"Aineenvaihdunta, umpieritys ja ravitsemus, Hoidonantajan käynnistämä tapahtuma","Metabolic, Encounter/prob initiated by provider",ICPC2,NA,45546625
+T65,"Aineenvaihdunta, umpieritys ja ravitsemus, Muun henkilön käynnistämä tapahtuma","Metabolic, Enc/prob init by other than pt/prov",ICPC2,NA,45599678
+T66,"Aineenvaihdunta, umpieritys ja ravitsemus, Lähete muulle perusterveydenhuollon ammattihenkilölle","Metabolic, Referral to non-MD provider",ICPC2,NA,45565780
+T67,"Aineenvaihdunta, umpieritys ja ravitsemus, Lähete erikoislääkärille/sairaalaan","Metabolic, Referral to physician/hospital",ICPC2,NA,45755979
+T68,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu lähete","Metabolic, Other referral NEC",ICPC2,NA,45546641
+T69,"Aineenvaihdunta, umpieritys ja ravitsemus, Muu käynnin syy","Metabolic, Other reason for encounter NEC",ICPC2,NA,45755980
+T70,Umpierityselimen infektio,Endocrine infection,ICPC2,E06.0,45755981
+T71,"Pahanlaatuinen kasvain, kilpirauhasen",Malignant neoplasm thyroid,ICPC2,C73.99&,45599700
+T72,"Hyvänlaatuinen kasvain, kilpirauhasen",Benign neoplasm thyroid,ICPC2,D34&,NA
+T73,"Kasvain, endokrinologinen, muu/määrittämätön",Neoplasm endocrine other/unspecified,ICPC2,D44.9&,45755982
+T78,"Kilpirauhas-kielitiehyt/rakkula, pysyväksi jäänyt",Thyroglossal duct/cyst,ICPC2,Q89.23,45755984
+T80,"Synnynnäinen epämuodostuma,  sisäeriterauhasten, muu",Congen  anomaly endocrine/metabolic,ICPC2,E25.01,45575532
+T81,Struuma,Goitre,ICPC2,E04.9,45756006
+T82,"Lihavuus, merkittävä/vaikea",Obesity,ICPC2,E66.8,45756007
+T83,"Ylipaino / lihavuus, lievä",Overweight,ICPC2,E66.9,45756008
+T85,Kilpirauhasen liikatoiminta / tyreotoksikoosi,Hyperthyroidism/thyrotoxicosis,ICPC2,E05.9,45756010
+T86,Kilpirauhasen vajaatoiminta / myksedeema,Hypothyroidism/myxoedema,ICPC2,E03.9,45561099
+T87,Hypoglykemia / matala verensokeri,Hypoglycaemia,ICPC2,E16.2,45541886
+T89,"Diabetes, tyyppi 1",Diabetes insulin dependent,ICPC2,E10.9,NA
+T90,"Diabetes, tyyppi 2",Diabetes non-insulin dependent,ICPC2,E14.9,45565907
+T91,Vitamiinin puute / ravitsemuksellinen  puutos,Vitamin/nutritional deficiency,ICPC2,E56.9,45756049
+T92,Kihti,Gout,ICPC2,M10.9,45756050
+T93,Dyslipidemia,Lipid disorder,ICPC2,E78.9,45756051
+T99,Muu endokriininen/aineenvaihdunnan/ravitsemuksen sairaus,Endocr/metab/nutrit disease other,ICPC2,E34.9,NA
+U,Virtsaelimet,Urological,ICPC2,NA,NA
+U01,Kipu virtsatessa,Dysuria/painful urination,ICPC2,R30.9,NA
+U02,Tihentynyt virtsaamistarve,Urinary frequency/urgency,ICPC2,R35,NA
+U04,Virtsankarkailu,Incontinence urine,ICPC2,N39.4,45756079
+U05,"Virtsaamisongelma, muu",Urination problems other,ICPC2,R39.1,NA
+U06,Verivirtsaisuus,Haematuria,ICPC2,R31,45756080
+U07,Virtsaamiseen liittyvä muu oire/vaiva,Urine symptom/complaint other,ICPC2,R39.8,45756091
+U08,Virtsaumpi,Urinary retention,ICPC2,R33,NA
+U13,"Rakkoon liittyvä oire/vaiva, muu",Bladder symptom/complaint other,ICPC2,R39.8,NA
+U14,Munuaiseen liittyvä oire/vaiva,Kidney symptom/complaint,ICPC2,N23,NA
+U26,Huoli/pelko virtsateiden syövästä,Fear of cancer of urinary system,ICPC2,Z71.1,NA
+U27,Huoli/pelko muusta virtsatiesairaudesta,Fear of urinary disease other,ICPC2,Z71.1,NA
+U28,"Toiminnanvajaus, virtsaelinten",Limited function/disability (U),ICPC2,Z73.6,NA
+U29,Muu virtsaelinten vaiva/oire,Urinary symptom/complaint other,ICPC2,R39.8,NA
+U30,"Virtsaelimet, Laaja terveydentilan arviointi/tarkastus","Urological, Medical examin/health eval complete",ICPC2,NA,NA
+U31,"Virtsaelimet, Suppea terveydentilan arviointi/tarkastus","Urological, Medical examin/health eval partial",ICPC2,NA,NA
+U32,"Virtsaelimet, Allergiatutkimus","Urological, Sensitivity test",ICPC2,NA,NA
+U33,"Virtsaelimet, Mikrobiologinen/immunologinen koe","Urological, Microbiological/immunological test",ICPC2,NA,NA
+U34,"Virtsaelimet, Veritutkimus","Urological, Blood test",ICPC2,NA,NA
+U35,"Virtsaelimet, Virtsatutkimus","Urological, Urine test",ICPC2,NA,NA
+U36,"Virtsaelimet, Ulostetutkimus","Urological, Faeces test",ICPC2,NA,NA
+U37,"Virtsaelimet, Histologinen/sytologinen tutkimus","Urological, Histological/exfoliative cytology",ICPC2,NA,NA
+U38,"Virtsaelimet, Muu laboratoriotutkimus","Urological, Other laboratory test NEC",ICPC2,NA,NA
+U39,"Virtsaelimet, Kliininen toimintakoe","Urological, Physical function test",ICPC2,NA,NA
+U40,"Virtsaelimet, Diagnostinen endoskopia","Urological, Diagnostic endoscopy",ICPC2,NA,NA
+U41,"Virtsaelimet, Diagnostinen kuvantaminen","Urological, Diagnostic radiology/imaging",ICPC2,NA,NA
+U42,"Virtsaelimet, Elektrofysiologinen tutkimus","Urological, Electrical tracing",ICPC2,NA,NA
+U43,"Virtsaelimet, Muu tutkimustoimenpide","Urological, Other diagnostic procedure",ICPC2,NA,NA
+U44,"Virtsaelimet, Rokotus / ennaltaehkäisevä lääkitys","Urological, Preventive immunization/medic",ICPC2,NA,NA
+U45,"Virtsaelimet, Seuranta/terveysneuvonta/ruokavalioneuvonta","Urological, Observ/health educat/advice/diet",ICPC2,NA,NA
+U46,"Virtsaelimet, Perusterveydenhuollon asiantuntijan konsultaatio","Urological, Consultation primary care provider",ICPC2,NA,NA
+U47,"Virtsaelimet, Erikoislääkärin konsultaatio","Urological, Consultation with specialist",ICPC2,NA,NA
+U48,"Virtsaelimet, Potilaan tarpeiden/tulosyyn selvittäminen","Urological, Clarification/discussion RFE/demand",ICPC2,NA,NA
+U49,"Virtsaelimet, Muu ennaltaehkäisevä toimenpide","Urological, Other preventive procedure",ICPC2,NA,NA
+U50,"Virtsaelimet, Lääkitys/lääkemääräys/uusinta/injektio","Urological, Medication/prescr/renewal",ICPC2,NA,NA
+U51,"Virtsaelimet, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Urological, I&d/flush/aspiration",ICPC2,NA,NA
+U52,"Virtsaelimet, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Urological, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,NA
+U53,"Virtsaelimet, Katetrointi/intubointi/laajentaminen","Urological, Instrument/catheter/intubate/dilate",ICPC2,NA,NA
+U54,"Virtsaelimet, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Urological, Repair/fix-suture/cast/prosth device",ICPC2,NA,NA
+U55,"Virtsaelimet, Paikallinen lääkeaineinjektio","Urological, Local injection/infiltration",ICPC2,NA,NA
+U56,"Virtsaelimet, Sidos/kompressi/tamponointi","Urological, Dressing/pressure/compress/tamponade",ICPC2,NA,NA
+U57,"Virtsaelimet, Fysikaalinen hoito /kuntoutus","Urological, Physical medicine/rehabilitation",ICPC2,NA,NA
+U58,"Virtsaelimet, Terapeuttinen neuvonta/kuuntelu","Urological, Therapeutic counselling/listening",ICPC2,NA,NA
+U59,"Virtsaelimet, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Urological, Other therap proced/minor surg NEC",ICPC2,NA,NA
+U60,"Virtsaelimet, Tutkimustulosten kuuleminen","Urological, Result test/procedure",ICPC2,NA,NA
+U61,"Virtsaelimet, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Urological, Result examination/test/record/letter from other provider",ICPC2,NA,NA
+U62,"Virtsaelimet, Hallinnollinen toimenpide","Urological, Administrative procedure",ICPC2,NA,NA
+U63,"Virtsaelimet, Muu seurantakäynti","Urological, Follow-up encounter unspecified",ICPC2,NA,NA
+U64,"Virtsaelimet, Hoidonantajan käynnistämä tapahtuma","Urological, Encounter/prob initiated by provider",ICPC2,NA,NA
+U65,"Virtsaelimet, Muun henkilön käynnistämä tapahtuma","Urological, Enc/prob init by other than pt/prov",ICPC2,NA,NA
+U66,"Virtsaelimet,Lähete muulle perusterveydenhuollon ammattihenkilölle","Urological, Referral to non-MD provider",ICPC2,NA,NA
+U67,"Virtsaelimet, Lähete erikoislääkärille/sairaalaan","Urological, Referral to physician/hospital",ICPC2,NA,NA
+U68,"Virtsaelimet, Muu lähete","Urological, Other referral NEC",ICPC2,NA,NA
+U69,"Virtsaelimet, Muu käynnin syy","Urological, Other reason for encounter NEC",ICPC2,NA,NA
+U70,Pyelonefriitti/munuaisaltaan tulehdus,Pyelonephritis/pyelitis,ICPC2,N10,NA
+U71,Virtsarakontulehdus / muu virtsatietulehdus,Cystitis/urinary infection other,ICPC2,N30.9,NA
+U72,Virtsaputkentulehdus,Urethritis,ICPC2,N34.2,NA
+U75,"Pahanlaatuinen kasvain, munuaisen",Malignant neoplasm of kidney,ICPC2,C64.88&,NA
+U76,"Pahanlaatuinen kasvain, virtsarakon",Malignant neoplasm of bladder,ICPC2,C67.9&,NA
+U77,"Pahanlaatuinen kasvain, virtsaelimistön, muu",Malignant neopl urinary tract other,ICPC2,C68.9&,NA
+U78,"Hyvänlaatuinen kasvain, virtsateiden",Benign neoplasm urinary tract,ICPC2,D30.9&,NA
+U79,"Kasvain, virtsateiden, määrittämätön",Neoplasm urinary tract unspecified,ICPC2,D41.9&,NA
+U80,Virtsateiden vamma,Injury urinary tract,ICPC2,S37.3,45756102
+U85,"Synnynnäinen epämuodostuma, virtsateiden",Congenital anomaly urinary tract,ICPC2,Q64.9,45756129
+U88,"Munuaiskerästulehdus, glomerulonefriitti/nefroosi",Glomerulonephritis/nephrosis,ICPC2,N03.9#,45756130
+U90,Asentoon liittyvä valkuaisvirtsaisuus,Orthostatic albuminuria/proteinuria,ICPC2,N39.2,NA
+U95,Virtsatiekivi,Urinary calculus,ICPC2,N20.9,NA
+U98,"Poikkeava virtsalöydös, määrittämätön",Abnormal urine test NOS,ICPC2,R82.9,NA
+U99,Muu virtsateiden sairaus,Urinary disease other,ICPC2,N39.9,NA
+W,"Raskaus, synnytys ja perhesuunnittelu",Pregnancy,ICPC2,NA,NA
+W01,Raskausepäily,Question of pregnancy,ICPC2,Z32.0,45756243
+W02,Pelko raskaudesta,Fear of pregnancy,ICPC2,Z71.1,45756244
+W03,Raskaudenaikainen verenvuoto,Antepartum bleeding,ICPC2,O20.9,45756245
+W05,Raskauspahoinvointi/-oksentelu,Pregnancy vomiting/nausea,ICPC2,O21.9,45756247
+W10,Yhdynnänjälkeinen ehkäisy,Contraception postcoital,ICPC2,Z30.3,45756250
+W11,Raskaudenehkäisy pillerillä,Contraception oral,ICPC2,Z30.4,45756251
+W12,"Raskaudenehkäisy, kohdunsisäinen",Contraception intrauterine,ICPC2,Z30.1,45756252
+W13,"Sterilisaatio, naisen",Sterilization female,ICPC2,Z30.2,45756253
+W14,"Raskaudenehkäisy, muu",Contraception female other,ICPC2,Z30.0,45571087
+W15,Hedelmättömyys,Infertility/subfertility female,ICPC2,N97.9,45585578
+W17,Synnytyksen jälkeinen verenvuoto,Post-partum bleeding,ICPC2,O72.1,45756255
+W18,"Synnytyksen jälkeinen oire/vaiva, muu",Post-partum symptom/complaint other,ICPC2,O90.9,45756256
+W19,Imetykseen liittyvä oire/vaiva,Lactation symptom/complaint,ICPC2,O92.7,45756257
+W21,Huoli raskaudenaikaisesta kehonkuvasta,Concern with body image in pregnancy,ICPC2,R46.8,45756259
+W27,Huoli/pelko raskauskomplikaatiosta,Fear of complications of pregnancy,ICPC2,Z71.1,45756280
+W28,"Toiminnanvajaus, raskauteen ja synnytykseen liittyvä",Limited function/disability (W),ICPC2,Z73.6,45756281
+W29,Muu raskauteen liittyvä oire/vaiva,Pregnancy symptom/complaint other,ICPC2,O26.0,45756282
+W30,"Raskaus, synnytys ja perhesuunnittelu, Laaja terveydentilan arviointi/tarkastus","Pregnancy, Medical examin/health eval complete",ICPC2,NA,45756283
+W31,"Raskaus, synnytys ja perhesuunnittelu, Suppea terveydentilan arviointi/tarkastus","Pregnancy, Medical examin/health eval partial",ICPC2,NA,45756284
+W32,"Raskaus, synnytys ja perhesuunnittelu, Allergiatutkimus","Pregnancy, Sensitivity test",ICPC2,NA,45756285
+W33,"Raskaus, synnytys ja perhesuunnittelu, Mikrobiologinen/immunologinen koe","Pregnancy, Microbiological/immunological test",ICPC2,NA,45756286
+W34,"Raskaus, synnytys ja perhesuunnittelu, Veritutkimus","Pregnancy, Blood test",ICPC2,NA,45756287
+W35,"Raskaus, synnytys ja perhesuunnittelu, Virtsatutkimus","Pregnancy, Urine test",ICPC2,NA,45756288
+W36,"Raskaus, synnytys ja perhesuunnittelu, Ulostetutkimus","Pregnancy, Faeces test",ICPC2,NA,45756289
+W37,"Raskaus, synnytys ja perhesuunnittelu, Histologinen/sytologinen tutkimus","Pregnancy, Histological/exfoliative cytology",ICPC2,NA,45756290
+W38,"Raskaus, synnytys ja perhesuunnittelu, Muu laboratoriotutkimus","Pregnancy, Other laboratory test NEC",ICPC2,NA,45756291
+W39,"Raskaus, synnytys ja perhesuunnittelu, Kliininen toimintakoe","Pregnancy, Physical function test",ICPC2,NA,45756292
+W40,"Raskaus, synnytys ja perhesuunnittelu, Diagnostinen endoskopia","Pregnancy, Diagnostic endoscopy",ICPC2,NA,45756293
+W41,"Raskaus, synnytys ja perhesuunnittelu, Diagnostinen kuvantaminen","Pregnancy, Diagnostic radiology/imaging",ICPC2,NA,45756294
+W42,"Raskaus, synnytys ja perhesuunnittelu, Elektrofysiologinen tutkimus","Pregnancy, Electrical tracing",ICPC2,NA,45756295
+W43,"Raskaus, synnytys ja perhesuunnittelu, Muu tutkimustoimenpide","Pregnancy, Other diagnostic procedure",ICPC2,NA,45756296
+W44,"Raskaus, synnytys ja perhesuunnittelu, Rokotus / ennaltaehkäisevä lääkitys","Pregnancy, Preventive immunization/medic",ICPC2,NA,45756297
+W45,"Raskaus, synnytys ja perhesuunnittelu, Seuranta/terveysneuvonta/ruokavalioneuvonta","Pregnancy, Observ/health educat/advice/diet",ICPC2,NA,45756298
+W46,"Raskaus, synnytys ja perhesuunnittelu, Perusterveydenhuollon asiantuntijan konsultaatio","Pregnancy, Consultation primary care provider",ICPC2,NA,45756299
+W47,"Raskaus, synnytys ja perhesuunnittelu, Erikoislääkärin konsultaatio","Pregnancy, Consultation with specialist",ICPC2,NA,NA
+W48,"Raskaus, synnytys ja perhesuunnittelu, Potilaan tarpeiden/tulosyyn selvittäminen","Pregnancy, Clarification/discussion RFE/demand",ICPC2,NA,NA
+W49,"Raskaus, synnytys ja perhesuunnittelu, Muu ennaltaehkäisevä toimenpide","Pregnancy, Other preventive procedure",ICPC2,NA,45756300
+W50,"Raskaus, synnytys ja perhesuunnittelu, Lääkitys/lääkemääräys/uusinta/injektio","Pregnancy, Medication/prescr/renewal",ICPC2,NA,45756301
+W51,"Raskaus, synnytys ja perhesuunnittelu, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Pregnancy, I&d/flush/aspiration",ICPC2,NA,45756302
+W52,"Raskaus, synnytys ja perhesuunnittelu, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Pregnancy, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45756303
+W53,"Raskaus, synnytys ja perhesuunnittelu, Katetrointi/intubointi/laajentaminen","Pregnancy, Instrument/catheter/intubate/dilate",ICPC2,NA,45756304
+W54,"Raskaus, synnytys ja perhesuunnittelu, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Pregnancy, Repair/fix-suture/cast/prosth device",ICPC2,NA,45756305
+W55,"Raskaus, synnytys ja perhesuunnittelu, Paikallinen lääkeaineinjektio","Pregnancy, Local injection/infiltration",ICPC2,NA,45756306
+W56,"Raskaus, synnytys ja perhesuunnittelu, Sidos /kompressi/tamponointi","Pregnancy, Dressing/pressure/compress/tamponade",ICPC2,NA,45756307
+W57,"Raskaus, synnytys ja perhesuunnittelu, Fysikaalinen hoito /kuntoutus","Pregnancy, Physical medicine/rehabilitation",ICPC2,NA,45756308
+W58,"Raskaus, synnytys ja perhesuunnittelu, Terapeuttinen neuvonta/kuuntelu","Pregnancy, Therapeutic counselling/listening",ICPC2,NA,45756309
+W59,"Raskaus, synnytys ja perhesuunnittelu, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Pregnancy, Other therap proced/minor surg NEC",ICPC2,NA,45756310
+W60,"Raskaus, synnytys ja perhesuunnittelu, Tutkimustulosten kuuleminen","Pregnancy, Result test/procedure",ICPC2,NA,45756311
+W61,"Raskaus, synnytys ja perhesuunnittelu, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Pregnancy, Result examination/test/record/letter from other provider",ICPC2,NA,NA
+W62,"Raskaus, synnytys ja perhesuunnittelu, Hallinnollinen toimenpide","Pregnancy, Administrative procedure",ICPC2,NA,NA
+W63,"Raskaus, synnytys ja perhesuunnittelu, Muu seurantakäynti","Pregnancy, Follow-up encounter unspecified",ICPC2,NA,NA
+W64,"Raskaus, synnytys ja perhesuunnittelu, Hoidonantajan käynnistämä tapahtuma","Pregnancy, Encounter/prob initiated by provider",ICPC2,NA,45756312
+W65,"Raskaus, synnytys ja perhesuunnittelu, Muun henkilön käynnistämä tapahtuma","Pregnancy, Enc/prob init by other than pt/prov",ICPC2,NA,45756313
+W66,"Raskaus, synnytys ja perhesuunnittelu, Lähete muulle perusterveydenhuollon ammattihenkilölle","Pregnancy, Referral to non-MD provider",ICPC2,NA,45756314
+W67,"Raskaus, synnytys ja perhesuunnittelu, Lähete erikoislääkärille/sairaalaan","Pregnancy, Referral to physician/hospital",ICPC2,NA,45756315
+W68,"Raskaus, synnytys ja perhesuunnittelu, Muu lähete","Pregnancy, Other referral NEC",ICPC2,NA,45756316
+W69,"Raskaus, synnytys ja perhesuunnittelu, Muu käynnin syy","Pregnancy, Other reason for encounter NEC",ICPC2,NA,45756317
+W70,Lapsivuodetulehdus/verenmyrkytys,Puerperal infection/sepsis,ICPC2,O85,45756318
+W71,Raskautta komplisoiva tulehdus,Other infect complic pregn/puerp,ICPC2,O98.9,NA
+W72,"Pahanlaatuinen kasvain, raskauteen liittyvä",Malignant neopl related to pregnancy,ICPC2,C58,NA
+W73,"Hyvänlaatuinen/muu kasvain, raskauteen liittyvä",Benign/unspecif neopl relat to pregn,ICPC2,O01.9,45756319
+W75,Raskautta komplisoiva vamma,Injury complicating pregnancy,ICPC2,T14.9,45756321
+W76,"Synnynnäinen epämuodostuma, raskautta komplisoiva",Congen anom complicating pregnancy,ICPC2,O99.89,45756322
+W78,Raskaus,Pregnancy,ICPC2,Z32.1,45756324
+W79,"Raskaus, ei-toivottu",Unwanted pregnancy,ICPC2,Z64.0,45756325
+W80,"Raskaus, kohdunulkoinen",Ectopic pregnancy,ICPC2,O00.9,45756326
+W81,Raskausmyrkytys,Toxaemia of pregnancy,ICPC2,O14.9,45756327
+W82,Keskenmeno,Abortion spontaneous,ICPC2,O03.9,NA
+W83,Raskauden keskeytys,Abortion induced,ICPC2,O04.9,45756328
+W84,Riskiraskaus,Pregnancy high risk,ICPC2,Z35.9,45756329
+W85,Raskausdiabetes,Gestational diabetes,ICPC2,O24.4,45756330
+W90,"Normaali synnytys, elävä lapsi",Uncompl labour/delivery livebirth,ICPC2,O80.9,45756334
+W91,"Normaali synnytys, kuollut lapsi",Uncompl labour/delivery stillbirth,ICPC2,Z37.1,45756335
+W92,"Komplisoitunut synnytys, elävä lapsi",Compl labour/ delivery livebirth,ICPC2,O83.1,45756336
+W93,"Komplisoitunut synnytys, kuollut lapsi",Compl labour/delivery stillbirth,ICPC2,Z37.1,45756337
+W94,"Rintatulehdus, imettämiseen liittyvä",Puerperal mastitis,ICPC2,O91.2,45756338
+W95,"Rintarauhasen muu häiriö, raskauteen/imettämiseen liittyvä",Breast dis in pregn/puerperium other,ICPC2,O92.2,NA
+W96,"Imettämiseen liittyvä komplikaatio, muu",Complications of puerperium other,ICPC2,O90.9,NA
+W99,Muu raskauteen/synnytykseen liittyvä häiriö,Disorder of pregn/delivery other,ICPC2,O26.9,45756339
+X,Naisen sukuelimet sisältäen rinnan,Female Genital,ICPC2,NA,NA
+X01,"Kipu sukuelimissä,  naisen",Genital pain female,ICPC2,R10.2,45756361
+X02,Kuukautiskipu,Menstrual pain,ICPC2,N94.6,45756362
+X03,Kuukautisten välillä esiintyvä kipu,Intermenstrual pain,ICPC2,N94.0,45756363
+X04,"Yhdyntäkivut, naisen",Painful intercourse female,ICPC2,N94.1,45756364
+X05,Puuttuvat/niukat kuukautiset,Menstruation absent/scanty,ICPC2,N91.5,45756365
+X06,Runsaat kuukautiset,Menstruation excessive,ICPC2,N92.0,45756366
+X07,Epäsäännölliset/tiheät kuukautiset,Menstruation irregular/frequent,ICPC2,N92.1,NA
+X08,Välivuoto,Intermenstrual bleeding,ICPC2,N92.3,45756367
+X09,Kuukautisia edeltävä oire/vaiva,Premenstrual symptom/complaint,ICPC2,N94.9,45756368
+X10,Kuukautisten siirto,Postponement of menstruation,ICPC2,Z30.9,45756369
+X11,Vaihdevuosioireet/-vaiva,Menopausal symptom/complaint,ICPC2,N95.9,45756370
+X12,"Verenvuoto emättimestä, vaihdevuosien jälkeinen",Postmenopausal bleeding,ICPC2,N95.0,45756371
+X13,"Verenvuoto emättimestä, yhdynnänjälkeinen",Postcoital bleeding,ICPC2,N93.0,45756372
+X14,Vuoto emättimestä,Vaginal discharge,ICPC2,N89.8,45756373
+X15,"Emättimen oire/vaiva, muu",Vaginal symptom/complaint other,ICPC2,N89.9,45756374
+X16,Ulkosynnyttimien oire/vaiva,Vulval symptom/complaint,ICPC2,N90.9,45756375
+X17,"Lantionseudun oire/vaiva, naisen",Pelvis symptom/complaint female,ICPC2,N94.9,45756376
+X18,"Rintarauhasen kipu, naisen",Breast pain female,ICPC2,N64.4,45756377
+X19,"Rintarauhasen kyhmy, naisen",Breast lump/mass female,ICPC2,N63,45756378
+X20,"Nännin oire/vaiva, naisen",Nipple symptom/complaint female,ICPC2,N64.0,45756379
+X21,"Rintarauhasen muu oire/vaiva, naisen",Breast sympt/compl female other,ICPC2,N64.5,45756380
+X22,"Huoli rintojen ulkonäöstä, naisen",Concern breast appearance fema,ICPC2,R46.8,45756381
+X23,"Huoli/pelko sukupuolitaudista, naisen",Fear sexually transm dis female,ICPC2,Z71.1,45756382
+X24,"Huoli/pelko seksuaalisesta toimintahäiriöstä, naisen",Fear of sexual dysfunction female,ICPC2,Z71.1,45756383
+X25,"Huoli/pelko sukuelinsyövästä, naisen",Fear of genital cancer female,ICPC2,Z71.1,45756384
+X26,"Huoli/pelko rintasyövästä, naisen",Fear of breast cancer female,ICPC2,Z71.1,45756385
+X27,"Huoli /pelko muusta sukuelimen/rintarauhasen sairaudesta, naisen",Fear genital/breast dis female other,ICPC2,Z71.1,45756386
+X28,"Toiminnanvajaus, sukuelinten, naisen",Limited function/disability (X),ICPC2,Z73.6,45756387
+X29,Muu naisen sukuelinoire,Genital sympt/compl female other,ICPC2,N94.9,45756388
+X30,"Naisen sukuelimet sisältäen rinnan, Laaja terveydentilan arviointi/tarkastus","Female Genital, Medical examin/health eval complete",ICPC2,NA,45756389
+X31,"Naisen sukuelimet sisältäen rinnan, Suppea terveydentilan arviointi/tarkastus","Female Genital, Medical examin/health eval partial",ICPC2,NA,45756390
+X32,"Naisen sukuelimet sisältäen rinnan, Allergiatutkimus","Female Genital, Sensitivity test",ICPC2,NA,45756391
+X33,"Naisen sukuelimet sisältäen rinnan, Mikrobiologinen/immunologinen koe","Female Genital, Microbiological/immunological test",ICPC2,NA,45756392
+X34,"Naisen sukuelimet sisältäen rinnan, Veritutkimus","Female Genital, Blood test",ICPC2,NA,45575988
+X35,"Naisen sukuelimet sisältäen rinnan, Virtsatutkimus","Female Genital, Urine test",ICPC2,NA,45571179
+X36,"Naisen sukuelimet sisältäen rinnan, Ulostetutkimus","Female Genital, Faeces test",ICPC2,NA,45756393
+X37,"Naisen sukuelimet sisältäen rinnan, Histologinen/sytologinen tutkimus","Female Genital, Histological/exfoliative cytology",ICPC2,NA,45756394
+X38,"Naisen sukuelimet sisältäen rinnan, Muu laboratoriotutkimus","Female Genital, Other laboratory test NEC",ICPC2,NA,45551940
+X39,"Naisen sukuelimet sisältäen rinnan, Kliininen toimintakoe","Female Genital, Physical function test",ICPC2,NA,45756395
+X40,"Naisen sukuelimet sisältäen rinnan, Diagnostinen endoskopia","Female Genital, Diagnostic endoscopy",ICPC2,NA,45756396
+X41,"Naisen sukuelimet sisältäen rinnan, Diagnostinen kuvantaminen","Female Genital, Diagnostic radiology/imaging",ICPC2,NA,45756397
+X42,"Naisen sukuelimet sisältäen rinnan, Elektrofysiologinen tutkimus","Female Genital, Electrical tracing",ICPC2,NA,45756398
+X43,"Naisen sukuelimet sisältäen rinnan, Muu tutkimustoimenpide","Female Genital, Other diagnostic procedure",ICPC2,NA,45756399
+X44,"Naisen sukuelimet sisältäen rinnan, Rokotus / ennaltaehkäisevä lääkitys","Female Genital, Preventive immunization/medic",ICPC2,NA,45756400
+X45,"Naisen sukuelimet sisältäen rinnan, Seuranta/terveysneuvonta/ruokavalioneuvonta","Female Genital, Observ/health educat/advice/diet",ICPC2,NA,45756401
+X46,"Naisen sukuelimet sisältäen rinnan, Perusterveydenhuollon asiantuntijan konsultaatio","Female Genital, Consultation primary care provider",ICPC2,NA,45756402
+X47,"Naisen sukuelimet sisältäen rinnan, Erikoislääkärin konsultaatio","Female Genital, Consultation with specialist",ICPC2,NA,45756403
+X48,"Naisen sukuelimet sisältäen rinnan, Potilaan tarpeiden/tulosyyn selvittäminen","Female Genital, Clarification/discussion RFE/demand",ICPC2,NA,45756404
+X49,"Naisen sukuelimet sisältäen rinnan, Muu ennaltaehkäisevä toimenpide","Female Genital, Other preventive procedure",ICPC2,NA,45756405
+X50,"Naisen sukuelimet sisältäen rinnan, Lääkitys/lääkemääräys/uusinta/injektio","Female Genital, Medication/prescr/renewal",ICPC2,NA,45756406
+X51,"Naisen sukuelimet sisältäen rinnan, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Female Genital, I&d/flush/aspiration",ICPC2,NA,45756407
+X52,"Naisen sukuelimet sisältäen rinnan, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Female Genital, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45604951
+X53,"Naisen sukuelimet sisältäen rinnan, Katetrointi/intubointi/laajentaminen","Female Genital, Instrument/catheter/intubate/dilate",ICPC2,NA,45756408
+X54,"Naisen sukuelimet sisältäen rinnan, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Female Genital, Repair/fix-suture/cast/prosth device",ICPC2,NA,45756409
+X55,"Naisen sukuelimet sisältäen rinnan, Paikallinen lääkeaineinjektio","Female Genital, Local injection/infiltration",ICPC2,NA,NA
+X56,"Naisen sukuelimet sisältäen rinnan, Sidos/kompressi/tamponointi","Female Genital, Dressing/pressure/compress/tamponade",ICPC2,NA,NA
+X57,"Naisen sukuelimet sisältäen rinnan, Fysikaalinen hoito /kuntoutus","Female Genital, Physical medicine/rehabilitation",ICPC2,NA,45756410
+X58,"Naisen sukuelimet sisältäen rinnan, Terapeuttinen neuvonta/kuuntelu","Female Genital, Therapeutic counselling/listening",ICPC2,NA,45756411
+X59,"Naisen sukuelimet sisältäen rinnan, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Female Genital, Other therap proced/minor surg NEC",ICPC2,NA,45756412
+X60,"Naisen sukuelimet sisältäen rinnan, Tutkimustulosten kuuleminen","Female Genital, Result test/procedure",ICPC2,NA,45756440
+X61,"Naisen sukuelimet sisältäen rinnan, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Female Genital, Result examination/test/record/letter from other provider",ICPC2,NA,45600199
+X62,"Naisen sukuelimet sisältäen rinnan, Hallinnollinen toimenpide","Female Genital, Administrative procedure",ICPC2,NA,45756441
+X63,"Naisen sukuelimet sisältäen rinnan, Muu seurantakäynti","Female Genital, Follow-up encounter unspecified",ICPC2,NA,45756442
+X64,"Naisen sukuelimet sisältäen rinnan, Hoidonantajan käynnistämä tapahtuma","Female Genital, Encounter/prob initiated by provider",ICPC2,NA,45756443
+X65,"Naisen sukuelimet sisältäen rinnan, Muun henkilön käynnistämä tapahtuma","Female Genital, Enc/prob init by other than pt/prov",ICPC2,NA,45756444
+X66,"Naisen sukuelimet sisältäen rinnan, Lähete muulle perusterveydenhuollon ammattihenkilölle","Female Genital, Referral to non-MD provider",ICPC2,NA,45756445
+X67,"Naisen sukuelimet sisältäen rinnan, Lähete erikoislääkärille/sairaalaan","Female Genital, Referral to physician/hospital",ICPC2,NA,45604952
+X68,"Naisen sukuelimet sisältäen rinnan, Muu lähete","Female Genital, Other referral NEC",ICPC2,NA,45756446
+X69,"Naisen sukuelimet sisältäen rinnan, Muu käynnin syy","Female Genital, Other reason for encounter NEC",ICPC2,NA,45585661
+X70,"Kuppa, naisen",Syphilis female,ICPC2,A53.9,45571181
+X71,"Tippuri, naisen",Gonorrhoea female,ICPC2,A54.9,45566260
+X72,"Hiiva sukuelimissä, naisen",Genital candidiasis female,ICPC2,B37.4,45756447
+X73,"Trikomonas sukuelimissä, naisen",Genital trichomoniasis female,ICPC2,A59.0,45756448
+X74,Sisäsynnytintulehdus,Pelvic inflammatory disease,ICPC2,N70.9,45551949
+X75,"Pahanlaatuinen kasvain, kohdunkaulan",Malignant neoplasm cervix,ICPC2,C53.99&,45561468
+X76,"Pahanlaatuinen kasvain, naisen rinnan",Malignant neoplasm breast female,ICPC2,C50.99&,45551953
+X77,"Pahanlaatuinen kasvain, naisen sukuelimen, muu",Malignant neopl genital female other,ICPC2,C57.9&,45756449
+X78,"Lihaskasvain, kohdun",Fibromyoma uterus,ICPC2,D25.9&,45756450
+X79,"Hyvänlaatuinen kasvain, naisen rintarauhasen",Benign neoplasm breast female,ICPC2,D24&,45756451
+X80,"Hyvänlaatuinen kasvain, naisen sukuelinten",Benign neoplasm female genital,ICPC2,D28.9&,45590551
+X81,"Kasvain, naisen sukuelinten, muu/määrittämätön",Genital neopl female other/unspecif,ICPC2,D39.9&,45547154
+X82,"Sukuelinvamma, naisen",Injury genital female,ICPC2,S30.2,45756452
+X83,"Synnynnäinen epämuodostuma, naisen sukuelinten",Congenital anomaly genital female,ICPC2,Q51.9,45590555
+X84,"Emättimen/ulkosynnyttymien tulehdus, määrittämätön",Vaginitis/vulvitis NOS,ICPC2,N76.8,45585673
+X85,"Kohdunsuun sairaus, määrittämätön",Cervical disease NOS,ICPC2,N88.9,45756453
+X86,Poikkeava irtosolunäyte,Abnormal cervix smear,ICPC2,R87.6,45756454
+X87,Kohdun ja emättimen laskeuma,Uterovaginal prolapse,ICPC2,N81.9,45756455
+X88,Rintarauhasen rakkulatauti,Fibrocystic disease breast,ICPC2,N60.9,45756456
+X89,Premenstruaalisyndrooma,Premenstrual tension syndrome,ICPC2,N94.3,45756457
+X90,"Sukuelinherpes, naisen",Genital herpes female,ICPC2,A60.0,45756458
+X91,"Visvasyylä, naisen",Condylomata acuminata female,ICPC2,A63.0,45756459
+X92,"Sukuelinklamydia, naisen",Chlamydia infection genital female,ICPC2,A56.2,45756460
+X99,Muu naisen sukuelinsairaus,Genital disease female other,ICPC2,N94.9,45756467
+Y,Miehen sukuelimet sisältäen rinnan,Male Genital,ICPC2,NA,NA
+Y01,Siittimen kipu,Pain in penis,ICPC2,N48.8,45561485
+Y02,Kiveksen/kivespussin kipu,Pain in testis/scrotum,ICPC2,R10.2,45756469
+Y03,Vuoto virtsaputkesta,Urethral discharge male,ICPC2,R36,45756470
+Y04,"Siittimen oire/vaiva, muu",Penis symptom/complaint other,ICPC2,N48.9,45756471
+Y05,Kiveksen/kivespussin oire/vaiva,Scrotum/testis sympt/compl other,ICPC2,L29.1,45756472
+Y06,Eturauhasen oire/vaiva,Prostate symptom/complaint,ICPC2,N42.9,45756473
+Y07,"Potenssiongelma, määrittämätön",Impotence NOS,ICPC2,N48.4,45595356
+Y08,"Seksuaaliseen toimintaan liittyvä oire/vaiva, miehen",Sexual function sympt/compl male,ICPC2,N48.3,45756474
+Y10,"Alentunut hedelmällisyys / hedelmättömyys, miehen",Infertility/subfertility male,ICPC2,N46,45756475
+Y13,"Sterilisaatio, miehen",Sterilization male,ICPC2,Z30.2,45756478
+Y14,"Ehkäisyneuvonta, miehen",Family planning male other,ICPC2,Z30.0,45756479
+Y16,"Rintarauhasen oire/vaiva, miehen",Breast symptom/complaint male,ICPC2,N63,45756481
+Y24,"Huoli/pelko seksuaalisesta toimintahäiriöstä, miehen",Fear of sexual dysfunction male,ICPC2,Z71.1,45756507
+Y25,"Huoli/pelko sukupuolitaudista, miehen",Fear sexually transm disease male,ICPC2,Z71.1,45756508
+Y26,"Huoli/pelko sukuelinten syövästä, miehen",Fear of genital cancer male,ICPC2,Z71.1,45756509
+Y27,"Huoli/pelko muusta sukuelinsairaudesta, miehen",Fear of genital disease male other,ICPC2,Z71.1,45756510
+Y28,"Toiminnanvajaus, sukuelinten, miehen",Limited function/disability (Y),ICPC2,Z73.6,45756511
+Y29,Muu miehen sukuelinten oire,Genital symptom/complaint male other,ICPC2,N50.9,45756512
+Y30,"Miehen sukuelimet sisältäen rinnan, Laaja terveydentilan arviointi/tarkastus","Male Genital, Medical examin/health eval complete",ICPC2,NA,45756513
+Y31,"Miehen sukuelimet sisältäen rinnan, Suppea terveydentilan arviointi/tarkastus","Male Genital, Medical examin/health eval partial",ICPC2,NA,45756514
+Y32,"Miehen sukuelimet sisältäen rinnan, Allergiatutkimus","Male Genital, Sensitivity test",ICPC2,NA,45756515
+Y33,"Miehen sukuelimet sisältäen rinnan, Mikrobiologinen/immunologinen koe","Male Genital, Microbiological/immunological test",ICPC2,NA,45756516
+Y34,"Miehen sukuelimet sisältäen rinnan, Veritutkimus","Male Genital, Blood test",ICPC2,NA,45756517
+Y35,"Miehen sukuelimet sisältäen rinnan, Virtsatutkimus","Male Genital, Urine test",ICPC2,NA,45600230
+Y36,"Miehen sukuelimet sisältäen rinnan, Ulostetutkimus","Male Genital, Faeces test",ICPC2,NA,45566315
+Y37,"Miehen sukuelimet sisältäen rinnan, Histologinen/sytologinen tutkimus","Male Genital, Histological/exfoliative cytology",ICPC2,NA,NA
+Y38,"Miehen sukuelimet sisältäen rinnan, Muu laboratoriotutkimus","Male Genital, Other laboratory test NEC",ICPC2,NA,NA
+Y39,"Miehen sukuelimet sisältäen rinnan, Kliininen toimintakoe","Male Genital, Physical function test",ICPC2,NA,NA
+Y40,"Miehen sukuelimet sisältäen rinnan, Diagnostinen endoskopia","Male Genital, Diagnostic endoscopy",ICPC2,NA,45756526
+Y41,"Miehen sukuelimet sisältäen rinnan, Diagnostinen kuvantaminen","Male Genital, Diagnostic radiology/imaging",ICPC2,NA,45756527
+Y42,"Miehen sukuelimet sisältäen rinnan, Elektrofysiologinen tutkimus","Male Genital, Electrical tracing",ICPC2,NA,45756528
+Y43,"Miehen sukuelimet sisältäen rinnan, Muu tutkimustoimenpide","Male Genital, Other diagnostic procedure",ICPC2,NA,45756549
+Y44,"Miehen sukuelimet sisältäen rinnan, Rokotus / ennaltaehkäisevä lääkitys","Male Genital, Preventive immunization/medic",ICPC2,NA,45756550
+Y45,"Miehen sukuelimet sisältäen rinnan, Seuranta/terveysneuvonta/ruokavalioneuvonta","Male Genital, Observ/health educat/advice/diet",ICPC2,NA,45756551
+Y46,"Miehen sukuelimet sisältäen rinnan, Perusterveydenhuollon asiantuntijan konsultaatio","Male Genital, Consultation primary care provider",ICPC2,NA,45756552
+Y47,"Miehen sukuelimet sisältäen rinnan, Erikoislääkärin konsultaatio","Male Genital, Consultation with specialist",ICPC2,NA,45756553
+Y48,"Miehen sukuelimet sisältäen rinnan, Potilaan tarpeiden/tulosyyn selvittäminen","Male Genital, Clarification/discussion RFE/demand",ICPC2,NA,45756579
+Y49,"Miehen sukuelimet sisältäen rinnan, Muu ennaltaehkäisevä toimenpide","Male Genital, Other preventive procedure",ICPC2,NA,45756580
+Y50,"Miehen sukuelimet sisältäen rinnan, Lääkitys/lääkemääräys/uusinta/injektio","Male Genital, Medication/prescr/renewal",ICPC2,NA,45756581
+Y51,"Miehen sukuelimet sisältäen rinnan, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Male Genital, I&d/flush/aspiration",ICPC2,NA,45756582
+Y52,"Miehen sukuelimet sisältäen rinnan, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Male Genital, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45756583
+Y53,"Miehen sukuelimet sisältäen rinnan, Katetrointi/intubointi/laajentaminen","Male Genital, Instrument/catheter/intubate/dilate",ICPC2,NA,45756584
+Y54,"Miehen sukuelimet sisältäen rinnan, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Male Genital, Repair/fix-suture/cast/prosth device",ICPC2,NA,45756615
+Y55,"Miehen sukuelimet sisältäen rinnan, Paikallinen lääkeaineinjektio","Male Genital, Local injection/infiltration",ICPC2,NA,45756616
+Y56,"Miehen sukuelimet sisältäen rinnan, Sidos/kompressi/tamponointi","Male Genital, Dressing/pressure/compress/tamponade",ICPC2,NA,45756617
+Y57,"Miehen sukuelimet sisältäen rinnan, Fysikaalinen hoito /kuntoutus","Male Genital, Physical medicine/rehabilitation",ICPC2,NA,45756618
+Y58,"Miehen sukuelimet sisältäen rinnan, Terapeuttinen neuvonta/kuuntelu","Male Genital, Therapeutic counselling/listening",ICPC2,NA,45756619
+Y59,"Miehen sukuelimet sisältäen rinnan, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Male Genital, Other therap proced/minor surg NEC",ICPC2,NA,45756621
+Y60,"Miehen sukuelimet sisältäen rinnan, Tutkimustulosten kuuleminen","Male Genital, Result test/procedure",ICPC2,NA,45756642
+Y61,"Miehen sukuelimet sisältäen rinnan, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Male Genital, Result examination/test/record/letter from other provider",ICPC2,NA,45561576
+Y62,"Miehen sukuelimet sisältäen rinnan, Hallinnollinen toimenpide","Male Genital, Administrative procedure",ICPC2,NA,45552028
+Y63,"Miehen sukuelimet sisältäen rinnan, Muu seurantakäynti","Male Genital, Follow-up encounter unspecified",ICPC2,NA,45595440
+Y64,"Miehen sukuelimet sisältäen rinnan, Hoidonantajan käynnistämä tapahtuma","Male Genital, Encounter/prob initiated by provider",ICPC2,NA,45580974
+Y65,"Miehen sukuelimet sisältäen rinnan, Muun henkilön käynnistämä tapahtuma","Male Genital, Enc/prob init by other than pt/prov",ICPC2,NA,45756644
+Y66,"Miehen sukuelimet sisältäen rinnan, Lähete muulle perusterveydenhuollon ammattihenkilölle","Male Genital, Referral to non-MD provider",ICPC2,NA,45585755
+Y67,"Miehen sukuelimet sisältäen rinnan, Lähete erikoislääkärille/sairaalaan","Male Genital, Referral to physician/hospital",ICPC2,NA,NA
+Y68,"Miehen sukuelimet sisältäen rinnan, Muu lähete","Male Genital, Other referral NEC",ICPC2,NA,NA
+Y69,"Miehen sukuelimet sisältäen rinnan, Muu käynnin syy","Male Genital, Other reason for encounter NEC",ICPC2,NA,45605058
+Y70,"Kuppa, miehen",Syphilis male,ICPC2,A53.9,45756681
+Y71,"Tippuri, miehen",Gonorrhoea male,ICPC2,A54.9,45756682
+Y72,"Sukuelinherpes, miehen",Genital herpes male,ICPC2,A60.0,45756683
+Y73,Eturauhastulehdus/siemenrakkulatulehdus,Prostatitis/seminal vesiculitis,ICPC2,N41.9,45756684
+Y74,Kivestulehdus/lisäkivestulehdus,Orchitis/epididymitis,ICPC2,N45.9,45756685
+Y75,Esinahan tulehdus,Balanitis,ICPC2,N48.1,45756686
+Y76,"Visvasyylä, miehen",Condylomata acuminata male,ICPC2,A63.0,45756687
+Y77,"Pahanlaatuinen kasvain, eturauhasen",Malignant neoplasm prostate,ICPC2,C61,45756716
+Y78,"Pahanlaatuinen kasvain, miehen sukuelinten,  muu",Malign neopl male genital other,ICPC2,C63.9&,45756717
+Y79,"Hyvänlaatuinen/muu kasvain, miehen sukuelinten",Benign/unspecif neopl male genital,ICPC2,D29.9&,45756718
+Y80,"Sukuelinvamma, miehen",Injury male genital,ICPC2,S30.2,45756719
+Y81,Ahdas/liiallinen esinahka,Phimosis/redundant prepuce,ICPC2,N47,45756720
+Y82,Siittimen alahalkio,Hypospadias,ICPC2,Q54.9,45756721
+Y83,Kiveksen laskeutumattomuus/piilokiveksisyys,Undescended testicle,ICPC2,Q53.9,45552036
+Y84,"Synnynnäinen epämuodostuma, miehen sukuelinten muu",Congenital genital anom male other,ICPC2,Q55.9,45605063
+Y85,"Eturauhasen liikakasvu, hyvänlaatuinen",Benign prostatic hypertrophy,ICPC2,N40,45755972
+Y86,Hydroseele,Hydrocoele,ICPC2,N43.3,45547254
+Y99,"Muu sukuelinten sairaus, miehen",Genital disease male other,ICPC2,N50.9,NA
+Z,Sosiaaliset ongelmat,Social Problems,ICPC2,NA,NA
+Z01,Köyhyys/taloudellinen ongelma,Poverty/financial problem,ICPC2,Z59.5,45755978
+Z02,Ruokaan/veteen liittyvä ongelma,Food/water problem,ICPC2,Z58.6,45566394
+Z03,Asumiseen/naapurustoon liittyvä ongelma,Housing/neighbourhood problem,ICPC2,Z59.2,45552058
+Z04,Sosiaaliseen yhteisöön / kulttuuriin liittyvä ongelma,Social cultural problem,ICPC2,Z60.9,45609904
+Z05,Työhön liittyvä ongelma,Work problem,ICPC2,Z57.9,NA
+Z06,Työttömyyteen liittyvä ongelma,Unemployment problem,ICPC2,Z56.0,NA
+Z07,Koulutukseen liittyvät ongelma,Education problem,ICPC2,Z55.9,NA
+Z08,Toimeentuloon/sosiaaliturvaan liittyvä ongelma,Social welfare problem,ICPC2,Z59.7,45571319
+Z09,Oikeudellinen ongelma,Legal problem,ICPC2,Z65.3,45581005
+Z10,Terveydenhuoltojärjestelmään  liittyvä ongelma,Health care system problem,ICPC2,Z75.9,45756005
+Z11,Hoitomyönteisyyteen/sairastamiseen liittyvä ongelma,Compliance/being ill problem,ICPC2,Z75.9,45537615
+Z12,Parisuhdeongelma,Relationship problem with partner,ICPC2,Z63.0,45556814
+Z13,Kumppanin käytökseen liittyvä ongelma,Partner's behaviour problem,ICPC2,Z63.0,45585802
+Z14,Kumppanin sairastamiseen liittyvä ongelma,Partner illness problem,ICPC2,Z63.6,NA
+Z15,Kumppanin menetykseen/kuolemaan liittyvä ongelma,Loss/death of partner problem,ICPC2,Z63.4,NA
+Z16,Ongelma lapsisuhteessa,Relationship problem with child,ICPC2,Z62.9,NA
+Z18,Lapsen sairastamiseen liittyvä ongelma,Illness problem with child,ICPC2,Z63.6,NA
+Z19,Lapsen menetyksestä/kuolemasta aiheutuva ongelma,Loss/death of child problem,ICPC2,Z63.4,NA
+Z20,Ihmissuhdeongelma liittyen  vanhempaan/perheenjäseneen,Relationship problem parent/fam memb,ICPC2,Z63.8,45756045
+Z21,Vanhemman/perheenjäsenen käyttäytymiseen liittyvä ongelma,Behaviour problem parent/fam memb,ICPC2,Z63.9,45566407
+Z22,Vanhemman/perheenjäsenen sairastamiseen liittyvä ongelma,Illness problem parent/family memb,ICPC2,Z63.7,45595490
+Z23,Vanhemman/perheenjäsenen menetykseen/kuolemaan liittyvä ongelma,Loss/death parent/fam memb problem,ICPC2,Z63.4,45556822
+Z24,Ystäviin liittyvä ihmissuhdeongelma,Relationship problem friend,ICPC2,Z63.9,45756046
+Z25,Väkivaltaan/vahingolliseen tapahtumaan liittyvä ongelma,Assault/harmful event problem,ICPC2,T74.9,45756047
+Z27,Huoli/pelko sosiaalisesta ongelmasta,Fear of a social problem,ICPC2,Z71.1,45756048
+Z28,"Toiminnanvajaus, sosiaalinen",Limited function/disability (Z),ICPC2,Z73.6,45756071
+Z29,"Muu sosiaalinen ongelma, määrittämätön",Social problem NOS,ICPC2,Z65.9,45756072
+Z30,"Sosiaaliset ongelmat, Laaja terveydentilan arviointi/tarkastus","Social Problems, Medical examin/health eval complete",ICPC2,NA,45756073
+Z31,"Sosiaaliset ongelmat, Suppea terveydentilan arviointi/tarkastus","Social Problems, Medical examin/health eval partial",ICPC2,NA,45756074
+Z32,"Sosiaaliset ongelmat, Allergiatutkimus","Social Problems, Sensitivity test",ICPC2,NA,45756075
+Z33,"Sosiaaliset ongelmat, Mikrobiologinen/immunologinen koe","Social Problems, Microbiological/immunological test",ICPC2,NA,45547302
+Z34,"Sosiaaliset ongelmat, Veritutkimus","Social Problems, Blood test",ICPC2,NA,45566419
+Z35,"Sosiaaliset ongelmat, Virtsatutkimus","Social Problems, Urine test",ICPC2,NA,45756076
+Z36,"Sosiaaliset ongelmat, Ulostetutkimus","Social Problems, Faeces test",ICPC2,NA,45566421
+Z37,"Sosiaaliset ongelmat, Histologinen/sytologinen tutkimus","Social Problems, Histological/exfoliative cytology",ICPC2,NA,45581024
+Z38,"Sosiaaliset ongelmat, Muu laboratoriotutkimus","Social Problems, Other laboratory test NEC",ICPC2,NA,45756077
+Z39,"Sosiaaliset ongelmat, Kliininen toimintakoe","Social Problems, Physical function test",ICPC2,NA,45756078
+Z40,"Sosiaaliset ongelmat, Diagnostinen endoskopia","Social Problems, Diagnostic endoscopy",ICPC2,NA,45756167
+Z41,"Sosiaaliset ongelmat, Diagnostinen kuvantaminen","Social Problems, Diagnostic radiology/imaging",ICPC2,NA,45756168
+Z42,"Sosiaaliset ongelmat, Elektrofysiologinen tutkimus","Social Problems, Electrical tracing",ICPC2,NA,45756169
+Z43,"Sosiaaliset ongelmat, Muu tutkimustoimenpide","Social Problems, Other diagnostic procedure",ICPC2,NA,45756170
+Z44,"Sosiaaliset ongelmat, Rokotus / ennaltaehkäisevä lääkitys","Social Problems, Preventive immunization/medic",ICPC2,NA,45756171
+Z45,"Sosiaaliset ongelmat, Seuranta/terveysneuvonta/ruokavalioneuvonta","Social Problems, Observ/health educat/advice/diet",ICPC2,NA,45556835
+Z46,"Sosiaaliset ongelmat, Perusterveydenhuollon asiantuntijan konsultaatio","Social Problems, Consultation primary care provider",ICPC2,NA,45547317
+Z47,"Sosiaaliset ongelmat, Erikoislääkärin konsultaatio","Social Problems, Consultation with specialist",ICPC2,NA,45756172
+Z48,"Sosiaaliset ongelmat, Potilaan tarpeiden/tulosyyn selvittäminen","Social Problems, Clarification/discussion RFE/demand",ICPC2,NA,45756173
+Z49,"Sosiaaliset ongelmat, Muu ennaltaehkäisevä toimenpide","Social Problems, Other preventive procedure",ICPC2,NA,45756174
+Z50,"Sosiaaliset ongelmat, Lääkitys/lääkemääräys/uusinta/injektio","Social Problems, Medication/prescr/renewal",ICPC2,NA,45590736
+Z51,"Sosiaaliset ongelmat, Aukaisu/kanylointi/huuhtelu/imu/nesteenpoisto","Social Problems, I&d/flush/aspiration",ICPC2,NA,45756211
+Z52,"Sosiaaliset ongelmat, Kudoksen poisto/poltto/tuhoaminen / koepalan otto / kudosjätteen poisto","Social Problems, Exc/remov/biopsy/destruc/debrid/caut",ICPC2,NA,45756212
+Z53,"Sosiaaliset ongelmat, Katetrointi/intubointi/laajentaminen","Social Problems, Instrument/catheter/intubate/dilate",ICPC2,NA,45590739
+Z54,"Sosiaaliset ongelmat, Ompelu/korjaus/kipsaus / proteesin asennus (tai poisto)","Social Problems, Repair/fix-suture/cast/prosth device",ICPC2,NA,45571368
+Z55,"Sosiaaliset ongelmat, Paikallinen lääkeaineinjektio","Social Problems, Local injection/infiltration",ICPC2,NA,45552089
+Z56,"Sosiaaliset ongelmat, Sidos/kompressi tamponointi","Social Problems, Dressing/pressure/compress/tamponade",ICPC2,NA,45561637
+Z57,"Sosiaaliset ongelmat, Fysikaalinen hoito /kuntoutus","Social Problems, Physical medicine/rehabilitation",ICPC2,NA,45581048
+Z58,"Sosiaaliset ongelmat, Terapeuttinen neuvonta/kuuntelu","Social Problems, Therapeutic counselling/listening",ICPC2,NA,45756213
+Z59,"Sosiaaliset ongelmat, Muu hoitotoimenpide/muualla luokittelematon pikkukirurgia","Social Problems, Other therap proced/minor surg NEC",ICPC2,NA,45556849
+Z60,"Sosiaaliset ongelmat, Tutkimustulosten kuuleminen","Social Problems, Result test/procedure",ICPC2,NA,45547330
+Z61,"Sosiaaliset ongelmat, Tutkimustulos/testitulos/potilaskertomus/kirje toiselta hoidonantajalta","Social Problems, Result examination/test/record/letter from other provider",ICPC2,NA,45600338
+Z62,"Sosiaaliset ongelmat, Hallinnollinen toimenpide","Social Problems, Administrative procedure",ICPC2,NA,45542446
+Z63,"Sosiaaliset ongelmat, Muu seurantakäynti","Social Problems, Follow-up encounter unspecified",ICPC2,NA,45576168
+Z64,"Sosiaaliset ongelmat, Hoidonantajan käynnistämä tapahtuma","Social Problems, Encounter/prob initiated by provider",ICPC2,NA,45605143
+Z65,"Sosiaaliset ongelmat, Muun henkilön käynnistämä tapahtuma","Social Problems, Enc/prob init by other than pt/prov",ICPC2,NA,45566447
+Z66,"Sosiaaliset ongelmat, Lähete muulle perusterveydenhuollon ammattihenkilölle","Social Problems, Referral to non-MD provider",ICPC2,NA,NA
+Z67,"Sosiaaliset ongelmat, Lähete erikoislääkärille/sairaalaan","Social Problems, Referral to physician/hospital",ICPC2,NA,NA
+Z68,"Sosiaaliset ongelmat, Muu lähete","Social Problems, Other referral NEC",ICPC2,NA,NA
+Z69,"Sosiaaliset ongelmat, Muu käynnin syy","Social Problems, Other reason for encounter NEC",ICPC2,NA,NA
+A12,ALLERGIA / ALLERGINEN REAKTIO NUD,ALLERGY/ALLERGIC REACTION,ICPC1,NA,NA
+A14,VAUVAN VATSAKIVUT,INFANTILE COLIC,ICPC1,NA,NA
+A15,ITKUINEN VAUVA,EXCESSIVE CRYING INFANT,ICPC1,NA,45605190
+A17,MUUT VAUVOJEN YLEISOIREET,OTHER GEN SYMPT INFANT,ICPC1,NA,45552156
+B03,MUUT IMUSOLMUKKEIDEN OIREET,OTHER SYMPT LYMPH GLANDS,ICPC1,NA,45537751
+B85,SELITTÄMÄTÖN POIKKEAVUUS VERIKOKEESSA,UNEXPLAINED ABNORMAL BLOOD TEST,ICPC1,NA,45755310
+B86,MUU HEMATOLOGINEN POIKKEAVUUS,OTHER HAEMATOLOGICAL ABNORMALITY,ICPC1,NA,45561769
+D22,MADOT / KIHOMADOT / MUUT LOISET,WORMS/PINWORMS/OTHER PARASITES,ICPC1,NA,45595739
+L06,KAINALON OIREET / VAIVAT,AXILLA SYMPTOMS/COMPLAINTS,ICPC1,NA,NA
+N02,LIHASJÄNNITYSPÄÄNSÄRKY,TENSION HEADACHE,ICPC1,NA,45596847
+P21,YLIAKTIIVINEN / HYPER- KINEETTINEN LAPSI,"OVERACTIVE CHILD, HYPERKINETIC",ICPC1,NA,45755593
+R22,NIELURISOJEN OIRE / VAIVA,SYMPTOM/COMPLAINT TONSILS,ICPC1,NA,45573018
+R70,HENGITYSELINTEN TUBERKULOOSI,TUBERCULOSIS,ICPC1,NA,45755635
+R91,KROON. KEUHKOPUTKTUL / BRONKIEKTASIAT,CHRONIC BRONCHITIS,ICPC1,NA,45548995
+R93,KEUHKOPUSSIN (PLEURAN) NESTEKERTYMÄ NUD,PLEURAL EFFUSION,ICPC1,NA,45563332
+T06,ANOREXIA NERVOSA / BULIMIA,ANOREXIA NERVOSA W/WO BULIMIA,ICPC1,NA,45755875
+T15,KILPIRAUHASEN KYHMY,THYROID LUMP/MASS,ICPC1,NA,45536466
+T88,MUNUAISPER SOKERI- VIRTSAISUUS,RENAL GLYCOSURIA,ICPC1,NA,45585336
+W20,MUU RINT OIRE / VAIVA RASK AIKANA,OTHER SYMPTOMS/COMPLAINTS OF BREAST,ICPC1,NA,45756258
+W77,MUUT RASKAUT LIITTYMÄTTÖMÄT TILAT,OTHER NON-OBSTETRICAL CONDITION,ICPC1,NA,45756323

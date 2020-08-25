@@ -1,0 +1,127 @@
+---
+title: "ICPC"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+#   html_document:
+#     df_print: paged
+#     toc: true
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+source("../lib/vocabulary_reporting_fuctions.r")
+
+
+# Document variables 
+N_TOPS <- 10
+
+# output status
+db_statuses <- tibble()
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+icpc_concept <- read_csv("./1_source_vocabulary/CONCEPT_ICPC.csv") %>% 
+  filter(domain_id != "Metadata")
+
+icpc_mapsto <- read_csv("./2_mapping_to_standard/CONCEPT_RELATIONSHIP_ICPC.csv")
+
+icpc_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv")
+```
+
+
+# Intro
+
+TODO:
+
+
+
+
+# Formating source vocabulary to OMOP
+`ICPC2_merged_and__ICPC1_from_DF6_UTF8.txt`
+ Contains the ICPC codes with English and Finnish names.
+
+ This table comes from several sources. Created by  mikolaj.wojnicki@helsinki.fi.
+ 
+```{r}
+icpc_concept %>%  count(concept_class_id, sort = T)
+```
+ 
+
+Details in  [./1_source_vocabulary/README.md](./1_source_vocabulary/README.md)
+
+
+# Mapping the source vocabulary to the standard vocabularies
+In short, the source table already includes a column with the equivalent ICD10 codes. This was mapped to the OMOP's ICD10who `concept_id`. 
+
+
+## Progess in number of codes
+```{r}
+n_codes <- icpc_concept %>% nrow()
+n_codes_accepted <- icpc_mapsto %>% distinct(concept_id_1) %>% nrow()
+```
+
+
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
+
+
+```{r}
+db_statuses <- bind_rows(
+  tibble(
+    status = "mapped",
+    n_codes = n_codes_accepted,
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  ),
+ tibble(
+    status = "not_mapped",
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events =  as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  )
+)
+```
+
+
+
+
+
+# Assessing coverage of databases
+
+
+```{r  results='asis'}
+
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("ICPC", icpc_concept, icpc_mapsto, icpc_freqs ) 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
