@@ -84,7 +84,7 @@ For these missing we used Google-translator.
 # icd10fi_source_google_tralations <- icd10fi_source %>%# head(10) %>% 
 #   mutate(name_en_source = if_else(!is.na(name_en), "THL",  "Google")) %>% 
 #   mutate(name_en = if_else(is.na(name_en), gl_translate(name_fi, source = "fi", target = "en")$translatedText, name_en ))
-#   select(code, name_en_source, name_en )
+#   select(code, name_en_source, name_en, name_fi )
 #
 # write_csv(icd10fi_source_google_tralations, "icd10fi_source_google_tralations.csv" )
 
@@ -97,6 +97,12 @@ icd10fi_source <- left_join(
   icd10fi_source %>%  select(-name_en), 
   icd10fi_source_google_tralations, 
   by="code"
+)
+
+#tmp fix add name_fi
+write_csv(
+  icd10fi_source %>% select(code, name_en_source, name_fi, name_en) %>% mutate(better_name_en=""), 
+  "./icd10fi_source_google_tralations.csv"
 )
 
 ```
