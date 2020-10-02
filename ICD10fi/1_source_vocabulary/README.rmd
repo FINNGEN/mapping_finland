@@ -94,14 +94,20 @@ icd10fi_source_google_tralations <- read_csv("./icd10fi_source_google_tralations
 )
 
 icd10fi_source <- left_join(
-  icd10fi_source %>%  select(-name_en), 
+  icd10fi_source %>%  select(-name_en, -starts_with("name_fi"),
+                             -starts_with("better_name_en"),
+                             -starts_with("name_en_source"), 
+                             -starts_with("valid_start_date"),
+                             -starts_with("valid_end_date")), 
   icd10fi_source_google_tralations, 
   by="code"
 )
 
 #tmp fix add name_fi
 write_csv(
-  icd10fi_source %>% select(code, name_en_source, name_fi, name_en) %>% mutate(better_name_en=""), 
+  icd10fi_source  %>% 
+    mutate(better_name_en="") %>% 
+    select(code, name_en_source, name_fi, name_en, better_name_en, valid_start_date, valid_end_date), 
   "./icd10fi_source_google_tralations.csv"
 )
 
@@ -378,8 +384,8 @@ icd10fi_concept_class <-
       concept_class_concept_id = 2
     ),
     tibble(
-      concept_class_id = "ICD10fi code", 
-      concept_class_name = "ICD10fi code",
+      concept_class_id = "ICD10fi 1 code", 
+      concept_class_name = "ICD10fi 1 code",
       concept_class_concept_id = 3
     ),
     tibble(
@@ -388,7 +394,7 @@ icd10fi_concept_class <-
       concept_class_concept_id = 5
     ),
     tibble(
-      concept_class_id = "ICD10fi 2 code [autogen]", 
+      concept_class_id = "ICD10fi 2 code [A]", 
       concept_class_name = "ICD10fi Finnish Modification composed code [auto generated]",
       concept_class_concept_id = 6
     ),
@@ -442,7 +448,7 @@ icd10fi_concept <- icd10fi_source_extended %>%
     domain_id = "Condition", # at the moment
     vocabulary_id = "ICD10fi", 
     concept_class_id = case_when(
-      code_class=="2 code generated" ~ "ICD10fi 2 code [autogen]", 
+      code_class=="2 code generated" ~ "ICD10fi 2 code [A]", 
       code_class=="2 code" ~ "ICD10fi 2 code",
       code_class=="1 code" & HierarchyLevel<=3 ~ "ICD10fi Hierarchy",
       code_class=="1 code" & HierarchyLevel>3 ~ "ICD10fi 1 code"

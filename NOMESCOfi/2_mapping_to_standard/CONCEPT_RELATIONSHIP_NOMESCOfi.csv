@@ -45,7 +45,6 @@ concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invali
 136,37109061,Maps to,2017-07-31,2030-12-31,NA,USAGI,Procedure
 136,45765485,Maps to,2015-01-31,2030-12-31,NA,USAGI,Procedure
 136,36713289,Maps to,2017-01-31,2030-12-31,NA,USAGI,Procedure
-136,37109061,Maps to,2017-07-31,2030-12-31,NA,USAGI,Procedure
 142,4075430,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
 151,4163842,Maps to,2007-01-01,2030-12-31,NA,USAGI,Procedure
 154,4072537,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
@@ -530,7 +529,6 @@ concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invali
 3114,4208906,Maps to,2009-01-31,2030-12-31,NA,USAGI,Procedure
 3116,42537414,Maps to,2018-01-31,2030-12-31,NA,USAGI,Procedure
 3116,4082987,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
-3116,42537414,Maps to,2018-01-31,2030-12-31,NA,USAGI,Procedure
 3120,4230911,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
 3122,4153278,Maps to,2009-01-01,2030-12-31,NA,USAGI,Procedure
 3130,37109092,Maps to,2017-07-31,2030-12-31,NA,USAGI,Procedure
@@ -1081,7 +1079,6 @@ concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invali
 5749,4021585,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
 5753,4177012,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
 5754,4165216,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
-5754,4165216,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
 5755,4257824,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
 5756,4072495,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
 5757,4323816,Maps to,1997-01-01,2030-12-31,NA,USAGI,Procedure
@@ -1386,7 +1383,6 @@ concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invali
 6956,4082711,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
 6956,46271388,Maps to,2015-07-31,2030-12-31,NA,USAGI,Procedure
 6956,46273122,Maps to,2015-07-31,2030-12-31,NA,USAGI,Procedure
-6956,4082711,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
 6967,4058899,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
 6974,4047491,Maps to,1999-01-01,2030-12-31,NA,USAGI,Procedure
 6982,4343590,Maps to,1970-01-01,2030-12-31,NA,USAGI,Procedure
@@ -1931,12 +1927,6 @@ concept_id_1,concept_id_2,relationship_id,valid_start_date,valid_end_date,invali
 10402,4332593,Maps to,1997-01-01,2030-12-31,NA,USAGI,Procedure
 10403,4274317,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
 10403,4332593,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4335024,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4274317,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4335024,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4274317,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4335024,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
-10404,4274317,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
 10404,4335024,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
 10404,4274317,Maps to,2006-01-01,2030-12-31,NA,USAGI,Procedure
 10407,4174669,Maps to,1997-01-01,2030-12-31,NA,USAGI,Procedure

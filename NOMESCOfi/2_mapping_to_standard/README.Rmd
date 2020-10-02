@@ -109,9 +109,11 @@ nomescofi_mapping <- inner_join(
     rename(concept_id_1 = concept_id),
   nomesco_after_usagi %>%  filter(mappingStatus == "APPROVED") %>% 
     select(sourceCode, conceptId) %>% 
-    rename(concept_id_2 = conceptId, concept_code = sourceCode),
+    rename(concept_id_2 = conceptId, concept_code = sourceCode) %>% 
+    distinct(),
   by="concept_code"
 ) %>% select(-concept_code )
+
 
 
 
@@ -144,7 +146,7 @@ nomescofi_mapsto <- nomescofi_mapping %>%
   )
 
 
-write_csv(nomescofi_mapsto, "CONCEPT_RELATIONSHIP_NOMESCO.csv")
+write_csv(nomescofi_mapsto, "CONCEPT_RELATIONSHIP_NOMESCOfi.csv")
 
 nomescofi_mapsto %>%  head(N_TOPS)
 
