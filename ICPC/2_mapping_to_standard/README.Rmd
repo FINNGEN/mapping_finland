@@ -3,6 +3,8 @@ title: "ICPC mappings"
 output: 
     github_document:
         df_print: kable
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -37,8 +39,9 @@ icd10fi_mapsto <- read_csv("../../ICD10fi/2_mapping_to_standard/CONCEPT_RELATION
 # map icpc to icd10fi 
 icpc_mapping_idc10fi <-  left_join(
   icpc_source, 
-  icd10fi_concept %>% select(concept_id, concept_code) %>% rename(concept_id_icd10 = concept_id), 
-  by="concept_code"
+  icd10fi_concept %>% select(concept_id, concept_code) %>% 
+    rename(concept_id_icd10 = concept_id, tmp_main_icd10fi = concept_code), 
+  by="tmp_main_icd10fi"
 )
 ```
 

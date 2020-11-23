@@ -1,0 +1,191 @@
+concept_id,concept_synonym_name,language_concept_id
+3,Infektiokomplikaatio,4181730
+4,Muu infektiokomplikaatio,4181730
+5,Kirurgista hoitoa vaatinut syvä infektio,4181730
+6,Keuhko/pleuratilan infektio,4181730
+7,Pinnallinen haavan infektio: bakteeriviljelyssä varmistettu tai punoittava purulentti haava,4181730
+8,Neurologinen komplikaatio,4181730
+9,Muu neurologinen komplikaatio: sisältää myös critical illness polyneuropatian,4181730
+10,Stroke: neurologinen puutosoire ja kuvantamisella varmistettu,4181730
+11,"Ohimennyt neurologinen komplikaatio: hoitoa vaatinut delirium, TIA, sekavuus",4181730
+12,Munuaiskomplikaatio,4181730
+13,Muu munuaiskomplikaatio,4181730
+14,Toimenpiteeseen liittyvä dialyysia tai filtraatiota vaatinut munuaiskomplikaatio,4181730
+15,Sydänkomplikaatio,4181730
+16,Muu sydänkomplikaatio,4181730
+17,"Toimenpiteeseen liittyvä merkittävä sydäntapahtuma, esim. infarkti",4181730
+18,Rytmihäiriö: muu hoitoa vaatinut rytmihäiriö kuin ohimennyt eteisvärinä,4181730
+19,Muiden elinten komplikaatiot,4181730
+20,Muut määritellyt elinkomplikaatiot,4181730
+21,Punktiolla hoidettu perikardiumtamponaatio,4181730
+22,Pneumothorax,4181730
+23,"Punktiohematooma, hoitoa vaatinut",4181730
+24,"GI kanavan komplikaatio: esim. suolistoiskemia, pankreatiitti",4181730
+25,Monielinkomplikaatio,4181730
+26,SIRS/MOF (monielinvaurio),4181730
+27,Pitkittynyt respiraattorihoito,4181730
+28,Pitkittynyt respiraattorihoito (24 tuntia intubaatiosta),4181730
+29,Komplikaatio johtanut uusintaleikkaukseen,4181730
+30,Komplikaatio johtanut uusintaleikkaukseen muusta syystä,4181730
+31,Komplikaatio johtanut uusintaleikkaukseen vuodon takia,4181730
+32,Komplikaatio johtanut uusintaleikkaukseen infektion takia,4181730
+33,Komplikaatio johtanut uusintaleikkaukseen graftiongelman takia,4181730
+34,Komplikaatiouusintaleikkaus läppäongelman takia (esim. tekoläpän toimintahäiriö tai plastian pettäminen),4181730
+35,Kuollut,4181730
+36,Kuollut klinikassa hoitojakson aikana,4181730
+37,Ei komplikaatioita,4181730
+38,"Päivystys, esim. akuutti sepelvaltimokohtaus, aortan dissektio/ruptuura",4181730
+39,Elektiivinen kiireellinen sydänpotilas,4181730
+40,Elektiivinen kiireetön sydänpotilas,4181730
+41,Sydänpotilaan muu tai ei määritelty kiireellisyys,4181730
+42,Primaari toimenpide,4181730
+43,"Uusintatoimenpide pallolaajennuksen jälkeen, perkutaani",4181730
+44,"Uusintatoimenpide metalliverkon jälkeen, perkutaani",4181730
+45,"Uusintatoimenpide lääkeverkon jälkeen, perkutaani",4181730
+46,Veenasiirteen pallolaajennustoimenpide,4181730
+47,Valtimosiirteen pallolaajennustoimenpide,4181730
+48,Muu perkutaaninen sydämen uusintatoimenpide,4181730
+49,Sepelvaltimoleikkaus pallolaajennustoimenpiteen jälkeen,4181730
+50,"Uusintasydänleikkaus/toimenpide (""redo""), sama sydänvika",4181730
+51,"Uusi sydänleikkaus/toimenpide, eri sydänvika",4181730
+52,Muu korjaava uusintasydänleikkaus,4181730
+53,Sepelvaltimo-ohitukset,4181730
+54,Muu CABG,4181730
+55,Konventionaalinen CABG,4181730
+56,Off pump CABG sternotomiateitse,4181730
+57,"Off pump CABG , muu esim. MIDCAB, LATCAB, LASTCAB, TACAB",4181730
+58,Aorttaläpän korjaamiset,4181730
+59,Muu aorttaläppään kohdistuva toimenpide,4181730
+60,AVR mekaaninen,4181730
+61,"AVR bio, stentillinen",4181730
+62,"AVR bio, stentitön",4181730
+63,Aorttahomografti,4181730
+64,Ross,4181730
+65,Mitraaliläpän korjaamiset,4181730
+66,Muu mitraaliläppään kohdistuva toimenpide,4181730
+67,MVR mekaaninen,4181730
+68,MVR bio,4181730
+69,Mitraalihomografti,4181730
+70,MVP,4181730
+71,Trikuspidaaliläpän korjaamiset,4181730
+72,Muu trikuspidaaliläpän korjausleikkaus,4181730
+73,TVP,4181730
+74,TVR,4181730
+75,Keuhkovaltimoleikkaukset,4181730
+76,Muu keuhkovaltimoon tai keuhkovaltimoläppään kohdistuva toimenpide,4181730
+77,Keuhkovaltimon trombendarterektomia,4181730
+78,Pulmonaalihomografti,4181730
+79,Synnynnäisen sydänvian korjaamiset,4181730
+80,Synnynnäisen sydänvian leikkaus,4181730
+81,Kammion muovausleikkaukset,4181730
+82,"Kammion muovausleikkaus,esim Dor, Batista",4181730
+83,Aneyrysman resektio,4181730
+84,"Ulosvirtauskanavan korjaus, ( esim HOCM:ssa )",4181730
+85,Rytmihäiriöleikkaukset/hoidot,4181730
+86,Muu rytmihäiriöleikkaus ( esim WPW jne. ),4181730
+87,"Rytmihäiriöleikkaus,esim seinämä- ja /tai endokardium resektio ja/ tai oikoradan katkaisu jne.",4181730
+88,Eteisvärinän hoito sokkeloleikkauksella (Maze) tai sen modifikaatio ainoana toimenpiteenä,4181730
+89,"Rytmihäiriön, esim eteisvärinän hoito, muun sydänkirurgian yhteydessä",4181730
+90,Aorttaan ja muut sydämeen kohdistuvat leikkaukset,4181730
+91,Muu sydämeen tai aorttaan kohdistuva leikkaus,4181730
+92,"Aortan tyven rekonstruktio esim. komposiittigrafti, sis. läpän säästävän toimenpiteen",4181730
+93,Nousevan aortan rekonstruktio,4181730
+94,Aortan kaaren rekonstruktio,4181730
+95,Laskevan torakaaliaortan rekonstruktio,4181730
+96,Laskevan torakaaliaortan rekonstruktio stenttigraftilla,4181730
+97,Sydän- ja keuhkosiirtoleikkaukset,4181730
+98,Muu sydän/keuhkosiirtoleikkaus,4181730
+99,HTX (sydänsiirto),4181730
+100,SLTX (toisen keuhkon siirto),4181730
+101,BLTX (molempien keuhkojen siirto),4181730
+102,"""HLTX (sydänkeuhkosiirto,"""" blokkisiirto"""")""",4181730
+103,Täydentävät toimenpiteet  ( välitön tai sama hoitojakso),4181730
+104,"Muu täydentävä leikkaus tai toimenpide, sama hoitojakso",4181730
+105,"Ohitus- läppä- tai  muu täydentävä rekonstruktio, sama hoitojakso",4181730
+106,"Pallolaajennus tai muu perkutaaninen täydentävä toimenpide, sama hoitojakso",4181730
+107,Muut vaativan sydänpotilaan leikkaukset/toimenpiteet,4181730
+108,Muu vaativan sydänpotilaan leikkaustoimenpide,4181730
+109,Karotisleikkaus,4181730
+110,"Infarktikomplikaation kirurgia esim. VSR, aneurysma, papillaarilihaksen ruptura",4181730
+111,IABP:n käyttö mekaanisena tukena,4181730
+112,VAD (Vasemman ja/tai oikean puolen mekaanisen tuen käyttö (muu kuin IABP),4181730
+113,"Sepelvaltimoiden angiografiat, pallolaajennukset ja muut katetritoimenpiteet",4181730
+114,Sepelvaltimon rotablaatio,4181730
+115,Sepelvaltimon trombektomia,4181730
+116,"Sepelvaltimon sisäinen paineenmittaus (FFR, fractional flow reserve)",4181730
+117,"Sepelvaltimon sisäinen virtausmittaus (CFR, coronary flow reserve)",4181730
+118,Sepelvaltimon sisäinen ultraääni (IVUS),4181730
+119,Sepelvaltimon sädehoito,4181730
+120,Muu sepelvaltimon perkutaaninen toimenpide,4181730
+121,Sepelvaltimoiden angiografia,4181730
+122,"Pallolaajennus, myös useat suonet",4181730
+123,Pallolaajennus ja metalliverkkoputken asennus,4181730
+124,Pallolaajennus ja lääkeverkkoputken asennus,4181730
+125,Muut sydämen katetritoimenpiteet,4181730
+126,Koarktaation pallolaajennus,4181730
+127,Koarktaation pallolaajennus ja metalliverkkoputken asennus,4181730
+128,Keuhkovaltimon pallolaajennus,4181730
+129,Keuhkovaltimon pallolaajennus ja metalliverkkoputken asennus,4181730
+130,Muu verisuonen pallolaajennus,4181730
+131,Muu verisuonen pallolaajennus ja metalliverkkoputken asennus,4181730
+132,PDA sulku,4181730
+133,PFO sulku,4181730
+134,ASD sulku,4181730
+135,VSD sulku,4181730
+136,Eteiskorvakkeen sulku,4181730
+137,Verisuonen embolisaatio,4181730
+138,Perikardiumin fenestraatio pallokatetrilla,4181730
+139,Eteisseptostomia,4181730
+140,Kammioseptumin alkoholiablaatio (septaalisuonen embolisaatio),4181730
+141,Muu sydämen katetritoimenpide,4181730
+142,Sydämen vasemman puolen katetrointi,4181730
+143,Sydämen oikean puolen katetrointi,4181730
+144,Sydämen oikean ja vasemman puolen katetrointi,4181730
+145,Sydänlihasbiopsia,4181730
+146,Valvuloplastia keuhkovaltimoläppään,4181730
+147,Valvuloplastia aorttaläppään,4181730
+148,Valvuloplastia mitraaliläppään,4181730
+149,Valvuloplastia trikuspidaaliläppään,4181730
+150,Elektrofysiologinen erikoistutkimus,4181730
+151,"""Muu elektrofysiologinen kartoitus kuin anatominen tai """"non contact""""""",4181730
+152,Tavanomainen elektrofysiologinen tutkimus,4181730
+153,Elektrofysiologinen elektroanatominen kartoitus,4181730
+154,"""Elektrofysiologinen """"non-contact"""" kartoitus""",4181730
+155,Rytmihäiriön katetriablaatio,4181730
+156,"Rytmihäiriön katetriablaatio, muu kohde",4181730
+157,Rytmihäiriön katetriablaatio: AV -junktion katkaisu tai modifiointi,4181730
+158,Rytmihäiriön katetriablaatio: kohde: epätarkoituksenmukainen sinustakykardia,4181730
+159,Muu katetriablaatio,4181730
+160,"Rytmihäiriön katetriablaatio, kohde: eteiskammiosolmukkeen kiertoaktivaatio (AVNRT)",4181730
+161,"Rytmihäiriön katetriablaatio, kohde: oikorata (WPW, AVRT, PJRT)",4181730
+162,"Rytmihäiriön katetriablaatio, kohde: eteistakykardia",4181730
+163,"Rytmihäiriön katetriablaatio, kohde: muu poikkeavien ratojen takykardia (Mahaim, haaratakykardia, faskikulaarinen ym.)",4181730
+164,"Rytmihäiriön katetriablaatio, kohde: eteislepatus",4181730
+165,"Rytmihäiriön katetriablaatio, kohde: eteisvärinä",4181730
+166,"Rytmihäiriön katetriablaatio, kohde: oikean kammion takykardia",4181730
+167,"Rytmihäiriön katetriablaatio, kohde: vasemman kammion takykardia",4181730
+168,Tahdistimen asennus,4181730
+169,Biventrikulaarisen rytmihäiriötahdistimen asennus VVI(R)S,4181730
+170,"Biventrikulaarisen, fysiologisen rytmihäiriötahdistimen asennus DDD(R)",4181730
+171,Rytmivalvurin asennus,4181730
+172,Muu tahdistimem asennus,4181730
+173,Eteisahdistimen asennus AAI(R),4181730
+174,Kammiotahdistimen asennus VVI(R),4181730
+175,"Yksijohtoisen, fysiologisen tahdistimen asennus VDD(R)",4181730
+176,Fysiologisen tahdistimen asennus DDD(R),4181730
+177,Biventrikulaarisen vajaatoimintatahdistimen asennus VVI(R),4181730
+178,"Biventrikulaarisen, fysiologisen vajaatoimintatahdistimen asennus DDD(R)",4181730
+179,Rytmihäiriötahdistimen asennus VVI(R)S,4181730
+180,Fysiologisen rytmihäiriötahdistimen asennus DDD(R)S,4181730
+181,Tahdistimen vaihto,4181730
+182,Biventrikulaarisen rytmihäiriötahdistimen vaihto VVI(R)S,4181730
+183,"Biventrikulaarisen, fysiologisen rytmihäiriötahdistimen vaihto DDD(R)S",4181730
+184,"Muu tahdistimen vaihto tai siihen liittyvä toimenpide, esim johdon poisto tai vaihto",4181730
+185,Eteisahdistimen vaihto AAI(R),4181730
+186,Kammiotahdistimen vaihto VVI(R),4181730
+187,"Yksijohtoisen, fysiologisen tahdistimenvaihto VDD(R)",4181730
+188,Fysiologisen tahdistimenvaihto DDD(R),4181730
+189,Biventrikulaarisen vajaatoimintatahdistimen vaihto VVI(R),4181730
+190,"Biventrikulaarisen, fysiologisen vajaatoimintatahdistimen vaihto DDD(R)",4181730
+191,Rytmihäiriötahdistimen vaihto VVI(R)S,4181730
+192,Fysiologisen rytmihäiriötahdistimen vaihto DDD(R)S,4181730

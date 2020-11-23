@@ -16,16 +16,16 @@ Source table has a column indicating the icd10fi equivalent
 
 | concept\_id\_1 | concept\_id\_2 | relationship\_id | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_mapping\_type | tmp\_domain\_id\_2 |
 | -------------: | -------------: | :--------------- | :----------------- | :--------------- | :-------------- | :----------------- | :----------------- |
-|             46 |         192819 | Maps to          | 2016-12-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             47 |         133685 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             48 |         201780 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             49 |         193402 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             50 |         441500 | Maps to          | 2016-12-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             51 |         438959 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             52 |         196325 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             53 |         198678 | Maps to          | 2014-10-10         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             54 |         201618 | Maps to          | 2018-11-28         | 2099-12-31       | NA              | ICD10fi            | Condition          |
-|             58 |         261774 | Maps to          | 2014-10-10         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             46 |        4329041 | Maps to          | 2014-10-14         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             47 |       46234710 | Maps to          | 2015-01-01         | 2020-12-31       | NA              | ICD10fi            | Observation        |
+|             47 |        4147183 | Maps to          | 2015-01-01         | 2020-12-31       | NA              | ICD10fi            | Condition          |
+|             48 |         437663 | Maps to          | 1970-01-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             49 |         439926 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             50 |         439926 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             51 |         372448 | Maps to          | 2018-11-28         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             52 |         380834 | Maps to          | 2014-07-01         | 2099-12-31       | NA              | ICD10fi            | Condition          |
+|             53 |       46234710 | Maps to          | 2015-01-01         | 2020-12-31       | NA              | ICD10fi            | Observation        |
+|             53 |        4147183 | Maps to          | 2015-01-01         | 2020-12-31       | NA              | ICD10fi            | Condition          |
 
 </div>
 
@@ -33,12 +33,12 @@ Source table has a column indicating the icd10fi equivalent
 
 <div class="kable-table">
 
-| domain\_id  |    n |
-| :---------- | ---: |
-| Condition   | 1246 |
-| Observation |  129 |
-| Procedure   |   61 |
-| Measurement |    7 |
-| Metadata    |    4 |
+| domain\_id    |    n |
+| :------------ | ---: |
+| Condition     | 1330 |
+| Observation   |   55 |
+| Procedure     |   53 |
+| Condition/Obs |    5 |
+| Metadata      |    4 |
 
 </div>

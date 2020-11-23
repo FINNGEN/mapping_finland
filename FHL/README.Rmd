@@ -1,0 +1,129 @@
+---
+title: "FHL"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+source("../lib/vocabulary_reporting_fuctions.r")
+
+
+# Document variables 
+N_TOPS <- 10
+
+# output status
+db_statuses <- tibble()
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+fhl_concept <- read_csv("./1_source_vocabulary/CONCEPT_FHL.csv") %>% 
+  filter(domain_id!="Metadata")
+
+fhl_mapsto <- read_csv("../ATC/2_mapping_to_standard/CONCEPT_RELATIONSHIP_ATC.csv") %>% 
+  filter(FALSE) ## read an other table to keep same colums
+
+fhl_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv",
+  col_types = cols(
+    code = col_character(),
+    freq_finngen = col_double(),
+    freq_total = col_double()
+  )
+)
+```
+
+
+# Intro
+TODO:
+
+
+# Formating source vocabulary to OMOP
+The fhl codes were downloaded from [nose](nose) (3.4.2020). Missing codes, translations and validity dates were manually colledted from kela's web page into table [./1_source_vocabulary/Kela_fhlursement_codes.xlsx](./1_source_vocabulary/Kela_fhlursement_codes.xlsx) by [\@CoderMikolaj](github.com/CoderMikolaj). 
+
+Resulting table contains the codes, names, and validity periods. Some codes (e.g 307) have a different names during different periods, and therefore codes are repeated on the table for name and time period. 
+
+TODO: we got the name changes over time only for the top 21 codes. The rest should be checked. (top 21 bcs were the ones with no name at all kela's )
+
+Missing English translations were made using Google-tralator
+
+```{r}
+fhl_concept %>% count(tmp_name_en_source, sort = T)
+```
+
+Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/fhl_for_source_vocabulary.csv](1_source_vocabulary/fhl_for_source_vocabulary.csv). 
+
+
+
+## Progess in number of codes
+```{r}
+n_codes <- fhl_concept %>% nrow()
+n_codes_accepted <- fhl_mapsto %>% distinct(concept_id_1) %>% nrow()
+```
+
+
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
+
+
+```{r}
+db_statuses <- bind_rows(
+  tibble(
+    status = "mapped",
+    n_codes = n_codes_accepted,
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  ),
+ tibble(
+    status = "not_mapped",
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events =  as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  )
+)
+```
+
+
+
+
+
+# Assessing coverage of databases
+
+
+```{r  results='asis'}
+
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("FHL", fhl_concept, fhl_mapsto, fhl_freqs) 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

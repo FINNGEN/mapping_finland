@@ -174,7 +174,8 @@ icd8fi_concept <- icd8fi_source %>%
     concept_code = Code, 
     valid_start_date = dmy(01011970), 
     valid_end_date = dmy(3112299), 
-    tmp_name_fi = Finnish # keep for USAGI
+    tmp_name_fi = Finnish, # keep for USAGI
+    tmp_name_en_source = if_else(needs_ENG_trans==0, "THL", "Google")
   ) 
     
         

@@ -1,0 +1,193 @@
+concept_id,concept_name,domain_id,vocabulary_id,concept_class_id,standard_concept,concept_code,valid_start_date,valid_end_date,invalid_reason,tmp_name_fi,tmp_name_en_source
+1,Demanding Heart Patient New codese,Metadata,Vocabulary,Vocabulary,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+2,HPN,Metadata,Concept Class,Concept Class,NA,OMOP generated,1970-01-01,2099-12-31,NA,NA,NA
+3,Infection complication,Procedure,HPN,HPN,NA,FA,1996-01-01,2017-12-31,NA,Infektiokomplikaatio,GOOGLE_REVD
+4,Other complication of infection,Procedure,HPN,HPN,NA,FAX,1996-01-01,2017-12-31,NA,Muu infektiokomplikaatio,GOOGLE_REVD
+5,Deep infection requiring surgical treatment,Procedure,HPN,HPN,NA,FA1,1996-01-01,2017-12-31,NA,Kirurgista hoitoa vaatinut syvä infektio,GOOGLE_REVD
+6,Lung / pleural infection,Procedure,HPN,HPN,NA,FA2,1996-01-01,2017-12-31,NA,Keuhko/pleuratilan infektio,GOOGLE_REVD
+7,Superficial wound infection: confirmed in bacterial culture or reddening purulent wound,Procedure,HPN,HPN,NA,FA3,1996-01-01,2017-12-31,NA,Pinnallinen haavan infektio: bakteeriviljelyssä varmistettu tai punoittava purulentti haava,ELISA_LAHTELA
+8,Neurological complication,Procedure,HPN,HPN,NA,FB,1996-01-01,2017-12-31,NA,Neurologinen komplikaatio,GOOGLE_REVD
+9,Other neurological complication: also includes critical illness polyneuropathy,Procedure,HPN,HPN,NA,FBX,1996-01-01,2017-12-31,NA,Muu neurologinen komplikaatio: sisältää myös critical illness polyneuropatian,GOOGLE_REVD
+10,Stroke: a neurological deficiency and confirmed by imaging,Procedure,HPN,HPN,NA,FB1,1996-01-01,2017-12-31,NA,Stroke: neurologinen puutosoire ja kuvantamisella varmistettu,ELISA_LAHTELA
+11,"Transient neurological complication: delirium requiring treatment, TIA, confusion",Procedure,HPN,HPN,NA,FB2,1996-01-01,2017-12-31,NA,"Ohimennyt neurologinen komplikaatio: hoitoa vaatinut delirium, TIA, sekavuus",GOOGLE_REVD
+12,Renal complication,Procedure,HPN,HPN,NA,FC,1996-01-01,2017-12-31,NA,Munuaiskomplikaatio,GOOGLE_REVD
+13,Other renal complication,Procedure,HPN,HPN,NA,FCX,1996-01-01,2017-12-31,NA,Muu munuaiskomplikaatio,GOOGLE_REVD
+14,Renal complication associated with the operation that required dialysis or filtration,Procedure,HPN,HPN,NA,FC1,1996-01-01,2017-12-31,NA,Toimenpiteeseen liittyvä dialyysia tai filtraatiota vaatinut munuaiskomplikaatio,ELISA_LAHTELA
+15,Cardiac complication,Procedure,HPN,HPN,NA,FD,1996-01-01,2017-12-31,NA,Sydänkomplikaatio,GOOGLE_REVD
+16,Other cardiac complication,Procedure,HPN,HPN,NA,FDX,1996-01-01,2017-12-31,NA,Muu sydänkomplikaatio,GOOGLE_REVD
+17,"A major cardiac event associated with the operation, e.g., myocardial infarction",Procedure,HPN,HPN,NA,FD1,1996-01-01,2017-12-31,NA,"Toimenpiteeseen liittyvä merkittävä sydäntapahtuma, esim. infarkti",GOOGLE_REVD
+18,Arrhythmia: An arrhythmia that requires treatment other than transient atrial fibrillation,Procedure,HPN,HPN,NA,FD2,1996-01-01,2017-12-31,NA,Rytmihäiriö: muu hoitoa vaatinut rytmihäiriö kuin ohimennyt eteisvärinä,GOOGLE_REVD
+19,Complications of other organs,Procedure,HPN,HPN,NA,FE,1996-01-01,2017-12-31,NA,Muiden elinten komplikaatiot,GOOGLE_REVD
+20,Other specified organ complications,Procedure,HPN,HPN,NA,FEX,1996-01-01,2017-12-31,NA,Muut määritellyt elinkomplikaatiot,GOOGLE_REVD
+21,Puncture-treated pericardial tamponade,Procedure,HPN,HPN,NA,FE1,1996-01-01,2017-12-31,NA,Punktiolla hoidettu perikardiumtamponaatio,GOOGLE_REVD
+22,Pneumothorax,Procedure,HPN,HPN,NA,FE2,1996-01-01,2017-12-31,NA,Pneumothorax,GOOGLE_REVD
+23,"Haematoma due to puncture, requiring treatment",Procedure,HPN,HPN,NA,FE3,1996-01-01,2017-12-31,NA,"Punktiohematooma, hoitoa vaatinut",ELISA_LAHTELA
+24,"GI channel complication: eg intestinal ischemia, pancreatitis",Procedure,HPN,HPN,NA,FE4,1996-01-01,2017-12-31,NA,"GI kanavan komplikaatio: esim. suolistoiskemia, pankreatiitti",GOOGLE_REVD
+25,Multi-organ complication,Procedure,HPN,HPN,NA,FF,1996-01-01,2017-12-31,NA,Monielinkomplikaatio,GOOGLE_REVD
+26,SIRS / MOF (multiorgan damage),Procedure,HPN,HPN,NA,FF1,1996-01-01,2017-12-31,NA,SIRS/MOF (monielinvaurio),GOOGLE_REVD
+27,Prolonged respiratory therapy,Procedure,HPN,HPN,NA,FG,1996-01-01,2017-12-31,NA,Pitkittynyt respiraattorihoito,GOOGLE_REVD
+28,Prolonged respiratory therapy (24 hours after intubation),Procedure,HPN,HPN,NA,FG1,1996-01-01,2017-12-31,NA,Pitkittynyt respiraattorihoito (24 tuntia intubaatiosta),GOOGLE_REVD
+29,Complication led to reoperation,Procedure,HPN,HPN,NA,FH,1996-01-01,2017-12-31,NA,Komplikaatio johtanut uusintaleikkaukseen,GOOGLE_REVD
+30,The complication led to reoperation for another reason,Procedure,HPN,HPN,NA,FHX,1996-01-01,2017-12-31,NA,Komplikaatio johtanut uusintaleikkaukseen muusta syystä,GOOGLE_REVD
+31,The complication led to reoperation due to leakage,Procedure,HPN,HPN,NA,FH1,1996-01-01,2017-12-31,NA,Komplikaatio johtanut uusintaleikkaukseen vuodon takia,GOOGLE_REVD
+32,The complication led to reoperation due to infection,Procedure,HPN,HPN,NA,FH2,1996-01-01,2017-12-31,NA,Komplikaatio johtanut uusintaleikkaukseen infektion takia,GOOGLE_REVD
+33,The complication resulted in re-surgery due to a graft problem,Procedure,HPN,HPN,NA,FH3,1996-01-01,2017-12-31,NA,Komplikaatio johtanut uusintaleikkaukseen graftiongelman takia,GOOGLE_REVD
+34,Complication reoperation due to a valve problem (eg artificial valve malfunction or plastic failure),Procedure,HPN,HPN,NA,FH4,1996-01-01,2017-12-31,NA,Komplikaatiouusintaleikkaus läppäongelman takia (esim. tekoläpän toimintahäiriö tai plastian pettäminen),ELISA_LAHTELA
+35,Dead,Procedure,HPN,HPN,NA,FM,1996-01-01,2017-12-31,NA,Kuollut,GOOGLE_REVD
+36,Died at the clinic during the treatment period,Procedure,HPN,HPN,NA,FM1,1996-01-01,2017-12-31,NA,Kuollut klinikassa hoitojakson aikana,GOOGLE_REVD
+37,No complications,Procedure,HPN,HPN,NA,111,1996-01-01,2017-12-31,NA,Ei komplikaatioita,GOOGLE_REVD
+38,"Emergency care, eg acute coronary artery syndrome, aortic dissecation / rupture",Procedure,HPN,HPN,NA,CA,1996-01-01,2017-12-31,NA,"Päivystys, esim. akuutti sepelvaltimokohtaus, aortan dissektio/ruptuura",ELISA_LAHTELA
+39,Elective emergency cardiac patient,Procedure,HPN,HPN,NA,CB,1996-01-01,2017-12-31,NA,Elektiivinen kiireellinen sydänpotilas,GOOGLE_REVD
+40,Electrive non-emergency cardiac patient,Procedure,HPN,HPN,NA,CC,1996-01-01,2017-12-31,NA,Elektiivinen kiireetön sydänpotilas,ELISA_LAHTELA
+41,Other or unspecified urgency of the cardiac patient,Procedure,HPN,HPN,NA,CX,1996-01-01,2017-12-31,NA,Sydänpotilaan muu tai ei määritelty kiireellisyys,GOOGLE_REVD
+42,Primary procedure,Procedure,HPN,HPN,NA,BA,1996-01-01,2017-12-31,NA,Primaari toimenpide,ELISA_LAHTELA
+43,"Reoperation after balloon angioplasty, percutaneous",Procedure,HPN,HPN,NA,BB,1996-01-01,2017-12-31,NA,"Uusintatoimenpide pallolaajennuksen jälkeen, perkutaani",ELISA_LAHTELA
+44,"Reoperation after stent, percutaneous",Procedure,HPN,HPN,NA,BC,1996-01-01,2017-12-31,NA,"Uusintatoimenpide metalliverkon jälkeen, perkutaani",ELISA_LAHTELA
+45,"Reoperation after drug eluting stent, percutaneous",Procedure,HPN,HPN,NA,BD,1996-01-01,2017-12-31,NA,"Uusintatoimenpide lääkeverkon jälkeen, perkutaani",ELISA_LAHTELA
+46,Venous graft balloon angioplasty,Procedure,HPN,HPN,NA,BE,1996-01-01,2017-12-31,NA,Veenasiirteen pallolaajennustoimenpide,ELISA_LAHTELA
+47,Arterial graft balloon angioplasty,Procedure,HPN,HPN,NA,BF,1996-01-01,2017-12-31,NA,Valtimosiirteen pallolaajennustoimenpide,ELISA_LAHTELA
+48,Other percutaneous cardiac reoperation,Procedure,HPN,HPN,NA,BG,1996-01-01,2017-12-31,NA,Muu perkutaaninen sydämen uusintatoimenpide,GOOGLE_REVD
+49,Coronary artery surgery after balloon angioplasty,Procedure,HPN,HPN,NA,BK,1996-01-01,2017-12-31,NA,Sepelvaltimoleikkaus pallolaajennustoimenpiteen jälkeen,ELISA_LAHTELA
+50,"Reoperation / procedure (""redo""), same heart failure",Procedure,HPN,HPN,NA,BL,1996-01-01,2017-12-31,NA,"Uusintasydänleikkaus/toimenpide (""redo""), sama sydänvika",GOOGLE_REVD
+51,"New heart surgery / procedure, different heart failure",Procedure,HPN,HPN,NA,BM,1996-01-01,2017-12-31,NA,"Uusi sydänleikkaus/toimenpide, eri sydänvika",GOOGLE_REVD
+52,Other corrective reoperation,Procedure,HPN,HPN,NA,BN,1996-01-01,2017-12-31,NA,Muu korjaava uusintasydänleikkaus,ELISA_LAHTELA
+53,Coronary artery bypass,Procedure,HPN,HPN,NA,AA,1996-01-01,2017-12-31,NA,Sepelvaltimo-ohitukset,GOOGLE_REVD
+54,Other CABG,Procedure,HPN,HPN,NA,AAX,1996-01-01,2017-12-31,NA,Muu CABG,GOOGLE_REVD
+55,Conventional CABG,Procedure,HPN,HPN,NA,AA1,1996-01-01,2017-12-31,NA,Konventionaalinen CABG,GOOGLE_REVD
+56,Off pump CABG sternotomy,Procedure,HPN,HPN,NA,AA2,1996-01-01,2017-12-31,NA,Off pump CABG sternotomiateitse,GOOGLE_REVD
+57,"Off pump CABG, other eg MIDCAB, LATCAB, LASTCAB, TACAB",Procedure,HPN,HPN,NA,AA3,1996-01-01,2017-12-31,NA,"Off pump CABG , muu esim. MIDCAB, LATCAB, LASTCAB, TACAB",GOOGLE_REVD
+58,Aortic valve operations,Procedure,HPN,HPN,NA,AB,1996-01-01,2017-12-31,NA,Aorttaläpän korjaamiset,ELISA_LAHTELA
+59,Other aortic valve operation,Procedure,HPN,HPN,NA,ABX,1996-01-01,2017-12-31,NA,Muu aorttaläppään kohdistuva toimenpide,GOOGLE_REVD
+60,AVR mechanical,Procedure,HPN,HPN,NA,AB1,1996-01-01,2017-12-31,NA,AVR mekaaninen,GOOGLE_REVD
+61,"AVR bio, stent",Procedure,HPN,HPN,NA,AB2,1996-01-01,2017-12-31,NA,"AVR bio, stentillinen",GOOGLE_REVD
+62,"AVR bio, stent-free",Procedure,HPN,HPN,NA,AB3,1996-01-01,2017-12-31,NA,"AVR bio, stentitön",GOOGLE_REVD
+63,Aortic homogratf,Procedure,HPN,HPN,NA,AB4,1996-01-01,2017-12-31,NA,Aorttahomografti,GOOGLE_REVD
+64,Ross,Procedure,HPN,HPN,NA,AB5,1996-01-01,2017-12-31,NA,Ross,GOOGLE_REVD
+65,Mitral valve operations,Procedure,HPN,HPN,NA,AC,1996-01-01,2017-12-31,NA,Mitraaliläpän korjaamiset,ELISA_LAHTELA
+66,Other mitral valve operation,Procedure,HPN,HPN,NA,ACX,1996-01-01,2017-12-31,NA,Muu mitraaliläppään kohdistuva toimenpide,ELISA_LAHTELA
+67,MVR mechanical,Procedure,HPN,HPN,NA,AC1,1996-01-01,2017-12-31,NA,MVR mekaaninen,GOOGLE_REVD
+68,MVR bio,Procedure,HPN,HPN,NA,AC2,1996-01-01,2017-12-31,NA,MVR bio,GOOGLE_REVD
+69,Mitral homograft,Procedure,HPN,HPN,NA,AC3,1996-01-01,2017-12-31,NA,Mitraalihomografti,ELISA_LAHTELA
+70,MVP,Procedure,HPN,HPN,NA,AC4,1996-01-01,2017-12-31,NA,MVP,GOOGLE_REVD
+71,Tricuspid valve operations,Procedure,HPN,HPN,NA,AD,1996-01-01,2017-12-31,NA,Trikuspidaaliläpän korjaamiset,ELISA_LAHTELA
+72,Other tricuspid valve operations,Procedure,HPN,HPN,NA,ADX,1996-01-01,2017-12-31,NA,Muu trikuspidaaliläpän korjausleikkaus,ELISA_LAHTELA
+73,TVP,Procedure,HPN,HPN,NA,AD1,1996-01-01,2017-12-31,NA,TVP,GOOGLE_REVD
+74,TVR,Procedure,HPN,HPN,NA,AD2,1996-01-01,2017-12-31,NA,TVR,GOOGLE_REVD
+75,Pulmonary artery surgery,Procedure,HPN,HPN,NA,AE,1996-01-01,2017-12-31,NA,Keuhkovaltimoleikkaukset,GOOGLE_REVD
+76,Other pulmonary or pulmonary artery valve procedure,Procedure,HPN,HPN,NA,AEX,1996-01-01,2017-12-31,NA,Muu keuhkovaltimoon tai keuhkovaltimoläppään kohdistuva toimenpide,ELISA_LAHTELA
+77,Pulmonary artery thrombendarterectomy,Procedure,HPN,HPN,NA,AE1,1996-01-01,2017-12-31,NA,Keuhkovaltimon trombendarterektomia,GOOGLE_REVD
+78,Pulmonary homograft,Procedure,HPN,HPN,NA,AE2,1996-01-01,2017-12-31,NA,Pulmonaalihomografti,ELISA_LAHTELA
+79,Congenital heart defect operations,Procedure,HPN,HPN,NA,AF,1996-01-01,2017-12-31,NA,Synnynnäisen sydänvian korjaamiset,ELISA_LAHTELA
+80,Surgery of congenital heart defect,Procedure,HPN,HPN,NA,AF1,1996-01-01,2017-12-31,NA,Synnynnäisen sydänvian leikkaus,GOOGLE_REVD
+81,Heart ventricle operations,Procedure,HPN,HPN,NA,AG,1996-01-01,2017-12-31,NA,Kammion muovausleikkaukset,ELISA_LAHTELA
+82,"Heart ventricle operations, e.g. Dor, Batista",Procedure,HPN,HPN,NA,AGX,1996-01-01,2017-12-31,NA,"Kammion muovausleikkaus,esim Dor, Batista",ELISA_LAHTELA
+83,Aneurysm resection,Procedure,HPN,HPN,NA,AG1,1996-01-01,2017-12-31,NA,Aneyrysman resektio,GOOGLE_REVD
+84,"Outflow channel correction, (eg in HOCM)",Procedure,HPN,HPN,NA,AG2,1996-01-01,2017-12-31,NA,"Ulosvirtauskanavan korjaus, ( esim HOCM:ssa )",GOOGLE_REVD
+85,Arrhythmia surgeries / treatments,Procedure,HPN,HPN,NA,AH,1996-01-01,2017-12-31,NA,Rytmihäiriöleikkaukset/hoidot,GOOGLE_REVD
+86,"Other arrhythmia surgery (eg WPW, etc.)",Procedure,HPN,HPN,NA,AHX,1996-01-01,2017-12-31,NA,Muu rytmihäiriöleikkaus ( esim WPW jne. ),GOOGLE_REVD
+87,"Arrhythmia surgery, eg wall and / or endocardial resection and / or cutting the extra electrical pathway, etc.",Procedure,HPN,HPN,NA,AH1,1996-01-01,2017-12-31,NA,"Rytmihäiriöleikkaus,esim seinämä- ja /tai endokardium resektio ja/ tai oikoradan katkaisu jne.",ELISA_LAHTELA
+88,Treatment of atrial fibrillation by maze surgery or its modification as the only procedure,Procedure,HPN,HPN,NA,AH2,1996-01-01,2017-12-31,NA,Eteisvärinän hoito sokkeloleikkauksella (Maze) tai sen modifikaatio ainoana toimenpiteenä,GOOGLE_REVD
+89,"Treatment of arrhythmias, eg atrial fibrillation, in conjunction with other cardiac surgery",Procedure,HPN,HPN,NA,AH3,1996-01-01,2017-12-31,NA,"Rytmihäiriön, esim eteisvärinän hoito, muun sydänkirurgian yhteydessä",GOOGLE_REVD
+90,Surgery of the aorta and heart,Procedure,HPN,HPN,NA,AJ,1996-01-01,2017-12-31,NA,Aorttaan ja muut sydämeen kohdistuvat leikkaukset,ELISA_LAHTELA
+91,Other surgery on the heart or aorta,Procedure,HPN,HPN,NA,AJX,1996-01-01,2017-12-31,NA,Muu sydämeen tai aorttaan kohdistuva leikkaus,GOOGLE_REVD
+92,"Reconstruction of the aortic base, eg composite graft, incl. valve saving operation",Procedure,HPN,HPN,NA,AJ1,1996-01-01,2017-12-31,NA,"Aortan tyven rekonstruktio esim. komposiittigrafti, sis. läpän säästävän toimenpiteen",ELISA_LAHTELA
+93,Reconstruction of the ascending aorta,Procedure,HPN,HPN,NA,AJ2,1996-01-01,2017-12-31,NA,Nousevan aortan rekonstruktio,GOOGLE_REVD
+94,Reconstruction of the aortic arch,Procedure,HPN,HPN,NA,AJ3,1996-01-01,2017-12-31,NA,Aortan kaaren rekonstruktio,GOOGLE_REVD
+95,Reconstruction of the descending thoracic aorta,Procedure,HPN,HPN,NA,AJ4,1996-01-01,2017-12-31,NA,Laskevan torakaaliaortan rekonstruktio,GOOGLE_REVD
+96,Reconstruction of the descending thoracic aorta with a stent graft,Procedure,HPN,HPN,NA,AJ5,1996-01-01,2017-12-31,NA,Laskevan torakaaliaortan rekonstruktio stenttigraftilla,GOOGLE_REVD
+97,Heart and lung transplant surgeries,Procedure,HPN,HPN,NA,AK,1996-01-01,2017-12-31,NA,Sydän- ja keuhkosiirtoleikkaukset,GOOGLE_REVD
+98,Other heart / lung transplant surgery,Procedure,HPN,HPN,NA,AKX,1996-01-01,2017-12-31,NA,Muu sydän/keuhkosiirtoleikkaus,GOOGLE_REVD
+99,HTX (heart transplant),Procedure,HPN,HPN,NA,AK1,1996-01-01,2017-12-31,NA,HTX (sydänsiirto),GOOGLE_REVD
+100,SLTX (other lung transplant),Procedure,HPN,HPN,NA,AK2,1996-01-01,2017-12-31,NA,SLTX (toisen keuhkon siirto),ELISA_LAHTELA
+101,BLTX (both lung transplants),Procedure,HPN,HPN,NA,AK3,1996-01-01,2017-12-31,NA,BLTX (molempien keuhkojen siirto),GOOGLE_REVD
+102,"""HLTX (Cardiac Lung Transplant,"" ""Block Transplant"" "")""",Procedure,HPN,HPN,NA,AK4,1996-01-01,2017-12-31,NA,"""HLTX (sydänkeuhkosiirto,"""" blokkisiirto"""")""",GOOGLE_REVD
+103,Additional operations (immediate or same treatment period),Procedure,HPN,HPN,NA,AL,1996-01-01,2017-12-31,NA,Täydentävät toimenpiteet  ( välitön tai sama hoitojakso),ELISA_LAHTELA
+104,"Other additional surgery or procedure, same treatment period",Procedure,HPN,HPN,NA,ALX,1996-01-01,2017-12-31,NA,"Muu täydentävä leikkaus tai toimenpide, sama hoitojakso",ELISA_LAHTELA
+105,"Bypass, valve or other additional reconstruction, same treatent period",Procedure,HPN,HPN,NA,AL1,1996-01-01,2017-12-31,NA,"Ohitus- läppä- tai  muu täydentävä rekonstruktio, sama hoitojakso",ELISA_LAHTELA
+106,"Balloon angioplasty or other percutaneous additional procedure, same treatment period",Procedure,HPN,HPN,NA,AL2,1996-01-01,2017-12-31,NA,"Pallolaajennus tai muu perkutaaninen täydentävä toimenpide, sama hoitojakso",ELISA_LAHTELA
+107,Other surgeries / procedures for the demanding cardiac patient,Procedure,HPN,HPN,NA,AM,1996-01-01,2017-12-31,NA,Muut vaativan sydänpotilaan leikkaukset/toimenpiteet,GOOGLE_REVD
+108,Other surgical procedure for a demanding cardiac patient,Procedure,HPN,HPN,NA,AMX,1996-01-01,2017-12-31,NA,Muu vaativan sydänpotilaan leikkaustoimenpide,GOOGLE_REVD
+109,Carotid surgery,Procedure,HPN,HPN,NA,AM1,1996-01-01,2017-12-31,NA,Karotisleikkaus,GOOGLE_REVD
+110,"Surgery of infarction complication eg VSR, aneurysm, rupture of papillary muscle",Procedure,HPN,HPN,NA,AM2,1996-01-01,2017-12-31,NA,"Infarktikomplikaation kirurgia esim. VSR, aneurysma, papillaarilihaksen ruptura",ELISA_LAHTELA
+111,Use of IABP as mechanical support,Procedure,HPN,HPN,NA,AM3,1996-01-01,2017-12-31,NA,IABP:n käyttö mekaanisena tukena,GOOGLE_REVD
+112,VAD (use of the left and / or right side mechanical support (other than IABP),Procedure,HPN,HPN,NA,AM4,1996-01-01,2017-12-31,NA,VAD (Vasemman ja/tai oikean puolen mekaanisen tuen käyttö (muu kuin IABP),ELISA_LAHTELA
+113,"Coronary angiographies, balloon angioplasties and other catheter operations",Procedure,HPN,HPN,NA,AN,1996-01-01,2017-12-31,NA,"Sepelvaltimoiden angiografiat, pallolaajennukset ja muut katetritoimenpiteet",ELISA_LAHTELA
+114,Coronary roablation,Procedure,HPN,HPN,NA,ANA,1996-01-01,2017-12-31,NA,Sepelvaltimon rotablaatio,ELISA_LAHTELA
+115,Coronary thrombectomy,Procedure,HPN,HPN,NA,ANB,1996-01-01,2017-12-31,NA,Sepelvaltimon trombektomia,GOOGLE_REVD
+116,"Coronary artery pressure measurement (FFR, fractional flow reserve)",Procedure,HPN,HPN,NA,ANC,1996-01-01,2017-12-31,NA,"Sepelvaltimon sisäinen paineenmittaus (FFR, fractional flow reserve)",ELISA_LAHTELA
+117,"Coronary artery pressure measurement (CFR, coronary flow reserve)",Procedure,HPN,HPN,NA,AND,1996-01-01,2017-12-31,NA,"Sepelvaltimon sisäinen virtausmittaus (CFR, coronary flow reserve)",ELISA_LAHTELA
+118,Coronary internal ultrasound (IVUS),Procedure,HPN,HPN,NA,ANE,1996-01-01,2017-12-31,NA,Sepelvaltimon sisäinen ultraääni (IVUS),GOOGLE_REVD
+119,Coronary radiotherapy,Procedure,HPN,HPN,NA,ANF,1996-01-01,2017-12-31,NA,Sepelvaltimon sädehoito,GOOGLE_REVD
+120,Other percutaneous coronary operation,Procedure,HPN,HPN,NA,ANX,1996-01-01,2017-12-31,NA,Muu sepelvaltimon perkutaaninen toimenpide,GOOGLE_REVD
+121,Coronary angiography,Procedure,HPN,HPN,NA,AN1,1996-01-01,2017-12-31,NA,Sepelvaltimoiden angiografia,GOOGLE_REVD
+122,"Balloon angioplasty, including several vessels",Procedure,HPN,HPN,NA,AN2,1996-01-01,2017-12-31,NA,"Pallolaajennus, myös useat suonet",ELISA_LAHTELA
+123,Balloon angioplasty and metallic stent,Procedure,HPN,HPN,NA,AN3,1996-01-01,2017-12-31,NA,Pallolaajennus ja metalliverkkoputken asennus,ELISA_LAHTELA
+124,Balloon angioplasty and drug eluding stent,Procedure,HPN,HPN,NA,AN4,1996-01-01,2017-12-31,NA,Pallolaajennus ja lääkeverkkoputken asennus,ELISA_LAHTELA
+125,Other cardiac catheter procedures,Procedure,HPN,HPN,NA,AP,1996-01-01,2017-12-31,NA,Muut sydämen katetritoimenpiteet,GOOGLE_REVD
+126,Balloon angioplasty of coarctation,Procedure,HPN,HPN,NA,APA,1996-01-01,2017-12-31,NA,Koarktaation pallolaajennus,ELISA_LAHTELA
+127,"Balloon angioplasty of coarctation, metallic stent",Procedure,HPN,HPN,NA,APB,1996-01-01,2017-12-31,NA,Koarktaation pallolaajennus ja metalliverkkoputken asennus,ELISA_LAHTELA
+128,Pulmonary artery balloon angioplasty,Procedure,HPN,HPN,NA,APC,1996-01-01,2017-12-31,NA,Keuhkovaltimon pallolaajennus,ELISA_LAHTELA
+129,Pulmonary artery balloon angiplasty and metallic stent,Procedure,HPN,HPN,NA,APD,1996-01-01,2017-12-31,NA,Keuhkovaltimon pallolaajennus ja metalliverkkoputken asennus,ELISA_LAHTELA
+130,Other balloon angioplasties,Procedure,HPN,HPN,NA,APE,1996-01-01,2017-12-31,NA,Muu verisuonen pallolaajennus,ELISA_LAHTELA
+131,Other balloon angioplasties and metallic stents,Procedure,HPN,HPN,NA,APF,1996-01-01,2017-12-31,NA,Muu verisuonen pallolaajennus ja metalliverkkoputken asennus,ELISA_LAHTELA
+132,PDA closure,Procedure,HPN,HPN,NA,APH,1996-01-01,2017-12-31,NA,PDA sulku,GOOGLE_REVD
+133,PFO closure,Procedure,HPN,HPN,NA,APJ,1996-01-01,2017-12-31,NA,PFO sulku,GOOGLE_REVD
+134,ASD closure,Procedure,HPN,HPN,NA,APK,1996-01-01,2017-12-31,NA,ASD sulku,GOOGLE_REVD
+135,VSD closure,Procedure,HPN,HPN,NA,APL,1996-01-01,2017-12-31,NA,VSD sulku,GOOGLE_REVD
+136,Auricle  closure,Procedure,HPN,HPN,NA,APM,1996-01-01,2017-12-31,NA,Eteiskorvakkeen sulku,GOOGLE_REVD
+137,Vascular embolization,Procedure,HPN,HPN,NA,APP,1996-01-01,2017-12-31,NA,Verisuonen embolisaatio,GOOGLE_REVD
+138,Pericardium fenestration with a balloon catheter,Procedure,HPN,HPN,NA,APQ,1996-01-01,2017-12-31,NA,Perikardiumin fenestraatio pallokatetrilla,GOOGLE_REVD
+139,Atrial septostomy,Procedure,HPN,HPN,NA,APR,1996-01-01,2017-12-31,NA,Eteisseptostomia,GOOGLE_REVD
+140,Ventricular septal alcohol ablation (septic vascular embolization),Procedure,HPN,HPN,NA,APS,1996-01-01,2017-12-31,NA,Kammioseptumin alkoholiablaatio (septaalisuonen embolisaatio),GOOGLE_REVD
+141,Other cardiac catheter operation,Procedure,HPN,HPN,NA,APX,1996-01-01,2017-12-31,NA,Muu sydämen katetritoimenpide,GOOGLE_REVD
+142,Catheterization of the left side of the heart,Procedure,HPN,HPN,NA,AP1,1996-01-01,2017-12-31,NA,Sydämen vasemman puolen katetrointi,ELISA_LAHTELA
+143,Catheterization of the right side of the heart,Procedure,HPN,HPN,NA,AP2,1996-01-01,2017-12-31,NA,Sydämen oikean puolen katetrointi,ELISA_LAHTELA
+144,Catheterization of the right and left side of the heart,Procedure,HPN,HPN,NA,AP3,1996-01-01,2017-12-31,NA,Sydämen oikean ja vasemman puolen katetrointi,ELISA_LAHTELA
+145,Myocardial biopsy,Procedure,HPN,HPN,NA,AP4,1996-01-01,2017-12-31,NA,Sydänlihasbiopsia,GOOGLE_REVD
+146,Valveoplasty of the pulmonary artery valve,Procedure,HPN,HPN,NA,AP5,1996-01-01,2017-12-31,NA,Valvuloplastia keuhkovaltimoläppään,ELISA_LAHTELA
+147,Valveoplasty of the aortic valve,Procedure,HPN,HPN,NA,AP6,1996-01-01,2017-12-31,NA,Valvuloplastia aorttaläppään,GOOGLE_REVD
+148,Valveoplasty of the mitral valve,Procedure,HPN,HPN,NA,AP7,1996-01-01,2017-12-31,NA,Valvuloplastia mitraaliläppään,ELISA_LAHTELA
+149,Valveoplasty of the tricuspidal valve,Procedure,HPN,HPN,NA,AP8,1996-01-01,2017-12-31,NA,Valvuloplastia trikuspidaaliläppään,ELISA_LAHTELA
+150,Electrophysiological special examination,Procedure,HPN,HPN,NA,AQ,1996-01-01,2017-12-31,NA,Elektrofysiologinen erikoistutkimus,GOOGLE_REVD
+151,"""Other electrophysiological examination, other than anatomical or"" ""non contact"" """"",Procedure,HPN,HPN,NA,AQX,1996-01-01,2017-12-31,NA,"""Muu elektrofysiologinen kartoitus kuin anatominen tai """"non contact""""""",ELISA_LAHTELA
+152,Conventional electrophysiological examination,Procedure,HPN,HPN,NA,AQ1,1996-01-01,2017-12-31,NA,Tavanomainen elektrofysiologinen tutkimus,GOOGLE_REVD
+153,Electrophysiological electroanatomical examination,Procedure,HPN,HPN,NA,AQ2,1996-01-01,2017-12-31,NA,Elektrofysiologinen elektroanatominen kartoitus,ELISA_LAHTELA
+154,"""Electrophysiological"" ""non-contact"" "" examination""",Procedure,HPN,HPN,NA,AQ3,1996-01-01,2017-12-31,NA,"""Elektrofysiologinen """"non-contact"""" kartoitus""",GOOGLE_REVD
+155,Catheter ablation of arrhythmia,Procedure,HPN,HPN,NA,AR,1996-01-01,2017-12-31,NA,Rytmihäiriön katetriablaatio,GOOGLE_REVD
+156,"Catheter ablation of arrhythmia, other subject",Procedure,HPN,HPN,NA,ARA,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, muu kohde",GOOGLE_REVD
+157,Catheter ablation of arrhythmia: Cutiing or modification of the AV node,Procedure,HPN,HPN,NA,ARB,1996-01-01,2017-12-31,NA,Rytmihäiriön katetriablaatio: AV -junktion katkaisu tai modifiointi,ELISA_LAHTELA
+158,Catheter ablation of arrhythmia: target: inappropriate sinus tachycardia,Procedure,HPN,HPN,NA,ARC,1996-01-01,2017-12-31,NA,Rytmihäiriön katetriablaatio: kohde: epätarkoituksenmukainen sinustakykardia,GOOGLE_REVD
+159,Other catheter ablation,Procedure,HPN,HPN,NA,ARX,1996-01-01,2017-12-31,NA,Muu katetriablaatio,GOOGLE_REVD
+160,"Catheter ablation of arrhythmia, target: AV node reentry activation (AVNRT)",Procedure,HPN,HPN,NA,AR1,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: eteiskammiosolmukkeen kiertoaktivaatio (AVNRT)",ELISA_LAHTELA
+161,"Catheter ablation of arrhythmia, target: extra pathway (WPW, AVRT, PJRT)",Procedure,HPN,HPN,NA,AR2,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: oikorata (WPW, AVRT, PJRT)",ELISA_LAHTELA
+162,"Catheter ablation of arrhythmia, target: atrial tachycardia",Procedure,HPN,HPN,NA,AR3,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: eteistakykardia",GOOGLE_REVD
+163,"Catheter ablation of arrhythmia, target: other tachycardia of abnormal pathways (Mahaim, branch tachycardia, fascicular, etc.)",Procedure,HPN,HPN,NA,AR4,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: muu poikkeavien ratojen takykardia (Mahaim, haaratakykardia, faskikulaarinen ym.)",GOOGLE_REVD
+164,"Catheter ablation of arrhythmia, target: atrial flutter",Procedure,HPN,HPN,NA,AR5,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: eteislepatus",GOOGLE_REVD
+165,"Catheter ablation of arrhythmia, target: atrial fibrillation",Procedure,HPN,HPN,NA,AR6,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: eteisvärinä",GOOGLE_REVD
+166,"Catheter ablation of arrhythmia, target: right ventricular tachycardia",Procedure,HPN,HPN,NA,AR7,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: oikean kammion takykardia",GOOGLE_REVD
+167,"Catheter ablation of arrhythmia, target: left ventricular tachycardia",Procedure,HPN,HPN,NA,AR8,1996-01-01,2017-12-31,NA,"Rytmihäiriön katetriablaatio, kohde: vasemman kammion takykardia",GOOGLE_REVD
+168,Pacemaker insertion,Procedure,HPN,HPN,NA,AS,1996-01-01,2017-12-31,NA,Tahdistimen asennus,GOOGLE_REVD
+169,Insertion of a biventricular pacemaker VVI (R) S,Procedure,HPN,HPN,NA,ASA,1996-01-01,2017-12-31,NA,Biventrikulaarisen rytmihäiriötahdistimen asennus VVI(R)S,ELISA_LAHTELA
+170,Insertion of a biventricular physiological pacemaker DDD (R),Procedure,HPN,HPN,NA,ASB,1996-01-01,2017-12-31,NA,"Biventrikulaarisen, fysiologisen rytmihäiriötahdistimen asennus DDD(R)",ELISA_LAHTELA
+171,Rhythm monitor insertion,Procedure,HPN,HPN,NA,ASC,1996-01-01,2017-12-31,NA,Rytmivalvurin asennus,GOOGLE_REVD
+172,Other pacemaker insertion,Procedure,HPN,HPN,NA,ASX,1996-01-01,2017-12-31,NA,Muu tahdistimem asennus,GOOGLE_REVD
+173,Artrial pacemaker insertion AAI (R),Procedure,HPN,HPN,NA,AS1,1996-01-01,2017-12-31,NA,Eteisahdistimen asennus AAI(R),ELISA_LAHTELA
+174,Ventricular pacemaker insertion VVI (R),Procedure,HPN,HPN,NA,AS2,1996-01-01,2017-12-31,NA,Kammiotahdistimen asennus VVI(R),ELISA_LAHTELA
+175,Insertion of a single-wire physiological pacemaker VDD (R),Procedure,HPN,HPN,NA,AS3,1996-01-01,2017-12-31,NA,"Yksijohtoisen, fysiologisen tahdistimen asennus VDD(R)",GOOGLE_REVD
+176,Physiological pacemaker insertion DDD (R),Procedure,HPN,HPN,NA,AS4,1996-01-01,2017-12-31,NA,Fysiologisen tahdistimen asennus DDD(R),GOOGLE_REVD
+177,Biventricular heart failure pacemaker insertion VVI (R),Procedure,HPN,HPN,NA,AS5,1996-01-01,2017-12-31,NA,Biventrikulaarisen vajaatoimintatahdistimen asennus VVI(R),ELISA_LAHTELA
+178,Biventricular physiological heart failure pacemaker insertion DDD (R),Procedure,HPN,HPN,NA,AS6,1996-01-01,2017-12-31,NA,"Biventrikulaarisen, fysiologisen vajaatoimintatahdistimen asennus DDD(R)",ELISA_LAHTELA
+179,Arrhythmia pacemaker insertion VVI (R) S,Procedure,HPN,HPN,NA,AS7,1996-01-01,2017-12-31,NA,Rytmihäiriötahdistimen asennus VVI(R)S,GOOGLE_REVD
+180,Physiological arrhythmia pacemaker  insertionDDD (R) S,Procedure,HPN,HPN,NA,AS8,1996-01-01,2017-12-31,NA,Fysiologisen rytmihäiriötahdistimen asennus DDD(R)S,GOOGLE_REVD
+181,Replacing the pacemaker,Procedure,HPN,HPN,NA,AT,1996-01-01,2017-12-31,NA,Tahdistimen vaihto,GOOGLE_REVD
+182,Biventricular pacemaker replacement VVI (R) S,Procedure,HPN,HPN,NA,ATA,1996-01-01,2017-12-31,NA,Biventrikulaarisen rytmihäiriötahdistimen vaihto VVI(R)S,ELISA_LAHTELA
+183,"Replacement of biventricular, physiological pacemaker DDD (R) S",Procedure,HPN,HPN,NA,ATB,1996-01-01,2017-12-31,NA,"Biventrikulaarisen, fysiologisen rytmihäiriötahdistimen vaihto DDD(R)S",GOOGLE_REVD
+184,"Other pacemaker replacement or related action, such as cord removal or replacement",Procedure,HPN,HPN,NA,ATX,1996-01-01,2017-12-31,NA,"Muu tahdistimen vaihto tai siihen liittyvä toimenpide, esim johdon poisto tai vaihto",GOOGLE_REVD
+185,Artrial pacemaker replacement AAI (R),Procedure,HPN,HPN,NA,AT1,1996-01-01,2017-12-31,NA,Eteisahdistimen vaihto AAI(R),ELISA_LAHTELA
+186,Ventricular pacemaker replacement VVI (R),Procedure,HPN,HPN,NA,AT2,1996-01-01,2017-12-31,NA,Kammiotahdistimen vaihto VVI(R),ELISA_LAHTELA
+187,"Single-wire, physiological pacemaker replacement VDD (R)",Procedure,HPN,HPN,NA,AT3,1996-01-01,2017-12-31,NA,"Yksijohtoisen, fysiologisen tahdistimenvaihto VDD(R)",GOOGLE_REVD
+188,Physiological pacemaker replacement DDD (R),Procedure,HPN,HPN,NA,AT4,1996-01-01,2017-12-31,NA,Fysiologisen tahdistimenvaihto DDD(R),GOOGLE_REVD
+189,Biventricular heart failure pacemaker replacement VVI (R),Procedure,HPN,HPN,NA,AT5,1996-01-01,2017-12-31,NA,Biventrikulaarisen vajaatoimintatahdistimen vaihto VVI(R),GOOGLE_REVD
+190,Biventricular physiological heart failure pacemaker replacement DDD (R),Procedure,HPN,HPN,NA,AT6,1996-01-01,2017-12-31,NA,"Biventrikulaarisen, fysiologisen vajaatoimintatahdistimen vaihto DDD(R)",GOOGLE_REVD
+191,Replacing the pacemaker VVI (R) S,Procedure,HPN,HPN,NA,AT7,1996-01-01,2017-12-31,NA,Rytmihäiriötahdistimen vaihto VVI(R)S,GOOGLE_REVD
+192,Physiological pacemaker replacement DDD (R) S,Procedure,HPN,HPN,NA,AT8,1996-01-01,2017-12-31,NA,Fysiologisen rytmihäiriötahdistimen vaihto DDD(R)S,GOOGLE_REVD

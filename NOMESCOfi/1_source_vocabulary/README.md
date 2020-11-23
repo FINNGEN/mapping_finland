@@ -76,18 +76,18 @@ TODO: recalcualte `domain_id` based on the mapping
 
 <div class="kable-table">
 
-| concept\_id | concept\_name                          | domain\_id | vocabulary\_id | concept\_class\_id | standard\_concept | concept\_code  | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_name\_fi                   |
-| ----------: | :------------------------------------- | :--------- | :------------- | :----------------- | :---------------- | :------------- | :----------------- | :--------------- | :-------------- | :------------------------------ |
-|           1 | NOMESCO Finnish modification           | Metadata   | Vocabulary     | Vocabulary         | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           2 | NOMESCOfi Level 0                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           3 | NOMESCOfi Level 1                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           4 | NOMESCOfi Level 2                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           5 | NOMESCOfi Level 3                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           6 | NOMESCOfi Level 4                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              |
-|           7 | Nervous system                         | Procedure  | NOMESCOfi      | NOMESCOfi Level 0  | NA                | A              | 1900-01-01         | 2030-12-31       | NA              | Hermosto                        |
-|           8 | Skull and intracranial structures      | Procedure  | NOMESCOfi      | NOMESCOfi Level 1  | NA                | AA             | 1900-01-01         | 2030-12-31       | NA              | Kallo ja kallon sisäiset elimet |
-|           9 | Diagnostic radiology of head and brain | Procedure  | NOMESCOfi      | NOMESCOfi Level 2  | NA                | AA\_           | 1900-01-01         | 2030-12-31       | NA              | Pään diagnostinen radiologia    |
-|          10 | Head X-ray examination                 | Procedure  | NOMESCOfi      | NOMESCOfi Level 3  | NA                | AA1AA          | 1999-01-01         | 2030-12-31       | NA              | Kallon röntgen                  |
+| concept\_id | concept\_name                          | domain\_id | vocabulary\_id | concept\_class\_id | standard\_concept | concept\_code  | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_name\_fi                   | tmp\_name\_en\_source |
+| ----------: | :------------------------------------- | :--------- | :------------- | :----------------- | :---------------- | :------------- | :----------------- | :--------------- | :-------------- | :------------------------------ | :-------------------- |
+|           1 | NOMESCO Finnish modification           | Metadata   | Vocabulary     | Vocabulary         | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           2 | NOMESCOfi Level 0                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           3 | NOMESCOfi Level 1                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           4 | NOMESCOfi Level 2                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           5 | NOMESCOfi Level 3                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           6 | NOMESCOfi Level 4                      | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA                              | NA                    |
+|           7 | Nervous system                         | Procedure  | NOMESCOfi      | NOMESCOfi Level 0  | NA                | A              | 1900-01-01         | 2030-12-31       | NA              | Hermosto                        | THL                   |
+|           8 | Skull and intracranial structures      | Procedure  | NOMESCOfi      | NOMESCOfi Level 1  | NA                | AA             | 1900-01-01         | 2030-12-31       | NA              | Kallo ja kallon sisäiset elimet | THL                   |
+|           9 | Diagnostic radiology of head and brain | Procedure  | NOMESCOfi      | NOMESCOfi Level 2  | NA                | AA\_           | 1900-01-01         | 2030-12-31       | NA              | Pään diagnostinen radiologia    | THL                   |
+|          10 | Head X-ray examination                 | Procedure  | NOMESCOfi      | NOMESCOfi Level 3  | NA                | AA1AA          | 1999-01-01         | 2030-12-31       | NA              | Kallon röntgen                  | THL                   |
 
 </div>
 

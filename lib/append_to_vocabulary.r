@@ -39,11 +39,15 @@ append_vocabs <- tribble(
   "NOMESCOfi",      11*10^8L,
   "REIMB",           12*10^8L,
   "SPAT",           13*10^8L,
+  "FHL",           14*10^8L,
+  "HPN",           15*10^8L,
+  
 )
 
 
 
 # append ------------------------------------------------------------------
+concept_fg_info <- tibble()
 
 for (i in 1:nrow(append_vocabs)) {
     
@@ -60,10 +64,12 @@ for (i in 1:nrow(append_vocabs)) {
       .default = col_character()
     )
   ) %>% 
-    select(-starts_with("tmp_")) %>% 
     mutate(concept_id = concept_id + offset_concept_id)
   
-  concept <- bind_rows(concept, concept_vocab)  
+  concept <- bind_rows(concept, concept_vocab %>% select(-starts_with("tmp_")) )
+  
+  ## concept extra finngen info 
+  concept_fg_info <- bind_rows(concept_fg_info, concept_vocab %>% select( concept_id, starts_with("tmp_")) )
   
   ## vocabulary 
   vocabulary_vocab <- read_csv(
@@ -138,17 +144,79 @@ concept %>% filter(concept_id %in% cc$concept_class_concept_id) %>% print(n=1000
 concept_synonym %>% tail()
 concept_relationship %>% tail()
 
-# save --------------------------------------------------------------------
-write_csv(concept, file.path(path_output, "CONCEPT.csv"))
-write_csv(vocabulary, file.path(path_output, "VOCABULARY.csv"))
-write_csv(concept_class, file.path(path_output, "CONCEPT_CLASS.csv"))
-write_csv(concept_synonym, file.path(path_output, "CONCEPT_SYNONYM.csv"))
-write_csv(concept_relationship, file.path(path_output, "CONCEPT_RELATIONSHIP.csv"))
 
-file.copy(file.path(path_to_vocabulary, "CONCEPT_ANCESTOR.csv"), file.path(path_output, "CONCEPT_ANCESTOR.csv"))
-file.copy(file.path(path_to_vocabulary, "DRUG_STRENGTH.csv"), file.path(path_output, "DRUG_STRENGTH.csv"))
-file.copy(file.path(path_to_vocabulary, "DOMAIN.csv"), file.path(path_output, "DOMAIN.csv"))
-file.copy(file.path(path_to_vocabulary, "RELATIONSHIP.csv"), file.path(path_output, "RELATIONSHIP.csv"))
+
+# save as feather --------------------------------------------------------------------
+library(feather)
+write_feather(concept, file.path(path_output, "CONCEPT.feather"))
+write_feather(vocabulary, file.path(path_output, "VOCABULARY.feather"))
+write_feather(concept_class, file.path(path_output, "CONCEPT_CLASS.feather"))
+write_feather(concept_synonym, file.path(path_output, "CONCEPT_SYNONYMfeather"))
+write_feather(concept_relationship, file.path(path_output, "CONCEPT_RELATIONSHIP.feather"))
+write_feather(concept_fg_info, file.path(path_output, "concept_fg_info.feather"))
+
+# CONCEPT_ANCESTOR
+col_types <- cols(
+  ancestor_concept_id  = col_integer(),
+  descendant_concept_id  = col_integer(),
+  min_levels_of_separation  = col_integer(), 
+  max_levels_of_separation = col_integer()
+)
+read_csv(file.path(path_to_vocabulary, "CONCEPT_ANCESTOR.csv"), col_types=col_types) %>% 
+write_feather(file.path(path_output, "CONCEPT_ANCESTOR.feather"))
+
+# DRUG_STRENGTH
+col_types <- cols(
+  drug_concept_id = col_integer(),
+  ingredient_concept_id = col_integer(),
+  amount_value = col_double(),
+  amount_unit_concept_id = col_integer(),
+  numerator_value = col_double(),
+  numerator_unit_concept_id = col_integer(),
+  denominator_value = col_double(),
+  denominator_unit_concept_id = col_integer(),
+  box_size = col_integer(),
+  valid_start_date = col_date(),
+  valid_end_date = col_date(),
+  invalid_reason = col_character()
+)
+read_csv(file.path(path_to_vocabulary, "DRUG_STRENGTH.csv"), col_types=col_types) %>% 
+  write_feather(file.path(path_output, "DRUG_STRENGTH.feather"))
+
+# DOMAIN
+col_types <- cols(
+  domain_id = col_character(),
+  domain_name = col_character(),
+  domain_concept_id = col_integer()
+)
+read_tsv(file.path(path_to_vocabulary, "DOMAIN.csv"), col_types=col_types) %>% 
+  write_feather(file.path(path_output, "DOMAIN.feather"))
+
+# RELATIONSHIP
+col_types <- cols(
+  relationship_id = col_character(),
+  relationship_name = col_character(),
+  is_hierarchical = col_character(),
+  defines_ancestry = col_character(),
+  reverse_relationship_id = col_character(),
+  relationship_concept_id = col_integer()
+)
+read_tsv(file.path(path_to_vocabulary, "RELATIONSHIP.csv"), col_types=col_types) %>% 
+  write_feather(file.path(path_output, "RELATIONSHIP.feather"))
+
+# # save as csv --------------------------------------------------------------------
+# write_csv(concept, file.path(path_output, "CONCEPT.csv"))
+# write_csv(vocabulary, file.path(path_output, "VOCABULARY.csv"))
+# write_csv(concept_class, file.path(path_output, "CONCEPT_CLASS.csv"))
+# write_csv(concept_synonym, file.path(path_output, "CONCEPT_SYNONYM.csv"))
+# write_csv(concept_relationship, file.path(path_output, "CONCEPT_RELATIONSHIP.csv"))
+# write_csv(concept_fg_info, file.path(path_output, "concept_fg_info.csv"))
+# 
+# 
+# file.copy(file.path(path_to_vocabulary, "CONCEPT_ANCESTOR.csv"), file.path(path_output, "CONCEPT_ANCESTOR.csv"))
+# file.copy(file.path(path_to_vocabulary, "DRUG_STRENGTH.csv"), file.path(path_output, "DRUG_STRENGTH.csv"))
+# file.copy(file.path(path_to_vocabulary, "DOMAIN.csv"), file.path(path_output, "DOMAIN.csv"))
+# file.copy(file.path(path_to_vocabulary, "RELATIONSHIP.csv"), file.path(path_output, "RELATIONSHIP.csv"))
 
 
 

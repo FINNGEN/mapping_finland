@@ -65,17 +65,17 @@ TODO: recalcualte `domain_id` based on the mapping
 
 <div class="kable-table">
 
-| concept\_id | concept\_name             | domain\_id | vocabulary\_id | concept\_class\_id | standard\_concept | concept\_code  | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_name\_fi    |
-| ----------: | :------------------------ | :--------- | :------------- | :----------------- | :---------------- | :------------- | :----------------- | :--------------- | :-------------- | :--------------- |
-|           1 | ICD8 Finnish modification | Metadata   | Vocabulary     | Vocabulary         | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               |
-|           5 | 3-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               |
-|           6 | 4-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               |
-|           7 | 5-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               |
-|           8 | Cholera                   | Condition  | ICD8fi         | 3-digit ICD8fi     | NA                | 000            | 1970-01-01         | 2299-11-03       | NA              | Kolera           |
-|           9 | Classical Cholera         | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00001          | 1970-01-01         | 2299-11-03       | NA              | Kolera, Classica |
-|          10 | Cholera, El Tor           | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00010          | 1970-01-01         | 2299-11-03       | NA              | Kolera, El Tor   |
-|          11 | Cholera, Suspecta         | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00097          | 1970-01-01         | 2299-11-03       | NA              | Kolera, Suspecta |
-|          12 | Cholera, Unspecified      | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00099          | 1970-01-01         | 2299-11-03       | NA              | Kolera, NUD      |
-|          13 | Typhoid fever             | Condition  | ICD8fi         | 3-digit ICD8fi     | NA                | 001            | 1970-01-01         | 2299-11-03       | NA              | Lavantauti       |
+| concept\_id | concept\_name             | domain\_id | vocabulary\_id | concept\_class\_id | standard\_concept | concept\_code  | valid\_start\_date | valid\_end\_date | invalid\_reason | tmp\_name\_fi    | tmp\_name\_en\_source |
+| ----------: | :------------------------ | :--------- | :------------- | :----------------- | :---------------- | :------------- | :----------------- | :--------------- | :-------------- | :--------------- | :-------------------- |
+|           1 | ICD8 Finnish modification | Metadata   | Vocabulary     | Vocabulary         | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               | NA                    |
+|           5 | 3-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               | NA                    |
+|           6 | 4-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               | NA                    |
+|           7 | 5-digit ICD8fi            | Metadata   | Concept Class  | Concept Class      | NA                | OMOP generated | 1970-01-01         | 2099-12-31       | NA              | NA               | NA                    |
+|           8 | Cholera                   | Condition  | ICD8fi         | 3-digit ICD8fi     | NA                | 000            | 1970-01-01         | 2299-11-03       | NA              | Kolera           | THL                   |
+|           9 | Classical Cholera         | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00001          | 1970-01-01         | 2299-11-03       | NA              | Kolera, Classica | THL                   |
+|          10 | Cholera, El Tor           | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00010          | 1970-01-01         | 2299-11-03       | NA              | Kolera, El Tor   | THL                   |
+|          11 | Cholera, Suspecta         | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00097          | 1970-01-01         | 2299-11-03       | NA              | Kolera, Suspecta | THL                   |
+|          12 | Cholera, Unspecified      | Condition  | ICD8fi         | 5-digit ICD8fi     | NA                | 00099          | 1970-01-01         | 2299-11-03       | NA              | Kolera, NUD      | THL                   |
+|          13 | Typhoid fever             | Condition  | ICD8fi         | 3-digit ICD8fi     | NA                | 001            | 1970-01-01         | 2299-11-03       | NA              | Lavantauti       | THL                   |
 
 </div>

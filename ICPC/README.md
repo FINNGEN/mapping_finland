@@ -42,9 +42,9 @@ ICD10 codes. This was mapped to the OMOP’s ICD10who `concept_id`.
 
 ## Progess in number of codes
 
-From 1 443 codes 940 have been approved.
+From 1 443 codes 678 have been approved.
 
-This makes 65% of codes approved.
+This makes 47% of codes approved.
 
 # Assessing coverage of databases
 
@@ -76,8 +76,8 @@ The full list can be found in
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
 | :---------- | -------: | :--------- | --------: | :---------- |
-| mapped      |      672 | 66.469%    |   6404158 | 84.633%     |
-| not\_mapped |      336 | 33.234%    |   1119966 | 14.801%     |
+| mapped      |      646 | 63.897%    |   7230393 | 95.552%     |
+| not\_mapped |      362 | 35.806%    |    293731 | 3.882%      |
 | not\_found  |        3 | 0.297%     |     42843 | 0.566%      |
 
 </div>

@@ -155,7 +155,8 @@ nomescofi_concept <- nomescofi_source %>%
     concept_code = CodeId, 
     valid_start_date = dmy(BeginningDate), 
     valid_end_date = dmy(ExpiringDate), 
-    tmp_name_fi = LongName # keep for USAGI
+    tmp_name_fi = LongName, # keep for USAGI
+    tmp_name_en_source = `A:Long_name_source`
   ) 
     
         

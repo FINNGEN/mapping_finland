@@ -1,0 +1,123 @@
+---
+title: "HPN"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(scales)
+
+source("../lib/vocabulary_reporting_fuctions.r")
+
+
+# Document variables 
+N_TOPS <- 10
+
+# output status
+db_statuses <- tibble()
+
+```
+
+```{r load, message=FALSE, warning=FALSE}
+hpn_concept <- read_csv("./1_source_vocabulary/CONCEPT_HPN.csv") %>% 
+  filter(domain_id!="Metadata")
+
+hpn_mapsto <- read_csv("../ATC/2_mapping_to_standard/CONCEPT_RELATIONSHIP_ATC.csv") %>% 
+  filter(FALSE) ## read an other table to keep same colums
+
+hpn_freqs <- read_csv("./3_freq_of_source_codes/freq_total.csv",
+  col_types = cols(
+    code = col_character(),
+    freq_finngen = col_double(),
+    freq_total = col_double()
+  )
+)
+```
+
+
+# Intro
+TODO:
+
+
+# Formating source vocabulary to OMOP
+TODO
+
+```{r}
+hpn_concept %>% count(tmp_name_en_source, sort = T)
+```
+
+Source table with added translation has been formatted to be similar to OMOP in  [1_source_vocabulary/hpn_for_source_vocabulary.csv](1_source_vocabulary/hpn_for_source_vocabulary.csv). 
+
+
+
+## Progess in number of codes
+```{r}
+n_codes <- hpn_concept %>% nrow()
+n_codes_accepted <- hpn_mapsto %>% distinct(concept_id_1) %>% nrow()
+```
+
+
+From `r scales::number(n_codes)` codes `r scales::number(n_codes_accepted)` have been approved. 
+
+This makes `r scales::percent(n_codes_accepted/n_codes)` of codes approved. 
+
+
+```{r}
+db_statuses <- bind_rows(
+  tibble(
+    status = "mapped",
+    n_codes = n_codes_accepted,
+    per_codes = percent(n_codes_accepted/!!n_codes),
+    n_events = as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  ),
+ tibble(
+    status = "not_mapped",
+    n_codes = !!n_codes-n_codes_accepted,
+    per_codes = percent((!!n_codes-n_codes_accepted)/!!n_codes),
+    n_events =  as.double(NA),
+    per_events = as.character(NA), 
+    db_name = "source"
+  )
+)
+```
+
+
+
+
+
+# Assessing coverage of databases
+
+
+```{r  results='asis'}
+
+#write_csv(db_statuses, "status_table.csv" )
+ database_coverage_md("HPN", hpn_concept, hpn_mapsto, hpn_freqs) 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

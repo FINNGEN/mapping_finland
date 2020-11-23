@@ -1,5 +1,5 @@
 ---
-title: "ICD9fi source vocabulary"
+title: "fhl source vocabulary"
 output:
   github_document:
     toc: true
@@ -26,36 +26,46 @@ path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
 
 ## Import Vocabulary
 
-TODO: i got it from aki now in the gitlab repo 
+from Mary
 
-The concept names are a mixed of Latin, Finnish, and English !!. These are not translated to English !!. The English name were append by matching the ICD9fi code to the ICD9 code dowloaded from [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020). 
 
-```{r}
-icd9fi_source <- read_excel("./THL_ICD9fi_matched_ICD9CM_and_Wolfbane_ICD9.xlsx")
+```{r load, message=FALSE, warning=FALSE}
+fhl_source <- read_excel("../../lib/finngen_codes_compilation/Code_Set_Compilation_v2.xlsx") %>% 
+  filter(code_set=="FHL") %>% 
+  rename(code = code, 
+         name_fi = name_fi, 
+         name_en = name_en,
+         name_en_source = name_en_source ) %>% 
+  mutate(name_en_source = str_replace(name_en_source, "GOOGLE", "Google")) %>% 
+  mutate(code = as.character(code), valid_start_date = as_date(valid_start_date), valid_end_date = as_date(valid_end_date)) 
+ 
 ```
 
 
-
 ## Traslation to English 
-TODO: so far we have tried to match ICD9fi codes to ICD9CM and Wolfbane (seems to be the same) with  no success 
+The concept names were translated to English as follow: 
 
-ATM i will keep the names as they are and lets see later 
+- `Google`: 
+
+```{r}
+fhl_source %>% count(name_en_source, sort = T)
+```
 
 ## Formating source vocabulary to OMOP
 
 #### Create VOCABULARY table
 ```{r}
-icd9fi_vocabulaly <- tibble(
-  vocabulary_id = "ICD9fi", 
-  vocabulary_name = "ICD9 Finnish modification",
+fhl_vocabulaly <- tibble(
+  vocabulary_id = "FHL", 
+  vocabulary_name = "Finnish Hospital Leage",
   vocabulary_reference = "", 
   vocabulary_version = "", 
   vocabulary_concept_id = 1
 )
 
-icd9fi_vocabulary_concept <- tibble(
+fhl_vocabulary_concept <- tibble(
    concept_id = 1,                                                                
-   concept_name = "ICD9 Finnish modification",
+   concept_name = "Finnish Hospital Leage",
    domain_id  = "Metadata",                                                            
    vocabulary_id  =  "Vocabulary",                                                             
    concept_class_id = "Vocabulary",                                                             
@@ -66,27 +76,21 @@ icd9fi_vocabulary_concept <- tibble(
    invalid_reason =  as.character(NA)   
 )
 
-write_csv(icd9fi_vocabulaly, "./VOCABULARY_ICD9fi.csv")
+write_csv(fhl_vocabulaly, "./VOCABULARY_FHL.csv")
 
-icd9fi_vocabulaly
+fhl_vocabulaly
 ```
 
 #### Create CONCEPT_CLASS table
 ```{r}
-icd9fi_concept_class <- tibble(
-  concept_class_id = "-char ICD9fi", 
-  concept_class_name = " ICD9 Finnish Modification Hierarchy Level ",
+fhl_concept_class <- tibble(
+  concept_class_id = "FHL", 
+  concept_class_name = "Finnish Hospital Leage",
   concept_class_concept_id = 2
-) %>% bind_cols( tibble( level = 3:5)) %>% 
-  mutate(
-    concept_class_id = str_c(level, concept_class_id ), 
-    concept_class_name = str_c(level, concept_class_name ), 
-    concept_class_concept_id = concept_class_concept_id + level
-    ) %>% 
-  select(-level)
+) 
+ # TOASK: any level or classes ??
 
-
-icd9fi_concept_class_concept <- tibble(
+fhl_concept_class_concept <- tibble(
    #concept_id = 1,                                                                
    #concept_name = "NOMESCO Finnish modification",
    domain_id  = "Metadata",                                                            
@@ -99,62 +103,109 @@ icd9fi_concept_class_concept <- tibble(
    invalid_reason =  as.character(NA)   
 )
 
-icd9fi_concept_class_concept <- 
+fhl_concept_class_concept <- 
   bind_cols(
-    icd9fi_concept_class %>% 
+    fhl_concept_class %>% 
       rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
       select(concept_id, concept_name), 
-    icd9fi_concept_class_concept
+    fhl_concept_class_concept
   )
 
 
-write_csv(icd9fi_concept_class, "./CONCEPT_CLASS_ICD9fi.csv")
+write_csv(fhl_concept_class, "./CONCEPT_CLASS_FHL.csv")
 
-icd9fi_concept_class
+fhl_concept_class
 ```
 
 
 #### Create CONCEPT table 
 
-At the moment `domain_id` is "Condition" for all although several are not procedures. 
+At the moment `domain_id` is "Procedure" for all although several are not procedures. 
 
 TODO: recalcualte `domain_id` based on the mapping 
 
 ```{r}
 
 # add concept_id
-icd9fi_source <- icd9fi_source %>% 
-   mutate( concept_id = 1:nrow(.)+7 ) # as already 6 for domain and concept_class
+fhl_source <- fhl_source %>% 
+   mutate( concept_id = 1:nrow(.)+2 ) # as already 2 for domain and concept_class
 
 
-icd9fi_concept <- icd9fi_source %>% 
+fhl_concept <- fhl_source %>% 
   transmute(
     concept_id = concept_id, 
-    concept_name = ICD9TXT,
-    domain_id = "Condition", # at the moment
-    vocabulary_id = "ICD9fi", 
-    concept_class_id = str_c(nchar(ICD9), "-char ICD9fi"), 
+    concept_name = name_en,
+    domain_id = "Procedure", # at the moment
+    vocabulary_id = "FHL", 
+    concept_class_id = "FHL", 
     standard_concept = as.character(NA), 
-    concept_code = ICD9, 
-    valid_start_date = as.Date("1970-01-01"), 
-    valid_end_date = as.Date("2099-12-31"), 
-    tmp_name_fi = concept_name,  # keep for USAGI
-    tmp_name_en_source = "Latin"
+    concept_code = code, 
+    valid_start_date = if_else(is.na(valid_start_date), as.Date("1970-01-01"), valid_start_date), 
+    valid_end_date = if_else(is.na(valid_end_date), as.Date("2099-12-31"), valid_end_date), 
+    tmp_name_fi = name_fi, # keep for USAGI
+    tmp_name_en_source = name_en_source
   ) 
     
         
 # add  concepts for domain and concept_class
-icd9fi_concept <- bind_rows(
-  icd9fi_vocabulary_concept, 
-  icd9fi_concept_class_concept, 
-  icd9fi_concept
+fhl_concept <- bind_rows(
+  fhl_vocabulary_concept, 
+  fhl_concept_class_concept, 
+  fhl_concept
 )
 
 
-write_csv(icd9fi_concept, "./CONCEPT_ICD9fi.csv")
+write_csv(fhl_concept, "./CONCEPT_FHL.csv")
 
-icd9fi_concept %>% head(N_TOPS)
+fhl_concept %>% head(N_TOPS)
 ```
+
+
+#### Create CONCEPT_SYNONYM table 
+- 4181730 # Finnish language
+- 4175777 # Swedish language
+
+TOASK: should we add the abbreviation and short_name as synonyms ??
+
+
+```{r} 
+fhl_concept_synomim <-
+bind_rows( 
+  # Finnish
+  fhl_source %>% 
+  filter(!is.na(name_fi)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_fi, 
+    language_concept_id = 4181730
+  )
+)
+
+
+write_csv(fhl_concept_synomim, "./CONCEPT_SYNONYM_FHL.csv")
+
+fhl_concept_synomim %>% head(N_TOPS)
+
+```
+
+Summary of codes added in each language: 
+
+```{r}
+
+fhl_source %>%
+  summarise(n_codes = n(), n_witn_name_fi = sum(!is.na(name_fi)))
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 

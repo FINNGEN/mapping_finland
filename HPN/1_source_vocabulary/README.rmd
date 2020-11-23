@@ -1,0 +1,219 @@
+---
+title: "hpn source vocabulary"
+output:
+  github_document:
+    toc: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = FALSE)
+
+# Document variables 
+N_TOPS <- 10
+
+library(tidyverse)
+library(lubridate)
+library(readxl)
+
+source("../../lib/read_tables.r")
+
+path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
+
+```
+
+## Import Vocabulary
+
+from Mary
+
+
+```{r load, message=FALSE, warning=FALSE}
+hpn_source <- read_excel("../../lib/finngen_codes_compilation/Code_Set_Compilation_v2.xlsx") %>% 
+  filter(code_set=="HPN") %>% 
+  rename(code = code, 
+         name_fi = name_fi, 
+         name_en = name_en,
+         name_en_source = name_en_source ) %>% 
+ # mutate(name_en_source = str_replace(name_en_source, "GOOGLE", "Google")) %>% 
+  mutate(code = as.character(code), valid_start_date = as_date(valid_start_date), valid_end_date = as_date(valid_end_date)) 
+ 
+```
+
+
+## Traslation to English 
+The concept names were translated to English as follow: 
+
+- `GOOGLE_REVD`: translated with google and accepted by Elisa Lahtea
+- `ELISA_LAHTELA`: traslated by Elisa Lahtea
+
+```{r}
+hpn_source %>% count(name_en_source, sort = T)
+```
+
+## Formating source vocabulary to OMOP
+
+#### Create VOCABULARY table
+```{r}
+hpn_vocabulaly <- tibble(
+  vocabulary_id = "HPN", 
+  vocabulary_name = "Demanding Heart Patient New codes",
+  vocabulary_reference = "", 
+  vocabulary_version = "", 
+  vocabulary_concept_id = 1
+)
+
+hpn_vocabulary_concept <- tibble(
+   concept_id = 1,                                                                
+   concept_name = "Demanding Heart Patient New codese",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Vocabulary",                                                             
+   concept_class_id = "Vocabulary",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+write_csv(hpn_vocabulaly, "./VOCABULARY_HPN.csv")
+
+hpn_vocabulaly
+```
+
+#### Create CONCEPT_CLASS table
+```{r}
+hpn_concept_class <- tibble(
+  concept_class_id = "HPN", 
+  concept_class_name = "Demanding Heart Patient New codes",
+  concept_class_concept_id = 2
+) 
+ # TOASK: any level or classes ??
+
+hpn_concept_class_concept <- tibble(
+   #concept_id = 1,                                                                
+   #concept_name = "NOMESCO Finnish modification",
+   domain_id  = "Metadata",                                                            
+   vocabulary_id  =  "Concept Class",                                                             
+   concept_class_id = "Concept Class",                                                             
+   standard_concept = as.character(NA),                                                                      
+   concept_code  =   "OMOP generated",                                                         
+   valid_start_date = as.Date("1970-01-01"),                                                                     
+   valid_end_date = as.Date("2099-12-31"),                                                                  
+   invalid_reason =  as.character(NA)   
+)
+
+hpn_concept_class_concept <- 
+  bind_cols(
+    hpn_concept_class %>% 
+      rename(concept_id = concept_class_concept_id, concept_name = concept_class_id) %>% 
+      select(concept_id, concept_name), 
+    hpn_concept_class_concept
+  )
+
+
+write_csv(hpn_concept_class, "./CONCEPT_CLASS_HPN.csv")
+
+hpn_concept_class
+```
+
+
+#### Create CONCEPT table 
+
+At the moment `domain_id` is "Procedure" for all although several are not procedures. 
+
+TODO: recalcualte `domain_id` based on the mapping 
+
+```{r}
+
+# add concept_id
+hpn_source <- hpn_source %>% 
+   mutate( concept_id = 1:nrow(.)+2 ) # as already 2 for domain and concept_class
+
+
+hpn_concept <- hpn_source %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_name = name_en,
+    domain_id = "Procedure", # at the moment
+    vocabulary_id = "HPN", 
+    concept_class_id = "HPN", 
+    standard_concept = as.character(NA), 
+    concept_code = code, 
+    valid_start_date = if_else(is.na(valid_start_date), as.Date("1970-01-01"), valid_start_date), 
+    valid_end_date = if_else(is.na(valid_end_date), as.Date("2099-12-31"), valid_end_date), 
+    tmp_name_fi = name_fi, # keep for USAGI
+    tmp_name_en_source = name_en_source
+  ) 
+    
+        
+# add  concepts for domain and concept_class
+hpn_concept <- bind_rows(
+  hpn_vocabulary_concept, 
+  hpn_concept_class_concept, 
+  hpn_concept
+)
+
+
+write_csv(hpn_concept, "./CONCEPT_HPN.csv")
+
+hpn_concept %>% head(N_TOPS)
+```
+
+
+#### Create CONCEPT_SYNONYM table 
+- 4181730 # Finnish language
+- 4175777 # Swedish language
+
+TOASK: should we add the abbreviation and short_name as synonyms ??
+
+
+```{r} 
+hpn_concept_synomim <-
+bind_rows( 
+  # Finnish
+  hpn_source %>% 
+  filter(!is.na(name_fi)) %>% 
+  transmute(
+    concept_id = concept_id, 
+    concept_synonym_name = name_fi, 
+    language_concept_id = 4181730
+  )
+)
+
+
+write_csv(hpn_concept_synomim, "./CONCEPT_SYNONYM_HPN.csv")
+
+hpn_concept_synomim %>% head(N_TOPS)
+
+```
+
+Summary of codes added in each language: 
+
+```{r}
+
+hpn_source %>%
+  summarise(n_codes = n(), n_witn_name_fi = sum(!is.na(name_fi)))
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

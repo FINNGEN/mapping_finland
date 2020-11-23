@@ -1,0 +1,1640 @@
+concept_id,concept_synonym_name,language_concept_id
+3,Antroskopia,4181730
+4,Artroskopia,4181730
+5,Artroskopia ja meniskileikkaus,4181730
+6,Artroskopia ja synovialeikkaus,4181730
+7,Artroskopia ja nivelrustoleikkaus,4181730
+8,Artroskopia ja irtopalan poisto,4181730
+9,Artroskopia ja muu terapeuttinen toimenpide,4181730
+10,Bronkomediastinoskopia,4181730
+11,Bronkoskopia,4181730
+12,Bronkoskopia ja vierasesineen poisto,4181730
+13,Bronkoskopia ja transbronkiaalinen keuhkobiapsia,4181730
+14,Bronkoskopia ja muu terapeuttinen toimenpide,4181730
+15,Duodenoskopia,4181730
+16,Duodenoskopia ja polyypin poisto,4181730
+17,Duodenoskopia ja koagulaatio,4181730
+18,Duodenoskopia ja muu terapeuttinen toimenpide,4181730
+19,Endoskooppinen retrograadinen kolangiografia,4181730
+20,Endoskooppinen retrograadinen pankreatikografia,4181730
+21,Endoskooppinen retrograadinen kolangiografia ja pankreatikografia,4181730
+22,ERCP ja kiven poisto,4181730
+23,ERCP ja sfinkterotomia,4181730
+24,ERCP ja koagulaatio,4181730
+25,ERCP ja muu terapeuttinen toimenpide,4181730
+26,Epifaryngoskopia,4181730
+27,Esofagogastroduodenoskopia (sisältää myös värjäyksen),4181730
+28,Esofagogastroduodenoskopia ja polyypin poisto,4181730
+29,Esofagogastroduodenoskopia ja vierasesineen poisto,4181730
+30,Esofagogastroduodenoskopia ja vuodon koagulaatio,4181730
+31,Esofagogastroduodenoskopia ja muu terapeuttinen toimenpide,4181730
+32,Esofagogastroskopia,4181730
+33,Esofagogastroskopia ja polyypin poisto,4181730
+34,Esofagogastroskopia ja vierasesineen poisto,4181730
+35,Esofagogastroskopia ja vuodon koagulaatio,4181730
+36,Esofagogastrosk0opia ja muu terapeuttinen toimenpide,4181730
+37,Esofagoskopia,4181730
+38,Esofagoskopia ja polyyppin poisto,4181730
+39,Esofagoskopia ja vierasesineen poisto,4181730
+40,Esofagoskopia ja dilataatio,4181730
+41,Esofagoskopia ja skleroterapia,4181730
+42,Esofagoskopia ja koagulaatio tai laser,4181730
+43,Esofagoskopia ja proteesin asennus,4181730
+44,Esofagoskopia ja muu terapeuttinen toimenpide,4181730
+45,Fetoskopia,4181730
+46,Hypofaryngoskopia,4181730
+47,Hysteroskopia,4181730
+48,Ileoskopia (laparotomian yhteydessä),4181730
+49,"Kolonoskopia, koko paksusuoli",4181730
+50,"Kolonoskopia,vasen puoli",4181730
+51,Kolonoskopia ja polyypin poisto,4181730
+52,Kolonoskopia ja koagulaatio,4181730
+53,Kolonoskopia ja muu terapeuttinen toimenpide,4181730
+54,Kolposkopia,4181730
+55,Kuldoskopia,4181730
+56,Kuldoskopia ja sterilisaatio,4181730
+57,Laparoskopia,4181730
+58,Laparoskopia ja kystan punktio,4181730
+59,Laparoskopia ja sterilisaatio,4181730
+60,Laparoskopia ja muu terapeuttinen toimenpide,4181730
+61,Laryngomikroskopia,4181730
+62,Laryngoskopia (suora),4181730
+63,??,4181730
+64,Mediastinoskopia,4181730
+65,Otomikroskopia,4181730
+66,Otomikroskopia ja paperipaikka,4181730
+67,Pyeloskopia,4181730
+68,Pyeloskopia ja kiven poisto,4181730
+69,Pyeloskopia ja koagulaatio,4181730
+70,Pyeloskopia ja muu terapeuttinen toimenpide,4181730
+71,Rektoskopia,4181730
+72,Rektoskopia ja polyypin poisto,4181730
+73,Rektoskopia ja kryohoito tai koagulaatio,4181730
+74,Rektoskopia ja ligatuura,4181730
+75,Rektoskopia ja muu terapeuttinen toimenpide,4181730
+76,Retroperitoneoskopia,4181730
+77,Sigmoideoskopia (fiberskooppi),4181730
+78,Sigmoideoskopia ja polyypin poisto,4181730
+79,Sigmoideoskopia ja koagulaatio,4181730
+80,Sigmoideoskopia ja muu terapeuttinen toimenpide,4181730
+81,Torakoskopia,4181730
+82,Torakoskopia ja tuumorin poisto,4181730
+83,Torakoskopia ja kiinnikkeiden irroitus,4181730
+84,Torakoskopia ja muu terapeuttinen toimenpide,4181730
+85,Trakeoskopia,4181730
+86,Ureteropyeloskopia,4181730
+87,Uretrokystoskopia,4181730
+88,Ruoansulatuskanavan yläosan endoskopia,4181730
+89,Ruoansulatuskanavan alaosan endoskopia,4181730
+90,Hengitysteiden endoskopia,4181730
+91,Virtsatiehyeiden endoskopia,4181730
+92,Muu endoskopia,4181730
+93,Kystometria,4181730
+94,Sfinkteromanometria,4181730
+95,Urodynaaminen tutkimus,4181730
+96,Herätepotentiaaliaudiometria,4181730
+97,Koeporaus,4181730
+98,Eksploratiivinen kraniotomia ja/tai kraniektomia,4181730
+99,Muu tähän ryhmään kuuluva toimenpide,4181730
+100,Koepunktio/neulabiopsia,4181730
+101,Koepala aivokuoresta,4181730
+102,Muu tähän ryhmään kuuluva toimenpide,4181730
+103,Ventrikkelipunktio,4181730
+104,Sisternapunktio,4181730
+105,"Kallonsisäinen paineenmittaus, epiduraalinen",4181730
+106,"Kallosisäinen paineenmittaus, intraventrikulaarinen",4181730
+107,Tyhjennys poran reiän kautta (esim. kysta tai absessi),4181730
+108,Subduropleuraalinen suntti,4181730
+109,Ventrikulostomia,4181730
+110,Ventrikulosisternostomia,4181730
+111,Ventrikuloatriaalinen suntti,4181730
+112,Ventrikulopleuraalinen suntti,4181730
+113,Ventrikuloperit sunt,4181730
+114,Suntin revisio,4181730
+115,Muu tähän ryhmään kuuluva toimenpide,4181730
+116,Stereotaktinen koepala aivoista,4181730
+117,Stereotaktinen tumakkeen tai hermoradan tuhoaminen,4181730
+118,Elektrodin implantaatio aivojen syviin keskuksiin,4181730
+119,Muu tähän ryhmään kuuluva toimenpide,4181730
+120,"Resektio, isot aivot",4181730
+121,"Ekstirpaatio, isot aivot",4181730
+122,"Destruktio, isot aivot",4181730
+123,"Resektio, pikkuaivot",4181730
+124,"Ekstirpaatio, pikkuaivot",4181730
+125,"Destruktio, pikkuaivot",4181730
+126,Muu tähän ryhmään kuuluva toimenpide,4181730
+127,"Kaulan ligaatio, pikkuaivot",4181730
+128,"Kaulan ligaatio, isot aivot",4181730
+129,"Seinämän vahvistus, isot aivot",4181730
+130,"Proksim. Suonen ligaatio, isot aivot",4181730
+131,Krotisligaatio,4181730
+132,"Suonianastomoosi, isot aivot",4181730
+133,"Seinämän vahvistus, pikkuaivot",4181730
+134,"Proksim. Suonen ligaatio, pikkuaivot",4181730
+135,"Suonianastomoosi, pikkuaivot",4181730
+136,Muu tähän ryhmään kuuluva toimenpide,4181730
+137,Tumakkeen tai hermoradan tuhoaminen,4181730
+138,Elektrodi-implanaatio,4181730
+139,Arven poisto,4181730
+140,Lohkon poisto,4181730
+141,Aivopuoliskon poisto,4181730
+142,Muu tähän ryhmään kuuluva toimenpide,4181730
+143,"Juurikatkaisu, dekompressio tai koagulaatio",4181730
+144,Hermojuuren ompelu (esim. n. facialis),4181730
+145,Muu tähän ryhmään kuuluva toimenpide,4181730
+146,Spontaanin likvorfistelin sulku,4181730
+147,Kranioplastia,4181730
+148,Muu tähän ryhmään kuuluva toimenpide,4181730
+149,Dekompressioleikkaus,4181730
+150,Meningo- tai enkefaloseelen sulku,4181730
+151,Muu tähän ryhmään kuuluva toimenpide,4181730
+152,"Hematooman poisto,epiduraalinen",4181730
+153,"Hematooman poisto, subduraalinen",4181730
+154,"Hematooman poisto, intraserebraalinen tai aivoruhjeen reversio",4181730
+155,Avoimen vamman reversio (myös impression nosto),4181730
+156,Likvorfistelin korjaus,4181730
+157,Muu tähän ryhmään kuuluva toimenpide,4181730
+158,Reversio haavakomplikaation tai luuinfektion vuoksi (sisältää likvorfistelin sulun),4181730
+159,Postoperatiivisen hematooman evakuaatio,4181730
+160,Eksploraatio tai nekroosin poisto postoperatiivisen komplikaation vuoksi,4181730
+161,Muu tähän ryhmään kuuluva toimenpide,4181730
+162,Lumbaalipunktio anestesiassa tai leikkaussalissa,4181730
+163,Neulabiopsia selkäytimestä,4181730
+164,"Laminektomia, sisältää biopsian",4181730
+165,Muu tähän ryhmään kuuluva toimenpide,4181730
+166,Resektio,4181730
+167,Ekstirpatio tai destruktio,4181730
+168,Muu tähän ryhmään kuuluva toimenpide,4181730
+169,Ritsotomia,4181730
+170,Kordotomia,4181730
+171,STT-kordotomia,4181730
+172,Elektrodi-implaatio stimulaattioria varten,4181730
+173,Muu tähän ryhmään kuuluva toimenpide,4181730
+174,Meningo(myelo)seelen sulku,4181730
+175,"Uusintaleikkaus leikkauskomplikaation vuoksik, esim. hematooman evakuaatio",4181730
+176,Muu tähän ryhmään kuuluva toimenpide,4181730
+177,Hermon exploratio (sisältää biopsian ja paikallisen muutoksen poiston),4181730
+178,Hermon ulkoinen neurolyysi ja mahdollinen kulokureitin muuttaminen (hermopaine),4181730
+179,Hermon sisäinen neutrolyysi,4181730
+180,"Hermon katkaisu (obturatorius 9364, Morton 9273, nervus tympanicus 4162)",4181730
+181,Hermon rekonstruktio primaarinen (1 vko),4181730
+182,Hermorekonstruktio (esim. siirre) sekundaarinen,4181730
+183,Pleksusalueen rekonstruktio,4181730
+184,Hermon transpositio uuteen funktioon,4181730
+185,Hermon puudutus (blokadi) leikkaussalissa,4181730
+186,Muu tähän ryhmään kuuluva toimenpide,4181730
+187,Blokadi leikkaussalissa,4181730
+188,"Sympatektomia, kervikaalinen",4181730
+189,"Sympatektomia, torakaalinen",4181730
+190,"Sympatektomia, lumbaalinen",4181730
+191,"Neurektomia, presakraalinen",4181730
+192,Muu tähän ryhmään kuuluva toimenpide,4181730
+193,Neulabiopsia yleisanestesiassa,4181730
+194,Kilpirauhasen eksploraatio ja mahdollinen biopsia,4181730
+195,"Tyreoidotomia (halkaisu, pesäkkeen avaus)",4181730
+196,Yksipuoleinen resektio tai enukleaatio,4181730
+197,Molemminpuoleinen resektio (käytetään myös jos on tehty toiselle puolelle totaalipoisto),4181730
+198,Tyreoidektomia,4181730
+199,Muu tähän ryhmään kuuluva toimenpide,4181730
+200,Paratyreoidean eksploraatio ja mahdollinen biopsia,4181730
+201,Paratyreoidean tai useamman paratyreoidean poisto (myös adenooman poisto tai totaalipoisto),4181730
+202,Autotransplaatio,4181730
+203,Muu tähän ryhmään kuuluva toimenpide,4181730
+204,Lisämunuaisen eksploraatio ja mahdollinen biopsia,4181730
+205,Lisämunuaisen resektio,4181730
+206,Lisämun toispuoleinen poisto,4181730
+207,Lisämun molemp poist,4181730
+208,Muu tähän ryhmään kuuluva toimenpide,4181730
+209,Transfrontaalinen hypofysketomia,4181730
+210,Transasaalinen hypofysektomia,4181730
+211,Corpus pinealen eksploraatio tai poisto,4181730
+212,Glomus caroticumin eksploraatio tai poisto,4181730
+213,Muu tähän ryhmään kuuluva toimenpide,4181730
+214,uusintaleikkaus haavakomplikaation vuoksi,4181730
+215,Uusintaleikkaus muusta syystä,4181730
+216,Eviskeraatio,4181730
+217,Enukleaatio,4181730
+218,Enukleaatio ja implantaatio,4181730
+219,Silmäkuopan korjausleikkaus silmän poiston jälkeen (sisältää iho- ja sidekalvokorjauksen),4181730
+220,Muu tähän ryhmään kuuluva toimenpide,4181730
+221,Punktio yleisanestesiassa,4181730
+222,Orbitotomia (sisältää koepalan oton ja paikallisen tuumorin tai vierasesineen poiston),4181730
+223,Eksenteraatio (orbitan tyhjennys),4181730
+224,"Rekonstruktio, sisältää luuosien rekonstruktion (murtuma kohdassa 4826-27)",4181730
+225,Orbitan dekompressioleikkaus,4181730
+226,Orbitatuumorin poisto lateraalitietä tai kallonpohjan kautta,4181730
+227,Muu tähän ryhmään kuuluva toimenpide,4181730
+228,Pienen luomikasvaimen poisto leikkaussalissa,4181730
+229,Luomirakkulan tyhjennys ja poisto leikkaussalissa,4181730
+230,Luomikasvaimen poisto ja plastia,4181730
+231,Muu tähän ryhmään kuuluva toimenpide,4181730
+232,Epilaatio tai elektroepilaatio leikkaussalissa,4181730
+233,Ripsireunan plastia,4181730
+234,Tarsukseen kohdistuvat korjaustoimenpiteet,4181730
+235,Muu tähän ryhmään kuuluva toimenpide,4181730
+236,Ihoplastia,4181730
+237,Lihasplastia,4181730
+238,Lihasten ja faskian plastia (esim. Jones),4181730
+239,Muu tähän ryhmään kuuluva toimenpide,4181730
+240,Luomen lyhennysleik,4181730
+241,Luomilyhennys ja ihoplastia,4181730
+242,Korjaus vapaalla ihosiirteellä,4181730
+243,Korjaus kielekeplastialla,4181730
+244,Muu tähän ryhmään kuuluva toimenpide,4181730
+245,Ripustus ommelta tai faskiaa käyttäen,4181730
+246,Levatorin resektio,4181730
+247,Tarsuksen lyhennys,4181730
+248,Levatorin ja tarsuksen resektio,4181730
+249,Yläsuoralihaksen transpositio,4181730
+250,Muu tähän ryhmään kuuluva toimenpide,4181730
+251,"Korjaus omalla kudoksella (lihas, faskia tms.)",4181730
+252,"Korjaus vieraalla materiaalilla (jousi, magneetti)",4181730
+253,Tarsorafia,4181730
+254,Muu tähän ryhmään kuuluva toimenpide,4181730
+255,Ihon eksisio,4181730
+256,Otsan iho- ja rasvaeksisio,4181730
+257,Muu tähän ryhmään kuuluva toimenpide,4181730
+258,Kantotomia ja/tai kantusplastia,4181730
+259,Epikantuksen korjausleikkaus,4181730
+260,Muu tähän ryhmään kuuluva toimenpide,4181730
+261,Yläluomen rekonstruktioleikkaus,4181730
+262,Alaluomen rekonstruktioleikkaus,4181730
+263,Tarsorafia,4181730
+264,Muu tähän ryhmään kuuluva toimenpide,4181730
+265,Kyynelrauh resektio tai eksisio,4181730
+266,Sondeeraus yleisanestesiassa,4181730
+267,Kyynelpussin insisio yleisanestesiassa,4181730
+268,Kyynelpisteiden kauterisatio,4181730
+269,Kyynelpussin poisto,4181730
+270,Kyyneltiehyen plastia tai rekonstruktio,4181730
+271,Transkutaalinen dakryokystorinostomia (Toti),4181730
+272,Transnasaalinen dakryokystorinostomia (West-Halle),4181730
+273,Kanalikulorinostomia,4181730
+274,Konjuktivorinostomia,4181730
+275,Muu tähän ryhmään kuuluva toimenpide,4181730
+276,Paikallisen muutoksen poisto tai koepalan otto leikkaussalissa,4181730
+277,Paikallisen muutoksen poisto ja plastia (sisältää pterygiumleikkaukset),4181730
+278,Sidekalvon rullaus,4181730
+279,Sidekalvoplastia limakalvosiirteellä,4181730
+280,Muu tähän ryhmään kuuluva toimenpide,4181730
+281,Myotomia tai tenotomia,4181730
+282,"Plikaatio, duplikaatio tai fadenleikkaus",4181730
+283,Yhden lihaksen retropositio,4181730
+284,Kahden lihaksen retropositio,4181730
+285,Yhden lihaksen resektio,4181730
+286,Kahden lihaksen resektio,4181730
+287,Retropositio ja resektio,4181730
+288,Transpositio tai antepositio,4181730
+289,Kolmeen tai useampaan lihakseen kohdistuva karsastusleikkaus,4181730
+290,Muu tähän ryhmään kuuluva toimenpide,4181730
+291,Etukammion punktio,4181730
+292,Sarvk elektro- tai kryokoagulaatio tai sarveiskalvohaavan abraasio yleisanestesiassa,4181730
+293,Sarveiskalvon lamellaarinen siirto,4181730
+294,Sarveiskalvon penetroiva siirto,4181730
+295,Sarveiskalvon keratomileusleikkaus,4181730
+296,Sarveiskalvon keratofakialeikkaus,4181730
+297,Sarveiskalvon kreatoproteesi,4181730
+298,"Muu tähän ryhmään kuuluva toimenpide, esim. sarveiskalvon taittovoiman muutosleikkaus",4181730
+299,Jälkikaihin diskissio,4181730
+300,Etukapselin diskissio,4181730
+301,Ekstrakapsulaarinen kaihen aspiraatio,4181730
+302,Ekstrakapsulaarinen pehmeän kaihen poisto,4181730
+303,Ekstrakapsulaarinen tumakaihen poisto,4181730
+304,Ekstrakapsulaarinen kaihileikkaus ja keinomykiön asentaminen,4181730
+305,Intrakapsulaarinen kaihileikkaus,4181730
+306,Intrakapsulaarien kaihileikkaus ja keinomykiön asentaminen,4181730
+307,Iridokapsulektomia,4181730
+308,Keinomykiön asettaminen ainoana toimenpiteenä,4181730
+309,Keinomykiön poisto,4181730
+310,Kaihipoisto pars planan kautta,4181730
+311,Muu tähän ryhmään kuuluva toimenpide,4181730
+312,"Lasiaispunktio tai injektio (esim. posteriorinen sklerotomia, lääkeinjektio)",4181730
+313,Anteriorinen vitrektomia,4181730
+314,Vitrektomia pars planan kautta,4181730
+315,Muu tähän ryhmään kuuluva toimenpide,4181730
+316,Penetroiva sarveiskalvon siirto ja kaihileikkaus,4181730
+317,"Penetroiva sarveiskalvon siirto, kaihileikkaus ja vitrektomia",4181730
+318,Intrakapsulaarinen mykiön poisto ja anteriorinen vitrektomia,4181730
+319,Ekstrakapsulaarinen mykiön poisto ja anteriorinen vitrektomia,4181730
+320,"Sarveiskalvon siirto, mykiön poisto ja glaukoomaleikkaus",4181730
+321,Kombinoitu kaihi- ha glaukoomaleikkaus,4181730
+322,Muu tähän ryhmään kuuluva toimenpide,4181730
+323,Goniotomia tai vastaava,4181730
+324,Trabekulotomia,4181730
+325,Kammiokulmaan kohdistuva lasertoimenpide yleisanestesiassa,4181730
+326,Iridektomia,4181730
+327,Iridektomia tai iridotomia laserin avulla yleisanestesiassa,4181730
+328,Trepanaatio (esim. Elliotin mukaan),4181730
+329,Iridenkleisi,4181730
+330,Trabekulektomia tai vastaava,4181730
+331,Syklodialyysi,4181730
+332,Syklodiatermia tai kryokoagulaatio,4181730
+333,Muu tähän ryhmään kuuluva toimenpide,4181730
+334,"Foto-, laser- tai ksenokoagulaatio yleisanestesiassa",4181730
+335,Kryokoagulaatio yleisanestesiassa,4181730
+336,Elktrokoagulaatio yleianestesiassa,4181730
+337,"Laaja silmänpohjan foto-, tai laserkoagulaatio (esim. diabeettisen retinopatian vuoksi) yleisanestesiassa",4181730
+338,Muu tähän ryhmään kuuluva toimenpide,4181730
+339,Fotokoagulaatio tai laserkoagulaatio yleisanestesiassa,4181730
+340,Kryokoagulaatio yleisanestesiassa,4181730
+341,Elektrokoagulaatio yleisanestesiassa,4181730
+342,Kovakalvon identaatioleikkaus koagulaatioineen (sisältää epi- ja intraskleraaliset indentaatiot sekä esim. Lincoffin katetrin),4181730
+343,"Kovakalvon vyöttäminen, cerclage koagulaatioineen",4181730
+344,Breviaatioleikkaus koagulaatioineen,4181730
+345,Yhdistetty ablaatio ja lasiaisleikkaus koagulaatioineen,4181730
+346,Muu tähän ryhmään kuuluva toimenpide,4181730
+347,Kovakalvon paikallisen muutoksen poisto ja plastia,4181730
+348,Silmän lyhennysleikkaus (muun kuin ablaation takia),4181730
+349,Värikalvon fotokoagulaatio esim. mustuaisaukon tai iridektomia-aukon tekemiseksi yleisanestesiassa,4181730
+350,"Iiriksen ompelu, esim. koloboman tai iridodialyysin sulku",4181730
+351,Etu- ja takakiinnikkeiden irroitus,4181730
+352,Silmänsisäisen kasvaimen poisto,4181730
+353,Silmämunan verekäs läpivalaisu,4181730
+354,Silmätutkimus yleisanestesiassa,4181730
+355,Säteilevän levyn asettaminen silmän pintaan lisätoimenpiteineen,4181730
+356,"Muu tähän ryhmään kuuluva toimenpide, sisältää levyn poiston",4181730
+357,Luomivamman revisio ja/tai ompelu tai plastia,4181730
+358,Kyyneltievamman rekonstruktio primaarisesti,4181730
+359,Muu tähän ryhmään kuuluva toimenpide,4181730
+360,Sidekalvohaavan ompelu,4181730
+361,Sarveiskalvohaavan ompelu,4181730
+362,Kovakalvohaavan ompelu,4181730
+363,Kovakalvohaavan ompelu ja koagulaatio,4181730
+364,Sarveis- ja kovakalvohaavan ompelu,4181730
+365,Lävistävän vamman ompelu ja uveakudoksen repositio ja rekonstruktio,4181730
+366,Lävistävän vamman ompelu ja uveakudoksen poisto,4181730
+367,Lävistävän vamman ompelu ja uveakudoksen ja mykiön poisto,4181730
+368,"Lävistävän vamman ompelu, uveakudoksen ja mykiön poisto ja lasiaisen poisto",4181730
+369,Etukammioon vuotaneen veren poisto,4181730
+370,Muu tähän ryhmään kuuluva toimenpide,4181730
+371,Vierasesineen poisto silmän pinnasta yleisanestesiassa,4181730
+372,Vierasesineen poisto silmän sisältä etuosasta magneetilla,4181730
+373,Vierasesineen poisto silmän sisältä etuosasta,4181730
+374,Vierasesineen poisto silmän takaosasta magneetilla,4181730
+375,Vierasesineen poisto silmän takaosasta muulla tavoin,4181730
+376,Vierasesineen poisto silmän sisältä ja silmän etuosan laaja rekonstruktio (esim. mykiön ja lasiaisen poisto),4181730
+377,Muu tähän ryhmään kuuluva toimenpide,4181730
+378,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+379,Uusintaleikkaus muusta syystä,4181730
+380,Korvalehden revisio ja suturaatio,4181730
+381,Paikallisen muutoksen eksisio tai insisio,4181730
+382,Korvalehden poisto osittain tai kokonaan,4181730
+383,Siirottavan korvan korjaus,4181730
+384,Korvalehtirekonstruktio tai plastia,4181730
+385,Preaurikfistelin tai lisäkkeen poisto,4181730
+386,Muu tähän ryhmään kuuluva toimenpide,4181730
+387,Korvakäytävän laajennus,4181730
+388,Korvakäytävän tuumorin poisto (esim. exostoosi),4181730
+389,Korvakäytäväatresian korjausleikkaus,4181730
+390,Muu tähän ryhmään kuuluva toimenpide,4181730
+391,Tärykalvopunktio tai parasenteesi yleisanestesiassa tai leikkaussalissa,4181730
+392,Tympanostomia (tärykalvoputki),4181730
+393,Muu tähän ryhmään kuuluva toimenpide,4181730
+394,Fenestraatio (kaarikäytävän avaus),4181730
+395,"Crurotomia, haarakkeen katkaisu ja jalustimen levyn osittainen poisto",4181730
+396,Stapedektomia otoskl,4181730
+397,"Interpositio, levyn poisto ja ainakin toisen haarakkeen asettaminen ikkunan päälle",4181730
+398,Muu tähän ryhmään kuuluva toimenpide,4181730
+399,Myringoplastia (myös muista syistä kuin tulehdus),4181730
+400,Polyypin poisto,4181730
+401,Attikotomia tai attikoantromia korvakäytävän kautta,4181730
+402,Mastoidektomia tai attikomastoidektomia,4181730
+403,"Tympanomastoidektomia, sisältää mahdollisen tympanoplastian",4181730
+404,Radikaalileikkaus (silta katkaistaan),4181730
+405,"Radikaalileikkaus, ontelon täyttö ja välikorvan ja/tai tärykalvon plastia",4181730
+406,Radikaalileikkaus ja ontelon täyttö,4181730
+407,Tympanoplastia (myös muusta syystä kuin tulehdus),4181730
+408,Kroonisen välikorvantulehdukseen kohdistuva uusintaleikkaus,4181730
+409,Muu tähän ryhmään kuuluva toimenpide,4181730
+410,Eksplorativinen tympanotomia,4181730
+411,Nervus tympanikuksen ja/tai Chorda tympanin katkaisu,4181730
+412,Välikorvatuumorin poisto,4181730
+413,Muu tähän ryhmään kuuluva toimenpide,4181730
+414,Labyrinttidestruktio tai labyrintektomia,4181730
+415,Translabyrintaarinen apexkorjaus,4181730
+416,Saccus endolymphaticukseen kohdistuva leikkaus,4181730
+417,Muu tähän ryhmään kuuluva toimenpide,4181730
+418,Kuulo- tai tasapainohermoon kohdistuva leikkaus,4181730
+419,Kasvohermoon kohdistuva leikkaus,4181730
+420,Muu tähän ryhmään kuuluva toimenpide,4181730
+421,"Ulkonenän kudosta poistava leikkaus, sisältää plastian",4181730
+422,Ulkoisen pyramiidin muovaus ilman mobilisaatiota,4181730
+423,Ulkoisen pyramiidin mobilisaatio ja repositio,4181730
+424,Nenän rustoisen osan muovausleikkaus,4181730
+425,Muu tähän ryhmään kuuluva toimenpide,4181730
+426,Transseptaalinen septumresektio ja rekonstruktio,4181730
+427,Maxillapremmaxilla-avaus septumresektio ja rekonstruktio,4181730
+428,Septumperforaation sulku,4181730
+429,Muu tähän ryhmään kuuluva toimenpide,4181730
+430,"Polyypin poisto nenäontelosta, sivuontelopunktio tai huuhtelu tai biopsia yleisanestesiassa tai leikkaussalissa",4181730
+431,Endonasaalinen etmoidektomia,4181730
+432,Ulkokautta suoritettava etmoidektomia,4181730
+433,Endonasaalinen antrostomia,4181730
+434,"Eksploratiivinen poskiontelon avaus, sisältää polyypin ja kystan poiston",4181730
+435,Poskionteloradikaalileikkaus ja mahdollinen etmoidektomia,4181730
+436,Otsaontelonn kanalisaatio,4181730
+437,Otsaonteloradikaalileikkaus kanalisaatio,4181730
+438,Otsaonteloradikaalileikkaus ja täyttö,4181730
+439,Sfenotomia,4181730
+440,Muu tähän ryhmään kuuluva toimenpide,4181730
+441,Täyttöleikkaus,4181730
+442,Nenän lateraaliseinän siirtoleikkaus,4181730
+443,Muu tähän ryhmään kuuluva toimenpide,4181730
+444,Koanaaliatresian perforointi tai plastia,4181730
+445,"Kuorikkoihin ja nenän limakalvoon kohdistuva resektio, koagulaatio tai kryo",4181730
+446,Nenäverenvuodon kauterisaatio tai tamponaatio yleisanestesiassa tai leikkaussalissa,4181730
+447,Verisuoniligaatio nenäverenvuodon vuoksi,4181730
+448,Rinofymaleikkaus,4181730
+449,Nenän tai sivuontelon kasvaimen poisto,4181730
+450,Muu tähän ryhmään kuuluva toimenpide,4181730
+451,Hampaiston/suuontelon tutkimus tai perushoitotoimenpide yleisanestesiassa,4181730
+452,Hampaan paikkaus yleisanestesiassa,4181730
+453,Hamp paljastusleikkaus,4181730
+454,Hampaan tai hampaiden poisto yleisanestesiassa,4181730
+455,Hampaan poisto leikkaamalla,4181730
+456,Syvän hammasjuuripesäkkeen insisio,4181730
+457,Hampaan juurihoito,4181730
+458,Hampaan yksinkertainen transplantaatio,4181730
+459,Hampaan transplaatio ienvarrella,4181730
+460,Alveoliluun ortodontinen kortikotomia,4181730
+461,Implantaatin suunsisäinen/-ulkoinen kiinnitys,4181730
+462,Suukirurginen jälkihoitotoimenpide yleisanestesiassa,4181730
+463,Muu tähän ryhmään kuuluva toimenpide,4181730
+464,Parodontaalinen leikkaus,4181730
+465,"Limakalvon osittainen poisto tai kryo (biopsia, tuumori, hyperplastia)",4181730
+466,Limakalvoplastia (mm. fistelin sulku),4181730
+467,Limakalvopla preproteettisena toimenpiteenä (alveoleineen),4181730
+468,Limakalvoplastia tai ihon/limakalvon siirre,4181730
+469,Muu tähän ryhmään kuuluva toimenpide,4181730
+470,Kystan tai kystien poisto,4181730
+471,Alaleuan resektio tai tuumorin poisto,4181730
+472,Alaleuan poisto,4181730
+473,Yläleuan resektio tai tuumorin poisto,4181730
+474,Yläleuan poisto,4181730
+475,Muu tähän ryhmään kuuluva toimenpide,4181730
+476,Alaleuan sulkeinen osteotomia (kondylotomia ym.),4181730
+477,Alaleuan sulkeinen osteotomia ja muovaus (leukadeformiteetit),4181730
+478,Alaleuan avoin osteotomia,4181730
+479,Alaleuan avoin osteotomia ja muovaus (leukadeformiteetit),4181730
+480,Alaleuan rekonstruktio (luusiirre ym.),4181730
+481,"Leukanivelen plastia (siirre, ektomia)",4181730
+482,Yläleuan osteotomia,4181730
+483,Yläleuan rekonstruktio,4181730
+484,Muu tähän ryhmään kuuluva toimenpide,4181730
+485,Huulen plastia tai rekonstruktio suuhalkion vuoksi,4181730
+486,Suulakirekonstruktio,4181730
+487,Piilohalkiorekonstruktio,4181730
+488,Nielun kielekeplastia,4181730
+489,Nenädeformiteetin korjaus,4181730
+490,Yläleuan arven korjausleikkaus,4181730
+491,Luusiirto yläleukaan,4181730
+492,Suulaen fistelin sulku,4181730
+493,Alveolaarikaaren korjausleikkaus,4181730
+494,Muu tähän ryhmään kuuluva toimenpide,4181730
+495,Paikallisen muutoksen eksisio,4181730
+496,Huulen resektio ja/tai plastia,4181730
+497,Suulaen tuumori poisto ja mahdollinen rekonstruktio,4181730
+498,Huulien tai suulaen fistelin sulku,4181730
+499,Muu tähän ryhmään kuuluva toimenpide,4181730
+500,Kielijänteen katkaisu yleisanestesiassa tai leikkaussalissa,4181730
+501,Kielen ja/tai suupohjan resektio tai eksisio,4181730
+502,Kielen plastia,4181730
+503,Glossektomia tai hemiglossektomia,4181730
+504,Muu tähän ryhmään kuuluva toimenpide,4181730
+505,Sylkikiven poisto,4181730
+506,Sylkir muutoksen (esim. ranulan) poisto tai eksploraatio,4181730
+507,Submandibulaarinen rauhasen poisto,4181730
+508,Parotisrauhasen poisto kokonaan,4181730
+509,Parotisrauhasen poisto osittain,4181730
+510,Sylkirauhastiehyeen rekonstruktio esim. siirre,4181730
+511,Muu tähän ryhmään kuuluva toimenpide,4181730
+512,Kitarisaleikkaus,4181730
+513,Nielurisaleikkaus,4181730
+514,Kita- ja nielurisaleikka,4181730
+515,Peritonsillariabsessin avaus,4181730
+516,Risaleikkauksen jälkeisen verenvuodon tyrehdyttäminen leikkaussalissa,4181730
+517,Muu tähän ryhmään kuuluva toimenpide,4181730
+518,"Paikallisen muutoksen biopsia, eksisio tai kryohoito",4181730
+519,"Nieluun kohdistuva laaja poistoleikkaus, sisältää nenänielun",4181730
+520,Laryngofaryngektomia,4181730
+521,Muu tähän ryhmään kuuluva toimenpide,4181730
+522,Faryngoplastia,4181730
+523,Proces styloiduksen katkaisu,4181730
+524,Korvatorveen kohdistuva toimenpide,4181730
+525,Muu tähän ryhmään kuuluva toimenpide,4181730
+526,Äänihuulen fiksaatio ja/tai arytenoidektiomia,4181730
+527,Laryngotomia tai -plastia,4181730
+528,Osittainen kurkunpään poisto,4181730
+529,Laryngektomia,4181730
+530,Muu tähän ryhmään kuuluva toimenpide,4181730
+531,Lihastranspositio,4181730
+532,Ripustus jänteellä tai faskialla,4181730
+533,Muu tähän ryhmään kuuluva toimenpide,4181730
+534,Kasvotuumorin poisto ja mahdollinen rekonstruktio (monikudos),4181730
+535,Kasvojen alueen rekonstruktio tai plastia (monikudos),4181730
+536,Muu tähän ryhmään kuuluva toimenpide,4181730
+537,Kaulan imusolmukkeen poisto,4181730
+538,Kaulakystan tai fistelin poisto,4181730
+539,Syvan̈ kaulainfektion dreneeraus,4181730
+540,Kaulatuumorin poisto,4181730
+541,Suupohjan anbsessin dreneerus,4181730
+542,Dissectio colli supraomohyoidalis,4181730
+543,Dissectio colli radicalis,4181730
+544,Kaulan alueen pehmytkudosrekonstruktio,4181730
+545,Muu tähän ryhmään kuuluva toimenpide,4181730
+546,Ikenen ja/tai alveoliluun revisio ja suturaatio,4181730
+547,Hammasreplantaatio ja fiksaatio,4181730
+548,Hammas/alveoliluun murtuman tai luksaation hoito,4181730
+549,Alaleuan sulkeinen repositio ja immobilisatio (kiskotus ym.),4181730
+550,Alaleuan repositio ja osteosynteesi (ja immobilisatio),4181730
+551,Le Fort I- II-murtuman hoito,4181730
+552,Le Fort III-murtuman hoito,4181730
+553,Eksterni fiksaatio kasvomurtuman takia,4181730
+554,Muu tähän ryhmään kuuluva toimenpide,4181730
+555,Nenämurtuman sulkeinen repositio,4181730
+556,Nenämurtuman avoin repositio,4181730
+557,Zygoma-maksilla-alueen fragmentin kohotus,4181730
+558,Zygoma-maksilla-alueen fragmentin reduktio jua osteosynteesi (tai tukeminen),4181730
+559,Multippelin kasvomurtuman hoito,4181730
+560,Orbitan painemurtuman (blow out) hoito,4181730
+561,Orbitaseudun muun murtuman hoito,4181730
+562,Otsaontelon seudun murtuman hoito,4181730
+563,Muu tähän ryhmään kuuluva toimenpide,4181730
+564,Päan ja kaulan alueen ihon ja/tai limakalvojen revisio ja suturaatio,4181730
+565,"Kurkunpää-kaulavammaan kohdistuva leikkaus (esim. suturaatio ja trakeostomia, eksploraatio)",4181730
+566,Kielen revisio ja/tai suturaatio,4181730
+567,Nenän pehmytkudosvamman revisio ja/tai suturaatio,4181730
+568,Muu tähän ryhmään kuuluva toimenpide,4181730
+569,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+570,Uusintaleikkaus muusta syystä,4181730
+571,Perikardiosenteesi,4181730
+572,Perikardiotomia,4181730
+573,Perikardiostomia,4181730
+574,Perikardiektomia,4181730
+575,Perikardiorafia,4181730
+576,Muu tähän ryhmään kuuluva toimenpide,4181730
+577,Eksploraatio,4181730
+578,Kardiorafia,4181730
+579,Sydäntuumorin poisto,4181730
+580,Muu paikallinen sydänlesion poisto (esim. kong. Aneurysma),4181730
+581,"ASD:n sulku, sekundumdefekti",4181730
+582,"ASD:n sulku, primumdefekti",4181730
+583,VSD:n sulku,4181730
+584,Fallot'n tetralogian totaalikorjaus,4181730
+585,Fallot'n tetralogian tai pulmonaaliatresian korjaus läppäkonduitin avulla,4181730
+586,Blalock-Hanlonin leikkaus,4181730
+587,Mustardin tai Senning leikkaus,4181730
+588,Mustardin tai Senningin leikkaus ja VSD:n sulku,4181730
+589,Rastellin leikkaus,4181730
+590,Suurten suonten vaihtoleikkaus,4181730
+591,Muu tähän ryhmään kuuluva toimenpide,4181730
+592,Can atrioventricularis communiksen korjaus,4181730
+593,Totaalisesti anomaalisten keuhkolaskimoiden korjausleikkaus,4181730
+594,Oikean kammion ohitusleikkaus (Fontan ym.),4181730
+595,Sinus Valsalvan aneurysman korjaus,4181730
+596,Aortopulmonaalisen defektin korjaus,4181730
+597,Double outlet kammion korjaus,4181730
+598,Truncus arteriosuksen korjaus,4181730
+599,Muu tähän ryhmään kuuluva toimenpide,4181730
+600,Avoin sydänhieronta,4181730
+601,Vastapulsaatiolaitteen asettaminen,4181730
+602,Ekstrakorporeaalisen verenkierron asennus (tukitoimenpiteenä),4181730
+603,Sydämen siirto,4181730
+604,Muu tähän ryhmään kuuluva toimenpide,4181730
+605,Hypotensio,4181730
+606,Hemodiluutio,4181730
+607,Sydänkeuhkokone,4181730
+608,Hypotermia ilman sydänkeuhkokonetta,4181730
+609,Syvä hypotermia (<20°) sydänkeuhkokoneen avulla,4181730
+610,Muu tähän ryhmään kuuluva toimenpide,4181730
+611,Valvulotomia,4181730
+612,Infundibulumin resektio,4181730
+613,Perifeerisen stenoosin korjaus,4181730
+614,Muu tähän ryhmään kuuluva toimenpide,4181730
+615,Valvulotomia,4181730
+616,Valvuloplastia,4181730
+617,Korjaus läppäproteesilla tai siirrännäisellä,4181730
+618,Supravalvulaarisen stenoosin korjaus,4181730
+619,Subvalvulaarisen membraanin resektio,4181730
+620,Subvalvulaarisen muskulaarisen stenoosin resektio,4181730
+621,Muu tähän ryhmään kuuluva toimenpide,4181730
+622,Sulkeinen kommissurotomia,4181730
+623,Avoin kommissurotomia,4181730
+624,Valvuloplastia tai annuloplastia,4181730
+625,Mitraalivian korjaus läppäproteesilla tai siirrännäisellä,4181730
+626,Valvulotomia,4181730
+627,Valvuloplastia tai annuloplastia,4181730
+628,Trikuspidaaliläpän korjaus läppäproteesilla tai siirrännäisellä,4181730
+629,Kahden tai useamman läpän korjausleikkaus,4181730
+630,Muu tähän ryhmään kuuluva toimenpide,4181730
+631,Ohitusleikkaus yhteen suoneen,4181730
+632,Ohitusleikkaus kahteen suoneen,4181730
+633,Ohitusleikkaus kolmeen suoneen,4181730
+634,Ohitusleikkaus neljään tai useampaan suoneen,4181730
+635,Ohitusleikkaus mammaria arterian avulla,4181730
+636,Koronaariarteria-anomalian korjaus,4181730
+637,Muu tähän ryhmään kuuluva toimenpide,4181730
+638,Syd aneurysman tai dyskineettisen sydänlihaksen resektio,4181730
+639,Septumperforaation sulku,4181730
+640,Papillaarilihasruptuuran korjausleikkaus,4181730
+641,Muu tähän ryhmään kuuluva toimenpide,4181730
+642,Wolf-Parkinson-White sairauden takia,4181730
+643,Muu tähän ryhmään kuuluva toimenpide,4181730
+644,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+645,Uusintaleikkaus vuodon vuoksi,4181730
+646,Uusintaleikkaus muusta syystä,4181730
+647,"Tahdistimen asennus, transvenöösinen elektrodi",4181730
+648,"Tahdistimen asennus, torakotomia tietä",4181730
+649,Tahdistimen vaihto,4181730
+650,Muu tähän ryhmään kuuluva toimenpide,4181730
+651,Keuhkovaltimon ahtauttaminen (banding),4181730
+652,Vena cava-A-pulmonalis anastomoosi (Glenn),4181730
+653,Aortopulmonaalinen anastomoosi (Waterstone),4181730
+654,Subklaviapulmonaalinen anastomoosi (Blalock),4181730
+655,Muu sunttileikkaus,4181730
+656,Muu tähän ryhmään kuuluva toimenpide,4181730
+657,Arteriorafia tai ruptuurarekonstruktio (trauma),4181730
+658,Ductus arteriosuksen katkaisu tai ligaatio,4181730
+659,"Koarktaation resektio, plastia tai ohitus",4181730
+660,Aortan kaaren puutoksen korjausleikkaus,4181730
+661,Verisuonirenkaan katkaisu ja/tai rekonstruktio suonianomaliassa,4181730
+662,Nousevan aortan aneurysmaleikkaus,4181730
+663,Nousevan aortan aneurysmaleikkaus ja aortan läppäproteesi,4181730
+664,"Nousevan aortan aneurysmaleikkaus, aorttaläppäproteesi ja koronaarien implantaatio",4181730
+665,Aortan kaaren aneurysmaleikkaus,4181730
+666,Laskevan torakaaliaortan aneurysmaleikkaus,4181730
+667,Nousevan aortan dissekaation leikkaus,4181730
+668,Laskevan torakaaliaortan dissekaation leikkaus,4181730
+669,Torakoabdominaalinen aneurysmaleikkaus,4181730
+670,Rupturoituneen abdominaalianeurysman leikkaus,4181730
+671,Rupturoitumattoman abdominaalianeurysman leikkaus,4181730
+672,Muu tähän ryhmään kuuluva toimenpide,4181730
+673,"Subclavia ja/tai carotisendarterektomia, rekonstruktio tai ohitusleikkaus",4181730
+674,Aortoservikaalinen rekonstruktio tai ohitusleikkaus,4181730
+675,Muu tähän ryhmään kuuluva toimenpide,4181730
+676,Viskeraalivaltimorekonstruktio tai vastaava,4181730
+677,Munuaisvaltimorekonstruktio tai vastaava,4181730
+678,Muu tähän ryhmään kuuluva toimenpide,4181730
+679,Aortoiliakaalialueen endarterektomia,4181730
+680,Aortoiliakaalialueen rekonstruktio,4181730
+681,Aortofemoraalialueen ohitusleikkaus,4181730
+682,Femoraalialueen endarterektomia ja/tai profundaplastia,4181730
+683,Femoropopliteaalinen ohitusleikkaus,4181730
+684,Femorotibiaalinen ohitusleikkaus,4181730
+685,Aksillofemoraalinen ohitusleikkaus,4181730
+686,Femorofemoraalinen ohitusleikkaus,4181730
+687,Muu tähän ryhmään kuuluva toimenpide,4181730
+688,Eksploraatio tai ligaatio,4181730
+689,Arteriorafia,4181730
+690,"Resektio, rekonstruktio tai ohitusleikkaus",4181730
+691,Arteriovenoosin fistelin leikkaushoito,4181730
+692,Embolektomia tai trombektomia,4181730
+693,Tuumoriarterian embolisaatio tai regionaalinen perfuusio,4181730
+694,Muu tähän ryhmään kuuluva toimenpide,4181730
+695,Eksterni suntti (esim. Schibner),4181730
+696,Interni fisteli (esim. Cimino),4181730
+697,Suntin revisio tai poisto,4181730
+698,Suonipreparointi tai kanylointi leikkaussalissa,4181730
+699,Muu tähän ryhmään kuuluva toimenpide,4181730
+700,Vena saphena magnan ja/tai parvan nyhtäisy ja mahdolliset lokaalieksisiot,4181730
+701,Residiivikohjujen lokaalieksisiot ja/tai perforansligaatiot,4181730
+702,Yhdyslaskimoiden sulku,4181730
+703,Syvien laskimoiden läppämuutosten vuoksi suoritettu leikkaus,4181730
+704,Muu tähän ryhmään kuuluva toimenpide,4181730
+705,Trombektomia laskimosta,4181730
+706,Vena cava ligaatio ja plikaatio,4181730
+707,Vena cavan transvenoosinen obstruktio,4181730
+708,Pulmonaaliembolektomia,4181730
+709,Muu tähän ryhmään kuuluva toimenpide,4181730
+710,Venorafia,4181730
+711,Venarekonstruktio,4181730
+712,Muu tähän ryhmään kuuluva toimenpide,4181730
+713,Portokavaalinen suntti,4181730
+714,Mesokavaalinen suntti (H-graftilla tai ilman),4181730
+715,"Splenorenaalinen anostomoosi, proksimaalinen",4181730
+716,"Splenorenaalinen anostomoosi, distaalinen (Warren)",4181730
+717,Muut anostomoosileikkaukset,4181730
+718,Varices ligaatio torakotomiatietä,4181730
+719,Pernan siirto rintaonteloon,4181730
+720,Pernan valtimon ligaatio,4181730
+721,Muu tähän ryhmään kuuluva toimenpide,4181730
+722,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+723,Uusintaleikkaus suonikomplikaation vuoksi,4181730
+724,Proteesin revisio tai poisto,4181730
+725,Muu tähän ryhmään kuuluva toimenpide,4181730
+726,Imusolmukkeiden paikallinen eksploraatio (sisältää biopsian),4181730
+727,"Paikallinen imusolmukkeiden poisto (esim. kainalo, nivus)",4181730
+728,Imuolmukkeiden poisto retroperitoneaalitilasta,4181730
+729,Muu tähän ryhmään kuuluva toimenpide,4181730
+730,Ihon ja ihonalaiskudoksen eksisio,4181730
+731,Ihon ja ihonalaiskudoksen eksisio ja ihonsiirto,4181730
+732,Thompsonin leikkaus,4181730
+733,Ometin transpositio,4181730
+734,Imusuonten rekonstruktio tai suntti,4181730
+735,Muu tähän ryhmään kuuluva toimenpide,4181730
+736,Lymfangioman (hygroman) poisto,4181730
+737,Ductus thoracicukseen kohdistuva toimenpide,4181730
+738,"Trakeotomia, sisältää koepalan ja paikallisen muutoksen poiston",4181730
+739,Trakeostomia tai koniostomia,4181730
+740,Trakeastoman sulku tai plastia,4181730
+741,Trakean resektio ja rekonstruktio tai plastia,4181730
+742,Trakean suturaatio (esim. ruptuura),4181730
+743,Muu tähän ryhmään kuuluva toimenpide,4181730
+744,Bronko- tai trakeotomia,4181730
+745,Bronkuksen tai trakean suturaatio (esim. trauman aiheuttama),4181730
+746,Bronkuksen tai trakean resektio ja rekonstruktio tai plastia,4181730
+747,Trakean ja bronkuksen vahvistus trakeomalasian yhteydessä,4181730
+748,Trakean ripustus,4181730
+749,Muu tähän ryhmään kuuluva toimenpide,4181730
+750,Neulabiopsia leikkaussalissa,4181730
+751,Eksploratiivinen torakotomia ja pieni toimenpide (esim. keuhkon ompelu),4181730
+752,Keuh avobiopsia ja kiilaresektio,4181730
+753,Pneumotomia absessi tai vierasesineen vuoksi,4181730
+754,Segmenttiresektio sekvesterektomia,4181730
+755,Lobektomia tai bilobektomia,4181730
+756,Lobektomia ja segmenttiresektio,4181730
+757,Pneumektomia,4181730
+758,Pleuropneumektomia,4181730
+759,Muu tähän ryhmään kuuluva toimenpide,4181730
+760,Troakaaritorakostomia,4181730
+761,Operatiivinen torakostomia,4181730
+762,Avoin torakostomia (fenestraatio),4181730
+763,Muu tähän ryhmään kuuluva toimenpide,4181730
+764,Kylkiluun resektio paikallisen muutoksen tai kompression vuoksi,4181730
+765,Lateraalinen tai apikaalinen torakoplastia,4181730
+766,"Anteriorinen torakoplastia (suppilorinta, kananrinta)",4181730
+767,Muu tähän ryhmään kuuluva toimenpide (esim. fiksaatiolevyn poisto),4181730
+768,Pleuran biopsia tai paikallisen muutoksen poisto,4181730
+769,Dekortikaatio (viskeraali- tai parietaalipleuran poisto),4181730
+770,Pleuratuumorin poisto,4181730
+771,Muu tähän ryhmään kuuluva toimenpide,4181730
+772,"Välikarsinan eksploraatio, biopsia tai imusolmuke-evakuaatio",4181730
+773,Tymuksen eksploraatio tai tymektomia,4181730
+774,Välikarsinatuumorin poisto,4181730
+775,Muu tähän ryhmään kuuluva toimenpide,4181730
+776,Pallearelaksaation leikkaus,4181730
+777,Pallearuptuuran leikkaus,4181730
+778,Pallearesektio ja rekonstruktio,4181730
+779,"Hernia diaphragmaticaan kohdistuva toimenpide (esim. Morgagni, Bochdalek)",4181730
+780,Muu tähän ryhmään kuuluva toimenpide,4181730
+781,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+782,Uusintaleikkaus intratorakaalisesta syystä,4181730
+783,Muu tähän ryhmään kuuluva toimenpide,4181730
+784,"Eksploratiivinen laparotomia, sisältää mahdolliset biopasiat",4181730
+785,Torakoabdominaalinen eksploraatio,4181730
+786,Staging laparotomia (retikuloendoteliaalisysteemin tutkimiseksi),4181730
+787,Muu tähän ryhmään kuuluva toimenpide,4181730
+788,"Laparosenteesi, diagnostinen huuhtelu",4181730
+789,Peritoneaalidialyysi- tai lavaatiokatetrin asennus leikkaussalissa,4181730
+790,Muu tähän ryhmään kuuluva toimenpide,4181730
+791,"Sineobstructio, Hernia inguinalis",4181730
+792,"Sineobstructio, Hernia femoralis",4181730
+793,"Sineobstructio, Hernia umbilicalis",4181730
+794,"Sineobstructio, Hernia epigastrica",4181730
+795,"Sineobstructio, Hernia ventralis alia",4181730
+796,"Sineobstructio, Hernia alterius loci def",4181730
+797,"Sineobstructio, Hernia abdominalis, NUD",4181730
+798,"Cumobstructio, Hernia inguinalis",4181730
+799,"Cumobstructio, Hernia femoralis",4181730
+800,"Cumobstructio, Hernia umbilicalis",4181730
+801,"Cumobstructio, Hernia epigastrica",4181730
+802,"Cumobstructio, Hernia ventralis alia",4181730
+803,"Cumobstructio, Hernia alterius loci def",4181730
+804,"Cumobstructio, Hernia abdominalis, NUD",4181730
+805,Tyrän repositio (taxis),4181730
+806,Tyräpussin poisto ilman plastiaa,4181730
+807,Radikaalileikkaus,4181730
+808,Radikaalileikkaus ja plastia vieraalla materiaalilla,4181730
+809,"Residiivityräleikkaus, voidaan ilmoittaa sivutoimenpiteenä",4181730
+810,Muu tähän ryhmään kuuluva toimenpide,4181730
+811,"Vatsan seinämän paikallisen muutoksen eksploraatio tai poisto (napa, tuumori, hemanooma, endometriooma)",4181730
+812,Omphalocelen korjausleikkaus,4181730
+813,Gastroschisiksen korjausleikkaus,4181730
+814,Muu tähän ryhmään kuuluva toimenpide,4181730
+815,Resektio ja esofago-gastronomia (tai esofagoduodenostomia),4181730
+816,Resektio ja esofagojejunostomia,4181730
+817,Resektio ja rekons kolonin avulla,4181730
+818,Resektio ilman rekonstruktiota,4181730
+819,"Ruokatorven, larynksin ja hypofarynksin poisto",4181730
+820,Muu tähän ryhmään kuuluva toimenpide,4181730
+821,Dilataatio laparotomiatietä,4181730
+822,Intubaatio laparotomiatietä,4181730
+823,Esofagusrekonstruktio ilman resektiota,4181730
+824,Krikofaryngeusmyotomia,4181730
+825,Esofagorafia kaulalta,4181730
+826,Esofagostomia kaulalta,4181730
+827,Esofaguksen rekonstruktio kaulalta,4181730
+828,Muu ruokatorvileikkaus kaulan alueelta (esim. divertekkeli),4181730
+829,Esofagotomia torakotomia tietä,4181730
+830,Esofagorafia torakotomia tietä,4181730
+831,Paikallisen muutoksen poisto torakotomia tietä,4181730
+832,Muu tähän ryhmään kuuluva toimenpide,4181730
+833,Fistelin sulku,4181730
+834,Gastrostomia ja esofagostomia,4181730
+835,"Primääri anastomoosi, sisältää fistelin sulun",4181730
+836,Sekundaarianastomoosi,4181730
+837,Suoli-interpositio,4181730
+838,Esofagusrekonstruktio mahalaukkuputken avulla,4181730
+839,Muu tähän ryhmään kuuluva toimenpide,4181730
+840,Fundoplikaatio (Nissen),4181730
+841,Muu antirefluxleikkaus,4181730
+842,Muu tähän ryhmään kuuluva toimenpide,4181730
+843,Hernioplastia,4181730
+844,Muu tähän ryhmään kuuluva toimenpide,4181730
+845,Kardian transsektio ja skeletointi,4181730
+846,Esofagogastromyotomia (Heller),4181730
+847,Kardiaplastia stenoosin vuoksi,4181730
+848,Muu tähän ryhmään kuuluva toimenpide,4181730
+849,Gastrotomia ja siihen liittyvät pienet toimenpiteet esim. polyypin poisto,4181730
+850,Gastrostomia,4181730
+851,Gastrorafia,4181730
+852,Lokaalinen eksisio tai poikittaisresektio,4181730
+853,Antrektomia (1/3) ja gastroduodenostomia,4181730
+854,Antrektomia (1/3) ja gastrojejunostomia,4181730
+855,Resektio (2/3) ja gastroduodenostomia,4181730
+856,Resektio (2/3) ja gastrojejunostomia (myös Roux-Y),4181730
+857,Resektio ja esofagoastrostomia (kardiaresektio),4181730
+858,Subtotaali gastrektomia (sisältää myös omentin ja pernan poiston),4181730
+859,Gastrektomia (myös Roux-Y),4181730
+860,Gasrektomia ja suolen interpositio,4181730
+861,Muu tähän ryhmään kuuluva toimenpide,4181730
+862,Gastroenterostomia ilman resektiota,4181730
+863,Gastroenterostomia ja pyloruksen eksklusio,4181730
+864,Pyloromyotomia,4181730
+865,Pyloroplastia,4181730
+866,Muu tähän ryhmään kuuluva toimenpide,4181730
+867,Trunkaalinen vagotomia,4181730
+868,"Semielektiivinen vagotomia (posteriorinen trunkaalinen, anteriorinen selektiivinen)",4181730
+869,Selektiivinen vagotomia,4181730
+870,Proksimaalinen selektiivinen (parietaalisolu),4181730
+871,Muu tähän ryhmään kuuluva toimenpide,4181730
+872,Reresektio ja jejunumin interpositio,4181730
+873,Reresektio ja rekonstruktio,4181730
+874,"Rerekonstruktio (esijm. B II- B I, B I-Roux-Y)",4181730
+875,Muu tähän ryhmään kuuluva toimenpide,4181730
+876,Duodenumdivertikkelin tai tuumorin poisto,4181730
+877,Muu tähän ryhmään kuuluva toimenpide,4181730
+878,"Enterotomia ja siihen liittyvä mahdollinen pieni toimenpide esim. vierasesineen, divertikkelin tai polyypin poisto",4181730
+879,Ohutsuoliresektio,4181730
+880,Ileokekaaliresektio,4181730
+881,Hemikolektomia oikeanpuoleinen,4181730
+882,Hemikolektomia vasemmanpuoleinen,4181730
+883,Muu kolonin resektio,4181730
+884,Kolektomia ja ileorektostomia,4181730
+885,Kolektomia ja ileostomia,4181730
+886,Panproktokolektomia ja ileostomia,4181730
+887,Muu tähän ryhmään kuuluva toimenpide,4181730
+888,Appendikektomia,4181730
+889,Inversio appendicis,4181730
+890,Muu tähän ryhmään kuuluva toimenpide,4181730
+891,"Paikallisen muutoksen poisto, koagulaatio tai kryohoito laparatomiatietä",4181730
+892,Rektumin rekonstruktio laparotomian kautta,4181730
+893,Rektumin rekonstruktio alakautta,4181730
+894,Anteriorinen resektio,4181730
+895,Abdominoperineaalinen resektio ja kolostomia,4181730
+896,Transsakraalinen resektio,4181730
+897,Rektumin resektio ja sfinkterin säästävä läpivetoanastomoosi,4181730
+898,Muu tähän ryhmään kuuluva toimenpide,4181730
+899,Dilataatio,4181730
+900,Sfinkterotomia,4181730
+901,Peräpukamien radikaalileikkaus,4181730
+902,Perianaaliabsessin insisio,4181730
+903,Perianaalifistelin leikkaus,4181730
+904,Sfinkteroplastia ja mahdollinen lihassiirto,4181730
+905,Muu tähän ryhmään kuuluva toimenpide,4181730
+906,Anuksen dilataatio,4181730
+907,Kolostomia,4181730
+908,Perineaalinen tai sakroperineaalinen plastia,4181730
+909,Abdomino(sakro)perineaalinen rekonstruktio,4181730
+910,Anuksen transpositio,4181730
+911,Sfinkteroplastia,4181730
+912,Muu tähän ryhmään kuuluva toimenpide (sisältää kolostooman sulun),4181730
+913,Paineen mittaus leikkaussalissa,4181730
+914,Rektumlihasbiopsia,4181730
+915,Kolostomia,4181730
+916,Rekonstruktio,4181730
+917,Muu tähän ryhmään kuuluva toimenpide,4181730
+918,Alakautta,4181730
+919,Laparatomiatietä,4181730
+920,Muu tähän ryhmään kuuluva toimenpide,4181730
+921,Duodenostomia tai jejunostomia,4181730
+922,Ileostomia,4181730
+923,Kolostomia,4181730
+924,Enterostooman sulku,4181730
+925,Stooman revisio ulkokautta tai aukipoltto,4181730
+926,Laparotomia ja revisio tai re-enterostomia,4181730
+927,Kontinentin ileostomian muodostaminen,4181730
+928,Muu tähän ryhmään kuuluva toimenpide,4181730
+929,Duodenoduodenostomia tai duodenojejunostomia,4181730
+930,Ileoileostomia,4181730
+931,Ileokolostomia,4181730
+932,Ileorektostomia,4181730
+933,Kolokolostomia,4181730
+934,Kolorektostomia,4181730
+935,Autosuturaatioanastomoosi (käytetään menetelmää kuvaavana lisätietona),4181730
+936,Suolistoleikkaus hyperkolesterolemian ja/tai liikalihavuuden vuoksi,4181730
+937,Muu tähän ryhmään kuuluva toimenpide,4181730
+938,Kiinnikkeiden irroittelu ja siihen liittyvät toimenpiteet,4181730
+939,Desinvaginaatio,4181730
+940,Suolifisteliin kohdistuva leikkaus (käytetään joko ainoana tai lisätietona),4181730
+941,Rektaalinen tai vaginaalinen kanalisaatio,4181730
+942,Kanalisaatio muuta tietä,4181730
+943,Muu tähän ryhmään kuuluva toimenpide,4181730
+944,Uusintaleikkaus leikkaushaavan komplikaatioiden vuoksi,4181730
+945,Uusintaleikkaus vuodon vuoksi,4181730
+946,Uusintaleikkaus anastomoosilekaasin tai obstruktion vuoksi,4181730
+947,Muu tähän ryhmään kuuluva toimenpide,4181730
+948,Paikallisen muutoksen poisto (kiilaresektio),4181730
+949,Segmentin poisto,4181730
+950,Lohkon poisto,4181730
+951,Laajennettu oikeanpuoleinen maksaresektio,4181730
+952,Neulabiopsia leikkaussalissa,4181730
+953,Hepatorafia,4181730
+954,Absessin tai kystan marsupialisaatio tai drenaasi,4181730
+955,Maksa-arterian ligaatio tai kanylaatio,4181730
+956,Maksan siirto,4181730
+957,Muu tähän ryhmään kuuluva toimenpide,4181730
+958,Koledokuksen suturaatio,4181730
+959,Koledokotomia tai hepatikotomia (sisältää kiven poiston),4181730
+960,Koledokotomia tai hepatikotomia sekä koledokoskopia (sisältää kiven poiston),4181730
+961,Koledokotomia ja avoin sfinkterotomia tai plastia,4181730
+962,Koledokostomia tai hepatikostomia ainoana toimenpiteenä (esim. lenkkihepatikostomia),4181730
+963,Koledokuksen resektio ja rekonstruktio,4181730
+964,Ductus remanenssin poisto,4181730
+965,Muu tähän ryhmään kuuluva toimenpide,4181730
+966,Kolekysto(s)tomia,4181730
+967,Kolekystektomia,4181730
+968,Kolekystektomia ja kolangiografia,4181730
+969,Kolekystektomia ja koledokotomia,4181730
+970,Kolekystektomia ja koledokotomia ja sfinkterotomia tai plastia,4181730
+971,Muu tähän ryhmään kuuluva toimenpide,4181730
+972,Kolekystoenterostomi,4181730
+973,Koledokoenterostomia,4181730
+974,Hepatikoenterostomia,4181730
+975,Hepatoportoenterostomia (sappitieatresiassa),4181730
+976,Muu tähän ryhmään kuuluva toimenpide,4181730
+977,Eksploraatio ja mahdollinen biopsia,4181730
+978,Lokaalinen eksisio,4181730
+979,Kaudaresektio,4181730
+980,Subtotaali pankreatektomia,4181730
+981,Pankreatikoduodenektomia (esim. Whipple),4181730
+982,Totaali pankreatektomia,4181730
+983,Muu tähän ryhmään kuuluva toimenpide,4181730
+984,Pankreastiehytsondeeraus duodenotomian kautta (sisältää grafian),4181730
+985,Wirsungoplastia/-rafia,4181730
+986,Haiman suturaatio,4181730
+987,Pankreatikojejunostomia,4181730
+988,Pankreatikogastrostomia,4181730
+989,Kystan marsupialisaatio tai dreneeraus,4181730
+990,Kystoenterostomia (sisältää pseudokystan),4181730
+991,Absessin tai pankreatiitin dreneeraus (sisältää lavaation),4181730
+992,Haiman siirto,4181730
+993,Muu tähän ryhmään kuuluva toimenpide,4181730
+994,Pernan suturaatio,4181730
+995,Pernan resektio,4181730
+996,Transabdominaalinen splenektomia,4181730
+997,Abdominotorakaalinen tai torakaalinen splenektomia,4181730
+998,Muu tähän ryhmään kuuluva toimenpide,4181730
+999,Insisio ja mahdollinen kanavointi,4181730
+1000,Eksploraatio (sisältää biopsian),4181730
+1001,Ekstirpaatio (kasvain tai muu muutos),4181730
+1002,Sakrokokkygeaalisen teratooman poisto,4181730
+1003,Muu tähän ryhmään kuuluva toimenpide,4181730
+1004,Uusintaleikkaus laparotomiahaavan komplikaatioiden vuoksi,4181730
+1005,Uusintaleikkaus vuodon vuoksi,4181730
+1006,Muu tähän ryhmään kuuluva toimenpide,4181730
+1007,Neulabiopsia leikkaussalissa,4181730
+1008,"Munuaisen eksploraatio, sisältää avobiopsian, pyelotomian ja nefrotomian",4181730
+1009,Punktionefrostomia tai pyelostomia,4181730
+1010,Avoin nefrostomia tai pyelostomia,4181730
+1011,Pyelo- tai nefrolitotomia,4181730
+1012,Muu tähän ryhmään kuuluva toimenpide,4181730
+1013,Paikallisen muutoksen poisto tai munuaisen resektio (esim. kysta),4181730
+1014,Munuaisaltaan resektio (esim. kiven vuoksi),4181730
+1015,Heminefrektomia (kaksoismunuainen),4181730
+1016,Nefrektomia (yksinkertainen,4181730
+1017,Nefrektomia (ekstrafaskiaalinen),4181730
+1018,Nefroureterektomia,4181730
+1019,Muu tähän ryhmään kuuluva toimenpide,4181730
+1020,Suturaatio,4181730
+1021,Kalikoplastia tai kaliko-ureteroplastia,4181730
+1022,Pyeloureteroplastia,4181730
+1023,Nefropeksia,4181730
+1024,Muu tähän ryhmään kuuluva toimenpide,4181730
+1025,Munuaisen siirto,4181730
+1026,Bilateraalinen nefrektomia (dialyysipotilaalle tai munuaisen siirron yhteydessä),4181730
+1027,Elävän luovuttajan munuaisen irroitus,4181730
+1028,Nekromunuaisten irroitus siirtoa varten,4181730
+1029,Siirrännäisen eksploraatio,4181730
+1030,Siirrännäisen verisuonikomplikaation leikkaus,4181730
+1031,Siirrännäisen urologisen komplikaation leikkaus,4181730
+1032,Siirrännäisen poisto,4181730
+1033,Munuaisen autotransplaatio,4181730
+1034,Muu tähän ryhmään kuuluva toimenpide,4181730
+1035,Ureterkiven poisto transuretreaalisesti,4181730
+1036,"Ureterotomia, sisältää kiven poiston",4181730
+1037,"Ureterin irroitus (esim. arpi, retroperitoneaalinen fibroosi)",4181730
+1038,Uretertyngän poisto,4181730
+1039,Muu tähän ryhmään kuuluva toimenpide,4181730
+1040,Ureterin ompelu (esim. pää päätä vasten),4181730
+1041,Ureterin resektio ja ompelu pää päätä vasten (esim. striktuuran vuoksi),4181730
+1042,Ureteroenteroplastia,4181730
+1043,Transureteroureterostomia,4181730
+1044,Intubaatioureterostomia (esim. Davis),4181730
+1045,"Ureteroplastia, kavennus ja resektio (sisältää neoimplantaation)",4181730
+1046,Ureterovesikoplastia esim. refluksin vuoksi,4181730
+1047,Ureteroneokystostomia,4181730
+1048,Ureterproteesin asennus endoskopiatietä,4181730
+1049,Muu tähän ryhmään kuuluva toimenpide,4181730
+1050,Kutaaninen ureterostomia,4181730
+1051,Ureteroenterokutaneostomia (esim. Bricker),4181730
+1052,Ureterokolokutaneostomia,4181730
+1053,"Uroteroenterostomia (esim. Coffey, Gersung)",4181730
+1054,Muu tähän ryhmään kuuluva toimenpide,4181730
+1055,Ureteroseelen diskissio kystotomia tietä,4181730
+1056,Transuretraalinen ureteraukon dilaatio tai diskissio,4181730
+1057,Muu tähän ryhmään kuuluva toimenpide,4181730
+1058,Pyeloureteroplastian striktuuran korjaus,4181730
+1059,Ureteroenterostomian striktuuran korjaus,4181730
+1060,Ureterokutaneostomian revisio,4181730
+1061,Enterokutaneostomian revisio,4181730
+1062,Ureterokystostomian korjaus,4181730
+1063,Diversion purku,4181730
+1064,Muu tähän ryhmään kuuluva toimenpide,4181730
+1065,Punktiokystostomia leikkaussalissa tai anestesiassa,4181730
+1066,Avoin kystostomia,4181730
+1067,Kystorafia,4181730
+1068,"Kystotomia ja siihen liittyvät pienet toimenpiteet (esim. kiven, vierasesineen tai hyytymien poisto)",4181730
+1069,Kystotomia ja tuumorin eksisio tai koagulaatio tai laser,4181730
+1070,Rakon kaulan plastia (kiilaeksisio),4181730
+1071,Rakon resektio,4181730
+1072,Suototaalinen kystektomia ja enterokystoplastia,4181730
+1073,Rakon resektio ja ureterin siirto,4181730
+1074,Divertikkelin tai urakuksen poisto,4181730
+1075,Vesikostomia (esim. Lapides),4181730
+1076,Muu tähän ryhmään kuuluva toimenpide,4181730
+1077,"TU biopsia, koagulaatio tai laser",4181730
+1078,TU rakonkaulan elektroresektio tai diskissio,4181730
+1079,TU rakonseinämän muutoksen elektroresektio,4181730
+1080,TU lääkeinjektio rakon seinämään tai rakon lääkehoito,4181730
+1081,Rakon venytys,4181730
+1082,Rakon lavaatio,4181730
+1083,Litotripsia,4181730
+1084,TU rakon vierasesineen poisto,4181730
+1085,Muu tähän ryhmään kuuluva toimenpide,4181730
+1086,Kystektomia (diversioleikkaus suoritettu aikaisemmin),4181730
+1087,Kystektomia ja diversioleikkaus,4181730
+1088,Kystektomia ja enterokystoplastia,4181730
+1089,Muu tähän ryhmään kuuluva toimenpide,4181730
+1090,Kutaanisen rakkofistelin sulku,4181730
+1091,Suolen ja virtsarakon välisen fistelin sulku,4181730
+1092,Vaginaalisen rakkofistelin sulku,4181730
+1093,Enterokystoplastia (ilman kystektomiaa,4181730
+1094,Rakon ektopian leikkaus,4181730
+1095,Muu tähän ryhmään kuuluva toimenpide,4181730
+1096,"TU uretrabiopsia, koagulaatio tai laser (esim. papilooma, kondylooma)",4181730
+1097,Uretran dilataatio anestesiassa tai leikkaussalissa,4181730
+1098,TU sulkijalihaksen halkaisu,4181730
+1099,"Uretrotomia internam, sokea",4181730
+1100,"Uretrotomia interna, endoskooppinen",4181730
+1101,Uretran läpän insisio tai resektio,4181730
+1102,Ekstraktio uretrasta (kivi tai vierasesine),4181730
+1103,Muu tähän ryhmään kuuluva toimenpide,4181730
+1104,Biopsia uretrasta tai ympäröivästä kudoksesta,4181730
+1105,Insisio,4181730
+1106,"Uretrotomia, sisältää kiven tai vierasesineen poiston",4181730
+1107,Tuumorin tai mukosaprolapsin eksisio,4181730
+1108,Uretrostomia,4181730
+1109,Kystotomia ja retrograadinen sondeeraus,4181730
+1110,Uretran divertikkelin korjaus,4181730
+1111,Uretrektomia,4181730
+1112,Muu tähän ryhmään kuuluva toimenpide,4181730
+1113,Meatotomia taiplastia,4181730
+1114,Uretrorafia,4181730
+1115,Uretrostomian sulku,4181730
+1116,Uretrokutaanisen fistelin sulku,4181730
+1117,Uretrovaginaalisen fistelin sulku,4181730
+1118,Uretrorektaalisen fistelin sulku,4181730
+1119,Rekonstruktoiva striktuuran leikkaus,4181730
+1120,Muu tähän ryhmään kuuluva toimenpide,4181730
+1121,"Yhden vaiheen totaalikorjaus, distaalisessa hypospadiassa",4181730
+1122,"Yhden vaiheen totaalikorjaus, proksimaalisessa hypospadiassa",4181730
+1123,Excisio chordae(ph I),4181730
+1124,Uretran konstruktio (ph II),4181730
+1125,Epispadiarekonstruktio,4181730
+1126,Fistelin revisio,4181730
+1127,Muu tähän ryhmään kuuluva toimenpide,4181730
+1128,Rakon kaulan tubularisatio,4181730
+1129,Vaginaalinen uretrokystorafia,4181730
+1130,Vaginaalinen uretropeksia (esim. Ingelman-Sundberg),4181730
+1131,Abdominaalinen uretrokystopeksia,4181730
+1132,Vaginaalinen hysterektomia ja uretrokystopeksia (esim. Kasdon),4181730
+1133,Yhdistetty ala-ylätieleikkaus,4181730
+1134,Muu plastia inkontinenssin takia,4181730
+1135,Proteesileikkaus inkontinenssin takia,4181730
+1136,Muu tähän ryhmään kuuluva toimenpide,4181730
+1137,Transuretraalinen adenooman poisto,4181730
+1138,Transvesikaalinen adenooman poisto,4181730
+1139,Retropuubinen adenooman poisto,4181730
+1140,Perineaalinen totaaliprostatektomia,4181730
+1141,Retropuubinen totaaliprostatektomia,4181730
+1142,Sakraalinen tai perineaalinen totaaliprostatektomia,4181730
+1143,Muu tähän ryhmään kuuluva toimenpide,4181730
+1144,Neulabiopsia leikkaussalissa,4181730
+1145,Eksploraatio ja biopsia,4181730
+1146,Insisio ja dreneeraus,4181730
+1147,Kryohoito,4181730
+1148,Muu tähän ryhmään kuuluva toimenpide,4181730
+1149,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+1150,Uusintaleikkaus vuodon vuoksi,4181730
+1151,Uusintaleikkaus muusta syystä,4181730
+1152,"Kiveksen eksploraatio (sisältää mm. biopsian, detorsion tai appendix testiksen poiston)",4181730
+1153,Skrotumin insisio revisio tai suturaatio,4181730
+1154,Hydroseelen tai funikuloseelen leikkaus,4181730
+1155,Varikoseelen leik,4181730
+1156,Funikulolyysi ja orkidopeksia,4181730
+1157,Muu tähän ryhmään kuuluva toimenpide,4181730
+1158,"Orkidektomia (yksipuoleinen), sisältää myös funikulektomian",4181730
+1159,Orkidektomia (molemminpuoleinen),4181730
+1160,Testisproteesin asennus,4181730
+1161,Muu tähän ryhmään kuuluva toimenpide,4181730
+1162,Biopsia leikkaussalissa tai anestesiassa,4181730
+1163,Epididymektomia,4181730
+1164,Spermatoseelen ekistirpaatio,4181730
+1165,Vasektomia,4181730
+1166,Vas deferensin paljastaminen eksploraatiota varten (mahd. vasotomia tai vasografia),4181730
+1167,Vasovasostomia,4181730
+1168,Vasoepididymostomia,4181730
+1169,Transuretraalinen vasografia,4181730
+1170,Muu tähän ryhmään kuuluva toimenpide,4181730
+1171,Dorsaalinen insisio,4181730
+1172,Circumcisio,4181730
+1173,Esinahan tai frenulumin plastia,4181730
+1174,Muu tähän ryhmään kuuluva toimenpide,4181730
+1175,Biopsia leikkaussalissa tai anestesiassa,4181730
+1176,Ekstirpaatio tai eksisio,4181730
+1177,Elektrokoagulaatio tai laser,4181730
+1178,Osittainen amputaatio (samanaikainen imusolmukepoisto ilmoitetaan lisätietona),4181730
+1179,"Totaalinen amputaatio, emaskulaatio",4181730
+1180,Muu tähän ryhmään kuuluva toimenpide,4181730
+1181,"Peniksen plastinen rekonstruktio (concealed penis, micropenis, amputaation jälkitila)",4181730
+1182,Plastia Induratio penis plastica-taudissa,4181730
+1183,Impotenssiproteesin asettaminen,4181730
+1184,Priapismin vuoksi tehtävä leikkaus,4181730
+1185,Muu tähän ryhmään kuuluva toimenpide,4181730
+1186,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+1187,Uusintaleikkaus muusta syystä,4181730
+1188,Eksploratiivinen laparotomia gynekologisin indikaatioin (sisältää biopsiat ja dreneerauksen),4181730
+1189,"""Second look""-leikkaus pahanlaatuisen kasvaimen vuoksi",4181730
+1190,Muu tähän ryhmään kuuluva toimenpide,4181730
+1191,"Koepalan otto kohdun suulta leikkaussalissa tai anestesiassa (vulvabiopsia 8474, vaginabiopsia 8411)",4181730
+1192,Kerviksin kaavinta,4181730
+1193,Fraktioitu kaavinta,4181730
+1194,Endometriumin koepalat (histologinen ja sytologinen),4181730
+1195,Laparosenteesi (myös Douglas),4181730
+1196,Neulabiopsia leikkaussalissa,4181730
+1197,Pertubatio,4181730
+1198,Muu tähän ryhmään kuuluva toimenpide,4181730
+1199,"Munasarjan säilyttävä eksploraatio ja siihen liittyvät toimenpiteet esim. resektio, enukleaatio tai ovariolyysi",4181730
+1200,Ooforektomia,4181730
+1201,Salpingektomia,4181730
+1202,Salpingo-ooforektomia,4181730
+1203,Subradikaalinen ovariomalignooman poisto (sisältää mahdollisen genitaalien ja ometin poiston),4181730
+1204,Parovariaalikystan poisto,4181730
+1205,Muu tähän ryhmään kuuluva toimenpide,4181730
+1206,Salpingolyysi ja/tai fimbriolyysi,4181730
+1207,Salpingostomia,4181730
+1208,Tuuban resektio ja anastomoosi,4181730
+1209,Tuuban resektio ja reimplantaatio,4181730
+1210,Mikrokirurginen tuubaleikkaus,4181730
+1211,Applicatio ovii,4181730
+1212,Muu tähän ryhmään kuuluva toimenpide,4181730
+1213,Sterilisointi laparotomiatietä,4181730
+1214,Vaginaalinen sterilisointi,4181730
+1215,Muu tähän ryhmään kuuluva toimenpide,4181730
+1216,Salpingektomia,4181730
+1217,Resectio tubae,4181730
+1218,Resectio tubae ja rekonstruktio,4181730
+1219,Sectio tubae,4181730
+1220,Expressio ovi,4181730
+1221,Muu tähän ryhmään kuuluva toimenpide,4181730
+1222,Hysterotomia,4181730
+1223,Tuumorin poisto (esim. enukleaatio) tai polyypin poisto,4181730
+1224,"Uteruksen septumin poisto (Jones-Jones, Strassman)",4181730
+1225,Kervikstyngän poisto,4181730
+1226,Supravaginaalinen amputaatio tai resektio,4181730
+1227,"Hysterektomia (raskauden keskeytykseen liittyvänä 8516, prolapsin korjaus 8436)",4181730
+1228,Hysterektomia ja yksipuoleinen adneksien poisto,4181730
+1229,Hysterektomia ja molemminpuoleinen adneksien poisto,4181730
+1230,Radikaalinen hysterektomia (sisältää imusolmukkeiden poiston),4181730
+1231,"Lantion tyhjennys (eksenteraatio, eviskeraatio)",4181730
+1232,Muu tähän ryhmään kuuluva toimenpide,4181730
+1233,IUD:n asettaminen tai poisto anestesiassa,4181730
+1234,Kerviksdilataatio,4181730
+1235,Suturaatio,4181730
+1236,Kohdun sisäsuun insuffisienssiin kohdistuva leikkaus (raskauden aikana 8702),4181730
+1237,"Koagulaatio, kryo tai laser anestesiassa tai leikkaussalissa",4181730
+1238,Conisatio portionis,4181730
+1239,Amputatio portionis et conisatio,4181730
+1240,Vaginaalinen kervikstyngän poisto,4181730
+1241,Muu tähän ryhmään kuuluva toimenpide,4181730
+1242,Pesäkkeiden poisto tai poltto,4181730
+1243,Sakrouteriinojen katkaisu ja resektio,4181730
+1244,Kombinoitu endometrioosileikkaus,4181730
+1245,Muu tähän ryhmään kuuluva toimenpide,4181730
+1246,Lantionpohjan kiinnikkeiden irroitus,4181730
+1247,Uteruksen redressio tai peksia,4181730
+1248,Uteruksen ja adneksien ulkopuolisen genitaalituumorin poisto,4181730
+1249,Muu tähän ryhmään kuuluva toimenpide,4181730
+1250,Kolpotomia (Landau),4181730
+1251,"Paikallisen muutoksen laser, koagulaatio, biopsia tai poisto",4181730
+1252,Vaginatuumorin poisto,4181730
+1253,Vaginan dilataatio,4181730
+1254,Vaginan suturaatio,4181730
+1255,"Kolpoplastia (esim. septum, artesia)",4181730
+1256,Kolpopoesis (rekonstruktio),4181730
+1257,Rektovaginaalifistelin sulku,4181730
+1258,Muu tähän ryhmään kuuluva toimenpide,4181730
+1259,Kolpopeksia,4181730
+1260,Etu- ja/tai takakolporafia,4181730
+1261,Etu- ja/tai takakolporafia ja kerviksamputaatio (esim. Manchester),4181730
+1262,Kolpokleisis,4181730
+1263,Enteroseelen korjaus (sisältää laparotomiateitse tehtävän Moschowitz-operaation modifikaatioineen),4181730
+1264,Vaginaalinen hysterektomia ja etutakarafia,4181730
+1265,Yhdistetty ala-ylätieleikkaus,4181730
+1266,Muu tähän ryhmään kuuluva toimenpide,4181730
+1267,Insisio (ja mahdollinen dreneeraus),4181730
+1268,Hymenin insisio tai plastia,4181730
+1269,Marsupialisaatio tai rauhasen eksisio,4181730
+1270,"Paikallisen muutoksen (esim. kondylomien, tuumorin) koagulaatio, eksisio tai biopsia leikkaussalissa tai anestesiassa",4181730
+1271,Vulvoplastia tai klitorisplastia,4181730
+1272,Vulvan resektio (labia tai klitoris),4181730
+1273,Vulvektomia,4181730
+1274,Muu tähän ryhmään kuuluva toimenpide,4181730
+1275,Uteruksen tyhjennys imulla,4181730
+1276,Evakuaatio ja abraasio,4181730
+1277,Muu tähän ryhmään kuuluva toimenpide,4181730
+1278,Kaulakanavan laajennus ja tyhjennys imulla,4181730
+1279,Kaulakanavan laajennus ja muu kirurginhen evakuaatio,4181730
+1280,Kerviksin pehmennys abortiiviaineella tai laminaareilla ja siihen liittyvä uteruksen kirurginen tyhjennys,4181730
+1281,Abortiiviaineella indusoitu abortti ja siihen liittyvä uteruksen kirurginen tyhjennys,4181730
+1282,Hysterotomia,4181730
+1283,Hysterektomia tai uteruksen supravaginaalinen amputaatio raskauden keskeytykseen liittyen,4181730
+1284,Muu tähän ryhmään kuuluva toimenpide,4181730
+1285,Haavarevisio,4181730
+1286,Laparotomia leikkauskomplikaation takia,4181730
+1287,Muu tähän ryhmään kuuluva toimenpide,4181730
+1288,Lapsivesipunktio leikkaussalissa,4181730
+1289,Cerglagen asettaminen raskauden aikana,4181730
+1290,Cerglagen poisto anestesiassa,4181730
+1291,Intrauteriininen verensiirto- tai vaihto,4181730
+1292,Muu tähän ryhmään kuuluva toimenpide,4181730
+1293,Imukuppisynnytys,4181730
+1294,Pihtisynnytys,4181730
+1295,Perätilan ulosautto,4181730
+1296,Perätilan ulosveto,4181730
+1297,Sikiön sisäkäännös ja ulosveto,4181730
+1298,Muu tähän ryhmään kuuluva toimenpide,4181730
+1299,Keisarileikkaus,4181730
+1300,"Laparotomia ekstrauteriinisen graviditeetin vuoksi(elävä sikiö, 28 raskausviikon jälkeen)",4181730
+1301,Muu tähän ryhmään kuuluva toimenpide,4181730
+1302,Esiinluiskahtaneen napanuoran tai muun sikiön osan repositio,4181730
+1303,"Kraniotomia, punktio tai embryotomia",4181730
+1304,Muu tähän ryhmään kuuluva toimenpide,4181730
+1305,Kohdunontelon eksploraatio ja/tai kaavinta tai imutyhjennys (ad 24 tuntia),4181730
+1306,Istukan käsinirroitus ja siihen liittyvä kaavinta,4181730
+1307,II^0 tai III^0 perineumruptuuran tai emätinruptuuran korjaus,4181730
+1308,Kerviksruptuuran korjaus,4181730
+1309,"Laparotomia synnytyskomplikaation vuoksi (uterusruptuura, vuoto)",4181730
+1310,Vulva- tai paravaginaalihematooman evakuaatio,4181730
+1311,Muu tähän ryhmään kuuluva toimenpide,4181730
+1312,Kohdunontelon tyhjennys ja kaavinta (ad 6 vko),4181730
+1313,Välilihan ja emättimen haavan revisio,4181730
+1314,Laparotomiahaavan revisio,4181730
+1315,Muu tähän ryhmään kuuluva toimenpide,4181730
+1316,Luubiopsia,4181730
+1317,Paikallisen luuprosessin trepanaatio tai poisto,4181730
+1318,Luun poisto osittain tai kokonaan,4181730
+1319,Autogeeninen luunsiirto,4181730
+1320,"Homogeeninen tai heterogeeninen luunsiirto, esim. nivelsiirto",4181730
+1321,Kestohuuhtelun asennus tai paikalliskäsittelyaineen applikaatio,4181730
+1322,Muu tähän ryhmään kuuluva toimenpide,4181730
+1323,Kipsaus anestesiassa,4181730
+1324,Korrektio-osteotomia luun muoto- tai asentovirheen vuoksi,4181730
+1325,"Luun pidennys, yksi- tai kaksivaiheinen",4181730
+1326,Luun lyhennys,4181730
+1327,Epifyseodeesi (lonkkaluksaatiossa trokanter 9408),4181730
+1328,Epifyseodesolyysi,4181730
+1329,Muu tähän ryhmään kuuluva toimenpide,4181730
+1330,Vedon asettaminen raaja- tai lantiomurtuman yhteydessä leikkaussalissa,4181730
+1331,Kallovedon asettaminen,4181730
+1332,Sulkeinen reduktio ja kipsaus tai vastaava leikkaussalissa tai anestesiassa,4181730
+1333,"Kipsin vaihto, kiilaus tai vastaava toimenpide leikkaussalissa tai anestesiassa",4181730
+1334,"Suuri kipsaus (kipsikorsetti, Minervakipsi tai vastaava)",4181730
+1335,"Sulkeinen reduktio ja osteosynteesi (esim. Kirchner, Kuntscher, Ender)",4181730
+1336,Avoin reduktio tai revisio ilman osteosynteesiä ja kipsaus tai vastaava,4181730
+1337,Avoin reduktio ja osteosynteesi,4181730
+1338,Eksterni fiksaatio (Hoffman tai vastaava),4181730
+1339,Nivelpinnan rekonstruktio (sisältää luunsiirron),4181730
+1340,Murtuman hoito endoproteesia käyttäen,4181730
+1341,"Osteosynteesi, luun resektio tai ontelon täyttö",4181730
+1342,Muu tähän ryhmään kuuluva toimenpide,4181730
+1343,Revisio haavakomplikaation vuoksi,4181730
+1344,Revisio luuinfektion vuoksi,4181730
+1345,Myöhäisosteosynteesi esim. delayed union (sisältää luunsiirron),4181730
+1346,Reosteosynteesi (huono asento tai fiksatio),4181730
+1347,Osteoynteesimateriaalin poisto,4181730
+1348,Luunsiirto luutumisen edistämiseksi,4181730
+1349,Muu tähän ryhmään kuuluva toimenpide,4181730
+1350,Anteriorinen spondylodeesi,4181730
+1351,Posteriorinen spondylodeesi,4181730
+1352,Muu tähän ryhmään kuuluva toimenpide,4181730
+1353,Anteriorinen spondylodeesi,4181730
+1354,Posteriorinen spondylodeesi,4181730
+1355,Posterolateraalinen spondylodeesi,4181730
+1356,Muu tähän ryhmään kuuluva toimenpide,4181730
+1357,Korrektiolaitteiston asennus,4181730
+1358,Korrektiolaitteiston säätö ja poisto,4181730
+1359,Spondylodeesi (sisältää myös korrektion),4181730
+1360,Muu tähän ryhmään kuuluva toimenpide,4181730
+1361,Anteriorinen dekompressioleikkaus (sisältää myös deesin),4181730
+1362,Posteriorinen dekompressioleikkaus,4181730
+1363,Muu juuren dekompressioleikkaus takakautta esim. Epstein,4181730
+1364,Muu tähän ryhmään kuuluva toimenpide,4181730
+1365,Diskusprolapsin eksploraatio tai poisto,4181730
+1366,"Muu juuren dekompressioleikkaus takakautta (esim. laminektomia, Gill)",4181730
+1367,Muu tähän ryhmään kuuluva toimenpide,4181730
+1368,Rintarangan dekompressioleikkaus,4181730
+1369,Tuoreen selkävamman leikkaus,4181730
+1370,Spondylodeesin purku,4181730
+1371,Muu tähän ryhmään kuuluva toimenpide,4181730
+1372,Luksoituneen nivelen repositio (käsi 9525),4181730
+1373,Polven nivelside- ja/tai kapselivamman korjausleikkaus,4181730
+1374,Nilkan nivelside- ja/tai kapselivamman korjausleikkaus,4181730
+1375,Muu nivelside- ja/tai kapselivamman korjausleikkaus,4181730
+1376,Muu tähän ryhmään kuuluva toimenpide,4181730
+1377,Olkanivelen plastia toistuvan sijoiltaanmenon vuoksi,4181730
+1378,Muu olkanivelen (myös ac-nivel) rekonstruktio tai plastialeikkaus,4181730
+1379,Polvilumpion ja sen jänteiden plastia,4181730
+1380,Polven muu kuin lumpioon kohdistuva nivelsiteiden plastia tai rekonstruktio,4181730
+1381,Nilkan nivelsiteiden rekonstruktioleikkaus tai -plastia,4181730
+1382,Muun nivelsiteisiin ja kapseliin kohdistuva plastialeikkaus tai rekonstruktio,4181730
+1383,Muu tähän ryhmään kuuluva toimenpide,4181730
+1384,Nivelen tyhjennys tai huuhtelu anestesiassa,4181730
+1385,Kipsisidoksen asettaminen tai vaihto (ei murtuma) leikkaussalissa,4181730
+1386,Manipulaatio anestesiassa tai redressio ja kipsaus,4181730
+1387,"Artrotomia (sisältää biopsian, revision, irtokappaleen poiston, kiinnityksen ja vastaavat toimenpiteet)",4181730
+1388,Nivelkierukan poisto,4181730
+1389,Synovektomia (polvi 9311),4181730
+1390,Operatiivinen mobilisointi ja mahdollinen pehmytkudosplastia,4181730
+1391,Autoartroplastia (esim. nivelen resektio),4181730
+1392,"Alloartroplastia, endoproteesi tai implantaatti",4181730
+1393,Muu tähän ryhmään kuuluva toimenpide,4181730
+1394,Halluxleikkaus,4181730
+1395,Metatarsofalangeaalinivelresektio,4181730
+1396,"Muu varvasdeformiteetin tai kiputilan leikkaus, esim. Morton, vasaravarvas",4181730
+1397,Muu tähän ryhmään kuuluva toimenpide,4181730
+1398,Polven luudutusleikkaus,4181730
+1399,Nilkan (TC) luudutusleikkaus,4181730
+1400,Subtalaarinivelen luudutusleikkaus (tai triple),4181730
+1401,Ranteen luudutusleikkaus,4181730
+1402,Olkanivelen luudutusleikkaus,4181730
+1403,Muu tähän ryhmään kuuluva toimenpide,4181730
+1404,Autoartroplastia esim. resektio,4181730
+1405,Reisiluun osteotomia,4181730
+1406,Reisiluun pään säästävä endoproteesileikkaus (esim. Wagner),4181730
+1407,Koko lonkkanivelen korvaava endoproteesileikkaus (esim. Charnley),4181730
+1408,Lonkkamaljakon tai sen katon muovausleikkaus,4181730
+1409,Muu tähän ryhmään kuuluva toimenpide,4181730
+1410,"Polven puhdistusleikkaus (synovektomia, debridement)",4181730
+1411,Osteotomia tibiaan tai femuriin,4181730
+1412,"Polven osaendoproteesi (demi, hemi, patella)",4181730
+1413,Polven totaaliendoproteesi (sisältää myös patellaosan),4181730
+1414,Patellektomia,4181730
+1415,Muu tähän ryhmään kuuluva toimenpide,4181730
+1416,Suljettu repositio,4181730
+1417,"Ensimmäinen reartroplastia irtoamisen vuoksi, sisältää myös irtoamisesta johtuvan murtuman hoidon",4181730
+1418,"Myöhempi reartroplastia irtoamisen vuoksi, sisältää myös irtoamisesta johtuvan murtuman hoidon",4181730
+1419,Reartroplastia proteesin rikkoutumisen vuoksi,4181730
+1420,"Ensimmäinen uusintaleikkaus syvän infektion vuoksi, proteesia ei poisteta eikä vaihdeta",4181730
+1421,"Ensimmäinen uusintaleikkaus syvän infektion vuoksi, proteesi poistetaan tai vaihdetaan",4181730
+1422,"Myöhempi uusintaleikkaus syvän infektion vuoksi, sisältää myös proteesin poiston jälkeisen reapplikaation",4181730
+1423,Endoproteesin eksploraatio tai revisio muusta syystä kuin irtoaminen tai infektio. Sisältää myös proteesin asennon korjauksen,4181730
+1424,"Endoproteesiin liittyvän murtuman hoito, ei irtoamisesta tai iatrogeenisesta syystä johtuva",4181730
+1425,Muu tähän ryhmään kuuluva toimenpide,4181730
+1426,"Eksploraatio, revisio tai repositio, ei infektion eikä irtoamisen takia",4181730
+1427,"Ensimmäinen revisio infektion vuoksi, sisältää myös proteesin poiston tai vaihdon",4181730
+1428,"Ensimmäinen revisio irtoamisen vuoksi, sisältää myös irtoamisen aiheuttaman murtuman sekä proteesin rikkoutumisen",4181730
+1429,"Myöhempi revisio infektion tai irtoamisen vuoksi, sisältää myös poiston, reapplikaation ja mahdollisen artrodeesin",4181730
+1430,Muu tähän ryhmään kuuluva toimenpide,4181730
+1431,Redressio ja kipsi tai kipsinvaihto,4181730
+1432,Akillestenotomia,4181730
+1433,Posteriorinen release tai posteromediaalinen release,4181730
+1434,Muu jalkaterän pehmytkudoksiin kohdistuva toimenpide,4181730
+1435,Jänteen tai jänteiden siirtoleikkaus,4181730
+1436,Säären osteotomia,4181730
+1437,Taluksen tai kalkaneuksen osteotomia,4181730
+1438,"Subtalo, triple tai kalkaneokuboidaaliartrodeesi",4181730
+1439,Tarsuksen resektio ja artrodeesi,4181730
+1440,Metatarsuksen osteotomiat,4181730
+1441,Muu tähän ryhmään kuuluva toimenpide,4181730
+1442,Kipsaus leikkaussalissa (ilman leikkausta),4181730
+1443,Adduktortenotomia,4181730
+1444,Muut lonkan seudun tenotomiat,4181730
+1445,Obturatoriushermon katkaisu,4181730
+1446,Ileopsoaslihaksen siirto,4181730
+1447,Muut lonkan lihaksiin ja jänteisiin kohdistuvat toimenpiteet,4181730
+1448,Lantion osteotomia,4181730
+1449,Asetabulumplastia (ilman lantion osteotomiaa),4181730
+1450,Reisiluun osteotomia,4181730
+1451,Polven ojentajaan kohdistuvat toimenpiteet,4181730
+1452,Polven koukistajiin kohdistuvat toimenpiteet,4181730
+1453,Polviniveleen kohdistuvat toimenpiteet,4181730
+1454,Gastrocnaemius-pidennys (Strayer),4181730
+1455,Akillesjänteen katkaisu tai pidennys,4181730
+1456,"Jalkaterän jänteiden katkaisu, pidennys tai siirto",4181730
+1457,Muu jalkaterän pehmytkudoksiin kohdistuva toimenpide,4181730
+1458,Subtaloartrodeesi (tai triple),4181730
+1459,Tarsuksen resektio (ja artrodeesi) tai metarsusten resektio,4181730
+1460,Muu jalkaterän luustoon kohdistuva toimenpide,4181730
+1461,Muu tähän ryhmään kuuluva toimenpide,4181730
+1462,Anestesiatutkimus ja artrografia,4181730
+1463,Kipsaus leikkaussalissa ja mahdollinen repositio,4181730
+1464,Adduktortenotomia,4181730
+1465,Operatiivinen reduktio,4181730
+1466,Asetabulumplastiikka (ilman lantion osteotomiaa),4181730
+1467,Lantion osteotomia,4181730
+1468,Reisiluun yläpään osteotomia,4181730
+1469,Trokanterepifyseodeesi,4181730
+1470,Reiden tai säären ydinnaulaus (mahd. osteotomioineen),4181730
+1471,Polven seudun osteotomiat,4181730
+1472,Polven ojentajasysteemin korjausleikkaus,4181730
+1473,Polven instabiliteetin korjausleikkaus,4181730
+1474,Nilkan ja jalkaterän pehmytkudosleikkaus,4181730
+1475,Nilkan luudutusleikkaus,4181730
+1476,Jalkaterän luustoon kohdistuva leikkaus,4181730
+1477,Yläraajan luun ydinnaulaus osteotomioineen,4181730
+1478,Muu yläraajatoimenpide,4181730
+1479,Muu tähän ryhmään kuuluva toimenpide,4181730
+1480,Revisio haavakomplikaation vuoksi,4181730
+1481,Muu tähän ryhmään kuuluva toimenpide,4181730
+1482,Paikallisen tulehduspesäkkeen avaus ja kanavointi,4181730
+1483,"Pehmkudosbiopsia (lihas, tuumori) yleisanestesiassa tai leikkaussalissa",4181730
+1484,Paikallinen pehmkudoksen poisto tai eksploraatio (esim. bursa),4181730
+1485,Pehmkudostuumorin poisto (subkutistuumori 9736 ihotuumori 9733),4181730
+1486,Compartment eksisio tuumorin vuoksi,4181730
+1487,Faskian tai aponeuroosin halkaisu,4181730
+1488,"Jänteen tai jännetupen puhdistusleikkaus tai halkaisu (esim. tenosynovektomia, tenolyysi)",4181730
+1489,"Tendorafia tai rekonstruktio, esim. siirre, refiksaatio, tenodeesi",4181730
+1490,Jänteen lyhennys ja pidennys,4181730
+1491,Lihaksen tai jänteen irroitus kiinnityksestään tai katkaisu,4181730
+1492,Jännetranspositio (uuteen tehtävään),4181730
+1493,Muu tähän ryhmään kuuluva toimenpide,4181730
+1494,"Paikallinen pehmytkudoksen eksploraatio, dreneeraus tai poisto",4181730
+1495,Aponeuroosin resektio tai eksisio (Dupuytren),4181730
+1496,Käden ihon ja pehmytkudosten rekonstruktio tai muovaus esim. syndaktylia,4181730
+1497,Muu tähän ryhmään kuuluva toimenpide,4181730
+1498,"Tenotomia, myotenotomia",4181730
+1499,"Jännetupen halkaisu (De Quervain, napsusormi)",4181730
+1500,Jänteen tai jännetupen puhdistusleikkaus (tenosynovektomia),4181730
+1501,Tenodeesi,4181730
+1502,Jännesuturaatio tai refiksaatio,4181730
+1503,Jänteen rekonstruktio siirteellä,4181730
+1504,Jänteen lyhennys tai pidennys,4181730
+1505,Jänteen tai lihaksen transpositio,4181730
+1506,Tenolyysi,4181730
+1507,"Tenolyysi ja liukupintaplastia (silikoni, subkutis)",4181730
+1508,Jänneproteesin asettaminen,4181730
+1509,Jännetupen tai pulleyn rekonstruktio,4181730
+1510,Muu tähän ryhmään kuuluva toimenpide,4181730
+1511,Artrotomia (esim. irtopalan poisto),4181730
+1512,Synovektomia,4181730
+1513,Kapsulotomia,4181730
+1514,Ligamentorafia tai rekonstruktio,4181730
+1515,Nivelen luksaation repositio leikkaussalissa,4181730
+1516,Autoartroplastia (esim. Vainio),4181730
+1517,"Alloartroplastia, implantaatti tai endoproteesi",4181730
+1518,Mikrovaskulaarinen nivel- tai epifyysisiirto,4181730
+1519,Nivelen tai sen osan vapaa siirto,4181730
+1520,Artrodeesi käden niveleen,4181730
+1521,Muu tähän ryhmään kuuluva toimenpide,4181730
+1522,Falangisaatio,4181730
+1523,Pollikisaatio tai muu varrellinen transpositio,4181730
+1524,Varpaan transpositio käteen,4181730
+1525,Käden synnynnäisen epämuodostuman takia tehty laaja muovausleikkaus,4181730
+1526,Mutiloituneen käden laaja myöhäisrekonstruktio,4181730
+1527,Neurologisen sairauden tai hermovamman vuoksi tehtävä laaja muovausleikkaus,4181730
+1528,Muu tähän ryhmään kuuluva toimenpide,4181730
+1529,Amputaatio sormen tai kämmenen alueelta,4181730
+1530,Amputaatio ranteesta tai kyynärvarren alueelta,4181730
+1531,Amputaatio kyynärpäästä tai olkavarresta,4181730
+1532,Eksartikulaatio olkapäästä tai lapaluu-yläraaja-amputaatio,4181730
+1533,Muu tähän ryhmään kuuluva toimenpide,4181730
+1534,Varpaan tai varpaiden amputaatio,4181730
+1535,Amputaatio jalkaterän alueelta tai nilkkanivelestä,4181730
+1536,Sääriamputaatio,4181730
+1537,Polvieksartikulaatio tai reisiamputaatio,4181730
+1538,Alaraaja eksartikulaatio tai hemopelvektomia,4181730
+1539,Muu tähän ryhmään kuuluva toimenpide,4181730
+1540,Tyngän revisio tai plastia,4181730
+1541,Reamputaatio yläraajan alueelle,4181730
+1542,Reamputaatio alaraajan alueelle,4181730
+1543,Muu tähän ryhmään kuuluva toimenpide,4181730
+1544,Raajan replantaatio (ranne tai nilkka proksimaalisesti),4181730
+1545,Raajan osan replantaatio (ranne tai nilkka distaalisesti,4181730
+1546,Raajan revaskularisatio,4181730
+1547,Raajan osan revaskularisatio,4181730
+1548,Uusintaleikkaus replantation tai revaskularisation jälkeen (1 vko),4181730
+1549,"Muu tähän ryhmään kuuluva toimenpide (päänahka, penis)",4181730
+1550,Uusintaleikkaus haavakomplikaation vuoksi,4181730
+1551,Muu tähän ryhmään kuuluva toimenpide,4181730
+1552,Mastotomia,4181730
+1553,Rintarauhasen eksploraatio ja mahdollinen tuumorin poisto,4181730
+1554,Rintarauhasen resektio,4181730
+1555,Mamillan poisto,4181730
+1556,Subkutaaninen mastektomia,4181730
+1557,"Ablatio mammae, sisältää kainalon eksploraation",4181730
+1558,Ablatio mammae ja kainalon imusolmukkeiden poisto,4181730
+1559,"Radikaali mastektomia (Halsted), sisältää myös parasternaalirauhasen poiston",4181730
+1560,Residiivin eksisio,4181730
+1561,Muu tähän ryhmään kuuluva toimenpide,4181730
+1562,Mamillan rekonstruktio tai transpositio,4181730
+1563,Reduktioplastia ja mahdollinen mamillan transpositio,4181730
+1564,Reduktioplast mamma,4181730
+1565,Rintarauhasen suurentaminen tai rekonstruktio omalla kudoksella,4181730
+1566,Rintarauhasen rekonstruktio vieraalla materiaalilla (poiston jälkeen),4181730
+1567,Muu tähän ryhmään kuuluva toimenpide,4181730
+1568,Tulehduspesäkkeen avaus ja kanavointi leikkaussalissa tai anestesiassa,4181730
+1569,Ihon hionta tai jäädytys,4181730
+1570,Ihomuutoksen eksisio leikkaussalissa tai anestesiassa,4181730
+1571,Eksisio ja paikallinen plastia tai siihen liittyvä mahdollinen vapaa ihosiirto,4181730
+1572,Ihon irrotus myöhäissiirtoa varten,4181730
+1573,Subkutiksen tuumorin poisto leikkaussalissa tai anestesiassa,4181730
+1574,Dekubituksen eksisio ja siihen liityvän luuprominenssin poisto ja plastia tai ihonsiirto,4181730
+1575,Raajan ihon ja pehmytosien monikudosrekonstruktio,4181730
+1576,Vartalon alueen ihon ja pehmytosien monikudosrekonstruktio,4181730
+1577,Muu tähän ryhmään kuuluva toimenpide,4181730
+1578,Kynsien poisto leikkaussalissa tai anestesiassa,4181730
+1579,Hyperhidroosin leikkaushoito,4181730
+1580,Muu tähän ryhmään kuuluva toimenpide,4181730
+1581,Haavan revisio tai suturaatio leikkaussalissa tai anestesiassa (pääasiassa iho),4181730
+1582,Laajan monikudosvamman revisio ja mahdollinen suturaatio,4181730
+1583,"Haavan myöhäisrevisio (1 vrk) ja siihen liittyvät toimenpiteet, esim. ihonsiirto",4181730
+1584,Muu tähän ryhmään kuuluva toimenpide,4181730
+1585,"Sidevaihto, karstan diskissio tai revisio anestesiassa tai leikkaussalissa",4181730
+1586,Varhaiseksisio ja ihonsiirto (alle 7 päivää),4181730
+1587,Myöhäiseksisio ja ihonsiirto,4181730
+1588,Ihonsiirto autograftilla,4181730
+1589,Ihonsiirto allograftilla,4181730
+1590,Ihonsiirto ksenograftilla,4181730
+1591,Muu tähän ryhmään kuuluva toimenpide,4181730
+1592,Vapaa ihonsiirto,4181730
+1593,Dermis- tai dermisrasvasiirto,4181730
+1594,Limakalvosiirto,4181730
+1595,Faskia- tai jännesiirto,4181730
+1596,Lihassiirto,4181730
+1597,Periostisiirto,4181730
+1598,Rusto/perikondrium siirto,4181730
+1599,Luunsiirto,4181730
+1600,Monikudossiirto,4181730
+1601,Muu tähän ryhmään kuuluva toimenpide,4181730
+1602,Kutaaninen siirre,4181730
+1603,Myokutaaninen siirre,4181730
+1604,Osteomyokutaaninen siirre,4181730
+1605,Neurovaskulaarinen siirre,4181730
+1606,Vaskulaarinen luunsiirto,4181730
+1607,Mikrovaskulaarianastomoosiin revisio,4181730
+1608,Muu tähän ryhmään kuuluva toimenpide,4181730
+1609,Pään iholta,4181730
+1610,Hiuspohjasta,4181730
+1611,Nasolabiaalialueelta,4181730
+1612,Kaulalta,4181730
+1613,Yläraajan alueelta,4181730
+1614,Käden alueella (esim. island flap),4181730
+1615,Deltopektoraalialueelta,4181730
+1616,Toraksin alueelta,4181730
+1617,Abdomenin alueelta,4181730
+1618,Alaraajan alueelta,4181730
+1619,Nivusalueelta,4181730
+1620,Lihaskieleke,4181730
+1621,Muskulokutaaninen kieleke,4181730
+1622,Monikudoskieleke,4181730
+1623,Muu tähän ryhmään kuuluva toimenpide,4181730
+1624,Ennenaikainen irrotus tai revisio,4181730
+1625,Kielekkeen katkaisu,4181730
+1626,Kielekkeen ohennus tai revisio,4181730
+1627,Muu tähän ryhmään kuuluva toimenpide,4181730
+1628,Otsan ihon muovausleikkaus,4181730
+1629,Kasvojen ihon muovausleikkaus (Faclift),4181730
+1630,Kaulan ihon muovausleikkaus,4181730
+1631,Silmäluomien ihon muovausleikkaus,4181730
+1632,Nenän pehmytkudosplastia,4181730
+1633,Muu tähän ryhmään kuuluva toimenpide,4181730
+1634,Yläraajan,4181730
+1635,Alaraajan,4181730
+1636,Vatsan,4181730
+1637,Gluteaaliseudun,4181730
+1638,Muu tähän ryhmään kuuluva toimenpide,4181730
+1639,"Sidevaihto, ompeleiden tai piikin poisto tai vastaava leikkaussalissa tai anestesiassa",4181730
+1640,Dreenin tai katetrin vaihto tai poisto leikkaussalissa tai anestesiassa,4181730
+1641,Muu vastaava toimenpide leikkaussalissa tai anestesiassa,4181730

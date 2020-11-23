@@ -1,0 +1,105 @@
+---
+title: "Prepare REIMB codes for USAGI"
+output: 
+    github_document:
+        df_print: tibble
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(scales)
+library(readxl)
+
+```
+
+## Load
+
+```{r load, message=FALSE, warning=FALSE}
+
+reimb_standard_eng <- read_excel("./KELA_reimburesement_ENG_translations_Tuomo(1).xlsx") %>% filter(!is.na(Code))
+reimb_standard <- read_tsv("./KELA_korvausnumerot_KELAn_sivuilta_kopioitu_2020-04-03.txt")
+
+reimb_standard_eng <- reimb_standard_eng %>% rename(code = Code, name_english = `Name in English`, name_finnish = `Name in Finnish`)
+
+reimb_standard <- reimb_standard %>% 
+  rename(code = Korvausnumero, name_finnish = Sairaus) %>%  
+  mutate(asterisk_after_code = str_detect(code, "\\*"), code = as.integer(str_replace(code,"\\*","" ))) %>% 
+  mutate(asterisk_after_name = str_detect(name_finnish, "\\*")) %>% 
+  filter(!is.na(code))
+
+reimb <- left_join(reimb_standard, 
+                   reimb_standard_eng %>% select(-name_finnish), 
+                   by="code") %>% 
+  select(code, asterisk_after_code, name_finnish, asterisk_after_name, name_english)
+
+
+
+freq_reimb_finngen <- read_csv("../1_source_files/freq_reimb_finngen.csv") %>% select(-X1) %>% 
+  rename(freq_finngen=n_codes)
+```
+
+
+# Study finnGen
+
+Number of codes in each source: 
+```{r}
+reimb %>%  nrow()
+freq_reimb_finngen %>%  nrow()
+
+
+n_events_finngen <- freq_reimb_finngen$freq_finngen %>% sum()
+```
+
+```{r}
+ finngen_join <- full_join(freq_reimb_finngen %>% rename(code = CODE1), 
+                           reimb,
+                           by = c("code"))
+```
+
+
+
+**How many codes labeled as icd10fi in FinnGen are not in the icd10fi standard ?**
+```{r paged.print=TRUE}
+no_finngen_standard <- finngen_join %>% filter(is.na(asterisk_after_code)) %>% select(code, freq_finngen ) %>%
+  mutate( freq_finngen_per=percent(freq_finngen/n_events_finngen))
+
+no_finngen_standard
+```
+
+
+
+
+
+
+```{r}
+finngen_join <- finngen_join %>%
+  mutate( freq_finngen_per=percent(freq_finngen/n_events_finngen))%>%
+  mutate(valid_start_date = as.Date(NA), valid_end_date = as.Date(NA), invalid_reason=as.character(NA)) %>% 
+  select(code, freq_finngen, freq_finngen_per, 3:9)
+
+finngen_join %>% arrange(-is.na(asterisk_after_code)) 
+
+
+write_csv(finngen_join %>% arrange(-is.na(asterisk_after_code)), "./reimb_finngen_freq.csv")
+```
+
+This table is based on `KELA_korvausnumerot_KELAn_sivuilta_kopioitu_2020-04-03.txt`.
+Reimbursement "code"; "freq_finngen" number of occurrences in DF5; "freq_finngen_per" calculated as the percetage of total ; "n_patients"  number of patients with that code in DF5 ; if the code had an asterisk then "asterisk" is TRUE; "name_finnish";     "name_english" append from `KELA_reimburesement_ENG_translations_Tuomo.xlsx` if there; I added the two columns   "valid_start_date", "valid_end_date", "invalid_reason". 
+ 
+ 
+ The table is shorted out to show on top the codes that appear in DF5 but dont exist on `KELA_korvausnumerot_KELAn_sivuilta_kopioitu_2020-04-03.txt` (and therefore have no Finnish name). 
+ 
+ TODO: 
+ 1- Find the name of the missing codes. Explain shortly why they got invalid, and what is the new valid code in "invalid_reason".
+ With my limited Finnish I found some info here https://www.kela.fi/2010_laakekorvaukset-17122010. But I'm sure it has to be a better place with this info.  
+ 2- Find the "valid_start_date" and  "valid_end_date" for all the codes. If there is not end valid bcs it is currently in use you can give "31.12.2099"
+ 
+ 
+ 
+
+
+

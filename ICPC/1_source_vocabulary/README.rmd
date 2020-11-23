@@ -153,7 +153,9 @@ icpc_concept <- icpc_source %>%
     concept_code = code, 
     valid_start_date = as.Date("1970-01-01"),                                                                     
     valid_end_date = as.Date("2099-12-31"),   
-    tmp_main_icd10fi  = main_icd10fi # keep for mapping
+    tmp_main_icd10fi  = main_icd10fi, # keep for mapping, 
+    tmp_name_fi = name_fi, 
+    tmp_name_en_source = "THL"
   ) 
     
         
