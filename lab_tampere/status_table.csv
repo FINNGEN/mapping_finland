@@ -1,5 +1,0 @@
-status,n_codes,per_codes,n_events,per_events,db_name
-mapped,665,23%,35601052,92%,source
-not_mapped,2174,77%,3072823,8%,source
-mapped,1100,27.007%,40906762,87.892%,tays
-not_mapped,2973,72.993%,5635363,12.108%,tays

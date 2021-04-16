@@ -93,13 +93,18 @@ icd10fi_source_google_tralations <- read_csv("./icd10fi_source_google_tralations
   col_types = cols( .default = col_character() )
 )
 
+
 icd10fi_source <- left_join(
   icd10fi_source %>%  select(-name_en, -starts_with("name_fi"),
                              -starts_with("better_name_en"),
                              -starts_with("name_en_source"), 
-                             -starts_with("valid_start_date"),
-                             -starts_with("valid_end_date")), 
-  icd10fi_source_google_tralations, 
+                             #-starts_with("valid_start_date"),
+                             #-starts_with("valid_end_date")
+                             ), 
+  icd10fi_source_google_tralations %>% select(
+    -starts_with("valid_start_date"),
+    -starts_with("valid_end_date")
+    ),
   by="code"
 )
 
@@ -107,7 +112,7 @@ icd10fi_source <- left_join(
 write_csv(
   icd10fi_source  %>% 
     mutate(better_name_en="") %>% 
-    select(code, name_en_source, name_fi, name_en, better_name_en, valid_start_date, valid_end_date), 
+    select(code, name_en_source, name_fi, name_en, better_name_en), 
   "./icd10fi_source_google_tralations.csv"
 )
 

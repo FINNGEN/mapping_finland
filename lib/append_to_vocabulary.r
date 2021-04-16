@@ -129,6 +129,33 @@ for (i in 1:nrow(append_vocabs)) {
 }
 
 
+# FIX TABLES ----------------------------------------------------------------
+# Fix 1:  Somoe finnish concepts were mapped to concept in vocabularies that we dont include
+#         Moslty, bcs mapping is wrong, eg Cast
+concept_id_2_to_remove <- left_join(
+  concept_relationship %>% filter(relationship_id=="Maps to"),
+  concept %>% rename(concept_id_2 = concept_id), 
+  by="concept_id_2"
+) %>% 
+  filter(is.na(concept_name)) %>% 
+  .$concept_id_2
+
+concept_id_2_to_remove
+
+concept_relationship <- concept_relationship %>% 
+  filter(!(concept_id_2 %in% concept_id_2_to_remove)) %>% 
+  distinct()
+
+# Fix 2: some data in SYNONIMS is NA
+concept_synonym <- concept_synonym %>% filter(!is.na(concept_synonym_name))
+
+# Fix 3: vocabulary_version and vocabulary_reference cant be NA
+vocabulary <- vocabulary %>% mutate(vocabulary_version = if_else(is.na(vocabulary_version), "", vocabulary_version))
+vocabulary <- vocabulary %>% mutate(vocabulary_reference = if_else(is.na(vocabulary_reference), "", vocabulary_reference))
+
+# Fix 4 : concept name is na
+concept <- concept %>% mutate(concept_name = if_else(is.na(concept_name),concept_code,concept_name))
+
 # checking ----------------------------------------------------------------
 
 # vocabulary 
@@ -148,12 +175,12 @@ concept_relationship %>% tail()
 
 # save as feather --------------------------------------------------------------------
 library(feather)
-write_feather(concept, file.path(path_output, "CONCEPT.feather"))
-write_feather(vocabulary, file.path(path_output, "VOCABULARY.feather"))
-write_feather(concept_class, file.path(path_output, "CONCEPT_CLASS.feather"))
-write_feather(concept_synonym, file.path(path_output, "CONCEPT_SYNONYMfeather"))
-write_feather(concept_relationship, file.path(path_output, "CONCEPT_RELATIONSHIP.feather"))
-write_feather(concept_fg_info, file.path(path_output, "concept_fg_info.feather"))
+write_feather(concept, file.path(str_c(path_output,"_feather"), "CONCEPT.feather"))
+write_feather(vocabulary, file.path(str_c(path_output,"_feather"), "VOCABULARY.feather"))
+write_feather(concept_class, file.path(str_c(path_output,"_feather"), "CONCEPT_CLASS.feather"))
+write_feather(concept_synonym, file.path(str_c(path_output,"_feather"), "CONCEPT_SYNONYMfeather"))
+write_feather(concept_relationship, file.path(str_c(path_output,"_feather"), "CONCEPT_RELATIONSHIP.feather"))
+write_feather(concept_fg_info, file.path(str_c(path_output,"_feather"), "concept_fg_info.feather"))
 
 # CONCEPT_ANCESTOR
 col_types <- cols(
@@ -162,8 +189,8 @@ col_types <- cols(
   min_levels_of_separation  = col_integer(), 
   max_levels_of_separation = col_integer()
 )
-read_csv(file.path(path_to_vocabulary, "CONCEPT_ANCESTOR.csv"), col_types=col_types) %>% 
-write_feather(file.path(path_output, "CONCEPT_ANCESTOR.feather"))
+read_tsv(file.path(path_to_vocabulary, "CONCEPT_ANCESTOR.csv"), col_types=col_types) %>% 
+write_feather(file.path(str_c(path_output,"_feather"), "CONCEPT_ANCESTOR.feather"))
 
 # DRUG_STRENGTH
 col_types <- cols(
@@ -176,12 +203,12 @@ col_types <- cols(
   denominator_value = col_double(),
   denominator_unit_concept_id = col_integer(),
   box_size = col_integer(),
-  valid_start_date = col_date(),
-  valid_end_date = col_date(),
+  valid_start_date = col_date("%Y%m%d"),
+  valid_end_date = col_date("%Y%m%d"),
   invalid_reason = col_character()
 )
-read_csv(file.path(path_to_vocabulary, "DRUG_STRENGTH.csv"), col_types=col_types) %>% 
-  write_feather(file.path(path_output, "DRUG_STRENGTH.feather"))
+read_tsv(file.path(path_to_vocabulary, "DRUG_STRENGTH.csv"), col_types=col_types) %>% 
+  write_feather(file.path(str_c(path_output,"_feather"), "DRUG_STRENGTH.feather"))
 
 # DOMAIN
 col_types <- cols(
@@ -190,7 +217,7 @@ col_types <- cols(
   domain_concept_id = col_integer()
 )
 read_tsv(file.path(path_to_vocabulary, "DOMAIN.csv"), col_types=col_types) %>% 
-  write_feather(file.path(path_output, "DOMAIN.feather"))
+  write_feather(file.path(str_c(path_output,"_feather"), "DOMAIN.feather"))
 
 # RELATIONSHIP
 col_types <- cols(
@@ -202,7 +229,7 @@ col_types <- cols(
   relationship_concept_id = col_integer()
 )
 read_tsv(file.path(path_to_vocabulary, "RELATIONSHIP.csv"), col_types=col_types) %>% 
-  write_feather(file.path(path_output, "RELATIONSHIP.feather"))
+  write_feather(file.path(str_c(path_output,"_feather"), "RELATIONSHIP.feather"))
 
 # # save as csv --------------------------------------------------------------------
 # write_csv(concept, file.path(path_output, "CONCEPT.csv"))

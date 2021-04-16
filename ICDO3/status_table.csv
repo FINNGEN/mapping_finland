@@ -1,5 +1,0 @@
-status,n_codes,per_codes,n_events,per_events,db_name
-mapped,63666,100%,0,NA,source
-not_mapped,0,-Inf,0,NA,source
-mapped,504,95.094%,43033,97.388%,finngen
-not_found,26,4.906%,1154,2.612%,finngen
