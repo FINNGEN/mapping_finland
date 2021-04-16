@@ -1,14 +1,14 @@
 ICD9fi
 ================
 
-  - [Intro](#intro)
-  - [Formating source vocabulary to
+-   [Intro](#intro)
+-   [Formating source vocabulary to
     OMOP](#formating-source-vocabulary-to-omop)
-  - [Mapping the source vocabulary to the standard
+-   [Mapping the source vocabulary to the standard
     vocabularies](#mapping-the-source-vocabulary-to-the-standard-vocabularies)
-      - [Progess in number of codes](#progess-in-number-of-codes)
-  - [Assessing coverage of databases](#assessing-coverage-of-databases)
-      - [Database finngen](#database-finngen)
+    -   [Progess in number of codes](#progess-in-number-of-codes)
+-   [Assessing coverage of databases](#assessing-coverage-of-databases)
+    -   [Database finngen](#database-finngen)
 
 # Intro
 
@@ -20,8 +20,8 @@ The icd9fi codes have been …
 
 TODO: i got it from aki now in the gitlab repo
 
-The concept names are a mixed of Latin, Finnish, and English \!\!. These
-are not translated to English \!\!. The English name were append by
+The concept names are a mixed of Latin, Finnish, and English !!. These
+are not translated to English !!. The English name were append by
 matching the ICD9fi code to the ICD9 code dowloaded from
 [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020).
 
@@ -38,7 +38,7 @@ Mapping was carried in USAGI by medical student
 
 ## Progess in number of codes
 
-From 9 115 codes 657 have been approved.
+From 9 115 codes 656 have been approved.
 
 This makes 7% of codes approved.
 
@@ -56,7 +56,7 @@ Top10 sorted by freq:
 <div class="kable-table">
 
 | concept\_code | freq | freq\_per |
-| :------------ | ---: | :-------- |
+|:--------------|-----:|:----------|
 | 6341A         |  264 | 0.066%    |
 | 2959X         |   21 | 0.005%    |
 | 7181F         |   15 | 0.004%    |
@@ -78,9 +78,9 @@ The full list can be found in
 <div class="kable-table">
 
 | status      | n\_codes | per\_codes | n\_events | per\_events |
-| :---------- | -------: | :--------- | --------: | :---------- |
-| mapped      |      657 | 22.686%    |    282946 | 70.787%     |
-| not\_mapped |     2229 | 76.968%    |    116405 | 29.122%     |
+|:------------|---------:|:-----------|----------:|:------------|
+| mapped      |      656 | 22.652%    |    282739 | 70.736%     |
+| not\_mapped |     2230 | 77.003%    |    116612 | 29.174%     |
 | not\_found  |       10 | 0.345%     |       361 | 0.090%      |
 
 </div>

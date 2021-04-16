@@ -28,11 +28,18 @@ path_vocabulary_tables <- "../../lib/OMOP_VOCABULARY/"
 
 TODO: i got it from aki now in the gitlab repo 
 
-The concept names are a mixed of Latin, Finnish, and English !!. These are not translated to English !!. The English name were append by matching the ICD9fi code to the ICD9 code dowloaded from [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020). 
+The concept names are a mixed of Latin, Finnish, and English !!. These are not translated to English !!. The English name were append by matching the ICD9fi code to the ICD9 code, or to the ICD9fi's parent. ICD9 codes downloaded from [Wolfbane.com](http://www.wolfbane.com/icd/) (1.6.2020).
+
+Due to this the English name is more generic than the Finnish name. Moreover, same English name appears for differnt ICD9fi codes.
+To capture both, we name the concepts with the English name and the finish name in square brakets. For example: 
+
+code 0084E named as `Intestinal infection due to other specified bacteria [ENTERIT CAMPYLOBACT]`
+
 
 ```{r}
 icd9fi_source <- read_excel("./THL_ICD9fi_matched_ICD9CM_and_Wolfbane_ICD9.xlsx")
 ```
+
 
 
 
@@ -130,7 +137,7 @@ icd9fi_source <- icd9fi_source %>%
 icd9fi_concept <- icd9fi_source %>% 
   transmute(
     concept_id = concept_id, 
-    concept_name = ICD9TXT,
+    concept_name = str_c(concept_name, " [", ICD9TXT,"]") %>% str_sub(1,255),
     domain_id = "Condition", # at the moment
     vocabulary_id = "ICD9fi", 
     concept_class_id = str_c(nchar(ICD9), "-char ICD9fi"), 
